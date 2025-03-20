@@ -1,0 +1,68 @@
+[
+  {
+    "nombrePJ": "Tommy Muldoon",
+    "id": 1,
+    "posicion": "Poli Novato",
+    "ENposicion": "Rookie cop",
+    "vida": 7,
+    "arquetipos": [
+      "defensor",
+      "superviviente"
+    ]
+  },
+  {
+    "nombrePJ": "Rex Murphy",
+    "id": 2,
+    "posicion": "Poli Novato",
+    "ENposicion": "Rookie cop",
+    "vida": 8,
+    "arquetipos": [
+      "superviviente",
+      "experto"
+    ]
+  },
+  {
+    "nombrePJ": "Agatha",
+    "id": 4,
+    "posicion": "Poli Novato",
+    "ENposicion": "Rookie cop",
+    "vida": 7,
+    "arquetipos": [
+      "mistica",
+      "buscador"
+    ]
+  },
+  {
+    "id": "f06154e3-5b23-43c0-97d7-c4ddd0dd9f42",
+    "nombrePJ": "Sebastian",
+    "posicion": "Programador",
+    "ENposicion": "programmer",
+    "vida": 7,
+    "arquetipos": [
+      "defensor",
+      "superviviente"
+    ]
+  },
+  {
+    "id": "dcb5fab5-c994-431c-8fb1-5e1e037a0d96",
+    "nombrePJ": "Sebastian",
+    "posicion": "Programador 2",
+    "ENposicion": "programmer",
+    "vida": 7,
+    "arquetipos": [
+      "Defensor",
+      "Superviviente"
+    ]
+  },
+  {
+    "id": "0398ea5d-f600-411b-8ff8-598f3cc37da4",
+    "nombrePJ": "Eugenia",
+    "posicion": "Sanitaria",
+    "ENposicion": "healthery",
+    "vida": 7,
+    "arquetipos": [
+      "Defensor",
+      "Explorador"
+    ]
+  }
+]
