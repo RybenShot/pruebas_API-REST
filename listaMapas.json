@@ -1,0 +1,70 @@
+[
+  {
+    "id": 0,
+    "title": "La llegada de Azathoth",
+    "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+    "expansion": "AHBase",
+    "initialSpace": "Estación de trenes",
+    "reservaDeMitos": {
+      "perdicion": 3,
+      "enemigos": 2,
+      "pistas": 2,
+      "periodico": 2,
+      "explosion": 1,
+      "retribucion": 1,
+      "vacias": 3
+    },
+    "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)"
+  },
+  {
+    "id": 1,
+    "title": "Festin para Umordhoth",
+    "description": "Los gules que habitan en el mundo subterráneo se alimentan de la carne de los muertos: con todo, incluso ellos viven temerosos del Devorador de las Profundidades al que reverencian. Pero los gules no son los únicos en Arkham que veneran a Umórdhoth...",
+    "expansion": "AHBase",
+    "initialSpace": "Colmado",
+    "reservaDeMitos": {
+      "perdicion": 3,
+      "enemigos": 2,
+      "pistas": 2,
+      "periodico": 2,
+      "explosion": 1,
+      "retribucion": 1,
+      "vacias": 3
+    },
+    "retribution": "Coloca una ficha de Perdición sobre la hoja de escenario."
+  },
+  {
+    "id": 2,
+    "title": "El velo del Crepusculo",
+    "description": "Algo acecha en el gélido vacío que separa nuestros mundos. Susurra desde el otro lado del velo, llamando a todos los que tengan el poder necesario para liberarlo de su confinamiento. Quienes sucumben a su influjo obtienen un gran poder, pero el precio que pagan es terrible. Y con cada día que pasa su liberación está más próxima...",
+    "expansion": "AHBase",
+    "initialSpace": "Pensión de Má",
+    "reservaDeMitos": {
+      "perdicion": 3,
+      "enemigos": 2,
+      "pistas": 2,
+      "periodico": 2,
+      "explosion": 1,
+      "retribucion": 1,
+      "vacias": 3
+    },
+    "retribution": "Coloca una ficha de Perdición en cada espacio que contenga una herida abierta."
+  },
+  {
+    "id": 4,
+    "title": "prueba de edicion",
+    "description": "En las profundidades submarinas del Arredice del Diablo, los tiranos de Y´hanthlei gobiernan las mareas tenebrosas mientras sueñan con transcender ses vetustas formas mortales. Se agitan bajo las aguas y envían a sus profundos para que corrompan el mundo de la superficie.",
+    "expansion": "AHMareas",
+    "initialSpace": "Hotel Gilman House",
+    "reservaDeMitos": {
+      "perdicion": 3,
+      "enemigos": 2,
+      "pistas": 2,
+      "periodico": 2,
+      "explosion": 1,
+      "retribucion": 1,
+      "vacias": 3
+    },
+    "retribution": "Se propaga el Terror en cada Barrio que contenga un Monstruo Profundo."
+  }
+]
