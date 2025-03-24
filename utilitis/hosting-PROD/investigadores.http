@@ -1,0 +1,34 @@
+### Recuperar toda la lista de investigadores
+GET https://api-arkhamhorror.up.railway.app/inv
+
+### Recuperar un investigador por su arquetipo
+GET https://api-arkhamhorror.up.railway.app/inv?arquetipo=defensor
+
+### Recuperar un investigador por la id
+GET https://api-arkhamhorror.up.railway.app/inv/1
+
+### Crear un nuevo investigador
+POST https://api-arkhamhorror.up.railway.app/inv
+Content-Type:application/json
+
+{
+  "nombrePJ": "Samuel",
+  "posicion": "Pintor",
+  "ENposicion": "Painter",
+  "vida": 9,
+  "arquetipos":[
+      "Defensor",
+      "Explorador"
+  ]
+}
+
+### Borrar un investigador
+DELETE https://api-arkhamhorror.up.railway.app/inv/3e0e5792-2bea-4ec5-bee0-6d711fc683d0
+
+### Actualizar un investigador
+PATCH https://api-arkhamhorror.up.railway.app/inv/2
+Content-Type:application/json
+
+{
+  "vida": 3
+}

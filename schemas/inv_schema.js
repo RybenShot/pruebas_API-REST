@@ -1,6 +1,8 @@
-const z = require('zod')
+import z from 'zod'
 
-const investigadorSchema = z.object({
+// cambiar los nombres cuand se ajuste la base de datos
+
+const invSchema = z.object({
     nombrePJ: z.string({
         invalid_type_error: 'El nombre del investigador debe ser un string',
         required_error: 'El nombre del investigador es requerido'
@@ -22,15 +24,10 @@ const investigadorSchema = z.object({
 
 })
 
-function validateInvestigador(investigador) {
-    return investigadorSchema.safeParse(investigador)
+export function validateInv(inv) {
+    return invSchema.safeParse(inv)
 }
 
-function validatePartialInvestigador(investigador) {
-    return investigadorSchema.partial().safeParse(investigador)
-}
-
-module.exports = {
-    validateInvestigador,
-    validatePartialInvestigador
+export function validatePartialInv(inv) {
+    return invSchema.partial().safeParse(inv)
 }

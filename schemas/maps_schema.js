@@ -1,6 +1,6 @@
-const z = require('zod')
+import z from 'zod'
 
-const mapaSchema = z.object({
+const mapSchema = z.object({
     title: z.string({
         invalid_type_error: 'El título del mapa debe ser un string',
         required_error: 'El título del mapa es requerido'
@@ -34,14 +34,9 @@ const mapaSchema = z.object({
     }),
 })
 
-function validateMapa(mapa){
-    return mapaSchema.safeParse(mapa)
+export function validateMap(map){
+    return mapSchema.safeParse(map)
 }
-function validatePartialMapa(mapa){
-    return mapaSchema.partial().safeParse(mapa)
-}
-
-module.exports = {
-    validateMapa,
-    validatePartialMapa
+export function validatePartialMap(map){
+    return mapSchema.partial().safeParse(map)
 }

@@ -1,0 +1,40 @@
+### Recuperar toda la lista de mapaes
+GET http://localhost:1234/maps
+
+### Recuperar un mapa por su expansion
+GET http://localhost:1234/maps?expansion=AHMareas
+
+### Recuperar un mapa por la id
+GET http://localhost:1234/maps/heyy
+
+### Crear un nuevo mapa
+POST http://localhost:1234/maps
+Content-Type:application/json
+
+{
+    "title": "threre is no comming back",
+    "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+    "expansion": "AHBase",
+    "initialSpace": "Estación de trenes",
+    "reservaDeMitos":{
+        "perdicion": 3,
+        "enemigos": 2,
+        "pistas": 2,
+        "periodico": 2,
+        "explosion": 1,
+        "retribucion": 1,
+        "vacias": 3
+    },
+    "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)"
+}
+
+### Borrar un mapa
+DELETE http://localhost:1234/maps/b61d9da5-b740-4a45-9823-5d834440832e
+
+### Actualizar un mapa
+PATCH http://localhost:1234/maps/4574c2c6-e3e7-4a0c-8f12-17e1f8c1a24a
+Content-Type:application/json
+
+{
+  "expansion": "AHNoche"
+}

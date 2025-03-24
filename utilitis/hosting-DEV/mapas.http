@@ -1,22 +1,19 @@
-### LISTAR TODOS LOS MAPAS DE UNA EXPANSION ---- BASE
-GET http://localhost:1234/mapas?expansion=AHBase
+### Recuperar toda la lista de mapaes
+GET https://api-arkhamhorror-dev.up.railway.app/maps
 
-### LISTAR TODOS LOS MAPAS DE UNA EXPANSION ---- MAREAS
-GET http://localhost:1234/mapas?expansion=AHMareas
+### Recuperar un mapa por su expansion
+GET https://api-arkhamhorror-dev.up.railway.app/maps?expansion=AHBase
 
-### LISTAR TODOS LOS MAPAS
-GET http://localhost:1234/mapas
+### Recuperar un mapa por la id
+GET https://api-arkhamhorror-dev.up.railway.app/maps/1
 
-### PEDIR UN PAMA CONCRETO POR LA ID
-GET http://localhost:1234/mapas/20
-
-
-### CREAR UN NUEVO MAPA
-POST http://localhost:1234/mapas
-Content-Type: application/json
+### Crear un nuevo mapa
+POST https://api-arkhamhorror-dev.up.railway.app/maps
+Content-Type:application/json
 
 {
     "title": "primera prueba",
+
     "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
     "expansion": "AHBase",
     "initialSpace": "Estación de trenes",
@@ -32,13 +29,13 @@ Content-Type: application/json
     "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)"
 }
 
-### BORRAR UN MAPA
-DELETE http://localhost:1234/mapas/2527f629-3634-4411-a1bf-91fddcf69f8b
+### Borrar un mapa
+DELETE https://api-arkhamhorror-dev.up.railway.app/maps/3e0e5792-2bea-4ec5-bee0-6d711fc683d0
 
-### EDITAR UN MAPA
-PATCH http://localhost:1234/mapas/4
-Content-Type: application/json
+### Actualizar un mapa
+PATCH https://api-arkhamhorror-dev.up.railway.app/maps/2
+Content-Type:application/json
 
 {
-    "title": "prueba de edicion"
+  "vida": 3
 }

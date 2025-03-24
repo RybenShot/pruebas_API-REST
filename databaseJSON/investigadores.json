@@ -13,9 +13,9 @@
   {
     "nombrePJ": "Rex Murphy",
     "id": 2,
-    "posicion": "Poli Novato",
+    "posicion": "el gran reportero de Arkham",
     "ENposicion": "Rookie cop",
-    "vida": 8,
+    "vida": 3,
     "arquetipos": [
       "superviviente",
       "experto"
@@ -60,6 +60,39 @@
     "posicion": "Sanitaria",
     "ENposicion": "healthery",
     "vida": 7,
+    "arquetipos": [
+      "Defensor",
+      "Explorador"
+    ]
+  },
+  {
+    "id": "60b0df56-6602-4551-85cb-3f2bb6774d11",
+    "nombrePJ": "Eugenia",
+    "posicion": "Sanitaria",
+    "ENposicion": "healthery",
+    "vida": 7,
+    "arquetipos": [
+      "Defensor",
+      "Explorador"
+    ]
+  },
+  {
+    "id": "c40dec2b-ee70-4251-9ca2-8d19f51c2f2a",
+    "nombrePJ": "Samuel",
+    "posicion": "Pintor",
+    "ENposicion": "Painter",
+    "vida": 9,
+    "arquetipos": [
+      "Defensor",
+      "Explorador"
+    ]
+  },
+  {
+    "id": "653fd6c7-8dd0-4e9c-9ef7-90f8d7167208",
+    "nombrePJ": "Samuel Carrasco",
+    "posicion": "Pintor",
+    "ENposicion": "Painter",
+    "vida": 9,
     "arquetipos": [
       "Defensor",
       "Explorador"

@@ -1,0 +1,8 @@
+### mensaje de bienvenida
+GET http://localhost:1234
+
+### Retorna el número de visitas totales a la app
+GET http://localhost:1234/visitas
+
+### Suma 1 al contador de visitas
+POST http://localhost:1234/visitas

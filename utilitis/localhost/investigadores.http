@@ -1,0 +1,34 @@
+### Recuperar toda la lista de investigadores
+GET http://localhost:1234/inv
+
+### Recuperar un investigador por su arquetipo
+GET http://localhost:1234/inv?archetype=experto
+
+### Recuperar un investigador por la id
+GET http://localhost:1234/inv/2
+
+### Crear un nuevo investigador
+POST http://localhost:1234/inv
+Content-Type:application/json
+
+{
+  "nombrePJ": "Samuel Carrasco",
+  "posicion": "Pintor",
+  "ENposicion": "Painter",
+  "vida": 9,
+  "arquetipos":[
+      "Defensor",
+      "Explorador"
+  ]
+}
+
+### Borrar un investigador
+DELETE http://localhost:1234/inv/3e0e5792-2bea-4ec5-bee0-6d711fc683d0
+
+### Actualizar un investigador
+PATCH http://localhost:1234/inv/2
+Content-Type:application/json
+
+{
+  "posicion": "el gran reportero de Arkham"
+}

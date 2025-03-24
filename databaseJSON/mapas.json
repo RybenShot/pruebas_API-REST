@@ -66,5 +66,56 @@
       "vacias": 3
     },
     "retribution": "Se propaga el Terror en cada Barrio que contenga un Monstruo Profundo."
+  },
+  {
+    "id": "dfec0129-214a-4e78-a1f1-161e81c92d92",
+    "title": "finaly prueba",
+    "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+    "expansion": "AHBase",
+    "initialSpace": "Estación de trenes",
+    "reservaDeMitos": {
+      "perdicion": 3,
+      "enemigos": 2,
+      "pistas": 2,
+      "periodico": 2,
+      "explosion": 1,
+      "retribucion": 1,
+      "vacias": 3
+    },
+    "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)"
+  },
+  {
+    "id": "59402da2-d3b7-4762-bebe-22bb270ff55f",
+    "title": "finaly prueba",
+    "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+    "expansion": "AHBase",
+    "initialSpace": "Estación de trenes",
+    "reservaDeMitos": {
+      "perdicion": 3,
+      "enemigos": 2,
+      "pistas": 2,
+      "periodico": 2,
+      "explosion": 1,
+      "retribucion": 1,
+      "vacias": 3
+    },
+    "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)"
+  },
+  {
+    "id": "4574c2c6-e3e7-4a0c-8f12-17e1f8c1a24a",
+    "title": "threre is no comming back",
+    "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+    "expansion": "AHBase",
+    "initialSpace": "Estación de trenes",
+    "reservaDeMitos": {
+      "perdicion": 3,
+      "enemigos": 2,
+      "pistas": 2,
+      "periodico": 2,
+      "explosion": 1,
+      "retribucion": 1,
+      "vacias": 3
+    },
+    "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)"
   }
 ]
