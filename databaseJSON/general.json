@@ -1,6 +1,5 @@
-[
-    {
-        "contadorVisitasTotales": 20,
-        "contadorVisitasHoy": 2
-    }
-]
+{
+  "contadorVisitasTotales": 61,
+  "contadorVisitasSemanales": 34,
+  "ultimaResetSemanales": "2025-03-24T18:19:54.361Z"
+}

@@ -2,7 +2,7 @@
 GET http://localhost:1234
 
 ### Retorna el número de visitas totales a la app
-GET http://localhost:1234/visitas
+GET http://localhost:1234/visits
 
 ### Suma 1 al contador de visitas
-POST http://localhost:1234/visitas
+POST http://localhost:1234/visits
