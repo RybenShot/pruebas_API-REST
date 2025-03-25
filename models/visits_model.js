@@ -24,7 +24,7 @@ export class VisitsModel {
         // Suma 1 a ambos contadores
         visitsJSON.contadorVisitasTotales += 1;
         visitsJSON.contadorVisitasSemanales += 1;
-        console.log("se ha añadido una nueva visita")
+        // console.log("se ha añadido una nueva visita")
         writeFileSync("databaseJSON/general.json", JSON.stringify(visitsJSON, null, 2))
         return visitsJSON
     }
