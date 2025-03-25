@@ -6,3 +6,4 @@ GET http://localhost:1234/visits
 
 ### Suma 1 al contador de visitas
 POST http://localhost:1234/visits
+
