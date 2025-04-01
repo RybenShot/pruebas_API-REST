@@ -20,6 +20,8 @@ export class MapsController {
         res.status(404).json({ message: 'Mapa no encontrado' })
     }
 
+    // Desabilitamos por ahora estas opciones para evitar problemas
+    /*
     // creamos un nuevo mapa
     static async createNewMap(req, res) {
         const result = validateMap(req.body)
@@ -56,4 +58,5 @@ export class MapsController {
     
         return res.json(updateMap)
     }
+        */
 }

@@ -2,10 +2,10 @@
 GET http://localhost:1234/maps
 
 ### Recuperar un mapa por su expansion
-GET http://localhost:1234/maps?expansion=AHMareas
+GET http://localhost:1234/maps?expansion=AHSecrets
 
 ### Recuperar un mapa por la id
-GET http://localhost:1234/maps/heyy
+GET http://localhost:1234/maps/10
 
 ### Crear un nuevo mapa
 POST http://localhost:1234/maps

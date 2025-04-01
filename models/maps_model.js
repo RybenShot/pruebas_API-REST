@@ -22,10 +22,12 @@ export class MapModel{
 
     // retornamos un mapa por su id
     static async getByID ({id}){
-        const map = mapsListJSON.find(map => map.id == id);
+        const map = mapsListJSON.find(map => map.idMap == id);
         return map
     }
 
+    // Desabilitamos por ahora estas opciones para evitar problemas
+    /*
     // creamos un nuevo mapa
     static async createNewMap({input}){
         const newMap = {
@@ -68,4 +70,5 @@ export class MapModel{
         
         return mapUpdated
     }
+    */
 }
