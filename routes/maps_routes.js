@@ -3,6 +3,9 @@ import { MapsController } from "../controllers/maps_controller.js";
 
 const mapsRouter = Router()
 
+// Listamos todos los previewMapas
+mapsRouter.get('/previewMap', MapsController.getPreviewMap)
+
 // PEDIMOS todos los mapas o filtramos por expansion
 mapsRouter.get('/', MapsController.getAll)
 // PEDIMOS un mapa por la ID

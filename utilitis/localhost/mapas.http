@@ -1,8 +1,11 @@
 ### Recuperar toda la lista de mapaes
 GET http://localhost:1234/maps
 
+### listar el preview de los mapas
+GET http://localhost:1234/maps/previewMap
+
 ### Recuperar un mapa por su expansion
-GET http://localhost:1234/maps?expansion=AHSecrets
+GET http://localhost:1234/maps?expansion=AHBase
 
 ### Recuperar un mapa por la id
 GET http://localhost:1234/maps/10

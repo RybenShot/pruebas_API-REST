@@ -17,7 +17,7 @@ export class MapModel{
             return filterExpansion
         }
         // si no se ha pasado expansion, devolvemos todos los mapas
-        return mapsListJSON
+        return  
     }
 
     // retornamos un mapa por su id

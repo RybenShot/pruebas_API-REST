@@ -17,6 +17,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa1.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "La llegada de Azathoth",
@@ -44,6 +46,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa2.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG2MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "Festín para Umordhoth",
@@ -71,6 +75,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa3.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG3MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "El Velo del Crepúsculo",
@@ -98,6 +104,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa4.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG4MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "Ecos de las Profundidades",
@@ -126,6 +134,8 @@
       "terror": 1,
       "empty": 2
     },
+    "imgMap": "LosetasMapa5.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG5MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "Tiranos de la Desolación",
@@ -153,6 +163,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa6.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG6MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "La Lámpara Mortecina",
@@ -181,12 +193,43 @@
       "terror": 1,
       "empty": 2
     },
+    "imgMap": "LosetasMapa7.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG7MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "La Progenie de Ithaqua",
         "description": "Ithaqua, el que camina en el viento, acecha en el gélido norte. Es el viento helado que cala hasta el alma, el hielo voraz que aprisiona a los incautos. Olvidado y solitario, Ithaqua propaga su influencia con la cruel esperanza de engendrar una progenie terrible, un nuevo vástago capaz de vencer a los mismísimos dioses arquetípicos.",
         "initialSpace": "Restaurante de Velma",
         "retribution": "Coloca una ficha de Perdición en cualquier espacio de Innsmouth y una ficha de Perdición en cualquier espacio de Kingsport."
+      }
+    }
+  },
+  {"idMap": 7,
+    "title": "Dreams of R´lyeh",
+    "description": "The fresh autumn breeze carries with it a supernatural melody, practically imperceptible to the awake mind. In dreams, you visit a fantastic underwater city and delight in the glory of a cyclopean entity that you cannot see.",
+    "difficulty": 5,
+    "expansion": "AHWaves",
+    "duration": 200,
+    "userVotes": 3,
+    "initialSpace": "Santa María Hospital",
+    "retribution": "Each investigator places a Doom token in their space unless they suffer a point of Horror.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 1
+    },
+    "imgMap": "LosetasMapa8.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG8MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Sueños de R´lyeh",
+        "description": "La fresca brisa otoñal arrastra consigo una melodía sobrenatural, prácticamente imperceptible para al mente despierta. En sueños, visitáis una fantástica ciudad submarina y os deleitáis en la gloria de una entidad ciclópea que no alcanzáis a ver.",
+        "initialSpace": "Hospital de Santa María",
+        "retribution": "Cada investigador coloca una ficha de Peridión en su espacio a menos que sufra un punto de Horror."
       }
     }
   },
@@ -208,6 +251,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa9.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG9MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "El silencio de Tsathoggua",
@@ -235,6 +280,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa10.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG10MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "Disparos en la oscuridad",
@@ -262,6 +309,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa11.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG11MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "La LLave y la Puerta",
@@ -289,6 +338,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "imgMap": "LosetasMapa12.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG12MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "Obligados a servir",
@@ -316,6 +367,8 @@
       "retribution": 1,
       "empty": 2
     },
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
     "translations": {
       "es": {
         "title": "Los muertos gritan",

@@ -1,0 +1,132 @@
+[
+    {"idMap": 0,
+      "title": "The Arrival of Azathoth",
+      "expansion": "AHBase",
+      "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "La llegada de Azathoth"
+        }
+      }
+    },
+    {"idMap": 1,
+      "title": "Feast for Umordhoth",
+      "expansion": "AHBase",
+      "BGMap": "/img/3-mapas/imgPortada/BG2MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "Festín para Umordhoth"
+        }
+      }
+    },
+    {"idMap": 2,
+      "title": "The Veil of the Twilight",
+      "expansion": "AHBase",
+      "BGMap": "/img/3-mapas/imgPortada/BG3MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "El Velo del Crepúsculo"
+        }
+      }
+    },
+    {"idMap": 3,
+      "title": "Echoes of the Deep",
+      "expansion": "AHBase",
+      "BGMap": "/img/3-mapas/imgPortada/BG4MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "Ecos de las Profundidades"
+        }
+      }
+    },
+    {"idMap": 4,
+      "title": "Tyrants of Desolation",
+      "expansion": "AHWaves",
+      "BGMap": "/img/3-mapas/imgPortada/BG5MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "Tiranos de la Desolación"
+        }
+      }
+    },
+    {"idMap": 5,
+      "title": "The Mortecina Lamp",
+      "expansion": "AHWaves",
+      "BGMap": "/img/3-mapas/imgPortada/BG6MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "La Lámpara Mortecina"
+        }
+      }
+    },
+    {"idMap": 6,
+      "title": "The Progeny of Ithaqua",
+      "expansion": "AHWaves",
+      "BGMap": "/img/3-mapas/imgPortada/BG7MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "La Progenie de Ithaqua"
+        }
+      }
+    },
+    {"idMap": 7,
+      "title": "Dreams of Rlyeh",
+      "expansion": "AHWaves",
+      "BGMap": "/img/3-mapas/imgPortada/BG8MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "Sueños de Rlyeh"
+        }
+      }
+    },
+    {"idMap": 8,
+      "title": "The Silence of Tsathoggua",
+      "expansion": "AHNigth",
+      "BGMap": "/img/3-mapas/imgPortada/BG9MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "El silencio de Tsathoggua"
+        }
+      }
+    },
+    {"idMap": 9,
+      "title": "Shots in the Dark",
+      "expansion": "AHNigth",
+      "BGMap": "/img/3-mapas/imgPortada/BG10MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "Disparos en la oscuridad"
+        }
+      }
+    },
+    {"idMap": 10,
+      "title": "The Key and the Gate",
+      "expansion": "AHSecrets",
+      "BGMap": "/img/3-mapas/imgPortada/BG11MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "La LLave y la Puerta"
+        }
+      }
+    },
+    {"idMap": 11,
+      "title": "Forced to Serve",
+      "expansion": "AHSecrets",
+      "BGMap": "/img/3-mapas/imgPortada/BG12MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "Obligados a servir"
+        }
+      }
+    },
+    {"idMap": 12,
+      "title": "The Dead Scream",
+      "expansion": "AHSecrets",
+      "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
+      "translations": {
+        "es": {
+          "title": "Los muertos gritan"
+        }
+      }
+    }
+]

@@ -1,5 +1,6 @@
 import { MapModel } from "../models/maps_model.js";
 import { validateMap, validatePartialMap } from '../schemas/maps_schema.js'
+import listPreviewMaps from '../databaseJSON/previewMaps.json' with { type: "json" }
 
 
 export class MapsController {
@@ -18,6 +19,10 @@ export class MapsController {
         if (findMap) return res.json(findMap)
     
         res.status(404).json({ message: 'Mapa no encontrado' })
+    }
+
+    static getPreviewMap (req, res) {
+        res.json(listPreviewMaps)
     }
 
     // Desabilitamos por ahora estas opciones para evitar problemas
