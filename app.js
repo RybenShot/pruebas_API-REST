@@ -5,6 +5,8 @@ import invRouter from './routes/inv_routes.js'
 import mapsRouter from './routes/maps_routes.js'
 import visitsRouter from './routes/visits_routes.js'
 
+import enemiesRouter from './routes/enemies_routes.js'
+
 const app = express()
 // middleware para la captura de parametros de POST
 app.use(json())
@@ -15,6 +17,7 @@ app.disable('x-powered-by')
 app.use('/inv', invRouter)
 app.use('/maps', mapsRouter)
 app.use('/visits', visitsRouter)
+app.use('/enemies', enemiesRouter)
 
 // Middlewares para manejar rutas no definidas o el de bienvenida
     // Wellcome y 404

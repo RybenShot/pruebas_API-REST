@@ -8,7 +8,7 @@ mapsRouter.get('/previewMap', MapsController.getPreviewMap)
 
 // PEDIMOS todos los mapas o filtramos por expansion
 mapsRouter.get('/', MapsController.getAll)
-// PEDIMOS un mapa por la ID
+// BUSCAMOS un mapa por la ID
 mapsRouter.get('/:id',  MapsController.getById)
 
 // Desabilitamos por ahora estas opciones para evitar problemas

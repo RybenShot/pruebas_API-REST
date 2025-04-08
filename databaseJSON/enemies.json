@@ -1,0 +1,1137 @@
+[
+    {"id": 0,
+        "name": "Hooded marauder",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Merodeador encapuchado",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 1,
+        "name": "Abyssal servant",
+        "monsterType": ["Monstruo", "Ángel descarnado"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Siervo abisal",
+          "monsterType": ["Monstruo", "Ángel descarnado"]
+        }
+      }
+    },
+    {"id": 2,
+        "name": "Lookout",
+        "monsterType": ["Monstruo", "Ángel descarnado"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Vigia sin ojos",
+          "monsterType": ["Monstruo", "Ángel descarnado"]
+        }
+      }
+    },
+    {"id": 3,
+        "name": "Fast byakhee",
+        "monsterType": ["Monstruo", "Byakhee"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Byakhee veloz",
+          "monsterType": ["Monstruo", "Byakhee"]
+        }
+      }
+    },
+    {"id": 4,
+        "name": "Ceremonial magician",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Mago ceremonial",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 5,
+        "name": "Strangers in robes",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 3,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Extraños con túnicas",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 6,
+        "name": "Hungry predator",
+        "monsterType": ["Monstruo", "Perro de Tíndalos"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Depredador hambriento",
+          "monsterType": ["Monstruo", "Perro de Tíndalos"]
+        }
+      }
+    },
+    {"id": 7,
+        "name": "Alpha Tyndals Dog",
+        "monsterType": ["Monstruo", "Perro de Tíndalos"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Perro de Tíndalos alfa",
+          "monsterType": ["Monstruo", "Perro de Tíndalos"]
+        }
+      }
+    },
+    {"id": 8,
+        "name": "High priest",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Sumo sacerdote",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 9,
+        "name": "Howling horror",
+        "monsterType": ["Monstruo", "Perro de Tíndalos"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Horror aullante",
+          "monsterType": ["Monstruo", "Perro de Tíndalos"]
+        }
+      }
+    },
+    {"id": 10,
+        "name": "Masked",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Enmascarados",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 11,
+        "name": "Carjacking",
+        "monsterType": ["Monstruo", "Aberración"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Robacadaveres",
+          "monsterType": ["Monstruo", "Aberración"]
+        }
+      }
+    },
+    {"id": 12,
+        "name": "Gul Furtive",
+        "monsterType": ["Monstruo", "Gul"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Gul Furtivo",
+          "monsterType": ["Monstruo", "Gul"]
+        }
+      }
+    },
+    {"id": 13,
+        "name": "Rabid gloton",
+        "monsterType": ["Monstruo", "Gul"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Gloton rabioso",
+          "monsterType": ["Monstruo", "Gul"]
+        }
+      }
+    },
+    {"id": 14,
+        "name": "Be nightmarish",
+        "monsterType": ["Monstruo", "Gul"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Ser de pesadilla",
+          "monsterType": ["Monstruo", "Gul"]
+        }
+      }
+    },
+    {"id": 15,
+        "name": "Acolyte gul",
+        "monsterType": ["Monstruo", "Gul", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Acolito gul",
+          "monsterType": ["Monstruo", "Gul", "Sectario"]
+        }
+      }
+    },
+    {"id": 16,
+        "name": "flesh eater",
+        "monsterType": ["Monstruo", "Gul"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Devorador de carne",
+          "monsterType": ["Monstruo", "Gul"]
+        }
+      }
+    },
+    {"id": 17,
+        "name": "Priest Gul",
+        "monsterType": ["Monstruo", "Gul", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Sacerdote Gul",
+          "monsterType": ["Monstruo", "Gul", "Sectario"]
+        }
+      }
+    },
+    {"id": 18,
+        "name": "Alma Hill",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Alma Hill",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 19,
+        "name": "Ruth Turner",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Ruth Turner",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 20,
+        "name": "Drew 'the werewolf'",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Drew 'el hombre lobo'",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 21,
+        "name": "Masked hunter",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Cazador Enmascarado",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 22,
+        "name": "Herman Collins",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Herman Collins",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 23,
+        "name": "Billy Cooper",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Billy Cooper",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 24,
+        "name": "Altered beast",
+        "monsterType": ["Monstruo", "Aberración"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Bestia alterada",
+          "monsterType": ["Monstruo", "Aberración"]
+        }
+      }
+    },
+    {"id": 25,
+        "name": "Nightjar",
+        "monsterType": ["Monstruo", "Bestia"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Chotacabras",
+          "monsterType": ["Monstruo", "Bestia"]
+        }
+      }
+    },
+    {"id": 26,
+        "name": "Monster slave",
+        "monsterType": ["Monstruo", "Humano", "Subyugado"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Esclava monstruosa",
+          "monsterType": ["Monstruo", "Humano", "Subyugado"]
+        }
+      }
+    },
+    {"id": 27,
+        "name": "Touched by the void",
+        "monsterType": ["Monstruo", "Humano", "Subyugado"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Tocado por el vacío",
+          "monsterType": ["Monstruo", "Humano", "Subyugado"]
+        }
+      }
+    },
+    {"id": 28,
+        "name": "Wolf slave",
+        "monsterType": ["Monstruo", "Subyugado"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Esclavo lobuno",
+          "monsterType": ["Monstruo", "Subyugado"]
+        }
+      }
+    },
+    {"id": 29,
+        "name": "Altered servant",
+        "monsterType": ["Monstruo", "Humano", "Subyugado"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Siervo alterado",
+          "monsterType": ["Monstruo", "Humano", "Subyugado"]
+        }
+      }
+    },
+    {"id": 30,
+        "name": "Avian slave",
+        "monsterType": ["Monstruo", "Subyugado"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Esclavo aviar",
+          "monsterType": ["Monstruo", "Subyugado"]
+        }
+      }
+    },
+    {"id": 31,
+        "name": "Simon Carter",
+        "monsterType": ["Monstruo", "Logia", "Humano"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Simon Carter",
+          "monsterType": ["Monstruo", "Logia", "Humano"]
+        }
+      }
+    },
+    {"id": 32,
+        "name": "Supplicant of the Twilight",
+        "monsterType": ["Monstruo", "Logia", "Humano"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Suplicante del Crepúsculo",
+          "monsterType": ["Monstruo", "Logia", "Humano"]
+        }
+      }
+    },
+    {"id": 33,
+        "name": "Hitman of the Lodge",
+        "monsterType": ["Monstruo", "Logia", "Humano"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Sicario de la Logia",
+          "monsterType": ["Monstruo", "Logia", "Humano"]
+        }
+      }
+    },
+    {"id": 34,
+        "name": "Adept of the Lodge",
+        "monsterType": ["Monstruo", "Logia", "Humano"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Adepto de la Logia",
+          "monsterType": ["Monstruo", "Logia", "Humano"]
+        }
+      }
+    },
+    {"id": 35,
+        "name": "Guardian of R`lyeh",
+        "monsterType": ["Monstruo", "Semilla estelar"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Guardián de R`lyeh",
+          "monsterType": ["Monstruo", "Semilla estelar"]
+        }
+      }
+    },
+    {"id": 36,
+        "name": "Tidal titan",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Titán de marea",
+          "monsterType": ["Monstruo", "Profundo"]
+        }
+      }
+    },
+    {"id": 37,
+        "name": "Riverside beast",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Bestia de la ribera",
+          "monsterType": ["Monstruo", "Profundo"]
+        }
+      }
+    },
+    {"id": 38,
+        "name": "Ocean stem",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Vástago del océano",
+          "monsterType": ["Monstruo", "Profundo"]
+        }
+      }
+    },
+    {"id": 39,
+        "name": "Low-water predator",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Depredador de bajamar",
+          "monsterType": ["Monstruo", "Profundo"]
+        }
+      }
+    },
+    {"id": 40,
+        "name": "Thug Hybrid",
+        "monsterType": ["Monstruo", "Humano", "Profundo"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Matón Híbrido",
+          "monsterType": ["Monstruo", "Humano", "Profundo"]
+        }
+      }
+    },
+    {"id": 41,
+        "name": "River bed",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHBase",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Endriago de río",
+          "monsterType": ["Monstruo", "Profundo"]
+        }
+      }
+    },
+    {"id": 42,
+        "name": "Sea singer",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHBase",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Cantor marino",
+          "monsterType": ["Monstruo", "Profundo"]
+        }
+      }
+    },
+
+    
+    {"id": 43,
+        "name": "Kidnapper",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHWaves",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Secuestrador al acecho",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 44,
+        "name": "Enraptured hybrid",
+        "monsterType": ["Monstruo", "Soñador", "Profundo"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Híbrido embelesado",
+          "monsterType": ["Monstruo", "Soñador", "Profundo"]
+        }
+      }
+    },
+    {"id": 45,
+        "name": "Impetuous hunter",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Cazador impetuoso",
+          "monsterType": ["Monstruo", "Profundo"]
+        }
+      }
+    },
+    {"id": 46,
+        "name": "Guardian beast",
+        "monsterType": ["Monstruo", "Shantak", "Servidor"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Bestia guardiana",
+          "monsterType": ["Monstruo", "Shantak", "Servidor"]
+        }
+      }
+    },
+    {"id": 47,
+        "name": "Scavenger glider",
+        "monsterType": ["Monstruo", "Byakhee"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Carroñero planeador",
+          "monsterType": ["Monstruo", "Byakhee"]
+        }
+      }
+    },
+    {"id": 48,
+        "name": "Scared bystander",
+        "monsterType": ["Monstruo", "Soñador", "Humano"],
+        "expansion" : "AHWaves",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Transeúnte asustado",
+          "monsterType": ["Monstruo", "Soñador", "Humano"]
+        }
+      }
+    },
+    {"id": 49,
+        "name": "Byakhee rondador",
+        "monsterType": ["Monstruo", "Byakhee"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Byakhee rondador",
+          "monsterType": ["Monstruo", "Byakhee"]
+        }
+      }
+    },
+    {"id": 50,
+        "name": "Devouring master",
+        "monsterType": ["Monstruo", "Bestia lunar"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Amo devorador",
+          "monsterType": ["Monstruo", "Bestia lunar"]
+        }
+      }
+    },
+    {"id": 51,
+        "name": "Cruel slaver",
+        "monsterType": ["Monstruo", "Bestia lunar"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Esclavista cruel",
+          "monsterType": ["Monstruo", "Bestia lunar"]
+        }
+      }
+    },
+    {"id": 52,
+        "name": "Lividity lord",
+        "monsterType": ["Monstruo", "Bestia lunar"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Señor de la lividez",
+          "monsterType": ["Monstruo", "Bestia lunar"]
+        }
+      }
+    },
+    {"id": 53,
+        "name": "Declan Pearce",
+        "monsterType": ["Monstruo", "Humano", "Sectario"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Declan Pearce",
+          "monsterType": ["Monstruo", "Humano", "Sectario"]
+        }
+      }
+    },
+    {"id": 54,
+        "name": "Ice prisoner",
+        "monsterType": ["Monstruo", "Humano", "Subyugado"],
+        "expansion" : "AHWaves",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Prisionero del hielo",
+          "monsterType": ["Monstruo", "Humano", "Subyugado"]
+        }
+      }
+    },
+    {"id": 55,
+        "name": "Goddamned dream",
+        "monsterType": ["Monstruo", "Soñador", "Humano"],
+        "expansion" : "AHWaves",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Sonanbulo maldito",
+          "monsterType": ["Monstruo", "Soñador", "Humano"]
+        }
+      }
+    },
+    {"id": 56,
+        "name": "Dreadful shadow",
+        "monsterType": ["Monstruo", "Shantak", "Servidor"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Sombra pavorosa",
+          "monsterType": ["Monstruo", "Shantak", "Servidor"]
+        }
+      }
+    },
+    {"id": 57,
+        "name": "Angry dreamer",
+        "monsterType": ["Monstruo", "Soñador", "Humano"],
+        "expansion" : "AHWaves",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Soñador colérico",
+          "monsterType": ["Monstruo", "Soñador", "Humano"]
+        }
+      }
+    },
+    {"id": 58,
+        "name": "Supreme singer of R lyeh",
+        "monsterType": ["Monstruo", "Semilla estelar"],
+        "expansion" : "AHWaves",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Cantor supremo de R´lyeh",
+          "monsterType": ["Monstruo", "Semilla estelar"]
+        }
+      }
+    },
+
+    {"id": 59,
+        "name": "Fickle stalker",
+        "monsterType": ["Monstruo", "Profundo"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Acechador veleidoso",
+          "monsterType": ["Monstruo", "Ángel descarnado"]
+        }
+      }
+    },
+    {"id": 60,
+        "name": "Brain extractor",
+        "monsterType": ["Monstruo", "Mi-go"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Estractor de cerebros",
+          "monsterType": ["Monstruo", "Mi-go"]
+        }
+      }
+    },
+    {"id": 61,
+        "name": "Thief mushroom",
+        "monsterType": ["Monstruo", "Mi-go"],
+        "expansion" : "AHNigth",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Hongo Ladron",
+          "monsterType": ["Monstruo", "Mi-go"]
+        }
+      }
+    },
+    {"id": 62,
+        "name": "Quivering mass",
+        "monsterType": ["Monstruo", "Semilla informe"],
+        "expansion" : "AHNigth",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Masa tremula",
+          "monsterType": ["Monstruo", "Semilla informe"]
+        }
+      }
+    },
+    {"id": 63,
+        "name": "Creeping",
+        "monsterType": ["Monstruo", "Aberración"],
+        "expansion" : "AHNigth",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Reptante",
+          "monsterType": ["Monstruo", "Aberración"]
+        }
+      }
+    },
+    {"id": 64,
+        "name": "Morphic terror",
+        "monsterType": ["Monstruo", "Semilla informe"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Terror morfico",
+          "monsterType": ["Monstruo", "Semilla informe"]
+        }
+      }
+    },
+    {"id": 65,
+        "name": "Loquacious troublemaker",
+        "monsterType": ["Monstruo", "Humano", "Sheldon"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Alborotador locuaz",
+          "monsterType": ["Monstruo", "Humano", "Sheldon"]
+        }
+      }
+    },
+    {"id": 66,
+        "name": "Bragging brawler",
+        "monsterType": ["Monstruo", "Humano", "O'Bannion"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Camorrista bravucon",
+          "monsterType": ["Monstruo", "Humano", "O'Bannion"]
+        }
+      }
+    },
+    {"id": 67,
+        "name": "Lynch mob",
+        "monsterType": ["Monstruo", "Humano", "Muchedumbre"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Turba de linchamiento",
+          "monsterType": ["Monstruo", "Humano", "Muchedumbre"]
+        }
+      }
+    },
+    {"id": 68,
+        "name": "Assasins",
+        "monsterType": ["Monstruo", "Humano", "O'Bannion"],
+        "expansion" : "AHNigth",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Sicarios",
+          "monsterType": ["Monstruo", "Humano", "O'Bannion"]
+        }
+      }
+    },
+    {"id": 69,
+        "name": "Brutish lackeys",
+        "monsterType": ["Monstruo", "Humano", "Sheldon"],
+        "expansion" : "AHNigth",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Esbirrios Brutales",
+          "monsterType": ["Monstruo", "Humano", "Sheldon"]
+        }
+      }
+    },
+    {"id": 70,
+        "name": "Siobhan Riley",
+        "monsterType": ["Monstruo", "O'Bannion", "Servidor"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Siobhan Riley",
+          "monsterType": ["Monstruo", "O'Bannion", "Servidor"]
+        }
+      }
+    },
+    {"id": 71,
+        "name": "Executioner's Arm",
+        "monsterType": ["Monstruo", "Humano", "O'Bannion"],
+        "expansion" : "AHNigth",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Brazo Ejecutor",
+          "monsterType": ["Monstruo", "Humano", "O'Bannion"]
+        }
+      }
+    },
+    {"id": 72,
+        "name": "Corbel Bouchard",
+        "monsterType": ["Monstruo", "Sheldon", "Servidor"],
+        "expansion" : "AHNigth",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Corbel Bouchard",
+          "monsterType": ["Monstruo", "Sheldon", "Servidor"]
+        }
+      }
+    },
+    {"id": 73,
+        "name": "Aggressive trafficker",
+        "monsterType": ["Monstruo", "Humano", "Sheldon"],
+        "expansion" : "AHNigth",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Traficante agresivo",
+          "monsterType": ["Monstruo", "Humano", "Sheldon"]
+        }
+      }
+    },
+
+    {"id": 74,
+        "name": "Bloody Titan",
+        "monsterType": ["Monstruo", "Gul"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Titan Sangriento",
+          "monsterType": ["Monstruo", "Gul"]
+        }
+      }
+    },
+    {"id": 75,
+        "name": "Pursuing dog",
+        "monsterType": ["Monstruo", "Perro de Tíndalos"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Perro perseguidor",
+          "monsterType": ["Monstruo", "Perro de Tíndalos"]
+        }
+      }
+    },
+    {"id": 76,
+        "name": "Deranged being",
+        "monsterType": ["Monstruo", "Ghast"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Ser enloquecido",
+          "monsterType": ["Monstruo", "Ghast"]
+        }
+      }
+    },
+    {"id": 77,
+        "name": "Greedy giant",
+        "monsterType": ["Monstruo", "Gul"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Gigante avido",
+          "monsterType": ["Monstruo", "Gul"]
+        }
+      }
+    },
+    {"id": 78,
+        "name": "Enraged poltergeist",
+        "monsterType": ["Monstruo", "Espíritu", "Iracundo"],
+        "expansion" : "AHSecrets",
+        "quantity": 3,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Poltergeist enfurecido",
+          "monsterType": ["Monstruo", "Espíritu", "Iracundo"]
+        }
+      }
+    },
+    {"id": 79,
+        "name": "Haunting spirit",
+        "monsterType": ["Monstruo", "Espíritu", "Hostil"],
+        "expansion" : "AHSecrets",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Alma en pena acechante",
+          "monsterType": ["Monstruo", "Espíritu", "Hostil"]
+        }
+      }
+    },
+    {"id": 80,
+        "name": "Tunneling dhole",
+        "monsterType": ["Monstruo", "Aberración"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Dhole tunelador",
+          "monsterType": ["Monstruo", "Aberración"]
+        }
+      }
+    },
+    {"id": 81,
+        "name": "Clawed cannibal",
+        "monsterType": ["Monstruo", "Ghast"],
+        "expansion" : "AHSecrets",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Canibal con garras",
+          "monsterType": ["Monstruo", "Ghast"]
+        }
+      }
+    },
+    {"id": 82,
+        "name": "Deceased specter",
+        "monsterType": ["Monstruo", "Espíritu", "Afligido"],
+        "expansion" : "AHSecrets",
+        "quantity": 3,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Espectro difunto",
+          "monsterType": ["Monstruo", "Espíritu", "Afligido"]
+        }
+      }
+    },
+    {"id": 83,
+        "name": "Logia visionary",
+        "monsterType": ["Monstruo", "Logia", "Humano"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Vidente de la Logia",
+          "monsterType": ["Monstruo", "Logia", "Humano"]
+        }
+      }
+    },
+    {"id": 84,
+        "name": "Logia Guardian",
+        "monsterType": ["Monstruo", "Logia", "Humano"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Guardian de la Logia",
+          "monsterType": ["Monstruo", "Logia", "Humano"]
+        }
+      }
+    },
+    {"id": 85,
+        "name": "Twilight Sentinel",
+        "monsterType": ["Monstruo", "Logia", "Humano"],
+        "expansion" : "AHSecrets",
+        "quantity": 1,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Centinela del crepusculo",
+          "monsterType": ["Monstruo", "Logia", "Humano"]
+        }
+      }
+    },
+    {"id": 86,
+        "name": "Menacing mole",
+        "monsterType": ["Monstruo", "Gul"],
+        "expansion" : "AHSecrets",
+        "quantity": 2,
+        "img": "/img/__",
+        "translations": {
+        "es": {
+          "name": "Mole amenazante",
+          "monsterType": ["Monstruo", "Gul"]
+        }
+      }
+    }
+]

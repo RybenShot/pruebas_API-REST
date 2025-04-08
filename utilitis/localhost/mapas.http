@@ -41,3 +41,15 @@ Content-Type:application/json
 {
   "expansion": "AHNoche"
 }
+
+### Listar todos los enemigos
+GET http://localhost:1234/enemies
+
+### Listar todos los enemigos por expansion
+GET http://localhost:1234/enemies?expansion=AHWaves
+
+### Listar todos los enemigos tipo
+GET http://localhost:1234/enemies?type=semilla estelar
+
+### Buscar 1 enemigo concreto por la id
+GET http://localhost:1234/enemies/2

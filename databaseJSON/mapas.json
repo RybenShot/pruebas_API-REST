@@ -17,6 +17,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa1.png",
     "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
     "translations": {
@@ -46,6 +48,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [10, 0, 11, 1, 3, 12, 13, 14, 15, 16, 17],
+    "specialEnemies": [18, 19, 20, 21, 22, 23],
     "imgMap": "LosetasMapa2.png",
     "BGMap": "/img/3-mapas/imgPortada/BG2MapaArkham.jpg",
     "translations": {
@@ -75,6 +79,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [24, 25, 26, 27, 28, 29, 30],
+    "specialEnemies": [31, 32, 33, 34],
     "imgMap": "LosetasMapa3.png",
     "BGMap": "/img/3-mapas/imgPortada/BG3MapaArkham.jpg",
     "translations": {
@@ -104,6 +110,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [35, 4, 0, 36, 37, 38, 39, 40, 41, 42],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa4.png",
     "BGMap": "/img/3-mapas/imgPortada/BG4MapaArkham.jpg",
     "translations": {
@@ -134,6 +142,8 @@
       "terror": 1,
       "empty": 2
     },
+    "enemies": [24, 26, 43, 44, 45, 42, 41, 40, 39, 38, 37, 36],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa5.png",
     "BGMap": "/img/3-mapas/imgPortada/BG5MapaArkham.jpg",
     "translations": {
@@ -145,6 +155,7 @@
       }
     }
   },
+
   {"idMap": 5,
     "title": "The Mortecina Lamp",
     "description": "In the foggy town of Kingsport, the upper class thrives within a new society known as the Lamp Club. In alleys and slums, many disappeared people return stripped of their memories, like mere shadows of what they were.",
@@ -163,6 +174,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [46, 5, 43, 27, 48, 47, 49, 50, 51, 52, 3],
+    "specialEnemies": [53],
     "imgMap": "LosetasMapa6.png",
     "BGMap": "/img/3-mapas/imgPortada/BG6MapaArkham.jpg",
     "translations": {
@@ -193,6 +206,8 @@
       "terror": 1,
       "empty": 2
     },
+    "enemies": [6, 26, 30, 28, 54, 29, 55, 48, 56, 46],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa7.png",
     "BGMap": "/img/3-mapas/imgPortada/BG7MapaArkham.jpg",
     "translations": {
@@ -222,6 +237,8 @@
       "retribution": 1,
       "empty": 1
     },
+    "enemies": [37, 42, 39, 4, 8, 55, 48, 57, 44, 58, 35],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa8.png",
     "BGMap": "/img/3-mapas/imgPortada/BG8MapaArkham.jpg",
     "translations": {
@@ -233,6 +250,7 @@
       }
     }
   },
+
   {"idMap": 8,
     "title": "The Silence of Tsathoggua",
     "description": "The beast of Voormithabreth slumbers while the adepts it abandoned in distant Yuggoth prepare their devotional offerings to sate its voracious appetite. If the Sleeper of N'Kai were to awaken, we would all be doomed.",
@@ -251,6 +269,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [59, 60, 61, 4, 2, 62, 63, 64, 11, 24],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa9.png",
     "BGMap": "/img/3-mapas/imgPortada/BG9MapaArkham.jpg",
     "translations": {
@@ -280,6 +300,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [15, 65, 66, 13, 4, 67, 59, 1, 2 ],
+    "specialEnemies": [68, 69, 70, 71, 72, 73],
     "imgMap": "LosetasMapa10.png",
     "BGMap": "/img/3-mapas/imgPortada/BG10MapaArkham.jpg",
     "translations": {
@@ -291,6 +313,7 @@
       }
     }
   },
+
   {"idMap": 10,
     "title": "The Key and the Gate",
     "description": "For eons, Yog-Sothoth has watched the universe from beyond time and space. The Lurker at the Threshold stirs, no longer content to merely watch and wait. Countless servants toil to open the gate that keeps the Ancient One sealed outside our universe.",
@@ -309,6 +332,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [74, 11, 75, 76, 77, 9, 78, 79, 80, 25, 26, 27, 28, 29, 30],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa11.png",
     "BGMap": "/img/3-mapas/imgPortada/BG11MapaArkham.jpg",
     "translations": {
@@ -338,6 +363,8 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [16, 8, 28, 81, 7, 79, 82, 78],
+    "specialEnemies": [83, 84, 85, 31, 32, 33, 34],
     "imgMap": "LosetasMapa12.png",
     "BGMap": "/img/3-mapas/imgPortada/BG12MapaArkham.jpg",
     "translations": {
@@ -367,6 +394,8 @@
       "retribution": 1,
       "empty": 2
     },
+    "enemies": [1, 75, 16, 82, 14, 3, 80, 13, 74, 86, 77, 76, 81],
+    "specialEnemies": [],
     "imgMap": "LosetasMapa13.png",
     "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
     "translations": {
