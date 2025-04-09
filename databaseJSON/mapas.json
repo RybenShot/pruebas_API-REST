@@ -18,6 +18,7 @@
       "empty": 3
     },
     "enemies": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa1.png",
     "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
@@ -26,7 +27,8 @@
         "title": "La llegada de Azathoth",
         "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
         "initialSpace": "Estación de trenes",
-        "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)"
+        "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)",
+        "textSpecialEnemies": null
       }
     }
   },
@@ -49,6 +51,7 @@
       "empty": 3
     },
     "enemies": [10, 0, 11, 1, 3, 12, 13, 14, 15, 16, 17],
+    "textSpecialEnemies": "Set aside the following monsters.",
     "specialEnemies": [18, 19, 20, 21, 22, 23],
     "imgMap": "LosetasMapa2.png",
     "BGMap": "/img/3-mapas/imgPortada/BG2MapaArkham.jpg",
@@ -57,7 +60,8 @@
         "title": "Festín para Umordhoth",
         "description": "Los gules que habitan en el mundo subterráneo se alimentan de la carne de los muertos: con todo, incluso ellos viven temerosos del Devorador de las Profundidades al que reverencian. Pero los gules no son los únicos en Arkham que veneran a Umórdhoth...",
         "initialSpace": "Colmado",
-        "retribution": "Coloca una ficha de Perdición sobre la hoja de escenario."
+        "retribution": "Coloca una ficha de Perdición sobre la hoja de escenario.",
+        "textSpecialEnemies": "Aparta a un lado los siguientes Monstruos."
       }
     }
   },
@@ -80,6 +84,7 @@
       "empty": 3
     },
     "enemies": [24, 25, 26, 27, 28, 29, 30],
+    "textSpecialEnemies": "Set aside all Lodge monsters.",
     "specialEnemies": [31, 32, 33, 34],
     "imgMap": "LosetasMapa3.png",
     "BGMap": "/img/3-mapas/imgPortada/BG3MapaArkham.jpg",
@@ -88,7 +93,8 @@
         "title": "El Velo del Crepúsculo",
         "description": "Algo acecha en el gélido vacío que separa nuestros mundos. Susurra desde el otro lado del velo, llamando a todos los que tengan el poder necesario para liberarlo de su confinamiento. Quienes sucumben a su influjo obtienen un gran poder, pero el precio que pagan es terrible. Y con cada día que pasa su liberación está más próxima...",
         "initialSpace": "Pensión de Má",
-        "retribution": "Coloca una ficha de Perdición en cada espacio que contenga una herida abierta."
+        "retribution": "Coloca una ficha de Perdición en cada espacio que contenga una herida abierta.",
+        "textSpecialEnemies": "Aparta a un lado todos los Mosntruos Logia."
       }
     }
   },
@@ -111,6 +117,7 @@
       "empty": 3
     },
     "enemies": [35, 4, 0, 36, 37, 38, 39, 40, 41, 42],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa4.png",
     "BGMap": "/img/3-mapas/imgPortada/BG4MapaArkham.jpg",
@@ -119,10 +126,12 @@
         "title": "Ecos de las Profundidades",
         "description": "En su morada de R’lyeh, el difunto Cthulhu aguarda soñando. Se agita en su letargo y espera a que las estrellas sean propicias para que R’lyeh emerja de su hogar bajo las olas y los primigenios regresen. Pues no está muerto lo que puede yacer eternamente, y con los evos extraños aun la muerte puede morir...",
         "initialSpace": "Observatorio",
-        "retribution": "Cada investigador sufre tanto Horror como el número de fichas que haya en su espacio."
+        "retribution": "Cada investigador sufre tanto Horror como el número de fichas que haya en su espacio.",
+        "textSpecialEnemies": null
       }
     }
   },
+
   {"idMap": 4,
     "title": "Tyrants of Desolation",
     "description": "In the underwater depths of the Devil’s Arredice, the tyrants of Y’hanthlei rule the dark tides as they dream of transcending these ancient mortal forms. They stir under the waters and send them deep to corrupt the surface world.",
@@ -143,6 +152,7 @@
       "empty": 2
     },
     "enemies": [24, 26, 43, 44, 45, 42, 41, 40, 39, 38, 37, 36],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa5.png",
     "BGMap": "/img/3-mapas/imgPortada/BG5MapaArkham.jpg",
@@ -151,11 +161,11 @@
         "title": "Tiranos de la Desolación",
         "description": "En las profundidades submarinas del Arrecife del Diablo, los tiranos de Y´hanthlei gobiernan las mareas tenebrosas mientras sueñan con trascender sus vetustas formas mortales. Se agitan bajo las aguas y envían a sus profundos para que corrompan el mundo de la superficie.",
         "initialSpace": "Hotel Gilman House",
-        "retribution": "Se propaga el Terror en cada Barrio que contenga un Monstruo Profundo."
+        "retribution": "Se propaga el Terror en cada Barrio que contenga un Monstruo Profundo.",
+        "textSpecialEnemies": null
       }
     }
   },
-
   {"idMap": 5,
     "title": "The Mortecina Lamp",
     "description": "In the foggy town of Kingsport, the upper class thrives within a new society known as the Lamp Club. In alleys and slums, many disappeared people return stripped of their memories, like mere shadows of what they were.",
@@ -175,6 +185,7 @@
       "empty": 3
     },
     "enemies": [46, 5, 43, 27, 48, 47, 49, 50, 51, 52, 3],
+    "textSpecialEnemies": "Set aside the Declan Pearce monster.",
     "specialEnemies": [53],
     "imgMap": "LosetasMapa6.png",
     "BGMap": "/img/3-mapas/imgPortada/BG6MapaArkham.jpg",
@@ -183,7 +194,8 @@
         "title": "La Lámpara Mortecina",
         "description": "En el brumoso pueblo de Kingsport, la clase alta prospera en el seno de una nueva sociedad conocida como el Club de la Lámpara. En callejones y barrios bajos, muchas personas que habían desaparecido regresan despojados de sus recuerdos, como meras sombras de lo que fueron.",
         "initialSpace": "Muelles",
-        "retribution": "Todo investigador situado en un espacio que contenga Perdición sufre un punto de Horror a menos que descarte una ficha de Concentración."
+        "retribution": "Todo investigador situado en un espacio que contenga Perdición sufre un punto de Horror a menos que descarte una ficha de Concentración.",
+        "textSpecialEnemies": "Aparta a un lado el Monstruo Declan Pearce."
       }
     }
   },
@@ -207,6 +219,7 @@
       "empty": 2
     },
     "enemies": [6, 26, 30, 28, 54, 29, 55, 48, 56, 46],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa7.png",
     "BGMap": "/img/3-mapas/imgPortada/BG7MapaArkham.jpg",
@@ -215,7 +228,8 @@
         "title": "La Progenie de Ithaqua",
         "description": "Ithaqua, el que camina en el viento, acecha en el gélido norte. Es el viento helado que cala hasta el alma, el hielo voraz que aprisiona a los incautos. Olvidado y solitario, Ithaqua propaga su influencia con la cruel esperanza de engendrar una progenie terrible, un nuevo vástago capaz de vencer a los mismísimos dioses arquetípicos.",
         "initialSpace": "Restaurante de Velma",
-        "retribution": "Coloca una ficha de Perdición en cualquier espacio de Innsmouth y una ficha de Perdición en cualquier espacio de Kingsport."
+        "retribution": "Coloca una ficha de Perdición en cualquier espacio de Innsmouth y una ficha de Perdición en cualquier espacio de Kingsport.",
+        "textSpecialEnemies": null
       }
     }
   },
@@ -238,6 +252,7 @@
       "empty": 1
     },
     "enemies": [37, 42, 39, 4, 8, 55, 48, 57, 44, 58, 35],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa8.png",
     "BGMap": "/img/3-mapas/imgPortada/BG8MapaArkham.jpg",
@@ -246,7 +261,8 @@
         "title": "Sueños de R´lyeh",
         "description": "La fresca brisa otoñal arrastra consigo una melodía sobrenatural, prácticamente imperceptible para al mente despierta. En sueños, visitáis una fantástica ciudad submarina y os deleitáis en la gloria de una entidad ciclópea que no alcanzáis a ver.",
         "initialSpace": "Hospital de Santa María",
-        "retribution": "Cada investigador coloca una ficha de Peridión en su espacio a menos que sufra un punto de Horror."
+        "retribution": "Cada investigador coloca una ficha de Peridión en su espacio a menos que sufra un punto de Horror.",
+        "textSpecialEnemies": null
       }
     }
   },
@@ -270,6 +286,7 @@
       "empty": 3
     },
     "enemies": [59, 60, 61, 4, 2, 62, 63, 64, 11, 24],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa9.png",
     "BGMap": "/img/3-mapas/imgPortada/BG9MapaArkham.jpg",
@@ -278,7 +295,8 @@
         "title": "El silencio de Tsathoggua",
         "description": "La bestia de Voormithabreth dormita mientras los adeptos que abandonó en la lejana Yuggoth preparan sus ofrendas devocionales para colmarsu voraz apetito. Si el Durmiente de N'Kai llegase a despertar, estaríamos todos condenados.",
         "initialSpace": "Biblioteca Orne",
-        "retribution": "Si hay 2 o más Pistas en algún Barrio, coloca una ficha de Perdición sobre la hoja del escenario."
+        "retribution": "Si hay 2 o más Pistas en algún Barrio, coloca una ficha de Perdición sobre la hoja del escenario.",
+        "textSpecialEnemies": null
       }
     }
   },
@@ -301,6 +319,7 @@
       "empty": 3
     },
     "enemies": [15, 65, 66, 13, 4, 67, 59, 1, 2 ],
+    "textSpecialEnemies": "Set aside all remaining O'Bannion and Sheldon monsters.",
     "specialEnemies": [68, 69, 70, 71, 72, 73],
     "imgMap": "LosetasMapa10.png",
     "BGMap": "/img/3-mapas/imgPortada/BG10MapaArkham.jpg",
@@ -309,7 +328,8 @@
         "title": "Disparos en la oscuridad",
         "description": "Las mafias de Arkham tienen una larga historia, y la tregua entre los O'Bannion y los Sheldon ha sido, en el mejor de los casos, frájil. Durante en caluroso verano de 1926, una sombra tenebrosa los empuja a una cruenta guerra de bandas.",
         "initialSpace": "Comisaría",
-        "retribution": "Si ninguna de las bandas es hostil, aparece un Monstruo Sectario."
+        "retribution": "Si ninguna de las bandas es hostil, aparece un Monstruo Sectario.",
+        "textSpecialEnemies": "Aparta a un lado todos los Monstruos O'Bannion y Sheldon que queden."
       }
     }
   },
@@ -333,6 +353,7 @@
       "empty": 3
     },
     "enemies": [74, 11, 75, 76, 77, 9, 78, 79, 80, 25, 26, 27, 28, 29, 30],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa11.png",
     "BGMap": "/img/3-mapas/imgPortada/BG11MapaArkham.jpg",
@@ -341,7 +362,8 @@
         "title": "La LLave y la Puerta",
         "description": "Durante eones, Yog-Sothoth ha observado el universo desde más allá del tiempo y del espacio. El que Acecha en l Umbral se agita, pues ya no se conforma con limitarse a observar y esperar. Innumerables siervos se afanan por abrir la puerta que encierra al Primigenio fuera de nuestro universo.",
         "initialSpace": "Logia del Crepúsculo de Plata",
-        "retribution": "Cada investigador que no esté enfrentado a uno o más Mosntruos se mueve un espacio hacia el espacio inestable a menos que sufra un punto de Horror."
+        "retribution": "Cada investigador que no esté enfrentado a uno o más Mosntruos se mueve un espacio hacia el espacio inestable a menos que sufra un punto de Horror.",
+        "textSpecialEnemies": null
       }
     }
   },
@@ -364,6 +386,7 @@
       "empty": 3
     },
     "enemies": [16, 8, 28, 81, 7, 79, 82, 78],
+    "textSpecialEnemies": "Set aside all Lodge monsters.",
     "specialEnemies": [83, 84, 85, 31, 32, 33, 34],
     "imgMap": "LosetasMapa12.png",
     "BGMap": "/img/3-mapas/imgPortada/BG12MapaArkham.jpg",
@@ -372,7 +395,8 @@
         "title": "Obligados a servir",
         "description": "Una plaga de espíritus inquietos invade Arkham, creando una perturbación psíquica que no se puede ignorar. Estas almas perdidas están atrapadas por un antiguo pacto y es necesario liberarlas del mal que las ata por toda la enernidad.",
         "initialSpace": "La casa de la bruja",
-        "retribution": "Por cada Monstruo Espíritu, coloca una ficha de Perdición en su espacio. Si no hay Mosntruos Espíritu en el tablero, aparece un Monstruo Espíritu."
+        "retribution": "Por cada Monstruo Espíritu, coloca una ficha de Perdición en su espacio. Si no hay Mosntruos Espíritu en el tablero, aparece un Monstruo Espíritu.",
+        "textSpecialEnemies": "Aparta todos los Monstruos Logia."
       }
     }
   },
@@ -395,6 +419,7 @@
       "empty": 2
     },
     "enemies": [1, 75, 16, 82, 14, 3, 80, 13, 74, 86, 77, 76, 81],
+    "textSpecialEnemies": null,
     "specialEnemies": [],
     "imgMap": "LosetasMapa13.png",
     "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
@@ -403,7 +428,8 @@
         "title": "Los muertos gritan",
         "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
         "initialSpace": "Estación de Trenes",
-        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable."
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
+        "textSpecialEnemies": null
       }
     }
   }

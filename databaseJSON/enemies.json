@@ -4,7 +4,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo6.jpg",
         "translations": {
         "es": {
           "name": "Merodeador encapuchado",
@@ -17,7 +17,7 @@
         "monsterType": ["Monstruo", "Ángel descarnado"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo8.jpg",
         "translations": {
         "es": {
           "name": "Siervo abisal",
@@ -30,10 +30,10 @@
         "monsterType": ["Monstruo", "Ángel descarnado"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo9.jpg",
         "translations": {
         "es": {
-          "name": "Vigia sin ojos",
+          "name": "Vigía sin ojos",
           "monsterType": ["Monstruo", "Ángel descarnado"]
         }
       }
@@ -43,7 +43,7 @@
         "monsterType": ["Monstruo", "Byakhee"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo11.jpg",
         "translations": {
         "es": {
           "name": "Byakhee veloz",
@@ -56,7 +56,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo12.jpg",
         "translations": {
         "es": {
           "name": "Mago ceremonial",
@@ -69,7 +69,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 3,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo13.jpg",
         "translations": {
         "es": {
           "name": "Extraños con túnicas",
@@ -82,7 +82,7 @@
         "monsterType": ["Monstruo", "Perro de Tíndalos"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo15.jpg",
         "translations": {
         "es": {
           "name": "Depredador hambriento",
@@ -95,7 +95,7 @@
         "monsterType": ["Monstruo", "Perro de Tíndalos"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo16.jpg",
         "translations": {
         "es": {
           "name": "Perro de Tíndalos alfa",
@@ -108,7 +108,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo17.jpg",
         "translations": {
         "es": {
           "name": "Sumo sacerdote",
@@ -121,7 +121,7 @@
         "monsterType": ["Monstruo", "Perro de Tíndalos"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo18.jpg",
         "translations": {
         "es": {
           "name": "Horror aullante",
@@ -134,7 +134,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo7.jpg",
         "translations": {
         "es": {
           "name": "Enmascarados",
@@ -147,7 +147,7 @@
         "monsterType": ["Monstruo", "Aberración"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo10.jpg",
         "translations": {
         "es": {
           "name": "Robacadaveres",
@@ -160,7 +160,7 @@
         "monsterType": ["Monstruo", "Gul"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo1.jpg",
         "translations": {
         "es": {
           "name": "Gul Furtivo",
@@ -173,7 +173,7 @@
         "monsterType": ["Monstruo", "Gul"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo2.jpg",
         "translations": {
         "es": {
           "name": "Gloton rabioso",
@@ -186,7 +186,7 @@
         "monsterType": ["Monstruo", "Gul"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo3.jpg",
         "translations": {
         "es": {
           "name": "Ser de pesadilla",
@@ -199,7 +199,7 @@
         "monsterType": ["Monstruo", "Gul", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo4.jpg",
         "translations": {
         "es": {
           "name": "Acolito gul",
@@ -212,7 +212,7 @@
         "monsterType": ["Monstruo", "Gul"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo5.jpg",
         "translations": {
         "es": {
           "name": "Devorador de carne",
@@ -225,7 +225,7 @@
         "monsterType": ["Monstruo", "Gul", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo14.jpg",
         "translations": {
         "es": {
           "name": "Sacerdote Gul",
@@ -238,7 +238,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo38.jpg",
         "translations": {
         "es": {
           "name": "Alma Hill",
@@ -251,7 +251,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo39.jpg",
         "translations": {
         "es": {
           "name": "Ruth Turner",
@@ -264,7 +264,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo41.jpg",
         "translations": {
         "es": {
           "name": "Drew 'el hombre lobo'",
@@ -277,7 +277,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo42.jpg",
         "translations": {
         "es": {
           "name": "Cazador Enmascarado",
@@ -290,7 +290,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo43.jpg",
         "translations": {
         "es": {
           "name": "Herman Collins",
@@ -303,7 +303,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo40.jpg",
         "translations": {
         "es": {
           "name": "Billy Cooper",
@@ -316,7 +316,7 @@
         "monsterType": ["Monstruo", "Aberración"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo35.jpg",
         "translations": {
         "es": {
           "name": "Bestia alterada",
@@ -329,7 +329,7 @@
         "monsterType": ["Monstruo", "Bestia"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo37.jpg",
         "translations": {
         "es": {
           "name": "Chotacabras",
@@ -342,7 +342,7 @@
         "monsterType": ["Monstruo", "Humano", "Subyugado"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo31.jpg",
         "translations": {
         "es": {
           "name": "Esclava monstruosa",
@@ -355,7 +355,7 @@
         "monsterType": ["Monstruo", "Humano", "Subyugado"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo32.jpg",
         "translations": {
         "es": {
           "name": "Tocado por el vacío",
@@ -368,7 +368,7 @@
         "monsterType": ["Monstruo", "Subyugado"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo33.jpg",
         "translations": {
         "es": {
           "name": "Esclavo lobuno",
@@ -381,7 +381,7 @@
         "monsterType": ["Monstruo", "Humano", "Subyugado"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo34.jpg",
         "translations": {
         "es": {
           "name": "Siervo alterado",
@@ -394,7 +394,7 @@
         "monsterType": ["Monstruo", "Subyugado"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo36.jpg",
         "translations": {
         "es": {
           "name": "Esclavo aviar",
@@ -407,7 +407,7 @@
         "monsterType": ["Monstruo", "Logia", "Humano"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo27.jpg",
         "translations": {
         "es": {
           "name": "Simon Carter",
@@ -420,7 +420,7 @@
         "monsterType": ["Monstruo", "Logia", "Humano"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo28.jpg",
         "translations": {
         "es": {
           "name": "Suplicante del Crepúsculo",
@@ -433,7 +433,7 @@
         "monsterType": ["Monstruo", "Logia", "Humano"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo29.jpg",
         "translations": {
         "es": {
           "name": "Sicario de la Logia",
@@ -446,7 +446,7 @@
         "monsterType": ["Monstruo", "Logia", "Humano"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo30.jpg",
         "translations": {
         "es": {
           "name": "Adepto de la Logia",
@@ -459,7 +459,7 @@
         "monsterType": ["Monstruo", "Semilla estelar"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo19.jpg",
         "translations": {
         "es": {
           "name": "Guardián de R`lyeh",
@@ -472,7 +472,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo20.jpg",
         "translations": {
         "es": {
           "name": "Titán de marea",
@@ -485,7 +485,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo21.jpg",
         "translations": {
         "es": {
           "name": "Bestia de la ribera",
@@ -498,7 +498,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo22.jpg",
         "translations": {
         "es": {
           "name": "Vástago del océano",
@@ -511,7 +511,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo23.jpg",
         "translations": {
         "es": {
           "name": "Depredador de bajamar",
@@ -524,7 +524,7 @@
         "monsterType": ["Monstruo", "Humano", "Profundo"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo24.jpg",
         "translations": {
         "es": {
           "name": "Matón Híbrido",
@@ -537,7 +537,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHBase",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo25.jpg",
         "translations": {
         "es": {
           "name": "Endriago de río",
@@ -550,7 +550,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHBase",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigo26.jpg",
         "translations": {
         "es": {
           "name": "Cantor marino",
@@ -565,7 +565,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHWaves",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT2.jpg",
         "translations": {
         "es": {
           "name": "Secuestrador al acecho",
@@ -578,7 +578,7 @@
         "monsterType": ["Monstruo", "Soñador", "Profundo"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT11.jpg",
         "translations": {
         "es": {
           "name": "Híbrido embelesado",
@@ -591,7 +591,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT13.jpg",
         "translations": {
         "es": {
           "name": "Cazador impetuoso",
@@ -604,7 +604,7 @@
         "monsterType": ["Monstruo", "Shantak", "Servidor"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT7.jpg",
         "translations": {
         "es": {
           "name": "Bestia guardiana",
@@ -617,7 +617,7 @@
         "monsterType": ["Monstruo", "Byakhee"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT1.jpg",
         "translations": {
         "es": {
           "name": "Carroñero planeador",
@@ -630,7 +630,7 @@
         "monsterType": ["Monstruo", "Soñador", "Humano"],
         "expansion" : "AHWaves",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT6.jpg",
         "translations": {
         "es": {
           "name": "Transeúnte asustado",
@@ -643,7 +643,7 @@
         "monsterType": ["Monstruo", "Byakhee"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT3.jpg",
         "translations": {
         "es": {
           "name": "Byakhee rondador",
@@ -656,7 +656,7 @@
         "monsterType": ["Monstruo", "Bestia lunar"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT8.jpg",
         "translations": {
         "es": {
           "name": "Amo devorador",
@@ -669,7 +669,7 @@
         "monsterType": ["Monstruo", "Bestia lunar"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT14.jpg",
         "translations": {
         "es": {
           "name": "Esclavista cruel",
@@ -682,7 +682,7 @@
         "monsterType": ["Monstruo", "Bestia lunar"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT15.jpg",
         "translations": {
         "es": {
           "name": "Señor de la lividez",
@@ -695,7 +695,7 @@
         "monsterType": ["Monstruo", "Humano", "Sectario"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT9.jpg",
         "translations": {
         "es": {
           "name": "Declan Pearce",
@@ -708,7 +708,7 @@
         "monsterType": ["Monstruo", "Humano", "Subyugado"],
         "expansion" : "AHWaves",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT16.jpg",
         "translations": {
         "es": {
           "name": "Prisionero del hielo",
@@ -721,10 +721,10 @@
         "monsterType": ["Monstruo", "Soñador", "Humano"],
         "expansion" : "AHWaves",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT5.jpg",
         "translations": {
         "es": {
-          "name": "Sonanbulo maldito",
+          "name": "Sonánbulo maldito",
           "monsterType": ["Monstruo", "Soñador", "Humano"]
         }
       }
@@ -734,7 +734,7 @@
         "monsterType": ["Monstruo", "Shantak", "Servidor"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT4.jpg",
         "translations": {
         "es": {
           "name": "Sombra pavorosa",
@@ -747,7 +747,7 @@
         "monsterType": ["Monstruo", "Soñador", "Humano"],
         "expansion" : "AHWaves",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT10.jpg",
         "translations": {
         "es": {
           "name": "Soñador colérico",
@@ -760,7 +760,7 @@
         "monsterType": ["Monstruo", "Semilla estelar"],
         "expansion" : "AHWaves",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoMT12.jpg",
         "translations": {
         "es": {
           "name": "Cantor supremo de R´lyeh",
@@ -774,7 +774,7 @@
         "monsterType": ["Monstruo", "Profundo"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC6.jpg",
         "translations": {
         "es": {
           "name": "Acechador veleidoso",
@@ -787,7 +787,7 @@
         "monsterType": ["Monstruo", "Mi-go"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC5.jpg",
         "translations": {
         "es": {
           "name": "Estractor de cerebros",
@@ -800,7 +800,7 @@
         "monsterType": ["Monstruo", "Mi-go"],
         "expansion" : "AHNigth",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC1.jpg",
         "translations": {
         "es": {
           "name": "Hongo Ladron",
@@ -813,10 +813,10 @@
         "monsterType": ["Monstruo", "Semilla informe"],
         "expansion" : "AHNigth",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC2.jpg",
         "translations": {
         "es": {
-          "name": "Masa tremula",
+          "name": "Masa trémula",
           "monsterType": ["Monstruo", "Semilla informe"]
         }
       }
@@ -826,7 +826,7 @@
         "monsterType": ["Monstruo", "Aberración"],
         "expansion" : "AHNigth",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC3.jpg",
         "translations": {
         "es": {
           "name": "Reptante",
@@ -839,10 +839,10 @@
         "monsterType": ["Monstruo", "Semilla informe"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC4.jpg",
         "translations": {
         "es": {
-          "name": "Terror morfico",
+          "name": "Terror mórfico",
           "monsterType": ["Monstruo", "Semilla informe"]
         }
       }
@@ -852,7 +852,7 @@
         "monsterType": ["Monstruo", "Humano", "Sheldon"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC14.jpg",
         "translations": {
         "es": {
           "name": "Alborotador locuaz",
@@ -865,10 +865,10 @@
         "monsterType": ["Monstruo", "Humano", "O'Bannion"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC9.jpg",
         "translations": {
         "es": {
-          "name": "Camorrista bravucon",
+          "name": "Camorrista bravucón",
           "monsterType": ["Monstruo", "Humano", "O'Bannion"]
         }
       }
@@ -878,7 +878,7 @@
         "monsterType": ["Monstruo", "Humano", "Muchedumbre"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC10.jpg",
         "translations": {
         "es": {
           "name": "Turba de linchamiento",
@@ -891,7 +891,7 @@
         "monsterType": ["Monstruo", "Humano", "O'Bannion"],
         "expansion" : "AHNigth",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC7.jpg",
         "translations": {
         "es": {
           "name": "Sicarios",
@@ -904,10 +904,10 @@
         "monsterType": ["Monstruo", "Humano", "Sheldon"],
         "expansion" : "AHNigth",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC8.jpg",
         "translations": {
         "es": {
-          "name": "Esbirrios Brutales",
+          "name": "Esbirros Brutales",
           "monsterType": ["Monstruo", "Humano", "Sheldon"]
         }
       }
@@ -917,7 +917,7 @@
         "monsterType": ["Monstruo", "O'Bannion", "Servidor"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC11.jpg",
         "translations": {
         "es": {
           "name": "Siobhan Riley",
@@ -930,7 +930,7 @@
         "monsterType": ["Monstruo", "Humano", "O'Bannion"],
         "expansion" : "AHNigth",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC12.jpg",
         "translations": {
         "es": {
           "name": "Brazo Ejecutor",
@@ -939,14 +939,14 @@
       }
     },
     {"id": 72,
-        "name": "Corbel Bouchard",
+        "name": "Corben Bouchard",
         "monsterType": ["Monstruo", "Sheldon", "Servidor"],
         "expansion" : "AHNigth",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC13.jpg",
         "translations": {
         "es": {
-          "name": "Corbel Bouchard",
+          "name": "Corben Bouchard",
           "monsterType": ["Monstruo", "Sheldon", "Servidor"]
         }
       }
@@ -956,7 +956,7 @@
         "monsterType": ["Monstruo", "Humano", "Sheldon"],
         "expansion" : "AHNigth",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoNC15.jpg",
         "translations": {
         "es": {
           "name": "Traficante agresivo",
@@ -970,10 +970,10 @@
         "monsterType": ["Monstruo", "Gul"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO3.jpg",
         "translations": {
         "es": {
-          "name": "Titan Sangriento",
+          "name": "Titán Sangriento",
           "monsterType": ["Monstruo", "Gul"]
         }
       }
@@ -983,7 +983,7 @@
         "monsterType": ["Monstruo", "Perro de Tíndalos"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO1.jpg",
         "translations": {
         "es": {
           "name": "Perro perseguidor",
@@ -996,7 +996,7 @@
         "monsterType": ["Monstruo", "Ghast"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO6.jpg",
         "translations": {
         "es": {
           "name": "Ser enloquecido",
@@ -1009,10 +1009,10 @@
         "monsterType": ["Monstruo", "Gul"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO5.jpg",
         "translations": {
         "es": {
-          "name": "Gigante avido",
+          "name": "Gigante ávido",
           "monsterType": ["Monstruo", "Gul"]
         }
       }
@@ -1022,7 +1022,7 @@
         "monsterType": ["Monstruo", "Espíritu", "Iracundo"],
         "expansion" : "AHSecrets",
         "quantity": 3,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO9.jpg",
         "translations": {
         "es": {
           "name": "Poltergeist enfurecido",
@@ -1035,7 +1035,7 @@
         "monsterType": ["Monstruo", "Espíritu", "Hostil"],
         "expansion" : "AHSecrets",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO7.jpg",
         "translations": {
         "es": {
           "name": "Alma en pena acechante",
@@ -1048,7 +1048,7 @@
         "monsterType": ["Monstruo", "Aberración"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO2.jpg",
         "translations": {
         "es": {
           "name": "Dhole tunelador",
@@ -1061,10 +1061,10 @@
         "monsterType": ["Monstruo", "Ghast"],
         "expansion" : "AHSecrets",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO11.jpg",
         "translations": {
         "es": {
-          "name": "Canibal con garras",
+          "name": "Caníbal con garras",
           "monsterType": ["Monstruo", "Ghast"]
         }
       }
@@ -1074,7 +1074,7 @@
         "monsterType": ["Monstruo", "Espíritu", "Afligido"],
         "expansion" : "AHSecrets",
         "quantity": 3,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO8.jpg",
         "translations": {
         "es": {
           "name": "Espectro difunto",
@@ -1087,7 +1087,7 @@
         "monsterType": ["Monstruo", "Logia", "Humano"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO10.jpg",
         "translations": {
         "es": {
           "name": "Vidente de la Logia",
@@ -1100,7 +1100,7 @@
         "monsterType": ["Monstruo", "Logia", "Humano"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO12.jpg",
         "translations": {
         "es": {
           "name": "Guardian de la Logia",
@@ -1113,7 +1113,7 @@
         "monsterType": ["Monstruo", "Logia", "Humano"],
         "expansion" : "AHSecrets",
         "quantity": 1,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO13.jpg",
         "translations": {
         "es": {
           "name": "Centinela del crepusculo",
@@ -1126,7 +1126,7 @@
         "monsterType": ["Monstruo", "Gul"],
         "expansion" : "AHSecrets",
         "quantity": 2,
-        "img": "/img/__",
+        "img": "/img/4-enemigos/enemigoSO4.jpg",
         "translations": {
         "es": {
           "name": "Mole amenazante",

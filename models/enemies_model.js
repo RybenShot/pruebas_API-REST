@@ -37,7 +37,7 @@ export class EnemiesModel{
         return result
     }
 
-    // retornamos un mapa por su id
+    // retornamos un enemigo por su id
     static async getByID ({id}){
         const enemy = enemiesListJSON.find(enemy => enemy.id == id);
         return enemy

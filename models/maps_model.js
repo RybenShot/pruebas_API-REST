@@ -1,6 +1,7 @@
 import mapsListJSON from '../databaseJSON/mapas.json' with { type: "json" }
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
+import { EnemiesModel } from "./enemies_model.js";
 
 
 export class MapModel{
@@ -18,6 +19,46 @@ export class MapModel{
         }
         // si no se ha pasado expansion, devolvemos todos los mapas
         return  
+    }
+
+    // retornamos todos los enemigos de un mapa
+    static async getAllEnemies({id}){
+        // buscamos el mapa por su id
+        const map = mapsListJSON.find(map => map.idMap == id)
+        // si no existe el mapa, devolvemos vacio
+        if (!map) return []
+
+        // destructuring, capturamos lo que haya en enemies, specialEnemies y texto, pero si no existiera estas partes le ponemos valores por defecto para prevenir errores
+        const { enemies = [], specialEnemies = [], textSpecialEnemies = "" } = map
+        let EStextSpecialEnemies = map.translations.es.textSpecialEnemies
+        
+        // es como escribir algo asi:
+        /* 
+            let enemies = map.enemies
+            if (enemies === undefined) enemies = []
+
+            let specialEnemies = map.specialEnemies
+            if (specialEnemies === undefined) specialEnemies = []
+
+            let textSpecialEnemies = map.textSpecialEnemies
+            if (textSpecialEnemies === undefined) textSpecialEnemies = ""
+        */
+
+
+        // cogemos la lista de enemigos y la lista de enemigos especiales
+        const enemiesList = await Promise.all(
+            enemies.map(id => EnemiesModel.getByID({ id }))
+        )
+        const specialEnemiesList = await Promise.all(
+            specialEnemies.map(id => EnemiesModel.getByID({ id }))
+        )
+
+        return {
+            enemies: enemiesList.filter(Boolean), // por si algún ID no existe
+            specialEnemies: specialEnemiesList.filter(Boolean),
+            textSpecialEnemies,
+            EStextSpecialEnemies
+        }
     }
 
     // retornamos un mapa por su id

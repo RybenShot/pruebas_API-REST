@@ -2,12 +2,15 @@ import { Router } from "express";
 import { MapsController } from "../controllers/maps_controller.js";
 
 const mapsRouter = Router()
+// PEDIMOS todos los mapas o filtramos por expansion
+mapsRouter.get('/', MapsController.getAll)
 
 // Listamos todos los previewMapas
 mapsRouter.get('/previewMap', MapsController.getPreviewMap)
 
-// PEDIMOS todos los mapas o filtramos por expansion
-mapsRouter.get('/', MapsController.getAll)
+// BUSCAMOS los enemigos del mapa
+mapsRouter.get('/enemies/:id',  MapsController.getAllEnemies)
+
 // BUSCAMOS un mapa por la ID
 mapsRouter.get('/:id',  MapsController.getById)
 

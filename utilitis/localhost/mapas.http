@@ -8,7 +8,7 @@ GET http://localhost:1234/maps/previewMap
 GET http://localhost:1234/maps?expansion=AHBase
 
 ### Recuperar un mapa por la id
-GET http://localhost:1234/maps/10
+GET http://localhost:1234/maps/0
 
 ### Crear un nuevo mapa
 POST http://localhost:1234/maps
@@ -44,6 +44,9 @@ Content-Type:application/json
 
 ### Listar todos los enemigos
 GET http://localhost:1234/enemies
+
+### Listar todos los enemigos DE UN MAPA CONCRETO
+GET http://localhost:1234/maps/enemies/5
 
 ### Listar todos los enemigos por expansion
 GET http://localhost:1234/enemies?expansion=AHWaves
