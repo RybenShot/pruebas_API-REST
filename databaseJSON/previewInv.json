@@ -1,0 +1,1033 @@
+[
+    {"idInv": 0,
+      "isActive": true,
+      "name": "Tommy Muldoon",
+      "position": "Rookie cop",
+      "rol": ["defender", "survivor"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Tommy Muldoon",
+          "position": "Poli Novato"
+        }
+      }
+    },
+    {"idInv": 1,
+      "isActive": true,
+      "name": "Marie Lambeau",
+      "position": "Cantante",
+      "rol": ["mystic", "survivor"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Marie Lambeau",
+          "position": "Singer"
+        }
+      }
+    },
+    {"idInv": 2,
+      "isActive": true,
+      "name": "Jenny Barnes",
+      "position": "Dilettante",
+      "rol": ["rogue"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Jenny Barnes",
+          "position": "Diletante"
+        }
+      }
+    },
+    {"idInv": 3,
+      "isActive": true,
+      "name": "Dexter Drake",
+      "position": "Witch",
+      "rol": ["mystic"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Dexter Drake",
+          "position": "Mago"
+        }
+      }
+    },
+    {"idInv": 4,
+      "isActive": true,
+      "name": "Wendy Adams",
+      "position": "Street girl",
+      "rol": ["survivor", "seeker"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Wendy Adams",
+          "position": "Niña callejera"
+        }
+      }
+    },
+    {"idInv": 5,
+      "isActive": true,
+      "name": "Rex Murphy",
+      "position": "Reporter",
+      "rol": ["seeker", "rogue"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 7,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Rex Murphy",
+          "position": "Reportero"
+        }
+      }
+    },
+    {"idInv": 6,
+      "isActive": true,
+      "name": "Calvin Wrigth",
+      "position": "Tormented men",
+      "rol": ["defender", "rogue"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Calvin Wrigth",
+          "position": "Tipo atormentado"
+        }
+      }
+    },
+    {"idInv": 7,
+      "isActive": true,
+      "name": "Agnes Baker",
+      "position": "Waitress",
+      "rol": ["mystic", "defender"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Agnes Baker",
+          "position": "Camarera"
+        }
+      }
+    },
+    {"idInv": 8,
+      "isActive": true,
+      "name": "Michael McGlen",
+      "position": "Gangster",
+      "rol": ["rogue", "defender"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 8,
+        "sanity": 4
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Michael McGlen",
+          "position": "Mafioso"
+        }
+      }
+    },
+    {"idInv": 9,
+      "isActive": true,
+      "name": "Daniela Reyes",
+      "position": "Mechanical",
+      "rol": ["rogue", "survivor"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Daniela Reyes",
+          "position": "Mecánica"
+        }
+      }
+    },
+    {"idInv": 10,
+      "isActive": true,
+      "name": "Norman Withers",
+      "position": "Astronomer",
+      "rol": ["seeker", "mystic"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Norman Withers",
+          "position": "Astrónomo"
+        }
+      }
+    },
+    {"idInv": 11,
+      "isActive": true,
+      "name": "Minh Thi Phan",
+      "position": "Secretary",
+      "rol": ["seeker", "survivor"],
+      "expansion": "AHBase",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Minh Thi Phan",
+          "position": "Secretaria"
+        }
+      }
+    },
+
+    {"idInv": 12,
+      "isActive": true,
+      "name": "Silas Marsh",
+      "position": "Sailor",
+      "rol": ["survivor", "rogue"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 8,
+        "sanity": 4
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Silas Marsh",
+          "position": "Marinero"
+        }
+      }
+    },
+    {"idInv": 13,
+      "isActive": true,
+      "name": "Charlie Kane",
+      "position": "Political",
+      "rol": ["rogue", "seeker"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 4,
+        "sanity": 8
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Charlie Kane",
+          "position": "Político"
+        }
+      }
+    },
+    {"idInv": 14,
+      "isActive": true,
+      "name": "Stella Clark",
+      "position": "Portfolio",
+      "rol": ["survivor"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Stella Clark",
+          "position": "Cartera"
+        }
+      }
+    },
+    {"idInv": 15,
+      "isActive": true,
+      "name": "Zoey Samaras",
+      "position": "Chef",
+      "rol": ["defender", "mystic"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Zoey Samaras",
+          "position": "Cocinera"
+        }
+      }
+    },
+    {"idInv": 16,
+      "isActive": true,
+      "name": "Padre Mateo",
+      "position": "Priest",
+      "rol": ["mystic", "defender"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Padre Mateo",
+          "position": "Sacerdote"
+        }
+      }
+    },
+    {"idInv": 17,
+      "isActive": true,
+      "name": "Patricie Hathaway",
+      "position": "Violinist",
+      "rol": ["mystic", "seeker"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Patricie Hathaway",
+          "position": "Violinista"
+        }
+      }
+    },
+    {"idInv": 18,
+      "isActive": true,
+      "name": "Carson Sinclair",
+      "position": "Butler",
+      "rol": ["seeker", "survivor"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Carson Sinclair",
+          "position": "Mayordomo"
+        }
+      }
+    },
+    {"idInv": 19,
+      "isActive": true,
+      "name": "Trashcan Pete",
+      "position": "Tramp",
+      "rol": ["survivor"],
+      "expansion": "AHWaves",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Pete Cubo de Basura",
+          "position": "Vagabundo"
+        }
+      }
+    },
+
+    {"idInv": 20,
+      "isActive": true,
+      "name": "Roland Banks",
+      "position": "Federal Agent",
+      "rol": ["defender", "seeker"],
+      "expansion": "AHNigth",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Roland Banks",
+          "position": "Agente federal"
+        }
+      }
+    },
+    {"idInv": 21,
+      "isActive": true,
+      "name": "Kate Winthrop",
+      "position": "Scientific",
+      "rol": ["seeker"],
+      "expansion": "AHNigth",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Kate Winthrop",
+          "position": "Cientifica"
+        }
+      }
+    },
+    {"idInv": 22,
+      "isActive": true,
+      "name": "Diana Stanley",
+      "position": "Redeemed Cultist",
+      "rol": ["mystic", "defender"],
+      "expansion": "AHNigth",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Diana Stanley",
+          "position": "Sectaria redimida"
+        }
+      }
+    },
+    {"idInv": 23,
+      "isActive": true,
+      "name": "“Malasombra” O'Toole",
+      "position": "Ex-Convict",
+      "rol": ["rogue", "survivor"],
+      "expansion": "AHNigth",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "“Malasombra” O'Toole",
+          "position": "Ex presidiario"
+        }
+      }
+    },
+
+    {"idInv": 24,
+      "isActive": true,
+      "name": "Mark Harrigan",
+      "position": "The Soldier",
+      "rol": ["defender"],
+      "expansion": "AHSecrets",
+      "baseData":{
+        "life": 8,
+        "sanity": 4
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Mark Harrigan",
+          "position": "El soldado"
+        }
+      }
+    },
+    {"idInv": 25,
+      "isActive": true,
+      "name": "Preston Fairmont",
+      "position": "The Millionaire",
+      "rol": ["rogue", "survivor"],
+      "expansion": "AHSecrets",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Preston Fairmont",
+          "position": "El millonario"
+        }
+      }
+    },
+    {"idInv": 26,
+      "isActive": true,
+      "name": "Agatha Crane",
+      "position": "The Parapsychologist",
+      "rol": ["seeker", "mystic"],
+      "expansion": "AHSecrets",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Agatha Crane",
+          "position": "La parapsicóloga"
+        }
+      }
+    },
+    {"idInv": 27,
+      "isActive": true,
+      "name": "Winifred Habbamock",
+      "position": "The Aviator",
+      "rol": ["rogue"],
+      "expansion": "AHSecrets",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Winifred Habbamock",
+          "position": "La aviadora"
+        }
+      }
+    },
+
+    {"idInv": 28,
+      "isActive": true,
+      "name": "Darrell Simmons",
+      "position": "Photographer",
+      "rol": ["seeker", "survivor"],
+      "expansion": "AHOriginal",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Darrell Simmons",
+          "position": "Fotógrafo"
+        }
+      }
+    },
+    {"idInv": 29,
+      "isActive": true,
+      "name": "Gloria Goldberg",
+      "position": "Writer",
+      "rol": ["mystic", "seeker"],
+      "expansion": "AHOriginal",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Gloria Goldberg",
+          "position": "Escritora"
+        }
+      }
+    },
+    {"idInv": 30,
+      "isActive": true,
+      "name": "Mandy Thompson",
+      "position": "Investigator",
+      "rol": ["survivor", "seeker"],
+      "expansion": "AHOriginal",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Mandy Thompson",
+          "position": "Investigadora"
+        }
+      }
+    },
+    {"idInv": 31,
+      "isActive": true,
+      "name": "Montarrey Jack",
+      "position": "Archeologist",
+      "rol": ["survivor"],
+      "expansion": "AHOriginal",
+      "baseData":{
+        "life": 4,
+        "sanity": 8
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Montarrey Jack",
+          "position": "Arqueologo"
+        }
+      }
+    },
+
+    {"idInv": 32,
+      "isActive": true,
+      "name": "Carolyn Fern",
+      "position": "The Psychologist",
+      "rol": ["guardian", "mystic"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Carolyn Fern",
+          "position": "La psicologa"
+        }
+      }
+    },
+    {"idInv": 33,
+      "isActive": true,
+      "name": "Bob Jenkins",
+      "position": "The salesman",
+      "rol": ["guardian", "rogue"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Bob Jenkins",
+          "position": "El vendedor"
+        }
+      }
+    },
+    {"idInv": 34,
+      "isActive": true,
+      "name": "Amanda Sharpe",
+      "position": "The student",
+      "rol": ["survivor", "seeker"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Amanda Sharpe",
+          "position": "La estudiante"
+        }
+      }
+    },
+    {"idInv": 35,
+      "isActive": true,
+      "name": "Hank Sampson",
+      "position": "The farmhand",
+      "rol": ["guardian", "survivor"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 8,
+        "sanity": 3
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Hank Sampson",
+          "position": "El granjero"
+        }
+      }
+    },
+    {"idInv": 36,
+      "isActive": true,
+      "name": "Daisy Walker",
+      "position": "The librarian",
+      "rol": ["mystic"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Daisy Walker",
+          "position": "La bibliotecaria"
+        }
+      }
+    },
+    {"idInv": 37,
+      "isActive": true,
+      "name": "Finn Edwards",
+      "position": "The bootlegger",
+      "rol": ["survivor", "rogue"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Finn Edwards",
+          "position": "El contrabandista"
+        }
+      }
+    },
+    {"idInv": 38,
+      "isActive": true,
+      "name": "Jacqueline Fine",
+      "position": "The psychic",
+      "rol": ["rogue", "mystic"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 4,
+        "sanity": 8
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Jacqueline Fine",
+          "position": "La psíquica"
+        }
+      }
+    },
+    {"idInv": 39,
+      "isActive": true,
+      "name": "Harvey Walters",
+      "position": "The professor",
+      "rol": ["seeker", "mystic"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 4,
+        "sanity": 8
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Harvey Walters",
+          "position": "El profesor"
+        }
+      }
+    },
+    {"idInv": 40,
+      "isActive": true,
+      "name": "Joe Diamond",
+      "position": "The private eye",
+      "rol": ["seeker", "guardian"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Joe Diamond",
+          "position": "El detective privado"
+        }
+      }
+    },
+    {"idInv": 41,
+      "isActive": true,
+      "name": "Jim Culver",
+      "position": "The musician",
+      "rol": ["rogue", "mystic"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Jim Culver",
+          "position": "El músico"
+        }
+      }
+    },
+    {"idInv": 42,
+      "isActive": true,
+      "name": "Lola Hayes",
+      "position": "The actress",
+      "rol": ["rogue"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Lola Hayes",
+          "position": "La actriz"
+        }
+      }
+    },
+    {"idInv": 43,
+      "isActive": true,
+      "name": "Leo Anderson",
+      "position": "The expedition Leader",
+      "rol": ["survivor", "guardian"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Leo Anderson",
+          "position": "Lider de expedición"
+        }
+      }
+    },
+    {"idInv": 44,
+      "isActive": true,
+      "name": "Luke Robinson",
+      "position": "The dreamer",
+      "rol": ["mystic", "survivor"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 4,
+        "sanity": 8
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Luke Robinson",
+          "position": "El soñador"
+        }
+      }
+    },
+    {"idInv": 45,
+      "isActive": true,
+      "name": "Lilly Chen",
+      "position": "The Martial Artist",
+      "rol": ["guardian"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Lilly Chen",
+          "position": "La artista marcial"
+        }
+      }
+    },
+    {"idInv": 46,
+      "isActive": true,
+      "name": "Sefina Rosseau",
+      "position": "The painter",
+      "rol": ["rogue"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Sefina Rosseau",
+          "position": "La pintora"
+        }
+      }
+    },
+    {"idInv": 47,
+      "isActive": true,
+      "name": "Sister Mary",
+      "position": "The nun",
+      "rol": ["guardian", "survivor"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Hermana Mary",
+          "position": "La monja"
+        }
+      }
+    },
+    {"idInv": 48,
+      "isActive": true,
+      "name": "Mandy thompson",
+      "position": "The researcher",
+      "rol": ["mystic", "seeker"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 5,
+        "sanity": 7
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Mandy thompson",
+          "position": "La investigadora"
+        }
+      }
+    },
+    {"idInv": 49,
+      "isActive": true,
+      "name": "Tony Morgan",
+      "position": "The Bounty Hunter",
+      "rol": ["seeker", "guardian"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Tony Morgan",
+          "position": "El cazarrecompensas"
+        }
+      }
+    },
+    {"idInv": 50,
+      "isActive": true,
+      "name": "Ursula Downs",
+      "position": "The Explorer",
+      "rol": ["seeker", "rogue"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Ursula Downs",
+          "position": "La exploradora"
+        }
+      }
+    },
+    {"idInv": 51,
+      "isActive": true,
+      "name": "Vincent Lee",
+      "position": "The doctor",
+      "rol": ["guardian", "survivor"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Vincent Lee",
+          "position": "El doctor"
+        }
+      }
+    },
+    {"idInv": 52,
+      "isActive": true,
+      "name": "Trish Scarborough",
+      "position": "The spy",
+      "rol": ["rogue", "seeker"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Trish Scarborough",
+          "position": "La espía"
+        }
+      }
+    },
+    {"idInv": 53,
+      "isActive": true,
+      "name": "William Yorick",
+      "position": "The grave digger",
+      "rol": ["rogue", "guardian"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 7,
+        "sanity": 5
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "William Yorick",
+          "position": "El sepulturero"
+        }
+      }
+    },
+    {"idInv": 54,
+      "isActive": true,
+      "name": "Nodens",
+      "position": "The protector",
+      "rol": ["mystic"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 4,
+        "sanity": 8
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Nodens",
+          "position": "El protector"
+        }
+      }
+    },
+    {"idInv": 55,
+      "isActive": true,
+      "name": "Duke",
+      "position": "The good boy",
+      "rol": ["guardian", "seeker"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Duke",
+          "position": "El buen chico"
+        }
+      }
+    },
+    {"idInv": 56,
+      "isActive": true,
+      "name": "Nameless Soul",
+      "position": "The revenant",
+      "rol": ["survivor", "mystic"],
+      "expansion": "AH-BGG",
+      "baseData":{
+        "life": 0,
+        "sanity": 0
+      },
+      "imgInv": "/img/1-inv/___.jpg",
+      "translations": {
+        "es": {
+          "name": "Alma sin nombre",
+          "position": "El resucitado"
+        }
+      }
+    }
+]

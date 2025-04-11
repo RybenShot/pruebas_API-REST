@@ -32,3 +32,9 @@ Content-Type:application/json
 {
   "posicion": "el gran reportero de Arkham"
 }
+
+### Recuperar toda la lista de preview investigadores
+GET http://localhost:1234/inv/previewList
+
+### Recuperar un investigador por su arquetipo
+GET http://localhost:1234/inv/previewList?rol=rogue

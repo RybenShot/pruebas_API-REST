@@ -13,6 +13,16 @@ export class InvController {
         res.json(inv)
     }
 
+    static async getAllPreview(req, res){
+        // capturamos el rol por la url
+        const { rol } = req.query
+
+        //llamamos al modelo para que nos devuelva el preview de los investigadores segun el rol pasado
+        const previewInv = await InvModel.getAllPreview({ rol })
+
+        res.json(previewInv)
+    }
+
     static async getById (req, res) {
         // capturamos la id pasada por URL
         const { id } = req.params

@@ -1,4 +1,5 @@
 import invListJSON from '../databaseJSON/investigadores.json' with { type: "json" }
+import previewInvListJSON from '../databaseJSON/previewInv.json' with { type: "json" }
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
 
@@ -18,6 +19,19 @@ export class InvModel{
         }
         // si no se ha pasado arquetipo, devolvemos todos los investigadores
         return invListJSON
+    }
+
+    static async getAllPreview({ rol }){
+        if (rol) {
+            const filterRol = previewInvListJSON.filter (
+                
+                previewInv => previewInv.rol.some(
+                    tipo => tipo.toLowerCase() === rol.toLowerCase()
+                )
+            )
+            return filterRol
+        }
+        return previewInvListJSON
     }
 
     static async getByID ({id}){
