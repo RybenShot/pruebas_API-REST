@@ -22,8 +22,9 @@ export class InvModel{
     }
 
     static async getAllPreview({ rol }){
+        const activos = previewInvListJSON.filter(inv => inv.isActive);
         if (rol) {
-            const filterRol = previewInvListJSON.filter (
+            const filterRol = activos.filter (
                 
                 previewInv => previewInv.rol.some(
                     tipo => tipo.toLowerCase() === rol.toLowerCase()
@@ -31,7 +32,7 @@ export class InvModel{
             )
             return filterRol
         }
-        return previewInvListJSON
+        return activos
     }
 
     static async getByID ({id}){

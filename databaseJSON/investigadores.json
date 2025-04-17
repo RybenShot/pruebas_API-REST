@@ -1,101 +1,2836 @@
 [
-  {
-    "nombrePJ": "Tommy Muldoon",
-    "id": 1,
-    "posicion": "Poli Novato",
-    "ENposicion": "Rookie cop",
-    "vida": 7,
-    "arquetipos": [
-      "defensor",
-      "superviviente"
-    ]
+  {"idInv": 0,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Tommy Muldoon",
+    "position": "Rookie cop",
+    "effect1": "Protector: If a Monster is going to face another researcher in your space, you can face that Monster instead.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'Come on, Tommy. It’s time to become a hero.'",
+    "theStory": "The Muldoons had served in the police force for generations, and Tommy was no less. He was the pride of his family when he graduated from the Boston Academy. That’s why it wasn’t very funny to be transferred to the Arkham police station; after all, what could happen in that small town compared to the crimes I would have been able to solve in Boston? It turned out that police work in Arkham was not without interest after all. There were many unexplained events, and the local police seemed more interested in appearing normal than in finding a solution. So Tommy reached for Becky, his grandfather’s rifle, and set out to find solutions on his own ...",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/1-Tommy.jpg",
+    "atributes":{
+      "life": 7,
+      "sanity": 5,
+      "lore": 2,
+      "influence": 2,
+      "observation": 3,
+      "strength": 2,
+      "will": 3,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "guardian",
+        "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
+      },
+      {
+        "rol": "survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory. "
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Becky"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Esposas"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Motocicleta"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Tommy Muldoon",
+        "position": "Poli Novato",
+        "effect1": "Protector: Si un Monstruo va a enfrentarse a otro investigador en tu espacio, puedes enfrentarte tú a ese Monstruo en su lugar.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Vamos alla, Tommy. Es hora de hacerse el Heroe'",
+        "theStory": "Los Muldoon habían servido en el cuerpo de policía durante generaciones, y Tommy no iba a ser menos. Fue el orgullo de su familia cuando se graduó en la academia de Boston. Por eso no hizo mucha gracia que lo trasladasen a la comisaría de Arkham; después de todo ¿qué podía ocurrir en aquel pueblucho comparado con los crímenes que habría sido capaz de resolver en Boston? Al final resultó que el trabajo policial en Arkham no estaba exento de interés, después de todo. Había muchos sucesos inexplicables, y la policía local parecía más interesada en aparentar normalidad que en buscar una solución. Así que Tommy echó mano a Becky, el rifle de su abuelo, y se dispuso a buscar soluciones por su cuenta ...",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "___",
+            "description": "___"
+          },
+          {
+            "rol": "___",
+            "description": "___"
+          }
+        ]
+      }
+    }
   },
-  {
-    "nombrePJ": "Rex Murphy",
-    "id": 2,
-    "posicion": "el gran reportero de Arkham",
-    "ENposicion": "Rookie cop",
-    "vida": 3,
-    "arquetipos": [
-      "superviviente",
-      "experto"
-    ]
+  {"idInv": 1,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Marie Lambeau",
+    "position": "Singer",
+    "effect1": "Velvety Voice: Once per round, after you perform an action, another researcher who is in any space can perform the same action.(The usual restrictions on actions continue to apply.)",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'Pay attention and let my voice charm you'",
+    "theStory": "Marie did not know why her grand-mère had gone to Arkham, but surely the old woman would have her reasons. He did not know why the rest of his family had stayed away from that city, even after his grand-mère passed away. 'You should go visit her,' her father said. 'I’m sure you make her happy'.  As if the old lady wasn’t dead and buried. Marie got her hired to perform at a local in Arkham, something trivial for the VELVETY VOICE of jazz. And he tried not to think of the songs that invaded his dreams, nor of his terrible inhuman tones, nor of that horrifying gentleman, so similar to Baron Samedi himself, who was always in the audience when he acted ...",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/2-Marie.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 4,
+      "observation": 2,
+      "strength": 2,
+      "will": 2,
+      "money": 4,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You contribute the best defensive option against the Primitives."
+      },
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Intervention"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "The knife of grande-mère"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Sangre de bruja"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Marie Lambeau",
+        "position": "Cantante",
+        "effect1": "Voz Aterciopelada: Una vez por ronda, después de que realices una acción, otro investigador que esté en cualquier espacio puede realizar esa misma acción.(Se siguen aplicando las restricciones habituales a las acciones.)",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Presta atención y déjate encandilar por mi voz'",
+        "theStory": "Marie ignoraba por qué su grand-mère se había marchado a Arkham, pero sin duda la anciana tendría sus motivos. No sabía por qué el resto de su familia se había mantenido lejos de aquella ciudad, aún después de que su grand-mère falleciese. 'Deberías ir a visitarla', le dijo su padre. 'Seguro que le das una alegría'.  Como si la anciana no estuviese muerta y enterrada. Marie consiguió que la contratasen para actuar en un local de Arkham, Algo trivial para la VOZ ATERCIOPELADA del jazz. Y procuró no pensar en las canciones que invadían sus sueños, ni en sus terribles tonos inhumanos, ni en aquel horripilante caballero, tan parecido al mismísimo barón Samedi, que siempre estaba entre el público cuando actuaba ...",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Contribuyes la mejor opción defensiva contra los Primigenios."
+          },
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
   },
-  {
-    "nombrePJ": "Agatha",
-    "id": 4,
-    "posicion": "Poli Novato",
-    "ENposicion": "Rookie cop",
-    "vida": 7,
-    "arquetipos": [
-      "mistica",
-      "buscador"
-    ]
+  {"idInv": 2,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Jenny Barnes",
+    "position": "Dilettante",
+    "effect1": "Trust Fund -- Action: If you have less than $3, you earn $3",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'I don’t mind solving problems with a checkbook; and if that doesn’t work, I’ll hit them with something else'",
+    "theStory": "Although passionate about luxury and money, Jenny has always had a curious and adventurous streak. He loves the fashion and high society of Paris and Venice, but moves with the same ease hunting in the fields of Scotland playing in the clubs of New Orleans. She even financed an archaeological excavation for the mere fact of being the first to enter that ancient tomb. So, when she learned that her sister Isabelle had disappeared, Jenny traveled to Arkham to take matters into her own hands. Maybe living in the midst of such opulence and power would have made her too confident ... or maybe the thugs who kidnapped her sister had made their last mistake.",
+    "focusLimit": 1,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/3-Jenny.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 5,
+      "lore": 1,
+      "influence": 4,
+      "observation": 2,
+      "strength": 3,
+      "will": 3,
+      "money": 5,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Expert",
+        "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Jenny has no qualms about solving her problems with Money; don’t hesitate to spend it when it suits you."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Looking for Izzie"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": ".45 twins of Jenny"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "To the nines"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Jenny Barnes",
+        "position": "Diletante",
+        "effect1": "Fondo fiduciario -- Acción: Si tienes menos de 3$, ganas 3$",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'No me importa solucionar problemas a golpe de talonario; y si eso no funciona, ya los golpearé con alguna otra cosa'",
+        "theStory": "Aunque le apasionaban los lujos y el dinero, Jenny siempre ha tenido una vena curiosa y aventurera. Adora la moda y la alta sociedad de París y Venecia, pero se mueve con la misma soltura cazando en los campos de Escocia que juega en los clubes de Nueva Orleans. Incluso financió una excavación arqueológica por el mero hecho de ser la primera en entrar en aquella tumba antigua. Por eso, cuando se enteró de que su hermana Isabelle había desaparecido, Jenny viajó a Arkham para tomar cartas en el asunto personalmente. Puede que vivir en medio de tanta opulencia y poder la hubiese vuelto demasiado confiada ... o tal vez los rufianes que secuestraron a su hermana habían cometido su último error.",
+        "focusLimit": 1,
+        "locutionURL": "A3eG_3SDUTA",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Jenny no tiene ningún reparo a la hora de solventar sus problemas con Dinero; no dudes en gastarlo cuando te venga bien."
+          }
+        ]
+      }
+    }
   },
-  {
-    "id": "f06154e3-5b23-43c0-97d7-c4ddd0dd9f42",
-    "nombrePJ": "Sebastian",
-    "posicion": "Programador",
-    "ENposicion": "programmer",
-    "vida": 7,
-    "arquetipos": [
-      "defensor",
-      "superviviente"
-    ]
+  {"idInv": 3,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Dexter Drake",
+    "position": "Witch",
+    "effect1": "Gift for magic -- Once per round, when you are solving a SABER test, you can throw one or all of the dice again",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'You don’t want to see the real magic, kid. No one should ever see it.'",
+    "theStory": "Magic, specifically illusionism, was the main hobby of Dexter Drake in his childhood and during the Great War. As a child he dreamed of authentic sorcery, but he never managed to go beyond stealing coins and performing other parlor tricks ... until that old street magician unleashed his curse. That’s how Dexter found out the truth: that real magic existed, and it was more terrible than he ever imagined. And what could he do but study it to the best of his ability? Discovering the trick, the rabbit in the hat, the secret that made everything make sense. But in this case the hat is the reality, and the Big Drake is less and less clear that it is worth revealing his secret.",
+    "focusLimit": "It’s equal to the number of spells you have",
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/4-Dexter.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 4,
+      "influence": 3,
+      "observation": 2,
+      "strength": 2,
+      "will": 2,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Mystic",
+        "description": "As a MYSTIC, you stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You contribute the best defensive option against the Primitives"
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Mists of R'lyeh"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Mage staff"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Astral travel"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Dexter Drake",
+        "position": "Mago",
+        "effect1": "Don para la magia -- Una vez por ronda, cuando estés resolviendo una prueba de SABER, puedes volver a tirar uno o todos los dados",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'No te conviene ver la auténtica magia, chico. Nadie debería verla nunca.'",
+        "theStory": "La magia, concretamente el ilusionismo, fué la principal afición de Dexter Drake en su infancia y durante la Gran Guerra. De pequeño soñaba con la auténtica hechicería, pero nunca logró pasar de escamotear monedas y realizar otros trucos de salón ... hasta que aquél viejo mago callejero desató su maldición. Así fué como Dexter averiguó la verdad: Que existía la magia auténtica, y era más terrible de lo que nunca imaginó. ¿Y qué podía hacer él sino estudiarla en la medida de sus posibilidades? Descubrir el truco, el conejo en la chistera, el secreto que hacía que todo cobrara sentido. Pero en este caso la chistera es la realidad, y el Gran Drake cada vez tiene menos claro que merezca la pena desvelar su secreto.",
+        "focusLimit": "Es igual al número de hechizos que tengas",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Contribuyes la mejor opción defensiva contra los Primigenios."
+          }
+        ]
+      }
+    }
   },
-  {
-    "id": "dcb5fab5-c994-431c-8fb1-5e1e037a0d96",
-    "nombrePJ": "Sebastian",
-    "posicion": "Programador 2",
-    "ENposicion": "programmer",
-    "vida": 7,
-    "arquetipos": [
-      "Defensor",
-      "Superviviente"
-    ]
+  {"idInv": 4,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Wendy Adams",
+    "position": "Street girl",
+    "effect1": "Shortcut -- Before or after you perform an action, additional as part of an evasion action, you can move a maximum of two spaces (this movement is free).",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'Someday I’ll find Dad, and Mom will come home with us and we’ll be happy again. You’ll see.'",
+    "theStory": "After her father disappeared at sea and her mother was admitted to a psychiatric institution, Wendy ended up in an orphanage. She knew her mother was not crazy: the chants she recited, the symbols she scribbled, she did everything to protect her. That’s why I had given her that amulet that had a five-pointed star drawn, but Wendy knew she wasn’t safe in the orphanage without her mother’s protection, so she ran away. One day he found a photograph of his father with a note written in Russian. From behind was a message: 'The Red Tide will rise soon. Be very careful, my little one'. Suddenly, Wendy was overwhelmed by an emotion she hadn’t felt for a long time: hope.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/5-Wendy.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 1,
+      "observation": 4,
+      "strength": 2,
+      "will": 3,
+      "money": 1,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      },
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Mama’s charm"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Mysterious photograph"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Pawterson bear"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Wendy Adams",
+        "position": "Niña callejera",
+        "effect1": "Atajo -- Antes o después de que realices una acción, adicional como parte de una acción de evasión, puedes moverte un máximo de dos espacios (este movimiento es gratuito).",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Algún día encontraré a papá, y mamá vendrá a casa con nosotros y volveremos a ser felices. Ya lo veréis.'",
+        "theStory": "Después de que su padre desapareciese en alta mar y su madre fuese ingresada en un psiquiátrico, Wendy acabó en un orfanato. Ella sabía que su madre no estaba loca: los cánticos que recitaba, los símbolos que garabateaba, todo lo hacía para protegerla. Por eso le había dado aquél amuleto que tenía dibujada una estrella de cinco puntas torcida, pero Wendy sabía que no estaba a salvo en el orfanato sin la protección de su madre, así que se fugó. Un día encontró una fotografía de su padre con una nota escrita en ruso. Por detrás había un mensaje: 'La Marea Roja se alzará pronto. Cuidate mucho, pequeña mia'. De repente, Wendy se sintió embargada por una emoción que no sentía desde hacía mucho tiempo: esperanza.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          },
+          {
+            "rol": "Buscador",
+            "description": "Eres una intrépida sabuesa. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          }
+        ]
+      }
+    }
   },
-  {
-    "id": "0398ea5d-f600-411b-8ff8-598f3cc37da4",
-    "nombrePJ": "Eugenia",
-    "posicion": "Sanitaria",
-    "ENposicion": "healthery",
-    "vida": 7,
-    "arquetipos": [
-      "Defensor",
-      "Explorador"
-    ]
+  {"idInv": 5,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Rex Murphy",
+    "position": "Reporter",
+    "effect1": "Family Curse -- When you are solving a test, only the 6 you get count as Successes. You cannot win the Blessing or Curse states.",
+    "effect2": "Stubbornness -- After you fail a test, you focus on a skill of your choice",
+    "effect3": null,
+    "phrase": "'How did I get into such a mess? Well, my luck.'",
+    "theStory": "Rex Murphy didn’t believe in luck, which was great, because his was bad. He didn’t believe that old woman in Romania who told him he was cursed either. But I had to admit that everything tended to go wrong, sometimes with catastrophic results. I had lost count of the times I had discovered proof of the existence of a 'hidden world', to then be carried away by a gust of wind, have it rain down upon him or even be devoured by a rhinoceros. But luck couldn’t be proven nor could it be printed on the Arkham Advertised. So Rex convinced himself that he didn’t believe in it. Although if things had gone better, everyone would believe that the hidden world really exists.",
+    "focusLimit": "No limits",
+    "locutionURL": "2CNEDE9mJ-0",
+    "imgInv": "/img/1-inv/6-Rex.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 3,
+      "observation": 3,
+      "strength": 2,
+      "will": 2,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      },
+      {
+        "rol": "Expert",
+        "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Rex has always lived with his family curse. As a result, you’ve learned several ways to ease your bad luck."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "looking for the truth"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "La Tower"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Overcome adversity"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "All the pieces fit together"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Rex Murphy",
+        "position": "Reportero",
+        "effect1": "Maldición Familiar -- Cuando estés resolviendo una prueba, solamente cuentan como Éxitos los 6 que obtengas. No puedes ganar los estados de Bendición ni Maldición.",
+        "effect2": "Obstinación -- Después de que falles una prueba, te concentras en una habilidad de tu elección",
+        "effect3": null,
+        "phrase": "'¿Cómo me he metido en semejante embrollo? Vaya suerte la mía.'",
+        "theStory": "Rex Murphy no creía en la suerte; lo cual estaba muy bien, porque la suya era nefasta. Tampoco creyó a aquella vieja en Rumania que le dijo que estaba maldito. Pero debía admitir que todo tendía a salirle más mal que bien, en ocasiones con resultados catastróficos. Había perdido la cuenta de las veces que había descubierto pruebas de la existencia de un 'mundo oculto', para que luego se las llevase una ráfaga de viento, les lloviera encima o se las comiera un rinoceronte. Pero la suerte no podía demostrarse ni tampoco se podía imprimir en el Arkham Advertised, así que Rex se convenció a sí mismo de que no creía en ella. Aunque, de haber salido mejor, todos creerían que el mundo oculto existe de verdad.",
+        "focusLimit": "Sin limite",
+        "locutionURL": "2CNEDE9mJ-0",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          },
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Rex ha vivido siempre con su maldición familiar. En consecuencia, has aprendido diversas maneras de paliar tu mala suerte."
+          }
+        ]
+      }
+    }
   },
-  {
-    "id": "60b0df56-6602-4551-85cb-3f2bb6774d11",
-    "nombrePJ": "Eugenia",
-    "posicion": "Sanitaria",
-    "ENposicion": "healthery",
-    "vida": 7,
-    "arquetipos": [
-      "Defensor",
-      "Explorador"
-    ]
+  {"idInv": 6,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Calvin Wrigth",
+    "position": "Tormented men",
+    "effect1": "A Safe Friend -- Action: You can exchange any amount of Life and/or Sanity with another researcher or Ally who is in any space.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'I’d sacrifice whatever it takes to protect you'",
+    "theStory": "The hardest thing Calvin had ever done was to turn his back on Joao, who was always there to help him cope. But he had no choice. The image of Joao burning to ashes, his world calcinated in a flash of light, and the darkness that nested inside him haunted Calvin. Unable to permit the loss of his lover, he made a deal. He let the Masked God sect believe that they could control him, and he waited for the right moment to rise against the ancient evil that threatened the world. It was a difficult time, but knowing that Joao was safe helped him overcome it. Not that Calvin wasn’t afraid—he was—but he knew what had to be done, and that he was the only one capable of it.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/7-Calvin.jpg",
+    "atributes": {
+      "life": 6,
+      "sanity": 6,
+      "lore": 3,
+      "influence": 3,
+      "observation": 3,
+      "strength": 3,
+      "will": 1,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
+      },
+      {
+        "rol": "Expert",
+        "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Calvin is good at healing others, although this can also keep you alive in the most catastrophic moments."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Spiritual dagger"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Till the end of time"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "OPTIONAL == Messenger’s voice and also a SINISTER PACT"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Calvin Wrigth",
+        "position": "Tipo atormentado",
+        "effect1": "Un amigo seguro -- Acción: Puedes intercambiar cualquier cantidad de Vida y/o Cordura con otro investigador o Aliado que esté en cualquier espacio.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Sacrificaría lo que hiciera falta con tal de protegerte'",
+        "theStory": "Lo más difícil que había hecho Calvin jamás fue dar la espalda a Joao, que siempre estuvo ahí para ayudarle a sobrellevarlo todo. Pero no tuvo elección. La imagen de Joao ardiendo hasta quedar reducido a cenizas, su mundo calcinado en un fogonazo de luz, y la oscuridad que anidaba en su interior, lo llevaron a tomar una decisión drástica. No podía permitir que le arrebatasen a su amante, por lo que hizo un trato: dejó que la secta del Dios Enmascarado creyera que podían controlarlo, aguardando el momento propio para rebelarse contra el antiguo mal que amenazaba el mundo. Fueron tiempos difíciles, pero saber que Joao estaba a salvo le dio fuerzas para continuar. No es que Calvin no tuviese miedo, pero sabía lo que debía hacerse y que él era el único capaz de hacerlo.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          },
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. A Calvin se le da bien sanar a los demás, aunque esto también puede mantenerte con vida en los momentos más catastróficos."
+          }
+        ]
+      }
+    }
   },
-  {
-    "id": "c40dec2b-ee70-4251-9ca2-8d19f51c2f2a",
-    "nombrePJ": "Samuel",
-    "posicion": "Pintor",
-    "ENposicion": "Painter",
-    "vida": 9,
-    "arquetipos": [
-      "Defensor",
-      "Explorador"
-    ]
+  {"idInv": 7,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Agnes Baker",
+    "position": "Waitress",
+    "effect1": "Blood is power -- When you are casting a spell, if you suffer Damage or spend Remains, you receive +2 KNOW",
+    "effect2": "Blood Magic -- You can take Damage instead of Horror when casting a Spell",
+    "effect3": null,
+    "phrase": "'Things aren’t always what they seem'",
+    "theStory": "Agnes had almost gotten used to the strange visions that disturbed her dreams: strangers in robes, ritual chants, and monsters howling with sharp claws that she could only glimpse from the corner of her eye. But after a bad fall that caused her to hit her head, the visions became even more frequent—even while she was awake. In one such vision, she saw herself leading the psalms of robed figures, hiding a silver key in the mortar of an old well, or casting spells as a sorceress in the mythical Hyperborea. Agnes traveled to Arkham in search of an explanation, as the city has a long tradition of witchcraft trials and unexplained events. Working at Velma’s restaurant, she one day encountered an old well with loose bricks. Among the bricks, embedded in the mortar, she found an ancient silver key—exactly where she knew it would be.",
+    "focusLimit": 2,
+    "locutionURL": "Cx4GNKVIWHQ",
+    "imgInv": "/img/1-Personajes/8-Agnes.jpg",
+    "atributes": {
+      "life": 6,
+      "sanity": 6,
+      "lore": 4,
+      "influence": 2,
+      "observation": 2,
+      "strength": 2,
+      "will": 3,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You contribute the best defensive option against the Primitives."
+      },
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Hyperborean inheritance"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Body protection"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Spirit storm"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Agnes Baker",
+        "position": "Camarera",
+        "effect1": "La sangre es poder -- Cuando estés lanzando un Hechizo, si sufres Daño o gastas Restos, recibes +2 SABER",
+        "effect2": "Magia de sangre -- Puedes sufrir Daño en vez de Horror cuando lances un Hechizo",
+        "effect3": null,
+        "phrase": "'Las cosas no son siempre lo que parecen'",
+        "theStory": "Agnes ya casi se había acostumbrado a las extrañas visiones que perturbaban sus sueños: extraños con túnicas, cánticos rituales y monstruos aullando con afiladas garras que apenas lograba distinguir de reojo. Pero tras sufrir una mala caída y golpearse la cabeza, las visiones se hicieron incluso más frecuentes, incluso estando despierta. En una de ellas se veía liderando los salmos de figuras encapuchadas, ocultando una llave de plata en la argamasa de un viejo pozo o lanzando sortilegios como hechicera en la mítica Hiperbórea. Agnes viajó a Arkham en busca de una explicación, pues la ciudad posee una larga tradición de juicios por brujería y sucesos inexplicables. Consiguió trabajo en el restaurante de Velma, y un día se topó con un antiguo pozo de ladrillos flojos. Entre los ladrillos, incrustada en la argamasa, encontró una antigua llave de plata, justo donde sabía que estaría.",
+        "focusLimit": 2,
+        "locutionURL": "Cx4GNKVIWHQ",
+        "rol": [
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Contribuyes la mejor opción defensiva contra los Primigenios."
+          },
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          }
+        ]
+      }
+    }
   },
-  {
-    "id": "653fd6c7-8dd0-4e9c-9ef7-90f8d7167208",
-    "nombrePJ": "Samuel Carrasco",
-    "posicion": "Pintor",
-    "ENposicion": "Painter",
-    "vida": 9,
-    "arquetipos": [
-      "Defensor",
-      "Explorador"
-    ]
+  {"idInv": 8,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Michael McGlen",
+    "position": "Gangster",
+    "effect1": "Thirst for Vengeance -- After you defeat a Monster with an attack action, you either regain a point of Sanity or concentrate on an ability of your choice.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'This is for Louie'",
+    "theStory": "Michael McGlen was a man of few words. He didn’t have to say much either: that’s what Louie 'the Fast' was for. They were both the O´Bannion’s best soldiers, and they made sure that the gang was respected all over Arkham... until the night that thing emerged from the river and dragged Louie off the pier to rip him apart under the water. Michael thought his bosses would call him crazy as soon as he told them, but what happened was even worse: they said they believed him and that the best thing was to forget about it. But Michael cannot let his partner’s death go unpunished, nor can he forget the beings who tore him apart. He is still a man of few words; now he prefers his machine gun to speak for him.",
+    "focusLimit": 1,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/9-Michael.jpg",
+    "atributes": {
+      "life": 8,
+      "sanity": 4,
+      "lore": 2,
+      "influence": 3,
+      "observation": 1,
+      "strength": 4,
+      "will": 3,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Expert",
+        "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Michael uses all his talent to mercilessly eliminate the grotesque creatures that threaten Arkham."
+      },
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Drum machine gun"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Gangster car"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "O'Bannion’s henchman"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Michael McGlen",
+        "position": "Mafioso",
+        "effect1": "Sed de venganza -- Después de que derrotes a un Monstruo con una acción de ataque, recuperas un punto de Cordura o bien te concentras en una habilidad de tu elección.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Esto es por Louie'",
+        "theStory": "Michael McGlen era un hombre de pocas palabras. Tampoco tenía que decir mucho: para eso estaba Louie 'el Rápido'. Los dos eran los mejores soldados de los O´Bannion, y se aseguraban de que la banda fuese respetada en todo Arkham... hasta la noche en que aquella cosa emergió del río y se llevó a rastras a Louie del muelle para despedazarlo bajo el agua. Michael creyó que sus jefes lo tacharían de pirado en cuanto les contase lo sucedido, pero lo que pasó fue aún peor: dijeron que le creían y que lo mejor era olvidarse del tema. Pero Michael no puede dejar impune la muerte de su socio, ni tampoco olvidar a los seres que lo hicieron pedazos. Sigue siendo hombre de pocas palabras; ahora prefiere que su metralleta hable por él.",
+        "focusLimit": 1,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Michael emplea todo su talento para eliminar sin piedad a las grotescas criaturas que amenazan a Arkham."
+          },
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 9,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Daniela Reyes",
+    "position": "Mechanical",
+    "effect1": "Passion for work -- After you do a fundraising action, you can focus on a skill of your choice",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'If you need a job well done, come to me'",
+    "theStory": "Taking stock of her life, Daniela could be satisfied: she had an effusive family she adored, she never lacked work and always had enough money to afford her two great passions (motorcycles and beautiful girls) even after putting a plate on your table. But not everything was rosy; on the one hand, there was her mother, the santera, who did not stop promising a bleak future if she wasn’t careful, and on the other, her brother Ramón, who was constantly getting into trouble. And now Ramón was in trouble again. The talisman of protection against evil that she received to please her mother was in pieces, and Daniela was the only one who could fix it. As usual.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/10-Daniela.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 5,
+      "lore": 3,
+      "influence": 3,
+      "observation": 1,
+      "strength": 3,
+      "will": 3,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Expert",
+        "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Michael uses all his talent to mercilessly eliminate the grotesque creatures that threaten Arkham."
+      },
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Gabriel"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Ace of spades"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Wrench"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Daniela Reyes",
+        "position": "Mecánica",
+        "effect1": "Pasión por el trabajo -- Después de que realices una acción de conseguir fondos, puedes concentrarte en una habilidad de tu elección",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Si necesitas un trabajo bien hecho, acude a mí'",
+        "theStory": "Haciendo balance de su vida, Daniela podía darse por satisfecha: tenía una familia efusiva a la que adoraba, nunca le faltaba trabajo y siempre disponía de suficiente dinero para permitirse sus dos grandes pasiones (motocicletas y chicas guapas) incluso después de poner un plato en su mesa. Aunque no todo era de color de rosa; por un lado, estaba su madre la santera, que no dejaba de augurarle un futuro sombrío si no se andaba con ojo; por otro, su hermano Ramón, que se metía en líos constantemente. Y ahora Ramón volvía a tener problemas. El talismán de protección contra el mal que le regaló para complacer a su madre estaba hecho pedazos, y Daniela era la única que podía solucionarlo todo. Como de costumbre.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Michael emplea todo su talento para eliminar sin piedad a las grotescas criaturas que amenazan a Arkham."
+          },
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 10,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Norman Withers",
+    "position": "Astronomer",
+    "effect1": "Written in the stars -- After you remove at least two Doom tiles from your space, you may suffer a point of horror to reveal a Clue (place it on the Scenario sheet)",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'To say that something is impossible makes it no less true. Truth is indifferent to one’s opinion.'",
+    "theStory": "Norman Withers was a scientist, a rational man devoted to the logical exploration of the universe. So when his research revealed that the universe was near its end, he contrasted his results and studied the situation from the standpoint of calm and reasoning. There was no mistake: six stars had vanished without a trace, and in their place something impossible ran through the void. Although the scientific community rejected his conclusions by dismissing them as the ravings of a lunatic, Norman continued his studies with the rationality that characterized him. What did it matter that his research focused on long-forgotten archaic knowledge, or even on magic? It was no less rational.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/11-Norman.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 1,
+      "observation": 3,
+      "strength": 2,
+      "will": 4,
+      "money": 1,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      },
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You contribute the best defensive option against the Primitives."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Find a portal"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Treasured memory"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Astronomical treatise"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Norman Withers",
+        "position": "Astrónomo",
+        "effect1": "Escrito en las estrellas -- Después que quites al menos dos fichas de Perdición de tu espacio, puedes sufrir un punto de horror para revelar una Pista (colócala sobre la hoja de Escenario)",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Decir que algo es imposible no lo hace menos cierto. La verdad es indiferente a la opinión que uno tenga.'",
+        "theStory": "Norman Withers era científico, un hombre racional consagrado a la exploración lógica del universo. Por eso, cuando su investigación reveló que el universo estaba próximo a su fin, contrastó sus resultados y estudió la situación desde la calma y el raciocinio. No cabía error posible: seis estrellas se habían desvanecido sin dejar rastro, y en su lugar algo imposible surcaba el vacío. Aunque la comunidad científica rechazó sus conclusiones tachándolas de los desvaríos de un lunático, Norman prosiguió con sus estudios, abordando el problema con la racionalidad que le caracterizaba. ¿Qué importaba que su investigación se centrase en conocimientos arcaicos largamente olvidados, o incluso en la magia? No por ello era menos racional.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres una intrépida sabuesa. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          },
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Contribuyes la mejor opción defensiva contra los Primigenios."
+          }
+        ]
+      }
+    }
+  },  
+  {"idInv": 11,
+    "isActive": true,
+    "expansion": "Base",
+    "name": "Minh Thi Phan",
+    "position": "Secretary",
+    "effect1": "Pending everything -- once per round, when you solve a test, you or another researcher who is in your space can throw as many dice as the number of tracks in your neighborhood (you can throw less if you want).",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'I am convinced that we can find a solution if we cooperate.'",
+    "theStory": "Minh was born into a Vietnamese family living in Korea who later moved to the US. Her gift for languages and her exceptional qualifications gave her a job at an Arkham company, and Minh, delighted with her new boss, Mr Thomas, a good man and best friend. Until Thomas acquired a copy of the blasphemous work The King of Yellow. His reading made him sullen and irascible. He urged her to read it, but it was too disturbing for her. And then Mr Thomas took his own life. Minh is convinced that if she manages to unravel the secret of the cursed work, she will be able to prevent others from suffering the same fate as her unfortunate boss.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/12-Minh.jpg",
+    "atributes": {
+      "life": 6,
+      "sanity": 6,
+      "lore": 3,
+      "influence": 3,
+      "observation": 3,
+      "strength": 2,
+      "will": 2,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      },
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "The king of yellow"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Analytical mind"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Synergy"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Minh Thi Phan",
+        "position": "Secretaria",
+        "effect1": "Pendiente de todo -- una vez por ronda, al resolver una prueba, tú u otro investigador que esté en tu espacio podéis volver a tirar tantos dados como el número de Pistas que haya en vuestro Barrio (podéis tirar menos si queréis).",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Estoy convencida de que podemos hallar una solución si cooperamos.'",
+        "theStory": "Minh nació en el seno de una familia vietnamita afincada en Corea que posteriormente se mudó a EEUU. Su don para los idiomas y sus excepcionales calificaciones le procuraron trabajo en una empresa de Arkham, y Minh, encantada con su nuevo jefe, el Sr Thomas, buen hombre y mejor amigo. Hasta que Thomas adquirió un ejemplar de la blasfema obra El Rey de Amarillo. Su lectura lo volvió huraño e irascible. La instó a leerla, pero a ella le resultó demasiado perturbadora. Y luego el Sr Thomas se quitó la vida. Minh está convencida de que, si consigue desentrañar el secreto de la obra maldita, podrá evitar que los otros sufran el mismo destino que su infortunado jefe.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres una intrépida sabuesa. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          },
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+
+
+  {"idInv": 12,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Silas Marsh",
+    "position": "Sailor",
+    "effect1": "Contaminated Blood - Once per round, when a prepared Monster is activated, you can designate any researcher as its prey. If that Monster faces you, you can regain two points of Sanity.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"I have sailed the seven seas, but something always ends up drawing me to this place.\"",
+    "theStory": "Silas was drawn to the sea. At the age of fourteen he answered its call and left his hometown of Innsmouth to join a merchant ship. He began his new life as a fish in the water, having an innate talent for seamanship, and swore never to return. The truth is he was eager to leave that decrepit and corrupt town—where his distant kinship with the old Marsh family had plunged the town into decay. Silas was in a tavern in the village of Singapore when he received the news of his parents' death. He didn't even come back for the funeral; he convinced himself it was for the best. He was glad to have left that terrible place behind. But now he often dreams of his late mother, and just as the sea once attracted him when he was young, something in Innsmouth has compelled him to return.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/13-Silas.jpg",
+    "atributes": {
+      "life": 8,
+      "sanity": 4,
+      "lore": 1,
+      "influence": 3,
+      "observation": 3,
+      "strength": 3,
+      "will": 3,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      },
+      {
+        "rol": "Expert",
+        "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Silas' lineage shares a sinister kinship with certain creatures of the Mythos, which gives you the unusual ability to predict and control the movements of the Monsters that threaten you."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Fishing net"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Flannel shirt"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Adventurous spirit"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Silas Marsh",
+        "position": "Marinero",
+        "effect1": "Sangre contaminada - Una vez por ronda, cuando se active un Monstruo preparado, puedes designar a cualquier investigador como su presa. Si ese Monstruo se enfrenta a ti, puedes recuperar dos puntos de Cordura.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“He navegado por los siete mares, pero algo siempre acaba atrayéndome a este lugar.”",
+        "theStory": "Silas se sentía atraído por el mar. A los catorce años respondió a su llamada y abandonó su pueblo natal, Innsmouth, para enrolarse en un buque mercante. Emprendió su nueva vida desenvolviéndose como pez en el agua, pues tenía un talento innato para la náutica, y juró que nunca regresaría. Lo cierto es que estaba ansioso por marcharse de aquel pueblo decrépito y corrupto, donde se le conocía por su parentesco lejano con la vieja familia Marsh que había sumido al pueblo en la decadencia. Silas se hallaba en una taberna del pueblo de Singapur cuando recibió la noticia del fallecimiento de sus padres. Ni siquiera volvió para asistir al funeral; se convenció de que era lo mejor. Se alegraba de haber dejado atrás aquel terrible lugar. Pero ahora sueña a menudo con su difunta madre, y así como el mar le atraía cuando era joven, algo en Innsmouth le había impulsado a volver.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          },
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. El linaje de Silas comparte un siniestro lazo de parentesco con ciertas criaturas de los Mitos, lo cual te confiere la insólita capacidad de predecir y controlar los movimientos de los Monstruos que os amenazan."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 13,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Charlie Kane",
+    "position": "Political",
+    "effect1": "Expert Commission - ACTION: Spend $2, plus an additional $1 for each ally you have, to earn an Ally.",
+    "effect2": "Leadership - Each time you discard one of your Allies, you suffer a point of direct Horror.",
+    "effect3": null,
+    "phrase": "\"Trust me, and trust Arkham.\"",
+    "theStory": "Serving a community as peculiar as Arkham requires juggling, but Mayor Charlie Kane has cleverly maneuvered to establish contacts and alliances among the city's varied forces: the University and the Historical Society, the Silver Twilight Order and the Gypsies of Independence Square, even between law enforcement and organized crime. The small leather-bound diary that Charlie received from his predecessor warned of ancient threats and ineffable creatures that could only be kept at bay with constant vigilance. The diary suggested that something colossal lurked on the fringes of this world, and that vision left no doubt. The stars are propitious. That something is coming.",
+    "focusLimit": "Your limit is equal to the number of Allies you have.",
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/14-Charlie.jpg",
+    "atributes": {
+      "life": 4,
+      "sanity": 8,
+      "lore": 2,
+      "influence": 4,
+      "observation": 3,
+      "strength": 2,
+      "will": 2,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Expert",
+        "description": "You have an exclusive set of skills that allow you to specialize in a specific task. Charlie has a talent for people. You can use his speech to overcome most obstacles, and you always have a helpful assistant."
+      },
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Authority figure"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Bonnie Walsh"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Call in favors"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Charlie Kane",
+        "position": "Político",
+        "effect1": "Comisión de expertos - ACCIÓN: gasta 2$, más 1$ adicional por cada aliado que tengas, para ganar un Aliado.",
+        "effect2": "Liderazgo - Cada vez que descarten a uno de tus Aliados, sufres un punto de Horror directo.",
+        "effect3": null,
+        "phrase": "“Confíen en mí, y confíen en Arkham.”",
+        "theStory": "Prestar servicio a una comunidad tan peculiar como la de Arkham requiere malabares, pero el alcalde Charlie Kane ha maniobrado hábilmente para establecer contactos y alianzas entre las fuerzas vivas de la ciudad: la Universidad y la Sociedad Histórica, la Orden del Crepúsculo de Plata y los gitanos de la plaza de la Independencia, incluso entre las fuerzas de la ley y el crimen organizado. El pequeño diario encuadernado en cuero que Charlie recibió de su predecesor advertía contra amenazas antiguas y criaturas inefables que solamente podían mantenerse a raya con una vigilancia constante. El diario le sugería que algo colosal acechaba en los confines de este mundo, y aquella visión no dejaba lugar a dudas. Las estrellas son propicias. Ese algo se está acercando.",
+        "focusLimit": "Tu límite es igual al número de Aliados que tengas.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Charlie tiene don de gentes. Puedes valerte de su labia para sortear la mayoría de los obstáculos, y siempre dispones de una ayudante solícita."
+          },
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 14,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Stella Clark",
+    "position": "Portfolio",
+    "effect1": "At work - At the beginning of your first Action phase of the game, you can move directly to any space.",
+    "effect2": "Deal Path - After moving at least three spaces in a single round, focus on a skill of your choice.",
+    "effect3": null,
+    "phrase": "\"I know what’s real, and I don’t have time for this.\"",
+    "theStory": "Before she started working for the Arkham post office, Stella had two things clear. Firstly, that her parents made a mistake by treating her as a boy; secondly, that the house atop the crag that overlooked Kingsport whispered to her at night, calling her by her true name—the name she had chosen: Stella. Delivering mail six days a week, no matter the hour, was no easy job, but Stella was delighted because she knew it helped keep people connected. Until she began finding letters. At the end of her route, she’d always have one extra letter—always addressed to her, always postmarked Kingsport, and always containing a single handwritten word with care: Stella.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/15-Stella.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 2,
+      "observation": 3,
+      "strength": 2,
+      "will": 3,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Delivery van"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Call of the darkness"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Rain or shine"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Stella Clark",
+        "position": "Cartera",
+        "effect1": "En plena faena - Al comienzo de tu primera fase de Acción de la partida, puedes moverte directamente a cualquier espacio.",
+        "effect2": "Ruta de reparto - Después de moverte al menos tres espacios en una sola ronda, concéntrate en una habilidad de tu elección.",
+        "effect3": null,
+        "phrase": "“Yo sé lo que es real, y no tengo tiempo para esto.”",
+        "theStory": "Antes de empezar a trabajar para el servicio de correos de Arkham, Stella ya tenía dos cosas claras. En primer lugar, que sus padres habían cometido un error al tratarla como a un niño y ponerle nombre de varón. En segundo lugar, que aquella casa en la cima del peñón que dominaba Kingsport le susurraba por las noches, llamándola por su verdadero nombre, el nombre que ella misma había escogido: 'Stella'. Repartir el correo seis días a la semana, haga lo que haga, no era un trabajo sencillo, pero Stella estaba encantada porque sabía que ayudaba a mantener el contacto entre las personas. Hasta que empezaron a encontrarse las cartas. Cuando terminaba el reparto, siempre le sobraba una carta. Siempre dirigida a ella. Siempre con matasellos de Kingsport. Y siempre contenía una sola palabra manuscrita con esmero: 'Stella'.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 15,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Zoey Samaras",
+    "position": "Chef",
+    "effect1": "By George’s Grace - After you defeat a Monster, you can remove a Doom token from your space or regain a point of life.",
+    "effect2": "Feel the call - After you defeat a Monster with the keyword Elite, you gain a Blessing.",
+    "effect3": null,
+    "phrase": "\"I finally know what my job is.\"",
+    "theStory": "Zoey Samaras made sure her knives were always sharp. At first, it was simply a habit, instilled after years as a kitchen helper for some of the world's top chefs. They taught her that a cook’s tools were his knives and the stoves that transform the simple into something divine, something transcendent. One night, she felt an impulse—a voice in her head urging her to take a different path home. Then she dropped the blindfold when she saw horrifying beings with sharp, bloody teeth devouring a man in an alley. The voice—like that of God himself—urged her to purge the world of its malignant voracity, and in doing so, to cleanse the horrors lurking in the shadows. Her tools have served her well.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/16-Zoey.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 2,
+      "observation": 1,
+      "strength": 3,
+      "will": 4,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow researchers. This could mean helping them recover from physical or mental damage, or dispatching Monsters before they become a threat."
+      },
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You are the best defensive option against the Primitives."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Kitchen knife"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Enchanted weapon"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "The crucifix of Zoey"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Zoey Samaras",
+        "position": "Cocinera",
+        "effect1": "Por la gracia de san Jorge - Después de que derrotes a un Monstruo, puedes quitar una ficha de Perdición de tu espacio o bien recuperar un punto de vida.",
+        "effect2": "Sentir la llamada - Después de que derrotes a un Monstruo que tenga la palabra clave Élite, ganas una Bendición.",
+        "effect3": null,
+        "phrase": "“Por fin sé cuál es mi cometido.”",
+        "theStory": "Zoey Samaras procuraba que sus cuchillos siempre estuviesen afilados. Al principio lo hacía por costumbre, un hábito inculcado tras pasar años como pinche de los mejores chefs del mundo. Ellos le enseñaron que las herramientas del cocinero eran sus cuchillos y los fogones que transforman lo sencillo en algo divino, algo trascendental. Una noche sintió como un impulso, como una voz en su cabeza que le dijo que tomase un camino diferente para volver a casa. Y entonces se le cayó la venda de los ojos cuando vio a unos seres horribles de dientes afilados y ensangrentados que devoraban a un hombre en un callejón. La voz de su cabeza, la voz del mismísimo Dios, la apremió a purgar el mundo de su maligna voracidad, y con ello a purgar los horrores que acechaban entre las sombras. Sus herramientas le sirvieron bien.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarlos a recuperarse de daños físicos o mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          },
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Constituyes la mejor opción defensiva contra los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 16,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Padre Mateo",
+    "position": "Priest",
+    "effect1": "The blood of the Marbles - after you suffer at least one Damage point, you gain a Remains tab.",
+    "effect2": "Memento mori - Once per round, when you are solving a test, you can spend a Remains tab to re-roll one or all of your dice.",
+    "effect3": null,
+    "phrase": "\"Et ne nos inducas in tentationem: sed libera nos a malo.\"",
+    "theStory": "When he was young, Father Matthew Castile found comfort in the conviction of living in a just world, under the protection of a good and merciful God. Although the things he saw before leaving the mission made a deep impression on him, he clung to the idea that all that madness, the dreadful creatures that harassed the locals and the grotesque statue he found in that cave were not worldly threats, but he could not prevent doubt from gnawing at him: if such demons were real, why were Matthew’s prayers never answered? Somewhere in this cold and merciless universe, infested with even more terrible demons, monsters and forces, the true grace of God was to manifest. Matthew set out to seek His light again. He had to.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/17-Padre.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 3,
+      "observation": 1,
+      "strength": 2,
+      "will": 4,
+      "money": 2,
+      "remnant": 1
+    },
+    "rol": [
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You are the best defensive option against the Primitives."
+      },
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow researchers. This could mean helping them recover from physical or mental damage, or dispatching Monsters before they become a threat."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Sign of the cross"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "A scrap sheet"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Holy water"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Drive away the darkness"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Padre Mateo",
+        "position": "Sacerdote",
+        "effect1": "La sangre de los mártiles - después de que sufras al menos un punto de Daño, ganas una ficha de Restos.",
+        "effect2": "Memento mori - Una vez por ronda, cuando estés resolviendo una prueba, puedes gastar una ficha de Restos para volver a lanzar uno de tus dados o todos ellos.",
+        "effect3": null,
+        "phrase": "“Et ne nos inducas in tentationem: sed libera nos a malo.”",
+        "theStory": "Cuando era joven, el Padre Mateo Castile encontraba consuelo en la convicción de vivir en un mundo justo, al amparo de un Dios bueno y misericordioso. Aunque las cosas que vio antes de abandonar la misión le causaron una profunda impresión, se aferró a la idea de que toda aquella locura, las espantosas criaturas que hostigaban a los lugareños y la grotesca estatua que halló en aquella cueva no eran sino amenazas mundanas, pero no podía evitar que la duda le corroyese: si semejantes demonios eran reales, ¿por qué las oraciones de Mateo nunca recibían respuesta? En algún lugar de este universo frío y despiadado, infestado de demonios, monstruos y fuerzas aún más terribles, debía manifestarse la verdadera gracia de Dios. Mateo se propuso buscar de nuevo Su luz. Tenía que hacerlo.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Constituyes la mejor opción defensiva contra los Primigenios."
+          },
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarlos a recuperarse de daños físicos o mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 17,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Patricie Hathaway",
+    "position": "Violinist",
+    "effect1": "With the Lookout’s Eyes - Every time Doom is placed or moved from the Scenario Sheet, you can focus on an ability of your choice (even if by doing so you exceed your Concentration limit).",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"Listen to the music of the universe.\"",
+    "theStory": "The music comforted Patricie Hathaway as a child. While holding his violin under his chin, he was sure to experience visions of fantastic worlds and magical landscapes. He was diagnosed with synesthesia, and his tutors explained that he was able to see music in a way that no one else could; that would make him a prodigy. But during his adolescence, an entity from the magical world glimpsed through his music stared back at him, and then everything changed. Patricie knew that everything he perceived was real, and his visions became ominous. The Watcher hardly left him. It approached his mind as he played, and through his eyes he saw the world in ruins. Was it he who caused that catastrophe, or was the Watcher trying to warn him? Patricie had to find out.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/18-Patricie.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 2,
+      "observation": 3,
+      "strength": 1,
+      "will": 4,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You are the best defensive option against the Primitives."
+      },
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "The violin of Patricie"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Captivating melody"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Captivating melody"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "You win Ominous Dreams, but you add the Lookout to the deck of Monsters."
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Patricie Hathaway",
+        "position": "Violinista",
+        "effect1": "Con los ojos del Vigía - Cada vez que se coloque o mueva Perdición de la hoja de Escenario, puedes concentrarte en una habilidad de tu elección (incluso aunque al hacerlo sobrepases tu límite de Concentración).",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Escuchad la música del universo.”",
+        "theStory": "La música reconfortaba a Patricie Hathaway cuando era niña. Mientras sujetaba su violín bajo su mentón aseguraba experimentar visiones de mundos fantásticos y paisajes mágicos. Lo diagnosticaron como sinestesia, y sus tutores le explicaron que era capaz de ver la música de un modo que nadie podía; aquello la convertiría en un prodigio. Pero durante su adolescencia, una entidad que habitaba en el mundo mágico vislumbrado a través de su música le devolvió la mirada, y entonces todo cambió. Patricie sabía que todo cuanto percibía era real, y sus visiones se volvieron ominosas. El Vigía apenas se apartaba de ella. Acudía a su mente cuando tocaba, y a través de sus ojos veía el mundo en ruinas. ¿Sería ella quien provocase aquella catástrofe, o acaso el Vigía trataba de advertirla? Patricie tenía que averiguarlo.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Constituyes la mejor opción defensiva contra los Primigenios."
+          },
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 18,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Carson Sinclair",
+    "position": "Butler",
+    "effect1": "Essential but discreet - Once per round, while a researcher located in any space is performing a test, you can spend a Concentration tab so that he can re-roll a die. If you do, you get a point of sanity back.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"I will not let you face this without my help. I will not fail you as I failed him.\"",
+    "theStory": "Carson Sinclair has worked in the service of the Webb family for 3 generations, taking care of household chores and providing valuable advice. Despite his protests, Dupuis initiated Hercule Webb, the lord of the house, into pernicious and risky occult practices. Carson feared what might happen when the two men were cloistered in the study for days, engrossed in reading arcane volumes and performing blasphemous rituals. When Master Webb disappeared during one of these ceremonies, Carson swore he would protect his descendants, Lydia and Eugene, from the persistent threat of Dupuis, his evil associates and the darkness they serve.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/19-Carson.jpg",
+    "atributes": {
+      "life": 6,
+      "sanity": 6,
+      "lore": 2,
+      "influence": 3,
+      "observation": 3,
+      "strength": 2,
+      "will": 3,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      },
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Anticipation"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "As you command"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Prepared for everything"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Carson Sinclair",
+        "position": "Mayordomo",
+        "effect1": "Imprescindible pero discreto - Una vez por ronda, mientras un investigador situado en cualquier espacio esté realizando una prueba, puedes gastar una ficha de Concentración para que pueda volver a tirar un dado. Si lo haces, recuperas un punto de Cordura.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“No dejaré que se enfrente a esto sin mi ayuda. No le fallaré como le fallé a él.”",
+        "theStory": "Carson Sinclair ha trabajado al servicio de la familia Webb durante 3 generaciones, ocupándose de las tareas domésticas y proporcionando valiosos consejos. Hasta la intromisión de aquel forastero. Pese a las protestas de Carson, Dupuis inició a Hercule Webb, el señor de la casa, en perniciosas y arriesgadas prácticas ocultistas. Carson temía lo que pudiese suceder cuando los dos hombres se enclaustraban en el estudio durante días, enfrascados en la lectura de volúmenes arcanos y celebrando rituales blasfemos. Cuando el amo Webb desapareció durante una de esas ceremonias, Carson juró que protegería a sus descendientes, Lydia y Eugene, de la amenaza persistente de Dupuis, de sus perversos asociados y de la oscuridad a la que sirven.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          },
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 19,
+    "isActive": true,
+    "expansion": "AHWaves",
+    "name": "Pete Cubo de Basura",
+    "position": "Tramp",
+    "effect1": "Hustler - After you perform a fundraising action, you can win a Catalog Item with a printed price of 2 or less.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"Beware. Duke and I are here to help.\"",
+    "theStory": "It’s been years since Pete took to the road with his faithful companion Duke. Pete has no family or home; he travels from city to city making his living as he can, although his main occupation is admiring the landscape—he is usually guided by his visions that lead him to those who need him, people who live in places he can visit but where there is no place for him. But lately these visions have taken on a more sinister tone. Now they are visions of darkness and of unspeakable evil. Visions of death and decay. Of madness before the infinite. Visions that have led him here, to the city of Arkham. And this time he is not sure if he will be able to help anyone, or even live to tell the tale.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/20-Pete.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 5,
+      "lore": 3,
+      "influence": 1,
+      "observation": 3,
+      "strength": 3,
+      "will": 3,
+      "money": 1,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Duque"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Pete’s guitar"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Globetrotter"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Pete Cubo de Basura",
+        "position": "Vagabundo",
+        "effect1": "Buscavidas - Después de que realices una acción de conseguir fondos, puedes ganar un Objeto del Catálogo con un precio impreso de 2 o menos.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Pierdan cuidado. Duque y yo estamos aquí para ayudar.”",
+        "theStory": "Hace ya bastantes años que Pete se echó a la carretera con su fiel compañero Duque. Pete no tiene familia ni hogar; viaja de ciudad en ciudad ganándose la vida como puede, aunque su principal ocupación consiste en admirar el paisaje; normalmente se deja guiar por sus visiones que le conducen hasta quienes le necesitan, gente que vive en lugares que él puede visitar pero en los que no hay lugar para él. Pero últimamente estas visiones han tomado un cariz más siniestro. Ahora son visiones de oscuridad y de una maldad indescriptible. Visiones de muerte y descomposición. De locura ante la faz de lo infinito. Visiones que le han conducido hasta aquí, hasta la ciudad de Arkham. Y esta vez no tiene claro si podrá ayudar a nadie, ni siquiera si vivirá para contarlo.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+  
+
+  {"idInv": 20,
+    "isActive": true,
+    "expansion": "AHNigth",
+    "name": "Roland Banks",
+    "position": "Federal Agent",
+    "effect1": "Fight for the Truth – As part of an attack action, you may add 1 to the result of as many dice as there are Clues in your Neighborhood.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"I didn’t want to believe either.\"",
+    "theStory": "Roland had always found comfort in rules, guidelines, and standard procedures; no matter how complex a case was, the agency's manual always provided a familiar and predictable context. Everything fit together. This should have been a routine investigation: a girl had gone missing, and Roland deduced that some disgruntled servant had likely kidnapped her. His training allowed him to easily identify motive, means, and opportunity. Clear as day. But all his training hadn’t prepared him for the ritual he interrupted when he found the girl, nor was there anything in the manual about the creature lurking beyond that shimmering threshold. Someone would have to write a new manual.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/25-Roland.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 5,
+      "lore": 2,
+      "influence": 2,
+      "observation": 3,
+      "strength": 3,
+      "will": 3,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical or mental damage, or dealing with Monsters before they become a threat."
+      },
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should focus on gathering Clues and uncovering their hidden meaning. Your work is essential to thwarting the evil schemes of the Great Old Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": ".38 Special"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Implacable"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Indagaciones"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Roland Banks",
+        "position": "Agente federal",
+        "effect1": "Lucha por la verdad - Como parte de una acción de ataque, puedes sumar uno al resultado de tantos dados como Pistas haya en tu Barrio.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Yo tampoco quería creer.”",
+        "theStory": "Roland siempre había hallado consuelo en las normas, pautas y procedimientos reglamentarios; por muy complejo que fuese un caso, el manual de la agencia siempre le brindaba un contexto familiar y predecible. Todo encajaba. Aquello debería haber sido una investigación rutinaria: una chica había desaparecido, y Roland dedujo que la habría secuestrado algún criado descontento. Su adiestramiento le permitía identificar fácilmente el móvil, el medio y la oportunidad. Blanco y en botella. Pero ni toda su formación preparó a Roland para el ritual que interrumpió cuando encontró a la chica, y no había nada en el reglamento sobre la criatura que acechaba al otro lado de aquel refulgente umbral. Alguien tendría que redactar un manual nuevo.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Eso podría significar ayudarlos a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          },
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designos de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 21,
+    "isActive": true,
+    "expansion": "AHNigth",
+    "name": "Kate Winthrop",
+    "position": "Scientific",
+    "effect1": "Overview – After you perform a Clue reveal action, you may focus on as many skills of your choice as the result of your test.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"We don’t ask questions because we like the answers. We ask them because ignorance is lethal.\"",
+    "theStory": "Kate and her mentor, Professor Young, were pioneers in dimensional research until a malfunction in an experimental wave emitter opened a rift in the fabric of space, a portal to another world. The creature that passed through tore her friends apart before Kate’s helpless gaze. Tormented by the bloody memory, and armed with what remained of Young’s research, Kate has made incredible discoveries and witnessed the horrifying reality lurking at the edges of our own dimension. Although her colleagues at Miskatonic University still fail to remember her name, Kate has dedicated her formidable intellect to preventing future tragedies.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/26-Kate.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 2,
+      "observation": 4,
+      "strength": 2,
+      "will": 2,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should focus on gathering Clues and uncovering their hidden meaning. Your work is essential to thwarting the evil schemes of the Great Old Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Notas de investigación"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Estabilizador de flujo"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Resultados consistentes"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Kate Winthrop",
+        "position": "Científica",
+        "effect1": "Visión de conjunto - Después de que realices una acción de revelar Pistas, puedes concentrarte en tantas habilidades de tu elección como el resultado de tu prueba.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“No hacemos preguntas porque nos gusten las respuestas. Las hacemos porque la ignorancia es letal.”",
+        "theStory": "Kate y su mentor, el profesor Young, eran pioneros en investigaciones dimensionales hasta que se produjo una avería en un emisor de ondas experimental que abrió una brecha en el tejido del espacio, un portal a otro mundo. La criatura que lo atravesó hizo pedazos a sus amigos ante la mirada impotente de Kate. Atormentada por el sangriento recuerdo, y armada con lo que quedaba de la investigación de Young, Kate ha realizado descubrimientos increíbles y ha contemplado la espantosa realidad que acecha en los márgenes de nuestra propia dimensión. Aunque sus colegas de la Universidad Miskatonic siguen sin recordar su nombre, Kate ha consagrado su formidable intelecto a evitar futuras tragedias.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designos de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 22,
+    "isActive": true,
+    "expansion": "AHNigth",
+    "name": "Diana Stanley",
+    "position": "Redeemed Cultist",
+    "effect1": "Forbidden Practices – When you are about to suffer Horror (including direct Horror), you may place up to two Doom tokens in your space to cancel the same amount of that Horror.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"Whether they trust me or not, they will need my help. I know well what they are capable of.\"",
+    "theStory": "Sooner or later, nightmares always come back. Diana had joined the Order of the Silver Twilight driven by what she considered simple ambition—the desperate need to feel accepted by the elite of Arkham's most august citizens. But she could no longer chalk it up to harmless naivety; not after witnessing the rituals held in the chambers of the Lodge, after seeing communion with what lurked beyond the dark threshold, and after bearing witness to the bloody atrocities committed in the inner sanctuary of the Order. The vision of poor Walter Evans' contorted face would not allow her to ignore the evil that was growing and festering in Arkham. Diana could no longer remain complicit in it.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/27-Diana.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 5,
+      "lore": 4,
+      "influence": 2,
+      "observation": 3,
+      "strength": 3,
+      "will": 1,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main task should be to remove Doom tokens from the board. You are the best defensive option against the Great Old Ones."
+      },
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical or mental damage, or dealing with Monsters before they become a threat."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Revelación siniestra"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Amuleto robado"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Invocar tormenta"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Diana Stanley",
+        "position": "Sectaria redimida",
+        "effect1": "Prácticas prohibidas - Cuando vayas a sufrir Horror (incluido Horror directo), puedes colocar hasta dos fichas de Perdición en tu espacio para anular la misma cantidad de ese Horror.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Tanto si confían en mí como si no, necesitarán mi ayuda. Yo sé bien de lo que son capaces.”",
+        "theStory": "Tarde o temprano, las pesadillas siempre acaban por volver. Diana había entrado en la Orden del Crepúsculo de Plata motivada por lo que ella consideraba simple ambición, la necesidad desesperada de sentirse aceptada por la élite de los ciudadanos más augustos de Arkham. Pero ya no podía echarlo a una inofensiva ingenuidad; no después de haber presenciado los rituales celebrados en las cámaras de la Logia, ni de haber visto comulgar con lo que acechaba al otro lado del tenebroso umbral, ni de haber sido testigo de las sanguinarias atrocidades perpetradas en el santuario interior de la Orden. La visión del rostro desencajado del pobre Walter Evans no le permitía ignorar la maldad que crecía y se enconaba en Arkham. Diana ya no podía seguir siendo cómplice de aquello.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Mistico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Constituyes la mejor opción defensiva contra los Primigenios."
+          },
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos o mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 23,
+    "isActive": true,
+    "expansion": "AHNigth",
+    "name": "“Malasombra” O'Toole",
+    "position": "Ex-Convict",
+    "effect1": "I Won't Go Back – Once per round, after a test in which you rolled a 1, you may focus on a skill of your choice, even if doing so exceeds your Concentration limit.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "\"In my situation, you see all kinds of things, detective. How much is that worth to you?\"",
+    "theStory": "Malasombra always tried to make decisions that would make his mother proud, but his luck never lasted long. Something always went wrong, and each new decision he made seemed to limit his options even further. Then his mother fell ill, and his 'few options' quickly turned into 'no options.' After being caught for robbing a bank to pay the mounting hospital bills, Malasombra soon discovered that things could get even worse: his cellmate, endlessly rambling about the 'Great Old Ones,' scribbled dozens of cryptic messages on the cell walls just before bursting into flames. When he finally got out, Malasombra found a new way to make his mother proud. After kneeling to place a bouquet of flowers on her grave, he swore to do whatever it took to protect the world from those ancient horrors.",
+    "focusLimit": 0,
+    "locutionURL": "___",
+    "imgInv": "/img/1-Personajes/28-Malasombra.jpg",
+    "atributes": {
+      "life": 6,
+      "sanity": 6,
+      "lore": 2,
+      "influence": 1,
+      "observation": 3,
+      "strength": 3,
+      "will": 4,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Expert",
+        "description": "You possess a unique set of skills that allows you to specialize in a specific task. \"Malasombra\" is accustomed to making the most of risky situations; use this ability to perform complicated tests that, under other circumstances, would waste an action."
+      },
+      {
+        "rol": "Survivor",
+        "description": "Your strength lies in surviving the relentless assault of the Mythos and helping your fellow investigators do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Prófugo"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Manos largas"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Navaja automática"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "“Malasombra” O'Toole",
+        "position": "Ex presidiario",
+        "effect1": "No pienso volver - Una vez por ronda, después de una prueba en la que hayas sacado un 1, puedes concentrarte en una habilidad de tu elección, incluso aunque al hacerlo sobrepases tu límite de Concentración.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“En mi situación uno ve toda clase de cosas, detective. ¿Cuánto vale eso para usted?”",
+        "theStory": "Malasombra siempre procuró tomar decisiones que hicieran que su madre se sintiese orgullosa de él, pero la suerte le duraba bastante poco. Siempre salía algo mal, y cada nueva decisión que tomaba parecía limitar aún más sus opciones. Y entonces su madre enfermó, y sus “pocas opciones” se convirtieron rápidamente en “ninguna opción”. Tras dar con sus huesos en la cárcel por atracar un banco para pagar las facturas hospitalarias acumuladas, Malasombra no tardó en comprobar que las cosas podían torcerse aún más: su compañero de celda, que no paraba de desvariar por unos “Primigenios”, garabateó docenas de mensajes enigmáticos en las paredes justo antes de estallar en llamas. Cuando por fin salió de la trena, Malasombra halló otra forma de hacer que su madre se sintiera orgullosa. Tras arrodillarse para depositar un ramo de flores en su tumba, juró hacer cuanto estuviese en su mano para proteger al mundo de aquellos horrores ancestrales.",
+        "focusLimit": 0,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. “Malasombra” tiene por costumbre sacar partido de situaciones arriesgadas; aprovecha esta capacidad para realizar pruebas complicadas que en otras circunstancias supongan malgastar una acción."
+          },
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+
+
+  {"idInv": 24,
+    "isActive": true,
+    "expansion": "AHSecrets",
+    "name": "Mark Harrigan",
+    "position": "The Soldier",
+    "effect1": "Tenacious – At the start of your turn, if you are behind, you may focus on a skill of your choice or recover one point of Sanity.",
+    "effect2": "Unyielding – You may perform the attack action any number of times per round.",
+    "effect3": null,
+    "phrase": "'We all have scars. Mine remind me to keep fighting.'",
+    "theStory": "No one returned from the Great War as the same person who went, but the shattered bodies and the screams of agony from his comrades were not the only horrors Mark Harrigan witnessed in the trenches. In no man's land, other things lurked—things Mark could not explain. Only Sophie, his brilliant love, believed his tales of lurking beasts and monstrous shadows, and it was her faith in him that kept him steady amidst the bombs and gas. He would see her again. He would hear her laughter and see her eyes shine in the sun. But when he finally returned home to her, she was not the same. There was something inside her that devoured her from within, and he could do nothing but watch the light fade from her eyes. Now, Mark will not rest until all those horrors pay for what they have stolen from him.",
+    "focusLimit": 1,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/29-Mark.jpg",
+    "atributes": {
+      "life": 8,
+      "sanity": 4,
+      "lore": 1,
+      "influence": 2,
+      "observation": 2,
+      "strength": 4,
+      "will": 4,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Defender",
+        "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dealing with Monsters before they become a threat."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Ejército de un solo hombre"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "___"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Retrato de Sophie"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Guerra de desgaste"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Mark Harrigan",
+        "position": "El soldado",
+        "effect1": "Tenaz - Al comienzo de tu turno, si estás rezagado, puedes concentrarte en una habilidad de tu elección o recuperar un punto de Cordura.",
+        "effect2": "Inquebrantable - Puedes realizar la acción de ataque cualquier cantidad de veces por ronda.",
+        "effect3": null,
+        "phrase": "“Todos tenemos cicatrices. Las mías me recuerdan que siga luchando.”",
+        "theStory": "Nadie volvió de la Gran Guerra siendo la misma persona que al ir, pero los cuerpos destrozados y los alaridos de agonía de sus camaradas no fueron los únicos horrores que vio Mark Harrigan en las trincheras. En tierra de nadie acechaban otras cosas, cosas que Mark no podía explicar. Sólo Sophie, su brillante amor, creía sus relatos de bestias al acecho y sombras monstruosas, y fue su fe en él lo que lo mantuvo firme entre las bombas y el gas. Volvería a verla. Oiría su risa y vería sus ojos resplandecer al sol. Pero cuando por fin volvió a casa con ella, no era la misma. Había algo en su interior que la devoraba desde dentro, y él no pudo hacer nada más que asistir al desvanecimiento de la luz en sus ojos. Ahora, Mark no descansará hasta que todos esos horrores paguen por lo que le han arrebatado.",
+        "focusLimit": 1,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Defensor",
+            "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 25,
+    "isActive": true,
+    "expansion": "AHSecrets",
+    "name": "Preston Fairmont",
+    "position": "The Millionaire",
+    "effect1": "Material Comforts – At the start of your turn, you may spend $1 to recover one point of Health or one point of Sanity.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'Sure, nobility obliges one to save the world from living nightmares, doesn’t it?'",
+    "theStory": "Preston Fairmont was born surrounded by luxury and never had to question much about the origin of his family’s wealth and privileges. It was simple: he had money and he enjoyed it. His father managed the affairs and legacy of the family business, while Preston was almost completely oblivious to the frequent visits of grim-faced men in dark suits. After the recent death of his father, all responsibility has fallen on Preston’s shoulders, and for the first time, he has begun to question his place in life. What did his grandfather do to amass all that wealth? Why are Carl Sanford and the Order of the Silver Twilight so interested in his family? Was his father’s death really an accident? Perhaps it’s time to use his wealth, no matter where it came from, to make a difference.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/30-Preston.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 5,
+      "lore": 2,
+      "influence": 5,
+      "observation": 2,
+      "strength": 3,
+      "will": 1,
+      "money": 4,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Expert",
+        "description": "You possess a unique set of skills that allows you to specialize in a specific task. Preston has an almost unlimited supply of money. Use your abilities to set up a powerful streak of turns."
+      },
+      {
+        "rol": "Survivor",
+        "description": "Your strength lies in surviving the relentless assault of the Mythos and helping your fellow investigators do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Herencia familiar"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "___"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "El dinero habla"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Vida privilegiada"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Preston Fairmont",
+        "position": "El millonario",
+        "effect1": "Comodidades materiales - Al comienzo de tu turno, puedes gastar 1$ para recuperar un punto de Vida o un punto de Cordura.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Claro, la nobleza obliga a salvar al mundo de pesadillas vivientes, ¿no es así?”",
+        "theStory": "Preston Fairmont nació rodeado de lujos y nunca tuvo que preguntarse mucho cuál sería el origen de la riqueza y los privilegios de su familia. Era muy sencillo: tenía dinero y lo disfrutaba. Su padre gestionaba los asuntos y el legado del negocio familiar, mientras Preston ignoraba casi por completo las frecuentes visitas de hombres de rostro adusto y trajes oscuros. Tras la reciente muerte de su padre, toda la responsabilidad ha caído sobre los hombros de Preston, y éste ha empezado a cuestionarse su lugar en la vida por primera vez. ¿Qué hizo su abuelo para ganar todo ese dinero? ¿Por qué se interesan tanto por su familia Carl Sanford y la Orden del Crepúsculo de Plata? ¿Fue realmente un accidente la muerte de su padre? Tal vez sea el momento de emplear su riqueza, venga de donde venga, para marcar una diferencia.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Preston tiene un suministro de dinero casi ilimitado. Emplea tus capacidades para preparar una racha de turnos potentes."
+          },
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 26,
+    "isActive": true,
+    "expansion": "AHSecrets",
+    "name": "Agatha Crane",
+    "position": "The Parapsychologist",
+    "effect1": "A New Field of Study – After you suffer one or more points of Horror, you may focus on a skill of your choice and gain a Remnant token.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'Things don’t fit into simple categories in such an orderly way as they tell us.'",
+    "theStory": "Agatha Crane holds degrees in Mathematics and Psychology, and has always placed great value on logical thinking and science based on evidence. In her youth, she had little regard for superstitions and ghost stories, but the accumulation of proof has led Agatha to conclude that there is an unmistakable kernel of truth in the tales of monsters, spirits, and magic that permeate the history of Arkham. If these things are real, then they must follow consistent rules, just like the physical sciences. As she likes to explain to anyone who will listen long enough, and as her husband Wilbur has heard many times, this new field of study is called “parapsychology.” Agatha aims to use scientifically proven methods to bridge the gap between the mystical and the rational, between occultism and science.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/31-Agatha.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 4,
+      "influence": 3,
+      "observation": 3,
+      "strength": 1,
+      "will": 2,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should focus on gathering Clues and uncovering their hidden meanings. Your work is essential in thwarting the evil schemes of the Ancient Ones."
+      },
+      {
+        "rol": "Mystic",
+        "description": "You excel at erecting arcane safeguards against evil. Your primary occupation should be removing Doom tokens from the board. You are the best defensive option against the Ancient Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Principio de ocultismo"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Método científico"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Llamar a los muertos"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Cámara de espíritus"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Agatha Crane",
+        "position": "La parapsicóloga",
+        "effect1": "Un nuevo campo de estudio - Después de que sufras uno o más puntos de Horror, puedes concentrarte en una habilidad de tu elección y ganar una ficha de Restos.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Las cosas no encajan en categorías sencillas de forma tan ordenada como nos cuentan.”",
+        "theStory": "Agatha Crane es licenciada en Matemáticas y Psicología y siempre ha dado un gran valor al pensamiento lógico y a la ciencia fundamentada en las pruebas. En su juventud tenía poco aprecio por las supersticiones y las historias de fantasmas, pero la acumulación de pruebas ha llevado a Agatha a concluir que existe un poso de verdad inconfundible en los relatos sobre monstruos, espíritus y magia que impregnan la historia de Arkham. Si esas cosas son reales, entonces deben seguir unas reglas consistentes, igual que las ciencias físicas. Como le gusta explicar a cualquiera que la escuche el tiempo suficiente —y como su marido Wilbur ha oído muchas veces—, este nuevo campo de estudio se llama “parapsicología”. Agatha quiere emplear métodos científicos de eficacia demostrada para salvar la distancia entre lo místico y lo racional, entre el ocultismo y la ciencia.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          },
+          {
+            "rol": "Místico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Constituyes la mejor opción defensiva contra los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 27,
+    "isActive": true,
+    "expansion": "AHSecrets",
+    "name": "Winifred Habbamock",
+    "position": "The Aviator",
+    "effect1": "So Good – Once per round, when you are about to fail a test, you can spend a Focus token to roll an additional die. If you still fail the test, choose a skill in which you haven’t focused; focus on that skill twice.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'As long as you come out alive, it doesn't matter.'",
+    "theStory": "Winifred Habbamock, whom her parents call by her Wampanoag name, Weethao, was always too clever for her own good. She discovered her casual indifference toward authority when the teachers at her reservation school began struggling to keep up with her, and developed a carefree recklessness when she emerged mostly unscathed from her most impulsive escapades. When she stole an old biplane from a World War I veteran, the owner was impressed by her natural talent and taught her to fly. When she used that plane to perform aerobatics at airshows along the East Coast, she earned a well-deserved reputation as 'the fearless woman.' When she crashed that plane after an encounter with a bat‑like creature with a massive, festering eye, she found a new challenge to face.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/32-Winifred.jpg",
+    "atributes": {
+      "life": 6,
+      "sanity": 6,
+      "lore": 1,
+      "influence": 2,
+      "observation": 4,
+      "strength": 2,
+      "will": 4,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Expert",
+        "description": "You possess a unique set of skills that allows you to specialize in a specific task. Winifred excels when she can shine facing impossible challenges, often boosting herself at the risk of future success."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Lo mismo que hagas"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "___"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Acrobacias aéreas"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Determinación imprudente"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Winifred Habbamock",
+        "position": "La aviadora",
+        "effect1": "Así de buena - Una vez por ronda, cuando vayas a fallar una prueba, puedes gastar una ficha de Concentración para tirar un dado adicional. Si aun así fallas esa prueba, elige una habilidad en la que no te hayas concentrado; concéntrate dos veces en esa habilidad.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Mientras salgas con vida, da igual.”",
+        "theStory": "Winifred Habbamock, a quienes sus padres llaman por su nombre wampanoag, Weethao, siempre fue demasiado lista para su propio bien. Descubrió su casual indiferencia frente a la autoridad cuando los profesores del colegio de su reserva empezaron a tener problemas para estar a su altura, y desarrolló una despreocupada temeridad cuando salía mayormente indemne incluso de sus andanzas más impetuosas. Cuando le robó un viejo biplano a un piloto veterano de la Gran Guerra, el propietario quedó impresionado por su talento natural y le enseñó a pilotar. Cuando empleó ese avión para realizar acrobacias en exhibiciones aéreas por la Costa Este, se ganó una merecida reputación como “la mujer sin miedo”. Cuando estrelló ese avión tras un encuentro con una bestia similar a un murciélago que tenía un enorme ojo purulento, encontró un nuevo reto que afrontar.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Winifred destaca cuando puede lucirse enfrentándose a desafíos imposibles, y a menudo puede potenciarse a costa de poner en peligro sus éxitos futuros."
+          }
+        ]
+      }
+    }
+  },
+  
+  
+  {"idInv": 28,
+    "isActive": true,
+    "expansion": "AHOriginal",
+    "name": "Darrell Simmons",
+    "position": "Photographer",
+    "effect1": "Arkham Native – At the time of stealing an encounter, Darrell can draw 2 cards and choose the one he wants. The others are then returned to the bottom of the deck (except if the discarded is an Event).",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'You’ll see, whether you like it or not.'",
+    "theStory": "While growing up in Arkham, Darrell always knew something wasn’t right in this strange little town. After graduating from high school he went on to work as a photographer for the Arkham Adviser, and for the next two years he has walked every corner of the city. Yet last night Darrell saw something horrible, something that has shaken his world to the ground and undone the illusion of security that we all create to protect our minds and souls. His editor says it’s his imagination, but even when he leaves the newspaper building he knows what he saw was real, and he intends to show it to the world! This time he’ll be more cautious. This time he’ll take pictures and prove that normal things don’t happen in Arkham.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/21-Darrel.jpg",
+    "atributes": {
+      "life": 7,
+      "sanity": 5,
+      "lore": 2,
+      "influence": 2,
+      "observation": 4,
+      "strength": 3,
+      "will": 1,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      },
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Camera"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Each photo tells"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Advance"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Darrell Simmons",
+        "position": "Fotógrafo",
+        "effect1": "Nativo de Arkham – A la hora de robar un encuentro, Darrell puede robar 2 cartas y escoger la que desee. Después se devuelven las demás al fondo del mazo (excepto si la descartada es un evento).",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Ya veréis, lo queráis o no.”",
+        "theStory": "Ya mientras se criaba en Arkham, Darrell siempre supo que algo no marchaba bien en esta pequeña y extraña ciudad. Después de graduarse en el instituto entró a trabajar de fotógrafo para el Arkham Adviser, y durante los dos años siguientes ha pateado hasta el último rincón de la ciudad. Sin embargo, la noche pasada Darrell vio algo horrible, algo que ha sacudido su mundo hasta los cimientos y que ha deshecho la ilusión de seguridad que todos creamos para proteger nuestras mentes y almas. Su editor dice que son imaginaciones suyas, pero aun cuando sale del edificio del periódico sabe que lo que vio era real, ¡y pretende mostrárselo al mundo! Esta vez será más precavido. Esta vez tomará fotos y demostrará que en Arkham no ocurren cosas normales.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          },
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 29,
+    "isActive": true,
+    "expansion": "AHOriginal",
+    "name": "Gloria Goldberg",
+    "position": "Writer",
+    "effect1": "The future is written – In the Myths phase, spending 2 Focus tokens, you may look at and steal 1 token of your choice.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "''",
+    "theStory": "As a young woman, Gloria was beset by terrible visions. After years of seeking medical help and therapy, she learned to channel them by writing. Her strange, unsettling novels resonated in these anxious times and made her a bestseller. Tonight, after a book signing in Arkham, the fiercest vision she’d ever had caused her to collapse. She saw the sky split open and a monstrous form emerge, unleashing chaos and slaying thousands. As she recovered, Gloria knew this vision was real—and must be prevented. Now she sits in a rundown diner, sipping coffee and deciding what to do next.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/22-Gloria.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 3,
+      "observation": 3,
+      "strength": 2,
+      "will": 2,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Mystic",
+        "description": "You stand out by erecting arcane safeguards against evil. Your main task should be to remove Doom tokens from the board. You are the best defensive option against the Primigen."
+      },
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "I saw it coming"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Forbidden letters"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Illumination"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Gloria Goldberg",
+        "position": "Escritora",
+        "effect1": "El futuro está escrito – En la fase de mitos, gastando 2 fichas de Concentración, puedes ver y robar 1 ficha de tu elección.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "''",
+        "theStory": "De joven, Gloria se veía acosada por terribles visiones. Tras años de médicos y terapia aprendió a controlarlas escribiendo historias. Sus extrañas y perturbadoras novelas conectaron con el público en estos tiempos angustiantes, convirtiéndola en una autora de éxito. Esta noche, tras una firma de libros en Arkham, la visión más intensa que jamás tuvo la derribó. Vio el cielo abrirse y surgir una forma monstruosa que desató el caos y mató a miles. Al despertar, supo que esa visión era real y debía evitarse. Ahora está en un restaurante desvencijado, sorbiendo café y decidiendo qué hacer.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Místico",
+            "description": "Destacas erigiendo salvaguardas arcanas contra el mal. Tu principal ocupación debería ser eliminar fichas de Perdición del tablero. Constituyes la mejor opción defensiva contra los Primigenios."
+          },
+          {
+            "rol": "Buscador",
+            "description": "Eres una intrépida sabuesa. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 30,
+    "isActive": true,
+    "expansion": "AHOriginal",
+    "name": "Mandy Thompson",
+    "position": "Investigator",
+    "effect1": "In‑depth Research – Once per round, choose an investigator at the start of your turn; during that round they may re‑roll any number of dice they failed.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'What lies forever cannot die... Perhaps this is what he meant.'",
+    "theStory": "Mandy came to Arkham several years ago seeking research work at Miskatonic University. She has since worked with many professors, delving into esoteric tomes of science, history, and occult lore. Last week, while reading an ancient book of prophecies, she felt she’d uncovered something monumental: omens in Arkham signaling the return of a being called the Ancient One, destined to crush humanity under its abominable might. Tonight the full moon turned blood red—the final sign. Armored with her knowledge, Mandy slips into the night to defy fate and prevent the prophecy.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/23-Mandy.jpg",
+    "atributes": {
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 3,
+      "observation": 4,
+      "strength": 1,
+      "will": 2,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "Survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      },
+      {
+        "rol": "Seeker",
+        "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Notebook"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "The short way"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Irrefutable evidence"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Mandy Thompson",
+        "position": "Investigadora",
+        "effect1": "Investigación en profundidad – Una vez por ronda puedes elegir a un investigador al comienzo de tu turno; durante esa ronda puede volver a tirar cualquier cantidad de dados fallados.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“No puede morir lo que yace eternamente... Quizás sea esto a lo que se refería.”",
+        "theStory": "Mandy llegó a Arkham hace varios años en busca de trabajo de investigadora en la Universidad Miskatonic. Desde entonces ha colaborado con numerosos profesores, sumergiéndose en tomos esotéricos de ciencia, historia y ocultismo. La semana pasada, al leer un antiguo libro de profecías, sintió que había descubierto algo monumental: presagios en Arkham anunciando el regreso de un ser llamado el Primigenio, destinado a aplastar a la humanidad bajo su abominable poder. Esta noche la luna llena se volvió roja sangre, la señal final. Armada con su conocimiento, Mandy se desliza en la noche para desafiar el destino e impedir la profecía.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          },
+          {
+            "rol": "Buscador",
+            "description": "Eres una intrépida sabuesa. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 31,
+    "isActive": true,
+    "expansion": "AHOriginal",
+    "name": "Monterrey Jack",
+    "position": "Archeologist",
+    "effect1": "Antique Amulet – Once per turn, you may change 2 points of Damage you would receive into 1 point of Horror.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'That statue meant something, I’m sure.'",
+    "theStory": "Monterrey has spent years as a globetrotter and treasure hunter, following in his father’s footsteps while preserving the scientific value of each find. A recent lead brought him to a prehistoric statue in Arkham—only to discover the seller locked away in the asylum. As he turned to leave, a robed figure slipped by, revealing a silver pendant bearing the same symbol etched on his father’s forehead at the time of his murder. Haunted by that sign for years, Monterrey pursued the figure into the night. Though they vanished, he knows that somewhere in Arkham lies the key to his father’s death—and he won’t rest until he uncovers it.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/24-Monterrey.jpg",
+    "atributes": {
+      "life": 4,
+      "sanity": 8,
+      "lore": 2,
+      "influence": 2,
+      "observation": 3,
+      "strength": 3,
+      "will": 3,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "survivor",
+        "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Whip of the film"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Sacrifice spell"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Until the last breath"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Monterrey Jack",
+        "position": "Arqueólogo",
+        "effect1": "Amuleto antiguo – Una vez por turno, puedes cambiar 2 puntos de Daño que vayas a recibir por 1 punto de Horror.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "“Esa estatua significaba algo, estoy seguro.”",
+        "theStory": "Monterrey lleva muchos años trabajando como aventurero trotamundos y cazador de tesoros. Siguiendo los pasos de su padre, siempre ha intentado preservar el valor científico de sus hallazgos. Recientemente siguió una pista que le condujo a una antigua estatua prehistórica en Arkham, pero el vendedor estaba encerrado en el manicomio. Cuando se dio por vencido, una figura encapuchada pasó a su lado mostrando un colgante de plata con el símbolo grabado en la frente de su padre al asesinarlo. Perseguido por ese signo durante años, Monterrey siguió a la figura por la noche. Aunque se desvaneció, sabe que en algún lugar de Arkham yace la clave de la muerte de su padre, y no descansará hasta descubrirla.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+  
+
+  {"idInv": 32,
+    "isActive": true,
+    "expansion": "AHComunity",
+    "name": "Carolyn Fern",
+    "position": "The Psychologist",
+    "effect1": "Moonlighting - When you perform a gather resourced action, an investigator in your space may gain remnant or recover one sanity.",
+    "effect2": "Mental Fortitude - When another investigator in your neighborhood would suffer horror, reduce that amount of horror suffered by one (to a minimum of 0).",
+    "effect3": null,
+    "phrase": "'The mad deserve peace of mind, not death of spirit.'",
+    "theStory": "When Carolyn Fern's latest patient, Malachi, told her of his troubled nightmares, she never espected that he would turn up dead the very next day, murdered by the very weapon of which he dreamed. A gifted psichologist and skilled in the art of hypnosis, Carolyn has been following clues Malachi left in his diary Across two continents. Convinded that Malachi's death is in some way connected to the growing unrest in the world, she is determined to uncover the truth lies behind the muerder of her former patient. After her practice closed for the night, carolyn took to the streets of Arkham to find anything connecting the esoteric events tha led to the death of Malachi.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/33-Carolyn.jpg",
+    "atributes":{
+      "life": 5,
+      "sanity": 7,
+      "lore": 3,
+      "influence": 2,
+      "observation": 2,
+      "strength": 2,
+      "will": 4,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "guardian",
+        "description": "As a guardian, it is your responsibility to protect your fellow investigators. That could mean helping them recover from trauma or dispatching monsters before they become a threat."
+      },
+      {
+        "rol": "mystic",
+        "description": "As a mystic, you are adept at warding against evil.Your focus should be on removing doom from the board. Your are the best defense against the Ancient Ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Group Therapy"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Cognitive Will"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Session Clock"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Carolyn Fern",
+        "position": "La psicologa",
+        "effect1": "Trabajo nocturno - Cuando realizas una acción de reunir recursos, un investigador en tu espacio puede obtener un resto o recuperar un punto de cordura.",
+        "effect2": "Fortaleza Mental - Cuando otro investigador en tu vecindario fuera a sufrir horror, reduce esa cantidad de horror sufrido en uno (hasta un mínimo de 0).",
+        "effect3": null,
+        "phrase": "'Los locos merecen paz mental, no la muerte del espíritu.'",
+        "theStory": "Cuando Carolyn Fern, la última paciente de Malachi, escuchó de él los relatos sobre sus inquietantes pesadillas, nunca esperó que apareciera muerto al día siguiente, asesinado con el arma exacta que había visto en sus sueños. Psicóloga talentosa y experta en el arte de la hipnosis, Carolyn ha estado siguiendo las pistas que Malachi dejó en su diario a lo largo de dos continentes. Convencida de que la muerte de Malachi está de algún modo relacionada con la creciente inquietud en el mundo, está decidida a descubrir la verdad que se esconde tras el asesinato de su antiguo paciente. Tras cerrar su consultorio por la noche, Carolyn salió a las calles de Arkham en busca de cualquier indicio que conecte los eventos esotéricos que llevaron a la muerte de Malachi.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "guardián",
+            "description": "Como guardián, tu responsabilidad es proteger a tus compañeros investigadores. Eso puede significar ayudarlos a recuperarse del trauma o eliminar monstruos antes de que se conviertan en una amenaza."
+          },
+          {
+            "rol": "místico",
+            "description": "Como místico, eres experto en proteger contra el mal. Tu enfoque debe estar en eliminar la perdición del tablero. Eres la mejor defensa contra los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 33,
+    "isActive": true,
+    "expansion": "AHComunity",
+    "name": "Bob Jenkins",
+    "position": "The salesman",
+    "effect1": "Upsale At the beggining of your turn, yoy may discard one item or spell you possess. If you do gain money equal to the card's value plus 1$ (treat cards with no value as 2$)",
+    "effect2": "New Shipment - After your final action, discard up to two cards from the display. You may buy one item from the display for half price (rounded up).",
+    "effect3": null,
+    "phrase": "'Really is just a matter of negotiation'",
+    "theStory": "Acconding to Bob, the secret to success as a salesman is persistence. People just need to be told what it is that they want. Repeatedly. Recently, Bob came into possession of a handfid of unusual golden coins, and Bob hopes that the same persistence he so famous advocates will help him o uncover their origin and purpose. His subsequent research taught him that the coins are rare and valuable, but also that some sort of curse is attached 1o them. Collectors refuse to touch them—but Bob is sold. All he needs is a little information on the rarities to make the best pitch to the right buyer, and who better to ask than the proprietors of Arkham's Downtown business district.",
+    "focusLimit": 1,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/34-Bob.jpg",
+    "atributes":{
+      "life": 7,
+      "sanity": 5,
+      "lore": 2,
+      "influence": 4,
+      "observation": 2,
+      "strength": 3,
+      "will": 2,
+      "money": 1,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "guardian",
+        "description": "As a guardian, it is your responsibility to protect your fellow investigators. That could mean helping them recover from trauma or dispatching monsters before they become a threat."
+      },
+      {
+        "rol": "rogue",
+        "description": "As a rogue, you have a unique skill set that allows you to specialize on a specific task. Skilled in his trade, Bob is able to supply the team with merchandise, or at least find them what they need in a pinch"
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Briberty"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Curserd Coin"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Exposition"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Bob Jenkins",
+        "position": "El vendedor",
+        "effect1": "Venta adicional: Al comienzo de tu turno, puedes descartar un objeto o hechizo que poseas. Si lo haces, ganas una cantidad de dinero igual al valor de la carta más 1$ (considera las cartas sin valor como si valieran 2$).",
+        "effect2": "Nuevo Envío: Después de tu última acción, descarta hasta dos cartas ya mostradas de la tienda y luego rellenar de nuevo la tienda. Puedes comprar un objeto de la tienda por la mitad de su precio (redondeado hacia arriba).",
+        "effect3": null,
+        "phrase": "'En realidad, es solo una cuestión de negociación.'",
+        "theStory": "Según Bob, el secreto del éxito como vendedor es la persistencia. La gente solo necesita que se le diga lo que quiere. Repetidamente. Recientemente, Bob consiguió un puñado de inusuales monedas doradas, y espera que la misma persistencia que tanto predica lo ayude a descubrir su origen y propósito. Su investigación posterior le reveló que las monedas son raras y valiosas, pero también que están ligadas a algún tipo de maldición. Los coleccionistas se niegan a tocarlas... pero Bob ya está convencido. Solo necesita un poco de información sobre estas rarezas para preparar la mejor presentación para el comprador adecuado, y ¿quién mejor para preguntar que los propietarios del distrito comercial del centro de Arkham?",
+        "focusLimit": 1,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "guardián",
+            "description": "Como guardián, tu responsabilidad es proteger a tus compañeros investigadores. Eso puede significar ayudarlos a recuperarse del trauma o eliminar monstruos antes de que se conviertan en una amenaza."
+          },
+          {
+            "rol": "experto",
+            "description": "Como Experto, tienes un conjunto de habilidades único que te permite especializarte en una tarea específica. Experto en su oficio, Bob es capaz de suministrar mercancía al equipo, o al menos encontrar lo que necesitan en un momento crítico."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 34,
+    "isActive": true,
+    "expansion": "AHComunity",
+    "name": "Amanda Sharpe",
+    "position": "The student",
+    "effect1": "Scrutinize - Once per round, when an investigator in your neighborhood would spend a focus to reroll a die, they may reroll any number of dice instead.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'The truth of reason tempers even the wildest delusions. I will not fall prey to such madness.'",
+    "theStory": "Ever since she laid eyes upon that painting, Amanda Sharpe has been hearing voices in her head and seeing emerald cities deep beneath the ocean in her dreams. Once a student at Arkham’s Miskatonic University, Amanda Sharpe opted to take some time away from school, hoping that the strange voices and visions would subside. She returned home to stay with her parents in Kingsport until fil to resume her studies. Unfortunately, the voices have been geting worse, not better, and hardly a day goes by that she does not suffer from her unusual visions. Amanda takes the next ferry to arkham to consel with PRofessor Walters. something terrible is comming, she is sure of it. The sea wakes.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/35-Amanda.jpg",
+    "atributes":{
+      "life": 6,
+      "sanity": 6,
+      "lore": 2,
+      "influence": 3,
+      "observation": 4,
+      "strength": 1,
+      "will": 3,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "survivor",
+        "description": "As a survivor, your advantages lie with surviving the relentless assault of the mythos and helping your fellows do the same. Supporting one another will lead to victory."
+      },
+      {
+        "rol": "seeker",
+        "description": "As a seeker, you are an intrepid sleuth. Your focus should be on  gathering clues and researching their deeper meaning, Your work is instrumental in putting a stop to the evil plots at work."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Obscure Studies"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Teacher's Aid"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Mild Stimulants"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Amanda Sharpe",
+        "position": "La estudiante",
+        "effect1": "Examinar detenidamente - Una vez por ronda, cuando un investigador en tu vecindario vaya a gastar un ficha de concentración para volver a lanzar un dado, puede volver a lanzar cualquier cantidad de dados en su lugar.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'La verdad de la razón modera incluso las ilusiones más salvajes. No caeré presa de tal locura.'",
+        "theStory": "Desde que posó los ojos en aquel cuadro, Amanda Sharpe ha estado escuchando voces en su cabeza y viendo ciudades esmeralda en lo más profundo del océano en sus sueños. Antes estudiante en la Universidad Miskatonic de Arkham, Amanda decidió tomarse un tiempo lejos de la escuela, con la esperanza de que las extrañas voces y visiones desaparecieran. Regresó a casa para quedarse con sus padres en Kingsport hasta estar lista para retomar sus estudios. Desafortunadamente, las voces han ido a peor, no a mejor, y casi no pasa un solo día sin que sufra alguna de sus inusuales visiones. Amanda toma el próximo ferry a Arkham para consultar con el profesor Walters. Algo terrible se avecina, está segura de ello. El mar despierta.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "superviviente",
+            "description": "Como sobreviviente, tus ventajas radican en sobrevivir al implacable asalto del mito y ayudar a tus compañeros a hacer lo mismo. Apoyarse mutuamente conducirá a la victoria."
+          },
+          {
+            "rol": "buscador",
+            "description": "Como buscador, eres un intrépido detective. Tu enfoque debe estar en reunir pistas e investigar su significado más profundo. Tu trabajo es fundamental para detener los malvados planes en marcha."
+          }
+        ]
+      }
+    }
+  },
+
+
+  {"idInv": 35,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Hank Sampson",
+    "position": "The farmhand",
+    "effect1": "Grapple-After you perform an attack action, you may perform an evade action as an additioral action (normal restrictions do not apply).",
+    "effect2": "Plow Through-During your turn, non-epic monsters do not engage you unless you choose 1o become engaged.",
+    "effect3": null,
+    "phrase": "'Folks are in trouble. I don't gotta be a genius to help out.'",
+    "theStory": "Since he was a kid, Hank has crossed the country working on farms and ranches. In Texas, he saw a giant bird-like creature tear cattle to picces. Everyone else ran, but Hank cracked that creature’s skull open with his maul, Thinking nothing of it, he included the story in a letter to his father. Now his pa is missing and folks in Dallas say someone's looking for Hank. If they though they were going to scare him, they were wrong. Hank Samson ain't afraid of anything, and he aims to find his pa. He heads out to Massachusetts, to seek help from the academics at The Miskatonie Universiny, carrying memorized chants and scrap pieces of occult notes, hoping it will lead him closer to finding his pa.",
+    "focusLimit": 1,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/36-Hank.jpg",
+    "atributes":{
+      "life": 8,
+      "sanity": 4,
+      "lore": 1,
+      "influence": 2,
+      "observation": 2,
+      "strength": 4,
+      "will": 4,
+      "money": 3,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "guardian",
+        "description": "As a guardian, it is your responsibility to protect your fellow investigators. That could mean helping them recover from trauma or dispatching monsters before they become a threat."
+      },
+      {
+        "rol": "survivor",
+        "description": "As a survivor, you advantages lie with surviving the relentless assault of the mythos and helping your fellows do the same. Supporting one another will lead to victory."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Trusty Maul"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Sally Sampson"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Tractor Harvester"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Hank Sampson",
+        "position": "El granjero",
+        "effect1": "Agarrón: Después de realizar una acción de ataque, puedes realizar una acción de evadir como una acción adicional (no se aplican las restricciones normales).",
+        "effect2": "Abrirse paso: Durante tu turno, los monstruos no épicos no te enfrentan a menos que elijas enfrentarlos.",
+        "effect3": null,
+        "phrase": "'La gente está en problemas. No tengo que ser un genio para echar una mano.'",
+        "theStory": "Desde que era niño, Hank ha recorrido el país trabajando en granjas y ranchos. En Texas, vio a una criatura gigante parecida a un ave destrozar ganado. Todos los demás huyeron, pero Hank le partió el cráneo a la criatura con su maza. Sin darle mayor importancia, incluyó la historia en una carta para su padre. Ahora su padre está desaparecido, y la gente en Dallas dice que alguien está buscando a Hank. Si pensaban que iban a asustarlo, estaban equivocados. Hank Samson no le teme a nada, y está decidido a encontrar a su padre. Parte hacia Massachusetts, en busca de ayuda de los académicos de la Universidad Miskatonic, llevando cánticos memorizados y trozos de notas ocultistas, con la esperanza de que lo acerquen a su padre.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "guardian",
+            "description": "Como guardián, es tu responsabilidad proteger a tus compañeros investigadores. Eso puede significar ayudarlos a recuperarse del trauma o eliminar monstruos antes de que se conviertan en una amenaza."
+          },
+          {
+            "rol": "superviviente",
+            "description": "Como sobreviviente, tus ventajas radican en sobrevivir al implacable asalto del mito y ayudar a tus compañeros a hacer lo mismo. Apoyarse mutuamente conducirá a la victoria."
+          }
+        ]
+      }
+    }
+  },
+
+
+  {"idInv": 38,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Jacqueline Fine",
+    "position": "The psychic",
+    "effect1": "Limited Presence - During the Mythos Phase, you may two horror(remmant may be spent to reduce this horror). if you do: ",
+    "effect2": "- Draw your Mythos tokens immediately; you may resolve those token effects at any time during the Mythos Phase.",
+    "effect3": "- Draw three cards from the top and/or bottom of the event Deck and place them back in any order on the top and/or borrom of the deck.",
+    "phrase": null,
+    "focusLimit": 3,
+    "theStory": "At first, Jacqueline's dreams of fire and destruction seemed like a curse. Mosnters ran ramoant through city streets and some greater darkness loomed on the horizon. However, she has recently to control her versions and observe events in detail. Yerserday, she traveled from Boston to Arkham to explore an abandoned warehouse she'd seen in her dreams. Inside, she found evidence of a terrible cult that had practiced unspeakable rituals there. Jacqueline hoped to use what she's learned to prevent the terrible future that haunts her sleep. However, changing the future is never easy ...",
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/39-Jacqueline.jpg",
+    "atributes":{
+      "life": 4,
+      "sanity": 8,
+      "lore": 4,
+      "influence": 1,
+      "observation": 3,
+      "strength": 2,
+      "will": 3,
+      "money": 2,
+      "remnant": 1
+    },
+    "rol": [
+      {
+        "rol": "mystic",
+        "description": "As a mystic, you are adept at warding against evil. Your focus should be on removing doom from the board. You are the best defense against the Ancient Ones."
+      },
+      {
+        "rol": "rogue",
+        "description": "As a rogue, you have a unique skill set that allows you to specialize on a specific task. With her psychic intuition, Jacqueline can provide the team with the time they need to further uncover the mysteries of the ancient ones."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Blink out of Existance"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Bruce Graham "
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Crystal Ball "
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Jacqueline Fine",
+        "position": "La psíquica",
+        "effect1": "Presencia Limitada: Durante la fase de Mitos, puedes sufrir dos de horror (puedes gastar un **resto** para reducir este horror). Si lo haces:",
+        "effect2": "- Roba tus fichas de Mitos inmediatamente; puedes resolver los efectos de esas fichas en cualquier momento durante la fase de Mitos.",
+        "effect3": "- Roba tres cartas de la parte superior y/o inferior del mazo de eventos y colócalas de nuevo en cualquier orden en la parte superior y/o inferior del mazo.",
+        "phrase": null,
+        "focusLimit": 3,
+        "theStory": "Al principio, los sueños de Jacqueline sobre fuego y destrucción parecían una maldición. Monstruos corrían desenfrenados por las calles de la ciudad y una oscuridad mayor se cernía en el horizonte. Sin embargo, recientemente ha empezado a controlar sus visiones y a observar los eventos con detalle. Ayer, viajó de Boston a Arkham para explorar un almacén abandonado que había visto en sus sueños. Dentro, encontró evidencias de un culto terrible que había practicado rituales indescriptibles allí. Jacqueline esperaba usar lo que ha aprendido para prevenir el terrible futuro que atormenta sus noches. Sin embargo, cambiar el futuro nunca es fácil...",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "mistico",
+            "description": "Como mística, eres experta en proteger contra el mal. Tu enfoque debe estar en eliminar la perdición del tablero. Eres la mejor defensa contra los Primigenios."
+          },
+          {
+            "rol": "experto",
+            "description": "Como experto, tienes un conjunto de habilidades único que te permite especializarte en una tarea específica. Con su intuición psíquica, Jacqueline puede brindarle al equipo el tiempo que necesita para desentrañar aún más los misterios de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 39,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Harvey Walters",
+    "position": "The professor",
+    "effect1": "Arcane Learned - Once per round, you may cast a spell as an additional action (normal restrictions do not apply).",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'I have experience dealing with these sorts of horror.'",
+    "focusLimit": "Your focus limit is equal to the number of clues possessed amongst all investigators.",
+    "theStory": "In the time since Harvey Walters earned his master's degree in journalism from Miskatonic University, a lot has happened to him. His journalistic career took him into the roles of mystic and psychic investigator, wich in turn led him to earn doctorates in History and Archaeology. He became a recluse, rarely leaving his home in favour of paging through his collections of arcane texts in hope of finding a connection. There is perhaps no sane man alive who knows more about the occult than Harvey. Being able to mointain one's mind with the scriptures than Harvey has read has come at a price however. Now his ongoing struggle against the darkness has brought him back to his alma mater here in Arkham.",
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/40-Harvey.jpg",
+    "atributes":{
+      "life": 4,
+      "sanity": 8,
+      "lore": 3,
+      "influence": 2,
+      "observation": 3,
+      "strength": 2,
+      "will": 3,
+      "money": 2,
+      "remnant": 0
+    },
+    "rol": [
+      {
+        "rol": "mystic",
+        "description": "As a mystic, you are adept at warding against evil. Your focus should be on removing doom from the board. You are the best defense against the Ancient Ones."
+      },
+      {
+        "rol": "seeker",
+        "description": "As a seeker, you are an intrepid sleuth. You focus should be on gathering clues and researching their deeper meaning. your work is instrumental in putting a stop to the evil plots at work."
+      }
+    ],
+    "possessions": [
+      {
+        "id": 12,
+        "require": true,
+        "title": "Open the Third eye"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Book of Anubis"
+      },
+      {
+        "id": 12,
+        "require": false,
+        "title": "Deleterious Study"
+      }
+    ],
+    "translations": {
+      "es": {
+        "name": "Harvey Walters",
+        "position": "El profesor",
+        "effect1": "Erudito Arcano - Una vez por ronda, puedes lanzar un hechizo como una acción adicional (no se aplican las restricciones normales).",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Tengo experiencia enfrentándome a este tipo de horrores.'",
+        "focusLimit": "Tu límite de concentración es igual al número de pistas en posesión de todos los investigadores.",
+        "theStory": "Desde que Harvey Walters obtuvo su máster en periodismo en la Universidad de Miskatonic, le han sucedido muchas cosas. Su carrera periodística lo llevó a desempeñar los roles de místico e investigador psíquico, lo que a su vez lo llevó a obtener doctorados en Historia y Arqueología. Se volvió un recluso, saliendo rara vez de su hogar, prefiriendo pasar las páginas de sus colecciones de textos arcanos con la esperanza de encontrar una conexión. Quizá no haya un hombre cuerdo con más conocimientos sobre lo oculto que Harvey. Sin embargo, el poder mantener la mente intacta tras leer las escrituras que Harvey ha estudiado ha tenido un precio. Ahora, su lucha constante contra la oscuridad lo ha llevado de regreso a su alma mater, aquí en Arkham.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "mistico",
+            "description": "Como mística, eres experta en proteger contra el mal. Tu objetivo principal debe ser eliminar la perdición del tablero. Eres la mejor defensa contra los Primigenios."
+          },
+          {
+            "rol": "buscador",
+            "description": "Como buscadora, eres una investigadora intrépida. Tu objetivo principal debe ser reunir pistas e investigar su significado más profundo. Tu labor es fundamental para detener los planes malignos en marcha."
+          }
+        ]
+      }
+    }
   }
+  
 ]
