@@ -36,7 +36,7 @@ export class InvModel{
     }
 
     static async getByID ({id}){
-        const inv = invListJSON.find(inv => inv.id == id)
+        const inv = invListJSON.find(inv => inv.idInv == id)
         return inv
     }
 

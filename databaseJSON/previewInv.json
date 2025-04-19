@@ -3,7 +3,7 @@
       "isActive": true,
       "name": "Tommy Muldoon",
       "position": "Rookie cop",
-      "rol": ["defender", "survivor"],
+      "rol": ["guardian", "survivor"],
       "expansion": "AHBase",
       "baseData":{
         "life": 7,
@@ -111,7 +111,7 @@
       "isActive": true,
       "name": "Calvin Wrigth",
       "position": "Tormented men",
-      "rol": ["defender", "rogue"],
+      "rol": ["guardian", "rogue"],
       "expansion": "AHBase",
       "baseData":{
         "life": 6,
@@ -129,7 +129,7 @@
       "isActive": true,
       "name": "Agnes Baker",
       "position": "Waitress",
-      "rol": ["mystic", "defender"],
+      "rol": ["mystic", "guardian"],
       "expansion": "AHBase",
       "baseData":{
         "life": 6,
@@ -147,7 +147,7 @@
       "isActive": true,
       "name": "Michael McGlen",
       "position": "Gangster",
-      "rol": ["rogue", "defender"],
+      "rol": ["rogue", "guardian"],
       "expansion": "AHBase",
       "baseData":{
         "life": 8,
@@ -244,7 +244,7 @@
         "life": 4,
         "sanity": 8
       },
-      "imgInv": "/img/1-inv/13-Silas.jpg",
+      "imgInv": "/img/1-inv/14-Charlie.jpg",
       "translations": {
         "es": {
           "name": "Charlie Kane",
@@ -274,13 +274,13 @@
       "isActive": true,
       "name": "Zoey Samaras",
       "position": "Chef",
-      "rol": ["defender", "mystic"],
+      "rol": ["guardian", "mystic"],
       "expansion": "AHWaves",
       "baseData":{
         "life": 5,
         "sanity": 7
       },
-      "imgInv": "/img/1-inv/15-Stella.jpg",
+      "imgInv": "/img/1-inv/16-Zoey.jpg",
       "translations": {
         "es": {
           "name": "Zoey Samaras",
@@ -292,7 +292,7 @@
       "isActive": true,
       "name": "Padre Mateo",
       "position": "Priest",
-      "rol": ["mystic", "defender"],
+      "rol": ["mystic", "guardian"],
       "expansion": "AHWaves",
       "baseData":{
         "life": 5,
@@ -365,7 +365,7 @@
       "isActive": true,
       "name": "Roland Banks",
       "position": "Federal Agent",
-      "rol": ["defender", "seeker"],
+      "rol": ["guardian", "seeker"],
       "expansion": "AHNigth",
       "baseData":{
         "life": 7,
@@ -401,7 +401,7 @@
       "isActive": true,
       "name": "Diana Stanley",
       "position": "Redeemed Cultist",
-      "rol": ["mystic", "defender"],
+      "rol": ["mystic", "guardian"],
       "expansion": "AHNigth",
       "baseData":{
         "life": 7,
@@ -438,7 +438,7 @@
       "isActive": true,
       "name": "Mark Harrigan",
       "position": "The Soldier",
-      "rol": ["defender"],
+      "rol": ["guardian"],
       "expansion": "AHSecrets",
       "baseData":{
         "life": 8,

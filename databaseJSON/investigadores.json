@@ -21,7 +21,8 @@
       "strength": 2,
       "will": 3,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -96,7 +97,8 @@
       "strength": 2,
       "will": 2,
       "money": 4,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -171,7 +173,8 @@
       "strength": 3,
       "will": 3,
       "money": 5,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -238,7 +241,8 @@
       "strength": 2,
       "will": 2,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -305,7 +309,8 @@
       "strength": 2,
       "will": 3,
       "money": 1,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -380,7 +385,8 @@
       "strength": 2,
       "will": 2,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -450,7 +456,7 @@
     "theStory": "The hardest thing Calvin had ever done was to turn his back on Joao, who was always there to help him cope. But he had no choice. The image of Joao burning to ashes, his world calcinated in a flash of light, and the darkness that nested inside him haunted Calvin. Unable to permit the loss of his lover, he made a deal. He let the Masked God sect believe that they could control him, and he waited for the right moment to rise against the ancient evil that threatened the world. It was a difficult time, but knowing that Joao was safe helped him overcome it. Not that Calvin wasn’t afraid—he was—but he knew what had to be done, and that he was the only one capable of it.",
     "focusLimit": 2,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/7-Calvin.jpg",
+    "imgInv": "/img/1-inv/7-Calvin.jpg",
     "atributes": {
       "life": 6,
       "sanity": 6,
@@ -460,7 +466,8 @@
       "strength": 3,
       "will": 1,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -525,7 +532,7 @@
     "theStory": "Agnes had almost gotten used to the strange visions that disturbed her dreams: strangers in robes, ritual chants, and monsters howling with sharp claws that she could only glimpse from the corner of her eye. But after a bad fall that caused her to hit her head, the visions became even more frequent—even while she was awake. In one such vision, she saw herself leading the psalms of robed figures, hiding a silver key in the mortar of an old well, or casting spells as a sorceress in the mythical Hyperborea. Agnes traveled to Arkham in search of an explanation, as the city has a long tradition of witchcraft trials and unexplained events. Working at Velma’s restaurant, she one day encountered an old well with loose bricks. Among the bricks, embedded in the mortar, she found an ancient silver key—exactly where she knew it would be.",
     "focusLimit": 2,
     "locutionURL": "Cx4GNKVIWHQ",
-    "imgInv": "/img/1-Personajes/8-Agnes.jpg",
+    "imgInv": "/img/1-inv/8-Agnes.jpg",
     "atributes": {
       "life": 6,
       "sanity": 6,
@@ -535,7 +542,8 @@
       "strength": 2,
       "will": 3,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -610,7 +618,8 @@
       "strength": 4,
       "will": 3,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -685,7 +694,8 @@
       "strength": 3,
       "will": 3,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -760,7 +770,8 @@
       "strength": 2,
       "will": 4,
       "money": 1,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -835,7 +846,8 @@
       "strength": 2,
       "will": 2,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -902,7 +914,7 @@
     "theStory": "Silas was drawn to the sea. At the age of fourteen he answered its call and left his hometown of Innsmouth to join a merchant ship. He began his new life as a fish in the water, having an innate talent for seamanship, and swore never to return. The truth is he was eager to leave that decrepit and corrupt town—where his distant kinship with the old Marsh family had plunged the town into decay. Silas was in a tavern in the village of Singapore when he received the news of his parents' death. He didn't even come back for the funeral; he convinced himself it was for the best. He was glad to have left that terrible place behind. But now he often dreams of his late mother, and just as the sea once attracted him when he was young, something in Innsmouth has compelled him to return.",
     "focusLimit": 2,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/13-Silas.jpg",
+    "imgInv": "/img/1-inv/13-Silas.jpg",
     "atributes": {
       "life": 8,
       "sanity": 4,
@@ -912,7 +924,8 @@
       "strength": 3,
       "will": 3,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -977,7 +990,7 @@
     "theStory": "Serving a community as peculiar as Arkham requires juggling, but Mayor Charlie Kane has cleverly maneuvered to establish contacts and alliances among the city's varied forces: the University and the Historical Society, the Silver Twilight Order and the Gypsies of Independence Square, even between law enforcement and organized crime. The small leather-bound diary that Charlie received from his predecessor warned of ancient threats and ineffable creatures that could only be kept at bay with constant vigilance. The diary suggested that something colossal lurked on the fringes of this world, and that vision left no doubt. The stars are propitious. That something is coming.",
     "focusLimit": "Your limit is equal to the number of Allies you have.",
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/14-Charlie.jpg",
+    "imgInv": "/img/1-inv/14-Charlie.jpg",
     "atributes": {
       "life": 4,
       "sanity": 8,
@@ -987,7 +1000,8 @@
       "strength": 2,
       "will": 2,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1052,7 +1066,7 @@
     "theStory": "Before she started working for the Arkham post office, Stella had two things clear. Firstly, that her parents made a mistake by treating her as a boy; secondly, that the house atop the crag that overlooked Kingsport whispered to her at night, calling her by her true name—the name she had chosen: Stella. Delivering mail six days a week, no matter the hour, was no easy job, but Stella was delighted because she knew it helped keep people connected. Until she began finding letters. At the end of her route, she’d always have one extra letter—always addressed to her, always postmarked Kingsport, and always containing a single handwritten word with care: Stella.",
     "focusLimit": 2,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/15-Stella.jpg",
+    "imgInv": "/img/1-inv/15-Stella.jpg",
     "atributes": {
       "life": 5,
       "sanity": 7,
@@ -1062,7 +1076,8 @@
       "strength": 2,
       "will": 3,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1119,7 +1134,7 @@
     "theStory": "Zoey Samaras made sure her knives were always sharp. At first, it was simply a habit, instilled after years as a kitchen helper for some of the world's top chefs. They taught her that a cook’s tools were his knives and the stoves that transform the simple into something divine, something transcendent. One night, she felt an impulse—a voice in her head urging her to take a different path home. Then she dropped the blindfold when she saw horrifying beings with sharp, bloody teeth devouring a man in an alley. The voice—like that of God himself—urged her to purge the world of its malignant voracity, and in doing so, to cleanse the horrors lurking in the shadows. Her tools have served her well.",
     "focusLimit": 2,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/16-Zoey.jpg",
+    "imgInv": "/img/1-inv/16-Zoey.jpg",
     "atributes": {
       "life": 5,
       "sanity": 7,
@@ -1129,7 +1144,8 @@
       "strength": 3,
       "will": 4,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1194,7 +1210,7 @@
     "theStory": "When he was young, Father Matthew Castile found comfort in the conviction of living in a just world, under the protection of a good and merciful God. Although the things he saw before leaving the mission made a deep impression on him, he clung to the idea that all that madness, the dreadful creatures that harassed the locals and the grotesque statue he found in that cave were not worldly threats, but he could not prevent doubt from gnawing at him: if such demons were real, why were Matthew’s prayers never answered? Somewhere in this cold and merciless universe, infested with even more terrible demons, monsters and forces, the true grace of God was to manifest. Matthew set out to seek His light again. He had to.",
     "focusLimit": 3,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/17-Padre.jpg",
+    "imgInv": "/img/1-inv/17-Padre.jpg",
     "atributes": {
       "life": 5,
       "sanity": 7,
@@ -1204,7 +1220,8 @@
       "strength": 2,
       "will": 4,
       "money": 2,
-      "remnant": 1
+      "remnant": 1,
+      "clue": 0
     },
     "rol": [
       {
@@ -1274,7 +1291,7 @@
     "theStory": "The music comforted Patricie Hathaway as a child. While holding his violin under his chin, he was sure to experience visions of fantastic worlds and magical landscapes. He was diagnosed with synesthesia, and his tutors explained that he was able to see music in a way that no one else could; that would make him a prodigy. But during his adolescence, an entity from the magical world glimpsed through his music stared back at him, and then everything changed. Patricie knew that everything he perceived was real, and his visions became ominous. The Watcher hardly left him. It approached his mind as he played, and through his eyes he saw the world in ruins. Was it he who caused that catastrophe, or was the Watcher trying to warn him? Patricie had to find out.",
     "focusLimit": 3,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/18-Patricie.jpg",
+    "imgInv": "/img/1-inv/18-Patricie.jpg",
     "atributes": {
       "life": 5,
       "sanity": 7,
@@ -1284,7 +1301,8 @@
       "strength": 1,
       "will": 4,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1354,7 +1372,7 @@
     "theStory": "Carson Sinclair has worked in the service of the Webb family for 3 generations, taking care of household chores and providing valuable advice. Despite his protests, Dupuis initiated Hercule Webb, the lord of the house, into pernicious and risky occult practices. Carson feared what might happen when the two men were cloistered in the study for days, engrossed in reading arcane volumes and performing blasphemous rituals. When Master Webb disappeared during one of these ceremonies, Carson swore he would protect his descendants, Lydia and Eugene, from the persistent threat of Dupuis, his evil associates and the darkness they serve.",
     "focusLimit": 3,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/19-Carson.jpg",
+    "imgInv": "/img/1-inv/19-Carson.jpg",
     "atributes": {
       "life": 6,
       "sanity": 6,
@@ -1364,7 +1382,8 @@
       "strength": 2,
       "will": 3,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1429,7 +1448,7 @@
     "theStory": "It’s been years since Pete took to the road with his faithful companion Duke. Pete has no family or home; he travels from city to city making his living as he can, although his main occupation is admiring the landscape—he is usually guided by his visions that lead him to those who need him, people who live in places he can visit but where there is no place for him. But lately these visions have taken on a more sinister tone. Now they are visions of darkness and of unspeakable evil. Visions of death and decay. Of madness before the infinite. Visions that have led him here, to the city of Arkham. And this time he is not sure if he will be able to help anyone, or even live to tell the tale.",
     "focusLimit": 3,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/20-Pete.jpg",
+    "imgInv": "/img/1-inv/20-Pete.jpg",
     "atributes": {
       "life": 7,
       "sanity": 5,
@@ -1439,7 +1458,8 @@
       "strength": 3,
       "will": 3,
       "money": 1,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1498,7 +1518,7 @@
     "theStory": "Roland had always found comfort in rules, guidelines, and standard procedures; no matter how complex a case was, the agency's manual always provided a familiar and predictable context. Everything fit together. This should have been a routine investigation: a girl had gone missing, and Roland deduced that some disgruntled servant had likely kidnapped her. His training allowed him to easily identify motive, means, and opportunity. Clear as day. But all his training hadn’t prepared him for the ritual he interrupted when he found the girl, nor was there anything in the manual about the creature lurking beyond that shimmering threshold. Someone would have to write a new manual.",
     "focusLimit": 2,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/25-Roland.jpg",
+    "imgInv": "/img/1-inv/25-Roland.jpg",
     "atributes": {
       "life": 7,
       "sanity": 5,
@@ -1508,7 +1528,8 @@
       "strength": 3,
       "will": 3,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1573,7 +1594,7 @@
     "theStory": "Kate and her mentor, Professor Young, were pioneers in dimensional research until a malfunction in an experimental wave emitter opened a rift in the fabric of space, a portal to another world. The creature that passed through tore her friends apart before Kate’s helpless gaze. Tormented by the bloody memory, and armed with what remained of Young’s research, Kate has made incredible discoveries and witnessed the horrifying reality lurking at the edges of our own dimension. Although her colleagues at Miskatonic University still fail to remember her name, Kate has dedicated her formidable intellect to preventing future tragedies.",
     "focusLimit": 3,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/26-Kate.jpg",
+    "imgInv": "/img/1-inv/26-Kate.jpg",
     "atributes": {
       "life": 5,
       "sanity": 7,
@@ -1583,7 +1604,8 @@
       "strength": 2,
       "will": 2,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1640,7 +1662,7 @@
     "theStory": "Sooner or later, nightmares always come back. Diana had joined the Order of the Silver Twilight driven by what she considered simple ambition—the desperate need to feel accepted by the elite of Arkham's most august citizens. But she could no longer chalk it up to harmless naivety; not after witnessing the rituals held in the chambers of the Lodge, after seeing communion with what lurked beyond the dark threshold, and after bearing witness to the bloody atrocities committed in the inner sanctuary of the Order. The vision of poor Walter Evans' contorted face would not allow her to ignore the evil that was growing and festering in Arkham. Diana could no longer remain complicit in it.",
     "focusLimit": 2,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/27-Diana.jpg",
+    "imgInv": "/img/1-inv/27-Diana.jpg",
     "atributes": {
       "life": 7,
       "sanity": 5,
@@ -1650,7 +1672,8 @@
       "strength": 3,
       "will": 1,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1715,7 +1738,7 @@
     "theStory": "Malasombra always tried to make decisions that would make his mother proud, but his luck never lasted long. Something always went wrong, and each new decision he made seemed to limit his options even further. Then his mother fell ill, and his 'few options' quickly turned into 'no options.' After being caught for robbing a bank to pay the mounting hospital bills, Malasombra soon discovered that things could get even worse: his cellmate, endlessly rambling about the 'Great Old Ones,' scribbled dozens of cryptic messages on the cell walls just before bursting into flames. When he finally got out, Malasombra found a new way to make his mother proud. After kneeling to place a bouquet of flowers on her grave, he swore to do whatever it took to protect the world from those ancient horrors.",
     "focusLimit": 0,
     "locutionURL": "___",
-    "imgInv": "/img/1-Personajes/28-Malasombra.jpg",
+    "imgInv": "/img/1-inv/28-Malasombra.jpg",
     "atributes": {
       "life": 6,
       "sanity": 6,
@@ -1725,7 +1748,8 @@
       "strength": 3,
       "will": 4,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1802,7 +1826,8 @@
       "strength": 4,
       "will": 4,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1874,7 +1899,8 @@
       "strength": 3,
       "will": 1,
       "money": 4,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -1954,7 +1980,8 @@
       "strength": 1,
       "will": 2,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2034,7 +2061,8 @@
       "strength": 2,
       "will": 4,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2108,7 +2136,8 @@
       "strength": 3,
       "will": 1,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2183,7 +2212,8 @@
       "strength": 2,
       "will": 2,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2258,7 +2288,8 @@
       "strength": 1,
       "will": 2,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2333,7 +2364,8 @@
       "strength": 3,
       "will": 3,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2402,7 +2434,8 @@
       "strength": 2,
       "will": 4,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2477,7 +2510,8 @@
       "strength": 3,
       "will": 2,
       "money": 1,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2552,7 +2586,8 @@
       "strength": 1,
       "will": 3,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2628,7 +2663,8 @@
       "strength": 4,
       "will": 4,
       "money": 3,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
@@ -2779,7 +2815,8 @@
       "strength": 2,
       "will": 3,
       "money": 2,
-      "remnant": 0
+      "remnant": 0,
+      "clue": 0
     },
     "rol": [
       {
