@@ -1166,7 +1166,7 @@
     ],
     "possessions": {
       "required": [52],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [53, 54]
     },
     "translations": {
@@ -1226,7 +1226,7 @@
     ],
     "possessions": {
       "required": [55],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [56, 57]
     },
     "translations": {
@@ -1288,7 +1288,7 @@
     ],
     "possessions": {
       "required": [58],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [59, 60]
     },
     "translations": {
@@ -1348,7 +1348,7 @@
     ],
     "possessions": {
       "required": [61],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [62, 63]
     },
     "translations": {
@@ -1408,7 +1408,7 @@
     ],
     "possessions": {
       "required": [64],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [65, 66]
     },
     "translations": {
@@ -1472,7 +1472,7 @@
     ],
     "possessions": {
       "required": [67],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [68, 69]
     },
     "translations": {
@@ -1534,7 +1534,7 @@
     ],
     "possessions": {
       "required": [70],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [71, 72]
     },
     "translations": {
@@ -1594,7 +1594,7 @@
     ],
     "possessions": {
       "required": [73],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [74, 75]
     },
     "translations": {
@@ -1658,7 +1658,7 @@
     ],
     "possessions": {
       "required": [76, 77],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [78, 79]
     },
     "translations": {
@@ -1718,7 +1718,7 @@
     ],
     "possessions": {
       "required": [80],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [81, 82]
     },
     "translations": {
@@ -1780,7 +1780,7 @@
     ],
     "possessions": {
       "required": [83],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [84, 85]
     },
     "translations": {
@@ -1844,7 +1844,7 @@
     ],
     "possessions": {
       "required": [86],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [87, 88]
     },
     "translations": {
@@ -1908,7 +1908,7 @@
     ],
     "possessions": {
       "required": [89],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [90, 91]
     },
     "translations": {
@@ -1968,7 +1968,7 @@
     ],
     "possessions": {
       "required": [92],
-      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optionalText": "You can choose one of the following objects",
       "optional": [93, 94]
     },
     "translations": {
@@ -2028,23 +2028,11 @@
         "description": "As a mystic, you are adept at warding against evil.Your focus should be on removing doom from the board. Your are the best defense against the Ancient Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Group Therapy"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Cognitive Will"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Session Clock"
-      }
-    ],
+    "possessions": {
+      "required": [95],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [96, 97]
+    },
     "translations": {
       "es": {
         "name": "Carolyn Fern",
@@ -2104,23 +2092,11 @@
         "description": "As a rogue, you have a unique skill set that allows you to specialize on a specific task. Skilled in his trade, Bob is able to supply the team with merchandise, or at least find them what they need in a pinch"
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Briberty"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Curserd Coin"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Exposition"
-      }
-    ],
+    "possessions": {
+      "required": [98],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [99, 100]
+    },
     "translations": {
       "es": {
         "name": "Bob Jenkins",
@@ -2180,23 +2156,11 @@
         "description": "As a seeker, you are an intrepid sleuth. Your focus should be on  gathering clues and researching their deeper meaning, Your work is instrumental in putting a stop to the evil plots at work."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Obscure Studies"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Teacher's Aid"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Mild Stimulants"
-      }
-    ],
+    "possessions": {
+      "required": [101],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [102, 103]
+    },
     "translations": {
       "es": {
         "name": "Amanda Sharpe",
@@ -2257,23 +2221,11 @@
         "description": "As a survivor, you advantages lie with surviving the relentless assault of the mythos and helping your fellows do the same. Supporting one another will lead to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Trusty Maul"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Sally Sampson"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Tractor Harvester"
-      }
-    ],
+    "possessions": {
+      "required": [104],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [105, 106]
+    },
     "translations": {
       "es": {
         "name": "Hank Sampson",
@@ -2297,7 +2249,124 @@
       }
     }
   },
-
+  {"idInv": 36,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Daisy Walker",
+    "position": "The librarian",
+    "effect1": "Long Study - Whenever you cast spell, reduce the amount of damage or horror you suffer by 1 (to a minimum of 1).",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'I know of books so powerful, they can rewrite reality.'",
+    "theStory": "Daisy warked in the library of a Miskatonic University, overseen by the noted scholar Henry Armitage. She quickly became an expert on the school's collection of strange and occult texts, mastering the obscure subject matter and archaic languages. She was recently put in charge of reviewing a generous donation of literature given to the University by an unknown benefactor; determining what could be disseminated to its students, and what might be better left to the archives. Through her studies, she came to believe that humanity was facing an impending threat. Armitage believes in her conclusions and has sent her to Istanbul to continue her investigation. It is their hope 1o discover some means of rescuing humanity from this inevitable doom.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/37-Daisy.jpg",
+    "atributes":{
+      "life": 5,
+      "sanity": 7,
+      "lore": 4,
+      "influence": 3,
+      "observation": 2,
+      "strength": 1,
+      "will": 3,
+      "money": 2,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "mystic",
+        "description": "As a mystic, you are adept at warding against evil. Your focus should be on removing doom from the board. You are the best defense against the Ancient Ones."
+      }
+    ],
+    "possessions": {
+      "required": [113],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [114, 115]
+    },
+    "translations": {
+      "es": {
+        "name": "Daisy Walker",
+        "position": "La bibliotecaria",
+        "effect1": "Estudio prolongado: Cada vez que lances un hechizo, reduce en 1 la cantidad de daño o horror que sufres (hasta un mínimo de 1).",
+        "effect2": null ,
+        "effect3": null ,
+        "phrase": "'Conozco libros tan poderosos que pueden reescribir la realidad.'",
+        "theStory": "Daisy trabajaba en la biblioteca de la Universidad Miskatonic, bajo la supervisión del reconocido erudito Henry Armitage. Rápidamente se convirtió en una experta en la colección de textos extraños y ocultistas de la universidad, dominando temas oscuros y lenguajes arcaicos. Recientemente fue encargada de revisar una generosa donación de literatura ofrecida a la universidad por un benefactor desconocido, para determinar qué podía ser compartido con los estudiantes y qué era mejor dejar en los archivos. A través de sus estudios, llegó a creer que la humanidad se enfrenta a una amenaza inminente. Armitage confía en sus conclusiones y la ha enviado a Estambul para continuar su investigación. Su esperanza es descubrir algún medio para salvar a la humanidad de esta condena inevitable.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Mistico",
+            "description": "Como místico, eres experto en proteger contra el mal. Tu objetivo debe ser eliminar la perdición del tablero. Eres la mejor defensa contra los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 37,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Finn Edwards",
+    "position": "The bootlegger",
+    "effect1": "Alleyway Passage - Action: You and one investigator in your space may move directly to any one space in an adjacent neighborhood connected by a street or travel route tile.",
+    "effect2": "Career Criminal - There is no limit to how many WANTED conditions you can have.",
+    "effect3": null,
+    "phrase": "'Never lose track of the exit or the merchandise.'",
+    "theStory": "Finn was making a good living, running liguor from Canada to cities all along the East Coast. He never got caught and never lost a delivery. Over the years he had found numerous passageways, back-alley shortcuts, and associates to ensure discretion from the law: If Finn could keep them paid and happy, everyone was geittin' rich. Now he has taken a job in Arkham and gave his word that he could get it done. This time it won't be alcohol he's delivering, and it won't be the local sheriff trying to catch him. Finn's caught up in some supernatural conspiracy, but in the end, he adlheres to the same principles; Deliver the goods.",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/37-Daisy.jpg",
+    "atributes":{
+      "life": 6,
+      "sanity": 6,
+      "lore": 2,
+      "influence": 3,
+      "observation": 3,
+      "strength": 2,
+      "will": 3,
+      "money": 1,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "survivor",
+        "description": "As a survivor, you advantages lie with surviving the relentless assault of the mythos and helping your fellows do the same. Supporting one another will lead to victory."
+      },
+      {
+        "rol": "rogue",
+        "description": "As a rogue, you have a unique skill set that allows you to specialize on a specific task. Finn is able to safely transport other investigators, putting them in key positions to finish whatever challenge they currently face.s"
+      }
+    ],
+    "possessions": {
+      "required": [116],
+      "optionalText": "1$ or 5$ plus two WANTED conditions. Choose one of the following objects",
+      "optional": [117, 118]
+    },
+    "translations": {
+      "es": {
+        "name": "Finn Edwards",
+        "position": "El contrabandista",
+        "effect1": "Pasaje del Callejón - Acción: Tú y un investigador en tu espacio pueden moverse directamente a cualquier espacio en un vecindario adyacente conectado por una calle o loseta de ruta de viaje.",
+        "effect2": "Delincuente Profesional: No hay límite en la cantidad de condiciones de BUSCADO que puedes tener." ,
+        "effect3": null ,
+        "phrase": "'Nunca pierdas de vista la salida ni la mercancía.'",
+        "theStory": "Finn se ganaba bien la vida transportando licor desde Canadá a ciudades de toda la costa este. Nunca lo atraparon y nunca perdió una entrega. Con los años, había descubierto numerosos pasadizos, atajos por callejones y conocidos que aseguraban discreción ante la ley. Si Finn podía mantenerlos contentos y bien pagados, todos se estaban haciendo ricos. Ahora ha aceptado un trabajo en Arkham y ha dado su palabra de que lo llevará a cabo. Esta vez no será alcohol lo que entregue, y no será el sheriff local quien intente atraparlo. Finn está metido en una conspiración sobrenatural, pero al final, sigue fiel a los mismos principios: entregar la mercancía.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Como sobreviviente, tus ventajas radican en soportar el implacable asalto del mito y ayudar a tus compañeros a hacer lo mismo. Apoyarse mutuamente conducirá a la victoria."
+          },
+          {
+            "rol": "Experto",
+            "description": "Como experto, tienes un conjunto de habilidades único que te permite especializarte en una tarea específica. Finn es capaz de transportar de manera segura a otros investigadores, colocándolos en posiciones clave para terminar con cualquier desafío que enfrenten."
+          }
+        ]
+      }
+    }
+  },
 
   {"idInv": 38,
     "isActive": false,
@@ -2321,7 +2390,8 @@
       "strength": 2,
       "will": 3,
       "money": 2,
-      "remnant": 1
+      "remnant": 1,
+      "clue": 0
     },
     "rol": [
       {
@@ -2333,23 +2403,11 @@
         "description": "As a rogue, you have a unique skill set that allows you to specialize on a specific task. With her psychic intuition, Jacqueline can provide the team with the time they need to further uncover the mysteries of the ancient ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Blink out of Existance"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Bruce Graham "
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Crystal Ball "
-      }
-    ],
+    "possessions": {
+      "required": [107],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [108, 109]
+    },
     "translations": {
       "es": {
         "name": "Jacqueline Fine",
@@ -2409,23 +2467,11 @@
         "description": "As a seeker, you are an intrepid sleuth. You focus should be on gathering clues and researching their deeper meaning. your work is instrumental in putting a stop to the evil plots at work."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Open the Third eye"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Book of Anubis"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Deleterious Study"
-      }
-    ],
+    "possessions": {
+      "required": [110],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [111, 112]
+    },
     "translations": {
       "es": {
         "name": "Harvey Walters",
@@ -2445,6 +2491,204 @@
           {
             "rol": "buscador",
             "description": "Como buscadora, eres una investigadora intrépida. Tu objetivo principal debe ser reunir pistas e investigar su significado más profundo. Tu labor es fundamental para detener los planes malignos en marcha."
+          }
+        ]
+      }
+    }
+  },
+  {"idInv": 40,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Joe Diamond",
+    "position": "The private eye",
+    "effect1": "Sure Shot - Action: Choose a monster in your space or an adjacent space; test your OBSERVATION. Deal damage to that monster equal to your test result.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'I was hired for a job. Evil gods or no, I aim to finish it.'",
+    "focusLimit": 2,
+    "theStory": "The dame who hired Joe was square, and the job seemed easy on the surface. She paid in advance to have Joe find some codger and deliver a crate, but Joe does not walk info situations without knnowing the score. This codger was a member of the Silver Tuilight Lodge, and that crate had been stolen from a museum in Istanbul. Like a sucker; Joe went to the cops. For his trouble, he got a broken nose and a dead client, and somebody stole his cargo. Aftera quick nap, a few glasses of bourbon, and a nice, cold steak to help the headache, Joe stumbles out of his musty office with a new sense of purpose, ready for a little payback...",
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/40-Harvey.jpg",
+    "atributes":{
+      "life": 7,
+      "sanity": 5,
+      "lore": 2,
+      "influence": 2,
+      "observation": 4,
+      "strength": 3,
+      "will": 2,
+      "money": 3,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "As a seeker, you are intrepid sleuth. Your focus should be on gathering clues and researching their deeper meaning. Your work is instrumental in putting a stop to the evil plots at work."
+      },
+      {
+        "rol": "guardian",
+        "description": "As a guardian, it is your responsibility to protect your fellow investigators. That could mean helping them recover from trauma or dispatching monsters before they become a threat."
+      }
+    ],
+    "possessions": {
+      "required": [119],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [120, 121]
+    },
+    "translations": {
+      "es": {
+        "name": "Joe Diamond",
+        "position": "El detective privado",
+        "effect1": "Disparo certero - Acción: Elige un monstruo en tu espacio o en un espacio adyacente; haz una prueba de tu OBSERVACIÓN. Hazle daño a ese monstruo igual al resultado de tu prueba.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Fui contratado para un trabajo. Dioses malignos o no, pienso terminarlo.'",
+        "focusLimit": 2,
+        "theStory": "La dama que contrató a Joe era seria, y el trabajo parecía fácil a simple vista. Pagó por adelantado para que Joe encontrara a un viejo y entregara una caja, pero Joe no se mete en situaciones sin conocer el panorama. Ese viejo era miembro de la Silver Twilight Lodge, y esa caja había sido robada de un museo en Estambul. Como un tonto, Joe fue a la policía. Por su esfuerzo, recibió una nariz rota, un cliente muerto, y alguien le robó su carga. Después de una rápida siesta, un par de copas de bourbon y un buen filete frío para aliviar el dolor de cabeza, Joe sale tambaleándose de su polvoriento despacho con un nuevo sentido de propósito, listo para vengarse...",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "___",
+            "description": "___"
+          },
+          {
+            "rol": "___",
+            "description": "___"
+          }
+        ]
+      }
+    }
+  },
+
+  {"idInv": 41,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Jim Culver",
+    "position": "The musician",
+    "effect1": "Melodic alhure - During the Monster Phase, you may control the movement of one, unexhausted, non-epic monster (if that monster is already engaged with an investigator, move it before it would deal damage).",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'No, not quite at all. Dead folks get downright rambunctious when i play my horn.'",
+    "focusLimit": 3,
+    "theStory": "Old Jm Culver's music gives sweet comfort to the soul, and it doesn't matter if that soul belongs to the living or the dead. Folks in their graves, they love their little chats with Jim. On any given night, folks around the Arkham graveyard can hear the slow, jazzy ballads of brass echoing off the headstones. It used to bother him, but now he's happy for the company. Lately, some departed souls in Arkham have been all riled up about something. What went from lonely lamens of the dead turned to fearful ruminations of what's to come. They're downright terrified. And anything that scares the dead deserves old Jim's undivided attention.",
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/40-Harvey.jpg",
+    "atributes":{
+      "life": 6,
+      "sanity": 6,
+      "lore": 3,
+      "influence": 3,
+      "observation": 2,
+      "strength": 2,
+      "will": 3,
+      "money": 2,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "Rogue",
+        "description": "As a rogue, you have a unique skill set that allows you to specialize on a specific task. Jim specializes in monster diversion, creating paths for investigators to maneuver and get into spots to do what is needed."
+      },
+      {
+        "rol": "Mystic",
+        "description": "As a mystic, you are adept at warding against evil. Your focus should be on removing doom from the board. You are the best defense against the Ancient Ones."
+      }
+    ],
+    "possessions": {
+      "required": [122],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [123, 124]
+    },
+    "translations": {
+      "es": {
+        "name": "Jim Culver",
+        "position": "El músico",
+        "effect1": "Atractivo melódico - Durante la fase de monstruos, puedes controlar el movimiento de un monstruo no épico que no esté agotado (si ese monstruo ya está enfrentado a un investigador, muévelo antes de que cause daño).",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'No, para nada. Los muertos se alborotan de verdad cuando toco mi trompeta.'",
+        "focusLimit": 2,
+        "theStory": "La música del viejo Jim Culver brinda un dulce consuelo al alma, y no importa si esa alma pertenece a los vivos o a los muertos. A los que están en sus tumbas les encanta tener sus pequeñas charlas con Jim. En cualquier noche, la gente cerca del cementerio de Arkham puede oír las lentas baladas de jazz en metales resonando entre las lápidas. Antes le molestaba, pero ahora agradece la compañía. Últimamente, algunas almas en pena de Arkham andan muy alteradas por algo. Lo que antes eran lamentos solitarios de los muertos, se ha convertido en reflexiones temerosas sobre lo que está por venir. Están completamente aterrados. Y cualquier cosa que asuste a los muertos merece toda la atención del viejo Jim.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Experto",
+            "description": "Como experto, tienes un conjunto de habilidades único que te permite especializarte en una tarea específica. Jim se especializa en desviar monstruos, creando caminos para que los investigadores se muevan y lleguen a los lugares donde puedan hacer lo que se necesita. "
+          },
+          {
+            "rol": "Mistico",
+            "description": "Como místico, eres experto en proteger contra el mal. Tu objetivo debe ser eliminar la perdición del tablero. Eres la mejor defensa contra los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+
+
+
+
+
+  {"idInv": 40,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Joe Diamond",
+    "position": "The private eye",
+    "effect1": "___",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'___'",
+    "focusLimit": 2,
+    "theStory": "___",
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/40-Harvey.jpg",
+    "atributes":{
+      "life": 4,
+      "sanity": 8,
+      "lore": 3,
+      "influence": 2,
+      "observation": 3,
+      "strength": 2,
+      "will": 3,
+      "money": 2,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "___",
+        "description": "___"
+      },
+      {
+        "rol": "___",
+        "description": "___"
+      }
+    ],
+    "possessions": {
+      "required": [110],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [111, 112]
+    },
+    "translations": {
+      "es": {
+        "name": "Joe Diamond",
+        "position": "El detective privado",
+        "effect1": "___",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'___'",
+        "focusLimit": 2,
+        "theStory": "___",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "___",
+            "description": "___"
+          },
+          {
+            "rol": "___",
+            "description": "___"
           }
         ]
       }

@@ -944,7 +944,7 @@
     {"id": 83,
         "name": "Camera",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Camara de Fotos",
@@ -955,7 +955,7 @@
     {"id": 84,
         "name": "Each photo tells",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Cada foto cuenta",
@@ -966,7 +966,7 @@
     {"id": 85,
         "name": "Advance",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Anticipo",
@@ -978,7 +978,7 @@
     {"id": 86,
         "name": "I saw it coming",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Ya lo veía venir",
@@ -989,7 +989,7 @@
     {"id": 87,
         "name": "Forbidden letters",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Letras prohibidas",
@@ -1000,7 +1000,7 @@
     {"id": 88,
         "name": "Illumination",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Iluminación",
@@ -1012,10 +1012,10 @@
     {"id": 89,
         "name": "Notebook",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "Cuaderno de notas",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
-                "name": "Iluminación",
+                "name": "Cuaderno de notas",
                 "img": "/img/2-obj/es_cartaEnProceso.jpg"
             }
         }
@@ -1023,7 +1023,7 @@
     {"id": 90,
         "name": "The short way",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "El camino corto",
@@ -1034,7 +1034,7 @@
     {"id": 91,
         "name": "Irrefutable evidence",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Pruebas irrefutables",
@@ -1046,7 +1046,7 @@
     {"id": 92,
         "name": "Whip of the film",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Látigo de la película",
@@ -1057,7 +1057,7 @@
     {"id": 93,
         "name": "Sacrifice spell",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Hechizo de Sacrificio",
@@ -1068,10 +1068,350 @@
     {"id": 94,
         "name": "Until the last breath",
         "img": "/img/2-obj/cartaEnProceso.jpg",
-        "expansion": "AHSecrets",
+        "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Hasta el último aliento",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 95,
+        "name": "Group Therapy",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 96,
+        "name": "Cognitive Will",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 97,
+        "name": "Session Clock",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 98,
+        "name": "Briberty",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 99,
+        "name": "Curserd Coin",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 100,
+        "name": "Exposition",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    
+    {"id": 101,
+        "name": "Obscure Studies",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 102,
+        "name": "Teacher's Aid",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 103,
+        "name": "Mild Stimulants",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 104,
+        "name": "Trusty Maul",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 105,
+        "name": "Sally Sampson",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 106,
+        "name": "Tractor Harvester",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 107,
+        "name": "Blink out of Existance",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 108,
+        "name": "Bruce Graham",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 109,
+        "name": "Crystal Ball",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 110,
+        "name": "Open the Third eye",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 111,
+        "name": "Book of Anubis",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 112,
+        "name": "Deleterious Study",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 113,
+        "name": "Binding",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 114,
+        "name": "Leroy Kisro",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 115,
+        "name": "Space and Time",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    
+    {"id": 116,
+        "name": "Potent Spirits",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 117,
+        "name": "Rum-Runner",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 118,
+        "name": "Checkered Past",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 119,
+        "name": "Stake Out",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 120,
+        "name": "Locked Office",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 121,
+        "name": "Twin Colt M1911",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 122,
+        "name": "Brass Horn",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 123,
+        "name": "Session Player",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 124,
+        "name": "The beast Within",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "___",
                 "img": "/img/2-obj/es_cartaEnProceso.jpg"
             }
         }
