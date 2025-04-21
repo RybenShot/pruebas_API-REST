@@ -2,6 +2,7 @@ import invListJSON from '../databaseJSON/investigadores.json' with { type: "json
 import previewInvListJSON from '../databaseJSON/previewInv.json' with { type: "json" }
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
+import { ObjectModel } from '../models/object_model.js';
 
 
 export class InvModel{
@@ -33,6 +34,33 @@ export class InvModel{
             return filterRol
         }
         return activos
+    }
+
+    static async getInvObjects({ id }) {
+        const inv = invListJSON.find(inv => inv.idInv == id);
+        if (!inv || !inv.possessions) {
+          return {
+            objects: [],
+            optionalText: '',
+            optionalObjects: []
+          };
+        }
+      
+        const { required = [], optional = [], optionalText = '' } = inv.possessions;
+      
+        const objects = await Promise.all(
+          required.map(id => ObjectModel.getByID({ id }))
+        );
+      
+        const optionalObjects = await Promise.all(
+          optional.map(id => ObjectModel.getByID({ id }))
+        );
+      
+        return {
+          objects,
+          optionalText,
+          optionalObjects
+        };
     }
 
     static async getByID ({id}){

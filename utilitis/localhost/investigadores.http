@@ -33,6 +33,12 @@ Content-Type:application/json
   "posicion": "el gran reportero de Arkham"
 }
 
+### Obtener todos los objetos de un investigador
+GET http://localhost:1234/inv/2/objects
+
+### Obtener un objeto por us ID
+GET http://localhost:1234/objects/2
+
 ### Recuperar toda la lista de preview investigadores
 GET http://localhost:1234/inv/previewList
 

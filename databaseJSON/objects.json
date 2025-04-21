@@ -1,0 +1,1079 @@
+[
+    {"id": 0,
+        "name": "Becky",
+        "img": "/img/2-obj/PerTommy2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Becky",
+                "img": "/img/2-obj/es_PerTommy2.jpg"
+            }
+        }
+    },
+    {"id": 1,
+        "name": "Handcuffs",
+        "img": "/img/2-obj/PerTommy3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Esposas",
+                "img": "/img/2-obj/es_PerTommy3.jpg"
+            }
+        }
+    },
+    {"id": 2,
+        "name": "Motorcycle",
+        "img": "/img/2-obj/PerTommy1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Motocicleta",
+                "img": "/img/2-obj/es_PerTommy1.jpg"
+            }
+        }
+    },
+
+    {"id": 3,
+        "name": "Intervention",
+        "img": "/img/2-obj/PerMarie3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Intervención",
+                "img": "/img/2-obj/es_PerMarie3.jpg"
+            }
+        }
+    },
+    {"id": 4,
+        "name": "The blood of the witch",
+        "img": "/img/2-obj/PerMarie2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Sangre de bruja",
+                "img": "/img/2-obj/es_PerMarie2.jpg"
+            }
+        }
+    },
+    {"id": 5,
+        "name": "The knife of grande-mère",
+        "img": "/img/2-obj/PerMarie1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "El cuchillo de grande-mère",
+                "img": "/img/2-obj/es_PerMarie1.jpg"
+            }
+        }
+    },
+
+    {"id": 6,
+        "name": "Looking for Izzie",
+        "img": "/img/2-obj/PerJenny1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Buscando a Izzie",
+                "img": "/img/2-obj/es_PerJenny1.jpg"
+            }
+        }
+    },
+    {"id": 7,
+        "name": ".45 twins of Jenny",
+        "img": "/img/2-obj/PerJenny2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": ".45 gemelas de Jenny",
+                "img": "/img/2-obj/es_PerJenny2.jpg"
+            }
+        }
+    },
+    {"id": 8,
+        "name": "To the nines",
+        "img": "/img/2-obj/PerJenny3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "De punta en blanco",
+                "img": "/img/2-obj/es_PerJenny3.jpg"
+            }
+        }
+    },
+
+    {"id": 9,
+        "name": "Mists of R'lyeh",
+        "img": "/img/2-obj/PerDexter1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Nieblas de R'lyeh",
+                "img": "/img/2-obj/es_PerDexter1.jpg"
+            }
+        }
+    },
+    {"id": 10,
+        "name": "Mage staff",
+        "img": "/img/2-obj/PerDexter2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Bastón de mago",
+                "img": "/img/2-obj/es_PerDexter2.jpg"
+            }
+        }
+    },
+    {"id": 11,
+        "name": "Astral travel",
+        "img": "/img/2-obj/PerDexter1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Viaje astral",
+                "img": "/img/2-obj/es_PerDexter1.jpg"
+            }
+        }
+    },
+
+    {"id": 12,
+        "name": "Mama’s charm",
+        "img": "/img/2-obj/PerWendy1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Amuleto de mama",
+                "img": "/img/2-obj/es_PerWendy1.jpg"
+            }
+        }
+    },
+    {"id": 13,
+        "name": "Mysterious photograph",
+        "img": "/img/2-obj/PerWendy3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Fotografía misteriosa",
+                "img": "/img/2-obj/es_PerWendy3.jpg"
+            }
+        }
+    },
+    {"id": 14,
+        "name": "Pawterson bear",
+        "img": "/img/2-obj/PerWendy2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Osito Pawterson",
+                "img": "/img/2-obj/es_PerWendy2.jpg"
+            }
+        }
+    },
+
+    {"id": 15,
+        "name": "Looking for the truth",
+        "img": "/img/2-obj/PerRex2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Buscando la verdad",
+                "img": "/img/2-obj/es_PerRex2.jpg"
+            }
+        }
+    },
+    {"id": 16,
+        "name": "The Tower",
+        "img": "/img/2-obj/PerRex3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "La Torre",
+                "img": "/img/2-obj/es_PerRex3.jpg"
+            }
+        }
+    },
+    {"id": 17,
+        "name": "Overcome adversity",
+        "img": "/img/2-obj/PerRex4.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Superar la adversidad",
+                "img": "/img/2-obj/es_PerRex4.jpg"
+            }
+        }
+    },
+    {"id": 18,
+        "name": "All the pieces fit together",
+        "img": "/img/2-obj/PerRex1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Todas las piezas encajan",
+                "img": "/img/2-obj/es_PerRex1.jpg"
+            }
+        }
+    },
+    
+    {"id": 19,
+        "name": "Spiritual dagger",
+        "img": "/img/2-obj/PerCalvin1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Daga espiritual",
+                "img": "/img/2-obj/es_PerCalvin1.jpg"
+            }
+        }
+    },
+    {"id": 20,
+        "name": "Till the end of time",
+        "img": "/img/2-obj/PerCalvin2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Hasta el fin de los tiempos",
+                "img": "/img/2-obj/es_PerCalvin2.jpg"
+            }
+        }
+    },
+    {"id": 21,
+        "name": "Messenger’s voice",
+        "img": "/img/2-obj/PerCalvin1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Voz del mensajero",
+                "img": "/img/2-obj/es_PerCalvin1.jpg"
+            }
+        }
+    },
+
+    {"id": 22,
+        "name": "Hyperborean inheritance",
+        "img": "/img/2-obj/PerAgnes1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Herencia de Hiperbórea",
+                "img": "/img/2-obj/es_PerAgnes1.jpg"
+            }
+        }
+    },
+    {"id": 23,
+        "name": "Body protection",
+        "img": "/img/2-obj/PerAgnes2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Protección corporal",
+                "img": "/img/2-obj/es_PerAgnes2.jpg"
+            }
+        }
+    },
+    {"id": 24,
+        "name": "Spirit storm",
+        "img": "/img/2-obj/PerAgnes3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Tormenta de espíritus",
+                "img": "/img/2-obj/es_PerAgnes3.jpg"
+            }
+        }
+    },
+
+    {"id": 25,
+        "name": "Drum machine gun",
+        "img": "/img/2-obj/PerMichael1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Metralleta de tambor",
+                "img": "/img/2-obj/es_PerMichael1.jpg"
+            }
+        }
+    },
+    {"id": 26,
+        "name": "Gangster car",
+        "img": "/img/2-obj/PerMichael2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Automóvil de gángster",
+                "img": "/img/2-obj/es_PerMichael2.jpg"
+            }
+        }
+    },
+    {"id": 27,
+        "name": "O'Bannion’s henchman",
+        "img": "/img/2-obj/PerMichael3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Secuaz de O'Bannion",
+                "img": "/img/2-obj/es_PerMichael3.jpg"
+            }
+        }
+    },
+    
+    {"id": 28,
+        "name": "Gabriel",
+        "img": "/img/2-obj/PerDaniela2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Gabriel",
+                "img": "/img/2-obj/es_PerDaniela2.jpg"
+            }
+        }
+    },
+    {"id": 29,
+        "name": "Ace of spades",
+        "img": "/img/2-obj/PerDaniela3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "As de espadas",
+                "img": "/img/2-obj/es_PerDaniela3.jpg"
+            }
+        }
+    },
+    {"id": 30,
+        "name": "Wrench",
+        "img": "/img/2-obj/PerDaniela1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Llave inglesa",
+                "img": "/img/2-obj/es_PerDaniela1.jpg"
+            }
+        }
+    },
+
+    {"id": 31,
+        "name": "Find a portal",
+        "img": "/img/2-obj/PerNorman1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Encontrar portal",
+                "img": "/img/2-obj/es_PerNorman1.jpg"
+            }
+        }
+    },
+    {"id": 32,
+        "name": "Treasured memory",
+        "img": "/img/2-obj/PerNorman2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Recuerdo preciado",
+                "img": "/img/2-obj/es_PerNorman2.jpg"
+            }
+        }
+    },
+    {"id": 33,
+        "name": "Astronomical treatise",
+        "img": "/img/2-obj/PerNorman3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Tratado de astronomía",
+                "img": "/img/2-obj/es_PerNorman3.jpg"
+            }
+        }
+    },
+
+    {"id": 34,
+        "name": "The king of yellow",
+        "img": "/img/2-obj/PerMinh2.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "El rey de amarillo",
+                "img": "/img/2-obj/es_PerMinh2.jpg"
+            }
+        }
+    },
+    {"id": 35,
+        "name": "Analytical mind",
+        "img": "/img/2-obj/PerMinh1.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Mente analítica",
+                "img": "/img/2-obj/es_PerMinh1.jpg"
+            }
+        }
+    },
+    {"id": 36,
+        "name": "Synergy",
+        "img": "/img/2-obj/PerMinh3.jpg",
+        "expansion": "Base",
+        "translations": {
+            "es": {
+                "name": "Sinergia",
+                "img": "/img/2-obj/es_PerMinh3.jpg"
+            }
+        }
+    },
+
+    {"id": 37,
+        "name": "Fishing net",
+        "img": "/img/2-obj/PerSilas1.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Red de pesca",
+                "img": "/img/2-obj/es_PerSilas1.jpg"
+            }
+        }
+    },
+    {"id": 38,
+        "name": "Flannel shirt",
+        "img": "/img/2-obj/PerSilas2.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Camisa de franela",
+                "img": "/img/2-obj/es_PerSilas2.jpg"
+            }
+        }
+    },
+    {"id": 39,
+        "name": "Adventurous spirit",
+        "img": "/img/2-obj/PerSilas3.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Espíritu aventurero",
+                "img": "/img/2-obj/es_PerSilas3.jpg"
+            }
+        }
+    },
+
+    {"id": 40,
+        "name": "Authority figure",
+        "img": "/img/2-obj/PerCharlie1.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Figura de autoridad",
+                "img": "/img/2-obj/es_PerCharlie1.jpg"
+            }
+        }
+    },
+    {"id": 41,
+        "name": "Bonnie Walsh",
+        "img": "/img/2-obj/PerCharlie2.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Bonnie Walsh",
+                "img": "/img/2-obj/es_PerCharlie2.jpg"
+            }
+        }
+    },
+    {"id": 42,
+        "name": "Call in favors",
+        "img": "/img/2-obj/PerCharlie3.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Cobrar favores",
+                "img": "/img/2-obj/es_PerCharlie3.jpg"
+            }
+        }
+    },
+
+    {"id": 43,
+        "name": "Delivery van",
+        "img": "/img/2-obj/PerStella1.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Furgoneta de reparto",
+                "img": "/img/2-obj/es_PerStella1.jpg"
+            }
+        }
+    },
+    {"id": 44,
+        "name": "Call of the darkness",
+        "img": "/img/2-obj/PerStella2.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Llamada de las tinieblas",
+                "img": "/img/2-obj/es_PerStella2.jpg"
+            }
+        }
+    },
+    {"id": 45,
+        "name": "Rain or shine",
+        "img": "/img/2-obj/PerStella3.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Llueva o truene",
+                "img": "/img/2-obj/es_PerStella3.jpg"
+            }
+        }
+    },
+
+    {"id": 46,
+        "name": "Sign of the cross",
+        "img": "/img/2-obj/PerPadre1.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Señal de la cruz",
+                "img": "/img/2-obj/es_PerPadre1.jpg"
+            }
+        }
+    },
+    {"id": 47,
+        "name": "Holy water",
+        "img": "/img/2-obj/PerPadre2.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Agua bendita",
+                "img": "/img/2-obj/es_PerPadre2.jpg"
+            }
+        }
+    },
+    {"id": 48,
+        "name": "Drive away the darkness",
+        "img": "/img/2-obj/PerPadre3.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Alejar la oscuridad",
+                "img": "/img/2-obj/es_PerPadre3.jpg"
+            }
+        }
+    },
+
+    {"id": 49,
+        "name": "The violin of Patricie",
+        "img": "/img/2-obj/PerPatricie1.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "El violín de Patricie",
+                "img": "/img/2-obj/es_PerPatricie1.jpg"
+            }
+        }
+    },
+    {"id": 50,
+        "name": "Captivating melody",
+        "img": "/img/2-obj/PerPatricie2.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Melodía cautivadora",
+                "img": "/img/2-obj/es_PerPatricie2.jpg"
+            }
+        }
+    },
+    {"id": 51,
+        "name": "Sueños omniosos",
+        "img": "/img/2-obj/PerPatricie3.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "___",
+                "img": "/img/2-obj/es_PerPatricie3.jpg"
+            }
+        }
+    },
+
+    {"id": 52,
+        "name": "Anticipation",
+        "img": "/img/2-obj/PerCarson1.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Anticipación",
+                "img": "/img/2-obj/es_PerCarson1.jpg"
+            }
+        }
+    },
+    {"id": 53,
+        "name": "As you command",
+        "img": "/img/2-obj/PerCarson2.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Como usted mande",
+                "img": "/img/2-obj/es_PerCarson2.jpg"
+            }
+        }
+    },
+    {"id": 54,
+        "name": "Prepared for everything",
+        "img": "/img/2-obj/PerCarson3.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Preparado para todo",
+                "img": "/img/2-obj/es_PerCarson3.jpg"
+            }
+        }
+    },
+
+    {"id": 55,
+        "name": "Duque",
+        "img": "/img/2-obj/PerPete1.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Duque",
+                "img": "/img/2-obj/es_PerPete1.jpg"
+            }
+        }
+    },
+    {"id": 56,
+        "name": "Pete’s guitar",
+        "img": "/img/2-obj/PerPete2.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "La guitarra de Pete",
+                "img": "/img/2-obj/es_PerPete2.jpg"
+            }
+        }
+    },
+    {"id": 57,
+        "name": "Globetrotter",
+        "img": "/img/2-obj/PerPete3.jpg",
+        "expansion": "AHWaves",
+        "translations": {
+            "es": {
+                "name": "Trotamundos",
+                "img": "/img/2-obj/es_PerPete3.jpg"
+            }
+        }
+    },
+
+
+    {"id": 58,
+        "name": ".38 Special",
+        "img": "/img/2-obj/PerRoland1.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": ".38 Special",
+                "img": "/img/2-obj/es_PerRoland1.jpg"
+            }
+        }
+    },
+    {"id": 59,
+        "name": "___",
+        "img": "/img/2-obj/PerRoland2.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Implacable",
+                "img": "/img/2-obj/es_PerRoland2.jpg"
+            }
+        }
+    },
+    {"id": 60,
+        "name": "___",
+        "img": "/img/2-obj/PerRoland3.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Indagaciones",
+                "img": "/img/2-obj/es_PerRoland3.jpg"
+            }
+        }
+    },
+
+    {"id": 61,
+        "name": "___",
+        "img": "/img/2-obj/PerKate1.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Notas de investigación",
+                "img": "/img/2-obj/es_PerKate1.jpg"
+            }
+        }
+    },
+    {"id": 62,
+        "name": "___",
+        "img": "/img/2-obj/PerKate2.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Estabilizador de flujo",
+                "img": "/img/2-obj/es_PerKate2.jpg"
+            }
+        }
+    },
+    {"id": 63,
+        "name": "___",
+        "img": "/img/2-obj/PerKate3.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Resultados consistentes",
+                "img": "/img/2-obj/es_PerKate3.jpg"
+            }
+        }
+    },
+
+
+    {"id": 64,
+        "name": "___",
+        "img": "/img/2-obj/PerDiana1.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Revelación siniestra",
+                "img": "/img/2-obj/es_PerDiana1.jpg"
+            }
+        }
+    },
+    {"id": 65,
+        "name": "___",
+        "img": "/img/2-obj/PerDiana2.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Amuleto robado",
+                "img": "/img/2-obj/es_PerDiana2.jpg"
+            }
+        }
+    },
+    {"id": 66,
+        "name": "___",
+        "img": "/img/2-obj/PerDiana3.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Invocar tormenta",
+                "img": "/img/2-obj/es_PerDiana3.jpg"
+            }
+        }
+    },
+
+    {"id": 67,
+        "name": "___",
+        "img": "/img/2-obj/PerMalasombra1.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Prófugo",
+                "img": "/img/2-obj/es_PerMalasombra1.jpg"
+            }
+        }
+    },
+    {"id": 68,
+        "name": "___",
+        "img": "/img/2-obj/PerMalasombra2.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Manos largas",
+                "img": "/img/2-obj/es_PerMalasombra2.jpg"
+            }
+        }
+    },
+    {"id": 69,
+        "name": "___",
+        "img": "/img/2-obj/PerMalasombra3.jpg",
+        "expansion": "AHNigth",
+        "translations": {
+            "es": {
+                "name": "Navaja automática",
+                "img": "/img/2-obj/es_PerMalasombra3.jpg"
+            }
+        }
+    },
+
+    {"id": 70,
+        "name": "___",
+        "img": "/img/2-obj/PerMark1.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Ejército de un solo hombre",
+                "img": "/img/2-obj/es_PerMark1.jpg"
+            }
+        }
+    },
+    {"id": 71,
+        "name": "___",
+        "img": "/img/2-obj/PerMark2.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Retrato de Sophie",
+                "img": "/img/2-obj/es_PerMark2.jpg"
+            }
+        }
+    },
+    {"id": 72,
+        "name": "___",
+        "img": "/img/2-obj/PerMark3.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Guerra de desgaste",
+                "img": "/img/2-obj/es_PerMark3.jpg"
+            }
+        }
+    },
+
+    {"id": 73,
+        "name": "___",
+        "img": "/img/2-obj/PerPreston1.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Herencia familiar",
+                "img": "/img/2-obj/es_PerPreston1.jpg"
+            }
+        }
+    },
+    {"id": 74,
+        "name": "___",
+        "img": "/img/2-obj/PerPreston2.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "El dinero habla",
+                "img": "/img/2-obj/es_PerPreston2.jpg"
+            }
+        }
+    },
+    {"id": 75,
+        "name": "___",
+        "img": "/img/2-obj/PerPreston3.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Vida privilegiada",
+                "img": "/img/2-obj/es_PerPreston3.jpg"
+            }
+        }
+    },
+
+    {"id": 76,
+        "name": "___",
+        "img": "/img/2-obj/PerAgatha1.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Principio de ocultismo",
+                "img": "/img/2-obj/es_PerAgatha1.jpg"
+            }
+        }
+    },
+    {"id": 77,
+        "name": "___",
+        "img": "/img/2-obj/PerAgatha2.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Método científico",
+                "img": "/img/2-obj/es_PerAgatha2.jpg"
+            }
+        }
+    },
+    {"id": 78,
+        "name": "___",
+        "img": "/img/2-obj/PerAgatha3.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "LLamar a los muertos",
+                "img": "/img/2-obj/es_PerAgatha3.jpg"
+            }
+        }
+    },
+    {"id": 79,
+        "name": "___",
+        "img": "/img/2-obj/PerAgatha4.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Cámara de espíritus",
+                "img": "/img/2-obj/es_PerAgatha4.jpg"
+            }
+        }
+    },
+
+    {"id": 80,
+        "name": "___",
+        "img": "/img/2-obj/PerWinifred1.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Lo mismo que hagas",
+                "img": "/img/2-obj/es_PerWinifred1.jpg"
+            }
+        }
+    },
+    {"id": 81,
+        "name": "___",
+        "img": "/img/2-obj/PerWinifred2.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Acrobacias aéreas",
+                "img": "/img/2-obj/es_PerWinifred2.jpg"
+            }
+        }
+    },
+    {"id": 82,
+        "name": "___",
+        "img": "/img/2-obj/PerWinifred3.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Determinación imprudente",
+                "img": "/img/2-obj/es_PerWinifred3.jpg"
+            }
+        }
+    },
+
+    {"id": 83,
+        "name": "Camera",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Camara de Fotos",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 84,
+        "name": "Each photo tells",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Cada foto cuenta",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 85,
+        "name": "Advance",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Anticipo",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 86,
+        "name": "I saw it coming",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Ya lo veía venir",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 87,
+        "name": "Forbidden letters",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Letras prohibidas",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 88,
+        "name": "Illumination",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Iluminación",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 89,
+        "name": "Notebook",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "Cuaderno de notas",
+        "translations": {
+            "es": {
+                "name": "Iluminación",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 90,
+        "name": "The short way",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "El camino corto",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 91,
+        "name": "Irrefutable evidence",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Pruebas irrefutables",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 92,
+        "name": "Whip of the film",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Látigo de la película",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 93,
+        "name": "Sacrifice spell",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Hechizo de Sacrificio",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+    {"id": 94,
+        "name": "Until the last breath",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHSecrets",
+        "translations": {
+            "es": {
+                "name": "Hasta el último aliento",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    }
+]

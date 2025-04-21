@@ -34,23 +34,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory. "
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Becky"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Esposas"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Motocicleta"
-      }
-    ],
+    "possessions": {
+      "required": [0],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [1, 2]
+    },    
     "translations": {
       "es": {
         "name": "Tommy Muldoon",
@@ -110,23 +98,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Intervention"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "The knife of grande-mère"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Sangre de bruja"
-      }
-    ],
+    "possessions": {
+      "required": [3],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [4, 5]
+    }, 
     "translations": {
       "es": {
         "name": "Marie Lambeau",
@@ -182,23 +158,11 @@
         "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Jenny has no qualms about solving her problems with Money; don’t hesitate to spend it when it suits you."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Looking for Izzie"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": ".45 twins of Jenny"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "To the nines"
-      }
-    ],
+    "possessions": {
+      "required": [6],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [7, 8]
+    }, 
     "translations": {
       "es": {
         "name": "Jenny Barnes",
@@ -250,23 +214,11 @@
         "description": "As a MYSTIC, you stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You contribute the best defensive option against the Primitives"
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Mists of R'lyeh"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Mage staff"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Astral travel"
-      }
-    ],
+    "possessions": {
+      "required": [9],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [10, 11]
+    }, 
     "translations": {
       "es": {
         "name": "Dexter Drake",
@@ -322,23 +274,11 @@
         "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Mama’s charm"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Mysterious photograph"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Pawterson bear"
-      }
-    ],
+    "possessions": {
+      "required": [12],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [13, 14]
+    },
     "translations": {
       "es": {
         "name": "Wendy Adams",
@@ -398,28 +338,11 @@
         "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Rex has always lived with his family curse. As a result, you’ve learned several ways to ease your bad luck."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "looking for the truth"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "La Tower"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Overcome adversity"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "All the pieces fit together"
-      }
-    ],
+    "possessions": {
+      "required": [15, 16],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [17, 18]
+    },
     "translations": {
       "es": {
         "name": "Rex Murphy",
@@ -479,23 +402,11 @@
         "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Calvin is good at healing others, although this can also keep you alive in the most catastrophic moments."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Spiritual dagger"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Till the end of time"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "OPTIONAL == Messenger’s voice and also a SINISTER PACT"
-      }
-    ],
+    "possessions": {
+      "required": [19, 20],
+      "optionalText": "Si decides coger la voz del mensajero, debe coger tambien un pacto siniestro.",
+      "optional": [21]
+    },
     "translations": {
       "es": {
         "name": "Calvin Wrigth",
@@ -555,23 +466,11 @@
         "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Hyperborean inheritance"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Body protection"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Spirit storm"
-      }
-    ],
+    "possessions": {
+      "required": [22],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [23, 24]
+    },
     "translations": {
       "es": {
         "name": "Agnes Baker",
@@ -631,23 +530,11 @@
         "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Drum machine gun"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Gangster car"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "O'Bannion’s henchman"
-      }
-    ],
+    "possessions": {
+      "required": [25],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [26, 27]
+    },
     "translations": {
       "es": {
         "name": "Michael McGlen",
@@ -707,23 +594,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Gabriel"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Ace of spades"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Wrench"
-      }
-    ],
+    "possessions": {
+      "required": [28],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [29, 30]
+    },
     "translations": {
       "es": {
         "name": "Daniela Reyes",
@@ -783,23 +658,11 @@
         "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You contribute the best defensive option against the Primitives."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Find a portal"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Treasured memory"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Astronomical treatise"
-      }
-    ],
+    "possessions": {
+      "required": [31],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [32, 33]
+    },
     "translations": {
       "es": {
         "name": "Norman Withers",
@@ -859,23 +722,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "The king of yellow"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Analytical mind"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Synergy"
-      }
-    ],
+    "possessions": {
+      "required": [34],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [35, 36]
+    },
     "translations": {
       "es": {
         "name": "Minh Thi Phan",
@@ -937,23 +788,11 @@
         "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Silas' lineage shares a sinister kinship with certain creatures of the Mythos, which gives you the unusual ability to predict and control the movements of the Monsters that threaten you."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Fishing net"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Flannel shirt"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Adventurous spirit"
-      }
-    ],
+    "possessions": {
+      "required": [37],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [38, 39]
+    },
     "translations": {
       "es": {
         "name": "Silas Marsh",
@@ -1013,23 +852,11 @@
         "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their meaning. Your work is essential to thwarting the evil designs of the First Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Authority figure"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Bonnie Walsh"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Call in favors"
-      }
-    ],
+    "possessions": {
+      "required": [40],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [41, 42]
+    },
     "translations": {
       "es": {
         "name": "Charlie Kane",
@@ -1085,23 +912,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Delivery van"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Call of the darkness"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Rain or shine"
-      }
-    ],
+    "possessions": {
+      "required": [43],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [44, 45]
+    },
     "translations": {
       "es": {
         "name": "Stella Clark",
@@ -1157,23 +972,11 @@
         "description": "You stand out by erecting arcane safeguards against evil. Your main occupation should be to remove Doom tiles from the board. You are the best defensive option against the Primitives."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Kitchen knife"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Enchanted weapon"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "The crucifix of Zoey"
-      }
-    ],
+    "possessions": {
+      "required": [43],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [44, 45]
+    },
     "translations": {
       "es": {
         "name": "Zoey Samaras",
@@ -1233,28 +1036,11 @@
         "description": "Your responsibility is to protect your fellow researchers. This could mean helping them recover from physical or mental damage, or dispatching Monsters before they become a threat."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Sign of the cross"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "A scrap sheet"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Holy water"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Drive away the darkness"
-      }
-    ],
+    "possessions": {
+      "required": [46],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [47, 48]
+    },
     "translations": {
       "es": {
         "name": "Padre Mateo",
@@ -1314,28 +1100,11 @@
         "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "The violin of Patricie"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Captivating melody"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Captivating melody"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "You win Ominous Dreams, but you add the Lookout to the deck of Monsters."
-      }
-    ],
+    "possessions": {
+      "required": [46],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [47, 48]
+    },
     "translations": {
       "es": {
         "name": "Patricie Hathaway",
@@ -1395,23 +1164,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Anticipation"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "As you command"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Prepared for everything"
-      }
-    ],
+    "possessions": {
+      "required": [52],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [53, 54]
+    },
     "translations": {
       "es": {
         "name": "Carson Sinclair",
@@ -1467,23 +1224,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Duque"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Pete’s guitar"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Globetrotter"
-      }
-    ],
+    "possessions": {
+      "required": [55],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [56, 57]
+    },
     "translations": {
       "es": {
         "name": "Pete Cubo de Basura",
@@ -1541,23 +1286,11 @@
         "description": "You are a fearless hound. You should focus on gathering Clues and uncovering their hidden meaning. Your work is essential to thwarting the evil schemes of the Great Old Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": ".38 Special"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Implacable"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Indagaciones"
-      }
-    ],
+    "possessions": {
+      "required": [58],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [59, 60]
+    },
     "translations": {
       "es": {
         "name": "Roland Banks",
@@ -1613,23 +1346,11 @@
         "description": "You are a fearless hound. You should focus on gathering Clues and uncovering their hidden meaning. Your work is essential to thwarting the evil schemes of the Great Old Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Notas de investigación"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Estabilizador de flujo"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Resultados consistentes"
-      }
-    ],
+    "possessions": {
+      "required": [61],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [62, 63]
+    },
     "translations": {
       "es": {
         "name": "Kate Winthrop",
@@ -1685,23 +1406,11 @@
         "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical or mental damage, or dealing with Monsters before they become a threat."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Revelación siniestra"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Amuleto robado"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Invocar tormenta"
-      }
-    ],
+    "possessions": {
+      "required": [64],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [65, 66]
+    },
     "translations": {
       "es": {
         "name": "Diana Stanley",
@@ -1761,23 +1470,11 @@
         "description": "Your strength lies in surviving the relentless assault of the Mythos and helping your fellow investigators do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Prófugo"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Manos largas"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Navaja automática"
-      }
-    ],
+    "possessions": {
+      "required": [67],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [68, 69]
+    },
     "translations": {
       "es": {
         "name": "“Malasombra” O'Toole",
@@ -1835,28 +1532,11 @@
         "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dealing with Monsters before they become a threat."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Ejército de un solo hombre"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "___"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Retrato de Sophie"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Guerra de desgaste"
-      }
-    ],
+    "possessions": {
+      "required": [70],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [71, 72]
+    },
     "translations": {
       "es": {
         "name": "Mark Harrigan",
@@ -1912,28 +1592,11 @@
         "description": "Your strength lies in surviving the relentless assault of the Mythos and helping your fellow investigators do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Herencia familiar"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "___"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "El dinero habla"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Vida privilegiada"
-      }
-    ],
+    "possessions": {
+      "required": [73],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [74, 75]
+    },
     "translations": {
       "es": {
         "name": "Preston Fairmont",
@@ -1993,28 +1656,11 @@
         "description": "You excel at erecting arcane safeguards against evil. Your primary occupation should be removing Doom tokens from the board. You are the best defensive option against the Ancient Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Principio de ocultismo"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Método científico"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Llamar a los muertos"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Cámara de espíritus"
-      }
-    ],
+    "possessions": {
+      "required": [76, 77],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [78, 79]
+    },
     "translations": {
       "es": {
         "name": "Agatha Crane",
@@ -2070,28 +1716,11 @@
         "description": "You possess a unique set of skills that allows you to specialize in a specific task. Winifred excels when she can shine facing impossible challenges, often boosting herself at the risk of future success."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Lo mismo que hagas"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "___"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Acrobacias aéreas"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Determinación imprudente"
-      }
-    ],
+    "possessions": {
+      "required": [80],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [81, 82]
+    },
     "translations": {
       "es": {
         "name": "Winifred Habbamock",
@@ -2149,23 +1778,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Camera"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Each photo tells"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Advance"
-      }
-    ],
+    "possessions": {
+      "required": [83],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [84, 85]
+    },
     "translations": {
       "es": {
         "name": "Darrell Simmons",
@@ -2225,23 +1842,11 @@
         "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "I saw it coming"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Forbidden letters"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Illumination"
-      }
-    ],
+    "possessions": {
+      "required": [86],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [87, 88]
+    },
     "translations": {
       "es": {
         "name": "Gloria Goldberg",
@@ -2301,23 +1906,11 @@
         "description": "You are a fearless hound. You should concentrate on getting Clues and discovering their hidden meaning. Your work is essential to thwarting the evil designs of the First Ones."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Notebook"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "The short way"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Irrefutable evidence"
-      }
-    ],
+    "possessions": {
+      "required": [89],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [90, 91]
+    },
     "translations": {
       "es": {
         "name": "Mandy Thompson",
@@ -2373,23 +1966,11 @@
         "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
       }
     ],
-    "possessions": [
-      {
-        "id": 12,
-        "require": true,
-        "title": "Whip of the film"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Sacrifice spell"
-      },
-      {
-        "id": 12,
-        "require": false,
-        "title": "Until the last breath"
-      }
-    ],
+    "possessions": {
+      "required": [92],
+      "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
+      "optional": [93, 94]
+    },
     "translations": {
       "es": {
         "name": "Monterrey Jack",
