@@ -636,7 +636,7 @@
     },
     
     {"idInv": 35,
-      "isActive": true,
+      "isActive": false,
       "name": "Hank Sampson",
       "position": "The farmhand",
       "rol": ["guardian", "survivor"],
@@ -654,7 +654,7 @@
       }
     },
     {"idInv": 36,
-      "isActive": true,
+      "isActive": false,
       "name": "Daisy Walker",
       "position": "The librarian",
       "rol": ["mystic"],
@@ -672,7 +672,7 @@
       }
     },
     {"idInv": 37,
-      "isActive": true,
+      "isActive": false,
       "name": "Finn Edwards",
       "position": "The bootlegger",
       "rol": ["survivor", "rogue"],
@@ -690,7 +690,7 @@
       }
     },
     {"idInv": 38,
-      "isActive": true,
+      "isActive": false,
       "name": "Jacqueline Fine",
       "position": "The psychic",
       "rol": ["rogue", "mystic"],
@@ -708,7 +708,7 @@
       }
     },
     {"idInv": 3834,
-      "isActive": true,
+      "isActive": false,
       "name": "Jacqueline Fine",
       "position": "The psychic",
       "rol": ["rogue", "mystic"],
@@ -726,7 +726,7 @@
       }
     },
     {"idInv": 39,
-      "isActive": true,
+      "isActive": false,
       "name": "Harvey Walters",
       "position": "The professor",
       "rol": ["seeker", "mystic"],
@@ -744,7 +744,7 @@
       }
     },
     {"idInv": 40,
-      "isActive": true,
+      "isActive": false,
       "name": "Joe Diamond",
       "position": "The private eye",
       "rol": ["seeker", "guardian"],
@@ -762,7 +762,7 @@
       }
     },
     {"idInv": 41,
-      "isActive": true,
+      "isActive": false,
       "name": "Jim Culver",
       "position": "The musician",
       "rol": ["rogue", "mystic"],
@@ -780,7 +780,7 @@
       }
     },
     {"idInv": 42,
-      "isActive": true,
+      "isActive": false,
       "name": "Lola Hayes",
       "position": "The actress",
       "rol": ["rogue"],
@@ -798,7 +798,7 @@
       }
     },
     {"idInv": 43,
-      "isActive": true,
+      "isActive": false,
       "name": "Leo Anderson",
       "position": "The expedition Leader",
       "rol": ["survivor", "guardian"],
@@ -816,7 +816,7 @@
       }
     },
     {"idInv": 44,
-      "isActive": true,
+      "isActive": false,
       "name": "Luke Robinson",
       "position": "The dreamer",
       "rol": ["mystic", "survivor"],
@@ -834,7 +834,7 @@
       }
     },
     {"idInv": 45,
-      "isActive": true,
+      "isActive": false,
       "name": "Lilly Chen",
       "position": "The Martial Artist",
       "rol": ["guardian"],
@@ -852,7 +852,7 @@
       }
     },
     {"idInv": 46,
-      "isActive": true,
+      "isActive": false,
       "name": "Sefina Rosseau",
       "position": "The painter",
       "rol": ["rogue"],
@@ -870,7 +870,7 @@
       }
     },
     {"idInv": 47,
-      "isActive": true,
+      "isActive": false,
       "name": "Sister Mary",
       "position": "The nun",
       "rol": ["guardian", "survivor"],
@@ -888,7 +888,7 @@
       }
     },
     {"idInv": 48,
-      "isActive": true,
+      "isActive": false,
       "name": "Mandy thompson",
       "position": "The researcher",
       "rol": ["mystic", "seeker"],
@@ -906,7 +906,7 @@
       }
     },
     {"idInv": 49,
-      "isActive": true,
+      "isActive": false,
       "name": "Tony Morgan",
       "position": "The Bounty Hunter",
       "rol": ["seeker", "guardian"],
@@ -924,7 +924,7 @@
       }
     },
     {"idInv": 50,
-      "isActive": true,
+      "isActive": false,
       "name": "Ursula Downs",
       "position": "The Explorer",
       "rol": ["seeker", "rogue"],
@@ -942,7 +942,7 @@
       }
     },
     {"idInv": 51,
-      "isActive": true,
+      "isActive": false,
       "name": "Vincent Lee",
       "position": "The doctor",
       "rol": ["guardian", "survivor"],
@@ -960,7 +960,7 @@
       }
     },
     {"idInv": 52,
-      "isActive": true,
+      "isActive": false,
       "name": "Trish Scarborough",
       "position": "The spy",
       "rol": ["rogue", "seeker"],
@@ -978,7 +978,7 @@
       }
     },
     {"idInv": 53,
-      "isActive": true,
+      "isActive": false,
       "name": "William Yorick",
       "position": "The grave digger",
       "rol": ["rogue", "guardian"],
@@ -996,7 +996,7 @@
       }
     },
     {"idInv": 54,
-      "isActive": true,
+      "isActive": false,
       "name": "Nodens",
       "position": "The protector",
       "rol": ["mystic"],
@@ -1014,7 +1014,7 @@
       }
     },
     {"idInv": 55,
-      "isActive": true,
+      "isActive": false,
       "name": "Duke",
       "position": "The good boy",
       "rol": ["guardian", "seeker"],
@@ -1032,7 +1032,7 @@
       }
     },
     {"idInv": 56,
-      "isActive": true,
+      "isActive": false,
       "name": "Nameless Soul",
       "position": "The revenant",
       "rol": ["survivor", "mystic"],
