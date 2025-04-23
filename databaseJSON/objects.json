@@ -943,238 +943,256 @@
 
     {"id": 83,
         "name": "Camera",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerDarrell1.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Camara de Fotos",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerDarrell1.jpg"
             }
         }
     },
     {"id": 84,
         "name": "Each photo tells",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerDarrell2.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Cada foto cuenta",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerDarrell2.jpg"
             }
         }
     },
     {"id": 85,
         "name": "Advance",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerDarrell3.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Anticipo",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerDarrell3.jpg"
             }
         }
     },
 
     {"id": 86,
         "name": "I saw it coming",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerGloria1.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Ya lo veía venir",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerGloria1.jpg"
             }
         }
     },
     {"id": 87,
         "name": "Forbidden letters",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerGloria2.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Letras prohibidas",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerGloria2.jpg"
             }
         }
     },
     {"id": 88,
         "name": "Illumination",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerGloria3.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Iluminación",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerGloria3.jpg"
             }
         }
     },
 
     {"id": 89,
         "name": "Notebook",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerMandy1.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Cuaderno de notas",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerMandy1.jpg"
             }
         }
     },
     {"id": 90,
         "name": "The short way",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerMandy2.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "El camino corto",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerMandy2.jpg"
             }
         }
     },
     {"id": 91,
         "name": "Irrefutable evidence",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerMandy3.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Pruebas irrefutables",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerMandy3.jpg"
             }
         }
     },
 
     {"id": 92,
         "name": "Whip of the film",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerMonterrey1.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Látigo de la película",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerMonterrey1.jpg"
             }
         }
     },
     {"id": 93,
         "name": "Sacrifice spell",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerMonterrey2.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Hechizo de Sacrificio",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerMonterrey2.jpg"
             }
         }
     },
     {"id": 94,
         "name": "Until the last breath",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerMonterrey3.jpg",
         "expansion": "AHOriginal",
         "translations": {
             "es": {
                 "name": "Hasta el último aliento",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "img": "/img/2-obj/es_PerMonterrey3.jpg"
             }
         }
     },
 
     {"id": 95,
         "name": "Group Therapy",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "Once per round, you may become TAINTED or CURSED for investtigators and/or allies in your space to collectively recover 3 sanity; you recover 1 health. Whenever an investigator in your  neighborhood would spend or discard a remnant, they may recover one health or one sanity.",
+        "img": "/img/2-obj/PerCarolyn1.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Terapia de grupo",
+                "description": "Una vez por ronda, puedes volverte CORROMPIDO o MALDITO para que los investigadores y/o aliados en tu espacio recuperen colectivamente 3 de cordura; tú recuperas 1 de salud. Cada vez que un investigador en tu vecindario fuera a gastar o descartar un resto, puede recuperar 1 de salud o 1 de cordura.",
+                "img": "/img/2-obj/es_PerCarolyn1.jpg"
             }
         }
     },
     {"id": 96,
         "name": "Cognitive Will",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "Action: Choose one, non-epic monster in any space and test your LORE -1. If you pass, you may control that monster's actions during the next monster phase (this monster treats investigators as allies and monsters as enemies; the monster may attack and deal damage equal to its damage value to another monster).",
+        "img": "/img/2-obj/PerCarolyn2.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Voluntad cognitiva",
+                "description": "Acción: Elige un monstruo no épico en cualquier espacio y haz una prueba de tu SABIDURÍA con -1. Si tienes éxito, puedes controlar las acciones de ese monstruo durante la próxima fase de monstruos (este monstruo tratará a los investigadores como aliados y a los monstruos como enemigos; puede atacar y causar daño igual a su valor de daño a otro monstruo).",
+                "img": "/img/2-obj/es_PerCarolyn2.jpg"
             }
         }
     },
     {"id": 97,
         "name": "Session Clock",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "At the end of your turn, you may suffer one direct damage to perform an action you have already performed this turn as an additional action.",
+        "img": "/img/2-obj/PerCarolyn3.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Reloj de sesión",
+                "description": "Al final de tu turno, puedes sufrir 1 daño directo para realizar una acción que ya hayas realizado este turno como una acción adicional.",
+                "img": "/img/2-obj/es_PerCarolyn3.jpg"
             }
         }
     },
 
     {"id": 98,
         "name": "Briberty",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "If you have more than 3$, monsters treat you as their prey during the mosnter phase (Ignore all other monster prey conditions). Whenever a monster spawns or moves into your space, you may spend 1$ to deal 1 damage or exhaust that monster (limit once per instance).",
+        "img": "/img/2-obj/PerBob1.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Libersoborno",
+                "description": "Si tienes más de 3$, los monstruos te consideran su presa durante la fase de monstruos (ignora todas las demás condiciones de presa de los monstruos). Cada vez que un monstruo aparezca o se mueva a tu espacio, puedes gastar 1$ para infligirle 1 de daño o agotarlo (límite de una vez por instancia).",
+                "img": "/img/2-obj/es_PerBob1.jpg"
             }
         }
     },
     {"id": 99,
         "name": "Curserd Coin",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "This card cannot be discarted due to damage or horror. When you perform a gather resource action, roll one die. On a 1, lose 1$; overwise, again an additional 1$.",
+        "img": "/img/2-obj/PerBob2.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Moneda Maldita",
+                "description": "Esta carta no puede ser descartada debido a daño o horror. Cuando realices una acción de reunir fondos, lanza una moneda y elige cara o cruz. Si fallas, pierdes 1$; de lo contrario, ganas 1$ adicional",
+                "img": "/img/2-obj/es_PerBob2.jpg"
             }
         }
     },
     {"id": 100,
         "name": "Exposition",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "Once per round, an investigator in your neighborhood may use an item, ally, or spell you possess, even if that item had been previously used this round. 'Just reloading er take your best shot!'",
+        "img": "/img/2-obj/PerBob3.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Exposición",
+                "description": "Una vez por ronda, un investigador en tu vecindario puede usar un objeto, aliado o hechizo que poseas, incluso si ese objeto ya se usó en esta ronda. '¡Solo recargando, dispara tu mejor tiro!'",
+                "img": "/img/2-obj/es_PerBob3.jpg"
             }
         }
     },
     
     {"id": 101,
         "name": "Obscure Studies",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "Once per round when an investigator in your neighborhood would suffer horror, you may place any amount of that horror on this card. Whenever you pass a test using WILL or LORE, you may remove one horror from this card.",
+        "img": "/img/2-obj/PerAmanda1.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Estudios Oscuros",
+                "description": "Una vez por ronda, cuando un investigador en tu vecindario vaya a sufrir horror, puedes colocar cualquier cantidad de ese horror en esta carta. Cada vez que superes una prueba usando VOLUNTAD o SABER, puedes retirar 1 de horror de esta carta",
+                "img": "/img/2-obj/es_PerAmanda1.jpg"
             }
         }
     },
     {"id": 102,
         "name": "Teacher's Aid",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "Increase your focus limit by 1. Pnce per round, when an investigator in your neighborhood rolls for a test, they may add one to one die. If that investigator rolled three or more successes on that test, they may focus 1 skill, even if it exceeds their focus limit.",
+        "img": "/img/2-obj/PerAmanda2.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Ayudante del Profesor",
+                "description": "Aumenta tu límite de concentración en 1. Una vez por ronda, cuando un investigador en tu barrio tire para una prueba, puede sumar 1 a un dado. Si ese investigador obtiene tres o más éxitos en esa prueba, puede concentrar 1 habilidad, incluso si excede su límite de concentración.",
+                "img": "/img/2-obj/es_PerAmanda2.jpg"
             }
         }
     },
     {"id": 103,
         "name": "Mild Stimulants",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "description": "Once per round, you may deal one damage to this item for an  investigator in your neighborhood to become DRIVEN, recover one health and one sanity, and focus one skill, even if it exceeds their focus limit.",
+        "img": "/img/2-obj/PerAmanda3.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Estimulantes suaves",
+                "description": "Una vez por ronda, puedes infligir 1 de daño a este objeto para que un investigador en tu vecindario se vuelva DETERMINADO, recupere 1 de salud y 1 de cordura, y concentre 1 habilidad, incluso si excede su límite de concentración",
+                "img": "/img/2-obj/es_PerAmanda3.jpg"
             }
         }
     },
@@ -1305,11 +1323,13 @@
     },
     {"id": 115,
         "name": "Space and Time",
+        "description": "Action: Test your LORE -1. For each success, you may choose an investigator in any space to perform one additional action (normal restrictions apply; you may choose an investigator more than once for this ability).",
         "img": "/img/2-obj/cartaEnProceso.jpg",
         "expansion": "AHComunity",
         "translations": {
             "es": {
-                "name": "___",
+                "name": "Espacio y tiempo",
+                "description": "Acción: Haz una prueba de tu SABIDURÍA con -1. Por cada éxito, puedes elegir a un investigador en cualquier espacio para que realice una acción adicional (se aplican las restricciones normales; puedes elegir al mismo investigador más de una vez con esta habilidad).",
                 "img": "/img/2-obj/es_cartaEnProceso.jpg"
             }
         }
@@ -1413,6 +1433,60 @@
             "es": {
                 "name": "___",
                 "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 125,
+        "name": "Summon the Muse",
+        "description": "Action: Choose an investigator in your neighborhood; test LORE -1. For each success, that investigator may gain one focus token.",
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "Invocar a la Musa",
+                "description": "Acción: Elige a un investigador en tu vecindario; haz una prueba de SABIDURÍA con -1. Por cada éxito, ese investigador puede ganar una ficha de concentración.",
+                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+            }
+        }
+    },
+
+    {"id": 126,
+        "name": "Memento Mori",
+        "description": "Once per round during the action phase, you may take two horror to discard one doom from your space.",
+        "img": "/img/2-obj/PerNameless1.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "Memento Mori",
+                "description": "Una vez por ronda, durante la fase de acción, puedes sufrir 2 de horror para descartar 1 ficha de perdición de tu espacio.",
+                "img": "/img/2-obj/es_PerNameless1.jpg"
+            }
+        }
+    },
+    {"id": 127,
+        "name": "Eerie Grit",
+        "description": "Any possessed ally has their total health and sanity multipled by two.",
+        "img": "/img/2-obj/PerNameless2.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "Coraje Inquietante",
+                "description": "Cualquier aliado poseído tiene su salud y cordura totales multiplicadas por dos.",
+                "img": "/img/2-obj/es_PerNameless2.jpg"
+            }
+        }
+    },
+    {"id": 128,
+        "name": "Reanimated",
+        "description": "During the encounter phase, if not engaged, you may spend two remnants to resolve an additional encounter for another non-engaged investigator. If you do, you give up your own enconunter for the round.",
+        "img": "/img/2-obj/PerNameless3.jpg",
+        "expansion": "AHComunity",
+        "translations": {
+            "es": {
+                "name": "Reanimado",
+                "description": "Durante la fase de encuentro, si no estás enfrentado, puedes gastar dos restos para resolver un encuentro adicional para otro investigador no enfrentado. Si lo haces, renuncias a tu propio encuentro de la ronda.",
+                "img": "/img/2-obj/es_PerNameless3.jpg"
             }
         }
     }

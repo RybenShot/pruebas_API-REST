@@ -1101,9 +1101,9 @@
       }
     ],
     "possessions": {
-      "required": [46],
+      "required": [49, 50],
       "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
-      "optional": [47, 48]
+      "optional": [51]
     },
     "translations": {
       "es": {
@@ -2693,6 +2693,72 @@
         ]
       }
     }
+  },
+
+  {"idInv": 56,
+    "isActive": false,
+    "expansion": "AHComunity",
+    "name": "Nameless Soul",
+    "position": "The revenant",
+    "effect1": "First Possession -- At the start of the game, draw 2 Allies from the Ally deck. Keep one (this character will be the one you possess) and place the other at the bottom of the Ally deck.",
+    "effect2": "Memento Vivere -- If you wold be defeated, you may instead become delayed and draw the top two allies from the deck. Select one to possess, placing the other at the bottom of the deck.",
+    "effect3": null,
+    "phrase": "'Sometimes, death is not the end.'",
+    "focusLimit": 2,
+    "theStory": "Many in Arkham would yet fall victim to dark plots, but this lost soul was one of the first. The life they once lived was stipped both physically and mentally from them when reality started to fracture. Those who might have saved them came too late, at least to save their first life. Inexplicably caught between the land of the living and the cold void of the afterlife, they started searching for answers. Who were they? Why had they been killed? Was there a path back to life? Just what was happening in Arkham? The limitations of their incorporeal from became apparent quickly, but a solution would present itself during one of many attempts to communicate with a living being. Flowing into the body of an unsuspecting bystander, sensation and purpose returned with vengance. Some or something had killed them, and they were determined to get to the borrom of it no matter how many lives they had to live.",
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/57-Nameless.jpg",
+    "atributes":{
+      "life": 0,
+      "sanity": 0,
+      "lore": 3,
+      "influence": 3,
+      "observation": 2,
+      "strength": 1,
+      "will": 4,
+      "money": 2,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "survivor",
+        "description": "As a survivor, you advantages like with surviving the relentless assault of the mythos and helping your fellows do the same. Supporting one another will lead to victory."
+      },
+      {
+        "rol": "mystic",
+        "description": "As a mystic, you are adept at warding against evil. Your focus should be on removing doom from the board. You are the best defense against the Ancient Ones."
+      }
+    ],
+    "possessions": {
+      "required": [126],
+      "optionalText": "You can choose one of the following objects",
+      "optional": [127, 128]
+    },
+    "translations": {
+      "es": {
+        "name": "Alma sin nombre",
+        "position": "El resucitado",
+        "effect1": "Primera posesion -- Al comenzar la partida, debes robar 2 aliados del mazo de aliados, quedate con uno (este personaje sera el que poseas) y el otro colocalo al fondo de la baraja de Aliados.",
+        "effect2": "Recuerda Vivir -- Si fueras a ser derrotado, puedes en su lugar quedar RETRASADO y robar las dos primeras cartas de aliado de la baraja. Elige una para quedártela y coloca la otra al fondo de la baraja.",
+        "effect3": null,
+        "phrase": "'A veces, la muerte no es el final.'",
+        "focusLimit": 2,
+        "theStory": "Muchos en Arkham caerían aún víctimas de oscuros complots, pero esta alma perdida fue una de las primeras. La vida que una vez llevaron les fue arrebatada, tanto física como mentalmente, cuando la realidad empezó a fracturarse. Aquellos que podrían haberlos salvado llegaron demasiado tarde, al menos para rescatar su primera vida. Inexplicablemente atrapados entre el mundo de los vivos y el frío vacío del más allá, comenzaron a buscar respuestas. ¿Quiénes eran? ¿Por qué habían sido asesinados? ¿Existía un camino de regreso a la vida? ¿Qué estaba sucediendo en Arkham? Las limitaciones de su forma incorpórea se hicieron evidentes rápidamente, pero la solución se presentó durante uno de los muchos intentos de comunicarse con un ser vivo. Al fluir hacia el cuerpo de un transeúnte desprevenido, la sensación y el propósito regresaron con venganza. Algo o alguien los había matado, y estaban decididos a llegar al fondo del asunto, sin importar cuántas vidas tuvieran que vivir.",
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Como superviviente, disfrutas de ventajas para soportar el implacable asalto del Mito y ayudar a tus compañeros a hacer lo mismo. Apoyarse mutuamente conducirá a la victoria."
+          },
+          {
+            "rol": "Místico",
+            "description": " Como místico, eres experto en repeler el mal. Tu enfoque debe estar en eliminar las fichas de perdición del tablero. Eres la mejor defensa contra los Primigenios. "
+          }
+        ]
+      }
+    }
   }
+
   
 ]
