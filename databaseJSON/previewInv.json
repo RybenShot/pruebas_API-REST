@@ -699,25 +699,7 @@
         "life": 4,
         "sanity": 8
       },
-      "imgInv": "/img/1-inv/39-jacquelineGPT.jpg",
-      "translations": {
-        "es": {
-          "name": "Jacqueline Fine",
-          "position": "La psíquica"
-        }
-      }
-    },
-    {"idInv": 3834,
-      "isActive": false,
-      "name": "Jacqueline Fine",
-      "position": "The psychic",
-      "rol": ["rogue", "mystic"],
-      "expansion": "AHComunity",
-      "baseData":{
-        "life": 4,
-        "sanity": 8
-      },
-      "imgInv": "/img/1-inv/39-Jacqueline.jpg",
+      "imgInv": "/img/1-inv/39-jacqueline.jpg",
       "translations": {
         "es": {
           "name": "Jacqueline Fine",
