@@ -1,0 +1,39 @@
+### Recuperar toda la lista de mapas en juego
+GET http://localhost:1234/mapInPlay
+
+### Recuperar un mapa en juego por la id
+GET http://localhost:1234/mapInPlay/0
+
+### Crear un nuevo mapa in Play
+POST http://localhost:1234/mapInPlay
+Content-Type:application/json
+
+{
+    "title": "threre is no comming back",
+    "fechaDeInicio": 4568,
+    "lastEddited": 34567356,
+    "IDUserHost": 23456,
+    "mythosReserve":{
+        "doom": 3,
+        "enemies": 2,
+        "clues": 2,
+        "newspaper": 2,
+        "explosion": 1,
+        "retribution": 1,
+        "empty": 3
+    },
+    "variables" :{
+        "dooms": 3,
+        "clues": 2
+    }
+}
+
+### Crear un nuevo mapa
+POST http://localhost:1234/mapInPlay/deleteMapInPlay
+Content-Type:application/json
+
+{
+    "id" : "2df273fc-5252-4303-aa39-1ba9331ffb42",
+    "password": "666"
+    
+}
