@@ -56,10 +56,6 @@
         "reveal": false
       },
       {
-        "type": "retribution",
-        "reveal": false
-      },
-      {
         "type": "empty",
         "reveal": false
       },
@@ -70,11 +66,39 @@
       {
         "type": "empty",
         "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
       }
     ],
     "variables": {
-      "dooms": 4,
-      "clues": 8
+      "dooms": 1,
+      "clues": 2
     }
   }
 ]

@@ -86,6 +86,73 @@ export class MapInPlayModel{
         return true
     }
 
+    /**
+     * @param {string|number} params.id   — El id del mapa
+     * @param {'dooms'|'clues'} params.key   — El nombre de la variable en el objeto `variables`
+     * @param {number} params.delta      — Cuánto sumar (positivo) o restar (negativo)
+     * @returns {Object|null} El mapa actualizado o `null` si no existe
+    */
+    static async adjustVariable({ id, key, delta }) {
+        // buscamos el mapa por la id
+        const map = listMapsInPlay.find(map => map.id == id);
+        if(!map) return null
+
+        // aseguramos de que la clave existe y es numérica
+        if (typeof map.variables[key] !== 'number') {
+        throw new Error(`La variable "${key}" no existe o no es numérica.`);
+        }
+
+        // aplica el calculo de lo que venga en delta
+        map.variables[key] = Math.max(0, map.variables[key] + delta);
+
+        // guardamos los cambios
+        writeFileSync('./databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2));
+
+        return map;
+    }
+
+    static _saveAll() {
+        writeFileSync('./databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2))
+    }
+
+    /**
+     * Gestiona tokens de mitos: añade, elimina o resetea el reveal.
+     * @param {Object} params
+     * @param {string|number} params.id
+     * @param {'add'|'remove'|'reset'} params.action
+     * @param {string} params.type
+     */
+    static async manageMythToken({ id, action, type }) {
+        const map = listMapsInPlay.find(m => m.id == id)
+        if (!map) return null
+
+        switch (action) {
+            case 'add':
+            map.mythosReserveInPlay.push({ type, reveal: false })
+            break
+
+            case 'remove': {
+            const idx = map.mythosReserveInPlay.findIndex(t => t.type === type)
+            if (idx === -1) return null
+            map.mythosReserveInPlay.splice(idx, 1)
+            break
+            }
+
+            case 'reset': {
+            const token = map.mythosReserveInPlay.find(t => t.type === type && t.reveal === true)
+            if (!token) return null
+            token.reveal = false
+            break
+            }
+
+            default:
+            throw new Error(`Invalid action: ${action}`)
+        }
+
+        this._saveAll()
+        return map
+    }
+
     // actualizamos un mapa
     static async updateMap({id, input}){
         const mapIndex = listMapsInPlay.findIndex(map => map.id == id)

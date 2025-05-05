@@ -20,6 +20,7 @@ export class MapsInPlayController {
         res.status(404).json({ message: 'Mapa no encontrado' })
     }
 
+    // pedimos una ficha de mitos y actualizamos la reserva de mitos
     static async getMithToken(req, res){
         const { id } = req.params
         
@@ -29,6 +30,7 @@ export class MapsInPlayController {
         res.json(getToken)
     }
 
+    // reseteamos reserva de mitos
     static async ressetMithReserve(req, res){
         const { id } = req.params
         const confirmation = await MapInPlayModel.ressetMithReserve({id})
@@ -67,6 +69,45 @@ export class MapsInPlayController {
         } catch (error) {
             console.error('❌ deleteMap error:', error);
             return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
+    /**
+     * POST /mapsInPlay/:id/variable
+     * Body esperado: { key: 'dooms'|'clues', delta: number }
+     */
+    // editamos los contadores de pistas y perdicion de la ficha de escenario
+    static async adjustVariable(req, res){
+        const { id } = req.params
+        const { key, delta } = req.body;
+
+        try {
+            const updatedMap = await MapInPlayModel.adjustVariable({ id, key, delta });
+            if (!updatedMap) {
+                return res.status(404).json({ message: 'Mapa no encontrado' });
+            }
+            return res.json({message: `Variable "${key}" actualizada.`, variables: updatedMap.variables });
+        } catch (err) {
+            return res.status(400).json({ error: err.message });
+        }
+    }
+
+    static async manageToken(req, res) {
+        const { id } = req.params
+        const { action, type } = req.body
+
+        if (!['add','remove','reset'].includes(action)) {
+            return res.status(400).json({ error: 'Action must be one of: add, remove, reset' })
+        }
+
+        try {
+            const map = await MapInPlayModel.manageMythToken({ id, action, type })
+            if (!map) {
+            return res.status(404).json({ message: 'Map or token not found' })
+            }
+            return res.json({ message: `Token ${action}ed`, map })
+        } catch (err) {
+            return res.status(500).json({ error: err.message })
         }
     }
 

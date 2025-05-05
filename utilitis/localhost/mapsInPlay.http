@@ -35,7 +35,7 @@ Content-Type:application/json
     }
 }
 
-### Crear un nuevo mapa
+### elimina un Mapa in play pasandole la id del mapa y la contraseña de berificación
 POST http://localhost:1234/mapInPlay/deleteMapInPlay
 Content-Type:application/json
 
@@ -43,4 +43,40 @@ Content-Type:application/json
     "id" : "2df273fc-5252-4303-aa39-1ba9331ffb42",
     "password": "666"
     
+}
+
+### Actualizar datos parcialmente de un mapa in play
+POST http://localhost:1234/mapInPlay/0/variable
+Content-Type:application/json
+
+{
+  "key": "clues",
+  "delta": -1
+}
+
+### añadir ficha a la reserva de mitos
+POST http://localhost:1234/mapInPlay/0/token
+Content-Type: application/json
+
+{ 
+    "action": "add",    
+    "type": "retribution" 
+}
+
+### borrar ficha de la reserva de mitos
+POST http://localhost:1234/mapInPlay/0/token
+Content-Type: application/json
+
+{ 
+    "action": "remove",    
+    "type": "retribution" 
+}
+
+### resetear una ficha de mitos ya revelada
+POST http://localhost:1234/mapInPlay/0/token
+Content-Type: application/json
+
+{ 
+    "action": "reset",    
+    "type": "retribution" 
 }
