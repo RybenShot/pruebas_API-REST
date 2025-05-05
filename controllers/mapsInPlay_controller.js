@@ -20,6 +20,25 @@ export class MapsInPlayController {
         res.status(404).json({ message: 'Mapa no encontrado' })
     }
 
+    static async getMithToken(req, res){
+        const { id } = req.params
+        
+        const getToken = await MapInPlayModel.getToken({id})
+        if (!getToken) return res.status(404).json({ message: "No hay mas tokens disponibles, por favor reinicia la reserva de mitos"})
+        
+        res.json(getToken)
+    }
+
+    static async ressetMithReserve(req, res){
+        const { id } = req.params
+        const confirmation = await MapInPlayModel.ressetMithReserve({id})
+        if(!confirmation){
+            return res.status(404).json({ message: "Mapa no encontrado o error interno"})
+        }
+
+        return res.status(200).json({message: "Reserva de mitos reseteada!"})
+    }
+
     // creamos un nuevo mapa
     static async createNewMap(req, res) {
         const result = validateMapInPlay(req.body)

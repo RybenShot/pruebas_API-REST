@@ -13,6 +13,44 @@ export class MapInPlayModel{
         return map
     }
 
+    static async getToken ({id}){
+        // Buscamos el mapa
+        const map = listMapsInPlay.find(map => map.id == id);
+        if(!map) return null
+
+        // filtramos entre las fichas NO REVELADAS del mapa
+        const availableTokens = map.mythosReserveInPlay.filter(type => !type.reveal)
+        if (availableTokens.length == 0) return null
+
+        // sacar un tokern al azar
+        const token = availableTokens[Math.floor(Math.random() * availableTokens.length)]
+        console.log(token)
+
+        // marca el token seleccionado como revelado
+        token.reveal = true
+
+        // guarda los cambios
+        writeFileSync('databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2));
+
+        // devuelve solo la ficha seleccionada
+        return token
+    }
+
+    static async ressetMithReserve({id}){
+        // Buscamos el mapa
+        const map = listMapsInPlay.find(map => map.id == id);
+        if(!map) return null
+
+        // para cada ficha pasamos el valor de "reveal" a "false"
+        map.mythosReserveInPlay.forEach(token => {
+            token.reveal = false;
+        });
+      
+        // guardar cambios en el JSON
+        writeFileSync( 'databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2)        ); 
+        return true
+    }
+
     // creamos un nuevo mapa
     static async createNewMap({input}){
         const newMap = {
