@@ -16,23 +16,8 @@ POST http://localhost:1234/mapInPlay
 Content-Type:application/json
 
 {
-    "title": "threre is no comming back",
-    "fechaDeInicio": 4568,
-    "lastEddited": 34567356,
-    "IDUserHost": 23456,
-    "mythosReserve":{
-        "doom": 3,
-        "enemies": 2,
-        "clues": 2,
-        "newspaper": 2,
-        "explosion": 1,
-        "retribution": 1,
-        "empty": 3
-    },
-    "variables" :{
-        "dooms": 3,
-        "clues": 2
-    }
+    "idMap": 100,
+    "IDUserHost": 23456
 }
 
 ### elimina un Mapa in play pasandole la id del mapa y la contraseña de berificación

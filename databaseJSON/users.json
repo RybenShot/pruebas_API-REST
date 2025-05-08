@@ -1,0 +1,11 @@
+[
+    {
+        "idUser": 1234,
+        "createdDate": 1746549831971,
+        "nickNameUser": "pepito pepon",
+        "email": "pepitoPepon@hotmail.com",
+        "password": "bla bla bla",
+        "mapsSaved": [12, 456, 6789, 9078],
+        "IDFriends": [4567, 234, 6789]
+    }
+]

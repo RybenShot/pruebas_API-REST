@@ -1,4 +1,6 @@
 import listMapsInPlay from '../databaseJSON/mapsInPlay.json' with { type: "json" }
+import mapsListJSON from '../databaseJSON/mapas.json' with { type: "json" }
+
 
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
@@ -51,19 +53,44 @@ export class MapInPlayModel{
         return true
     }
 
-    // creamos un nuevo mapa
-    static async createNewMap({input}){
-        const newMap = {
-            id: randomUUID(),
-            ...input
-        }
-    
-        listMapsInPlay.push(newMap)
-    
-        writeFileSync("databaseJSON/mapsInPlay.json", JSON.stringify(listMapsInPlay, null, 2))
+    /**
+   * Crea un nuevo mapa "in play" a partir del id del mapa base.
+   * @param {{idMap: number, IDUserHost: number}} params
+   * @returns {object|null} El mapa in play o null si no existe idMap
+   */
+  static async createNewMap({ idMap, IDUserHost }) {
+    // 1. Busca el mapa base
+    const base = mapsListJSON.find(m => m.idMap === idMap)
+    if (!base) return null
 
-        return newMap
+    // 2. Clona datos relevantes
+    const now = Date.now()
+    const newMap = {
+      id: randomUUID(),
+      idMap: base.idMap,
+      title: base.title,
+      fechaDeInicio: now,
+      lastEddited: now,
+      IDUserHost,
+      mythosReserve: { ...base.mythosReserve },
+      // 3. Genera el array mythosReserveInPlay
+      mythosReserveInPlay: Object.entries(base.mythosReserve)
+        .flatMap(([type, count]) =>
+          Array.from({ length: count }, () => ({ type, reveal: false }))
+        ),
+      // 4. Inicializa variables con los mismos contadores (puedes ajustarlos si prefieres otros valores)
+      variables: {
+        dooms: base.mythosReserve.doom || 0,
+        clues: base.mythosReserve.clues || 0
+      }
     }
+
+    // 5. Persiste en mapsInPlay.json
+    listMapsInPlay.push(newMap)
+    writeFileSync('databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2))
+
+    return newMap
+  }
 
     // borramos un mapa
     static async deleteMap(body){

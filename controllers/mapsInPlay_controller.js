@@ -43,15 +43,21 @@ export class MapsInPlayController {
 
     // creamos un nuevo mapa
     static async createNewMap(req, res) {
-        const result = validateMapInPlay(req.body)
-        
-        if (!result.success) {
-            return res.status(400).json({ error: result.error.issues })
+        const { idMap, IDUserHost } = req.body
+        if (typeof idMap !== 'number' || typeof IDUserHost !== 'number') {
+          return res.status(400).json({ error: 'idMap and IDUserHost must be numbers' })
         }
     
-        const newMap = await MapInPlayModel.createNewMap({input: result.data})
-    
-        res.status(201).json(newMap)
+        try {
+          const map = await MapInPlayModel.createNewMap({ idMap, IDUserHost })
+          if (!map) {
+            return res.status(404).json({ message: 'Base map not found' })
+          }
+          return res.status(201).json(map)
+        } catch (err) {
+          console.error(err)
+          return res.status(500).json({ error: 'Internal server error' })
+        }
     }
 
     // borramos un mapa

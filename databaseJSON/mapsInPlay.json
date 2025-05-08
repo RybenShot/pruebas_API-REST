@@ -1,10 +1,11 @@
 [
   {
-    "id": 0,
-    "title": "prueba 1",
-    "fechaDeInicio": null,
-    "lastEddited": null,
-    "IDUserHost": 2134,
+    "id": 12341234,
+    "idMap": 0,
+    "title": "The Arrival of Azathoth",
+    "fechaDeInicio": 234245,
+    "lastEddited": 24562345,
+    "IDUserHost": 13456,
     "mythosReserve": {
       "doom": 3,
       "enemies": 2,
@@ -56,6 +57,10 @@
         "reveal": false
       },
       {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
         "type": "empty",
         "reveal": false
       },
@@ -66,7 +71,50 @@
       {
         "type": "empty",
         "reveal": false
-      },
+      }
+    ],
+    "variables": {
+      "dooms": 1,
+      "clues": 2
+    }
+  },
+  {
+    "id": "376d68aa-9e4c-4f1f-9070-4504632436e8",
+    "title": "threre is no comming back",
+    "fechaDeInicio": 4568,
+    "lastEddited": 34567356,
+    "IDUserHost": 23456,
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "variables": {
+      "dooms": 3,
+      "clues": 2
+    }
+  },
+  {
+    "id": "5970e102-cdc0-4290-9ff7-22de0db75dad",
+    "idMap": 0,
+    "title": "The Arrival of Azathoth",
+    "fechaDeInicio": 1746549831971,
+    "lastEddited": 1746549831971,
+    "IDUserHost": 23456,
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "mythosReserveInPlay": [
       {
         "type": "doom",
         "reveal": false
@@ -80,24 +128,52 @@
         "reveal": false
       },
       {
-        "type": "doom",
+        "type": "enemies",
         "reveal": false
       },
       {
-        "type": "doom",
+        "type": "enemies",
         "reveal": false
       },
       {
-        "type": "doom",
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
         "reveal": false
       },
       {
         "type": "retribution",
         "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
       }
     ],
     "variables": {
-      "dooms": 1,
+      "dooms": 3,
       "clues": 2
     }
   }
