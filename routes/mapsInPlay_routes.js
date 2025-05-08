@@ -18,9 +18,6 @@ mapsInPlayRouter.post('/deleteMapInPlay', MapsInPlayController.deleteMap )
 // SUMAMOS O RESTAMOS a las variables de pistas y perdicion del mapa
 mapsInPlayRouter.post('/:id/variable',  MapsInPlayController.adjustVariable)
 
-mapsInPlayRouter.post('/:id/token', MapsInPlayController.manageToken)
-
-// ACTUALIZAMOS un mapa
-//mapsInPlayRouter.patch('/:id', MapsInPlayController.updateMap )
+mapsInPlayRouter.post('/:id/token', MapsInPlayController.manageMythToken)
 
 export default mapsInPlayRouter

@@ -22,7 +22,7 @@
       },
       {
         "type": "doom",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "doom",
@@ -50,7 +50,7 @@
       },
       {
         "type": "newspaper",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "explosion",
@@ -99,11 +99,11 @@
     }
   },
   {
-    "id": "5970e102-cdc0-4290-9ff7-22de0db75dad",
-    "idMap": 0,
-    "title": "The Arrival of Azathoth",
-    "fechaDeInicio": 1746549831971,
-    "lastEddited": 1746549831971,
+    "id": "57c39989-8602-407c-a7bf-2573cb9ed416",
+    "idMap": 10,
+    "title": "The Key and the Gate",
+    "fechaDeInicio": 1746728738707,
+    "lastEddited": 1746728738707,
     "IDUserHost": 23456,
     "mythosReserve": {
       "doom": 3,
@@ -117,59 +117,59 @@
     "mythosReserveInPlay": [
       {
         "type": "doom",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "doom",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "doom",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "enemies",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "enemies",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "clues",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "clues",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "newspaper",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "newspaper",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "explosion",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "retribution",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "empty",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "empty",
-        "reveal": false
+        "reveal": true
       },
       {
         "type": "empty",
-        "reveal": false
+        "reveal": true
       }
     ],
     "variables": {

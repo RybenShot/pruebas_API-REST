@@ -9,13 +9,20 @@ import { EnemiesModel } from "./enemies_model.js";
 
 export class MapInPlayModel{
 
+    static _saveAll() {
+        writeFileSync('./databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2))
+    }
+
     // retornamos un mapa por su id
     static async getByID ({id}){
+        console.log('🔍 --- getByID --- recibid:', id);
         const map = listMapsInPlay.find(map => map.id == id);
         return map
     }
 
+    // pedimos una ficha de mitos
     static async getToken ({id}){
+        console.log('🔍 --- getToken --- recibid:', id);
         // Buscamos el mapa
         const map = listMapsInPlay.find(map => map.id == id);
         if(!map) return null
@@ -26,19 +33,21 @@ export class MapInPlayModel{
 
         // sacar un tokern al azar
         const token = availableTokens[Math.floor(Math.random() * availableTokens.length)]
-        console.log(token)
+        console.log("se ha seleccionado la ficha: ", token)
 
         // marca el token seleccionado como revelado
         token.reveal = true
 
         // guarda los cambios
-        writeFileSync('databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2));
+        this._saveAll()
 
         // devuelve solo la ficha seleccionada
         return token
     }
 
+    // llamada para resetear todas las fichas de la reserva de mitos
     static async ressetMithReserve({id}){
+        console.log('🔍 --- ressetMithReserve --- recibid:', id);
         // Buscamos el mapa
         const map = listMapsInPlay.find(map => map.id == id);
         if(!map) return null
@@ -49,7 +58,7 @@ export class MapInPlayModel{
         });
       
         // guardar cambios en el JSON
-        writeFileSync( 'databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2)        ); 
+        this._saveAll()
         return true
     }
 
@@ -59,35 +68,37 @@ export class MapInPlayModel{
    * @returns {object|null} El mapa in play o null si no existe idMap
    */
   static async createNewMap({ idMap, IDUserHost }) {
-    // 1. Busca el mapa base
-    const base = mapsListJSON.find(m => m.idMap === idMap)
-    if (!base) return null
+    console.log('🔍 --- createNewMap --- recibid:', idMap, IDUserHost);
+    // busca el mapa base
+    const baseMap = mapsListJSON.find(map => map.idMap === idMap)
+    if (!baseMap) return null
 
-    // 2. Clona datos relevantes
+    // clona datos relevantes
     const now = Date.now()
     const newMap = {
       id: randomUUID(),
-      idMap: base.idMap,
-      title: base.title,
+      idMap: baseMap.idMap,
+      title: baseMap.title,
       fechaDeInicio: now,
       lastEddited: now,
       IDUserHost,
-      mythosReserve: { ...base.mythosReserve },
-      // 3. Genera el array mythosReserveInPlay
-      mythosReserveInPlay: Object.entries(base.mythosReserve)
+      mythosReserve: { ...baseMap.mythosReserve },
+
+      // genera la reserva de mitos mythosReserveInPlay
+      mythosReserveInPlay: Object.entries(baseMap.mythosReserve)
         .flatMap(([type, count]) =>
           Array.from({ length: count }, () => ({ type, reveal: false }))
         ),
-      // 4. Inicializa variables con los mismos contadores (puedes ajustarlos si prefieres otros valores)
+      // inicializa variables con los mismos contadores (puedes ajustarlos si prefieres otros valores)
       variables: {
-        dooms: base.mythosReserve.doom || 0,
-        clues: base.mythosReserve.clues || 0
+        dooms: baseMap.mythosReserve.doom || 0,
+        clues: baseMap.mythosReserve.clues || 0
       }
     }
 
-    // 5. Persiste en mapsInPlay.json
+    // guarda el mapa
     listMapsInPlay.push(newMap)
-    writeFileSync('databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2))
+    this._saveAll()
 
     return newMap
   }
@@ -103,12 +114,12 @@ export class MapInPlayModel{
       
         const mapIndex = listMapsInPlay.findIndex(map => map.id === body.id);
         if (mapIndex === -1) {
-          console.warn('⚠️ id no encontrado:', body.id);
+          console.warn('⚠️ id del mapa no encontrado:', body.id);
           return false;
         }
 
         listMapsInPlay.splice(mapIndex, 1)
-        writeFileSync("databaseJSON/mapsInPlay.json", JSON.stringify(listMapsInPlay, null, 2))
+        this._saveAll()
         
         return true
     }
@@ -120,26 +131,24 @@ export class MapInPlayModel{
      * @returns {Object|null} El mapa actualizado o `null` si no existe
     */
     static async adjustVariable({ id, key, delta }) {
+        console.log('🔍 --- adjustVariable --- recibid:', id, key, delta);
+
         // buscamos el mapa por la id
         const map = listMapsInPlay.find(map => map.id == id);
         if(!map) return null
 
         // aseguramos de que la clave existe y es numérica
         if (typeof map.variables[key] !== 'number') {
-        throw new Error(`La variable "${key}" no existe o no es numérica.`);
+        throw new Error(`❌ La variable "${key}" no existe o no es numérica.`);
         }
 
         // aplica el calculo de lo que venga en delta
         map.variables[key] = Math.max(0, map.variables[key] + delta);
 
         // guardamos los cambios
-        writeFileSync('./databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2));
+        this._saveAll()
 
         return map;
-    }
-
-    static _saveAll() {
-        writeFileSync('./databaseJSON/mapsInPlay.json', JSON.stringify(listMapsInPlay, null, 2))
     }
 
     /**
@@ -150,7 +159,7 @@ export class MapInPlayModel{
      * @param {string} params.type
      */
     static async manageMythToken({ id, action, type }) {
-        const map = listMapsInPlay.find(m => m.id == id)
+        const map = listMapsInPlay.find(map => map.id == id)
         if (!map) return null
 
         switch (action) {
@@ -178,22 +187,5 @@ export class MapInPlayModel{
 
         this._saveAll()
         return map
-    }
-
-    // actualizamos un mapa
-    static async updateMap({id, input}){
-        const mapIndex = listMapsInPlay.findIndex(map => map.id == id)
-
-        if (mapIndex === -1) return false
-
-        const mapUpdated = {
-            ...listMapsInPlay[mapIndex],
-            ...input
-        }
-
-        listMapsInPlay[mapIndex] = mapUpdated
-        writeFileSync('./listaInvestigadores.json', JSON.stringify(listMapsInPlay, null, 2))
-        
-        return mapUpdated
     }
 }

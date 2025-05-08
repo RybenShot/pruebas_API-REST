@@ -12,36 +12,56 @@ export class MapsInPlayController {
 
     // retornamos un mapa por su id
     static async getById (req, res) {
-        const { id } = req.params
+        try {
+            const { id } = req.params
         
-        const findMap = await MapInPlayModel.getByID({ id })
-        if (findMap) return res.json(findMap)
-    
-        res.status(404).json({ message: 'Mapa no encontrado' })
+            const findMap = await MapInPlayModel.getByID({ id })
+            if (!findMap) return res.status(404).json({ message: 'Mapa no encontrado' })
+
+            res.json(findMap)  
+          
+        } catch (error) {
+            console.error('❌ getById error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // pedimos una ficha de mitos y actualizamos la reserva de mitos
     static async getMithToken(req, res){
-        const { id } = req.params
+        try {
+            const { id } = req.params
         
-        const getToken = await MapInPlayModel.getToken({id})
-        if (!getToken) return res.status(404).json({ message: "No hay mas tokens disponibles, por favor reinicia la reserva de mitos"})
-        
-        res.json(getToken)
+            const getToken = await MapInPlayModel.getToken({id})
+            if (!getToken) {
+                console.error('❌ No hay mas fichas de mitos en la reserva de mitos');
+                return res.status(404).json({ message: "No hay mas tokens disponibles, por favor reinicia la reserva de mitos"})
+            }
+            
+            res.json(getToken) 
+        } catch (error) {
+            console.error('❌ getMithToken error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // reseteamos reserva de mitos
     static async ressetMithReserve(req, res){
-        const { id } = req.params
-        const confirmation = await MapInPlayModel.ressetMithReserve({id})
-        if(!confirmation){
-            return res.status(404).json({ message: "Mapa no encontrado o error interno"})
-        }
+        try {
+            const { id } = req.params
+            const confirmation = await MapInPlayModel.ressetMithReserve({id})
+            if(!confirmation){
+                return res.status(404).json({ message: "Mapa no encontrado o error interno"})
+            }
 
-        return res.status(200).json({message: "Reserva de mitos reseteada!"})
+            res.status(200).json({message: "Reserva de mitos reseteada!"})
+        } catch (error) {
+            console.error('❌ ressetMithReserve error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+        
     }
 
-    // creamos un nuevo mapa
+    // creamos un nuevo mapa in play
     static async createNewMap(req, res) {
         const { idMap, IDUserHost } = req.body
         if (typeof idMap !== 'number' || typeof IDUserHost !== 'number') {
@@ -54,9 +74,9 @@ export class MapsInPlayController {
             return res.status(404).json({ message: 'Base map not found' })
           }
           return res.status(201).json(map)
-        } catch (err) {
-          console.error(err)
-          return res.status(500).json({ error: 'Internal server error' })
+        } catch (error) {
+            console.error('❌ createNewMap error :', error);
+            return res.status(500).json({ message: 'Error interno' });
         }
     }
 
@@ -82,7 +102,7 @@ export class MapsInPlayController {
      * POST /mapsInPlay/:id/variable
      * Body esperado: { key: 'dooms'|'clues', delta: number }
      */
-    // editamos los contadores de pistas y perdicion de la ficha de escenario
+    // editor de variables de pista y perdicion del mapa
     static async adjustVariable(req, res){
         const { id } = req.params
         const { key, delta } = req.body;
@@ -93,12 +113,14 @@ export class MapsInPlayController {
                 return res.status(404).json({ message: 'Mapa no encontrado' });
             }
             return res.json({message: `Variable "${key}" actualizada.`, variables: updatedMap.variables });
-        } catch (err) {
-            return res.status(400).json({ error: err.message });
+        } catch (error) {
+            console.error('❌ adjustVariable error :', error);
+            return res.status(500).json({ message: 'Error interno' });
         }
     }
 
-    static async manageToken(req, res) {
+    // editor de reserva de mitos
+    static async manageMythToken(req, res) {
         const { id } = req.params
         const { action, type } = req.body
 
@@ -112,22 +134,9 @@ export class MapsInPlayController {
             return res.status(404).json({ message: 'Map or token not found' })
             }
             return res.json({ message: `Token ${action}ed`, map })
-        } catch (err) {
-            return res.status(500).json({ error: err.message })
+        } catch (error) {
+            console.error('❌ manageMythToken error :', error);
+            return res.status(500).json({ message: 'Error interno' });
         }
-    }
-
-    // actualizamos un mapa
-    static async updateMap (req, res) {
-        const result = validatePartialMapInPlay(req.body)
-
-        if (!result.success) {
-            return res.status(400).json({ error: JSON.parse(result.error.message) })
-        }
-        const { id } = req.params
-    
-        const updateMap = await MapInPlayModel.updateMap({ id, input: result.data })
-    
-        return res.json(updateMap)
     }
 }

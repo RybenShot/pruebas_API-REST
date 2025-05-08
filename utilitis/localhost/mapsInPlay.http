@@ -5,7 +5,7 @@ GET http://localhost:1234/mapInPlay
 GET http://localhost:1234/mapInPlay/0
 
 ### Pedir una ficha de mitos
-GET http://localhost:1234/mapInPlay/0/getMithToken
+GET http://localhost:1234/mapInPlay/57c39989-8602-407c-a7bf-2573cb9ed416/getMithToken
 
 ### Reiniciar la reserva de mitos
 GET http://localhost:1234/mapInPlay/0/ressetMithReserve
@@ -16,7 +16,7 @@ POST http://localhost:1234/mapInPlay
 Content-Type:application/json
 
 {
-    "idMap": 100,
+    "idMap": 10,
     "IDUserHost": 23456
 }
 
