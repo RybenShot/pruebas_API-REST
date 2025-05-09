@@ -81,6 +81,7 @@ export class MapInPlayModel{
       title: baseMap.title,
       fechaDeInicio: now,
       lastEddited: now,
+      BGMap: baseMap.BGMap,
       IDUserHost,
       mythosReserve: { ...baseMap.mythosReserve },
 

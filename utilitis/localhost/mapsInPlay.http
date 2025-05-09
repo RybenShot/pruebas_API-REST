@@ -16,7 +16,7 @@ POST http://localhost:1234/mapInPlay
 Content-Type:application/json
 
 {
-    "idMap": 10,
+    "idMap": 12,
     "IDUserHost": 23456
 }
 
