@@ -79,11 +79,12 @@
     }
   },
   {
-    "id": "376d68aa-9e4c-4f1f-9070-4504632436e8",
-    "title": "threre is no comming back",
-    "fechaDeInicio": 4568,
-    "lastEddited": 34567356,
-    "IDUserHost": 23456,
+    "id": "250f0ff2-dd2a-4d2f-8740-0f781884e06d",
+    "idMap": 7,
+    "title": "Dreams of R´lyeh",
+    "description": "The fresh autumn breeze carries with it a supernatural melody, practically imperceptible to the awake mind. In dreams, you visit a fantastic underwater city and delight in the glory of a cyclopean entity that you cannot see.",
+    "initialSpace": "Santa María Hospital",
+    "retribution": "Each investigator places a Doom token in their space unless they suffer a point of Horror.",
     "mythosReserve": {
       "doom": 3,
       "enemies": 2,
@@ -91,85 +92,85 @@
       "newspaper": 2,
       "explosion": 1,
       "retribution": 1,
-      "empty": 3
+      "empty": 1
     },
-    "variables": {
-      "dooms": 3,
-      "clues": 2
-    }
-  },
-  {
-    "id": "57c39989-8602-407c-a7bf-2573cb9ed416",
-    "idMap": 10,
-    "title": "The Key and the Gate",
-    "fechaDeInicio": 1746728738707,
-    "lastEddited": 1746728738707,
-    "IDUserHost": 23456,
-    "mythosReserve": {
-      "doom": 3,
-      "enemies": 2,
-      "clues": 2,
-      "newspaper": 2,
-      "explosion": 1,
-      "retribution": 1,
-      "empty": 3
+    "enemies": [
+      37,
+      42,
+      39,
+      4,
+      8,
+      55,
+      48,
+      57,
+      44,
+      58,
+      35
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa8.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG8MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Sueños de R´lyeh",
+        "description": "La fresca brisa otoñal arrastra consigo una melodía sobrenatural, prácticamente imperceptible para al mente despierta. En sueños, visitáis una fantástica ciudad submarina y os deleitáis en la gloria de una entidad ciclópea que no alcanzáis a ver.",
+        "initialSpace": "Hospital de Santa María",
+        "retribution": "Cada investigador coloca una ficha de Peridión en su espacio a menos que sufra un punto de Horror.",
+        "textSpecialEnemies": null
+      }
     },
+    "fechaDeInicio": 1747217012451,
+    "lastEddited": 1747217012451,
+    "IDUserHost": 666,
     "mythosReserveInPlay": [
       {
         "type": "doom",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "doom",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "doom",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "enemies",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "enemies",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "clues",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "clues",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "newspaper",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "newspaper",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "explosion",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "retribution",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "empty",
-        "reveal": true
-      },
-      {
-        "type": "empty",
-        "reveal": true
-      },
-      {
-        "type": "empty",
-        "reveal": true
+        "reveal": false
       }
     ],
     "variables": {
@@ -178,38 +179,223 @@
     }
   },
   {
-    "id": "e4245d56-9bb8-4d26-8ff7-bd0502636aa7",
-    "idMap": 0,
-    "title": "The Arrival of Azathoth",
-    "description": "In the heart of infinity dwells the lethargic Azathoth, lulled by the incessant notes of ominous flutes. But there are mortals who wish to invoke the immeasurable power and calamity of the Blind and Idiot God, even if it means condemning humanity ...",
-    "difficulty": 1,
-    "expansion": "AHBase",
-    "duration": 130,
-    "userVotes": 4,
+    "id": "b6ca483a-351a-497d-9c4d-4a9acb8a0913",
+    "idMap": 12,
+    "title": "The Dead Scream",
+    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
     "initialSpace": "Train Station",
-    "retribution": "For each Cultist Monster, place a Doom token in its space. (If it is in a street space, the Doom token is placed in an adjacent Neighborhood space.)",
+    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
     "mythosReserve": {
-      "doom": 3,
+      "doom": 4,
       "enemies": 2,
       "clues": 2,
       "newspaper": 2,
       "explosion": 1,
       "retribution": 1,
-      "empty": 3
+      "empty": 2
     },
-    "enemies": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "enemies": [
+      1,
+      75,
+      16,
+      82,
+      14,
+      3,
+      80,
+      13,
+      74,
+      86,
+      77,
+      76,
+      81
+    ],
     "textSpecialEnemies": null,
     "specialEnemies": [],
-    "imgMap": "LosetasMapa1.png",
-    "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
     "translations": {
       "es": {
-        "title": "La llegada de tu puta madre",
-        "description": "Esto es una descripcion falsa",
-        "initialSpace": "Estación de trenes",
-        "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)",
+        "title": "Los muertos gritan",
+        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
+        "initialSpace": "Estación de Trenes",
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
         "textSpecialEnemies": null
       }
+    },
+    "fechaDeInicio": 1747217855955,
+    "lastEddited": 1747217855955,
+    "IDUserHost": 666,
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 4,
+      "clues": 2
+    }
+  },
+  {
+    "id": "d6ef5fdd-672d-4c6e-84eb-f244031670ad",
+    "idMap": 12,
+    "title": "The Dead Scream",
+    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
+    "initialSpace": "Train Station",
+    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
+    "mythosReserve": {
+      "doom": 4,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 2
+    },
+    "enemies": [
+      1,
+      75,
+      16,
+      82,
+      14,
+      3,
+      80,
+      13,
+      74,
+      86,
+      77,
+      76,
+      81
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Los muertos gritan",
+        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
+        "initialSpace": "Estación de Trenes",
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747231563810,
+    "lastEddited": 1747231563810,
+    "IDUserHost": 666,
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 6,
+      "clues": 6
     }
   }
 ]

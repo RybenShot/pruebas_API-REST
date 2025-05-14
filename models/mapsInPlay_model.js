@@ -79,11 +79,20 @@ export class MapInPlayModel{
       id: randomUUID(),
       idMap: baseMap.idMap,
       title: baseMap.title,
+      description: baseMap.description,
+      initialSpace: baseMap.initialSpace,
+      retribution: baseMap.retribution,
+      mythosReserve: { ...baseMap.mythosReserve },
+      enemies: baseMap.enemies,
+      textSpecialEnemies: baseMap.textSpecialEnemies,
+      specialEnemies: baseMap.specialEnemies,
+      imgMap: baseMap.imgMap,
+      BGMap: baseMap.BGMap,
+      translations: baseMap.translations,
+
       fechaDeInicio: now,
       lastEddited: now,
-      BGMap: baseMap.BGMap,
       IDUserHost,
-      mythosReserve: { ...baseMap.mythosReserve },
 
       // genera la reserva de mitos mythosReserveInPlay
       mythosReserveInPlay: Object.entries(baseMap.mythosReserve)

@@ -2,7 +2,7 @@
 GET http://localhost:1234/mapInPlay
 
 ### Recuperar un mapa en juego por la id
-GET http://localhost:1234/mapInPlay/0
+GET http://localhost:1234/mapInPlay/e4245d56-9bb8-4d26-8ff7-bd0502636aa7
 
 ### Pedir una ficha de mitos
 GET http://localhost:1234/mapInPlay/57c39989-8602-407c-a7bf-2573cb9ed416/getMithToken
