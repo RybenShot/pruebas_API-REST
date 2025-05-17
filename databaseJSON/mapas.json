@@ -30,6 +30,26 @@
         "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)",
         "textSpecialEnemies": null
       }
+    },
+      "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 1,
@@ -63,6 +83,26 @@
         "retribution": "Coloca una ficha de Perdición sobre la hoja de escenario.",
         "textSpecialEnemies": "Aparta a un lado los siguientes Monstruos."
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 2,
@@ -96,6 +136,26 @@
         "retribution": "Coloca una ficha de Perdición en cada espacio que contenga una herida abierta.",
         "textSpecialEnemies": "Aparta a un lado todos los Mosntruos Logia."
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 3,
@@ -129,6 +189,26 @@
         "retribution": "Cada investigador sufre tanto Horror como el número de fichas que haya en su espacio.",
         "textSpecialEnemies": null
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
 
@@ -164,6 +244,26 @@
         "retribution": "Se propaga el Terror en cada Barrio que contenga un Monstruo Profundo.",
         "textSpecialEnemies": null
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "terror", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 5,
@@ -197,6 +297,26 @@
         "retribution": "Todo investigador situado en un espacio que contenga Perdición sufre un punto de Horror a menos que descarte una ficha de Concentración.",
         "textSpecialEnemies": "Aparta a un lado el Monstruo Declan Pearce."
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 6,
@@ -231,6 +351,26 @@
         "retribution": "Coloca una ficha de Perdición en cualquier espacio de Innsmouth y una ficha de Perdición en cualquier espacio de Kingsport.",
         "textSpecialEnemies": null
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "terror", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 7,
@@ -264,6 +404,24 @@
         "retribution": "Cada investigador coloca una ficha de Peridión en su espacio a menos que sufra un punto de Horror.",
         "textSpecialEnemies": null
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
 
@@ -298,6 +456,26 @@
         "retribution": "Si hay 2 o más Pistas en algún Barrio, coloca una ficha de Perdición sobre la hoja del escenario.",
         "textSpecialEnemies": null
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 9,
@@ -331,6 +509,26 @@
         "retribution": "Si ninguna de las bandas es hostil, aparece un Monstruo Sectario.",
         "textSpecialEnemies": "Aparta a un lado todos los Monstruos O'Bannion y Sheldon que queden."
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
 
@@ -365,6 +563,26 @@
         "retribution": "Cada investigador que no esté enfrentado a uno o más Mosntruos se mueve un espacio hacia el espacio inestable a menos que sufra un punto de Horror.",
         "textSpecialEnemies": null
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 11,
@@ -398,6 +616,26 @@
         "retribution": "Por cada Monstruo Espíritu, coloca una ficha de Perdición en su espacio. Si no hay Mosntruos Espíritu en el tablero, aparece un Monstruo Espíritu.",
         "textSpecialEnemies": "Aparta todos los Monstruos Logia."
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   },
   {"idMap": 12,
@@ -431,6 +669,26 @@
         "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
         "textSpecialEnemies": null
       }
+    },
+    "mythosReserveInPlay": [
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "doom", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "enemies", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "clues", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "newspaper", "reveal": false},
+        {"type": "explosion", "reveal": false},
+        {"type": "retribution", "reveal": false},
+        {"type": "empty", "reveal": false},
+        {"type": "empty", "reveal": false}
+      ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
     }
   }
 ]
