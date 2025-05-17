@@ -1,11 +1,11 @@
 [
   {
-    "id": 12341234,
-    "idMap": 0,
-    "title": "The Arrival of Azathoth",
-    "fechaDeInicio": 234245,
-    "lastEddited": 24562345,
-    "IDUserHost": 13456,
+    "id": "cc2e0f1f-21fc-47f9-8d0e-73abd13c6fc8",
+    "idMap": 1,
+    "title": "Feast for Umordhoth",
+    "description": "The Gules who dwell in the underworld feed on the flesh of the dead: yet even they live in fear of the Devourer of the Deep whom they revere. But the Gules are not the only ones in Arkham who worship Umórdhoth...",
+    "initialSpace": "Grocery Store",
+    "retribution": "Place a Doom token on the scenario sheet.",
     "mythosReserve": {
       "doom": 3,
       "enemies": 2,
@@ -15,6 +15,42 @@
       "retribution": 1,
       "empty": 3
     },
+    "enemies": [
+      10,
+      0,
+      11,
+      1,
+      3,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "textSpecialEnemies": "Set aside the following monsters.",
+    "specialEnemies": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "imgMap": "LosetasMapa2.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG2MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Festín para Umordhoth",
+        "description": "Los gules que habitan en el mundo subterráneo se alimentan de la carne de los muertos: con todo, incluso ellos viven temerosos del Devorador de las Profundidades al que reverencian. Pero los gules no son los únicos en Arkham que veneran a Umórdhoth...",
+        "initialSpace": "Colmado",
+        "retribution": "Coloca una ficha de Perdición sobre la hoja de escenario.",
+        "textSpecialEnemies": "Aparta a un lado los siguientes Monstruos."
+      }
+    },
+    "fechaDeInicio": 1747479387601,
+    "lastEddited": 1747479387601,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
     "mythosReserveInPlay": [
       {
         "type": "doom",
@@ -22,7 +58,7 @@
       },
       {
         "type": "doom",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "doom",
@@ -30,7 +66,7 @@
       },
       {
         "type": "enemies",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "enemies",
@@ -38,7 +74,7 @@
       },
       {
         "type": "clues",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "clues",
@@ -50,7 +86,7 @@
       },
       {
         "type": "newspaper",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "explosion",
@@ -66,7 +102,7 @@
       },
       {
         "type": "empty",
-        "reveal": true
+        "reveal": false
       },
       {
         "type": "empty",
@@ -74,12 +110,449 @@
       }
     ],
     "variables": {
-      "dooms": 1,
+      "dooms": 3,
       "clues": 2
     }
   },
   {
-    "id": "250f0ff2-dd2a-4d2f-8740-0f781884e06d",
+    "id": "8f53cf59-b9da-420b-bdcf-3cd99136cb4f",
+    "idMap": 12,
+    "title": "The Dead Scream",
+    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
+    "initialSpace": "Train Station",
+    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
+    "mythosReserve": {
+      "doom": 4,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 2
+    },
+    "enemies": [
+      1,
+      75,
+      16,
+      82,
+      14,
+      3,
+      80,
+      13,
+      74,
+      86,
+      77,
+      76,
+      81
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Los muertos gritan",
+        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
+        "initialSpace": "Estación de Trenes",
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747480836151,
+    "lastEddited": 1747480836151,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "55b5459a-29c4-4905-aca2-73fae9851dc1",
+    "idMap": 3,
+    "title": "Echoes of the Deep",
+    "description": "In his abode of R'lyeh, the late Cthulhu waits dreaming. He agitates in his lethargy and waits for the stars to be propitious for R'lyeh to emerge from his home under the waves and the primeval ones to return. For what can lie eternally is not dead, and with the strange evos even death can die...",
+    "initialSpace": "Observatory",
+    "retribution": "Each investigator suffers Horror equal to the number of tokens in their space.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      35,
+      4,
+      0,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa4.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG4MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Ecos de las Profundidades",
+        "description": "En su morada de R’lyeh, el difunto Cthulhu aguarda soñando. Se agita en su letargo y espera a que las estrellas sean propicias para que R’lyeh emerja de su hogar bajo las olas y los primigenios regresen. Pues no está muerto lo que puede yacer eternamente, y con los evos extraños aun la muerte puede morir...",
+        "initialSpace": "Observatorio",
+        "retribution": "Cada investigador sufre tanto Horror como el número de fichas que haya en su espacio.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747481543077,
+    "lastEddited": 1747481543077,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 3,
+      "clues": 2
+    }
+  },
+  {
+    "id": "4f4f9525-1e59-4d96-93fd-e34655b71d79",
+    "idMap": 8,
+    "title": "The Silence of Tsathoggua",
+    "description": "The beast of Voormithabreth slumbers while the adepts it abandoned in distant Yuggoth prepare their devotional offerings to sate its voracious appetite. If the Sleeper of N'Kai were to awaken, we would all be doomed.",
+    "initialSpace": "Orne Library",
+    "retribution": "If there are 2 or more Clues in any Neighborhood, place a Doom token on the scenario sheet.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      59,
+      60,
+      61,
+      4,
+      2,
+      62,
+      63,
+      64,
+      11,
+      24
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa9.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG9MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "El silencio de Tsathoggua",
+        "description": "La bestia de Voormithabreth dormita mientras los adeptos que abandonó en la lejana Yuggoth preparan sus ofrendas devocionales para colmarsu voraz apetito. Si el Durmiente de N'Kai llegase a despertar, estaríamos todos condenados.",
+        "initialSpace": "Biblioteca Orne",
+        "retribution": "Si hay 2 o más Pistas en algún Barrio, coloca una ficha de Perdición sobre la hoja del escenario.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747481568926,
+    "lastEddited": 1747481568926,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 3,
+      "clues": 2
+    }
+  },
+  {
+    "id": "f9fed3cb-7ec3-460c-9e7b-4cdc513135c9",
+    "idMap": 9,
+    "title": "Shots in the Dark",
+    "description": "The mafias of Arkham have a long history, and the truce between the O'Bannions and the Sheldons has been, at best, fragile. During the sweltering summer of 1926, a sinister shadow drives them into a brutal gang war.",
+    "initialSpace": "Police Station",
+    "retribution": "If neither of the gangs is hostile, a Cultist Monster appears.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      15,
+      65,
+      66,
+      13,
+      4,
+      67,
+      59,
+      1,
+      2
+    ],
+    "textSpecialEnemies": "Set aside all remaining O'Bannion and Sheldon monsters.",
+    "specialEnemies": [
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "imgMap": "LosetasMapa10.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG10MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Disparos en la oscuridad",
+        "description": "Las mafias de Arkham tienen una larga historia, y la tregua entre los O'Bannion y los Sheldon ha sido, en el mejor de los casos, frájil. Durante en caluroso verano de 1926, una sombra tenebrosa los empuja a una cruenta guerra de bandas.",
+        "initialSpace": "Comisaría",
+        "retribution": "Si ninguna de las bandas es hostil, aparece un Monstruo Sectario.",
+        "textSpecialEnemies": "Aparta a un lado todos los Monstruos O'Bannion y Sheldon que queden."
+      }
+    },
+    "fechaDeInicio": 1747481822103,
+    "lastEddited": 1747481822103,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 3,
+      "clues": 2
+    }
+  },
+  {
+    "id": "cc41b46d-e279-40ae-aa63-2da544d84b7e",
     "idMap": 7,
     "title": "Dreams of R´lyeh",
     "description": "The fresh autumn breeze carries with it a supernatural melody, practically imperceptible to the awake mind. In dreams, you visit a fantastic underwater city and delight in the glory of a cyclopean entity that you cannot see.",
@@ -120,9 +593,9 @@
         "textSpecialEnemies": null
       }
     },
-    "fechaDeInicio": 1747217012451,
-    "lastEddited": 1747217012451,
-    "IDUserHost": 666,
+    "fechaDeInicio": 1747481840854,
+    "lastEddited": 1747481840854,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
     "mythosReserveInPlay": [
       {
         "type": "doom",
@@ -176,226 +649,6 @@
     "variables": {
       "dooms": 3,
       "clues": 2
-    }
-  },
-  {
-    "id": "b6ca483a-351a-497d-9c4d-4a9acb8a0913",
-    "idMap": 12,
-    "title": "The Dead Scream",
-    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
-    "initialSpace": "Train Station",
-    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
-    "mythosReserve": {
-      "doom": 4,
-      "enemies": 2,
-      "clues": 2,
-      "newspaper": 2,
-      "explosion": 1,
-      "retribution": 1,
-      "empty": 2
-    },
-    "enemies": [
-      1,
-      75,
-      16,
-      82,
-      14,
-      3,
-      80,
-      13,
-      74,
-      86,
-      77,
-      76,
-      81
-    ],
-    "textSpecialEnemies": null,
-    "specialEnemies": [],
-    "imgMap": "LosetasMapa13.png",
-    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
-    "translations": {
-      "es": {
-        "title": "Los muertos gritan",
-        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
-        "initialSpace": "Estación de Trenes",
-        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
-        "textSpecialEnemies": null
-      }
-    },
-    "fechaDeInicio": 1747217855955,
-    "lastEddited": 1747217855955,
-    "IDUserHost": 666,
-    "mythosReserveInPlay": [
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "enemies",
-        "reveal": false
-      },
-      {
-        "type": "enemies",
-        "reveal": false
-      },
-      {
-        "type": "clues",
-        "reveal": false
-      },
-      {
-        "type": "clues",
-        "reveal": false
-      },
-      {
-        "type": "newspaper",
-        "reveal": false
-      },
-      {
-        "type": "newspaper",
-        "reveal": false
-      },
-      {
-        "type": "explosion",
-        "reveal": false
-      },
-      {
-        "type": "retribution",
-        "reveal": false
-      },
-      {
-        "type": "empty",
-        "reveal": false
-      },
-      {
-        "type": "empty",
-        "reveal": false
-      }
-    ],
-    "variables": {
-      "dooms": 4,
-      "clues": 2
-    }
-  },
-  {
-    "id": "d6ef5fdd-672d-4c6e-84eb-f244031670ad",
-    "idMap": 12,
-    "title": "The Dead Scream",
-    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
-    "initialSpace": "Train Station",
-    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
-    "mythosReserve": {
-      "doom": 4,
-      "enemies": 2,
-      "clues": 2,
-      "newspaper": 2,
-      "explosion": 1,
-      "retribution": 1,
-      "empty": 2
-    },
-    "enemies": [
-      1,
-      75,
-      16,
-      82,
-      14,
-      3,
-      80,
-      13,
-      74,
-      86,
-      77,
-      76,
-      81
-    ],
-    "textSpecialEnemies": null,
-    "specialEnemies": [],
-    "imgMap": "LosetasMapa13.png",
-    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
-    "translations": {
-      "es": {
-        "title": "Los muertos gritan",
-        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
-        "initialSpace": "Estación de Trenes",
-        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
-        "textSpecialEnemies": null
-      }
-    },
-    "fechaDeInicio": 1747231563810,
-    "lastEddited": 1747231563810,
-    "IDUserHost": 666,
-    "mythosReserveInPlay": [
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "doom",
-        "reveal": false
-      },
-      {
-        "type": "enemies",
-        "reveal": false
-      },
-      {
-        "type": "enemies",
-        "reveal": false
-      },
-      {
-        "type": "clues",
-        "reveal": false
-      },
-      {
-        "type": "clues",
-        "reveal": false
-      },
-      {
-        "type": "newspaper",
-        "reveal": false
-      },
-      {
-        "type": "newspaper",
-        "reveal": false
-      },
-      {
-        "type": "explosion",
-        "reveal": false
-      },
-      {
-        "type": "retribution",
-        "reveal": false
-      },
-      {
-        "type": "empty",
-        "reveal": false
-      },
-      {
-        "type": "empty",
-        "reveal": false
-      }
-    ],
-    "variables": {
-      "dooms": 6,
-      "clues": 6
     }
   }
 ]

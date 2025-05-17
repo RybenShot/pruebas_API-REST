@@ -4,6 +4,10 @@ GET http://localhost:1234/mapInPlay
 ### Recuperar un mapa en juego por la id
 GET http://localhost:1234/mapInPlay/e4245d56-9bb8-4d26-8ff7-bd0502636aa7
 
+### Recuperar los mapas de un usuario
+GET http://localhost:1234/mapInPlay/users/user_2x7hdgi9dwczRgUdQy93PLpgrUq
+
+
 ### Pedir una ficha de mitos
 GET http://localhost:1234/mapInPlay/57c39989-8602-407c-a7bf-2573cb9ed416/getMithToken
 
@@ -16,8 +20,8 @@ POST http://localhost:1234/mapInPlay
 Content-Type:application/json
 
 {
-    "idMap": 12,
-    "IDUserHost": 23456
+    "idMap": 8,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq"
 }
 
 ### elimina un Mapa in play pasandole la id del mapa y la contraseña de berificación
@@ -30,8 +34,8 @@ Content-Type:application/json
     
 }
 
-### Actualizar datos parcialmente de un mapa in play
-POST http://localhost:1234/mapInPlay/0/variable
+### Actualizar datos de un mapa in play
+POST http://localhost:1234/mapInPlay/d6ef5fdd-672d-4c6e-84eb-f244031670ad/variable
 Content-Type:application/json
 
 {

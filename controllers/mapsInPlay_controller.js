@@ -64,7 +64,7 @@ export class MapsInPlayController {
     // creamos un nuevo mapa in play
     static async createNewMap(req, res) {
         const { idMap, IDUserHost } = req.body
-        if (typeof idMap !== 'number' || typeof IDUserHost !== 'number') {
+        if (typeof idMap !== 'number' || typeof IDUserHost !== 'string') {
           return res.status(400).json({ error: 'idMap and IDUserHost must be numbers' })
         }
     
@@ -137,6 +137,21 @@ export class MapsInPlayController {
         } catch (error) {
             console.error('❌ manageMythToken error :', error);
             return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
+    static async getAllMapsByUser(req, res){
+        try {
+            const { id } = req.params
+
+            const findMaps = await MapInPlayModel.getAllMapsByUser({ id })
+            if (!findMaps) return res.status(404).json({ message: 'No hay mapas creados por este usuario' })
+            
+            res.json(findMaps)
+        } catch (error) {
+            console.error('❌ getAllMapsByUser error :', error);
+            return res.status(500).json({ message: 'Error interno' });  
+            
         }
     }
 }

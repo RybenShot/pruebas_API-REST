@@ -18,6 +18,10 @@ mapsInPlayRouter.post('/deleteMapInPlay', MapsInPlayController.deleteMap )
 // SUMAMOS O RESTAMOS a las variables de pistas y perdicion del mapa
 mapsInPlayRouter.post('/:id/variable',  MapsInPlayController.adjustVariable)
 
+// PEDIMOS una ficha de mitos de la reserva de mitos y editamos la misma
 mapsInPlayRouter.post('/:id/token', MapsInPlayController.manageMythToken)
+
+// BUSCAMOS todos los mapas creados por un usuario
+mapsInPlayRouter.get('/users/:id', MapsInPlayController.getAllMapsByUser)
 
 export default mapsInPlayRouter

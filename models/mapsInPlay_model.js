@@ -198,4 +198,14 @@ export class MapInPlayModel{
         this._saveAll()
         return map
     }
+
+    static async getAllMapsByUser({ id }) {
+        console.log('🔍 --- getAllMapsByUser --- recibid:', id);
+        // buscamos todos los mapas por el id del usuario
+        const maps = listMapsInPlay.filter(map => map.IDUserHost == id);
+        if(!maps) return null
+
+        // devuelve todos los mapas encontrados
+        return maps
+    }
 }
