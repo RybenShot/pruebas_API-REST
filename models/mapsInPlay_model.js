@@ -101,8 +101,8 @@ export class MapInPlayModel{
         ),
       // inicializa variables con los mismos contadores (puedes ajustarlos si prefieres otros valores)
       variables: {
-        dooms: baseMap.mythosReserve.doom || 0,
-        clues: baseMap.mythosReserve.clues || 0
+        dooms: 0,
+        clues: 0
       }
     }
 

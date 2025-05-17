@@ -650,5 +650,225 @@
       "dooms": 3,
       "clues": 2
     }
+  },
+  {
+    "id": "f920a6ce-5bde-4120-b9d3-75c7322de36b",
+    "idMap": 12,
+    "title": "The Dead Scream",
+    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
+    "initialSpace": "Train Station",
+    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
+    "mythosReserve": {
+      "doom": 4,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 2
+    },
+    "enemies": [
+      1,
+      75,
+      16,
+      82,
+      14,
+      3,
+      80,
+      13,
+      74,
+      86,
+      77,
+      76,
+      81
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Los muertos gritan",
+        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
+        "initialSpace": "Estación de Trenes",
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747502379447,
+    "lastEddited": 1747502379447,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 3,
+      "clues": 0
+    }
+  },
+  {
+    "id": "7c8bc711-c203-40cd-83a0-91911d490e3b",
+    "idMap": 5,
+    "title": "The Mortecina Lamp",
+    "description": "In the foggy town of Kingsport, the upper class thrives within a new society known as the Lamp Club. In alleys and slums, many disappeared people return stripped of their memories, like mere shadows of what they were.",
+    "initialSpace": "Docks",
+    "retribution": "Any investigator located in a space containing Doom suffers 1 point of Horror unless they discard a Focus token.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      46,
+      5,
+      43,
+      27,
+      48,
+      47,
+      49,
+      50,
+      51,
+      52,
+      3
+    ],
+    "textSpecialEnemies": "Set aside the Declan Pearce monster.",
+    "specialEnemies": [
+      53
+    ],
+    "imgMap": "LosetasMapa6.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG6MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La Lámpara Mortecina",
+        "description": "En el brumoso pueblo de Kingsport, la clase alta prospera en el seno de una nueva sociedad conocida como el Club de la Lámpara. En callejones y barrios bajos, muchas personas que habían desaparecido regresan despojados de sus recuerdos, como meras sombras de lo que fueron.",
+        "initialSpace": "Muelles",
+        "retribution": "Todo investigador situado en un espacio que contenga Perdición sufre un punto de Horror a menos que descarte una ficha de Concentración.",
+        "textSpecialEnemies": "Aparta a un lado el Monstruo Declan Pearce."
+      }
+    },
+    "fechaDeInicio": 1747506500250,
+    "lastEddited": 1747506500250,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 3,
+      "clues": 0
+    }
   }
 ]
