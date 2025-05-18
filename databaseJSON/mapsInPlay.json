@@ -62,6 +62,122 @@
       },
       {
         "type": "enemies",
+        "reveal": true
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "438efd83-4cd6-447e-8618-79f7a731bedc",
+    "idMap": 10,
+    "title": "The Key and the Gate",
+    "description": "For eons, Yog-Sothoth has watched the universe from beyond time and space. The Lurker at the Threshold stirs, no longer content to merely watch and wait. Countless servants toil to open the gate that keeps the Ancient One sealed outside our universe.",
+    "initialSpace": "Silver Twilight Lodge",
+    "retribution": "Each investigator who is not engaged with one or more Monsters moves one space toward the unstable space unless they suffer one Horror.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      74,
+      11,
+      75,
+      76,
+      77,
+      9,
+      78,
+      79,
+      80,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa11.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG11MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La LLave y la Puerta",
+        "description": "Durante eones, Yog-Sothoth ha observado el universo desde más allá del tiempo y del espacio. El que Acecha en l Umbral se agita, pues ya no se conforma con limitarse a observar y esperar. Innumerables siervos se afanan por abrir la puerta que encierra al Primigenio fuera de nuestro universo.",
+        "initialSpace": "Logia del Crepúsculo de Plata",
+        "retribution": "Cada investigador que no esté enfrentado a uno o más Mosntruos se mueve un espacio hacia el espacio inestable a menos que sufra un punto de Horror.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747533567557,
+    "lastEddited": 1747533567557,
+    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": true
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
         "reveal": false
       },
       {

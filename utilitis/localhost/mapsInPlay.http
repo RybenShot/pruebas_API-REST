@@ -9,7 +9,7 @@ GET http://localhost:1234/mapInPlay/users/user_2x7hdgi9dwczRgUdQy93PLpgrUq
 
 
 ### Pedir una ficha de mitos
-GET http://localhost:1234/mapInPlay/57c39989-8602-407c-a7bf-2573cb9ed416/getMithToken
+GET http://localhost:1234/mapInPlay/5fd4dabb-3c6d-4b26-a399-40f71c23f4b9/getMithToken
 
 ### Reiniciar la reserva de mitos
 GET http://localhost:1234/mapInPlay/0/ressetMithReserve
