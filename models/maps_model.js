@@ -1,4 +1,5 @@
 import mapsListJSON from '../databaseJSON/mapas.json' with { type: "json" }
+import mapVotesJSON from '../databaseJSON/map_votes.json' with { type: "json" }
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
 import { EnemiesModel } from "./enemies_model.js";
@@ -65,6 +66,72 @@ export class MapModel{
     static async getByID ({id}){
         const map = mapsListJSON.find(map => map.idMap == id);
         return map
+    }
+
+    // editamos un mapa para votacion de like dislike
+    static async likeDislike({idMap, idUserHost, value}){
+        // buscamos y capturamos el mapa en la base de datos de mapas
+        const map = mapsListJSON.find(m => m.idMap == idMap)
+        if (!map) return false
+
+        // 2. Asegurar campos
+        map.extraData = map.extraData || { likes: 0, dislikes: 0, NVotesLikeDislike: 0 }
+        map.extraData.likes    = map.extraData.likes    || 0
+        map.extraData.dislikes = map.extraData.dislikes || 0
+        map.extraData.NVotesLikeDislike = map.extraData.NVotesLikeDislike || 0
+
+        // 3. Buscar o crear bloque de votos
+        let voteBlock = mapVotesJSON.find(v => v.idMap == idMap)
+        if (!voteBlock) {
+            voteBlock = { idMap, votes: [] }
+            mapVotesJSON.push(voteBlock)
+        }
+
+         // 4. Procesar voto
+        const now = Date.now()
+        const prev = voteBlock.votes.find(v => v.idUser == idUserHost && v.type == 'likeDislike')
+
+        if (prev) {
+            // Si repite mismo valor, salimos
+            if (prev.value === value) return map
+            
+            // Revertir contador anterior
+            if (prev.value === 1) map.extraData.likes--
+            else map.extraData.dislikes--
+            // Actualizar voto
+            prev.value = value
+            prev.dateCreated = now
+            } else {
+            // Nuevo voto
+            voteBlock.votes.push({ idUser: idUserHost, type: 'likeDislike', value, dateCreated: now })
+            map.extraData.NVotesLikeDislike++
+        }
+
+        // 5. Sumar al contador actual
+        if (value === 1) map.extraData.likes++
+        else if (value === -1) map.extraData.dislikes++
+
+        // 6. Guardar cambios
+        writeFileSync('databaseJSON/mapas.json',      JSON.stringify(mapsListJSON,    null, 2))
+        writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON,    null, 2))
+
+        return map
+
+        // buscamos el mapa en la base de datos de map_votes
+
+        // comprovamos que nos trae por value, 
+        // si es 1, sumamos 1 al contador de votos de likes en la base de datos del mapa y guardamos el registro en map_votes, 
+        // si es -1 restamos 1 al contador de votos de dislikes en la base de datos del mapa y guardamos el registro en map_votes
+
+        // guardamos los cambios
+
+        // devolvemos resultado
+
+        console.log("mapIndex", mapIndex)
+        // si no existe el mapa, devolvemos false
+        if (mapIndex === -1) return false
+
+        
     }
 
     // Desabilitamos por ahora estas opciones para evitar problemas

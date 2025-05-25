@@ -1,22 +1,22 @@
 ### Recuperar toda la lista de mapas en juego
-GET http://localhost:1234/mapInPlay
+GET https://api-arkhamhorror-dev.up.railway.app/mapInPlay
 
 ### Recuperar un mapa en juego por la id
-GET http://localhost:1234/mapInPlay/e4245d56-9bb8-4d26-8ff7-bd0502636aa7
+GET https://api-arkhamhorror-dev.up.railway.app/mapInPlay/e4245d56-9bb8-4d26-8ff7-bd0502636aa7
 
 ### Recuperar los mapas de un usuario
-GET http://localhost:1234/mapInPlay/users/user_2x7hdgi9dwczRgUdQy93PLpgrUq
+GET https://api-arkhamhorror-dev.up.railway.app/mapInPlay/users/user_2x7hdgi9dwczRgUdQy93PLpgrUq
 
 
 ### Pedir una ficha de mitos
-GET http://localhost:1234/mapInPlay/5fd4dabb-3c6d-4b26-a399-40f71c23f4b9/getMithToken
+GET https://api-arkhamhorror-dev.up.railway.app/mapInPlay/5fd4dabb-3c6d-4b26-a399-40f71c23f4b9/getMithToken
 
 ### Reiniciar la reserva de mitos
-GET http://localhost:1234/mapInPlay/0/ressetMithReserve
+GET https://api-arkhamhorror-dev.up.railway.app/mapInPlay/0/ressetMithReserve
 
 
 ### Crear un nuevo mapa in Play
-POST http://localhost:1234/mapInPlay
+POST https://api-arkhamhorror-dev.up.railway.app/mapInPlay
 Content-Type:application/json
 
 {
@@ -25,7 +25,7 @@ Content-Type:application/json
 }
 
 ### elimina un Mapa in play pasandole la id del mapa y la contraseña de berificación
-POST http://localhost:1234/mapInPlay/deleteMapInPlay
+POST https://api-arkhamhorror-dev.up.railway.app/mapInPlay/deleteMapInPlay
 Content-Type:application/json
 
 {
@@ -35,7 +35,7 @@ Content-Type:application/json
 }
 
 ### Actualizar datos de un mapa in play
-POST http://localhost:1234/mapInPlay/d6ef5fdd-672d-4c6e-84eb-f244031670ad/variable
+POST https://api-arkhamhorror-dev.up.railway.app/mapInPlay/d6ef5fdd-672d-4c6e-84eb-f244031670ad/variable
 Content-Type:application/json
 
 {
@@ -44,7 +44,7 @@ Content-Type:application/json
 }
 
 ### añadir ficha a la reserva de mitos
-POST http://localhost:1234/mapInPlay/0/token
+POST https://api-arkhamhorror-dev.up.railway.app/mapInPlay/0/token
 Content-Type: application/json
 
 { 
@@ -53,7 +53,7 @@ Content-Type: application/json
 }
 
 ### borrar ficha de la reserva de mitos
-POST http://localhost:1234/mapInPlay/0/token
+POST https://api-arkhamhorror-dev.up.railway.app/mapInPlay/0/token
 Content-Type: application/json
 
 { 
@@ -62,18 +62,10 @@ Content-Type: application/json
 }
 
 ### resetear una ficha de mitos ya revelada
-POST http://localhost:1234/mapInPlay/0/token
+POST https://api-arkhamhorror-dev.up.railway.app/mapInPlay/0/token
 Content-Type: application/json
 
 { 
     "action": "reset",    
     "type": "retribution" 
-}
-
-### llamada Like Dislike
-POST http://localhost:1234/maps/likeDislike/0
-{ 
-    "idMap": 0,    
-    "idUserHost": "retribution",
-    "value": 1
 }

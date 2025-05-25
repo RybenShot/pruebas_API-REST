@@ -1,5 +1,8 @@
-### Recuperar toda la lista de mapaes
+### Recuperar toda la lista de mapas
 GET https://api-arkhamhorror.up.railway.app/maps
+
+### listar el preview de los mapas
+GET https://api-arkhamhorror.up.railway.app/maps/previewMap
 
 ### Recuperar un mapa por su expansion
 GET https://api-arkhamhorror.up.railway.app/maps?expansion=AHBase
@@ -39,3 +42,18 @@ Content-Type:application/json
 {
   "vida": 3
 }
+
+### Listar todos los enemigos
+GET https://api-arkhamhorror.up.railway.app/enemies
+
+### Listar todos los enemigos DE UN MAPA CONCRETO
+GET https://api-arkhamhorror.up.railway.app/maps/enemies/5
+
+### Listar todos los enemigos por expansion
+GET https://api-arkhamhorror.up.railway.app/enemies?expansion=AHWaves
+
+### Listar todos los enemigos tipo
+GET https://api-arkhamhorror.up.railway.app/enemies?type=semilla estelar
+
+### Buscar 1 enemigo concreto por la id
+GET https://api-arkhamhorror.up.railway.app/enemies/2

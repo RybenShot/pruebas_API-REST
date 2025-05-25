@@ -1,9 +1,6 @@
 ### Recuperar toda la lista de investigadores
 GET https://api-arkhamhorror-dev.up.railway.app/inv
 
-### Recuperar un investigador por su arquetipo
-GET https://api-arkhamhorror-dev.up.railway.app/inv?arquetipo=defensor
-
 ### Recuperar un investigador por la id
 GET https://api-arkhamhorror-dev.up.railway.app/inv/1
 
@@ -32,6 +29,12 @@ Content-Type:application/json
 {
   "vida": 3
 }
+
+### Obtener todos los objetos de un investigador
+GET https://api-arkhamhorror-dev.up.railway.app/inv/2/objects
+
+### Obtener un objeto por us ID
+GET https://api-arkhamhorror-dev.up.railway.app/objects/2
 
 ### Recuperar toda la lista de preview investigadores
 GET https://api-arkhamhorror-dev.up.railway.app/inv/previewList

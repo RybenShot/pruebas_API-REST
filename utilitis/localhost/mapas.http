@@ -1,4 +1,4 @@
-### Recuperar toda la lista de mapaes
+### Recuperar toda la lista de mapas
 GET http://localhost:1234/maps
 
 ### listar el preview de los mapas

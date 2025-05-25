@@ -38,6 +38,19 @@ export class MapsController {
         res.status(404).json({ message: 'Mapa no encontrado' })
     }
 
+    // editamos un mapa para votacion de like dislike
+    static async likeDislike (req, res) {
+        const { idMap, idUserHost, value} = req.body
+
+        // console.log('idMap', idMap, 'idUserHost', idUserHost, 'value', value)
+
+        const mapEdited = await MapModel.likeDislike({ idMap, idUserHost, value })
+
+        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+        
+        return res.json(mapEdited)
+    }
+
     // Desabilitamos por ahora estas opciones para evitar problemas
     /*
     // creamos un nuevo mapa

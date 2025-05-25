@@ -1,0 +1,111 @@
+[
+  {
+    "idMap": 0,
+    "votes": [
+      {
+        "idUser": "retribution",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748195443737
+      },
+      {
+        "idUser": "user_2134",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748195479023
+      },
+      {
+        "idUser": "user_2135",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748195489969
+      }
+    ]
+  },
+  {
+    "idMap": 1,
+    "votes": [
+      {
+        "idUser": 1,
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1747524148916
+      },
+      {
+        "idUser": 1,
+        "type": "timeEstimated",
+        "value": 143,
+        "dateCreated": 1747524148916
+      },
+      {
+        "idUser": 1,
+        "type": "difficulty",
+        "value": 4,
+        "dateCreated": 1747524148916
+      }
+    ]
+  },
+  {
+    "idMap": 2,
+    "votes": [
+      {
+        "idUser": 2,
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1747524148916
+      },
+      {
+        "idUser": 2,
+        "type": "timeEstimated",
+        "value": 120,
+        "dateCreated": 1747524148916
+      },
+      {
+        "idUser": 2,
+        "type": "difficulty",
+        "value": 3,
+        "dateCreated": 1747524148916
+      }
+    ]
+  },
+  {
+    "idMap": 3,
+    "votes": []
+  },
+  {
+    "idMap": 4,
+    "votes": []
+  },
+  {
+    "idMap": 5,
+    "votes": []
+  },
+  {
+    "idMap": 6,
+    "votes": []
+  },
+  {
+    "idMap": 7,
+    "votes": []
+  },
+  {
+    "idMap": 8,
+    "votes": []
+  },
+  {
+    "idMap": 9,
+    "votes": []
+  },
+  {
+    "idMap": 10,
+    "votes": []
+  },
+  {
+    "idMap": 11,
+    "votes": []
+  },
+  {
+    "idMap": 12,
+    "votes": []
+  }
+]

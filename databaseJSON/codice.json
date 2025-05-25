@@ -1,0 +1,180 @@
+[
+    {"idCard": 0},
+    {"idCard": 1,
+        "expansion": "base",
+        "type": "normalText",
+        "languages": {
+            "en": {
+                "front":{
+                    "title": "1 - WAVE OF PANIC",
+                    "story": "Windows are shut, curtains drawn, and doors barricaded. Citizens rush through the streets, casting furtive glances over their shoulders. A sinister unease takes hold of the city, hangs over its rooftops, and stagnates in the shadows. As the panic spreads, people and animals react in increasingly unpredictable ways—fleeing in terror or attacking those around them. And with each new outbreak of fear and violence, the Ancient One grows stronger...",
+                    "text": "",
+                    "doom": "If there is a space with at least four Doom tokens, remove three Doom tokens from that space. Then place one Doom token on each of the other spaces in that Neighborhood and one Doom token on the Scenario sheet.",
+                    "clue": null
+                }                
+            },
+            "es": {
+                "front": {
+                    "title": "1 - OLA DE PÁNICO",
+                    "story": "Se cierran ventanas, se echan cortinas y se atrancan puertas. Los ciudadanos recorren las calles a toda prisa, lanzando miradas furtivas a su espalda. Una siniestra inquietud se apodera de la ciudad, se cierne sobre sus tejados, se estanca en las sombras. Cuanto más se extiende el pánico, las personas y los animales reaccionan de manera más impredecible, huyendo espantados o atacando a quienes los rodean. Y con cada nuevo brote de miedo y violencia, el Primigenio se hace más fuerte...",
+                    "text": "",
+                    "doom": "Si en algún espacio hay al menos cuatro fichas de Perdición, quita tres fichas de Perdición de ese espacio. Luego coloca una ficha de Perdición en todos los demás espacios de ese Barrio y una ficha de Perdición sobre la hoja de Escenario.",
+                    "clue": null
+                }
+                
+            }
+        }
+    },
+    {"idCard": 2,
+        "expansion": "base",
+        "type": "normalText",
+        "languages": {
+            "en": {
+                "front": {
+                    "title": "___",
+                    "story": "___",
+                    "text": "",
+                    "doom": "___",
+                    "clue": "___"
+                },
+                "back": {
+                    "title": null,
+                    "story": "___",
+                    "text": "",
+                    "doom": "___",
+                    "clue": "___"
+                }
+            },
+            "es": {
+                "front": {
+                    "title": "____",
+                    "story": "____",
+                    "text": "",
+                    "doom": "___",
+                    "clue": "___"
+                },
+                "back": {
+                    "title": null,
+                    "story": "___",
+                    "text": "",
+                    "doom": "___",
+                    "clue": "___"
+                }
+            }
+        }
+    },
+    {"idCard": 3,
+        "expansion": "base",
+        "type": "normalText",
+        "languages": {
+            "en": {
+                "front": {
+                    "title": "3 - REMINISCENCES",
+                    "story": "The day dawns with a leaden sky and brings with it a frozen stillness that settles over Arkham's pointed rooftops. As you go about your morning routine, you can't shake the feeling that you've done this all before: the same breakfast, the same newspaper headlines reporting disappearances and other inexplicable events. And a note, written in your own handwriting, that reads: 'The Daemon Sultan is approaching. Go to the train station.'",
+                    "text": "",
+                    "doom": "When there are at least three Doom tokens on the Scenario sheet, flip this card.",
+                    "clue": "When there are at least three Clue tokens on the Scenario sheet, add card 4 to the Codex. (Do not remove this card from the Codex.)"
+                },
+                "back": {
+                    "title": null,
+                    "story": "___",
+                    "text": "",
+                    "doom": null,
+                    "clue": null
+                }
+            },
+            "es": {
+                "front": {
+                    "title": "3 - REMINISCENCIAS",
+                    "story": "El día amanece con un cielo plomizo y trae consigo una quietud helada que se posa sobre los puntiagudos tejados de Arkham. Mientras os dedicáis a vuestros quehaceres matutinos, no podéis evitar la sensación de que esto ya lo habéis hecho antes: el mismo desayuno, los mismos titulares de periódico que informan de desapariciones y otros sucesos inexplicables. Y una nota, escrita de vuestro puño y letra, que dice “El Sultán Demoniaco se aproxima. Acudid a la estación de trenes”.",
+                    "text": "",
+                    "doom": "Cuando haya al menos tres fichas de Perdición sobre la hoja de Escenario, dale la vuelta a esta carta.",
+                    "clue": "Cuando haya al menos tres fichas de Pista sobre la hoja de Escenario, añade al Códice la carta 4. (No quites esta carta del Códice.)"
+                },
+                "back": {
+                    "title": null,
+                    "story": "___",
+                    "text": "",
+                    "doom": null,
+                    "clue": null
+                }
+            }
+        }
+    },
+    {"idCard": 4,
+        "expansion": "base",
+        "type": "normalText",
+        "languages": {
+            "en": {
+                "front": {
+                    "title": null,
+                    "story": "___",
+                    "text": "___",
+                    "doom": null,
+                    "clue": null
+                },
+                "back": {
+                    "title": "___",
+                    "story": "___",
+                    "text": "___",
+                    "doom": null,
+                    "clue": null
+                }
+            },
+            "es": {
+                "front": {
+                    "title": null,
+                    "story": "____",
+                    "text": "___",
+                    "doom": null,
+                    "clue": null
+                },
+                "back": {
+                    "title": "___",
+                    "story": "___",
+                    "text": "___",
+                    "doom": null,
+                    "clue": null
+                }
+            }
+        }
+    },
+    {"idCard": 5,
+        "expansion": "base",
+        "type": "normalText",
+        "languages": {
+            "en": {
+                "front": {
+                    "title": "___",
+                    "story": "___",
+                    "text": null,
+                    "doom": "___",
+                    "clue": "___"
+                },
+                "back": {
+                    "title": null,
+                    "story": "___",
+                    "text": "___",
+                    "doom": null,
+                    "clue": null
+                }
+            },
+            "es": {
+                "front": {
+                    "title": "___",
+                    "story": "____",
+                    "text": null,
+                    "doom": "___",
+                    "clue": "___"
+                },
+                "back": {
+                    "title": null,
+                    "story": "___",
+                    "text": "___",
+                    "doom": null,
+                    "clue": null
+                }
+            }
+        }
+    }
+]
