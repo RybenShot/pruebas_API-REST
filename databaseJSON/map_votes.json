@@ -70,7 +70,14 @@
   },
   {
     "idMap": 3,
-    "votes": []
+    "votes": [
+      {
+        "idUser": "user_2135",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748246413035
+      }
+    ]
   },
   {
     "idMap": 4,
@@ -86,7 +93,14 @@
   },
   {
     "idMap": 7,
-    "votes": []
+    "votes": [
+      {
+        "idUser": "user_2135",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748246920063
+      }
+    ]
   },
   {
     "idMap": 8,

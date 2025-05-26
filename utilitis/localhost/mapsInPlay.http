@@ -71,9 +71,11 @@ Content-Type: application/json
 }
 
 ### llamada Like Dislike
-POST http://localhost:1234/maps/likeDislike/0
+POST http://localhost:1234/maps/likeDislike
+Content-Type: application/json
+
 { 
-    "idMap": 0,    
-    "idUserHost": "retribution",
+    "idMap": 7,    
+    "idUserHost": "user_2135",
     "value": 1
 }

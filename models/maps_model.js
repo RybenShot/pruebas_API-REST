@@ -94,14 +94,16 @@ export class MapModel{
         if (prev) {
             // Si repite mismo valor, salimos
             if (prev.value === value) return map
-            
+
             // Revertir contador anterior
             if (prev.value === 1) map.extraData.likes--
+
             else map.extraData.dislikes--
+
             // Actualizar voto
             prev.value = value
             prev.dateCreated = now
-            } else {
+        } else {
             // Nuevo voto
             voteBlock.votes.push({ idUser: idUserHost, type: 'likeDislike', value, dateCreated: now })
             map.extraData.NVotesLikeDislike++
@@ -112,26 +114,10 @@ export class MapModel{
         else if (value === -1) map.extraData.dislikes++
 
         // 6. Guardar cambios
-        writeFileSync('databaseJSON/mapas.json',      JSON.stringify(mapsListJSON,    null, 2))
-        writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON,    null, 2))
+        writeFileSync('databaseJSON/mapas.json',      JSON.stringify(mapsListJSON, null, 2))
+        writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON, null, 2))
 
         return map
-
-        // buscamos el mapa en la base de datos de map_votes
-
-        // comprovamos que nos trae por value, 
-        // si es 1, sumamos 1 al contador de votos de likes en la base de datos del mapa y guardamos el registro en map_votes, 
-        // si es -1 restamos 1 al contador de votos de dislikes en la base de datos del mapa y guardamos el registro en map_votes
-
-        // guardamos los cambios
-
-        // devolvemos resultado
-
-        console.log("mapIndex", mapIndex)
-        // si no existe el mapa, devolvemos false
-        if (mapIndex === -1) return false
-
-        
     }
 
     // Desabilitamos por ahora estas opciones para evitar problemas
