@@ -1,5 +1,6 @@
 [
-  {"idInv": 0,
+  {
+    "idInv": 0,
     "isActive": true,
     "expansion": "Base",
     "name": "Tommy Muldoon",
@@ -12,7 +13,7 @@
     "focusLimit": 2,
     "locutionURL": "___",
     "imgInv": "/img/1-inv/1-Tommy.jpg",
-    "atributes":{
+    "atributes": {
       "life": 7,
       "sanity": 5,
       "lore": 2,
@@ -35,10 +36,20 @@
       }
     ],
     "possessions": {
-      "required": [0],
+      "required": [
+        0
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [1, 2]
-    },    
+      "optional": [
+        1,
+        2
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
+    },
     "translations": {
       "es": {
         "name": "Tommy Muldoon",
@@ -63,7 +74,8 @@
       }
     }
   },
-  {"idInv": 1,
+  {
+    "idInv": 1,
     "isActive": true,
     "expansion": "Base",
     "name": "Marie Lambeau",
@@ -99,10 +111,20 @@
       }
     ],
     "possessions": {
-      "required": [3],
+      "required": [
+        3
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [4, 5]
-    }, 
+      "optional": [
+        4,
+        5
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
+    },
     "translations": {
       "es": {
         "name": "Marie Lambeau",
@@ -127,7 +149,8 @@
       }
     }
   },
-  {"idInv": 2,
+  {
+    "idInv": 2,
     "isActive": true,
     "expansion": "Base",
     "name": "Jenny Barnes",
@@ -159,10 +182,20 @@
       }
     ],
     "possessions": {
-      "required": [6],
+      "required": [
+        6
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [7, 8]
-    }, 
+      "optional": [
+        7,
+        8
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
+    },
     "translations": {
       "es": {
         "name": "Jenny Barnes",
@@ -183,7 +216,8 @@
       }
     }
   },
-  {"idInv": 3,
+  {
+    "idInv": 3,
     "isActive": true,
     "expansion": "Base",
     "name": "Dexter Drake",
@@ -215,10 +249,20 @@
       }
     ],
     "possessions": {
-      "required": [9],
+      "required": [
+        9
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [10, 11]
-    }, 
+      "optional": [
+        10,
+        11
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
+    },
     "translations": {
       "es": {
         "name": "Dexter Drake",
@@ -239,7 +283,8 @@
       }
     }
   },
-  {"idInv": 4,
+  {
+    "idInv": 4,
     "isActive": true,
     "expansion": "Base",
     "name": "Wendy Adams",
@@ -275,9 +320,19 @@
       }
     ],
     "possessions": {
-      "required": [12],
+      "required": [
+        12
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [13, 14]
+      "optional": [
+        13,
+        14
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -303,7 +358,8 @@
       }
     }
   },
-  {"idInv": 5,
+  {
+    "idInv": 5,
     "isActive": true,
     "expansion": "Base",
     "name": "Rex Murphy",
@@ -339,9 +395,20 @@
       }
     ],
     "possessions": {
-      "required": [15, 16],
+      "required": [
+        15,
+        16
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [17, 18]
+      "optional": [
+        17,
+        18
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -367,7 +434,8 @@
       }
     }
   },
-  {"idInv": 6,
+  {
+    "idInv": 6,
     "isActive": true,
     "expansion": "Base",
     "name": "Calvin Wrigth",
@@ -403,9 +471,19 @@
       }
     ],
     "possessions": {
-      "required": [19, 20],
+      "required": [
+        19,
+        20
+      ],
       "optionalText": "Si decides coger la voz del mensajero, debe coger tambien un pacto siniestro.",
-      "optional": [21]
+      "optional": [
+        21
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -431,7 +509,8 @@
       }
     }
   },
-  {"idInv": 7,
+  {
+    "idInv": 7,
     "isActive": true,
     "expansion": "Base",
     "name": "Agnes Baker",
@@ -467,9 +546,19 @@
       }
     ],
     "possessions": {
-      "required": [22],
+      "required": [
+        22
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [23, 24]
+      "optional": [
+        23,
+        24
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -495,7 +584,8 @@
       }
     }
   },
-  {"idInv": 8,
+  {
+    "idInv": 8,
     "isActive": true,
     "expansion": "Base",
     "name": "Michael McGlen",
@@ -531,9 +621,19 @@
       }
     ],
     "possessions": {
-      "required": [25],
+      "required": [
+        25
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [26, 27]
+      "optional": [
+        26,
+        27
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -559,7 +659,8 @@
       }
     }
   },
-  {"idInv": 9,
+  {
+    "idInv": 9,
     "isActive": true,
     "expansion": "Base",
     "name": "Daniela Reyes",
@@ -595,9 +696,19 @@
       }
     ],
     "possessions": {
-      "required": [28],
+      "required": [
+        28
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [29, 30]
+      "optional": [
+        29,
+        30
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -623,7 +734,8 @@
       }
     }
   },
-  {"idInv": 10,
+  {
+    "idInv": 10,
     "isActive": true,
     "expansion": "Base",
     "name": "Norman Withers",
@@ -659,9 +771,19 @@
       }
     ],
     "possessions": {
-      "required": [31],
+      "required": [
+        31
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [32, 33]
+      "optional": [
+        32,
+        33
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -686,8 +808,9 @@
         ]
       }
     }
-  },  
-  {"idInv": 11,
+  },
+  {
+    "idInv": 11,
     "isActive": true,
     "expansion": "Base",
     "name": "Minh Thi Phan",
@@ -723,9 +846,19 @@
       }
     ],
     "possessions": {
-      "required": [34],
+      "required": [
+        34
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [35, 36]
+      "optional": [
+        35,
+        36
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -751,9 +884,8 @@
       }
     }
   },
-
-
-  {"idInv": 12,
+  {
+    "idInv": 12,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Silas Marsh",
@@ -789,9 +921,19 @@
       }
     ],
     "possessions": {
-      "required": [37],
+      "required": [
+        37
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [38, 39]
+      "optional": [
+        38,
+        39
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -817,7 +959,8 @@
       }
     }
   },
-  {"idInv": 13,
+  {
+    "idInv": 13,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Charlie Kane",
@@ -853,9 +996,19 @@
       }
     ],
     "possessions": {
-      "required": [40],
+      "required": [
+        40
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [41, 42]
+      "optional": [
+        41,
+        42
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -881,7 +1034,8 @@
       }
     }
   },
-  {"idInv": 14,
+  {
+    "idInv": 14,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Stella Clark",
@@ -913,9 +1067,19 @@
       }
     ],
     "possessions": {
-      "required": [43],
+      "required": [
+        43
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [44, 45]
+      "optional": [
+        44,
+        45
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -937,7 +1101,8 @@
       }
     }
   },
-  {"idInv": 15,
+  {
+    "idInv": 15,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Zoey Samaras",
@@ -973,9 +1138,19 @@
       }
     ],
     "possessions": {
-      "required": [43],
+      "required": [
+        43
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [44, 45]
+      "optional": [
+        44,
+        45
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1001,7 +1176,8 @@
       }
     }
   },
-  {"idInv": 16,
+  {
+    "idInv": 16,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Padre Mateo",
@@ -1037,9 +1213,19 @@
       }
     ],
     "possessions": {
-      "required": [46],
+      "required": [
+        46
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [47, 48]
+      "optional": [
+        47,
+        48
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1065,7 +1251,8 @@
       }
     }
   },
-  {"idInv": 17,
+  {
+    "idInv": 17,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Patricie Hathaway",
@@ -1101,9 +1288,19 @@
       }
     ],
     "possessions": {
-      "required": [49, 50],
+      "required": [
+        49,
+        50
+      ],
       "optionalText": "Si coge la carta de Sueños omniosos, añade al mazo de mosntruos Vigía.",
-      "optional": [51]
+      "optional": [
+        51
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1129,7 +1326,8 @@
       }
     }
   },
-  {"idInv": 18,
+  {
+    "idInv": 18,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Carson Sinclair",
@@ -1165,9 +1363,19 @@
       }
     ],
     "possessions": {
-      "required": [52],
+      "required": [
+        52
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [53, 54]
+      "optional": [
+        53,
+        54
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1193,7 +1401,8 @@
       }
     }
   },
-  {"idInv": 19,
+  {
+    "idInv": 19,
     "isActive": true,
     "expansion": "AHWaves",
     "name": "Pete Cubo de Basura",
@@ -1225,9 +1434,19 @@
       }
     ],
     "possessions": {
-      "required": [55],
+      "required": [
+        55
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [56, 57]
+      "optional": [
+        56,
+        57
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1249,9 +1468,8 @@
       }
     }
   },
-  
-
-  {"idInv": 20,
+  {
+    "idInv": 20,
     "isActive": true,
     "expansion": "AHNigth",
     "name": "Roland Banks",
@@ -1287,9 +1505,19 @@
       }
     ],
     "possessions": {
-      "required": [58],
+      "required": [
+        58
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [59, 60]
+      "optional": [
+        59,
+        60
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1315,7 +1543,8 @@
       }
     }
   },
-  {"idInv": 21,
+  {
+    "idInv": 21,
     "isActive": true,
     "expansion": "AHNigth",
     "name": "Kate Winthrop",
@@ -1347,9 +1576,19 @@
       }
     ],
     "possessions": {
-      "required": [61],
+      "required": [
+        61
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [62, 63]
+      "optional": [
+        62,
+        63
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1371,7 +1610,8 @@
       }
     }
   },
-  {"idInv": 22,
+  {
+    "idInv": 22,
     "isActive": true,
     "expansion": "AHNigth",
     "name": "Diana Stanley",
@@ -1407,9 +1647,19 @@
       }
     ],
     "possessions": {
-      "required": [64],
+      "required": [
+        64
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [65, 66]
+      "optional": [
+        65,
+        66
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1435,7 +1685,8 @@
       }
     }
   },
-  {"idInv": 23,
+  {
+    "idInv": 23,
     "isActive": true,
     "expansion": "AHNigth",
     "name": "“Malasombra” O'Toole",
@@ -1471,9 +1722,19 @@
       }
     ],
     "possessions": {
-      "required": [67],
+      "required": [
+        67
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [68, 69]
+      "optional": [
+        68,
+        69
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1499,9 +1760,8 @@
       }
     }
   },
-
-
-  {"idInv": 24,
+  {
+    "idInv": 24,
     "isActive": true,
     "expansion": "AHSecrets",
     "name": "Mark Harrigan",
@@ -1533,9 +1793,19 @@
       }
     ],
     "possessions": {
-      "required": [70],
+      "required": [
+        70
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [71, 72]
+      "optional": [
+        71,
+        72
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1557,7 +1827,8 @@
       }
     }
   },
-  {"idInv": 25,
+  {
+    "idInv": 25,
     "isActive": true,
     "expansion": "AHSecrets",
     "name": "Preston Fairmont",
@@ -1593,9 +1864,19 @@
       }
     ],
     "possessions": {
-      "required": [73],
+      "required": [
+        73
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [74, 75]
+      "optional": [
+        74,
+        75
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1621,7 +1902,8 @@
       }
     }
   },
-  {"idInv": 26,
+  {
+    "idInv": 26,
     "isActive": true,
     "expansion": "AHSecrets",
     "name": "Agatha Crane",
@@ -1657,9 +1939,20 @@
       }
     ],
     "possessions": {
-      "required": [76, 77],
+      "required": [
+        76,
+        77
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [78, 79]
+      "optional": [
+        78,
+        79
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1685,7 +1978,8 @@
       }
     }
   },
-  {"idInv": 27,
+  {
+    "idInv": 27,
     "isActive": true,
     "expansion": "AHSecrets",
     "name": "Winifred Habbamock",
@@ -1717,9 +2011,19 @@
       }
     ],
     "possessions": {
-      "required": [80],
+      "required": [
+        80
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [81, 82]
+      "optional": [
+        81,
+        82
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1741,9 +2045,8 @@
       }
     }
   },
-  
-  
-  {"idInv": 28,
+  {
+    "idInv": 28,
     "isActive": true,
     "expansion": "AHOriginal",
     "name": "Darrell Simmons",
@@ -1779,9 +2082,19 @@
       }
     ],
     "possessions": {
-      "required": [83],
+      "required": [
+        83
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [84, 85]
+      "optional": [
+        84,
+        85
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1807,7 +2120,8 @@
       }
     }
   },
-  {"idInv": 29,
+  {
+    "idInv": 29,
     "isActive": true,
     "expansion": "AHOriginal",
     "name": "Gloria Goldberg",
@@ -1843,9 +2157,19 @@
       }
     ],
     "possessions": {
-      "required": [86],
+      "required": [
+        86
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [87, 88]
+      "optional": [
+        87,
+        88
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1871,7 +2195,8 @@
       }
     }
   },
-  {"idInv": 30,
+  {
+    "idInv": 30,
     "isActive": true,
     "expansion": "AHOriginal",
     "name": "Mandy Thompson",
@@ -1907,9 +2232,19 @@
       }
     ],
     "possessions": {
-      "required": [89],
+      "required": [
+        89
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [90, 91]
+      "optional": [
+        90,
+        91
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1935,7 +2270,8 @@
       }
     }
   },
-  {"idInv": 31,
+  {
+    "idInv": 31,
     "isActive": true,
     "expansion": "AHOriginal",
     "name": "Monterrey Jack",
@@ -1967,9 +2303,19 @@
       }
     ],
     "possessions": {
-      "required": [92],
+      "required": [
+        92
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [93, 94]
+      "optional": [
+        93,
+        94
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -1991,9 +2337,8 @@
       }
     }
   },
-  
-
-  {"idInv": 32,
+  {
+    "idInv": 32,
     "isActive": true,
     "expansion": "AHComunity",
     "name": "Carolyn Fern",
@@ -2006,7 +2351,7 @@
     "focusLimit": 2,
     "locutionURL": "___",
     "imgInv": "/img/1-inv/33-Carolyn.jpg",
-    "atributes":{
+    "atributes": {
       "life": 5,
       "sanity": 7,
       "lore": 3,
@@ -2029,9 +2374,19 @@
       }
     ],
     "possessions": {
-      "required": [95],
+      "required": [
+        95
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [96, 97]
+      "optional": [
+        96,
+        97
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2057,7 +2412,8 @@
       }
     }
   },
-  {"idInv": 33,
+  {
+    "idInv": 33,
     "isActive": true,
     "expansion": "AHComunity",
     "name": "Bob Jenkins",
@@ -2070,7 +2426,7 @@
     "focusLimit": 1,
     "locutionURL": "___",
     "imgInv": "/img/1-inv/34-Bob.jpg",
-    "atributes":{
+    "atributes": {
       "life": 7,
       "sanity": 5,
       "lore": 2,
@@ -2093,9 +2449,19 @@
       }
     ],
     "possessions": {
-      "required": [98],
+      "required": [
+        98
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [99, 100]
+      "optional": [
+        99,
+        100
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2121,7 +2487,8 @@
       }
     }
   },
-  {"idInv": 34,
+  {
+    "idInv": 34,
     "isActive": true,
     "expansion": "AHComunity",
     "name": "Amanda Sharpe",
@@ -2134,7 +2501,7 @@
     "focusLimit": 2,
     "locutionURL": "___",
     "imgInv": "/img/1-inv/35-Amanda.jpg",
-    "atributes":{
+    "atributes": {
       "life": 6,
       "sanity": 6,
       "lore": 2,
@@ -2157,9 +2524,19 @@
       }
     ],
     "possessions": {
-      "required": [101],
+      "required": [
+        101
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [102, 103]
+      "optional": [
+        102,
+        103
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2184,9 +2561,8 @@
       }
     }
   },
-
-
-  {"idInv": 35,
+  {
+    "idInv": 35,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Hank Sampson",
@@ -2199,7 +2575,7 @@
     "focusLimit": 1,
     "locutionURL": "___",
     "imgInv": "/img/1-inv/36-Hank.jpg",
-    "atributes":{
+    "atributes": {
       "life": 8,
       "sanity": 4,
       "lore": 1,
@@ -2222,9 +2598,19 @@
       }
     ],
     "possessions": {
-      "required": [104],
+      "required": [
+        104
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [105, 106]
+      "optional": [
+        105,
+        106
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2249,7 +2635,8 @@
       }
     }
   },
-  {"idInv": 36,
+  {
+    "idInv": 36,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Daisy Walker",
@@ -2262,7 +2649,7 @@
     "focusLimit": 2,
     "locutionURL": "___",
     "imgInv": "/img/1-inv/37-Daisy.jpg",
-    "atributes":{
+    "atributes": {
       "life": 5,
       "sanity": 7,
       "lore": 4,
@@ -2281,17 +2668,27 @@
       }
     ],
     "possessions": {
-      "required": [113],
+      "required": [
+        113
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [114, 115]
+      "optional": [
+        114,
+        115
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
         "name": "Daisy Walker",
         "position": "La bibliotecaria",
         "effect1": "Estudio prolongado: Cada vez que lances un hechizo, reduce en 1 la cantidad de daño o horror que sufres (hasta un mínimo de 1).",
-        "effect2": null ,
-        "effect3": null ,
+        "effect2": null,
+        "effect3": null,
         "phrase": "'Conozco libros tan poderosos que pueden reescribir la realidad.'",
         "theStory": "Daisy trabajaba en la biblioteca de la Universidad Miskatonic, bajo la supervisión del reconocido erudito Henry Armitage. Rápidamente se convirtió en una experta en la colección de textos extraños y ocultistas de la universidad, dominando temas oscuros y lenguajes arcaicos. Recientemente fue encargada de revisar una generosa donación de literatura ofrecida a la universidad por un benefactor desconocido, para determinar qué podía ser compartido con los estudiantes y qué era mejor dejar en los archivos. A través de sus estudios, llegó a creer que la humanidad se enfrenta a una amenaza inminente. Armitage confía en sus conclusiones y la ha enviado a Estambul para continuar su investigación. Su esperanza es descubrir algún medio para salvar a la humanidad de esta condena inevitable.",
         "locutionURL": "___",
@@ -2304,7 +2701,8 @@
       }
     }
   },
-  {"idInv": 37,
+  {
+    "idInv": 37,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Finn Edwards",
@@ -2317,7 +2715,7 @@
     "focusLimit": 2,
     "locutionURL": "___",
     "imgInv": "/img/1-inv/37-Daisy.jpg",
-    "atributes":{
+    "atributes": {
       "life": 6,
       "sanity": 6,
       "lore": 2,
@@ -2340,17 +2738,27 @@
       }
     ],
     "possessions": {
-      "required": [116],
+      "required": [
+        116
+      ],
       "optionalText": "1$ or 5$ plus two WANTED conditions. Choose one of the following objects",
-      "optional": [117, 118]
+      "optional": [
+        117,
+        118
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
         "name": "Finn Edwards",
         "position": "El contrabandista",
         "effect1": "Pasaje del Callejón - Acción: Tú y un investigador en tu espacio pueden moverse directamente a cualquier espacio en un vecindario adyacente conectado por una calle o loseta de ruta de viaje.",
-        "effect2": "Delincuente Profesional: No hay límite en la cantidad de condiciones de BUSCADO que puedes tener." ,
-        "effect3": null ,
+        "effect2": "Delincuente Profesional: No hay límite en la cantidad de condiciones de BUSCADO que puedes tener.",
+        "effect3": null,
         "phrase": "'Nunca pierdas de vista la salida ni la mercancía.'",
         "theStory": "Finn se ganaba bien la vida transportando licor desde Canadá a ciudades de toda la costa este. Nunca lo atraparon y nunca perdió una entrega. Con los años, había descubierto numerosos pasadizos, atajos por callejones y conocidos que aseguraban discreción ante la ley. Si Finn podía mantenerlos contentos y bien pagados, todos se estaban haciendo ricos. Ahora ha aceptado un trabajo en Arkham y ha dado su palabra de que lo llevará a cabo. Esta vez no será alcohol lo que entregue, y no será el sheriff local quien intente atraparlo. Finn está metido en una conspiración sobrenatural, pero al final, sigue fiel a los mismos principios: entregar la mercancía.",
         "locutionURL": "___",
@@ -2367,8 +2775,8 @@
       }
     }
   },
-
-  {"idInv": 38,
+  {
+    "idInv": 38,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Jacqueline Fine",
@@ -2381,7 +2789,7 @@
     "theStory": "At first, Jacqueline's dreams of fire and destruction seemed like a curse. Mosnters ran ramoant through city streets and some greater darkness loomed on the horizon. However, she has recently to control her versions and observe events in detail. Yerserday, she traveled from Boston to Arkham to explore an abandoned warehouse she'd seen in her dreams. Inside, she found evidence of a terrible cult that had practiced unspeakable rituals there. Jacqueline hoped to use what she's learned to prevent the terrible future that haunts her sleep. However, changing the future is never easy ...",
     "locutionURL": "___",
     "imgInv": "/img/1-inv/39-Jacqueline.jpg",
-    "atributes":{
+    "atributes": {
       "life": 4,
       "sanity": 8,
       "lore": 4,
@@ -2404,9 +2812,19 @@
       }
     ],
     "possessions": {
-      "required": [107],
+      "required": [
+        107
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [108, 109]
+      "optional": [
+        108,
+        109
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2432,7 +2850,8 @@
       }
     }
   },
-  {"idInv": 39,
+  {
+    "idInv": 39,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Harvey Walters",
@@ -2445,7 +2864,7 @@
     "theStory": "In the time since Harvey Walters earned his master's degree in journalism from Miskatonic University, a lot has happened to him. His journalistic career took him into the roles of mystic and psychic investigator, wich in turn led him to earn doctorates in History and Archaeology. He became a recluse, rarely leaving his home in favour of paging through his collections of arcane texts in hope of finding a connection. There is perhaps no sane man alive who knows more about the occult than Harvey. Being able to mointain one's mind with the scriptures than Harvey has read has come at a price however. Now his ongoing struggle against the darkness has brought him back to his alma mater here in Arkham.",
     "locutionURL": "___",
     "imgInv": "/img/1-inv/40-Harvey.jpg",
-    "atributes":{
+    "atributes": {
       "life": 4,
       "sanity": 8,
       "lore": 3,
@@ -2468,9 +2887,19 @@
       }
     ],
     "possessions": {
-      "required": [110],
+      "required": [
+        110
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [111, 112]
+      "optional": [
+        111,
+        112
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2496,7 +2925,8 @@
       }
     }
   },
-  {"idInv": 40,
+  {
+    "idInv": 40,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Joe Diamond",
@@ -2509,7 +2939,7 @@
     "theStory": "The dame who hired Joe was square, and the job seemed easy on the surface. She paid in advance to have Joe find some codger and deliver a crate, but Joe does not walk info situations without knnowing the score. This codger was a member of the Silver Tuilight Lodge, and that crate had been stolen from a museum in Istanbul. Like a sucker; Joe went to the cops. For his trouble, he got a broken nose and a dead client, and somebody stole his cargo. Aftera quick nap, a few glasses of bourbon, and a nice, cold steak to help the headache, Joe stumbles out of his musty office with a new sense of purpose, ready for a little payback...",
     "locutionURL": "___",
     "imgInv": "/img/1-inv/40-Harvey.jpg",
-    "atributes":{
+    "atributes": {
       "life": 7,
       "sanity": 5,
       "lore": 2,
@@ -2532,9 +2962,19 @@
       }
     ],
     "possessions": {
-      "required": [119],
+      "required": [
+        119
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [120, 121]
+      "optional": [
+        120,
+        121
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2560,8 +3000,8 @@
       }
     }
   },
-
-  {"idInv": 41,
+  {
+    "idInv": 41,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Jim Culver",
@@ -2574,7 +3014,7 @@
     "theStory": "Old Jm Culver's music gives sweet comfort to the soul, and it doesn't matter if that soul belongs to the living or the dead. Folks in their graves, they love their little chats with Jim. On any given night, folks around the Arkham graveyard can hear the slow, jazzy ballads of brass echoing off the headstones. It used to bother him, but now he's happy for the company. Lately, some departed souls in Arkham have been all riled up about something. What went from lonely lamens of the dead turned to fearful ruminations of what's to come. They're downright terrified. And anything that scares the dead deserves old Jim's undivided attention.",
     "locutionURL": "___",
     "imgInv": "/img/1-inv/40-Harvey.jpg",
-    "atributes":{
+    "atributes": {
       "life": 6,
       "sanity": 6,
       "lore": 3,
@@ -2597,9 +3037,19 @@
       }
     ],
     "possessions": {
-      "required": [122],
+      "required": [
+        122
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [123, 124]
+      "optional": [
+        123,
+        124
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2625,12 +3075,8 @@
       }
     }
   },
-
-
-
-
-
-  {"idInv": 40,
+  {
+    "idInv": 40,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Joe Diamond",
@@ -2643,7 +3089,7 @@
     "theStory": "___",
     "locutionURL": "___",
     "imgInv": "/img/1-inv/40-Harvey.jpg",
-    "atributes":{
+    "atributes": {
       "life": 4,
       "sanity": 8,
       "lore": 3,
@@ -2666,9 +3112,19 @@
       }
     ],
     "possessions": {
-      "required": [110],
+      "required": [
+        110
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [111, 112]
+      "optional": [
+        111,
+        112
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2694,8 +3150,8 @@
       }
     }
   },
-
-  {"idInv": 56,
+  {
+    "idInv": 56,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Nameless Soul",
@@ -2708,7 +3164,7 @@
     "theStory": "Many in Arkham would yet fall victim to dark plots, but this lost soul was one of the first. The life they once lived was stipped both physically and mentally from them when reality started to fracture. Those who might have saved them came too late, at least to save their first life. Inexplicably caught between the land of the living and the cold void of the afterlife, they started searching for answers. Who were they? Why had they been killed? Was there a path back to life? Just what was happening in Arkham? The limitations of their incorporeal from became apparent quickly, but a solution would present itself during one of many attempts to communicate with a living being. Flowing into the body of an unsuspecting bystander, sensation and purpose returned with vengance. Some or something had killed them, and they were determined to get to the borrom of it no matter how many lives they had to live.",
     "locutionURL": "___",
     "imgInv": "/img/1-inv/57-Nameless.jpg",
-    "atributes":{
+    "atributes": {
       "life": 0,
       "sanity": 0,
       "lore": 3,
@@ -2731,9 +3187,19 @@
       }
     ],
     "possessions": {
-      "required": [126],
+      "required": [
+        126
+      ],
       "optionalText": "You can choose one of the following objects",
-      "optional": [127, 128]
+      "optional": [
+        127,
+        128
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
     },
     "translations": {
       "es": {
@@ -2759,6 +3225,4 @@
       }
     }
   }
-
-  
 ]

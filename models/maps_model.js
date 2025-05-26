@@ -68,7 +68,7 @@ export class MapModel{
         return map
     }
 
-    // retornamos un mapa por su id
+    // retornamos votacion de likes y dislikes de un mapa
     static async getLikeDislike (idMap){
         // buscamos el mapa por su id
         const map = mapsListJSON.find(m => m.idMap == idMap)
@@ -112,7 +112,7 @@ export class MapModel{
             // Si repite mismo valor, salimos
             if (prev.value === value) return map
 
-            // Si ha llegado aqui es porque ha mandado un valor distinto alq ue votó anteriormente 
+            // Si ha llegado aqui es porque ha mandado un valor distinto al que votó anteriormente 
             // Revertir contador anterior
             if (prev.value === 1) map.extraData.likes--
 

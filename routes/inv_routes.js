@@ -13,6 +13,12 @@ invRouter.get('/:id/objects', InvController.getInvObjects)
 invRouter.get('/:id',  InvController.getById)
 // CREAMOS un nuevo investigador
 invRouter.post('/', InvController.createInv )
+
+// PEDIMOS votacion de investigador de like y dislike
+invRouter.get('/likeDislike/:id', InvController.getLikeDislike)
+
+// Edicion de investigador para votacion de like y dislike
+invRouter.post('/likeDislike', InvController.likeDislike)
 // BORRAMOS un investigador
 // invRouter.delete('/:id', InvController.deleteInv )
 // ACTUALIZAMOS un investigador

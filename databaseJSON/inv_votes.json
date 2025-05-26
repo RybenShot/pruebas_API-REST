@@ -1,0 +1,181 @@
+[
+  {
+    "idInv": 0,
+    "votes": []
+  },
+  {
+    "idInv": 1,
+    "votes": []
+  },
+  {
+    "idInv": 2,
+    "votes": []
+  },
+  {
+    "idInv": 3,
+    "votes": []
+  },
+  {
+    "idInv": 4,
+    "votes": []
+  },
+  {
+    "idInv": 5,
+    "votes": []
+  },
+  {
+    "idInv": 6,
+    "votes": []
+  },
+  {
+    "idInv": 7,
+    "votes": [
+      {
+        "idUser": "user_2135",
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1748275768426
+      }
+    ]
+  },
+  {
+    "idInv": 8,
+    "votes": []
+  },
+  {
+    "idInv": 9,
+    "votes": []
+  },
+  {
+    "idInv": 10,
+    "votes": []
+  },
+  {
+    "idInv": 11,
+    "votes": []
+  },
+  {
+    "idInv": 12,
+    "votes": []
+  },
+  {
+    "idInv": 13,
+    "votes": []
+  },
+  {
+    "idInv": 14,
+    "votes": []
+  },
+  {
+    "idInv": 15,
+    "votes": []
+  },
+  {
+    "idInv": 16,
+    "votes": []
+  },
+  {
+    "idInv": 17,
+    "votes": []
+  },
+  {
+    "idInv": 18,
+    "votes": []
+  },
+  {
+    "idInv": 19,
+    "votes": []
+  },
+  {
+    "idInv": 20,
+    "votes": []
+  },
+  {
+    "idInv": 21,
+    "votes": []
+  },
+  {
+    "idInv": 22,
+    "votes": []
+  },
+  {
+    "idInv": 23,
+    "votes": []
+  },
+  {
+    "idInv": 24,
+    "votes": []
+  },
+  {
+    "idInv": 25,
+    "votes": []
+  },
+  {
+    "idInv": 26,
+    "votes": []
+  },
+  {
+    "idInv": 27,
+    "votes": []
+  },
+  {
+    "idInv": 28,
+    "votes": []
+  },
+  {
+    "idInv": 29,
+    "votes": []
+  },
+  {
+    "idInv": 30,
+    "votes": []
+  },
+  {
+    "idInv": 31,
+    "votes": []
+  },
+  {
+    "idInv": 32,
+    "votes": []
+  },
+  {
+    "idInv": 33,
+    "votes": []
+  },
+  {
+    "idInv": 34,
+    "votes": []
+  },
+  {
+    "idInv": 35,
+    "votes": []
+  },
+  {
+    "idInv": 36,
+    "votes": []
+  },
+  {
+    "idInv": 37,
+    "votes": []
+  },
+  {
+    "idInv": 38,
+    "votes": []
+  },
+  {
+    "idInv": 39,
+    "votes": []
+  },
+  {
+    "idInv": 40,
+    "votes": []
+  },
+  {
+    "idInv": 41,
+    "votes": []
+  },
+  {
+    "idInv": 56,
+    "votes": []
+  }
+]

@@ -93,8 +93,8 @@
                 },
                 "back": {
                     "title": null,
-                    "story": "___",
-                    "text": "",
+                    "story": "Extraños acontecimientos tienen lugar por toda Arkham. Personas de otras épocas se pasean por las calles, maravilladas por el peculiar estilo arquitectónico de los edificios. Ocurren cosas sin orden ni concierto. Los ejemplares del Arkham Advertiser muestran fechas inexactas, como su huvieran sido escogidas al azar. Individuos vestidos con túnicas se deslizan entre las sombras, y para vuestra consternacion, creeis que os estña siguiendo.",
+                    "text": "Muestra cartas de la parte inferior del mazo de Monstruos hasta que saques un Monstruo Sectario. Este Monstruo aparece en el espacio de Calle más próximo al Líder. Luego por las demás cartas en la parte supeior del mazo en un orden aleatorio. Añade al Códice la carta 5 y devuelve esta carta al Archivo.",
                     "doom": null,
                     "clue": null
                 }

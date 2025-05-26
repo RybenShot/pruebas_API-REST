@@ -51,6 +51,28 @@ export class InvController {
         res.status(404).json({ message: 'Investigador no encontrado' })
     }
 
+    // retornamos likes dislikes de un investigador
+    static async getLikeDislike (req, res) {
+        const { id } = req.params
+
+        const findMap = await InvModel.getLikeDislike( id )
+        if (findMap) return res.json(findMap)
+
+        res.status(404).json({ message: 'Investigador no encontrado' })
+    }
+
+    // sistema de votacion de like dislike de Usuario
+    static async likeDislike (req, res) {
+        const { idInv, idUser, value} = req.body
+
+
+        const mapEdited = await InvModel.likeDislike({ idInv, idUser, value })
+
+        if (!mapEdited) return res.status(404).json({ message: 'Investigador no encontrado' })
+        
+        return res.json(mapEdited)
+    }
+
     static async createInv(req, res) {
         const result = validateInv(req.body)
         

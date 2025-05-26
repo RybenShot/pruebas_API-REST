@@ -44,3 +44,16 @@ GET http://localhost:1234/inv/previewList
 
 ### Recuperar un investigador por su arquetipo
 GET http://localhost:1234/inv/previewList?rol=rogue
+
+### Get numero de votos de un mapa likes - Dislikes
+GET http://localhost:1234/inv/likeDislike/10
+
+### llamada Like Dislike
+POST http://localhost:1234/inv/likeDislike
+Content-Type: application/json
+
+{ 
+    "idInv": 7,
+    "idUser": "user_2135",
+    "value": -1
+}
