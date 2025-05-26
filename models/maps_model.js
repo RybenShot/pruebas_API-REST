@@ -208,6 +208,79 @@ export class MapModel{
         return map;
     }
 
+    // PEDIMOS media de dificultad de mapa
+    static async getDifficultyMap (idMap){
+        // buscamos el mapa por su id
+        const map = mapsListJSON.find(m => m.idMap == idMap)
+        if (!map) return false
+
+        //capturamos el tiempo estimado
+        const result = {
+            difficulty : map.extraData.difficulty,
+            NVotesDifficulty: map.extraData.NVotesDifficulty,
+        }
+        
+        return result;
+    }
+
+    // votacion de dificultad de mapa
+    static async postDifficultyMap({idMap, idUser, value}){
+        // buscamos y capturamos el mapa en la base de datos de mapas
+        const map = mapsListJSON.find(m => m.idMap == idMap)
+        if (!map) return false
+
+        // 2. Asegurar campos
+        map.extraData = map.extraData || { difficulty: 0, NVotesDifficulty: 0 }
+        map.extraData.difficulty    = map.extraData.difficulty    || 0
+        map.extraData.NVotesDifficulty = map.extraData.NVotesDifficulty || 0
+
+        // 3. Buscar o crear bloque de votos
+        let voteBlock = mapVotesJSON.find(v => v.idMap == idMap)
+        // si no existe el bloque lo creamos
+        if (!voteBlock) {
+            voteBlock = { idMap, votes: [] }
+            mapVotesJSON.push(voteBlock)
+        }
+
+        // 4. Procesar voto
+        const now = Date.now()
+        // buscamos si el mismo usuario ha votado anteriormente el mismo tipo de voto
+        const prev = voteBlock.votes.find(vote => vote.idUser == idUser && vote.type == 'difficulty')
+
+        if (prev) {
+            // Usuario ya votó antes: si es el mismo valor, no hacemos nada
+            if (prev.value === value) {
+                // retornamos el mapa sin cambios
+                return map;
+            }
+            // Sino, simplemente actualizamos el valor y la fecha
+            prev.value = value;
+            prev.dateCreated = now;
+        } else {
+            // Nuevo voto
+            voteBlock.votes.push({idUser, type: 'difficulty', value, dateCreated: now });
+        }
+
+        // 5. Calcular nueva media de todos los votos timeEstimated
+        const timeVotes = voteBlock.votes.filter(v => v.type === 'difficulty')  // filtramos sólo timeEstimated
+        .map(v => v.value);
+
+        const totalVotos = timeVotes.length;
+
+        const sumaTiempos = timeVotes.reduce((acc, t) => acc + t, 0);
+        const media = totalVotos > 0 ? Math.round(sumaTiempos / totalVotos) : 0;
+
+        // 6. Actualizar extraData en el mapa
+        map.extraData.NVotesDifficulty += 1;           // sumamos +1 al número de votaciones
+        map.extraData.difficulty = media;     // guardamos la media calculada
+
+        // 7. Guardar el voto en el JSON de registro (mapVotesJSON ya contiene el voto actualizado)
+        writeFileSync('databaseJSON/mapas.json',      JSON.stringify(mapsListJSON, null, 2))
+        writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON, null, 2))
+        
+        return map;
+    }
+
     // Desabilitamos por ahora estas opciones para evitar problemas
     /*
     // creamos un nuevo mapa

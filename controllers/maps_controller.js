@@ -82,6 +82,28 @@ export class MapsController {
 
     }
 
+     // PEDIMOS media de dificultad de mapa
+    static async getDifficultyMap (req, res) {
+        const { id } = req.params
+
+        const findMap = await MapModel.getDifficultyMap( id )
+        if (findMap) return res.json(findMap)
+
+        res.status(404).json({ message: 'Mapa no encontrado' })
+    }
+
+    // votacion de dificultad de mapa
+    static async postDifficultyMap (req, res){
+        const { idMap, idUser, value} = req.body
+
+        const mapEdited = await MapModel.postDifficultyMap({idMap, idUser, value})
+
+        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+        
+        return res.json(mapEdited)
+
+    }
+
     // Desabilitamos por ahora estas opciones para evitar problemas
     /*
     // creamos un nuevo mapa

@@ -853,8 +853,8 @@
       "NVotesLikeDislike": 1,
       "timeEstimated": 245,
       "NVotestime": 2,
-      "difficulty": 0,
-      "NVotesDifficulty": 0
+      "difficulty": 3,
+      "NVotesDifficulty": 2
     },
     "enemies": [
       37,

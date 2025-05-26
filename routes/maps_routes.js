@@ -20,11 +20,18 @@ mapsRouter.get('/likeDislike/:id', MapsController.getLikeDislike)
 // Edicion de mapa para votacion de like y dislike
 mapsRouter.post('/likeDislike', MapsController.likeDislike)
 
-// Edicion de mapa para votacion de like y dislike
+// PEDIMOS media de tiempo estimado de mapa
 mapsRouter.get('/timeEstimated/:id', MapsController.getTimeEstimated)
 
-// Edicion de mapa para votacion de like y dislike
+// votacion de tiempo estimadod e mapa
 mapsRouter.post('/timeEstimated', MapsController.timeEstimated)
+
+// PEDIMOS media de dificultad de mapa
+mapsRouter.get('/difficultyMap/:id', MapsController.getDifficultyMap)
+
+// votacion de dificultad de mapa
+mapsRouter.post('/difficultyMap', MapsController.postDifficultyMap)
+
 
 // Desabilitamos por ahora estas opciones para evitar problemas
 // CREAMOS un nuevo mapa

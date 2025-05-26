@@ -78,7 +78,7 @@ POST http://localhost:1234/maps/likeDislike
 Content-Type: application/json
 
 { 
-    "idMap": 7,    
+    "idMap": 7,
     "idUser": "user_2135",
     "value": 1
 }
@@ -91,7 +91,20 @@ POST http://localhost:1234/maps/timeEstimated
 Content-Type: application/json
 
 { 
-    "idMap": 7,    
+    "idMap": 7,
     "idUser": "user_1135",
     "value": 145
+}
+
+### Get dificultad de mapa
+GET http://localhost:1234/maps/difficultyMap/7
+
+### llamada votacion dificultad
+POST http://localhost:1234/maps/difficultyMap
+Content-Type: application/json
+
+{ 
+    "idMap": 7,
+    "idUser": "user_135",
+    "value": 3
 }

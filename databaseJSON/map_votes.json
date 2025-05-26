@@ -105,6 +105,12 @@
         "type": "timeEstimated",
         "value": 145,
         "dateCreated": 1748257729951
+      },
+      {
+        "idUser": "user_135",
+        "type": "difficulty",
+        "value": 3,
+        "dateCreated": 1748259673126
       }
     ]
   },
