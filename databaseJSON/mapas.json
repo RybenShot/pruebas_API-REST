@@ -23,7 +23,7 @@
       "dislikes": 0,
       "NVotesLikeDislike": 48,
       "timeEstimated": 0,
-      "NVotestime": 12,
+      "NVotestime": 0,
       "difficulty": 1,
       "NVotesDifficulty": 12
     },
@@ -851,8 +851,8 @@
       "likes": 1,
       "dislikes": 0,
       "NVotesLikeDislike": 1,
-      "timeEstimated": 0,
-      "NVotestime": 0,
+      "timeEstimated": 245,
+      "NVotestime": 2,
       "difficulty": 0,
       "NVotesDifficulty": 0
     },
@@ -1441,8 +1441,8 @@
       "likes": 0,
       "dislikes": 0,
       "NVotesLikeDislike": 0,
-      "timeEstimated": 0,
-      "NVotestime": 0,
+      "timeEstimated": 270,
+      "NVotestime": 12,
       "difficulty": 0,
       "NVotesDifficulty": 0
     },

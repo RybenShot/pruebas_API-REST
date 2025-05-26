@@ -14,8 +14,17 @@ mapsRouter.get('/enemies/:id',  MapsController.getAllEnemies)
 // BUSCAMOS un mapa por la ID
 mapsRouter.get('/:id',  MapsController.getById)
 
+// PEDIMOS votacion de mapa de like y dislike
+mapsRouter.get('/likeDislike/:id', MapsController.getLikeDislike)
+
 // Edicion de mapa para votacion de like y dislike
 mapsRouter.post('/likeDislike', MapsController.likeDislike)
+
+// Edicion de mapa para votacion de like y dislike
+mapsRouter.get('/timeEstimated/:id', MapsController.getTimeEstimated)
+
+// Edicion de mapa para votacion de like y dislike
+mapsRouter.post('/timeEstimated', MapsController.timeEstimated)
 
 // Desabilitamos por ahora estas opciones para evitar problemas
 // CREAMOS un nuevo mapa

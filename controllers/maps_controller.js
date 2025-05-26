@@ -38,17 +38,48 @@ export class MapsController {
         res.status(404).json({ message: 'Mapa no encontrado' })
     }
 
-    // editamos un mapa para votacion de like dislike
+    // retornamos likes dislikes de un mapa
+    static async getLikeDislike (req, res) {
+        const { id } = req.params
+
+        const findMap = await MapModel.getLikeDislike( id )
+        if (findMap) return res.json(findMap)
+
+        res.status(404).json({ message: 'Mapa no encontrado' })
+    }
+
+    // votacion de like dislike de Usuario
     static async likeDislike (req, res) {
-        const { idMap, idUserHost, value} = req.body
+        const { idMap, idUser, value} = req.body
 
-        // console.log('idMap', idMap, 'idUserHost', idUserHost, 'value', value)
+        // console.log('idMap', idMap, 'idUser', idUser, 'value', value)
 
-        const mapEdited = await MapModel.likeDislike({ idMap, idUserHost, value })
+        const mapEdited = await MapModel.likeDislike({ idMap, idUser, value })
 
         if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
         
         return res.json(mapEdited)
+    }
+
+    static async getTimeEstimated (req, res) {
+        const { id } = req.params
+
+        const findMap = await MapModel.getTimeEstimated( id )
+        if (findMap) return res.json(findMap)
+
+        res.status(404).json({ message: 'Mapa no encontrado' })
+    }
+
+    // tiempo estimado de Usuario
+    static async timeEstimated (req, res){
+        const { idMap, idUser, value} = req.body
+
+        const mapEdited = await MapModel.timeEstimated({idMap, idUser, value})
+
+        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+        
+        return res.json(mapEdited)
+
     }
 
     // Desabilitamos por ahora estas opciones para evitar problemas

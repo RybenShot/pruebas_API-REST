@@ -68,8 +68,24 @@ export class MapModel{
         return map
     }
 
-    // editamos un mapa para votacion de like dislike
-    static async likeDislike({idMap, idUserHost, value}){
+    // retornamos un mapa por su id
+    static async getLikeDislike (idMap){
+        // buscamos el mapa por su id
+        const map = mapsListJSON.find(m => m.idMap == idMap)
+        if (!map) return false
+
+        //capturamos las votaciones de  likes y dislikes y el numero de votos
+        const result = {
+            likes : map.extraData.likes,
+            dislikes: map.extraData.dislikes,
+            NVotesLikeDislike: map.extraData.NVotesLikeDislike
+        }
+        
+        return result;
+    }
+
+    // votacion de like dislike
+    static async likeDislike({idMap, idUser, value}){
         // buscamos y capturamos el mapa en la base de datos de mapas
         const map = mapsListJSON.find(m => m.idMap == idMap)
         if (!map) return false
@@ -87,14 +103,16 @@ export class MapModel{
             mapVotesJSON.push(voteBlock)
         }
 
-         // 4. Procesar voto
+        // 4. Procesar voto
         const now = Date.now()
-        const prev = voteBlock.votes.find(v => v.idUser == idUserHost && v.type == 'likeDislike')
+        // buscamos si el mismo usuario ha votado anteriormente el mismo tipo de voto
+        const prev = voteBlock.votes.find(vote => vote.idUser == idUser && vote.type == 'likeDislike')
 
         if (prev) {
             // Si repite mismo valor, salimos
             if (prev.value === value) return map
 
+            // Si ha llegado aqui es porque ha mandado un valor distinto alq ue votó anteriormente 
             // Revertir contador anterior
             if (prev.value === 1) map.extraData.likes--
 
@@ -105,7 +123,7 @@ export class MapModel{
             prev.dateCreated = now
         } else {
             // Nuevo voto
-            voteBlock.votes.push({ idUser: idUserHost, type: 'likeDislike', value, dateCreated: now })
+            voteBlock.votes.push({ idUser: idUser, type: 'likeDislike', value, dateCreated: now })
             map.extraData.NVotesLikeDislike++
         }
 
@@ -118,6 +136,76 @@ export class MapModel{
         writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON, null, 2))
 
         return map
+    }
+
+    // retornamos tiempo estimado de un mapa
+    static async getTimeEstimated (idMap){
+        // buscamos el mapa por su id
+        const map = mapsListJSON.find(m => m.idMap == idMap)
+        if (!map) return false
+
+        //capturamos el tiempo estimado
+        const result = {
+            timeEstimated : map.extraData.timeEstimated,
+            NVotestime: map.extraData.NVotestime,
+        }
+        
+        return result;
+    }
+
+    // tiempo estimado de Usuario
+    static async timeEstimated({idMap, idUser, value}){
+        // buscamos y capturamos el mapa en la base de datos de mapas
+        const map = mapsListJSON.find(m => m.idMap == idMap)
+        if (!map) return false
+
+        // 2. Asegurar campos
+        map.extraData = map.extraData || { timeEstimated: 0, NVotestime: 0 }
+        map.extraData.timeEstimated    = map.extraData.timeEstimated    || 0
+        map.extraData.NVotestime = map.extraData.NVotestime || 0
+
+        // 3. Buscar o crear bloque de votos
+        let voteBlock = mapVotesJSON.find(v => v.idMap == idMap)
+        // si no existe el bloque lo creamos
+        if (!voteBlock) {
+            voteBlock = { idMap, votes: [] }
+            mapVotesJSON.push(voteBlock)
+        }
+
+        // 4. Procesar voto
+        const now = Date.now()
+        // buscamos si el mismo usuario ha votado anteriormente el mismo tipo de voto
+        const prev = voteBlock.votes.find(vote => vote.idUser == idUser && vote.type == 'timeEstimated')
+
+        if (prev) {
+            // Usuario ya votó antes: si es el mismo valor, no hacemos nada
+            if (prev.value === value) {
+                // retornamos el mapa sin cambios
+                return map;
+            }
+            // Sino, simplemente actualizamos el valor y la fecha
+            prev.value = value;
+            prev.dateCreated = now;
+        } else {
+            // Nuevo voto
+            voteBlock.votes.push({idUser, type: 'timeEstimated', value, dateCreated: now });
+        }
+
+        // 5. Calcular nueva media de todos los votos timeEstimated
+        const timeVotes = voteBlock.votes.map(v => v.value);
+        const totalVotos = timeVotes.length;
+        const sumaTiempos = timeVotes.reduce((acc, t) => acc + t, 0);
+        const media = totalVotos > 0 ? Math.round(sumaTiempos / totalVotos) : 0;
+
+        // 6. Actualizar extraData en el mapa
+        map.extraData.NVotestime += 1;           // sumamos +1 al número de votaciones
+        map.extraData.timeEstimated = media;     // guardamos la media calculada
+
+        // 7. Guardar el voto en el JSON de registro (mapVotesJSON ya contiene el voto actualizado)
+        writeFileSync('databaseJSON/mapas.json',      JSON.stringify(mapsListJSON, null, 2))
+        writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON, null, 2))
+        
+        return map;
     }
 
     // Desabilitamos por ahora estas opciones para evitar problemas

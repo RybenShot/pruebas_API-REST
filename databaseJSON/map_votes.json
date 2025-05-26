@@ -96,9 +96,15 @@
     "votes": [
       {
         "idUser": "user_2135",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748246920063
+        "type": "timeEstimated",
+        "value": 345,
+        "dateCreated": 1748257713741
+      },
+      {
+        "idUser": "user_1135",
+        "type": "timeEstimated",
+        "value": 145,
+        "dateCreated": 1748257729951
       }
     ]
   },
@@ -120,6 +126,25 @@
   },
   {
     "idMap": 12,
-    "votes": []
+    "votes": [
+      {
+        "idUser": "user_2135",
+        "type": "timeEstimated",
+        "value": 174,
+        "dateCreated": 1748254560673
+      },
+      {
+        "idUser": "user2_2135",
+        "type": "timeEstimated",
+        "value": 374,
+        "dateCreated": 1748254560673
+      },
+      {
+        "idUser": "user3_2135",
+        "type": "timeEstimated",
+        "value": 274,
+        "dateCreated": 1748254560673
+      }
+    ]
   }
 ]
