@@ -18,13 +18,13 @@ mapsRouter.get('/:id',  MapsController.getById)
 mapsRouter.get('/likeDislike/:id', MapsController.getLikeDislike)
 
 // Edicion de mapa para votacion de like y dislike
-mapsRouter.post('/likeDislike', MapsController.likeDislike)
+mapsRouter.post('/likeDislike', MapsController.postLikeDislike)
 
 // PEDIMOS media de tiempo estimado de mapa
 mapsRouter.get('/timeEstimated/:id', MapsController.getTimeEstimated)
 
 // votacion de tiempo estimadod e mapa
-mapsRouter.post('/timeEstimated', MapsController.timeEstimated)
+mapsRouter.post('/timeEstimated', MapsController.postTimeEstimated)
 
 // PEDIMOS media de dificultad de mapa
 mapsRouter.get('/difficultyMap/:id', MapsController.getDifficultyMap)

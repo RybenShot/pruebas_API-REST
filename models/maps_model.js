@@ -1,5 +1,6 @@
 import mapsListJSON from '../databaseJSON/mapas.json' with { type: "json" }
 import mapVotesJSON from '../databaseJSON/map_votes.json' with { type: "json" }
+import listPreviewMaps from '../databaseJSON/previewMaps.json' with { type: "json" }
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
 import { EnemiesModel } from "./enemies_model.js";
@@ -19,7 +20,11 @@ export class MapModel{
             return filterExpansion
         }
         // si no se ha pasado expansion, devolvemos todos los mapas
-        return  
+        return mapsListJSON
+    }
+    static getPreviewMap () {
+        // devolvemos todos los previews de los mapas
+        return listPreviewMaps
     }
 
     // retornamos todos los enemigos de un mapa
@@ -85,7 +90,7 @@ export class MapModel{
     }
 
     // votacion de like dislike
-    static async likeDislike({idMap, idUser, value}){
+    static async postLikeDislike({idMap, idUser, value}){
         // buscamos y capturamos el mapa en la base de datos de mapas
         const map = mapsListJSON.find(m => m.idMap == idMap)
         if (!map) return false
@@ -154,7 +159,7 @@ export class MapModel{
     }
 
     // tiempo estimado de Usuario
-    static async timeEstimated({idMap, idUser, value}){
+    static async postTimeEstimated({idMap, idUser, value}){
         // buscamos y capturamos el mapa en la base de datos de mapas
         const map = mapsListJSON.find(m => m.idMap == idMap)
         if (!map) return false
@@ -285,9 +290,13 @@ export class MapModel{
     static async getRecInv (idMap){
         // buscamos el mapa por su id
         const map = mapVotesJSON.find(map => map.idMap == idMap)
-        if (!map) return false
 
-        console.log("hey! he encontrado el mapa que pides: ", map.invRec)
+        console.log("hemos encontrado el mapa: ", map)
+        
+        if (!map) {
+            console.error('❌ No se ha encontrado el mapa con id:', idMap);
+            return false;
+        }
         
         return map.invRec;
     }

@@ -1,107 +1,179 @@
 import { MapModel } from "../models/maps_model.js";
 import { validateMap, validatePartialMap } from '../schemas/maps_schema.js'
 // por limpieza de codigo, esta importacion de kscoon deberiamos hacerla en el model pero lo dejamos asi pr ahora para atender otros asuntos
-import listPreviewMaps from '../databaseJSON/previewMaps.json' with { type: "json" }
+
 
 
 export class MapsController {
     // retornamos lista de mapas por expansion o todos los mapas
     static async getAll(req, res) {
-        const { expansion } = req.query
-        const maps = await MapModel.getAll({ expansion })
-        res.json(maps)
-    }
+        try {
+            const { expansion } = req.query
+            console.log('🔍 --- getAll --- recibid:', expansion);
 
-    static getPreviewMap (req, res) {
-        res.json(listPreviewMaps)
-    }
-
-    static async getAllEnemies (req, res){
-        // capturamos la id
-        const { id } = req.params
-        let listEnemies = await MapModel.getAllEnemies({ id })
-        // si no hay enemigos, devolvemos un mensaje
-        if (listEnemies.length === 0) {
-            return res.status(404).json({ message: 'No se han encontrado enemigos para el mapa solicitado' })
+            // si no hay expansion, devolvemos todos los mapas
+            const maps = await MapModel.getAll({ expansion })
+            if (!maps) {
+                return res.status(404).json({ message: 'No se han encontrado mapas' })
+            }
+            res.status(202).json(maps)
+        } catch (error) {
+            console.error('❌ getAll error :', error);
+            return res.status(500).json({ message: 'Error interno' });
         }
+    }
 
-        res.json(listEnemies)
+    // retornamos todos los previews de los mapas
+    static async getPreviewMap (req, res) {
+        try {
+            console.log('🔍 --- getPreviewMap --- ');
+
+            const previewMaps = await MapModel.getPreviewMap()
+            if (!previewMaps) {
+                return res.status(404).json({ message: 'No se han encontrado los previews de los mapas' })
+            }
+
+            res.json(previewMaps)
+        } catch (error) {
+            console.error('❌ getPreviewMap error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
+    // retornamos todos los enemigos de un mapa
+    static async getAllEnemies (req, res){
+        try {
+            // capturamos la id
+            const { id } = req.params
+            console.log('🔍 --- getAllEnemies --- recibid:', id);
+
+            let listEnemies = await MapModel.getAllEnemies({ id })
+            // si no hay enemigos, devolvemos un mensaje
+            if (!listEnemies || listEnemies.length === 0) {
+                return res.status(404).json({ message: 'No se han encontrado enemigos para el mapa solicitado' })
+            }
+
+            res.status(202).json(listEnemies)
+        } catch (error) {
+            console.error('❌ getAllEnemies error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // retornamos un mapa por su id
     static async getById (req, res) {
-        const { id } = req.params
+        try {
+            const { id } = req.params
+            console.log('🔍 --- getById --- recibid:', id);
+            
+            const findMap = await MapModel.getByID({ id })
+            if (!findMap) return res.status(404).json({ message: 'Mapa no encontrado' })
         
-        const findMap = await MapModel.getByID({ id })
-        if (findMap) return res.json(findMap)
-    
-        res.status(404).json({ message: 'Mapa no encontrado' })
+            res.status(202).json(findMap)
+        } catch (error) {
+            console.error('❌ getById error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // retornamos likes dislikes de un mapa
     static async getLikeDislike (req, res) {
-        const { id } = req.params
+        try {
+            const { id } = req.params
+            console.log('🔍 --- getLikeDislike --- recibid:', id);
 
-        const findMap = await MapModel.getLikeDislike( id )
-        if (findMap) return res.json(findMap)
-
-        res.status(404).json({ message: 'Mapa no encontrado' })
+            const findMap = await MapModel.getLikeDislike( id )
+            if (findMap) return res.status(404).json({ message: 'Mapa no encontrado' }) 
+            
+            res.status(202).json(findMap)
+        } catch (error) {
+            console.error('❌ getLikeDislike error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // votacion de like dislike de Usuario
-    static async likeDislike (req, res) {
-        const { idMap, idUser, value} = req.body
+    static async postLikeDislike (req, res) {
+        try {
+            const { idMap, idUser, value} = req.body
+            console.log('🔍 --- postLikeDislike --- recibid:', { idMap, idUser, value });
 
-        // console.log('idMap', idMap, 'idUser', idUser, 'value', value)
-
-        const mapEdited = await MapModel.likeDislike({ idMap, idUser, value })
-
-        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
-        
-        return res.json(mapEdited)
+            const mapVoted = await MapModel.postLikeDislike({ idMap, idUser, value })
+            if (!mapVoted){
+                return res.status(404).json({ message: 'Mapa no encontrado' })
+            }
+            
+            res.status(202).json(mapVoted)
+        } catch (error) {
+            console.error('❌ postLikeDislike error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     static async getTimeEstimated (req, res) {
-        const { id } = req.params
+        try {
+            const { id } = req.params
+            console.log('🔍 --- getTimeEstimated --- recibid:', id);
 
-        const findMap = await MapModel.getTimeEstimated( id )
-        if (findMap) return res.json(findMap)
+            const findMap = await MapModel.getTimeEstimated( id )
+            if (!findMap) {
+                return res.status(404).json({ message: 'Mapa no encontrado' })
+            } 
 
-        res.status(404).json({ message: 'Mapa no encontrado' })
+            res.status(202).json(findMap)
+        } catch (error) {
+            console.error('❌ getTimeEstimated error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // tiempo estimado de Usuario
-    static async timeEstimated (req, res){
-        const { idMap, idUser, value} = req.body
+    static async postTimeEstimated (req, res){
+        try {
+            const { idMap, idUser, value} = req.body
+            console.log('🔍 --- postTimeEstimated --- recibid:', { idMap, idUser, value });
 
-        const mapEdited = await MapModel.timeEstimated({idMap, idUser, value})
-
-        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
-        
-        return res.json(mapEdited)
-
+            const mapEdited = await MapModel.postTimeEstimated({idMap, idUser, value})
+            if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+            
+            res.status(202).json(mapEdited)
+        } catch (error) {
+            console.error('❌ postTimeEstimated error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
-     // PEDIMOS media de dificultad de mapa
+    // PEDIMOS media de dificultad de mapa
     static async getDifficultyMap (req, res) {
-        const { id } = req.params
+        try {
+            const { id } = req.params
+            console.log('🔍 --- getDifficultyMap --- recibid:', id);
 
-        const findMap = await MapModel.getDifficultyMap( id )
-        if (findMap) return res.json(findMap)
+            const findMap = await MapModel.getDifficultyMap( id )
+            if (!findMap) return res.status(404).json({ message: 'Mapa no encontrado' }) 
 
-        res.status(404).json({ message: 'Mapa no encontrado' })
+            res.json(findMap)
+        } catch (error) {
+            console.error('❌ getDifficultyMap error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // votacion de dificultad de mapa
     static async postDifficultyMap (req, res){
-        const { idMap, idUser, value} = req.body
+        try {
+            const { idMap, idUser, value} = req.body
+            console.log('🔍 --- postDifficultyMap --- recibid:', { idMap, idUser, value });
 
-        const mapEdited = await MapModel.postDifficultyMap({idMap, idUser, value})
+            const mapEdited = await MapModel.postDifficultyMap({idMap, idUser, value})
 
-        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
-        
-        return res.json(mapEdited)
-
+            if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+            
+            res.status(202).json(mapEdited)
+        } catch (error) {
+            console.error('❌ postDifficultyMap error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
     }
 
     // PEDIMOS investigadores recomendados de un mapa
@@ -111,26 +183,33 @@ export class MapsController {
             console.log('🔍 --- getRecInv --- recibid:', id);
 
             const findMap = await MapModel.getRecInv( id )
-            if (findMap) return res.json(findMap)
+            if (!findMap || findMap.length === 0) {
+                return res.status(404).json({ message: 'Mapa no encontrado' })
+            } 
 
-            res.status(404).json({ message: 'Mapa no encontrado' })
+            res.status(202).json(findMap)
         } catch (error) {
             console.error('❌ getRecInv error :', error);
             return res.status(500).json({ message: 'Error interno' }); 
         }
-
-        
     }
 
     // votacion de investigadores recomendados de un mapa
     static async postRecInv (req, res){
-        const { idMap, idUser, idInv, comment} = req.body
+        try {
+            const { idMap, idUser, idInv, comment} = req.body
+            console.log('🔍 --- postRecInv --- recibid:', { idMap, idUser, idInv, comment });
 
-        const mapEdited = await MapModel.postRecInv({idMap, idUser, idInv, comment})
+            const mapEdited = await MapModel.postRecInv({idMap, idUser, idInv, comment})
 
-        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+            if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+            
+            res.status(202).json(mapEdited)
+        } catch (error) {
+            console.error('❌ postRecInv error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
         
-        return res.json(mapEdited)
 
     }
 
