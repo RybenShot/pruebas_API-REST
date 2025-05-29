@@ -106,12 +106,20 @@ export class MapsController {
 
     // PEDIMOS investigadores recomendados de un mapa
     static async getRecInv (req, res) {
-        const { id } = req.params
+        try {
+            const { id } = req.params
+            console.log('🔍 --- getRecInv --- recibid:', id);
 
-        const findMap = await MapModel.getRecInv( id )
-        if (findMap) return res.json(findMap)
+            const findMap = await MapModel.getRecInv( id )
+            if (findMap) return res.json(findMap)
 
-        res.status(404).json({ message: 'Mapa no encontrado' })
+            res.status(404).json({ message: 'Mapa no encontrado' })
+        } catch (error) {
+            console.error('❌ getRecInv error :', error);
+            return res.status(500).json({ message: 'Error interno' }); 
+        }
+
+        
     }
 
     // votacion de investigadores recomendados de un mapa
