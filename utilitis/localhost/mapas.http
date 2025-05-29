@@ -19,7 +19,7 @@ Content-Type: application/json
 
 { 
     "idMap": 7,
-    "idUser": "user_2135",
+    "idUser": "usert_2135",
     "value": 1
 }
 
@@ -50,7 +50,7 @@ Content-Type: application/json
 }
 
 ### Get investigadores recomendados para un mapa
-GET http://localhost:1234/maps/invRecommended/7
+GET http://localhost:1234/maps/invRecommended/3
 
 ### Votar por investigador recomendado
 POST http://localhost:1234/maps/invRecommended
