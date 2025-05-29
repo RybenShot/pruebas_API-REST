@@ -20,6 +20,21 @@
         "value": 1,
         "dateCreated": 1748195489969
       }
+    ],
+    "invRec": [
+      {
+        "idUser": "user_2135",
+        "dateCreated": 1748195489969,
+        "idInv": 23,
+        "comment": "Este investigador es la polla"
+      }
+    ],
+    "comments": [
+      {
+        "idUser": "user_2135",
+        "dateCreated": 1748195489969,
+        "comment": "Este mapa es la polla"
+      }
     ]
   },
   {
@@ -43,7 +58,9 @@
         "value": 4,
         "dateCreated": 1747524148916
       }
-    ]
+    ],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 2,
@@ -66,7 +83,9 @@
         "value": 3,
         "dateCreated": 1747524148916
       }
-    ]
+    ],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 3,
@@ -81,15 +100,21 @@
   },
   {
     "idMap": 4,
-    "votes": []
+    "votes": [],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 5,
-    "votes": []
+    "votes": [],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 6,
-    "votes": []
+    "votes": [],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 7,
@@ -112,23 +137,47 @@
         "value": 3,
         "dateCreated": 1748259673126
       }
-    ]
+    ],
+    "invRec": [
+      {
+        "idInv": 3,
+        "idUser": "user_135",
+        "comment": "este investigador es muy bueno para este mapa",
+        "dateCreated": 1748510873997
+      }
+    ],
+    "comments": []
   },
   {
     "idMap": 8,
-    "votes": []
+    "votes": [],
+    "invRec": [
+      {
+        "idInv": 3,
+        "idUser": "user_135",
+        "comment": "este investigador es muy bueno para este mapa",
+        "dateCreated": 1748510852310
+      }
+    ],
+    "comments": []
   },
   {
     "idMap": 9,
-    "votes": []
+    "votes": [],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 10,
-    "votes": []
+    "votes": [],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 11,
-    "votes": []
+    "votes": [],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 12,
@@ -151,6 +200,8 @@
         "value": 274,
         "dateCreated": 1748254560673
       }
-    ]
+    ],
+    "invRec": [],
+    "comments": []
   }
 ]

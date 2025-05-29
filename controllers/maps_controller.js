@@ -104,6 +104,28 @@ export class MapsController {
 
     }
 
+    // PEDIMOS investigadores recomendados de un mapa
+    static async getRecInv (req, res) {
+        const { id } = req.params
+
+        const findMap = await MapModel.getRecInv( id )
+        if (findMap) return res.json(findMap)
+
+        res.status(404).json({ message: 'Mapa no encontrado' })
+    }
+
+    // votacion de investigadores recomendados de un mapa
+    static async postRecInv (req, res){
+        const { idMap, idUser, idInv, comment} = req.body
+
+        const mapEdited = await MapModel.postRecInv({idMap, idUser, idInv, comment})
+
+        if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+        
+        return res.json(mapEdited)
+
+    }
+
     // Desabilitamos por ahora estas opciones para evitar problemas
     /*
     // creamos un nuevo mapa

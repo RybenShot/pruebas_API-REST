@@ -29,14 +29,7 @@
   },
   {
     "idInv": 7,
-    "votes": [
-      {
-        "idUser": "user_2135",
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1748275768426
-      }
-    ]
+    "votes": []
   },
   {
     "idInv": 8,

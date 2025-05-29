@@ -46,7 +46,7 @@ GET http://localhost:1234/inv/previewList
 GET http://localhost:1234/inv/previewList?rol=rogue
 
 ### Get numero de votos de un mapa likes - Dislikes
-GET http://localhost:1234/inv/likeDislike/10
+GET http://localhost:1234/inv/likeDislike/30
 
 ### llamada Like Dislike
 POST http://localhost:1234/inv/likeDislike
@@ -57,3 +57,14 @@ Content-Type: application/json
     "idUser": "user_2135",
     "value": -1
 }
+
+“‘No hay dos palabras en este mundo más dañinas que ‘buen trabajo’.’
+
+Desde la primera vez que la escuché en Whiplash, esa frase se me grabó a fuego y me obsesionó. Dejando a un lado la obra maestra que es la película, el mensaje de pasión obsesiva que transmite funciona como un espejo para mí.
+
+Me mata y me inspira a partes iguales: la odio por lo implacable que es… y la amo porque me empuja a no conformarme jamás, aunque a veces roce los límites de mi cordura.
+
+En un mundo tan competitivo como el de hoy, donde la tecnología evoluciona cada día y lo “nuevo” caduca antes de asentarse, parece que no hay otra opción que la obsesión en busca del éxito.
+
+Pero, ¿es bueno? ¿es malo? ¿es necesario? ¿es lo que realmente quiero?
+Muchas noches me he quedado en vela por ser asi, porque por culpa de esto dejo de lado cosa que se que en un futuro daria lo que fuera por no haber sido asi, pero no veo otro camino.

@@ -32,6 +32,12 @@ mapsRouter.get('/difficultyMap/:id', MapsController.getDifficultyMap)
 // votacion de dificultad de mapa
 mapsRouter.post('/difficultyMap', MapsController.postDifficultyMap)
 
+// PEDIMOS investigadores recomendados de un mapa
+mapsRouter.get('/invRecommended/:id', MapsController.getRecInv)
+
+// votacion de investigadores recomendados de un mapa
+mapsRouter.post('/invRecommended', MapsController.postRecInv)
+
 
 // Desabilitamos por ahora estas opciones para evitar problemas
 // CREAMOS un nuevo mapa
