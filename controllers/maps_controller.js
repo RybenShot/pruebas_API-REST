@@ -213,6 +213,43 @@ export class MapsController {
 
     }
 
+    // get de los comentarios de un mapa
+    static async getComments (req, res) {
+        try {
+            const { id } = req.params
+            console.log('🔍 --- getComments --- recibid:', id);
+
+            const findMap = await MapModel.getComments( id )
+            if (!findMap) {
+                return res.status(404).json({ message: 'Mapa no encontrado' })
+            } 
+
+            res.status(202).json(findMap)
+        } catch (error) {
+            console.error('❌ getComments error :', error);
+            return res.status(500).json({ message: 'Error interno' }); 
+        }
+    }
+
+    // post para comentario sobre un mapa
+    static async postComment (req, res){
+        try {
+            const { idMap, idUser, comment} = req.body
+            console.log('🔍 --- postComment --- recibid:', { idMap, idUser, comment });
+
+            const mapEdited = await MapModel.postComment({idMap, idUser, comment})
+
+            if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
+            
+            res.status(202).json(mapEdited)
+        } catch (error) {
+            console.error('❌ postComment error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+        
+
+    }
+
     // Desabilitamos por ahora estas opciones para evitar problemas
     /*
     // creamos un nuevo mapa

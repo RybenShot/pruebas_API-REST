@@ -85,6 +85,43 @@ export class InvController {
         res.status(201).json(newInv)
     }
 
+    // get de los comentarios de un mapa
+    static async getComments (req, res) {
+        try {
+            const { id } = req.params
+            console.log('🔍 --- getComments --- recibid:', id);
+
+            const findInv = await InvModel.getComments( id )
+            if (!findInv) {
+                return res.status(404).json({ message: 'Investigador no encontrado' })
+            } 
+
+            res.status(202).json(findInv)
+        } catch (error) {
+            console.error('❌ getComments error :', error);
+            return res.status(500).json({ message: 'Error interno' }); 
+        }
+    }
+
+    // post para comentario sobre un mapa
+    static async postComment (req, res){
+        try {
+            const { idInv, idUser, comment} = req.body
+            console.log('🔍 --- postComment --- recibid:', { idInv, idUser, comment });
+
+            const invEdited = await InvModel.postComment({idInv, idUser, comment})
+
+            if (!invEdited) return res.status(404).json({ message: 'Investigador no encontrado' })
+            
+            res.status(202).json(invEdited)
+        } catch (error) {
+            console.error('❌ postComment error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+        
+
+    }
+
     static async deleteInv (req, res){
         // capturamos la id pasada por URL
         const {id} = req.params

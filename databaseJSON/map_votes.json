@@ -156,11 +156,17 @@
       {
         "idInv": 3,
         "idUser": "user_135",
-        "comment": "este investigador es muy bueno para este mapa",
-        "dateCreated": 1748510873997
+        "comment": "heyyy esto es un comentario",
+        "dateCreated": 1748539539867
       }
     ],
-    "comments": []
+    "comments": [
+      {
+        "idUser": "user_135",
+        "comment": "heyyy esto es un comentario",
+        "dateCreated": 1748539634519
+      }
+    ]
   },
   {
     "idMap": 8,
