@@ -38,6 +38,12 @@ mapsRouter.get('/invRecommended/:id', MapsController.getRecInv)
 // votacion de investigadores recomendados de un mapa
 mapsRouter.post('/invRecommended', MapsController.postRecInv)
 
+// get de los comentarios de un mapa
+mapsRouter.get('/comments/:id', MapsController.getComments)
+
+// post para comentario sobre un mapa
+mapsRouter.post('/comments', MapsController.postComment)
+
 
 // Desabilitamos por ahora estas opciones para evitar problemas
 // CREAMOS un nuevo mapa

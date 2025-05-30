@@ -22,6 +22,8 @@ export class MapModel{
         // si no se ha pasado expansion, devolvemos todos los mapas
         return mapsListJSON
     }
+
+    // retornamos todos los previews de los mapas
     static getPreviewMap () {
         // devolvemos todos los previews de los mapas
         return listPreviewMaps
@@ -309,8 +311,6 @@ export class MapModel{
         const map = mapVotesJSON.find(m => m.idMap == idMap)
         if (!map) return false
 
-        console.log("hemos encontrado el mapa: ", map)
-
         // 2. Asegurar campos
         if (typeof idMap !== 'number' || typeof idUser !== 'string' || typeof idInv !== 'number' || typeof comment !== 'string') {
             console.error('❌ model - postRecInv. Tipos de datos incorrectos:', { idMap, idUser, idInv, comment });
@@ -335,9 +335,55 @@ export class MapModel{
         // 4. Guardar el voto en el JSON de registro (mapVotesJSON ya contiene el voto actualizado)
         writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON, null, 2))
         return voteBlock;
+    }
 
+    // get de los comentarios de un mapa
+    static async getComments (idMap){
+        // buscamos el mapa por su id
+        const map = mapVotesJSON.find(map => map.idMap == idMap)
 
+        console.log("hemos encontrado el mapa: ", map)
         
+        if (!map) {
+            console.error('❌ No se ha encontrado el mapa con id:', idMap);
+            return false;
+        }
+        
+        return map.comments;
+    }
+
+    // post para comentario sobre un mapa
+    static async postComment({idMap, idUser, comment}){
+        console.log("hemos recivido los siguientes datos: ", idMap, idUser, comment)
+
+        // buscamos y capturamos el mapa en la base de datos de votaciones de mapas
+        const map = mapVotesJSON.find(map => map.idMap == idMap)
+        if (!map) return false
+
+        // 2. Asegurar campos
+        if (typeof idMap !== 'number' || typeof idUser !== 'string' || typeof comment !== 'string') {
+            console.error('❌ model - postComment. Tipos de datos incorrectos:', { idMap, idUser, comment });
+            return false;
+        }
+
+        // 3. Buscar o crear bloque de votos
+        // buscamos si el mismo usuario ha ha votado anterioremente el mismo investigador
+        let voteBlock = map.comments.find(vote => vote.idUser == idUser)
+        // si no existe el bloque lo creamos
+
+        console.log("hemos encontrado el bloque de comentarios: ", voteBlock)
+        if (!voteBlock) {
+            voteBlock = { idUser, comment, dateCreated: Date.now() }
+            map.comments.push(voteBlock)
+        } else {
+            // Si ya existe, actualizamos el comentario y la fecha
+            voteBlock.comment = comment;
+            voteBlock.dateCreated = Date.now();
+        }
+
+        // 4. Guardar el voto en el JSON de registro (mapVotesJSON ya contiene el voto actualizado)
+        writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON, null, 2))
+        return voteBlock;
     }
 
     // Desabilitamos por ahora estas opciones para evitar problemas

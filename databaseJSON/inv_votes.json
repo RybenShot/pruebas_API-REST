@@ -1,174 +1,230 @@
 [
   {
     "idInv": 0,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 1,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 2,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 3,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 4,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 5,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 6,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 7,
-    "votes": []
+    "votes": [
+      {
+        "idUser": "usert_2135",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748541135634
+      }
+    ],
+    "comments": [
+      {
+        "idUser": "user_135",
+        "comment": "adoro este investigador por su versatilidad",
+        "dateCreated": 1748541007761
+      }
+    ]
   },
   {
     "idInv": 8,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 9,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 10,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 11,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 12,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 13,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 14,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 15,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 16,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 17,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 18,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 19,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 20,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 21,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 22,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 23,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 24,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 25,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 26,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 27,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 28,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 29,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 30,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 31,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 32,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 33,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 34,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 35,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 36,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 37,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 38,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 39,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 40,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 41,
-    "votes": []
+    "votes": [],
+    "comments": []
   },
   {
     "idInv": 56,
-    "votes": []
+    "votes": [],
+    "comments": []
   }
 ]

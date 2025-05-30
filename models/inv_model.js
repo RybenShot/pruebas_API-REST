@@ -152,6 +152,55 @@ export class InvModel{
         return newInv
     }
 
+        // get de los comentarios de un investigador
+    static async getComments (idInv){
+        // buscamos el mapa por su id
+        const inv = invVotesJSON.find(inv => inv.idInv == idInv)
+
+        console.log("hemos encontrado el investigador: ", inv)
+        
+        if (!inv) {
+            console.error('❌ No se ha encontrado el investigador con id:', idInv);
+            return false;
+        }
+        
+        return inv.comments;
+    }
+
+    // post para comentario sobre un investigador
+    static async postComment({idInv, idUser, comment}){
+        console.log("hemos recivido los siguientes datos: ", idInv, idUser, comment)
+
+        // buscamos y capturamos el investigador en la base de datos de votaciones de investigadores
+        const inv = invVotesJSON.find(inv => inv.idInv == idInv)
+        if (!inv) return false
+
+        // 2. Asegurar campos
+        if (typeof idInv !== 'number' || typeof idUser !== 'string' || typeof comment !== 'string') {
+            console.error('❌ model - postComment. Tipos de datos incorrectos:', { idInv, idUser, comment });
+            return false;
+        }
+
+        // 3. Buscar o crear bloque de votos
+        // buscamos si el mismo usuario ha ha votado anterioremente el mismo investigador
+        let voteBlock = inv.comments.find(vote => vote.idUser == idUser)
+        // si no existe el bloque lo creamos
+
+        console.log("hemos encontrado el bloque de comentarios: ", voteBlock)
+        if (!voteBlock) {
+            voteBlock = { idUser, comment, dateCreated: Date.now() }
+            inv.comments.push(voteBlock)
+        } else {
+            // Si ya existe, actualizamos el comentario y la fecha
+            voteBlock.comment = comment;
+            voteBlock.dateCreated = Date.now();
+        }
+
+        // 4. Guardar el voto en el JSON de registro (invVotesJSON ya contiene el voto actualizado)
+        writeFileSync('databaseJSON/inv_votes.json', JSON.stringify(invVotesJSON, null, 2))
+        return voteBlock;
+    }
+
     static async deleteInv({id}){
         const invIndex = invListJSON.findIndex(inv => inv.id == id)
 

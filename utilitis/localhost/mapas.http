@@ -26,7 +26,7 @@ Content-Type: application/json
 ### Get tiempo estimado
 GET http://localhost:1234/maps/timeEstimated/7
 
-### llamada Like Dislike
+### POST tiempo estimado
 POST http://localhost:1234/maps/timeEstimated
 Content-Type: application/json
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 { 
     "idMap": 7,
     "idUser": "user_135",
-    "value": "heyyy esto es un comentario"
+    "comment": "heyyy esto es un comentario"
 }
 
 ### Crear un nuevo mapa

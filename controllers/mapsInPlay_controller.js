@@ -143,6 +143,7 @@ export class MapsInPlayController {
     static async getAllMapsByUser(req, res){
         try {
             const { id } = req.params
+            console.log('🔍 --- getAllMapsByUser --- recibid:', id);
 
             const findMaps = await MapInPlayModel.getAllMapsByUser({ id })
             if (!findMaps) return res.status(404).json({ message: 'No hay mapas creados por este usuario' })
