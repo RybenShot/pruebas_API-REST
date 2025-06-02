@@ -11,7 +11,7 @@ GET http://localhost:1234/maps?expansion=AHBase
 GET http://localhost:1234/maps/0
 
 ### Get numero de votos de un mapa likes - Dislikes
-GET http://localhost:1234/maps/likeDislike/0
+GET http://localhost:1234/maps/likeDislike/2
 
 ### llamada Like Dislike
 POST http://localhost:1234/maps/likeDislike

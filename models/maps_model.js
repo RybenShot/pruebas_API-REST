@@ -81,12 +81,15 @@ export class MapModel{
         const map = mapsListJSON.find(m => m.idMap == idMap)
         if (!map) return false
 
+
         //capturamos las votaciones de  likes y dislikes y el numero de votos
         const result = {
             likes : map.extraData.likes,
             dislikes: map.extraData.dislikes,
             NVotesLikeDislike: map.extraData.NVotesLikeDislike
         }
+
+        console.log("resultados de la votacion de like y dislike: ", result)
         
         return result;
     }

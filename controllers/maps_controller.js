@@ -83,7 +83,7 @@ export class MapsController {
             console.log('🔍 --- getLikeDislike --- recibid:', id);
 
             const findMap = await MapModel.getLikeDislike( id )
-            if (findMap) return res.status(404).json({ message: 'Mapa no encontrado' }) 
+            if (!findMap) return res.status(404).json({ message: 'Mapa no encontrado' }) 
             
             res.status(202).json(findMap)
         } catch (error) {

@@ -19,6 +19,18 @@
         "type": "likeDislike",
         "value": 1,
         "dateCreated": 1748195489969
+      },
+      {
+        "idUser": null,
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1748649109955
+      },
+      {
+        "idUser": 0,
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1748649164331
       }
     ],
     "invRec": [
@@ -114,7 +126,14 @@
   },
   {
     "idMap": 6,
-    "votes": [],
+    "votes": [
+      {
+        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748652421545
+      }
+    ],
     "invRec": [],
     "comments": []
   },
@@ -150,6 +169,12 @@
         "type": "likeDislike",
         "value": 1,
         "dateCreated": 1748516331057
+      },
+      {
+        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1748651393225
       }
     ],
     "invRec": [
@@ -170,7 +195,14 @@
   },
   {
     "idMap": 8,
-    "votes": [],
+    "votes": [
+      {
+        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748648929684
+      }
+    ],
     "invRec": [
       {
         "idInv": 3,
@@ -189,13 +221,44 @@
   },
   {
     "idMap": 10,
-    "votes": [],
+    "votes": [
+      {
+        "idUser": 666,
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1748645400460
+      },
+      {
+        "idUser": 1,
+        "type": "likeDislike",
+        "dateCreated": 1748646482488
+      },
+      {
+        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748648807838
+      },
+      {
+        "idUser": null,
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1748650279747
+      }
+    ],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 11,
-    "votes": [],
+    "votes": [
+      {
+        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1748648943217
+      }
+    ],
     "invRec": [],
     "comments": []
   },
@@ -219,6 +282,12 @@
         "type": "timeEstimated",
         "value": 274,
         "dateCreated": 1748254560673
+      },
+      {
+        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1748648914341
       }
     ],
     "invRec": [],
