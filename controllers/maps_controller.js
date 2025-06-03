@@ -174,7 +174,7 @@ export class MapsController {
             console.error('❌ postDifficultyMap error :', error);
             return res.status(500).json({ message: 'Error interno' });
         }
-    }
+    } 
 
     // PEDIMOS investigadores recomendados de un mapa
     static async getRecInv (req, res) {
@@ -197,10 +197,10 @@ export class MapsController {
     // votacion de investigadores recomendados de un mapa
     static async postRecInv (req, res){
         try {
-            const { idMap, idUser, idInv, comment} = req.body
-            console.log('🔍 --- postRecInv --- recibid:', { idMap, idUser, idInv, comment });
+            const { idMap, idUser, nameUser, idInv, nameInv,expansionInv, imgInv, comment} = req.body
+            console.log('🔍 --- postRecInv --- recibid:', { idMap, idUser, nameUser, idInv, nameInv,expansionInv, imgInv, comment });
 
-            const mapEdited = await MapModel.postRecInv({idMap, idUser, idInv, comment})
+            const mapEdited = await MapModel.postRecInv({idMap, idUser, nameUser, idInv, nameInv,expansionInv, imgInv, comment})
 
             if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
             

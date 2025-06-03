@@ -307,16 +307,24 @@ export class MapModel{
     }
 
     // votacion de investigadores recomendados de un mapa
-    static async postRecInv({idMap, idUser, idInv, comment}){
-        console.log("hemos recivido los siguientes datos: ", idMap, idUser, idInv, comment)
+    static async postRecInv({idMap, idUser, nameUser, idInv, nameInv, expansionInv, imgInv, comment}){
+        console.log("hemos recivido los siguientes datos: ", idMap, idUser, nameUser, idInv, nameInv,expansionInv, imgInv, comment)
 
         // buscamos y capturamos el mapa en la base de datos de votaciones de mapas
-        const map = mapVotesJSON.find(m => m.idMap == idMap)
+        const map = mapVotesJSON.find(map => map.idMap == idMap)
         if (!map) return false
 
         // 2. Asegurar campos
-        if (typeof idMap !== 'number' || typeof idUser !== 'string' || typeof idInv !== 'number' || typeof comment !== 'string') {
-            console.error('❌ model - postRecInv. Tipos de datos incorrectos:', { idMap, idUser, idInv, comment });
+        if (typeof idMap !== 'number' || 
+            typeof idUser !== 'string' ||
+            typeof nameUser !== 'string' ||
+            typeof idInv !== 'number' ||
+            typeof nameInv !== 'string' ||
+            typeof expansionInv !== 'string' ||
+            typeof imgInv !== 'string' ||
+            typeof comment !== 'string'
+            ) {
+            console.error('❌ model - postRecInv. Tipos de datos incorrectos:', { idMap, idUser, nameUser, idInv, nameInv,expansionInv, imgInv, comment });
             return false;
         }
 
@@ -327,7 +335,7 @@ export class MapModel{
 
         console.log("hemos encontrado el bloque de votos: ", voteBlock)
         if (!voteBlock) {
-            voteBlock = { idInv, idUser, comment, dateCreated: Date.now() }
+            voteBlock = { idUser, nameUser, idInv, nameInv,expansionInv, imgInv, comment, dateCreated: Date.now() }
             map.invRec.push(voteBlock)
         } else {
             // Si ya existe, actualizamos el comentario y la fecha

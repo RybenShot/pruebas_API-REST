@@ -1,49 +1,12 @@
 [
   {
     "idMap": 0,
-    "votes": [
-      {
-        "idUser": "retribution",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748195443737
-      },
-      {
-        "idUser": "user_2134",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748195479023
-      },
-      {
-        "idUser": "user_2135",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748195489969
-      },
-      {
-        "idUser": null,
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1748649109955
-      },
-      {
-        "idUser": 0,
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1748649164331
-      }
-    ],
-    "invRec": [
-      {
-        "idUser": "user_2135",
-        "dateCreated": 1748195489969,
-        "idInv": 23,
-        "comment": "Este investigador es la polla"
-      }
-    ],
+    "votes": [],
+    "invRec": [],
     "comments": [
       {
         "idUser": "user_2135",
+        "nameUser": "Pepe",
         "dateCreated": 1748195489969,
         "comment": "Este mapa es la polla"
       }
@@ -51,64 +14,19 @@
   },
   {
     "idMap": 1,
-    "votes": [
-      {
-        "idUser": 1,
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1747524148916
-      },
-      {
-        "idUser": 1,
-        "type": "timeEstimated",
-        "value": 143,
-        "dateCreated": 1747524148916
-      },
-      {
-        "idUser": 1,
-        "type": "difficulty",
-        "value": 4,
-        "dateCreated": 1747524148916
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 2,
-    "votes": [
-      {
-        "idUser": 2,
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1747524148916
-      },
-      {
-        "idUser": 2,
-        "type": "timeEstimated",
-        "value": 120,
-        "dateCreated": 1747524148916
-      },
-      {
-        "idUser": 2,
-        "type": "difficulty",
-        "value": 3,
-        "dateCreated": 1747524148916
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 3,
-    "votes": [
-      {
-        "idUser": "user_2135",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748246413035
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   },
@@ -126,91 +44,20 @@
   },
   {
     "idMap": 6,
-    "votes": [
-      {
-        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748652421545
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 7,
-    "votes": [
-      {
-        "idUser": "user_2135",
-        "type": "timeEstimated",
-        "value": 345,
-        "dateCreated": 1748257713741
-      },
-      {
-        "idUser": "user_1135",
-        "type": "timeEstimated",
-        "value": 145,
-        "dateCreated": 1748257729951
-      },
-      {
-        "idUser": "user_135",
-        "type": "difficulty",
-        "value": 3,
-        "dateCreated": 1748259673126
-      },
-      {
-        "idUser": "user_2135",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748516305441
-      },
-      {
-        "idUser": "usert_2135",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748516331057
-      },
-      {
-        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1748651393225
-      }
-    ],
-    "invRec": [
-      {
-        "idInv": 3,
-        "idUser": "user_135",
-        "comment": "heyyy esto es un comentario",
-        "dateCreated": 1748539539867
-      }
-    ],
-    "comments": [
-      {
-        "idUser": "user_135",
-        "comment": "heyyy esto es un comentario",
-        "dateCreated": 1748539634519
-      }
-    ]
+    "votes": [],
+    "invRec": [],
+    "comments": []
   },
   {
     "idMap": 8,
-    "votes": [
-      {
-        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748648929684
-      }
-    ],
-    "invRec": [
-      {
-        "idInv": 3,
-        "idUser": "user_135",
-        "comment": "este investigador es muy bueno para este mapa",
-        "dateCreated": 1748510852310
-      }
-    ],
+    "votes": [],
+    "invRec": [],
     "comments": []
   },
   {
@@ -221,75 +68,19 @@
   },
   {
     "idMap": 10,
-    "votes": [
-      {
-        "idUser": 666,
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1748645400460
-      },
-      {
-        "idUser": 1,
-        "type": "likeDislike",
-        "dateCreated": 1748646482488
-      },
-      {
-        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748648807838
-      },
-      {
-        "idUser": null,
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1748650279747
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 11,
-    "votes": [
-      {
-        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1748648943217
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 12,
-    "votes": [
-      {
-        "idUser": "user_2135",
-        "type": "timeEstimated",
-        "value": 174,
-        "dateCreated": 1748254560673
-      },
-      {
-        "idUser": "user2_2135",
-        "type": "timeEstimated",
-        "value": 374,
-        "dateCreated": 1748254560673
-      },
-      {
-        "idUser": "user3_2135",
-        "type": "timeEstimated",
-        "value": 274,
-        "dateCreated": 1748254560673
-      },
-      {
-        "idUser": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1748648914341
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   }
