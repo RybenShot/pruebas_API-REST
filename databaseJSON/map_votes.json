@@ -50,14 +50,39 @@
   },
   {
     "idMap": 7,
-    "votes": [],
+    "votes": [
+      {
+        "idUser": null,
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1749070259168
+      }
+    ],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 8,
-    "votes": [],
-    "invRec": [],
+    "votes": [
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "type": "likeDislike",
+        "value": -1,
+        "dateCreated": 1749070321493
+      }
+    ],
+    "invRec": [
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "idInv": 6,
+        "nameInv": "Calvin Wrigth",
+        "expansionInv": "AHBase",
+        "imgInv": "/img/1-inv/7-Calvin.jpg",
+        "comment": "prueba",
+        "dateCreated": 1749070329710
+      }
+    ],
     "comments": []
   },
   {
@@ -80,8 +105,26 @@
   },
   {
     "idMap": 12,
-    "votes": [],
-    "invRec": [],
+    "votes": [
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1749070298063
+      }
+    ],
+    "invRec": [
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "idInv": 33,
+        "nameInv": "Bob Jenkins",
+        "expansionInv": "AHComunity",
+        "imgInv": "/img/1-inv/34-Bob.jpg",
+        "comment": "prueba 2",
+        "dateCreated": 1749070307922
+      }
+    ],
     "comments": []
   }
 ]
