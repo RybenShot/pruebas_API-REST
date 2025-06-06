@@ -77,8 +77,8 @@
                 },
                 "back": {
                     "title": null,
-                    "story": "___",
-                    "text": "",
+                    "story": "Strange events are taking place all across Arkham. People from other eras stroll the streets, marveling at the peculiar architectural style of the buildings. Things happen without rhyme or reason. Issues of the Arkham Advertiser display inaccurate dates, as if they had been chosen at random. Figures dressed in robes glide through the shadows, and to your dismay, you believe they are following you.",
+                    "text": "Reveal cards from the bottom of the Monster deck until you draw a Cultist Monster. That Monster appears on the Street space closest to the Lead Investigator. Then shuffle the remaining cards from the top of the deck in a random order. Add card 5 to the Codex and return this card to the Archive.",
                     "doom": null,
                     "clue": null
                 }
@@ -108,15 +108,15 @@
             "en": {
                 "front": {
                     "title": null,
-                    "story": "___",
-                    "text": "___",
+                    "story": "Some of the mysteries have already been revealed: the notes written in your handwriting, the sense of familiarity, all of it is due to the timeline having been displaced. Right now there are no guarantees that effect will follow cause, but you are clear that this phenomenon is the consequence of an arcane ritual carried out by the sect whose trail you have been following through the city. You must find the place where the ritual has been performed, as well as the epicenter of the temporal disturbances, if you want to harbor the slightest hope of restoring normality. Armed with this new knowledge, you return to the streets of the city and try to ignore when the flowers close in their buds and the raindrops rise toward the clouds.",
+                    "text": "Take five tokens (one blue, one red and three white) and shuffle them face down. Place one face down at each of the following locations: the Arkham Advertiser, the Black Cave, Independence Square, the Uncharted Island and Velma’s Restaurant. Then turn this card over.",
                     "doom": null,
                     "clue": null
                 },
                 "back": {
-                    "title": "___",
-                    "story": "___",
-                    "text": "___",
+                    "title": "PROFANE RITUAL",
+                    "story": "You are unaware of the exact purpose of the sect’s ritual, but it is obvious that it is related to the temporal disturbances occurring throughout Arkham. If you wish to find out more, you will have to locate the place where the ritual was held.",
+                    "text": "Action: Reveal a token at your location and resolve the effect corresponding to its color: If the revealed token is white, you have found nothing of interest; discard the token. When the revealed token is blue, add card 6 to the Codex. (Do not remove this card from the Codex.) When the revealed token is red, if the barrier has been destroyed, add card 7 face down to the Codex. Otherwise, add that card to the Codex face up. (Do not remove this card from the Codex.) If both the blue and red tokens have been revealed, remove all other tokens from the board and return this card to the Archive.",
                     "doom": null,
                     "clue": null
                 }
@@ -124,15 +124,15 @@
             "es": {
                 "front": {
                     "title": null,
-                    "story": "____",
-                    "text": "___",
+                    "story": "Algunos de los misterios ya se han esclarecido: las notas escritas con vuestra letra, la sensación de familiaridad, todo ello se debe a que la línea temporal se ha dislocado. Ahora mismo no existen garantías de que el efecto suceda a la causa, pero tenéis claro que este fenómeno es la consecuencia de un ritual arcano perpetrado por la secta cuyo rastro habéis estado siguiendo por la ciudad. Tenéis que encontrar el lugar donde se ha llevado a cabo el ritual, así como el epicentro de las perturbaciones temporales, si queréis albergar la más mínima esperanza de restablecer la normalidad. Armados con este nuevo conocimiento, regresáis a las calles de la ciudad y tratáis de hacer caso omiso cuando las flores se encierran en sus capullos y las gotas de lluvia ascienden hacia las nubes.",
+                    "text": "Coge cinco indicadores (uno azul, uno rojo y tres blancos) y mézclalos boca abajo. Coloca uno boca abajo en las siguientes localizaciones: el Arkham Advertiser, la Cueva Negra, la Plaza de la Independencia, la Isla ignota y el Restaurante de Velma. Luego dale la vuelta a esta carta.",
                     "doom": null,
                     "clue": null
                 },
                 "back": {
-                    "title": "___",
-                    "story": "___",
-                    "text": "___",
+                    "title": "RITUAL PROFANO",
+                    "story": "Ignoráis el propósito exacto del ritual de la secta, pero es evidente que está relacionado con los desajustes temporales que se producen por toda Arkham. Si queréis averiguar más, tendréis que localizar el sitio donde se ha celebrado el ritual.",
+                    "text": "Acción: Muestra un indicador que esté en tu localización y resuelve el efecto que se corresponda con su color: Si el indicador mostrado es blanco, no has encontrado nada de interés; descarta el indicador. Cuando se muestre el indicador azul, añade al Códice la carta 6. (No quites esta carta del Códice.) Cuando se muestre el indicador rojo, si la barrera ha sido destruida, añade al Códice la carta 7 boca abajo. En caso contrario, añade esa carta al Códice boca arriba. (No quites esta carta del Códice.) Si ya se han mostrado los indicadores azul y rojo, quita todos los demás indicadores del tablero y devuelve esta carta al Archivo.",
                     "doom": null,
                     "clue": null
                 }
@@ -161,8 +161,8 @@
             },
             "es": {
                 "front": {
-                    "title": "___",
-                    "story": "____",
+                    "title": "Discontinuidad temporal",
+                    "story": "Los extraños fenomenos suscitan un miedo cada véz más generalizado. la gente (la que pertenece a la época actual  )",
                     "text": null,
                     "doom": "___",
                     "clue": "___"
