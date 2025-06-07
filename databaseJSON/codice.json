@@ -145,16 +145,16 @@
         "languages": {
             "en": {
                 "front": {
-                    "title": "___",
-                    "story": "___",
+                    "title": "Temporal Discontinuity",
+                    "story": "Strange phenomena inspire growing fear. People of the present age run from door to door, trying to avoid exposure to the leaden sky. All shutters are closed and shops shut before their usual hour. Despite time passing unconsciously, it feels draining to you.",
                     "text": null,
-                    "doom": "___",
-                    "clue": "___"
-                },
+                    "doom": "When there are at least seven Doom tokens on the Scenario sheet add cards 8 and 9 to the Codex then return this card to the Archive",
+                    "clue": "When there are at least three Clue tokens on the Scenario sheet add card 4 to the Codex if there are no tokens on the board (Do not remove this card from the Codex)"
+                    },
                 "back": {
                     "title": null,
-                    "story": "___",
-                    "text": "___",
+                    "story": "The wind rises as you intone the chant. The sky opens above you revealing the indescribable visage of the Demoniac Sultan. Your resolve falters but the ritual takes effect. The circle you drew in the street begins to glow and beams of light burst from the ground toward the heavens. Their intense radiance seals the dimensional breach, forcing Azathoth back to the Heart of Ultimate Chaos. Days later you still struggle to grasp the passage of time. You cannot recall when one day should end and the next begin and in a single blink your consciousness drifts through endless eternities. But life goes on until one morning as you read the newspaper over breakfast you notice a familiar note written in the margin in your own handwriting.",
+                    "text": "The investigators have won the game",
                     "doom": null,
                     "clue": null
                 }
@@ -162,15 +162,53 @@
             "es": {
                 "front": {
                     "title": "Discontinuidad temporal",
-                    "story": "Los extraños fenomenos suscitan un miedo cada véz más generalizado. la gente (la que pertenece a la época actual  )",
+                    "story": "Los extraños fenomenos suscitan un miedo cada véz más generalizado. la gente (la que pertenece a la época actual ) corre de puerta en puerta, procurando exponerse lo menos posible al cielo plomizo. Todas las persianas están echadas y las tiendas cierran antes de su hora. Pese a la inconsciencia con que transcurre el tiempo, a vosotros parece que os esté agotando.",
                     "text": null,
-                    "doom": "___",
-                    "clue": "___"
+                    "doom": "Cuando haya al mneos siete fichas de Perdición sobre la hoja de Escenario, añade al códice las cartas8 y 9 y luego devuelve esta carta al Archivo.",
+                    "clue": "Cuando haya al mneos tres fichas de Pista sobre la hoja de Escenario, añade al códice la carta 4 si no hay indicadores en el tablero. (No quites esta carta del Códice)."
                 },
                 "back": {
                     "title": null,
-                    "story": "___",
-                    "text": "___",
+                    "story": "El viento arrecia cuando entonáis el cántico. El cielo se abre sobre vosotros, revelando el indescriptible semblante del Sultán Demoniaco. Vuestra entereza flaquea, pero entonces el ritual surte efecto. El círculo que habéis dibujado en la calle empieza a brillar, y unos haces de luz brotan del suelo y salen disparados hacia el firmamento. Su intenso fulgor cauteriza la brecha dimensional hasta cerrarla, obligando a Azathoth a regresar al Centro del Caos Definitivo. Días después, aún tenéis dificultades para asimilar el paso del tiempo. No lográis recordar cuándo se supone que debe acabar un día y empezar el siguiente, y en lo que dura un simple parpadeo vuestra consciencia parece vagar a la deriva entre un sinfín de eternidades. Pero la vida sigue. Hasta que un buen día, leyendo el periódico mientras desayunáis, advertís una nota familiar escrita al margen con vuestra propia letra. ",
+                    "text": "¡Los investigadores han ganado la partida!",
+                    "doom": null,
+                    "clue": null
+                }
+            }
+        }
+    },
+    {"idCard": 6,
+        "expansion": "base",
+        "type": "normalText",
+        "languages": {
+            "en": {
+                "front": {
+                    "title": "The Ritual Site",
+                    "story": "The floor is covered with circles drawn in wax and chalk that intertwine sinuously. Skulls, bloodied bodies, and fetishes lie on stone slabs, on the walls, and on the floor. It is clear that some kind of mystical rite was performed here, and given the huge amount of blood involved its purpose was far from benevolent. Two robed figures advance toward you brandishing curved-blade daggers. This prompts you to reconsider the state of the ritual from “completed” to “in progress.”",
+                    "text": "The space containing the blue token is the “ritual site.” Reveal cards from the bottom of the Monster deck until you draw two Cultist Monsters. Those Monsters spawn at the ritual site. Then shuffle the remaining cards onto the top of the deck in random order. Action You may remove five Clues from the Scenario sheet to interrupt the ritual. If you do remove the blue token from the board and flip this card. This action can only be performed at the ritual site",
+                    "doom": null,
+                    "clue": null
+                },
+                "back": {
+                    "title": "Barrier Destroyed",
+                    "story": "When you undo the final ritual circle the magic suffusing the place flashes brightly and is consumed completely. Nothing remains of the ceremony but decomposing flesh and shattered artifacts. As you survey your work several horn flies alight on the flesh, shrink back into larvae, and crawl into their eggs. The temporal flow has not been restored so the danger remains. You seize one of the surviving cultists and try to glean meaning from his ravings. This ritual was not the source of the disaster; its sole purpose was to keep you away from the place where Azathoth’s summoning will take place",
+                    "text": "The barrier has been destroyed (Do not remove this card from the Codex)",
+                    "doom": null,
+                    "clue": null
+                }
+            },
+            "es": {
+                "front": {
+                    "title": "EL LUGAR DEL RITUAL",
+                    "story": "El suelo está cubierto de círculos trazados con cera y tiza que se entrecruzan sinuosamente. Hay calaveras, cuerpos sanguinolentos y fetiches dispuestos sobre losas de piedra, en las paredes y en el suelo. Es evidente que aquí se ha celebrado algún tipo de rito místico, y a juzgar por la ingente cantidad de sangre implicada, su propósito distaba mucho de ser benévolo. Dos figuras con túnicas avanzan hacia vosotros blandiendo puñales de hojas curvas. Esto hace que os replanteéis el estado del ritual de “celebrado” a “en curso”.",
+                    "text": "El espacio que contiene el indicador azul es el “lugar del ritual”. Muestra cartas de la parte inferior del mazo de Monstruos hasta que saques dos Monstruos Sectario. Estos Monstruos aparecen en el lugar del ritual. Luego coloca las demás cartas en la parte superior del mazo en un orden aleatorio. Acción: Puedes quitar cinco Pistas de la hoja de Escenario para interrumpir el ritual. Si lo haces, quita el indicador azul del tablero y dale la vuelta a esta carta. Esta acción sólo puede realizarse en el lugar del ritual.",
+                    "doom": null,
+                    "clue": null
+                },
+                "back": {
+                    "title": "BARRERA DESTRUIDA",
+                    "story": "Al deshacer el último círculo ritual, la magia que impregna el lugar produce un intenso destello y se consume totalmente. Nada queda ya del ceremonial salvo carne en descomposición y artefactos destrozados. Pero mientras contempláis vuestra labor, varios moscardones se posan sobre la carne, se encogen hasta transformarse de nuevo en larvas y vuelven a introducirse en sus huevos. ¡El flujo temporal no se ha restablecido, por tanto aún no ha pasado el peligro! Agarraís a uno de los sectarios supervivientes y tratáis de arrancar algún significado a sus desvaríos. Este ritual no era el origen del desastre; ¡su único propósito consistía en manteneros alejados del lugar donde se llevará a cabo la invocación de Azathoth!",
+                    "text": "La barrera ha sido destruida. (No quites esta carta del Códice.)",
                     "doom": null,
                     "clue": null
                 }
