@@ -234,10 +234,10 @@ export class MapsController {
     // post para comentario sobre un mapa
     static async postComment (req, res){
         try {
-            const { idMap, idUser, comment} = req.body
-            console.log('🔍 --- postComment --- recibid:', { idMap, idUser, comment });
+            const { idMap, idUser, nameUser, comment} = req.body
+            console.log('🔍 --- postComment --- recibid:', { idMap, idUser, nameUser, comment });
 
-            const mapEdited = await MapModel.postComment({idMap, idUser, comment})
+            const mapEdited = await MapModel.postComment({idMap, idUser, nameUser, comment})
 
             if (!mapEdited) return res.status(404).json({ message: 'Mapa no encontrado' })
             

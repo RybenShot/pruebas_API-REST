@@ -21,8 +21,8 @@
       "NVotesLikeDislike": 0,
       "timeEstimated": 0,
       "NVotestime": 0,
-      "difficulty": 1,
-      "NVotesDifficulty": 12
+      "difficulty": 0,
+      "NVotesDifficulty": 0
     },
     "enemies": [
       0,
@@ -824,13 +824,13 @@
       "empty": 1
     },
     "extraData": {
-      "likes": 1,
+      "likes": 0,
       "dislikes": 0,
-      "NVotesLikeDislike": 1,
-      "timeEstimated": 245,
-      "NVotestime": 2,
-      "difficulty": 3,
-      "NVotesDifficulty": 2
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
     },
     "enemies": [
       37,
@@ -931,8 +931,8 @@
     },
     "extraData": {
       "likes": 0,
-      "dislikes": 1,
-      "NVotesLikeDislike": 1,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0,
       "timeEstimated": 0,
       "NVotestime": 0,
       "difficulty": 0,
@@ -1399,11 +1399,11 @@
       "empty": 2
     },
     "extraData": {
-      "likes": 1,
+      "likes": 0,
       "dislikes": 0,
-      "NVotesLikeDislike": 1,
-      "timeEstimated": 270,
-      "NVotestime": 12,
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
       "difficulty": 0,
       "NVotesDifficulty": 0
     },

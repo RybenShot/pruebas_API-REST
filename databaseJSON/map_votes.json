@@ -3,20 +3,7 @@
     "idMap": 0,
     "votes": [],
     "invRec": [],
-    "comments": [
-      {
-        "idUser": "user_2135",
-        "nameUser": "Pepe",
-        "dateCreated": 1748195489969,
-        "comment": "Este mapa es la polla"
-      },
-      {
-        "idUser": "user_2135",
-        "nameUser": "Pepe",
-        "dateCreated": 1748195489969,
-        "comment": "Este mapa es la polla"
-      }
-    ]
+    "comments": []
   },
   {
     "idMap": 1,
@@ -56,39 +43,14 @@
   },
   {
     "idMap": 7,
-    "votes": [
-      {
-        "idUser": null,
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1749070259168
-      }
-    ],
+    "votes": [],
     "invRec": [],
     "comments": []
   },
   {
     "idMap": 8,
-    "votes": [
-      {
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "type": "likeDislike",
-        "value": -1,
-        "dateCreated": 1749070321493
-      }
-    ],
-    "invRec": [
-      {
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "nameUser": "rybenshot",
-        "idInv": 6,
-        "nameInv": "Calvin Wrigth",
-        "expansionInv": "AHBase",
-        "imgInv": "/img/1-inv/7-Calvin.jpg",
-        "comment": "prueba",
-        "dateCreated": 1749070329710
-      }
-    ],
+    "votes": [],
+    "invRec": [],
     "comments": []
   },
   {
@@ -100,7 +62,18 @@
   {
     "idMap": 10,
     "votes": [],
-    "invRec": [],
+    "invRec": [
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "idInv": 5,
+        "nameInv": "Rex Murphy",
+        "expansionInv": "AHBase",
+        "imgInv": "/img/1-inv/6-Rex.jpg",
+        "comment": "este es maravilloso",
+        "dateCreated": 1749388204105
+      }
+    ],
     "comments": []
   },
   {
@@ -111,26 +84,8 @@
   },
   {
     "idMap": 12,
-    "votes": [
-      {
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "type": "likeDislike",
-        "value": 1,
-        "dateCreated": 1749070298063
-      }
-    ],
-    "invRec": [
-      {
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "nameUser": "rybenshot",
-        "idInv": 33,
-        "nameInv": "Bob Jenkins",
-        "expansionInv": "AHComunity",
-        "imgInv": "/img/1-inv/34-Bob.jpg",
-        "comment": "prueba 2",
-        "dateCreated": 1749070307922
-      }
-    ],
+    "votes": [],
+    "invRec": [],
     "comments": []
   }
 ]

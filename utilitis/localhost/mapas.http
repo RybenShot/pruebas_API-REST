@@ -73,6 +73,7 @@ Content-Type: application/json
 { 
     "idMap": 7,
     "idUser": "user_135",
+    "nameUser": "theGod",
     "comment": "heyyy esto es un comentario"
 }
 

@@ -364,16 +364,16 @@ export class MapModel{
     }
 
     // post para comentario sobre un mapa
-    static async postComment({idMap, idUser, comment}){
-        console.log("hemos recivido los siguientes datos: ", idMap, idUser, comment)
+    static async postComment({idMap, idUser, nameUser, comment}){
+        console.log("hemos recivido los siguientes datos: ", idMap, idUser, nameUser, comment)
 
         // buscamos y capturamos el mapa en la base de datos de votaciones de mapas
         const map = mapVotesJSON.find(map => map.idMap == idMap)
         if (!map) return false
 
         // 2. Asegurar campos
-        if (typeof idMap !== 'number' || typeof idUser !== 'string' || typeof comment !== 'string') {
-            console.error('❌ model - postComment. Tipos de datos incorrectos:', { idMap, idUser, comment });
+        if (typeof idMap !== 'number' || typeof idUser !== 'string' || typeof nameUser !== 'string' || typeof comment !== 'string') {
+            console.error('❌ model - postComment. Tipos de datos incorrectos:', { idMap, idUser, nameUser, comment });
             return false;
         }
 
@@ -384,7 +384,7 @@ export class MapModel{
 
         console.log("hemos encontrado el bloque de comentarios: ", voteBlock)
         if (!voteBlock) {
-            voteBlock = { idUser, comment, dateCreated: Date.now() }
+            voteBlock = { idUser, nameUser, comment, dateCreated: Date.now() }
             map.comments.push(voteBlock)
         } else {
             // Si ya existe, actualizamos el comentario y la fecha
