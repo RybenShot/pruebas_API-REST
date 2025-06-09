@@ -3224,5 +3224,156 @@
         ]
       }
     }
+  },
+  {
+    "idInv": 57,
+    "isActive": true,
+    "expansion": "AHOriginal",
+    "name": "Lola",
+    "position": "Prostituta",
+    "effect1": "Noche de trabajo: en cada fase de encuentros puedes conseguir 4 dólares, pero al final debes tirar un dado; el resultado menos 1 será la vida que pierdes.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'La noche pertenece a las sombras.'",
+    "theStory": "Lola nunca olvidará la noche en que su madre murió. Tenía 17 años y acababa de cerrar la puerta de su piso cuando escuchó un portazo en el cuartucho contiguo, el “lugar de trabajo” de su madre. Tras un silencio sepulcral salió al pasillo y, al no encontrarla, corrió al callejón donde se había formado una turba horrorizada: gritos, vómitos y rostros desencajados. Al asomarse vio el cuerpo de su madre convertido en una grotesca sopa de órganos y sangre. En su mano izquierda brillaba aún una pequeña bolsita de tela negra, rota y vacía, y faltaba el reloj de oro de 13 horas que le había regalado. Entonces sintió, por un instante, una presencia oscura al fondo del callejón: la forma amorfa de un demonio. Desde ese día, Lola sabe que hay fuerzas terribles tras el velo de lo humano, y que ella sola debe valerse en un mundo que apenas la considera algo más que un objeto. ",
+    "focusLimit": 2,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/56-Lola.png",
+    "atributes": {
+      "life": 6,
+      "sanity": 6,
+      "lore": 3,
+      "influence": 4,
+      "observation": 4,
+      "strength": 3,
+      "will": 3,
+      "money": 3,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "Survivor",
+        "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+      },
+      {
+        "rol": "Seeker",
+        "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+      }
+    ],
+    "possessions": {
+      "required": [
+        70,
+        71
+      ],
+      "optionalText": "Puedes elegir uno de los siguientes objetos",
+      "optional": [
+        72,
+        73
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
+    },
+    "translations": {
+      "es": {
+        "name": "Lola",
+        "position": "Prostituta",
+        "effect1": "Noche de trabajo: en cada fase de encuentros puedes conseguir 4 dólares, pero al final debes tirar un dado; el resultado menos 1 será la vida que pierdes.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'La noche pertenece a las sombras.'",
+        "theStory": "Lola nunca olvidará la noche en que su madre murió. Tenía 17 años y acababa de cerrar la puerta de su piso cuando escuchó un portazo en el cuartucho contiguo, el “lugar de trabajo” de su madre. Tras un silencio sepulcral salió al pasillo y, al no encontrarla, corrió al callejón donde se había formado una turba horrorizada: gritos, vómitos y rostros desencajados. Al asomarse vio el cuerpo de su madre convertido en una grotesca sopa de órganos y sangre. En su mano izquierda brillaba aún una pequeña bolsita de tela negra, rota y vacía, y faltaba el reloj de oro de 13 horas que le había regalado. Entonces sintió, por un instante, una presencia oscura al fondo del callejón: la forma amorfa de un demonio. Desde ese día, Lola sabe que hay fuerzas terribles tras el velo de lo humano, y que ella sola debe valerse en un mundo que apenas la considera algo más que un objeto.",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Superviviente",
+            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
+          },
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "idInv": 58,
+    "isActive": true,
+    "expansion": "AHOriginal",
+    "name": "William O'Donel",
+    "position": "Detective Privado",
+    "effect1": "Recoge lo que siembras: tras cada encuentro puedes gastar 1 concentración para repetir cualquier prueba; si lo haces, recibes 1 punto de horror.",
+    "effect2": null,
+    "effect3": null,
+    "phrase": "'Todo fin justifica los medios.'",
+    "theStory": "William O'Donel sirvió en la Gran Guerra, donde vio horrores que marcaron su cuerpo y su mente. Sobrevivió al fuego enemigo, a los ácidos que le quemaron el brazo derecho y al hambre: las ratas devoraban a sus compañeros caídos. Al volver a Arkham, encontró consuelo en resolver pequeños casos para gente adinerada… hasta que una noche descubrió a Rex Murphy y Rosalín Parks urdiendo negocios turbios en los bajos fondos. Con contactos en la universidad y en los tugurios, William se ganó pronto fama de implacable: aplica su propia ley en su oficina junto al Memorial de Arkham, donde guarda con celo una fotografía de su camarada muerto mirando al horizonte. En una ocasión se enfrentó a un culto de ghouls en un desván y se topó con un oráculo del caos que le dejó el “sacrificio” marcado en el pecho. Desde entonces, avanza frío y calculador, convencido de que cada caso podría ser el ultimo.",
+    "focusLimit": 3,
+    "locutionURL": "___",
+    "imgInv": "/img/1-inv/57-William.png",
+    "atributes": {
+      "life": 6,
+      "sanity": 4,
+      "lore": 4,
+      "influence": 2,
+      "observation": 4,
+      "strength": 3,
+      "will": 2,
+      "money": 3,
+      "remnant": 0,
+      "clue": 0
+    },
+    "rol": [
+      {
+        "rol": "Seeker",
+        "description": "Eres un intrépido investigador. Debes concentrarte en obtener Pistas y descifrar su significado oculto para desbaratar los planes de los Primigenios."
+      },
+      {
+        "rol": "Expert",
+        "description": "Posees habilidades únicas que te permiten especializarte en tareas complejas. Tu método frío y pragmático te ayuda a resolver pruebas difíciles sin vacilar."
+      }
+    ],
+    "possessions": {
+      "required": [
+        74
+      ],
+      "optionalText": "Puedes elegir uno de los siguientes objetos",
+      "optional": [
+        75,
+        76
+      ]
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0
+    },
+    "translations": {
+      "es": {
+        "name": "William O'Donel",
+        "position": "Detective Privado",
+        "effect1": "Recoge lo que siembras: tras cada encuentro puedes gastar 1 concentración para repetir cualquier prueba; si lo haces, recibes 1 punto de horror.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Todo fin justifica los medios.'",
+        "theStory": "William O'Donel sirvió en la Gran Guerra, donde vio horrores que marcaron su cuerpo y su mente. Sobrevivió al fuego enemigo, a los ácidos que le quemaron el brazo derecho y al hambre: las ratas devoraban a sus compañeros caídos. Al volver a Arkham, encontró consuelo en resolver pequeños casos para gente adinerada… hasta que una noche descubrió a Rex Murphy y Rosalín Parks urdiendo negocios turbios en los bajos fondos. Con contactos en la universidad y en los tugurios, William se ganó pronto fama de implacable: aplica su propia ley en su oficina junto al Memorial de Arkham, donde guarda con celo una fotografía de su camarada muerto mirando al horizonte. En una ocasión se enfrentó a un culto de ghouls en un desván y se topó con un oráculo del caos que le dejó el “sacrificio” marcado en el pecho. Desde entonces, avanza frío y calculador, convencido de que cada acción tendrá su consecuencia.",
+        "focusLimit": 3,
+        "locutionURL": "___",
+        "rol": [
+          {
+            "rol": "Buscador",
+            "description": "Eres un intrépido investigador. Debes concentrarte en obtener Pistas y descifrar su significado oculto para desbaratar los planes de los Primigenios."
+          },
+          {
+            "rol": "Experto",
+            "description": "Posees habilidades únicas que te permiten especializarte en tareas complejas. Tu método frío y pragmático te ayuda a resolver pruebas difíciles sin vacilar."
+          }
+        ]
+      }
+    }
   }
 ]

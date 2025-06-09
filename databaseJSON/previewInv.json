@@ -1030,5 +1030,41 @@
           "position": "El resucitado"
         }
       }
+    },
+    {"idInv": 57,
+      "isActive": true,
+      "name": "Lola",
+      "position": "Prostitute",
+      "rol": ["survivor", "seeker"],
+      "expansion": "AHOriginal",
+      "baseData":{
+        "life": 6,
+        "sanity": 6
+      },
+      "imgInv": "/img/1-inv/56-Lola.png",
+      "translations": {
+        "es": {
+          "name": "Lola",
+          "position": "Prostituta"
+        }
+      }
+    },
+    {"idInv": 58,
+      "isActive": true,
+      "name": "William O'Donel",
+      "position": "Detective private",
+      "rol": ["rogue", "seeker"],
+      "expansion": "AHOriginal",
+      "baseData":{
+        "life": 6,
+        "sanity": 4
+      },
+      "imgInv": "/img/1-inv/57-William.png",
+      "translations": {
+        "es": {
+          "name": "William O'Donel",
+          "position": "Detective Privado"
+        }
+      }
     }
 ]
