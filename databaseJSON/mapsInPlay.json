@@ -1,6 +1,6 @@
 [
   {
-    "id": "5fd4dabb-3c6d-4b26-a399-40f71c23f4b9",
+    "id": "58d07cf8-1efe-49ca-b61c-073945dd7688",
     "idMap": 0,
     "title": "The Arrival of Azathoth",
     "description": "In the heart of infinity dwells the lethargic Azathoth, lulled by the incessant notes of ominous flutes. But there are mortals who wish to invoke the immeasurable power and calamity of the Blind and Idiot God, even if it means condemning humanity ...",
@@ -40,9 +40,9 @@
         "textSpecialEnemies": null
       }
     },
-    "fechaDeInicio": 1747524148916,
-    "lastEddited": 1747524148916,
-    "IDUserHost": "user_2x7xEnynmyhmhzohJt9DkXtEYuF",
+    "fechaDeInicio": 1747577525934,
+    "lastEddited": 1747577525934,
+    "IDUserHost": "user_2xGvzHhMUgrrNnaQgJdPD8FRxoF",
     "mythosReserveInPlay": [
       {
         "type": "doom",
@@ -62,6 +62,121 @@
       },
       {
         "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "1e092e82-8c98-4f1d-9b16-bee1ea8f9c59",
+    "idMap": 0,
+    "title": "The Arrival of Azathoth",
+    "description": "In the heart of infinity dwells the lethargic Azathoth, lulled by the incessant notes of ominous flutes. But there are mortals who wish to invoke the immeasurable power and calamity of the Blind and Idiot God, even if it means condemning humanity ...",
+    "initialSpace": "Train Station",
+    "retribution": "For each Cultist Monster, place a Doom token in its space. (If it is in a street space, the Doom token is placed in an adjacent Neighborhood space.)",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa1.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La llegada de Azathoth",
+        "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+        "initialSpace": "Estación de trenes",
+        "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747577587476,
+    "lastEddited": 1747577587476,
+    "IDUserHost": "user_2xGvzHhMUgrrNnaQgJdPD8FRxoF",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": true
+      },
+      {
+        "type": "clues",
         "reveal": true
       },
       {
@@ -77,8 +192,8 @@
         "reveal": false
       },
       {
-        "type": "empty",
-        "reveal": false
+        "type": "retribution",
+        "reveal": true
       },
       {
         "type": "empty",
@@ -86,6 +201,104 @@
       },
       {
         "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 3
+    }
+  },
+  {
+    "id": "9576d1b4-4f22-4d36-8966-7ea700e57cc8",
+    "idMap": 12,
+    "title": "The Dead Scream",
+    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
+    "initialSpace": "Train Station",
+    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
+    "mythosReserve": {
+      "doom": 4,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 2
+    },
+    "enemies": [
+      1,
+      75,
+      16,
+      82,
+      14,
+      3,
+      80,
+      13,
+      74,
+      86,
+      77,
+      76,
+      81
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Los muertos gritan",
+        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
+        "initialSpace": "Estación de Trenes",
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747578266040,
+    "lastEddited": 1747578266040,
+    "IDUserHost": "user_2xGwZNd8bq2WxNzGWTm5XLkdiAm",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
         "reveal": false
       },
       {
@@ -93,20 +306,475 @@
         "reveal": false
       },
       {
-        "type": "empty",
-        "reveal": false
-      },
-      {
-        "type": "empty",
-        "reveal": false
-      },
-      {
         "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
         "reveal": false
       }
     ],
     "variables": {
       "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "2daf30a4-faf2-4477-80d3-4eac64d8cb3f",
+    "idMap": 12,
+    "title": "The Dead Scream",
+    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
+    "initialSpace": "Train Station",
+    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
+    "mythosReserve": {
+      "doom": 4,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 2
+    },
+    "enemies": [
+      1,
+      75,
+      16,
+      82,
+      14,
+      3,
+      80,
+      13,
+      74,
+      86,
+      77,
+      76,
+      81
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Los muertos gritan",
+        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
+        "initialSpace": "Estación de Trenes",
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747578376284,
+    "lastEddited": 1747578376284,
+    "IDUserHost": "user_2xGwZNd8bq2WxNzGWTm5XLkdiAm",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": true
+      },
+      {
+        "type": "doom",
+        "reveal": true
+      },
+      {
+        "type": "doom",
+        "reveal": true
+      },
+      {
+        "type": "doom",
+        "reveal": true
+      },
+      {
+        "type": "enemies",
+        "reveal": true
+      },
+      {
+        "type": "enemies",
+        "reveal": true
+      },
+      {
+        "type": "clues",
+        "reveal": true
+      },
+      {
+        "type": "clues",
+        "reveal": true
+      },
+      {
+        "type": "newspaper",
+        "reveal": true
+      },
+      {
+        "type": "newspaper",
+        "reveal": true
+      },
+      {
+        "type": "explosion",
+        "reveal": true
+      },
+      {
+        "type": "retribution",
+        "reveal": true
+      },
+      {
+        "type": "empty",
+        "reveal": true
+      },
+      {
+        "type": "empty",
+        "reveal": true
+      },
+      {
+        "type": "doom",
+        "reveal": true
+      },
+      {
+        "type": "clues",
+        "reveal": true
+      },
+      {
+        "type": "explosion",
+        "reveal": true
+      },
+      {
+        "type": "retribution",
+        "reveal": true
+      },
+      {
+        "type": "newspaper",
+        "reveal": true
+      },
+      {
+        "type": "enemies",
+        "reveal": true
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "52980d31-78f7-4aef-9bc3-f8e881e55e20",
+    "idMap": 0,
+    "title": "The Arrival of Azathoth",
+    "description": "In the heart of infinity dwells the lethargic Azathoth, lulled by the incessant notes of ominous flutes. But there are mortals who wish to invoke the immeasurable power and calamity of the Blind and Idiot God, even if it means condemning humanity ...",
+    "initialSpace": "Train Station",
+    "retribution": "For each Cultist Monster, place a Doom token in its space. (If it is in a street space, the Doom token is placed in an adjacent Neighborhood space.)",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa1.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La llegada de Azathoth",
+        "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+        "initialSpace": "Estación de trenes",
+        "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747578979861,
+    "lastEddited": 1747578979861,
+    "IDUserHost": "user_2xGvwQk0d8TbN9WJ45KKJh1jHiZ",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "b6d28578-88e3-4452-a99a-8c42ceb51777",
+    "idMap": 0,
+    "title": "The Arrival of Azathoth",
+    "description": "In the heart of infinity dwells the lethargic Azathoth, lulled by the incessant notes of ominous flutes. But there are mortals who wish to invoke the immeasurable power and calamity of the Blind and Idiot God, even if it means condemning humanity ...",
+    "initialSpace": "Train Station",
+    "retribution": "For each Cultist Monster, place a Doom token in its space. (If it is in a street space, the Doom token is placed in an adjacent Neighborhood space.)",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa1.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La llegada de Azathoth",
+        "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+        "initialSpace": "Estación de trenes",
+        "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1747909010441,
+    "lastEddited": 1747909010441,
+    "IDUserHost": "user_2xRlrTjydJlwd0cmcvx016orvxs",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "4f3d8cb0-a3de-4c54-bce2-7ef6eb990de4",
+    "idMap": 0,
+    "title": "The Arrival of Azathoth",
+    "description": "In the heart of infinity dwells the lethargic Azathoth, lulled by the incessant notes of ominous flutes. But there are mortals who wish to invoke the immeasurable power and calamity of the Blind and Idiot God, even if it means condemning humanity ...",
+    "initialSpace": "Train Station",
+    "retribution": "For each Cultist Monster, place a Doom token in its space. (If it is in a street space, the Doom token is placed in an adjacent Neighborhood space.)",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "enemies": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa1.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG1MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La llegada de Azathoth",
+        "description": "En el corazón del infinito mora el aletargado Azathoth, arrullado por las incesantes notas de funestas flautas. Pero hay mortales que desean invocar el poder y la calamidad inconmensurables del Dios Ciego e Idiota, aunque ello suponga condenar a la humanidad ...",
+        "initialSpace": "Estación de trenes",
+        "retribution": "Por cada Monstruo Sectario, coloca una ficha de Perdición en su espacio. (Si está en un espacio de calle, la ficha de perdición se coloca en un espacio de Barrio adyacente.)",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1748825810473,
+    "lastEddited": 1748825810473,
+    "IDUserHost": "user_2xvk79j4DnVKKwtROQAPi41Tji0",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 3,
       "clues": 0
     }
   }
