@@ -12,6 +12,7 @@ mapsInPlayRouter.get('/:id/getMithToken',  MapsInPlayController.getMithToken)
 mapsInPlayRouter.get('/:id/ressetMithReserve',  MapsInPlayController.ressetMithReserve)
 // CREAMOS un nuevo mapa
 mapsInPlayRouter.post('/', MapsInPlayController.createNewMap )
+
 // BORRAMOS un mapa
 mapsInPlayRouter.post('/deleteMapInPlay', MapsInPlayController.deleteMap )
 

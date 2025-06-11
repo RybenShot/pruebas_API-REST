@@ -83,6 +83,7 @@ export class MapInPlayModel{
       initialSpace: baseMap.initialSpace,
       retribution: baseMap.retribution,
       mythosReserve: { ...baseMap.mythosReserve },
+      extraData: {...baseMap.extraData},
       enemies: baseMap.enemies,
       textSpecialEnemies: baseMap.textSpecialEnemies,
       specialEnemies: baseMap.specialEnemies,
@@ -116,18 +117,20 @@ export class MapInPlayModel{
     // borramos un mapa
     static async deleteMap(body){
         console.log('🔍 --- deleteMap --- recibid:', body);
-
-        if (body.password !== '666') {
-          console.warn('⚠️ contraseña incorrecta:', body.password);
-          return false;
-        }
-      
         const mapIndex = listMapsInPlay.findIndex(map => map.id === body.id);
+
         if (mapIndex === -1) {
           console.warn('⚠️ id del mapa no encontrado:', body.id);
           return false;
         }
 
+        const map = listMapsInPlay.find(map => map.id == body.id);
+
+        if (body.IDUserHost !== map.IDUserHost) {
+          console.warn('⚠️ contraseña incorrecta:', body.password);
+          return false;
+        }
+      
         listMapsInPlay.splice(mapIndex, 1)
         this._saveAll()
         

@@ -88,7 +88,7 @@ export class MapsInPlayController {
                 // o bien contraseña incorrecta, o id no existe
                 return res
                 .status(404)
-                .json({ message: 'Mapa in Play no encontrado o contraseña incorrecta' });
+                .json({ message: 'Mapa in Play no encontrado o no tienes permiso para borrar el mapa.' });
             }
             // si llega hasta aqui, esque se ha eliminado correctamente el mapa in play
             return res.json({ message: 'Mapa in Play eliminado' });

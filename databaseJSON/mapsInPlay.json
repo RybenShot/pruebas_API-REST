@@ -777,5 +777,124 @@
       "dooms": 3,
       "clues": 0
     }
+  },
+  {
+    "id": "0ffa4c2d-9a49-43ea-9d03-76ceb2f4ec01",
+    "idMap": 12,
+    "title": "The Dead Scream",
+    "description": "An ancient magic has torn the veil that protects Arkham from the worlds beyond. Terrible creatures emerge from the Underdark to threaten everything you hold dear.",
+    "initialSpace": "Train Station",
+    "retribution": "Place an Ally card face down in the street closest to the unstable space; then, a Monster appears in the unstable space.",
+    "mythosReserve": {
+      "doom": 4,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 2
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
+    },
+    "enemies": [
+      1,
+      75,
+      16,
+      82,
+      14,
+      3,
+      80,
+      13,
+      74,
+      86,
+      77,
+      76,
+      81
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa13.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG13MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Los muertos gritan",
+        "description": "Una antigua magia ha rasgado el velo que protege Arkham de los mundos que hay más allá. Terribles criaturas surgen del Mundo subterraneo para amenazar todo lo que te importa.",
+        "initialSpace": "Estación de Trenes",
+        "retribution": "Coloca una carta de Aliado boca abajo en la calle más cercana al espacio inestable; luego aparece un Mosntruo en el espacio inestable.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1749646735447,
+    "lastEddited": 1749646735447,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
   }
 ]

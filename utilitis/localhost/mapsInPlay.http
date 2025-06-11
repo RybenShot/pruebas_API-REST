@@ -29,8 +29,8 @@ POST http://localhost:1234/mapInPlay/deleteMapInPlay
 Content-Type:application/json
 
 {
-    "id" : "2df273fc-5252-4303-aa39-1ba9331ffb42",
-    "password": "666"
+    "id" : "20d25f05-2ec4-4e6f-ba31-d8a0fe1c27a3",
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq"
     
 }
 
