@@ -379,18 +379,8 @@ export class MapModel{
 
         // 3. Buscar o crear bloque de votos
         // buscamos si el mismo usuario ha ha votado anterioremente el mismo investigador
-        let voteBlock = map.comments.find(vote => vote.idUser == idUser)
-        // si no existe el bloque lo creamos
-
-        console.log("hemos encontrado el bloque de comentarios: ", voteBlock)
-        if (!voteBlock) {
-            voteBlock = { idUser, nameUser, comment, dateCreated: Date.now() }
-            map.comments.push(voteBlock)
-        } else {
-            // Si ya existe, actualizamos el comentario y la fecha
-            voteBlock.comment = comment;
-            voteBlock.dateCreated = Date.now();
-        }
+        let voteBlock = { idUser, nameUser, comment, dateCreated: Date.now() }
+        map.comments.push(voteBlock)
 
         // 4. Guardar el voto en el JSON de registro (mapVotesJSON ya contiene el voto actualizado)
         writeFileSync('databaseJSON/map_votes.json', JSON.stringify(mapVotesJSON, null, 2))

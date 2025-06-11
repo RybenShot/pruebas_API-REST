@@ -55,9 +55,47 @@
   },
   {
     "idMap": 9,
-    "votes": [],
+    "votes": [
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "type": "likeDislike",
+        "value": 1,
+        "dateCreated": 1749666525730
+      }
+    ],
     "invRec": [],
-    "comments": []
+    "comments": [
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "comment": "heyy esto es un comentario",
+        "dateCreated": 1749656345324
+      },
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "comment": "heyy, esto es otro comentario",
+        "dateCreated": 1749656355406
+      },
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "comment": "y voy a escribir otro comentario porque puedo",
+        "dateCreated": 1749656366337
+      },
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "comment": "heyyyy",
+        "dateCreated": 1749656371556
+      },
+      {
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "nameUser": "rybenshot",
+        "comment": "heyyyy 2",
+        "dateCreated": 1749656376822
+      }
+    ]
   },
   {
     "idMap": 10,

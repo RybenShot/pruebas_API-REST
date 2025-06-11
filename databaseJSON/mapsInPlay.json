@@ -896,5 +896,717 @@
       "dooms": 0,
       "clues": 0
     }
+  },
+  {
+    "id": "9f7b83da-d0b1-4811-b937-09a78582f001",
+    "idMap": 9,
+    "title": "Shots in the Dark",
+    "description": "The mafias of Arkham have a long history, and the truce between the O'Bannions and the Sheldons has been, at best, fragile. During the sweltering summer of 1926, a sinister shadow drives them into a brutal gang war.",
+    "initialSpace": "Police Station",
+    "retribution": "If neither of the gangs is hostile, a Cultist Monster appears.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "extraData": {
+      "likes": 1,
+      "dislikes": 0,
+      "NVotesLikeDislike": 1,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
+    },
+    "enemies": [
+      15,
+      65,
+      66,
+      13,
+      4,
+      67,
+      59,
+      1,
+      2
+    ],
+    "textSpecialEnemies": "Set aside all remaining O'Bannion and Sheldon monsters.",
+    "specialEnemies": [
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "imgMap": "LosetasMapa10.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG10MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Disparos en la oscuridad",
+        "description": "Las mafias de Arkham tienen una larga historia, y la tregua entre los O'Bannion y los Sheldon ha sido, en el mejor de los casos, frájil. Durante en caluroso verano de 1926, una sombra tenebrosa los empuja a una cruenta guerra de bandas.",
+        "initialSpace": "Comisaría",
+        "retribution": "Si ninguna de las bandas es hostil, aparece un Monstruo Sectario.",
+        "textSpecialEnemies": "Aparta a un lado todos los Monstruos O'Bannion y Sheldon que queden."
+      }
+    },
+    "fechaDeInicio": 1749666559474,
+    "lastEddited": 1749666559474,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "9713a604-b364-43fc-8753-e071d2504e99",
+    "idMap": 10,
+    "title": "The Key and the Gate",
+    "description": "For eons, Yog-Sothoth has watched the universe from beyond time and space. The Lurker at the Threshold stirs, no longer content to merely watch and wait. Countless servants toil to open the gate that keeps the Ancient One sealed outside our universe.",
+    "initialSpace": "Silver Twilight Lodge",
+    "retribution": "Each investigator who is not engaged with one or more Monsters moves one space toward the unstable space unless they suffer one Horror.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
+    },
+    "enemies": [
+      74,
+      11,
+      75,
+      76,
+      77,
+      9,
+      78,
+      79,
+      80,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa11.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG11MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La LLave y la Puerta",
+        "description": "Durante eones, Yog-Sothoth ha observado el universo desde más allá del tiempo y del espacio. El que Acecha en l Umbral se agita, pues ya no se conforma con limitarse a observar y esperar. Innumerables siervos se afanan por abrir la puerta que encierra al Primigenio fuera de nuestro universo.",
+        "initialSpace": "Logia del Crepúsculo de Plata",
+        "retribution": "Cada investigador que no esté enfrentado a uno o más Mosntruos se mueve un espacio hacia el espacio inestable a menos que sufra un punto de Horror.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1749666775124,
+    "lastEddited": 1749666775124,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "d0b582af-60d4-4240-9c2d-49601331d659",
+    "idMap": 8,
+    "title": "The Silence of Tsathoggua",
+    "description": "The beast of Voormithabreth slumbers while the adepts it abandoned in distant Yuggoth prepare their devotional offerings to sate its voracious appetite. If the Sleeper of N'Kai were to awaken, we would all be doomed.",
+    "initialSpace": "Orne Library",
+    "retribution": "If there are 2 or more Clues in any Neighborhood, place a Doom token on the scenario sheet.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
+    },
+    "enemies": [
+      59,
+      60,
+      61,
+      4,
+      2,
+      62,
+      63,
+      64,
+      11,
+      24
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa9.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG9MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "El silencio de Tsathoggua",
+        "description": "La bestia de Voormithabreth dormita mientras los adeptos que abandonó en la lejana Yuggoth preparan sus ofrendas devocionales para colmarsu voraz apetito. Si el Durmiente de N'Kai llegase a despertar, estaríamos todos condenados.",
+        "initialSpace": "Biblioteca Orne",
+        "retribution": "Si hay 2 o más Pistas en algún Barrio, coloca una ficha de Perdición sobre la hoja del escenario.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1749667014970,
+    "lastEddited": 1749667014970,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "14da0684-2823-4d7a-b38b-d246fd0f215b",
+    "idMap": 3,
+    "title": "Echoes of the Deep",
+    "description": "In his abode of R'lyeh, the late Cthulhu waits dreaming. He agitates in his lethargy and waits for the stars to be propitious for R'lyeh to emerge from his home under the waves and the primeval ones to return. For what can lie eternally is not dead, and with the strange evos even death can die...",
+    "initialSpace": "Observatory",
+    "retribution": "Each investigator suffers Horror equal to the number of tokens in their space.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
+    },
+    "enemies": [
+      35,
+      4,
+      0,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa4.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG4MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Ecos de las Profundidades",
+        "description": "En su morada de R’lyeh, el difunto Cthulhu aguarda soñando. Se agita en su letargo y espera a que las estrellas sean propicias para que R’lyeh emerja de su hogar bajo las olas y los primigenios regresen. Pues no está muerto lo que puede yacer eternamente, y con los evos extraños aun la muerte puede morir...",
+        "initialSpace": "Observatorio",
+        "retribution": "Cada investigador sufre tanto Horror como el número de fichas que haya en su espacio.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1749667167629,
+    "lastEddited": 1749667167629,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "89150d4e-7888-402a-929b-11b18403634b",
+    "idMap": 10,
+    "title": "The Key and the Gate",
+    "description": "For eons, Yog-Sothoth has watched the universe from beyond time and space. The Lurker at the Threshold stirs, no longer content to merely watch and wait. Countless servants toil to open the gate that keeps the Ancient One sealed outside our universe.",
+    "initialSpace": "Silver Twilight Lodge",
+    "retribution": "Each investigator who is not engaged with one or more Monsters moves one space toward the unstable space unless they suffer one Horror.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
+    },
+    "enemies": [
+      74,
+      11,
+      75,
+      76,
+      77,
+      9,
+      78,
+      79,
+      80,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa11.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG11MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "La LLave y la Puerta",
+        "description": "Durante eones, Yog-Sothoth ha observado el universo desde más allá del tiempo y del espacio. El que Acecha en l Umbral se agita, pues ya no se conforma con limitarse a observar y esperar. Innumerables siervos se afanan por abrir la puerta que encierra al Primigenio fuera de nuestro universo.",
+        "initialSpace": "Logia del Crepúsculo de Plata",
+        "retribution": "Cada investigador que no esté enfrentado a uno o más Mosntruos se mueve un espacio hacia el espacio inestable a menos que sufra un punto de Horror.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1749667650953,
+    "lastEddited": 1749667650953,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
+  },
+  {
+    "id": "842e64b5-8b4a-40e3-9943-25cbe5e1e148",
+    "idMap": 3,
+    "title": "Echoes of the Deep",
+    "description": "In his abode of R'lyeh, the late Cthulhu waits dreaming. He agitates in his lethargy and waits for the stars to be propitious for R'lyeh to emerge from his home under the waves and the primeval ones to return. For what can lie eternally is not dead, and with the strange evos even death can die...",
+    "initialSpace": "Observatory",
+    "retribution": "Each investigator suffers Horror equal to the number of tokens in their space.",
+    "mythosReserve": {
+      "doom": 3,
+      "enemies": 2,
+      "clues": 2,
+      "newspaper": 2,
+      "explosion": 1,
+      "retribution": 1,
+      "empty": 3
+    },
+    "extraData": {
+      "likes": 0,
+      "dislikes": 0,
+      "NVotesLikeDislike": 0,
+      "timeEstimated": 0,
+      "NVotestime": 0,
+      "difficulty": 0,
+      "NVotesDifficulty": 0
+    },
+    "enemies": [
+      35,
+      4,
+      0,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "textSpecialEnemies": null,
+    "specialEnemies": [],
+    "imgMap": "LosetasMapa4.png",
+    "BGMap": "/img/3-mapas/imgPortada/BG4MapaArkham.jpg",
+    "translations": {
+      "es": {
+        "title": "Ecos de las Profundidades",
+        "description": "En su morada de R’lyeh, el difunto Cthulhu aguarda soñando. Se agita en su letargo y espera a que las estrellas sean propicias para que R’lyeh emerja de su hogar bajo las olas y los primigenios regresen. Pues no está muerto lo que puede yacer eternamente, y con los evos extraños aun la muerte puede morir...",
+        "initialSpace": "Observatorio",
+        "retribution": "Cada investigador sufre tanto Horror como el número de fichas que haya en su espacio.",
+        "textSpecialEnemies": null
+      }
+    },
+    "fechaDeInicio": 1749669196662,
+    "lastEddited": 1749669196662,
+    "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "mythosReserveInPlay": [
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "doom",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "enemies",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "clues",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "newspaper",
+        "reveal": false
+      },
+      {
+        "type": "explosion",
+        "reveal": false
+      },
+      {
+        "type": "retribution",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      },
+      {
+        "type": "empty",
+        "reveal": false
+      }
+    ],
+    "variables": {
+      "dooms": 0,
+      "clues": 0
+    }
   }
 ]
