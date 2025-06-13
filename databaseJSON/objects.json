@@ -1489,5 +1489,82 @@
                 "img": "/img/2-obj/es_PerNameless3.jpg"
             }
         }
+    },
+    ,
+    {"id": 129,
+        "img": "",
+        "expansion": "original",
+        "price": null,
+        "types": ["perInicial", "objeto", "especial", "arma"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Revólver de mi madre",
+                "description": "+4 a FUERZA. Si el investigador tiene menos de 3 de FUERZA, al disparar deberá lanzar un dado; este será el daño que sufra el portador por el retroceso."
+            },
+            "en": {
+                "name": "My Mother's Revolver",
+                "description": "+4 STRENGTH. If the investigator has less than 3 STRENGTH, they must roll a die when shooting; this is the damage the bearer suffers due to recoil."
+            }
+        }
+    },
+
+    {"id": 130,
+        "img": "",
+        "expansion": "original",
+        "price": null,
+        "types": ["perInicial", "", ""],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Navaja oculta",
+                "description": "+1 acierto al usarla contra un atacante. +1 DADO si se usa para una prueba que requiera INFLUENCIA."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
+            }
+        }
+    },
+    {"id": 131,
+        "img": "",
+        "expansion": "original",
+        "price": null,
+        "types": ["perInicial", "", ""],
+        "hands": null,
+        "health": {
+            "life": 4,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Gabardina lujosa",
+                "description": "Una gabardina un poco desaliñada, pero que aún conserva detalles que indican ser una prenda de valor, gruesa y caliente. Guarda una bolsa vacía de terciopelo negro en uno de sus bolsillos."
+            },
+            "en": {
+                "name": "Luxurious Trench Coat",
+                "description": "A slightly scruffy trench coat, but it still has details suggesting it’s a valuable garment—thick and warm. It holds an empty black velvet pouch in one of its pockets."
+            }
+        }
     }
 ]
