@@ -1478,15 +1478,27 @@
         }
     },
     {"id": 128,
-        "name": "Reanimated",
-        "description": "During the encounter phase, if not engaged, you may spend two remnants to resolve an additional encounter for another non-engaged investigator. If you do, you give up your own enconunter for the round.",
         "img": "/img/2-obj/PerNameless3.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "___", "___", "___"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Reanimado",
-                "description": "Durante la fase de encuentro, si no estás enfrentado, puedes gastar dos restos para resolver un encuentro adicional para otro investigador no enfrentado. Si lo haces, renuncias a tu propio encuentro de la ronda.",
-                "img": "/img/2-obj/es_PerNameless3.jpg"
+                "description": "Durante la fase de encuentro, si no estás enfrentado, puedes gastar dos restos para resolver un encuentro adicional para otro investigador no enfrentado. Si lo haces, renuncias a tu propio encuentro de la ronda."
+            },
+            "en": {
+                "name": "Reanimated",
+                "description": "During the encounter phase, if not engaged, you may spend two remnants to resolve an additional encounter for another non-engaged investigator. If you do, you give up your own enconunter for the round."
             }
         }
     },
