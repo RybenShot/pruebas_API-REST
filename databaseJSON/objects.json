@@ -1,419 +1,937 @@
 [
     {"id": 0,
-        "name": "Becky",
         "img": "/img/2-obj/PerTommy2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "Objeto", "Arma"],
+        "hands": 2,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Becky",
-                "img": "/img/2-obj/es_PerTommy2.jpg"
+            "name": "Becky",
+            "description": "Recibes +4 de FUERZA cuando estés realizando una acción de ataque."
+            },
+            "en": {
+            "name": "Becky",
+            "description": "You receive +4 FORCE when performing an attack action."
             }
         }
     },
     {"id": 1,
-        "name": "Handcuffs",
         "img": "/img/2-obj/PerTommy3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Esposas",
-                "img": "/img/2-obj/es_PerTommy3.jpg"
+            "name": "Esposas",
+            "description": "Una vez por ronda, después de que infrinjas Daño, te separes o sufras Daño de un monstruo HUMANO que no sea épico, puedes derrotar a ese monstruo."
+            },
+            "en": {
+            "name": "handcuffs",
+            "description": "Once per round, after you break Damage, separate or take Damage from a non-epic HUMAN monster, you can defeat that monster."
             }
         }
     },
     {"id": 2,
-        "name": "Motorcycle",
         "img": "/img/2-obj/PerTommy1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "vehículo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Motocicleta",
-                "img": "/img/2-obj/es_PerTommy1.jpg"
+            "name": "Motocicleta",
+            "description": "En vez de realizar una acción de movimiento normal, te mueves un máximo de 3 espacios y puedes gastar 1$ para moverte un espacio adicional."
+            },
+            "en": {
+            "name": "motorcycle",
+            "description": "Instead of a normal motion action, you move a maximum of 3 spaces and can spend $1 to move an extra space."
             }
         }
     },
 
     {"id": 3,
-        "name": "Intervention",
         "img": "/img/2-obj/PerMarie3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ensalmo"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 2
+        },
         "translations": {
             "es": {
-                "name": "Intervención",
-                "img": "/img/2-obj/es_PerMarie3.jpg"
+            "name": "Intervención",
+            "description": "Una vez por ronda, cuando otro investigador situado en cualquier espacio esté resolviendo una prueba, puedes hacer una prueba de SABER -1. Añade el resultado de esta prueba al resultado de la prueba de ese otro investigador."
+            },
+            "en": {
+            "name": "intervention",
+            "description": "Once per round, when another researcher located in any space is solving a test, you can do a SABER -1 test. Add the result of this test to the test result of that other investigator."
             }
         }
     },
     {"id": 4,
-        "name": "The blood of the witch",
-        "img": "/img/2-obj/PerMarie2.jpg",
-        "expansion": "Base",
+        "img": "/img/2-obj/PerMarie1.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "magico", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Sangre de bruja",
-                "img": "/img/2-obj/es_PerMarie2.jpg"
+            "name": "El cuchillo de grande-mère",
+            "description": "Recibes +2 de FUERZA cuando estés realizando una acción de ataque. Recibes +2 de SABER cuando estés lanzando un hechizo."
+            },
+            "en": {
+            "name": "The knife of grande-mère",
+            "description": "You receive +2 FORCE when you are performing an attack action. You receive +2 SABER when you are casting a spell."
             }
         }
     },
     {"id": 5,
-        "name": "The knife of grande-mère",
-        "img": "/img/2-obj/PerMarie1.jpg",
-        "expansion": "Base",
+        "img": "/img/2-obj/PerMarie2.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "El cuchillo de grande-mère",
-                "img": "/img/2-obj/es_PerMarie1.jpg"
+            "name": "Sangre de bruja",
+            "description": "Acción: Puedes realizar una acción que ya hayas utilizado en esta ronda. Puedes usar tu Voz aterciopelada para permitir que otro investigador realice esta acción. Una vez por ronda, después de que gastes una ficha de Restos, ganas una ficha de Restos."
+            },
+            "en": {
+            "name": "Sangre de bruja",
+            "description": "Action: You can perform an action that you have already used in this round. You can use your Velvety Voice to allow another researcher to do this. Once per round, after you spend a Remains token, you gain a Remains token."
             }
         }
     },
 
     {"id": 6,
-        "name": "Looking for Izzie",
         "img": "/img/2-obj/PerJenny1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Buscando a Izzie",
-                "img": "/img/2-obj/es_PerJenny1.jpg"
+            "name": "Buscando a Izzie",
+            "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sufrir un punto de Daño y un punto de Horror para volver a tirar cualquier cantidad de dados."
+            },
+            "en": {
+            "name": "Looking for Izzie",
+            "description": "Once per round, when you are solving a test, you can take a Damage point and a Horror point to re-roll any number of dice."
             }
         }
     },
     {"id": 7,
-        "name": ".45 twins of Jenny",
         "img": "/img/2-obj/PerJenny2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "arma"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": ".45 gemelas de Jenny",
-                "img": "/img/2-obj/es_PerJenny2.jpg"
+            "name": ".45 gemelas de Jenny",
+            "description": "Recibes +3 de FUERZA cuando estés realizando una acción de ataque. Puedes sumar uno al resultado de un dado cuando estés realizando una acción de ataque."
+            },
+            "en": {
+            "name": ".45 twins of Jenny",
+            "description": "You receive +3 FORCE when performing an attack action. You can add one to the result of a die when you are performing an attack action."
             }
         }
     },
     {"id": 8,
-        "name": "To the nines",
         "img": "/img/2-obj/PerJenny3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "De punta en blanco",
-                "img": "/img/2-obj/es_PerJenny3.jpg"
+            "name": "De punta en blanco",
+            "description": "Cuando gastes una ficha de Concentración para volver a tirar un dado, en vez de eso puedes volver a tirar cualquier cantidad de dados. Tu fondo fiduciario te proporciona 2$ adicionales."
+            },
+            "en": {
+            "name": "To the nines",
+            "description": "When you spend a Concentration tab to re-roll a die, you can instead re-roll any number of dice. Your trust fund provides you with an additional $2."
             }
         }
     },
 
     {"id": 9,
-        "name": "Mists of R'lyeh",
         "img": "/img/2-obj/PerDexter1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ensalmo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
-                "name": "Nieblas de R'lyeh",
-                "img": "/img/2-obj/es_PerDexter1.jpg"
+            "name": "Nieblas de R'lyeh",
+            "description": "Puedes hacer una prueba de SABER en lugar de OBSERVACIÓN cuando estés realizando una acción de evasión. (El modificador de evasión del monstruo sigue aplicándose.)"
+            },
+            "en": {
+            "name": "Mists of R'lyeh",
+            "description": "You can do a KNOW test instead of OBSERVATION when you are performing an evasion action. (Monster evasion modifier still applies.)"
             }
         }
     },
     {"id": 10,
-        "name": "Mage staff",
         "img": "/img/2-obj/PerDexter2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Bastón de mago",
-                "img": "/img/2-obj/es_PerDexter2.jpg"
+            "name": "Bastón de mago",
+            "description": "Recibes +2 de SABER cuando estés lanzando un hechizo."
+            },
+            "en": {
+            "name": "Mage staff",
+            "description": "You receive +2 KNOW when you are casting a spell."
             }
         }
     },
     {"id": 11,
-        "name": "Astral travel",
-        "img": "/img/2-obj/PerDexter1.jpg",
-        "expansion": "Base",
+        "img": "/img/2-obj/PerDexter3.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ensalmo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
-                "name": "Viaje astral",
-                "img": "/img/2-obj/es_PerDexter1.jpg"
+            "name": "Viaje astral",
+            "description": "En vez de realizar una acción de movimiento normal, puedes hacer una prueba de SABER para moverte tantos espacios como el resultado de la prueba más dos."
+            },
+            "en": {
+            "name": "Astral travel",
+            "description": "Instead of performing a normal motion action, you can do a SABER test to move as many spaces as the test result plus two."
             }
         }
     },
 
     {"id": 12,
-        "name": "Mama’s charm",
         "img": "/img/2-obj/PerWendy1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Amuleto de mama",
-                "img": "/img/2-obj/es_PerWendy1.jpg"
+            "name": "Amuleto de mama",
+            "description": "Una vez por ronda, puedes anular un punto de daño o de Horror que vayas a sufrir. “No olvides nunca que tu mamá te quiere mucho.”"
+            },
+            "en": {
+            "name": "Mama’s charm",
+            "description": "Once per round, you can override a damage or Horror point that you will suffer. 'Never forget that your mother loves you very much.'"
             }
         }
     },
     {"id": 13,
-        "name": "Mysterious photograph",
         "img": "/img/2-obj/PerWendy3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objetivo", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Fotografía misteriosa",
-                "img": "/img/2-obj/es_PerWendy3.jpg"
+            "name": "Fotografía misteriosa",
+            "description": "Después de que ganes una Pista, puedes concentrarte en una habilidad de tu elección. “La Marea Roja se alzará pronto. Cuidate mucho, pequeña mía.”"
+            },
+            "en": {
+            "name": "Mysterious photograph",
+            "description": "After you win a Clue, you can focus on an ability of your choice. 'The Red Tide will rise soon. Take good care, my little one.'"
             }
         }
     },
     {"id": 14,
-        "name": "Pawterson bear",
         "img": "/img/2-obj/PerWendy2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Osito Pawterson",
-                "img": "/img/2-obj/es_PerWendy2.jpg"
+            "name": "Osito Pawterson",
+            "description": "Antes de que uno o varios monstruos vayan a atacarte, puedes descartar esta carta para separarte de todos esos monstruos y agotarlos."
+            },
+            "en": {
+            "name": "Pawterson bear",
+            "description": "Before one or several monsters attack you, you can discard this card to separate from all those monsters and exhaust them."
             }
         }
     },
 
     {"id": 15,
-        "name": "Looking for the truth",
         "img": "/img/2-obj/PerRex2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Buscando la verdad",
-                "img": "/img/2-obj/es_PerRex2.jpg"
+            "name": "Buscando la verdad",
+            "description": "Después de que ganes una Pista, ganas 1$ y puedes concentrarte en una habilidad de tu elección."
+            },
+            "en": {
+            "name": "looking for the truth",
+            "description": "After you win a Track, you earn $1 and can focus on a skill of your choice."
             }
         }
     },
     {"id": 16,
-        "name": "The Tower",
         "img": "/img/2-obj/PerRex3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "La Torre",
-                "img": "/img/2-obj/es_PerRex3.jpg"
+            "name": "La Torre",
+            "description": "Una vez por ronda, cuando estés resolviendo una prueba puedes volver a tirar uno de tus dados o todos ellos."
+            },
+            "en": {
+            "name": "La Tower",
+            "description": "Once per round, when you are solving a test you can re-roll one or all of your dice."
             }
         }
     },
     {"id": 17,
-        "name": "Overcome adversity",
         "img": "/img/2-obj/PerRex4.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Superar la adversidad",
-                "img": "/img/2-obj/es_PerRex4.jpg"
+            "name": "Superar la adversidad",
+            "description": "Puedes concentrarte hasta 2 veces en cada habilidad."
+            },
+            "en": {
+            "name": "Overcome adversity",
+            "description": "You can focus up to 2 times on each skill."
             }
         }
     },
     {"id": 18,
-        "name": "All the pieces fit together",
         "img": "/img/2-obj/PerRex1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Todas las piezas encajan",
-                "img": "/img/2-obj/es_PerRex1.jpg"
+            "name": "Todas las piezas encajan",
+            "description": "Cuando estés realizando una acción de revelar Pistas, suma uno al resultado de cada dado que tires."
+            },
+            "en": {
+            "name": "All the pieces fit together",
+            "description": "When you are performing an action to reveal Hints, add one to the result of each dice you throw."
             }
         }
     },
-    
+
     {"id": 19,
-        "name": "Spiritual dagger",
         "img": "/img/2-obj/PerCalvin1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "magico", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Daga espiritual",
-                "img": "/img/2-obj/es_PerCalvin1.jpg"
+            "name": "Daga espiritual",
+            "description": "Recibes +2 de FUERZA cuando estés realizando una acción de ataque. Recibes +2 de SABER cuando estés realizando una acción de salvaguarda."
+            },
+            "en": {
+            "name": "Spiritual dagger",
+            "description": "You receive +2 FORCE when you are performing an attack action. You receive +2 SABER when you are performing a safeguard action."
             }
         }
     },
     {"id": 20,
-        "name": "Till the end of time",
         "img": "/img/2-obj/PerCalvin2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "estado", "innato"],
+        "hands": 2,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Hasta el fin de los tiempos",
-                "img": "/img/2-obj/es_PerCalvin2.jpg"
+            "name": "Hasta el fin de los tiempos",
+            "description": "Esta carta no puede descartarse por ningún motivo. (Ni siquiera por daño u Horror.) RETRIBUCIÓN: Quita una ficha de Daño y una ficha de Horror de esta carta."
+            },
+            "en": {
+            "name": "Till the end of time",
+            "description": "This card cannot be discarded for any reason. (Not even for damage or Horror.) RETRIBUTION: Remove a Damage tab and a Horror tab from this card."
             }
         }
     },
     {"id": 21,
-        "name": "Messenger’s voice",
-        "img": "/img/2-obj/PerCalvin1.jpg",
-        "expansion": "Base",
+        "img": "/img/2-obj/PerCalvin3.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "estado", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Voz del mensajero",
-                "img": "/img/2-obj/es_PerCalvin1.jpg"
+            "name": "Voz del mensajero / Pacto siniestro",
+            "description": "Puedes sufrir un punto de Horror para volver a tirar cualquier cantidad de dados. (Este efecto sólo puede aplicarse una vez a cada tirada. Puedes utilizarlo para repetir la tirada de tu Pacto siniestro.)"
+            },
+            "en": {
+            "name": "Messenger’s voice / Sinister pact",
+            "description": "You can take a Horror point to re-roll any number of dice. (This effect can only be applied once to each roll. You can use it to re-roll your Sinister Pact.)"
             }
         }
     },
 
     {"id": 22,
-        "name": "Hyperborean inheritance",
         "img": "/img/2-obj/PerAgnes1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "magico", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Herencia de Hiperbórea",
-                "img": "/img/2-obj/es_PerAgnes1.jpg"
+            "name": "Herencia de Hiperbórea",
+            "description": "Después de que lances un Hechizo, puedes concentrarte en una habilidad de tu elección."
+            },
+            "en": {
+            "name": "Hyperborean inheritance",
+            "description": "After you cast a Spell, you can focus on an ability of your choice."
             }
         }
     },
     {"id": 23,
-        "name": "Body protection",
         "img": "/img/2-obj/PerAgnes2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ensalmo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
-                "name": "Protección corporal",
-                "img": "/img/2-obj/es_PerAgnes2.jpg"
+            "name": "Protección corporal",
+            "description": "Una vez por ronda, si tú, otro investigador o un Aliado vais a sufrir Daño (sin importar en qué espacio esté el afectado), puedes hacer una prueba de SABER. Anulas tanto Daño como el resultado de esta prueba."
+            },
+            "en": {
+            "name": "Body protection",
+            "description": "Once per round, if you, another researcher or an Ally are going to suffer Damage (no matter what space the affected person is in), you can do a SABER test. You nullify both Damage and the result of this test."
             }
         }
     },
     {"id": 24,
-        "name": "Spirit storm",
         "img": "/img/2-obj/PerAgnes3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ensalmo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
-                "name": "Tormenta de espíritus",
-                "img": "/img/2-obj/es_PerAgnes3.jpg"
+            "name": "Tormenta de espíritus",
+            "description": "Puedes hacer una prueba de SABER en vez de FUERZA cuando estés realizando una acción de ataque. (El modificador de ataque del Monstruo sigue aplicándose.)"
+            },
+            "en": {
+            "name": "Spirit storm",
+            "description": "You can do a SABER test instead of FORCE when you are performing an attack action. (Monster Attack Modifier still applies.)"
             }
         }
     },
 
     {"id": 25,
-        "name": "Drum machine gun",
         "img": "/img/2-obj/PerMichael1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "arma"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Metralleta de tambor",
-                "img": "/img/2-obj/es_PerMichael1.jpg"
+            "name": "Metralleta de tambor",
+            "description": "Recibes +4 de FUERZA cuando estés realizando una acción de ataque."
+            },
+            "en": {
+            "name": "Drum machine gun",
+            "description": "You receive +4 FORCE when performing an attack action."
             }
         }
     },
     {"id": 26,
-        "name": "Gangster car",
         "img": "/img/2-obj/PerMichael2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "vehiculo"],
+        "hands": null,
+        "health": {
+            "life": 5,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Automóvil de gángster",
-                "img": "/img/2-obj/es_PerMichael2.jpg"
+            "name": "Automóvil de gángster",
+            "description": "Después de que realices una acción de movimiento, puedes infligir dos puntos de Daño a un Monstruo que esté enfrentado a ti y dos puntos de Daño a esta carta."
+            },
+            "en": {
+            "name": "Gangster car",
+            "description": "After you perform a move action, you can deal two Damage points to a Monster facing you and two Damage points to this card."
             }
         }
     },
     {"id": 27,
-        "name": "O'Bannion’s henchman",
         "img": "/img/2-obj/PerMichael3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Secuaz de O'Bannion",
-                "img": "/img/2-obj/es_PerMichael3.jpg"
+            "name": "Secuaz de O'Bannion",
+            "description": "Después de que realices una acción de conseguir fondos, puedes hacer una prueba de FUERZA. Si la superas, ganas 2$."
+            },
+            "en": {
+            "name": "O'Bannion’s henchman",
+            "description": "After you perform a gather funds action, you can make a FORCE test. If you succeed, you earn $2."
             }
         }
     },
-    
+
     {"id": 28,
-        "name": "Gabriel",
         "img": "/img/2-obj/PerDaniela2.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "vehiculo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Gabriel",
-                "img": "/img/2-obj/es_PerDaniela2.jpg"
+            "name": "Gabriel",
+            "description": "En vez de realizar una acción de movimiento normal, te mueves un máximo de 3 espacios y puedes gastar 1$ para moverte 1 espacio adicional."
+            },
+            "en": {
+            "name": "Gabriel",
+            "description": "Instead of performing a normal motion action, you move a maximum of 3 spaces and can spend $1 to move 1 additional space."
             }
         }
     },
     {"id": 29,
-        "name": "Ace of spades",
         "img": "/img/2-obj/PerDaniela3.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "As de espadas",
-                "img": "/img/2-obj/es_PerDaniela3.jpg"
+            "name": "As de espadas",
+            "description": "Cuando gastes una ficha de Concentración para volver a tirar un dado, puedes recuperar un punto de Cordura."
+            },
+            "en": {
+            "name": "Ace of spades",
+            "description": "When you spend a Concentration tab to re-roll a die, you can recover a Sanity point."
             }
         }
     },
     {"id": 30,
-        "name": "Wrench",
         "img": "/img/2-obj/PerDaniela1.jpg",
-        "expansion": "Base",
+        "expansion": "base",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Llave inglesa",
-                "img": "/img/2-obj/es_PerDaniela1.jpg"
+            "name": "Llave inglesa",
+            "description": "Recibes +1 de FUERZA cuando estés realizando una acción de ataque. Si tienes una Mano libre, en vez de eso recibes +3."
+            },
+            "en": {
+            "name": "Wrench",
+            "description": "You receive +1 FORCE when you are performing an attack action. If you have a free Hand, you receive +3 instead."
             }
         }
     },
 
     {"id": 31,
-        "name": "Find a portal",
         "img": "/img/2-obj/PerNorman1.jpg",
-        "expansion": "Base",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 2
+        },
         "translations": {
             "es": {
-                "name": "Encontrar portal",
-                "img": "/img/2-obj/es_PerNorman1.jpg"
+            "name": "Encontrar portal",
+            "description": "Acción: Haz una prueba de SABER. Si la superas, muévete a un espacio de tu elección en el que haya al menos una ficha de Perdición."
+            },
+            "en": {
+            "name": "Find a portal",
+            "description": "Action: Take a SABER test. If you pass it, move to a space of your choice where there is at least one Doom token."
             }
         }
     },
     {"id": 32,
-        "name": "Treasured memory",
         "img": "/img/2-obj/PerNorman2.jpg",
-        "expansion": "Base",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 0,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Recuerdo preciado",
-                "img": "/img/2-obj/es_PerNorman2.jpg"
+            "name": "Recuerdo preciado",
+            "description": "Después de que ganes una Pista, quita dos fichas de Horror de esta carta."
+            },
+            "en": {
+            "name": "Treasured memory",
+            "description": "After you win a Hint, remove two Horror tokens from this card."
             }
         }
     },
     {"id": 33,
-        "name": "Astronomical treatise",
         "img": "/img/2-obj/PerNorman3.jpg",
-        "expansion": "Base",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario", "tomo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Tratado de astronomía",
-                "img": "/img/2-obj/es_PerNorman3.jpg"
+            "name": "Tratado de astronomía",
+            "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes volver a tirar tantos dados como fichas de Perdición haya en tu espacio (puedes volver a tirar menos si lo prefieres)."
+            },
+            "en": {
+            "name": "Astronomical treatise",
+            "description": "Once per round, when you are solving a test, you can re-roll as many dice as there are Doom tokens in your space (you may re-roll fewer if you prefer)."
             }
         }
     },
 
     {"id": 34,
-        "name": "The king of yellow",
         "img": "/img/2-obj/PerMinh2.jpg",
-        "expansion": "Base",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "extraordinario", "tomo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "El rey de amarillo",
-                "img": "/img/2-obj/es_PerMinh2.jpg"
+            "name": "El rey de amarillo",
+            "description": "Una vez por ronda, después de que sufras al menos un punto de Horror, puedes revelar una Pista (se coloca sobre la hoja de escenario)."
+            },
+            "en": {
+            "name": "The king of yellow",
+            "description": "Once per round, after you suffer at least one Horror point, you can reveal a Hint (placed on the scenario sheet)."
             }
         }
     },
     {"id": 35,
-        "name": "Analytical mind",
         "img": "/img/2-obj/PerMinh1.jpg",
-        "expansion": "Base",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Mente analítica",
-                "img": "/img/2-obj/es_PerMinh1.jpg"
+            "name": "Mente analítica",
+            "description": "Tiras un dado adicional cuando estés resolviendo una prueba de SABER o de OBSERVACIÓN si has igualado o excedido tu límite de concentración."
+            },
+            "en": {
+            "name": "Analytical mind",
+            "description": "You roll an additional die when you are solving a KNOW or OBSERVATION test if you have matched or exceeded your concentration limit."
             }
         }
     },
     {"id": 36,
-        "name": "Synergy",
         "img": "/img/2-obj/PerMinh3.jpg",
-        "expansion": "Base",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Sinergia",
-                "img": "/img/2-obj/es_PerMinh3.jpg"
+            "name": "Sinergia",
+            "description": "Tu límite de concentración aumenta en un punto. Los demás investigadores que estén en tu espacio reciben un +1 para todas las habilidades en las que tú estés concentrada."
+            },
+            "en": {
+            "name": "Synergy",
+            "description": "Your concentration limit increases by one point. Other researchers in your space receive a +1 for all skills you are focused on."
             }
         }
     },
@@ -1502,6 +2020,33 @@
             }
         }
     },
+
+    {"id": 128,
+        "img": "/img/2-obj/___.jpg",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "___", "___", "___"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___",
+                "description": "___"
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
+            }
+        }
+    },
+
     {"id": 129,
         "img": "",
         "expansion": "original",
@@ -1527,12 +2072,11 @@
             }
         }
     },
-
     {"id": 130,
         "img": "",
         "expansion": "original",
         "price": null,
-        "types": ["perInicial", "", ""],
+        "types": ["perInicial", "objeto", "comun", "arma"],
         "hands": 1,
         "health": {
             "life": null,
@@ -1557,7 +2101,7 @@
         "img": "",
         "expansion": "original",
         "price": null,
-        "types": ["perInicial", "", ""],
+        "types": ["perInicial", "objeto", "especial", "ropa"],
         "hands": null,
         "health": {
             "life": 4,
@@ -1575,6 +2119,81 @@
             "en": {
                 "name": "Luxurious Trench Coat",
                 "description": "A slightly scruffy trench coat, but it still has details suggesting it’s a valuable garment—thick and warm. It holds an empty black velvet pouch in one of its pockets."
+            }
+        }
+    },
+    {"id": 132,
+        "img": "",
+        "expansion": "original",
+        "price": null,
+        "types": ["perInicial", "objeto", "especial", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Revolver viejo de la guerra",
+                "description": "Cuando estés realizando una accion de ataque Tira un dado, si sale par, recibes +3 de FUERZA ,si sale inpar, se te encasquilla el arma, no se suma ningun bonificador. "
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
+            }
+        }
+    },
+    {"id": 133,
+        "img": "",
+        "expansion": "original",
+        "price": null,
+        "types": ["perInicial", "objeto", "especial", "vehiculo"],
+        "hands": null,
+        "health": {
+            "life": 5,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Moto vieja.",
+                "description": "En lugar de moverte, avanza hasta 3 casillas. Si atraviesas a un enemigo no épico, inflige 1 daño y la moto pierde 2 puntos vida."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
+            }
+        }
+    },
+    {"id": 134,
+        "img": "",
+        "expansion": "original",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Difrutemos del momento.",
+                "description": "Al princicio del turno, puedes quedar rezagado solo o junto con algun otro investigador para conseguir 2 puntos de vida y cordura. +1 pto mas si los jugadores comparten un brindis. "
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     }

@@ -3263,13 +3263,12 @@
     ],
     "possessions": {
       "required": [
-        70,
-        71
+        129
       ],
       "optionalText": "Puedes elegir uno de los siguientes objetos",
       "optional": [
-        72,
-        73
+        130,
+        131
       ]
     },
     "extraData": {
@@ -3339,12 +3338,12 @@
     ],
     "possessions": {
       "required": [
-        74
+        132
       ],
       "optionalText": "Puedes elegir uno de los siguientes objetos",
       "optional": [
-        75,
-        76
+        133,
+        134
       ]
     },
     "extraData": {
