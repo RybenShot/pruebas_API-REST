@@ -786,7 +786,7 @@
 
     {"id": 31,
         "img": "/img/2-obj/PerNorman1.jpg",
-        "expansion": "AHComunity",
+        "expansion": "base",
         "price": null,
         "types": ["perInicial", "hechizo", "ritual"],
         "hands": null,
@@ -811,7 +811,7 @@
     },
     {"id": 32,
         "img": "/img/2-obj/PerNorman2.jpg",
-        "expansion": "AHComunity",
+        "expansion": "base",
         "price": null,
         "types": ["perInicial", "objeto", "extraordinario"],
         "hands": null,
@@ -836,7 +836,7 @@
     },
     {"id": 33,
         "img": "/img/2-obj/PerNorman3.jpg",
-        "expansion": "AHComunity",
+        "expansion": "base",
         "price": null,
         "types": ["perInicial", "objeto", "extraordinario", "tomo"],
         "hands": 1,
@@ -862,7 +862,7 @@
 
     {"id": 34,
         "img": "/img/2-obj/PerMinh2.jpg",
-        "expansion": "AHComunity",
+        "expansion": "base",
         "price": null,
         "types": ["perInicial", "extraordinario", "tomo"],
         "hands": null,
@@ -887,7 +887,7 @@
     },
     {"id": 35,
         "img": "/img/2-obj/PerMinh1.jpg",
-        "expansion": "AHComunity",
+        "expansion": "base",
         "price": null,
         "types": ["perInicial", "talento", "innato"],
         "hands": null,
@@ -912,7 +912,7 @@
     },
     {"id": 36,
         "img": "/img/2-obj/PerMinh3.jpg",
-        "expansion": "AHComunity",
+        "expansion": "base",
         "price": null,
         "types": ["perInicial", "talento", "innato"],
         "hands": null,
@@ -937,243 +937,613 @@
     },
 
     {"id": 37,
-        "name": "Fishing net",
         "img": "/img/2-obj/PerSilas1.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "vinculable"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Red de pesca",
-                "img": "/img/2-obj/es_PerSilas1.jpg"
+                "description": "Durante tu turno, puedes vincular este Objeto a un monstruo no épico que esté en tu espacio para agotar a este Monstruo. Vínculo: este Monstruo no puede prepararse. Después de que derrotes a este Monstruo ganas el Objeto que tiene vinculado."
+            },
+            "en": {
+                "name": "Fishing net",
+                "description": "During your turn, you can link this Item to a non-epic monster in your space to exhaust this Monster. Link: This Monster cannot prepare. After you defeat this Monster you win the Item it has linked."
             }
         }
     },
     {"id": 38,
-        "name": "Flannel shirt",
         "img": "/img/2-obj/PerSilas2.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Camisa de franela",
-                "img": "/img/2-obj/es_PerSilas2.jpg"
+                "name": "Espíritu aventurero",
+                "description": "Durante la fase de Encuentros, todas tus habilidades se incrementan en un punto."
+            },
+            "en": {
+                "name": "Adventurous spirit",
+                "description": "During the Encounters phase, all your abilities increase by one point."
             }
         }
     },
     {"id": 39,
-        "name": "Adventurous spirit",
         "img": "/img/2-obj/PerSilas3.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Espíritu aventurero",
-                "img": "/img/2-obj/es_PerSilas3.jpg"
+                "name": "Camisa de franela",
+                "description": "Una vez por turno, cuando un investigador situado en tu espacio resuelve una prueba, puedes infligir un punto de Daño a este Objeto para añadir dos Éxitos al resultado de su prueba."
+            },
+            "en": {
+                "name": "Flannel shirt",
+                "description": "Once per turn, when a researcher in your space solves a test, you can inflict a Damage point on this Object to add two Hits to its test result."
             }
         }
     },
 
     {"id": 40,
-        "name": "Authority figure",
         "img": "/img/2-obj/PerCharlie1.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Figura de autoridad",
-                "img": "/img/2-obj/es_PerCharlie1.jpg"
+            "name": "Figura de autoridad",
+            "description": "Una vez por ronda, cuando estés resolviendo una prueba utilizando una habilidad en la que te hayas concentrado, puedes hacer una tirada de INFLUENCIA en lugar de la habilidad requerida. (Los modificadores originales se siguen aplicando)."
+            },
+            "en": {
+            "name": "Authority figure",
+            "description": "Once per round, when you are solving a test using a skill that you have focused on, you can make an INFLUENCE roll instead of the required skill. (The original modifiers are still applied)."
             }
         }
     },
     {"id": 41,
-        "name": "Bonnie Walsh",
         "img": "/img/2-obj/PerCharlie2.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "aliada", "fiel ayudante"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Bonnie Walsh",
-                "img": "/img/2-obj/es_PerCharlie2.jpg"
+            "name": "Bonnie Walsh",
+            "description": "Una vez por ronda, antes de que resuelvas una prueba, puedes concentrarte en una habilidad de tu elección."
+            },
+            "en": {
+            "name": "Bonnie Walsh",
+            "description": "Once per round, before you solve a test, you can focus on an ability of your choice."
             }
         }
     },
     {"id": 42,
-        "name": "Call in favors",
         "img": "/img/2-obj/PerCharlie3.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Cobrar favores",
-                "img": "/img/2-obj/es_PerCharlie3.jpg"
+            "name": "Cobrar favores",
+            "description": "Al comienzo de tu turno, descarta todo el Dinero que haya sobre esta carta y haz una prueba de INFLUENCIA. Por cada Éxito que obtengas, coloca 1$ sobre esta carta. Puedes gastar el Dinero que haya sobre esta carta. (No puedes intercambiarlo)."
+            },
+            "en": {
+            "name": "Call in favors",
+            "description": "At the beginning of your turn, discard all Money on this card and take an INFLUENCE test. For every Success you get, place $1 on this card. You can spend the Money on this card. (You cannot exchange it)."
             }
         }
     },
 
     {"id": 43,
-        "name": "Delivery van",
         "img": "/img/2-obj/PerStella1.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "vehiculo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Furgoneta de reparto",
-                "img": "/img/2-obj/es_PerStella1.jpg"
+            "name": "Furgoneta de reparto",
+            "description": "Cada vez que salgas de un espacio, todo investigador situado en ese espacio que no esté enfrentado para moverse contigo. Acción: muévete un máximo de dos espacios. Puedes realizar una acción de intercambio antes o después de este movimiento como acción adicional."
+            },
+            "en": {
+            "name": "Delivery van",
+            "description": "Every time you leave a space, any researcher located in that space that is not faced to move with you. Action: Move up to two spaces. You can perform an exchange action before or after this move as an additional action."
             }
         }
     },
     {"id": 44,
-        "name": "Call of the darkness",
         "img": "/img/2-obj/PerStella2.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Llamada de las tinieblas",
-                "img": "/img/2-obj/es_PerStella2.jpg"
+            "name": "Llamada de las tinieblas",
+            "description": "Cuando vayas a robar una ficha de Mitos, en vez de eso puedes sufrir un punto de Horror directo y colocar una ficha de Perdición en tu espacio."
+            },
+            "en": {
+            "name": "Call of the darkness",
+            "description": "When you go to steal a Myths token, instead you can suffer a direct Horror point and place a Doom token in your space."
             }
         }
     },
     {"id": 45,
-        "name": "Rain or shine",
         "img": "/img/2-obj/PerStella3.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Llueva o truene",
-                "img": "/img/2-obj/es_PerStella3.jpg"
+            "name": "Llueva o truene",
+            "description": "Una vez por turno, cuando vayas a fallar una prueba, puedes descartar una ficha de Concentración de VOLUNTAD para añadir un Éxito al resultado de tu prueba."
+            },
+            "en": {
+            "name": "Rain or shine",
+            "description": "Once per turn, when you are going to fail a test, you can discard a WILL Concentration token to add a Success to your test result."
             }
         }
     },
 
     {"id": 46,
-        "name": "Sign of the cross",
         "img": "/img/2-obj/PerPadre1.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Señal de la cruz",
-                "img": "/img/2-obj/es_PerPadre1.jpg"
+            "name": "Señal de la cruz",
+            "description": "Encuentro: haz una prueba de VOLUNTAD -1. Por cada Éxito que obtengas, un investigador de tu elección situado en cualquier espacio descarta un Estado, recupera un punto de Vida o recupera un punto de Cordura."
+            },
+            "en": {
+            "name": "Sign of the cross",
+            "description": "Encounter: make a WILL test at –1. For every Success you achieve, a researcher of your choice in any space discards a Condition, recovers a Life point, or recovers a Sanity point."
             }
         }
     },
     {"id": 47,
-        "name": "Holy water",
         "img": "/img/2-obj/PerPadre2.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Agua bendita",
-                "img": "/img/2-obj/es_PerPadre2.jpg"
+            "name": "Agua bendita",
+            "description": "Puedes tratar los modificadores de ataque y evasión de los Monstruos no Humanos que haya en tu espacio como si fueran +1. Después de que infrinjas Daño a un Monstruo no Humano durante una acción de ataque, agota a ese Monstruo."
+            },
+            "en": {
+            "name": "Holy water",
+            "description": "You can treat the attack and evasion modifiers of non‑Human Monsters in your space as +1. After you damage a non‑Human Monster during an attack action, exhaust that Monster."
             }
         }
     },
     {"id": 48,
-        "name": "Drive away the darkness",
         "img": "/img/2-obj/PerPadre3.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ensalmo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
-                "name": "Alejar la oscuridad",
-                "img": "/img/2-obj/es_PerPadre3.jpg"
+            "name": "Alejar la oscuridad",
+            "description": "Una vez por ronda, antes de que se resuelva un efecto de Retribución, puedes hacer una prueba de SABER -1. Si la superas, ese efecto de Retribución no se resuelve en la actual fase de Mitos."
+            },
+            "en": {
+            "name": "Drive away the darkness",
+            "description": "Once per round, before a Retribution effect is resolved, you can take a KNOW test at –1. If you pass, that Retribution effect is not resolved this Myths phase."
+            }
+        }
+    },
+
+    // Todo, hay que recolocar todas las IDs tanto de los objetos como la relacion de los investigadores con los objetos o poner una id superior a los objetos de zoey
+    {"id": 46,
+        "img": "/img/2-obj/PerZoey1.jpg",
+        "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+            "name": "Cuchillo de cocina",
+            "description": "Recibes +2 de FUERZA como parte de una acción de ataque. Después de que vuelvas a tirar un dado al resolver una prueba, añade un punto al resultado de ese dado."
+            },
+            "en": {
+            "name": "Kitchen knife",
+            "description": "You receive +2 FORCE as part of an attack action. After you roll a die again when solving a test, add a point to the result of that die."
+            }
+        }
+    },
+    {"id": 47,
+        "img": "/img/2-obj/PerZoey2.jpg",
+        "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual", "vinculable"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+            "name": "Arma encantada",
+            "description": "Al comienzo de tu turno, puedes hacer una prueba de SABER. Si la superas, vincula esta carta a un Arma situada en tu espacio. Vínculo: Una vez por ronda, cuando estés realizando una acción de ataque, puedes volver a tirar un dado o todos los dados."
+            },
+            "en": {
+            "name": "Enchanted weapon",
+            "description": "Spell - Binding Ritual. At the beginning of your turn, you can take a KNOW test. If you overcome it, link this card to a Weapon in your space. Link: Once per round, when you are performing an attack action, you can re-roll a die or all dice."
+            }
+        }
+    },
+    {"id": 48,
+        "img": "/img/2-obj/PerZoey3.jpg",
+        "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": 3,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+            "name": "El crucifijo de Zoey",
+            "description": "Después de que te enfrentes a un Monstruo, puedes infligir un punto de Daño a este Objeto para hacer una prueba de VOLUNTAD. Infringe a este Monstruo tanto Daño como el resultado de esta prueba."
+            },
+            "en": {
+            "name": "The crucifix of Zoey",
+            "description": "Object - Extraordinary. After you face a Monster, you can inflict a Damage point on this Object to test WILL. Inflict on this Monster both Damage and the result of this test."
             }
         }
     },
 
     {"id": 49,
-        "name": "The violin of Patricie",
         "img": "/img/2-obj/PerPatricie1.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "El violín de Patricie",
-                "img": "/img/2-obj/es_PerPatricie1.jpg"
+            "name": "El violín de Patricie",
+            "description": "Después de que realices una acción de conseguir fondos, elige una habilidad. Todos los investigadores que estén en tu barrio pueden concentrarse en esta habilidad."
+            },
+            "en": {
+            "name": "The violin of Patricie",
+            "description": "After you perform a fundraising action, choose a skill. All researchers in your neighborhood can focus on this ability."
             }
         }
     },
     {"id": 50,
-        "name": "Captivating melody",
         "img": "/img/2-obj/PerPatricie2.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Melodía cautivadora",
-                "img": "/img/2-obj/es_PerPatricie2.jpg"
+                "description": "Puedes realizar una acción de salvaguarda aunque estés enfrentado a un Monstruo. Como parte de una acción de salvaguarda, por cada Éxito que obtengas, puedes agotar a un Monstruo situado en tu espacio en vez de quitar una ficha de perdición."
+            },
+            "en": {
+                "name": "Captivating melody",
+                "description": "You can perform a safeguard action even if you are facing a Monster. As part of a safeguard action, for every Success you get, you can exhaust a Monster located in your space instead of removing a doom tile."
             }
         }
     },
     {"id": 51,
-        "name": "Sueños omniosos",
         "img": "/img/2-obj/PerPatricie3.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_PerPatricie3.jpg"
+            "name": "Sueños ominosos, pero añades al Vigía al mazo de Monstruos.",
+            "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes volver a lanzar un dado en el que hayas obtenido un éxito a cambio de revelar o hacer aparecer una pista. Si se descarta este Talento, devuelve el Vigía a la caja del juego."
+            },
+            "en": {
+            "name": "Ominous Dreams, but you add the Lookout to the deck of Monsters.",
+            "description": "Once per round, when you are solving a test, you can re-roll a die in which you have obtained a success in exchange for revealing or making a clue appear. If this Talent is discarded, return the Lookout to the game box."
             }
         }
     },
 
     {"id": 52,
-        "name": "Anticipation",
         "img": "/img/2-obj/PerCarson1.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Anticipación",
-                "img": "/img/2-obj/es_PerCarson1.jpg"
+            "name": "Anticipación",
+            "description": "Después de que realices una acción de Concentración, puedes concentrarte en una habilidad adicional por cada Pista que haya en tu Barrio."
+            },
+            "en": {
+            "name": "Anticipation",
+            "description": "After you perform a Concentration action, you can focus on an additional skill for each Track in your Neighborhood."
             }
         }
     },
     {"id": 53,
-        "name": "As you command",
         "img": "/img/2-obj/PerCarson2.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Como usted mande",
-                "img": "/img/2-obj/es_PerCarson2.jpg"
+            "name": "Como usted mande",
+            "description": "Una vez por ronda, después que otro investigador situado en cualquier espacio realice una acción, puedes gastar una ficha de concentración para realizar esa misma acción (Se aplican las restricciones normales a dicha acción)."
+            },
+            "en": {
+            "name": "As you command",
+            "description": "Once per round, after another researcher located in any space performs an action, you can spend a concentration tab to perform the same action (normal restrictions apply to that action)."
             }
         }
     },
     {"id": 54,
-        "name": "Prepared for everything",
         "img": "/img/2-obj/PerCarson3.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Preparado para todo",
-                "img": "/img/2-obj/es_PerCarson3.jpg"
+            "name": "Preparado para todo",
+            "description": "Una vez por ronda, cuando un investigador situado en cualquier espacio sufra cualquier cantidad de daño o de Horror, puedes descartar una ficha de Concentración para anular ese Daño o Horror."
+            },
+            "en": {
+            "name": "Prepared for everything",
+            "description": "Once per round, when a researcher located in any space suffers any amount of damage or Horror, you can discard a Concentration tab to nullify that Damage or Horror."
             }
         }
     },
 
     {"id": 55,
-        "name": "Duque",
         "img": "/img/2-obj/PerPete1.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "aliado", "fiel sabueso"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Duque",
-                "img": "/img/2-obj/es_PerPete1.jpg"
+            "name": "Duque",
+            "description": "Recibes +1 de FUERZA como parte de una acción de ataque. Como parte de una acción de intercambio, puedes realizar el intercambio con uno o con varios investigadores que estén en tu barrio."
+            },
+            "en": {
+            "name": "Duque",
+            "description": "Ally - Faithful Hound. You receive +1 FORCE as part of an attack action. As part of an exchange action, you can make the exchange with one or several researchers who are in your neighborhood."
             }
         }
     },
     {"id": 56,
-        "name": "Pete’s guitar",
         "img": "/img/2-obj/PerPete2.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "La guitarra de Pete",
-                "img": "/img/2-obj/es_PerPete2.jpg"
+            "name": "La guitarra de Pete",
+            "description": "Después de que realices una acción de conseguir fondos, tantos investigadores que estén en tu barrio como tu puntuación de INFLUENCIA pueden recuperar un punto de Cordura o concentrarse en una habilidad de su elección (cada jugador elige una opción)."
+            },
+            "en": {
+            "name": "Pete’s guitar",
+            "description": "Object - Extraordinary Common. After you do a fundraising action, as many researchers in your neighborhood as your INFLUENCE score can regain a Sanity point or concentrate on a skill of their choice (each player chooses an option)."
             }
         }
     },
     {"id": 57,
-        "name": "Globetrotter",
         "img": "/img/2-obj/PerPete3.jpg",
         "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Trotamundos",
-                "img": "/img/2-obj/es_PerPete3.jpg"
+            "name": "Trotamundos",
+            "description": "Encuentro: una vez por ronda, puedes elegir un espacio adyacente. Resuelve un encuentro como si estuvieras en ese espacio, tirando un dado menos en todas las pruebas que debas realizar durante ese encuentro."
+            },
+            "en": {
+            "name": "Globetrotter",
+            "description": "Talent - Innate. Encounter: once per round, you can choose an adjacent space. Resolve an encounter as if you were in that space, rolling one fewer die on all tests during that encounter."
             }
         }
     },
-
 
     {"id": 58,
         "name": ".38 Special",
