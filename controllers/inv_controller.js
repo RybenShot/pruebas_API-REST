@@ -30,10 +30,10 @@ export class InvController {
         // llamamos al modelo para que nos devuelva los objetos iniciales del investigador
         const invObjects = await InvModel.getInvObjects({ id })
 
-        // si se ha encontrado exitosamente el investigador, lo devolvemos
+        // si se ha encontrado exitosamente los objetos del investigador, lo devolvemos
         if (invObjects) return res.json(invObjects)
 
-        // aqui llegara si no ha encontrado el investigador
+        // aqui llegara si no ha encontrado los objetos del investigador
         res.status(404).json({ message: 'Objetos del Investigador no encontrado' })
     }
 

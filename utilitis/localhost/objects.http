@@ -1,0 +1,24 @@
+### Obtener todos los objetos de un investigador
+GET http://localhost:1234/inv/2/objects
+
+### Obtener un objeto por su ID
+GET http://localhost:1234/objects/20
+
+### Objener una lista de objetos segun filtros
+POST http://localhost:1234/objects
+Content-Type:application/json
+
+{
+    "name": "",
+    "expansion": "base",
+    "types": []
+}
+
+### Objener carta aleatoria segun filtro
+POST http://localhost:1234/objects/getRandomObject
+Content-Type:application/json
+
+{
+    "expansion": "base",
+    "types": ["objeto"]
+}
