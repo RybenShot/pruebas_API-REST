@@ -9,6 +9,7 @@ invRouter.get('/previewList', InvController.getAllPreview)
 invRouter.get('/', InvController.getAll)
 // OBTENER los objetos iniciales de un investigador
 invRouter.get('/:id/objects', InvController.getInvObjects)
+
 // PEDIMOS un investigador por la ID
 invRouter.get('/:id',  InvController.getById)
 // CREAMOS un nuevo investigador

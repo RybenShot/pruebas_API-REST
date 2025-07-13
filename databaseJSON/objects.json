@@ -1164,6 +1164,82 @@
         }
     },
 
+    {"id": 46111,
+        "img": "/img/2-obj/PerZoey1.jpg",
+        "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+            "name": "Cuchillo de cocina",
+            "description": "Recibes +2 de FUERZA como parte de una acción de ataque. Después de que vuelvas a tirar un dado al resolver una prueba, añade un punto al resultado de ese dado."
+            },
+            "en": {
+            "name": "Kitchen knife",
+            "description": "You receive +2 FORCE as part of an attack action. After you roll a die again when solving a test, add a point to the result of that die."
+            }
+        }
+    },
+    {"id": 47111,
+        "img": "/img/2-obj/PerZoey2.jpg",
+        "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual", "vinculable"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+            "name": "Arma encantada",
+            "description": "Al comienzo de tu turno, puedes hacer una prueba de SABER. Si la superas, vincula esta carta a un Arma situada en tu espacio. Vínculo: Una vez por ronda, cuando estés realizando una acción de ataque, puedes volver a tirar un dado o todos los dados."
+            },
+            "en": {
+            "name": "Enchanted weapon",
+            "description": "Spell - Binding Ritual. At the beginning of your turn, you can take a KNOW test. If you overcome it, link this card to a Weapon in your space. Link: Once per round, when you are performing an attack action, you can re-roll a die or all dice."
+            }
+        }
+    },
+    {"id": 48111,
+        "img": "/img/2-obj/PerZoey3.jpg",
+        "expansion": "AHWaves",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": 3,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+            "name": "El crucifijo de Zoey",
+            "description": "Después de que te enfrentes a un Monstruo, puedes infligir un punto de Daño a este Objeto para hacer una prueba de VOLUNTAD. Infringe a este Monstruo tanto Daño como el resultado de esta prueba."
+            },
+            "en": {
+            "name": "The crucifix of Zoey",
+            "description": "Object - Extraordinary. After you face a Monster, you can inflict a Damage point on this Object to test WILL. Inflict on this Monster both Damage and the result of this test."
+            }
+        }
+    },
+
     {"id": 46,
         "img": "/img/2-obj/PerPadre1.jpg",
         "expansion": "AHWaves",
@@ -1236,83 +1312,6 @@
             "en": {
             "name": "Drive away the darkness",
             "description": "Once per round, before a Retribution effect is resolved, you can take a KNOW test at –1. If you pass, that Retribution effect is not resolved this Myths phase."
-            }
-        }
-    },
-
-    // Todo, hay que recolocar todas las IDs tanto de los objetos como la relacion de los investigadores con los objetos o poner una id superior a los objetos de zoey
-    {"id": 46,
-        "img": "/img/2-obj/PerZoey1.jpg",
-        "expansion": "AHWaves",
-        "price": null,
-        "types": ["perInicial", "objeto", "comun", "arma"],
-        "hands": 1,
-        "health": {
-            "life": null,
-            "sanity": null
-        },
-        "cost": {
-            "life": null,
-            "sanity": null
-        },
-        "translations": {
-            "es": {
-            "name": "Cuchillo de cocina",
-            "description": "Recibes +2 de FUERZA como parte de una acción de ataque. Después de que vuelvas a tirar un dado al resolver una prueba, añade un punto al resultado de ese dado."
-            },
-            "en": {
-            "name": "Kitchen knife",
-            "description": "You receive +2 FORCE as part of an attack action. After you roll a die again when solving a test, add a point to the result of that die."
-            }
-        }
-    },
-    {"id": 47,
-        "img": "/img/2-obj/PerZoey2.jpg",
-        "expansion": "AHWaves",
-        "price": null,
-        "types": ["perInicial", "hechizo", "ritual", "vinculable"],
-        "hands": null,
-        "health": {
-            "life": null,
-            "sanity": null
-        },
-        "cost": {
-            "life": null,
-            "sanity": 1
-        },
-        "translations": {
-            "es": {
-            "name": "Arma encantada",
-            "description": "Al comienzo de tu turno, puedes hacer una prueba de SABER. Si la superas, vincula esta carta a un Arma situada en tu espacio. Vínculo: Una vez por ronda, cuando estés realizando una acción de ataque, puedes volver a tirar un dado o todos los dados."
-            },
-            "en": {
-            "name": "Enchanted weapon",
-            "description": "Spell - Binding Ritual. At the beginning of your turn, you can take a KNOW test. If you overcome it, link this card to a Weapon in your space. Link: Once per round, when you are performing an attack action, you can re-roll a die or all dice."
-            }
-        }
-    },
-    {"id": 48,
-        "img": "/img/2-obj/PerZoey3.jpg",
-        "expansion": "AHWaves",
-        "price": null,
-        "types": ["perInicial", "objeto", "extraordinario"],
-        "hands": 1,
-        "health": {
-            "life": 3,
-            "sanity": 0
-        },
-        "cost": {
-            "life": null,
-            "sanity": null
-        },
-        "translations": {
-            "es": {
-            "name": "El crucifijo de Zoey",
-            "description": "Después de que te enfrentes a un Monstruo, puedes infligir un punto de Daño a este Objeto para hacer una prueba de VOLUNTAD. Infringe a este Monstruo tanto Daño como el resultado de esta prueba."
-            },
-            "en": {
-            "name": "The crucifix of Zoey",
-            "description": "Object - Extraordinary. After you face a Monster, you can inflict a Damage point on this Object to test WILL. Inflict on this Monster both Damage and the result of this test."
             }
         }
     },
@@ -1540,828 +1539,1781 @@
             },
             "en": {
             "name": "Globetrotter",
-            "description": "Talent - Innate. Encounter: once per round, you can choose an adjacent space. Resolve an encounter as if you were in that space, rolling one fewer die on all tests during that encounter."
+            "description": "Encounter: once per round, you can choose an adjacent space. Resolve an encounter as if you were in that space, rolling one fewer die on all tests during that encounter."
             }
         }
     },
 
     {"id": 58,
-        "name": ".38 Special",
         "img": "/img/2-obj/PerRoland1.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": ".38 Special",
-                "img": "/img/2-obj/es_PerRoland1.jpg"
+                "description": "Recibes +2 de FUERZA como parte de una accion de ataque. si el Monstruo alq ue estas atacando tiene un icno de Restos, en vez de eso recibes +3 de FUERZA."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 59,
-        "name": "___",
         "img": "/img/2-obj/PerRoland2.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Implacable",
-                "img": "/img/2-obj/es_PerRoland2.jpg"
+                "description": "Cuando vayas a ganar una ficha de Restos, en vez de eso puedes recuperar un punto de Vida y un punto de Cordura."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 60,
-        "name": "___",
         "img": "/img/2-obj/PerRoland3.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Indagaciones",
-                "img": "/img/2-obj/es_PerRoland3.jpg"
+                "description": "Cuando vayas a ganar una ficha de Restos, en vez de eso puedes hacer que aparezca una Pista."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
     {"id": 61,
-        "name": "___",
         "img": "/img/2-obj/PerKate1.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "extraordinario", "tomo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Notas de investigación",
-                "img": "/img/2-obj/es_PerKate1.jpg"
+                "description": "Una vez por ronda, cuando vayas a repetir al lanzamiento de un dado, en vez de eso puedes sumar uno al resultado de ese dado."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 62,
-        "name": "___",
         "img": "/img/2-obj/PerKate2.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Estabilizador de flujo",
-                "img": "/img/2-obj/es_PerKate2.jpg"
+                "description": "Una vez por ronda, cuando vayan a colocarse en tu Barrio una ficha de Perdición o un Monstruo que no sea épico, en vez de eso puedes descartarlo."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 63,
-        "name": "___",
         "img": "/img/2-obj/PerKate3.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Resultados consistentes",
-                "img": "/img/2-obj/es_PerKate3.jpg"
+                "description": "Cuando coloques al menos dos Pistas sobre la oja de escenario como parte de una sola acción de revelar îstas, puedes colocar una pista adicional cogida de la reserva de Pistas."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
-
     {"id": 64,
-        "name": "___",
         "img": "/img/2-obj/PerDiana1.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Revelación siniestra",
-                "img": "/img/2-obj/es_PerDiana1.jpg"
+                "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sumar uno al resultado de tantos dados como la cantidad de Perdición que haya en tu espacio."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 65,
-        "name": "___",
         "img": "/img/2-obj/PerDiana2.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "objeto", "magico", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Amuleto robado",
-                "img": "/img/2-obj/es_PerDiana2.jpg"
+                "description": "Una vez por ronda, durante tu turno, puedes sufrir un punto de Horror directo para realizar una accion adicional."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 66,
-        "name": "___",
         "img": "/img/2-obj/PerDiana3.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
                 "name": "Invocar tormenta",
-                "img": "/img/2-obj/es_PerDiana3.jpg"
+                "description": "Accion: Elige un espacio cualquiera y haz una prueba de SABER -1. todos los Monstruos que esté en ese espacio sufren tanto daño como el resultado de la prueba. Luego coloca una ficha de Perdicion en ese espacio."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
     {"id": 67,
-        "name": "___",
         "img": "/img/2-obj/PerMalasombra1.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Prófugo",
-                "img": "/img/2-obj/es_PerMalasombra1.jpg"
+                "description": "Durante tu turno, puedes sufrir un punto de Horror para separarte y agotar a todos los Monstruos que estén enfrentados a ti y que no sean épicos; además, los Monstruos que no sean épicos no se enfrentarán a ti hasta el final de la ronda. "
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 68,
-        "name": "___",
         "img": "/img/2-obj/PerMalasombra2.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Manos largas",
-                "img": "/img/2-obj/es_PerMalasombra2.jpg"
+                "description": "Después de que realices una acción de conseghuir fondos, puedes ganar PERSEGUIDO para elegir un objeto del Catalogo y hacer una prueba de OBSERVACION +1. Si el resultado de esta prueba es igual o superior al precio de ese objeto, ganas el objeto y descartas perseguido."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 69,
-        "name": "___",
         "img": "/img/2-obj/PerMalasombra3.jpg",
         "expansion": "AHNigth",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "extraordinario", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Navaja automática",
-                "img": "/img/2-obj/es_PerMalasombra3.jpg"
+                "description": "Cuando te separas de un Monstruo, puedes inflingirle un punto de daño."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
     {"id": 70,
-        "name": "___",
         "img": "/img/2-obj/PerMark1.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Ejército de un solo hombre",
-                "img": "/img/2-obj/es_PerMark1.jpg"
+                "description": "Despues de que acabes tu movimiento en el espacio de un Monstruo, o después de que un Monstruo se mueva a tu espacio o aparezca en él, puedes quedar rezagado para realizar una acción de ataque como acción adicional."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 71,
-        "name": "___",
         "img": "/img/2-obj/PerMark2.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 0,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Retrato de Sophie",
-                "img": "/img/2-obj/es_PerMark2.jpg"
+                "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sufrir un punto de Daño para volver a tirar un dado o todos los dados. Cuando uses tu capacidad Tenaz, este Objeto recupera un punto de Cordura."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 72,
-        "name": "___",
         "img": "/img/2-obj/PerMark3.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Guerra de desgaste",
-                "img": "/img/2-obj/es_PerMark3.jpg"
+                "description": "Al final de tu turno, puedes sufrir cualquier cantidad de Daño directo para inflingir a cada Monstruo enfrentado a ti una cantidad de Daño igual a esa cantidad menos uno. (No puedes sufrir voluntariamente una cantidad de Daño superior a tu Vida.)"
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
     {"id": 73,
-        "name": "___",
         "img": "/img/2-obj/PerPreston1.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Herencia familiar",
-                "img": "/img/2-obj/es_PerPreston1.jpg"
+                "description": "RETRIBUCION: Ganas 1$ y todo el dinero que haya en esta carta. Después de que realices una acción de conseguir fondos, coloca 2$ adicionales sobre esta carta. (No puedes gastar, usar o intercambiar el dinero de esta carta.)"
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 74,
-        "name": "___",
         "img": "/img/2-obj/PerPreston2.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 0,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "El dinero habla",
-                "img": "/img/2-obj/es_PerPreston2.jpg"
+                "description": "Cuando estés resolviendo una prueba, puedes gastar 1$ para volver a tirar un dado. (Puedes usar este Talento cualquier cantidad de veces por prueba.)"
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 75,
-        "name": "___",
         "img": "/img/2-obj/PerPreston3.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "Vida privilegiada",
-                "img": "/img/2-obj/es_PerPreston3.jpg"
+                "name": "El dinero habla",
+                "description": "Después de que te concentres en una habilidad como parte de una ación de concentración, puedes gastar 1$ para concentrarte en esa habilidad una vez adicional."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
     {"id": 76,
-        "name": "___",
         "img": "/img/2-obj/PerAgatha1.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Principio de ocultismo",
-                "img": "/img/2-obj/es_PerAgatha1.jpg"
+                "description": "Después de que ganes una Pista de tu Barrio, puedes colocar una ficha de Perdición en tu espacio para ganar una Pista adicional de la reserva de fichas. Si lo haces, dale la vuelta a este Talento."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 77,
-        "name": "___",
         "img": "/img/2-obj/PerAgatha2.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Método científico",
-                "img": "/img/2-obj/es_PerAgatha2.jpg"
+                "description": "Después de que realices una acción de salvaguarda, si el resultado fue dos o más, puedes realizar una acción de investigación como acción adicional. Si lo haces, dale la vuelta a este Talento."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 78,
-        "name": "___",
         "img": "/img/2-obj/PerAgatha3.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 2
+        },
         "translations": {
             "es": {
                 "name": "LLamar a los muertos",
-                "img": "/img/2-obj/es_PerAgatha3.jpg"
+                "description": "Acción: Realiza una prueba de -1 Saber. Si superas la prueba, descarta la primera carta del mazo de Encuentros de tu localización. Si descartas un Evento de esta forma, ganas una Pista de tu Barrio."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 79,
-        "name": "___",
         "img": "/img/2-obj/PerAgatha4.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Cámara de espíritus",
-                "img": "/img/2-obj/es_PerAgatha4.jpg"
+                "description": "Una vez por ronda, cuando fueses a robar y resolver una ficha de Mitos, puedes gastar dos fichas de Restos para que en vez de eso aparezca una Pista. Coloca la carta de Evento de esa Pista en la parte superior de su mazo de Encuentros (en lugar de barajarla junto con las dos primeras cartas)."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
     {"id": 80,
-        "name": "___",
         "img": "/img/2-obj/PerWinifred1.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Lo mismo que hagas",
-                "img": "/img/2-obj/es_PerWinifred1.jpg"
+                "description": "Después de que un investigador que esté en cualquier espacio realize una acción, puedes quedar rezagado pararealizar esa misma acción. Si esa acción requiere una prueba, tira un dado más de los que tiró ese investigador en lugar de tu reserva de dados normal. (Se siguen aplicando las restricciones de acción normales)."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 81,
-        "name": "___",
         "img": "/img/2-obj/PerWinifred2.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Acrobacias aéreas",
-                "img": "/img/2-obj/es_PerWinifred2.jpg"
+                "description": "Una vez por ronda, cuando fueses a superar una prueba, puedes volver a tirar todos los dados. Si lo haces, ganas Determinado. Si ya tienes Determinado, en vez de eso puedes recuperar un punto de Vida o de Cordura."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
     {"id": 82,
-        "name": "___",
         "img": "/img/2-obj/PerWinifred3.jpg",
         "expansion": "AHSecrets",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Determinación imprudente",
-                "img": "/img/2-obj/es_PerWinifred3.jpg"
+                "description": "Después de que tires los dados, puedess quedar rezagado para tirar un dado adicional por cada dado que no sea un éxito."
+            },
+            "en": {
+                "name": "___",
+                "description": "___"
             }
         }
     },
 
     {"id": 83,
-        "name": "Camera",
         "img": "/img/2-obj/PerDarrell1.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "objeto", "especial"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Camara de Fotos",
-                "img": "/img/2-obj/es_PerDarrell1.jpg"
+                "description": "Acción - Pedes hacer una foto de cualquier criatura que NO SEA HUMANO siempre que esté en tu mismo espacio. Por cada 2 fotos que consigas ganas 1 aliado."
+            },
+            "en": {
+                "name": "Camera",
+                "description": "Action - You can take a photo of any creature that is NOT HUMAN as long as it is in your same space. For every 2 photos you get you gain 1 ally."
             }
         }
     },
     {"id": 84,
-        "name": "Each photo tells",
         "img": "/img/2-obj/PerDarrell2.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Cada foto cuenta",
-                "img": "/img/2-obj/es_PerDarrell2.jpg"
+                "description": "Por cada foto que consiguas te puedes concentrar en 1 habilidad de tu elección. Aunque superes tu limite de concentración."
+            },
+            "en": {
+                "name": "Each photo tells",
+                "description": "For every photo you get, you can focus on 1 skill of your choice. Even if you exceed your concentration limit."
             }
         }
     },
     {"id": 85,
-        "name": "Advance",
-        "img": "/img/2-obj/PerDarrell3.jpg",
+        "img": "/img/2-obj/PerDarrell2.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "prestamo", "estado"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Anticipo",
-                "img": "/img/2-obj/es_PerDarrell3.jpg"
+                "description": "Al principio de tu turno ganas 2 $, luego tira 1 dado. Si sacas un 1, se decarta esta carta."
+            },
+            "en": {
+                "name": "Advance",
+                "description": "At the beginning of your turn you win $2, then you roll a dice. If you roll a 1, this card is drawn."
             }
         }
     },
 
     {"id": 86,
-        "name": "I saw it coming",
         "img": "/img/2-obj/PerGloria1.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Ya lo veía venir",
-                "img": "/img/2-obj/es_PerGloria1.jpg"
+                "description": "Tienes +1 de SABER cuando vayas a hacer una tirada de salvaguarda."
+            },
+            "en": {
+                "name": "I saw it coming",
+                "description": "You have +1 of KNOW when you go to make a roll of safeguard."
             }
         }
     },
     {"id": 87,
-        "name": "Forbidden letters",
         "img": "/img/2-obj/PerGloria2.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
                 "name": "Letras prohibidas",
-                "img": "/img/2-obj/es_PerGloria2.jpg"
+                "description": "Accion: Haz una tirada de SABER y resuelve según su resultado. 0: Solo recibes el daño. 1: Puedes agotar a un monstruo que esté en tu espacio. +2: Puedes agotar un monstruo de cualquier espacio."
+            },
+            "en": {
+                "name": "Forbidden letters",
+                "description": "Action: Make a SABER spin and solve according to its result. 0: You only take damage. 1: You can exhaust a monster in your space. + 2: You can exhaust a monster from any space."
             }
         }
     },
     {"id": 88,
-        "name": "Illumination",
         "img": "/img/2-obj/PerGloria3.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Iluminación",
-                "img": "/img/2-obj/es_PerGloria3.jpg"
+                "description": "Si consigues salvaguardar 2 fichas de perdición a la vez, podrás revelar pista sin necesidad de tirar."
+            },
+            "en": {
+                "name": "Illumination",
+                "description": "If you manage to safeguard 2 pieces of perdition at once, you can reveal a clue without having to shoot."
             }
         }
     },
 
     {"id": 89,
-        "name": "Notebook",
         "img": "/img/2-obj/PerMandy1.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Cuaderno de notas",
-                "img": "/img/2-obj/es_PerMandy1.jpg"
+                "description": "Si en la fase de Mitos sacas una ficha de explosion de portal. Ganas 2 pistas de la caja de pistas."
+            },
+            "en": {
+                "name": "Notebook",
+                "description": "If in the Myths phase you get a portal explosion tab. You win 2 tracks from the clue box."
             }
         }
     },
     {"id": 90,
-        "name": "The short way",
         "img": "/img/2-obj/PerMandy2.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "El camino corto",
-                "img": "/img/2-obj/es_PerMandy2.jpg"
+                "description": "Si empiezas tu turno en una calle, puedes moverte directamente a cualquier calle del mapa y empezar tu turno desde allí."
+            },
+            "en": {
+                "name": "The short way",
+                "description": "If you start your shift on a street, you can move directly to any street on the map and start your shift from there."
             }
         }
     },
     {"id": 91,
-        "name": "Irrefutable evidence",
         "img": "/img/2-obj/PerMandy3.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Pruebas irrefutables",
-                "img": "/img/2-obj/es_PerMandy3.jpg"
+                "description": "Acción: Haz una tirada de INFLUENCIA , si consigues 2 aciertos, consigues un aliado."
+            },
+            "en": {
+                "name": "Irrefutable evidence",
+                "description": "Action: Make a spin of INFLUENCE , if you get 2 hits, you get an ally."
             }
         }
     },
 
     {"id": 92,
-        "name": "Whip of the film",
         "img": "/img/2-obj/PerMonterrey1.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "arma", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Látigo de la película",
-                "img": "/img/2-obj/es_PerMonterrey1.jpg"
+                "description": "Te da +2 de FUERZA en las tiradas de ataque. Puedes atacar cuantas veces quieras usando este arma."
+            },
+            "en": {
+                "name": "Whip of the film",
+                "description": "It gives you +2 FORCE on attack spins. You can attack as many times as you want using this weapon."
             }
         }
     },
     {"id": 93,
-        "name": "Sacrifice spell",
         "img": "/img/2-obj/PerMonterrey2.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "hechizo", "vinculable", "especial"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
                 "name": "Hechizo de Sacrificio",
-                "img": "/img/2-obj/es_PerMonterrey2.jpg"
+                "description": "Asigna esta carta a un arma, por cada 6 que saque usando dicha arma, pon un contador de +1 sobre esta carta, cuando el contador llegue a +10 podrás usar todo el poder acumulado en 1 solo ataque, añade +10 dados al ataque, PERO perderás 2 de Vida debido a la desmesurada fuerza del ataque, el ataque afecta a todos lo enemigos de la misma zona. Después descarta la carta de hechizo y el arma."
+            },
+            "en": {
+                "name": "Sacrifice spell",
+                "description": "Assign this card to a weapon, for every 6 you draw using this weapon, put a counter of +1, when the counter reaches +10 you can use all the power accumulated in 1 single attack, BUT you will lose 2 of Life due to the excessive strength of the attack,the attack affects all enemies in the same area. Then discard the spell card and weapon."
             }
         }
     },
     {"id": 94,
-        "name": "Until the last breath",
         "img": "/img/2-obj/PerMonterrey3.jpg",
         "expansion": "AHOriginal",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Hasta el último aliento",
-                "img": "/img/2-obj/es_PerMonterrey3.jpg"
+                "description": "Por turno puedes sufrir 2 puntos de Horror para volver a tirar cualquier cantidad de dados."
+            },
+            "en": {
+                "name": "Until the last breath",
+                "description": "___"
             }
         }
     },
 
     {"id": 95,
-        "name": "Group Therapy",
-        "description": "Once per round, you may become TAINTED or CURSED for investtigators and/or allies in your space to collectively recover 3 sanity; you recover 1 health. Whenever an investigator in your  neighborhood would spend or discard a remnant, they may recover one health or one sanity.",
         "img": "/img/2-obj/PerCarolyn1.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Terapia de grupo",
-                "description": "Una vez por ronda, puedes volverte CORROMPIDO o MALDITO para que los investigadores y/o aliados en tu espacio recuperen colectivamente 3 de cordura; tú recuperas 1 de salud. Cada vez que un investigador en tu vecindario fuera a gastar o descartar un resto, puede recuperar 1 de salud o 1 de cordura.",
-                "img": "/img/2-obj/es_PerCarolyn1.jpg"
+                "description": "Una vez por ronda, puedes volverte CORROMPIDO o MALDITO para que los investigadores y/o aliados en tu espacio recuperen colectivamente 3 de cordura; tú recuperas 1 de salud. Cada vez que un investigador en tu vecindario fuera a gastar o descartar un resto, puede recuperar 1 de salud o 1 de cordura."
+            },
+            "en": {
+                "name": "Group Therapy",
+                "description": "Once per round, you may become TAINTED or CURSED for investtigators and/or allies in your space to collectively recover 3 sanity; you recover 1 health. Whenever an investigator in your  neighborhood would spend or discard a remnant, they may recover one health or one sanity."
             }
         }
     },
     {"id": 96,
-        "name": "Cognitive Will",
-        "description": "Action: Choose one, non-epic monster in any space and test your LORE -1. If you pass, you may control that monster's actions during the next monster phase (this monster treats investigators as allies and monsters as enemies; the monster may attack and deal damage equal to its damage value to another monster).",
         "img": "/img/2-obj/PerCarolyn2.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "conjuracion"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 2
+        },
         "translations": {
             "es": {
                 "name": "Voluntad cognitiva",
-                "description": "Acción: Elige un monstruo no épico en cualquier espacio y haz una prueba de tu SABIDURÍA con -1. Si tienes éxito, puedes controlar las acciones de ese monstruo durante la próxima fase de monstruos (este monstruo tratará a los investigadores como aliados y a los monstruos como enemigos; puede atacar y causar daño igual a su valor de daño a otro monstruo).",
-                "img": "/img/2-obj/es_PerCarolyn2.jpg"
+                "description": "Acción: Elige un monstruo no épico en cualquier espacio y haz una prueba de tu SABIDURÍA con -1. Si tienes éxito, puedes controlar las acciones de ese monstruo durante la próxima fase de monstruos (este monstruo tratará a los investigadores como aliados y a los monstruos como enemigos; puede atacar y causar daño igual a su valor de daño a otro monstruo)."
+            },
+            "en": {
+                "name": "Cognitive Will",
+                "description": "Action: Choose one, non-epic monster in any space and test your LORE -1. If you pass, you may control that monster's actions during the next monster phase (this monster treats investigators as allies and monsters as enemies; the monster may attack and deal damage equal to its damage value to another monster)."
             }
         }
     },
     {"id": 97,
-        "name": "Session Clock",
-        "description": "At the end of your turn, you may suffer one direct damage to perform an action you have already performed this turn as an additional action.",
         "img": "/img/2-obj/PerCarolyn3.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Reloj de sesión",
-                "description": "Al final de tu turno, puedes sufrir 1 daño directo para realizar una acción que ya hayas realizado este turno como una acción adicional.",
-                "img": "/img/2-obj/es_PerCarolyn3.jpg"
+                "description": "Al final de tu turno, puedes sufrir 1 daño directo para realizar una acción que ya hayas realizado este turno como una acción adicional."
+            },
+            "en": {
+                "name": "Session Clock",
+                "description": "At the end of your turn, you may suffer one direct damage to perform an action you have already performed this turn as an additional action."
             }
         }
     },
 
     {"id": 98,
-        "name": "Briberty",
-        "description": "If you have more than 3$, monsters treat you as their prey during the mosnter phase (Ignore all other monster prey conditions). Whenever a monster spawns or moves into your space, you may spend 1$ to deal 1 damage or exhaust that monster (limit once per instance).",
         "img": "/img/2-obj/PerBob1.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Libersoborno",
-                "description": "Si tienes más de 3$, los monstruos te consideran su presa durante la fase de monstruos (ignora todas las demás condiciones de presa de los monstruos). Cada vez que un monstruo aparezca o se mueva a tu espacio, puedes gastar 1$ para infligirle 1 de daño o agotarlo (límite de una vez por instancia).",
-                "img": "/img/2-obj/es_PerBob1.jpg"
+                "description": "Si tienes más de 3$, los monstruos te consideran su presa durante la fase de monstruos (ignora todas las demás condiciones de presa de los monstruos). Cada vez que un monstruo aparezca o se mueva a tu espacio, puedes gastar 1$ para infligirle 1 de daño o agotarlo (límite de una vez por instancia)."
+            },
+            "en": {
+                "name": "Bribery",
+                "description": "If you have more than 3$, monsters treat you as their prey during the mosnter phase (Ignore all other monster prey conditions). Whenever a monster spawns or moves into your space, you may spend 1$ to deal 1 damage or exhaust that monster (limit once per instance)."
             }
         }
     },
     {"id": 99,
-        "name": "Curserd Coin",
-        "description": "This card cannot be discarted due to damage or horror. When you perform a gather resource action, roll one die. On a 1, lose 1$; overwise, again an additional 1$.",
         "img": "/img/2-obj/PerBob2.jpg",
         "expansion": "AHComunity",
+        "price": 5,
+        "types": ["perInicial", "objeto", "comun", "curio"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Moneda Maldita",
-                "description": "Esta carta no puede ser descartada debido a daño o horror. Cuando realices una acción de reunir fondos, lanza una moneda y elige cara o cruz. Si fallas, pierdes 1$; de lo contrario, ganas 1$ adicional",
-                "img": "/img/2-obj/es_PerBob2.jpg"
+                "description": "Esta carta no puede ser descartada debido a daño o horror. Cuando realices una acción de reunir fondos, lanza una moneda y elige cara o cruz. Si fallas, pierdes 1$; de lo contrario, ganas 1$ adicional"
+            },
+            "en": {
+                "name": "The Curserd Coin",
+                "description": "This card cannot be discarted due to damage or horror. When you perform a gather resource action, roll one die. On a 1, lose 1$; overwise, again an additional 1$."
             }
         }
     },
     {"id": 100,
-        "name": "Exposition",
-        "description": "Once per round, an investigator in your neighborhood may use an item, ally, or spell you possess, even if that item had been previously used this round. 'Just reloading er take your best shot!'",
         "img": "/img/2-obj/PerBob3.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Exposición",
-                "description": "Una vez por ronda, un investigador en tu vecindario puede usar un objeto, aliado o hechizo que poseas, incluso si ese objeto ya se usó en esta ronda. '¡Solo recargando, dispara tu mejor tiro!'",
-                "img": "/img/2-obj/es_PerBob3.jpg"
+                "description": "Una vez por ronda, un investigador en tu vecindario puede usar un objeto, aliado o hechizo que poseas, incluso si ese objeto ya se usó en esta ronda. '¡Solo recargando, dispara tu mejor tiro!'"
+            },
+            "en": {
+                "name": "Exposition",
+                "description": "Once per round, an investigator in your neighborhood may use an item, ally, or spell you possess, even if that item had been previously used this round. 'Just reloading er take your best shot!'"
             }
         }
     },
     
     {"id": 101,
-        "name": "Obscure Studies",
-        "description": "Once per round when an investigator in your neighborhood would suffer horror, you may place any amount of that horror on this card. Whenever you pass a test using WILL or LORE, you may remove one horror from this card.",
         "img": "/img/2-obj/PerAmanda1.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Estudios Oscuros",
-                "description": "Una vez por ronda, cuando un investigador en tu vecindario vaya a sufrir horror, puedes colocar cualquier cantidad de ese horror en esta carta. Cada vez que superes una prueba usando VOLUNTAD o SABER, puedes retirar 1 de horror de esta carta",
-                "img": "/img/2-obj/es_PerAmanda1.jpg"
+                "description": "Una vez por ronda, cuando un investigador en tu vecindario vaya a sufrir horror, puedes colocar cualquier cantidad de ese horror en esta carta. Cada vez que superes una prueba usando VOLUNTAD o SABER, puedes retirar 1 de horror de esta carta"
+            },
+            "en": {
+                "name": "Obscure Studies",
+                "description": "Once per round when an investigator in your neighborhood would suffer horror, you may place any amount of that horror on this card. Whenever you pass a test using WILL or LORE, you may remove one horror from this card."
             }
         }
     },
     {"id": 102,
-        "name": "Teacher's Aid",
-        "description": "Increase your focus limit by 1. Pnce per round, when an investigator in your neighborhood rolls for a test, they may add one to one die. If that investigator rolled three or more successes on that test, they may focus 1 skill, even if it exceeds their focus limit.",
         "img": "/img/2-obj/PerAmanda2.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Ayudante del Profesor",
-                "description": "Aumenta tu límite de concentración en 1. Una vez por ronda, cuando un investigador en tu barrio tire para una prueba, puede sumar 1 a un dado. Si ese investigador obtiene tres o más éxitos en esa prueba, puede concentrar 1 habilidad, incluso si excede su límite de concentración.",
-                "img": "/img/2-obj/es_PerAmanda2.jpg"
+                "description": "Aumenta tu límite de concentración en 1. Una vez por ronda, cuando un investigador en tu barrio tire para una prueba, puede sumar 1 a un dado. Si ese investigador obtiene tres o más éxitos en esa prueba, puede concentrar 1 habilidad, incluso si excede su límite de concentración."
+            },
+            "en": {
+                "name": "Teacher's Aid",
+                "description": "Increase your focus limit by 1. Pnce per round, when an investigator in your neighborhood rolls for a test, they may add one to one die. If that investigator rolled three or more successes on that test, they may focus 1 skill, even if it exceeds their focus limit."
             }
         }
     },
     {"id": 103,
-        "name": "Mild Stimulants",
-        "description": "Once per round, you may deal one damage to this item for an  investigator in your neighborhood to become DRIVEN, recover one health and one sanity, and focus one skill, even if it exceeds their focus limit.",
         "img": "/img/2-obj/PerAmanda3.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Estimulantes suaves",
-                "description": "Una vez por ronda, puedes infligir 1 de daño a este objeto para que un investigador en tu vecindario se vuelva DETERMINADO, recupere 1 de salud y 1 de cordura, y concentre 1 habilidad, incluso si excede su límite de concentración",
-                "img": "/img/2-obj/es_PerAmanda3.jpg"
+                "description": "Una vez por ronda, puedes infligir 1 de daño a este objeto para que un investigador en tu vecindario se vuelva DETERMINADO, recupere 1 de salud y 1 de cordura, y concentre 1 habilidad, incluso si excede su límite de concentración"
+            },
+            "en": {
+                "name": "Mild Stimulants",
+                "description": "Once per round, you may deal one damage to this item for an  investigator in your neighborhood to become DRIVEN, recover one health and one sanity, and focus one skill, even if it exceeds their focus limit."
             }
         }
     },
 
     {"id": 104,
-        "name": "Trusty Maul",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerHank1.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": 2,
+        "health": {
+            "life": 2,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Mazo confiable",
+                "description": "Al probar 💪🏻, puedes sumar uno a cada resultado de tus dados. Obtienes +(6 - X) 💪🏻 como parte de una acción de ataque, donde X es el número de fichas de daño que tengas."
+            },
+            "en": {
+                "name": "Trusty Maul",
+                "description": "When testing 💪🏻, you may add one to each of your die results. You get +(6 - X) 💪🏻 as a part of an attack action, where X is the number of damage tokens you have."
             }
         }
     },
     {"id": 105,
-        "name": "Sally Sampson",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerHank2.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "granjero"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 4
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Sally Sampson",
+                "description": "Cuando tú o este aliado fueran a sufrir dos o más de horror, sufrid solo uno en su lugar. Una vez por ronda, puedes sufrir un daño para que este aliado recupere dos puntos de cordura."
+            },
+            "en": {
+                "name": "Sally Sampson",
+                "description": "When you or this ally would suffer two or more horror, suffer one horror instead. Once per round, you may suffer one damage to have this ally recover two sanity."
             }
         }
     },
     {"id": 106,
-        "name": "Tractor Harvester",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerHank3.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "item", "common"],
+        "hands": null,
+        "health": {
+            "life": 5,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Cosechadora Tractor",
+                "description": "Cuando uses tu habilidad Atravesar, por cada monstruo en un espacio desde el que comiences o atravieses, puedes infligir X de daño a esta carta para infligir X de daño a ese monstruo (resuelve cualquier efecto al derrotar monstruos como parte de esta habilidad)."
+            },
+            "en": {
+                "name": "Tractor Harvester",
+                "description": "When you use your Plow Through ability, for each monster in a space you start in or move through, you may deal X damage to this card to deal X damage to that monster (resolve any effect when monsters are defeated as a part of this ability)."
             }
         }
     },
 
     {"id": 107,
-        "name": "Blink out of Existance",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJacqueline1.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": 1,
+            "sanity": 1
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Desvanecerse de la existencia",
+                "description": "Acción: Elige un monstruo no épico en cualquier espacio y haz una prueba de SABIDURÍA (aplica el modificador de evasión de ese monstruo). Si tienes éxito, baraja ese monstruo en el mazo de monstruos."
+            },
+            "en": {
+                "name": "Blink out of Existence",
+                "description": "Action: Choose a non-epic monster in any space and test LORE (apply that monster's evade modifier). If you pass, shuffle that monster into the Monster Deck."
             }
         }
     },
     {"id": 108,
-        "name": "Bruce Graham",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJacqueline3.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "Unhiged Clairvoyant"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Bruce Graham",
+                "description": "Al comienzo de la partida, añade una ficha blanca adicional a la Bolsa de Mitos. Si Bruce Graham fuera a ser descartado, elimina dos fichas blancas de la Bolsa de Mitos."
+            },
+            "en": {
+                "name": "Bruce Graham",
+                "description": "At the beginning of the game, add one additional blank token to the mythos Cup. If Bruce Graham would be discarded, remove two blank tokens from the Mythos Cup."
             }
         }
     },
     {"id": 109,
-        "name": "Crystal Ball",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJacqueline4.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 4
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Bola de Cristal",
+                "description": "No te afectan los efectos de presagio a menos que decidas que sí (no haces pruebas ni tiras dados por efectos de presagio). Los investigadores en tu vecindario lanzan dos dados adicionales y sufren un daño u horror menos durante los efectos de presagio."
+            },
+            "en": {
+                "name": "Crystal Ball",
+                "description": "You are not affected by reckoning effects unless you choose to be (you do not make tests or roll dice due to reckoning effects). Investigators in your neighborhood roll two additional dice and suffer one less damage or horror during reckoning effects."
             }
         }
     },
 
     {"id": 110,
-        "name": "Open the Third eye",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerHarvey1.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Abrir el Tercer Ojo",
+                "description": "Acción: Haz una prueba de SABIDURÍA. Por cada éxito, un investigador en tu espacio puede (se aplican restricciones normales de acción): - Realizar una acción de concentración - Convertirse en IMPULSADO - Realizar una acción de movimiento"
+            },
+            "en": {
+                "name": "Open the Third Eye",
+                "description": "Action: Test your LORE. For each success, an investigator in your space may (normal action restrictions apply): -Perform a focus action -Become DRIVEN -Perform a move action"
             }
         }
     },
     {"id": 111,
-        "name": "Book of Anubis",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerHarvey2.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objteo", "tomo"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Libro de Anubis",
+                "description": "Obtienes +1 OBSERVACIÓN como parte de una acción de investigación. Encuentro: Puedes infligir 1 punto de daño a este objeto para resolver dos encuentros en tu espacio esta ronda."
+            },
+            "en": {
+                "name": "Book of Anubis",
+                "description": "You get +1 OBSERVATION as part of a research action. Encounter: You may deal this item one damage to resolve two encounters in your space this round."
             }
         }
     },
     {"id": 112,
-        "name": "Deleterious Study",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerHarvey3.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Estudio Nocivo",
+                "description": "Puedes tratar todos los hechizos que tengan un modificador de SABIDURÍA como si tuvieran +1 en su lugar. Acción: Revela cartas desde la parte superior del mazo de objetos hasta revelar un objeto TOMO. Puedes pagar 1$ y quedar retrasado para obtener ese objeto. Si decides no obtenerlo, descártalo y baraja el mazo de objetos."
+            },
+            "en": {
+                "name": "Deleterious Study",
+                "description": "You may treat all spells that have a LORE modifier +1 instead. Action: Reveal cards from the top of the Item Deck until you reveal a TOME item. You may pay 1$ and become delayed to gain that item. If you choose not to gain that card, place in the discard pile and shuffle the Item Deck."
             }
         }
     },
 
     {"id": 113,
-        "name": "Binding",
         "img": "/img/2-obj/cartaEnProceso.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Vínculo",
+                "description": "Si tienes más de 3$, los monstruos te consideran su presa durante la fase de monstruos (ignora todas las demás condiciones de presa). Siempre que un monstruo aparezca o se mueva a tu espacio, puedes gastar 1$ para infligirle 1 daño o agotarlo (límite una vez por instancia)."
+            },
+            "en": {
+                "name": "Binding",
+                "description": "If you have more than 3$, monsters treat you as their prey during the monster phase (Ignore all other monster prey conditions). Whenever a monster spawns or moves into your space, you may spend 1$ to deal 1 damage or exhaust that monster (limit once per instance)."
             }
         }
     },
     {"id": 114,
-        "name": "Leroy Kisro",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerDaisy2.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "cataloging specialist"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Leroy Kisro",
+                "description": "Obtienes +1 SABIDURÍA al lanzar hechizos. Una vez por ronda, puedes descartar una ficha de concentración y pagar 1$ para revelar dos hechizos de la parte superior del mazo de hechizos. Gana uno de esos hechizos."
+            },
+            "en": {
+                "name": "Leroy Kisro",
+                "description": "You get +1 LORE when casting spells. Once per round, you may discard one focus token and 1$ to reveal two spells from the top of the spell deck. Gain one of those spells."
             }
         }
     },
     {"id": 115,
-        "name": "Space and Time",
-        "description": "Action: Test your LORE -1. For each success, you may choose an investigator in any space to perform one additional action (normal restrictions apply; you may choose an investigator more than once for this ability).",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerDaisy3.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": 1,
+            "sanity": 2
+        },
         "translations": {
             "es": {
                 "name": "Espacio y tiempo",
-                "description": "Acción: Haz una prueba de tu SABIDURÍA con -1. Por cada éxito, puedes elegir a un investigador en cualquier espacio para que realice una acción adicional (se aplican las restricciones normales; puedes elegir al mismo investigador más de una vez con esta habilidad).",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "description": "Acción: Haz una prueba de tu SABIDURÍA con -1. Por cada éxito, puedes elegir a un investigador en cualquier espacio para que realice una acción adicional (se aplican las restricciones normales; puedes elegir al mismo investigador más de una vez con esta habilidad)."
+            },
+            "en": {
+                "name": "Space and Time",
+                "description": "Action: Test your LORE -1. For each success, you may choose an investigator in any space to perform one additional action (normal restrictions apply; you may choose an investigator more than once for this ability)."
             }
         }
     },
-    
+
     {"id": 116,
-        "name": "Potent Spirits",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerFinn1.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "curio"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Espíritus Potentes",
+                "description": "Al comienzo de tu turno, puedes hacer una prueba de VOLUNTAD. Si tienes éxito, muévete un espacio. Después de resolver un Encuentro de Anomalía, puedes resolver un encuentro adicional de cualquier espacio del vecindario que ocupes actualmente."
+            },
+            "en": {
+                "name": "Potent Spirits",
+                "description": "At the begining of your turn, you may test WILL. If you pass, move one space. After you resolve an Anomaly Encounter, you may resolve an additional neighborhood encounter for any space in the neighborhood you currently occupy."
             }
         }
     },
     {"id": 117,
-        "name": "Rum-Runner",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerFinn2.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Contrabandista",
+                "description": "Cuando vayas a usar tu habilidad de Pasadizo del Callejón, puedes volverte BUSCADO para moverte a cualquier espacio de cualquier vecindario en su lugar. RETRIBUCIÓN: Gana 3$ menos el número de condiciones de BUSCADO que tengas. Resuelve este efecto antes de resolver los efectos de BUSCADO."
+            },
+            "en": {
+                "name": "Rum-Runner",
+                "description": "When you would use your Alleyway Passage ability, you may become WANTED to move any space in any neighborhood instead. RETRIBUTION: Gain 3$ minus the number of WANTED conditions you have. Resolve this effect before resolving any WANTED effects."
             }
         }
     },
     {"id": 118,
-        "name": "Checkered Past",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerFinn3.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Pasado Turbio",
+                "description": "Añade la carta 166 al códice. Una vez por ronda, cuando fueras a realizar una prueba, puedes usar tu INFLUENCIA en su lugar. Si superas esa prueba, gana 1$. 'Es curioso lo poco que pensamos en el pasado… hasta que lo tenemos justo frente a nosotros.'"
+            },
+            "en": {
+                "name": "Checkered Past",
+                "description": "Add card 166 to the codex. Once per round when you would perform a test, you may use your INFLUENCE instead. If you pass that test, gain 1$. 'Amusing how little thought we give the past until it is right before our eyes.'"
             }
         }
     },
 
     {"id": 119,
-        "name": "Stake Out",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJoe1.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Vigilancia",
+                "description": "Cuando fueras a robar una carta de encuentro durante la fase de Encuentros, puedes quedar retrasado para revelar una carta de encuentro adicional. Si lo haces, resuelve uno de esos encuentros inmediatamente y coloca la otra carta de encuentro en la parte superior o inferior de su mazo de barrio (puedes usar esta habilidad una vez por fase de Encuentros)."
+            },
+            "en": {
+                "name": "Stake Out",
+                "description": "When you would draw an encounter card during the Encounter Phase, you may become delayed to reveal one additional encounter card. If you do, resolve one of those encounters immediately and place the other encounter card either on the top or the bottom of its neighborhood deck (use this ability once per Encounter Phase)."
             }
         }
     },
     {"id": 120,
-        "name": "Locked Office",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJoe2.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "location", "office"],
+        "hands": null,
+        "health": {
+            "life": 10,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Oficina Cerrada",
+                "description": "Durante la preparación, añade la carta 169 al códice."
+            },
+            "en": {
+                "name": "Locked Office",
+                "description": "During setup, add card 169 to the codex."
             }
         }
     },
     {"id": 121,
-        "name": "Twin Colt M1911",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJoe3.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
-                "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "name": "Colt M1911 Doble",
+                "description": "Obtienes +3 💪🏻 como parte de una acción de ataque. Cuando inflijas daño a un monstruo no épico, si en esta ronda infligiste al menos la mitad de su vida restante (redondeando hacia arriba), agótalo."
+            },
+            "en": {
+                "name": "Twin Colt M1911",
+                "description": "You get +3 💪🏻 as part of an attack action. When you deal damage to a nonépic monster, if you dealt half of that monster's remaining health (rounding up) in damage this round, exhaust it."
             }
         }
     },
 
     {"id": 122,
-        "name": "Brass Horn",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJim1.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "description": "___"
+            },
+            "en": {
+                "name": "Brass Horn",
+                "description": "You get +1 LORE while casting spells. Once per round, you may test your OBSERVATION. For each success, exhaust one, non-epic monster in your neighborhood. 'With time, fear turns to curiosity, curiosity to awareness, and awareness into acceptance.'"
             }
         }
     },
     {"id": 123,
-        "name": "Session Player",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJim2.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "description": "___"
+            },
+            "en": {
+                "name": "Session Player",
+                "description": "At the begenning of the Monster Phase, you may test your WILL -1. For each success, ignore one, non-epic monster activation ability. Encounter: Test your INFLUENCE +1. For each success, you gain 2$."
             }
         }
     },
     {"id": 124,
-        "name": "The beast Within",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerJim3.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "encantamiento"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
                 "name": "___",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "description": "___"
+            },
+            "en": {
+                "name": "The beast Within",
+                "description": "When you perform an attack action, you may test LORE. If you pass, roll five dice instead of your usual dice poll. Ignore all modifiers."
             }
         }
     },
 
     {"id": 125,
-        "name": "Summon the Muse",
-        "description": "Action: Choose an investigator in your neighborhood; test LORE -1. For each success, that investigator may gain one focus token.",
-        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "img": "/img/2-obj/PerGloriaComunity1.png",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
         "translations": {
             "es": {
                 "name": "Invocar a la Musa",
-                "description": "Acción: Elige a un investigador en tu vecindario; haz una prueba de SABIDURÍA con -1. Por cada éxito, ese investigador puede ganar una ficha de concentración.",
-                "img": "/img/2-obj/es_cartaEnProceso.jpg"
+                "description": "Acción: Elige a un investigador en tu vecindario; haz una prueba de SABIDURÍA con -1. Por cada éxito, ese investigador puede ganar una ficha de concentración."
+            },
+            "en": {
+                "name": "Summon the Muse",
+                "description": "Action: Choose an investigator in your neighborhood; test LORE -1. For each success, that investigator may gain one focus token."
             }
         }
     },
 
     {"id": 126,
-        "name": "Memento Mori",
-        "description": "Once per round during the action phase, you may take two horror to discard one doom from your space.",
         "img": "/img/2-obj/PerNameless1.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Memento Mori",
-                "description": "Una vez por ronda, durante la fase de acción, puedes sufrir 2 de horror para descartar 1 ficha de perdición de tu espacio.",
-                "img": "/img/2-obj/es_PerNameless1.jpg"
+                "description": "Una vez por ronda, durante la fase de acción, puedes sufrir 2 de horror para descartar 1 ficha de perdición de tu espacio."
+            },
+            "en": {
+                "name": "Memento Mori",
+                "description": "Once per round during the action phase, you may take two horror to discard one doom from your space."
             }
         }
     },
     {"id": 127,
-        "name": "Eerie Grit",
-        "description": "Any possessed ally has their total health and sanity multipled by two.",
         "img": "/img/2-obj/PerNameless2.jpg",
         "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
         "translations": {
             "es": {
                 "name": "Coraje Inquietante",
-                "description": "Cualquier aliado poseído tiene su salud y cordura totales multiplicadas por dos.",
-                "img": "/img/2-obj/es_PerNameless2.jpg"
+                "description": "Cualquier aliado poseído tiene su salud y cordura totales multiplicadas por dos."
+            },
+            "en": {
+                "name": "Eerie Grit",
+                "description": "Any possessed ally has their total health and sanity multipled by two."
             }
         }
     },
@@ -2369,7 +3321,7 @@
         "img": "/img/2-obj/PerNameless3.jpg",
         "expansion": "AHComunity",
         "price": null,
-        "types": ["perInicial", "___", "___", "___"],
+        "types": ["perInicial", "talento", "innato"],
         "hands": null,
         "health": {
             "life": null,
@@ -2391,36 +3343,10 @@
         }
     },
 
-    {"id": 128,
-        "img": "/img/2-obj/___.jpg",
-        "expansion": "AHComunity",
-        "price": null,
-        "types": ["perInicial", "___", "___", "___"],
-        "hands": null,
-        "health": {
-            "life": null,
-            "sanity": null
-        },
-        "cost": {
-            "life": null,
-            "sanity": null
-        },
-        "translations": {
-            "es": {
-                "name": "___",
-                "description": "___"
-            },
-            "en": {
-                "name": "___",
-                "description": "___"
-            }
-        }
-    },
-
     {"id": 129,
-        "img": "",
+        "img": "/img/2-obj/PerLola1.jpg",
         "expansion": "original",
-        "price": null,
+        "price": 4,
         "types": ["perInicial", "objeto", "especial", "arma"],
         "hands": 2,
         "health": {
@@ -2433,20 +3359,20 @@
         },
         "translations": {
             "es": {
-                "name": "Revólver de mi madre",
+                "name": "Revólver de madre",
                 "description": "+4 a FUERZA. Si el investigador tiene menos de 3 de FUERZA, al disparar deberá lanzar un dado; este será el daño que sufra el portador por el retroceso."
             },
             "en": {
-                "name": "My Mother's Revolver",
+                "name": "Mother's Revolver",
                 "description": "+4 STRENGTH. If the investigator has less than 3 STRENGTH, they must roll a die when shooting; this is the damage the bearer suffers due to recoil."
             }
         }
     },
     {"id": 130,
-        "img": "",
+        "img": "/img/2-obj/PerLola2.jpg",
         "expansion": "original",
-        "price": null,
-        "types": ["perInicial", "objeto", "comun", "arma"],
+        "price": 3,
+        "types": ["perInicial", "objeto", "comun"],
         "hands": 1,
         "health": {
             "life": null,
@@ -2462,16 +3388,16 @@
                 "description": "+1 acierto al usarla contra un atacante. +1 DADO si se usa para una prueba que requiera INFLUENCIA."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Hidden Blade",
+                "description": "+1 success when used against an attacker. +1 DIE if used for a test that requires INFLUENCE."
             }
         }
     },
     {"id": 131,
-        "img": "",
+        "img": "/img/2-obj/PerLola3.jpg",
         "expansion": "original",
-        "price": null,
-        "types": ["perInicial", "objeto", "especial", "ropa"],
+        "price": 5,
+        "types": ["perInicial", "objeto", "comun"],
         "hands": null,
         "health": {
             "life": 4,
@@ -2492,10 +3418,11 @@
             }
         }
     },
+
     {"id": 132,
-        "img": "",
+        "img": "/img/2-obj/PerWilliam1.jpg",
         "expansion": "original",
-        "price": null,
+        "price": 4,
         "types": ["perInicial", "objeto", "especial", "arma"],
         "hands": 1,
         "health": {
@@ -2508,19 +3435,19 @@
         },
         "translations": {
             "es": {
-                "name": "Revolver viejo de la guerra",
-                "description": "Cuando estés realizando una accion de ataque Tira un dado, si sale par, recibes +3 de FUERZA ,si sale inpar, se te encasquilla el arma, no se suma ningun bonificador. "
+                "name": "Revolver de guerra",
+                "description": "Cuando estés realizando una accion de ataque Tira un dado, si sale par, recibes +3 de FUERZA ,si sale inpar, se te encasquilla el arma, no se suma ningun bonificador."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "War Revolver",
+                "description": "When performing an attack action, roll a die. If it's even, you gain +3 STRENGTH; if it's odd, the weapon jams and no bonus is applied."
             }
         }
     },
     {"id": 133,
-        "img": "",
+        "img": "/img/2-obj/PerWilliam2.jpg",
         "expansion": "original",
-        "price": null,
+        "price": 1,
         "types": ["perInicial", "objeto", "especial", "vehiculo"],
         "hands": null,
         "health": {
@@ -2537,13 +3464,13 @@
                 "description": "En lugar de moverte, avanza hasta 3 casillas. Si atraviesas a un enemigo no épico, inflige 1 daño y la moto pierde 2 puntos vida."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Old Motorcycle",
+                "description": "Instead of moving, advance up to 3 spaces. If you pass through a non-epic enemy, deal 1 damage and the motorcycle loses 2 life points."
             }
         }
     },
     {"id": 134,
-        "img": "",
+        "img": "/img/2-obj/PerWilliam3.jpg",
         "expansion": "original",
         "price": null,
         "types": ["perInicial", "talento", "innato"],
@@ -2559,11 +3486,1188 @@
         "translations": {
             "es": {
                 "name": "Difrutemos del momento.",
-                "description": "Al princicio del turno, puedes quedar rezagado solo o junto con algun otro investigador para conseguir 2 puntos de vida y cordura. +1 pto mas si los jugadores comparten un brindis. "
+                "description": "Al princicio del turno, puedes quedar rezagado solo o junto con algun otro investigador para conseguir 2 puntos de vida y cordura. +1 pto mas si los jugadores comparten un brindis."
             },
             "en": {
-                "name": "___",
+                "name": "Let's Enjoy the Moment",
+                "description": "At the beginning of the turn, you may stay behind alone or with another investigator to gain 2 health and sanity points. Gain +1 additional point if the players share a toast."
+            }
+        }
+    },
+
+    {"id": 135,
+        "img": "/img/2-obj/PerDarrell2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
                 "description": "___"
+            },
+            "en": {
+                "name": "Bokeh",
+                "description": "During the Mythos Phase when you would draw tokens from the Mythos cup, you may draw three tokens instead of two. If you do, treat one doom token as a blank token, and one blank token as a clue token. 'That which lieas beyound the unfocused margins paints the beauty of the unseen.'"
+            }
+        }
+    },
+    {"id": 136,
+        "img": "/img/2-obj/PerDarrell3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "curio"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Developer Fluid",
+                "description": "when resolving a test as apart of an encounter in wich you would gain a clue, you may reroll any number of dice. After you perform a research action, test INFLUENCE.If you pass, you gain 2$."
+            }
+        }
+    },
+    {"id": 137,
+        "img": "/img/2-obj/PerDarrell1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Ensign Ensignette",
+                "description": "You may look at the top card of the neighborhood deck you currently occupy at any time. When you would exhaust a monster, you may suffer one horror to move that monster to the unstable space."
+            }
+        }
+    },
+    {"id": 138,
+        "img": "/img/2-obj/eyesOfObession.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["especial", "objeto", "curio"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Eyes of Obession",
+                "description": "At the beginning of your turn, you may focus one skill twice, even if it exceeds your focus limit. When you would perform a move four space instead of two (money is not spent moving this way; you may only move up to four space using this card)."
+            }
+        }
+    },
+    {"id": 139,
+        "img": "/img/2-obj/PerDaisy1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Binding",
+                "description": "Action: Choose one monster on any space and test LORE using that monster's evade modifier. If you pass, exhaust that monster (it disengages)."
+            }
+        }
+    },
+    {"id": 140,
+        "img": "/img/2-obj/PerGloriaComunity4.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "Literary Researcher"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Bailey O'Barr",
+                "description": "Once per round, you may discard two focus tokens of different types for an investigator in your space to perform an additional action (normal restrictions do not apply)."
+            }
+        }
+    },
+    {"id": 141,
+        "img": "/img/2-obj/PerGloriaComunity5.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "curio"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Arcane Notes",
+                "description": "Increase you focus limit by 1. While you have a focus token of each type, your focus tokens increase their corrospnding skill by 2 instead of 1. ENCOUNTER: Gain 1$ and one focus token, even if it would exceed your focus limit."
+            }
+        }
+    },
+    {"id": 142,
+        "img": "/img/2-obj/PerGloriaComunity3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Peer Review",
+                "description": "There are no restrictions to the number of focus token you can possess of a single type. You may trade focus token as apart of a trade action, even if it would exceed an investigator's focus limit (focus token type restrictions apply to other receiving investigators)."
+            }
+        }
+    },
+    {"id": 143,
+        "img": "/img/2-obj/PerLeo1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "A time to Grieve",
+                "description": "If you are defeated or have no allies at any time, flip card 168. RETRIBUTION: Investigators in your space test WILL. If they pass, thy may recover one sanity. Otherwise, they suffer one horror. 'Everyone has emotional scars. Keepin'em buried is how ya stay alive.'"
+            }
+        }
+    },
+    {"id": 144,
+        "img": "/img/2-obj/PerLeo2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Silver Nickel Flask",
+                "description": "Once per round, an ally (as specified by card 168) may take an additional action; that ally then suffers one direct damage and one direct horror."
+            }
+        }
+    },
+
+    {"id": 145,
+        "img": "/img/2-obj/PerLeo3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": 2,
+        "health": {
+            "life": 4,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Winchester Carbine",
+                "description": "You get +3 STRENGH as part of an attack action. Once per round after you perform an attack action, you may deal one damage to this item; each 6 you roll counts as two successes."
+            }
+        }
+    },
+    {"id": 146,
+        "img": "/img/2-obj/PerLilly2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Form of the Monkey",
+                "description": "Increase your INFLUENCE by one. Once per round when an investigator in your neighborhood would suffer horror, you may test your WILL -1. Prevent one horror for each success you roll. At the end of your turn, you may perform an evade or research action  as an additional action."
+            }
+        }
+    },
+    {"id": 147,
+        "img": "/img/2-obj/PerLilly1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Form of the Tortoise",
+                "description": "Increase your LORE by one. Investigators in your space treat non-epic monster attack modifiers as 0. Once per round, you mayb choose an investigator in your neighborhood and test INFLUENCE -1. If you pass, thay investigator may discard one condition (excluding DARK PACT conditions)."
+            }
+        }
+    },
+    {"id": 148,
+        "img": "/img/2-obj/PerLilly4.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Form of the Dragon",
+                "description": "Increase your STRENGH by one. Once per round when an investigator in your space would pass a test with two or more successes, they may test INFLUENCE +1. For each success, they gain 1$. Then you would draw a Headline card, yoy may suffer one damage and one horror to ignore its effects."
+            }
+        }
+    },
+    {"id": 149,
+        "img": "/img/2-obj/PerLilly3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Form of the Fox",
+                "description": "Increase your OBSERVATION by one. When an investigator in your neighborhood would remove doom from their space, they may remove one additional doom from that space. When you would suffer damage from a monster, you may test your STRENGH -1. For each success, negate one damage."
+            }
+        }
+    },
+    {"id": 150,
+        "img": "/img/2-obj/PerLilly5.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Form of the Horse",
+                "description": "Increase your WILL by one. When an investigator in your neighborhood would perform a test, they may suffer one direct horror; add one to a die result for each clue in that neighborhood. Once per round when an investigator in your space would gain a remnant, they may gain one additional remnant."
+            }
+        }
+    },
+    {"id": 151,
+        "img": "/img/2-obj/PerLolaHayes2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Cold Read",
+                "description": "At any time, you may discard a focus token to have any, one investigator do one of the following: -Deal one damage to a non-epic monster in your space -Move one space -Gain 1$ -Repick one Mythos Token (return any  unused token to the Mythos Cup after you resolve the selected token)"
+            }
+        }
+    },
+    {"id": 152,
+        "img": "/img/2-obj/PerLolaHayes4.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Improvisation",
+                "description": "Once per round, you may discard one focus token; choose one skill. Each focus token investigators in your space possess of that skill gives +2 to that skill instead of +1 until the end of the round."
+            }
+        }
+    },
+    {"id": 153,
+        "img": "/img/2-obj/PerLolaHayes3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Rogue Powder Box",
+                "description": "When you would perform a focus action, you may focus one additional token of another type. 'With a swirt of powder; we paint our faces to tell tales that resonate in the shadows of the silver screen.'"
+            }
+        }
+    },
+    {"id": 154,
+        "img": "/img/2-obj/PerLuke2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 2
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Astral Projection",
+                "description": "Action: Test 📖. If you pass, resolve an additional action as though you were in any other space. Monster in that space do not engage yopu, and you cannot move as part of that action."
+            }
+        }
+    },
+    {"id": 155,
+        "img": "/img/2-obj/PerLuke1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "curio"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Cryptic Puzzlebox",
+                "description": "Once per round, you may deal this card horror to exhaust a monster in your space. After this item suffers one or more damage, you may recover two sanity."
+            }
+        }
+    },
+    {"id": 156,
+        "img": "/img/2-obj/PerLuke3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Stroll the Ether",
+                "description": "When you would gain a clue, you may suffer one direct horror ro move that clue to the scenario sheet. ENCOUNTER: Suffer one horror. Choose a space in any neighborhoot; you may resolve an encounter as though you were in that space."
+            }
+        }
+    },
+    {"id": 157,
+        "img": "/img/2-obj/PerMandyComunity1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Impress on the Memory",
+                "description": "Once per round, after you cast a spell that was obtained with your Rare Manuscripts ability, test your 👁️ -1. If you pass, yoy may gain that spell (do not discard it at the end of this round)."
+            }
+        }
+    },
+    {"id": 158,
+        "img": "/img/2-obj/PerMandyComunity3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "curio", "tomo"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Primeval Text",
+                "description": "You get +1 📖 as part of ward actions and when casting spells. When you would draw a doom token during the Mythos Phase, recover one sanity."
+            }
+        }
+    },
+    {"id": 159,
+        "img": "/img/2-obj/PerMandyComunity2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Supernatural Findings",
+                "description": "After you pass a test as part of casting a spell, you may gain one remnant. After you pass a test as part of a research action, you may gain one focus token."
+            }
+        }
+    },
+    {"id": 160,
+        "img": "/img/2-obj/PerMonterreyComunity2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Bury in Dust",
+                "description": "Action: Choose one non-epic monster in any space. Defeat that monster. Then roll a number of dice equal to that monsters health value plus one. For each 1 and 2 you roll, suffer one direct damage or horror. Then flip this card.(Risen from the sands)"
+            }
+        }
+    },
+    {"id": 161,
+        "img": "/img/2-obj/PerMonterreyComunity4.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Arcane Influence",
+                "description": "Actions that require you to test 👁️ do not count towards your action limit. RETRIBUTION: Exhaust one monster in any space. If that monster has 3 or more health, suffer one direct horror. At the end of your turn, an investigator in your space suffers one damage or horror. Then they recover one damage or horror."
+            }
+        }
+    },
+    {"id": 162,
+        "img": "/img/2-obj/PerMonterreyComunity3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": 1,
+        "health": {
+            "life": 2,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Digging Spade",
+                "description": "You get +2 💪 as part of an attack action. When you end your turn in a neighborhood with one or more vlues, an investigator in your neighborhood may gain one remnant or focus one skill."
+            }
+        }
+    },
+    {"id": 163,
+        "img": "/img/2-obj/PerSisterMary3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "curio"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Emarald Carcanet",
+                "description": "You always use WILL when performing attack actions. Once per round, you may deal one horror to this item to deal two damage to a non-human monster in your space."
+            }
+        }
+    },
+    {"id": 164,
+        "img": "/img/2-obj/PerSisterMary2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "Theologian"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Francis St.James",
+                "description": "Increase your focus limit by 1. Once per round when this ally would suffers one or more damage, each investigator in your neighborhood may focus a skill of their choice."
+            }
+        }
+    },
+    {"id": 165,
+        "img": "/img/2-obj/cartaEnProceso.jpg",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Risen from the Sands",
+                "description": "You get +1 👁️ as part of a research action. After you perform a ward action, if there is no doom in your neighborhood, you may gain onwe item from the display with value 3$ or less. When you would defeat a monster, recover one health or sanity. Then flip this card. (Bury in Dust)"
+            }
+        }
+    },
+    {"id": 166,
+        "img": "/img/2-obj/PerSisterMary1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Sanctification",
+                "description": "Investigators in your neighborhood may ignore anomaly encounter affects that would cause them to suffer damage and horror. RETRIBUTION: Remove up to two doom from any, one space in any neighborhood."
+            }
+        }
+    },
+    {"id": 167,
+        "img": "/img/2-obj/PerTrish1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Covert Operations",
+                "description": "At any time, you may look at any of the following card (from and/or back card): -Bottom card of the Monster Deck -Bottom card of the Event Deck -Top card of the Newspaper Deck"
+            }
+        }
+    },
+    {"id": 168,
+        "img": "/img/2-obj/PerTrish2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "curio"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Black-Leather Glove",
+                "description": "When you would perform a ward action, you may suffer one direct horror to test 👁️ instead of 📖."
+            }
+        }
+    },
+    {"id": 169,
+        "img": "/img/2-obj/PerTrish3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "sniper"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Stephen Fenske",
+                "description": "Action: Choose one monster within two spaces of you and test 👁️. If you pass, deal one damage to that monster and exhaust it."
+            }
+        }
+    },
+    {"id": 170,
+        "img": "/img/2-obj/PerTony3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "contractor"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Sabina Wagner",
+                "description": "You get +1 WILL. Once per round when an investigator in your space would perform a test, they may spend up to 3$. For each dollar they spend, add one die to that test."
+            }
+        }
+    },
+    {"id": 171,
+        "img": "/img/2-obj/PerTony2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": 2,
+        "health": {
+            "life": 2,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Dual Colt .45s",
+                "description": "You get +4 💪 as part of an attack action. Dice rolled as part of a test that use this item may not be rerolled."
+            }
+        }
+    },
+    {"id": 172,
+        "img": "/img/2-obj/PerTony1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "empleo", "Attachment"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Prime Mark",
+                "description": "At the start of your turn, attach this card to a non-epic monster in any space. If you cannot, return this card to the game box. Attached: Reward - After an investigator defeats this monster, gain 1$ and focus one skill of your choice. If ther defeated monster's health was 3 or greater, gain a clue. then return this card to Tony Morgan."
+            }
+        }
+    },
+    {"id": 173,
+        "img": "/img/2-obj/PerUrsula2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Linguistics",
+                "description": "After you perform a test, you may suffer one sanity to add one to the result of one die (limit once per instance). when an investigator in your neighborhood would spend a focus token to reroll a die, they may instead reroll any number of dice."
+            }
+        }
+    },
+    {"id": 174,
+        "img": "/img/2-obj/PerUrsula3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "aliado", "Assistant Foreman"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Mosi Abara",
+                "description": "While you are in the neighborhood with the most clues, increase the value of each of your skills by +2 (ties for numbers of clues in a neighborhood count towards this ability)."
+            }
+        }
+    },
+    {"id": 175,
+        "img": "/img/2-obj/PerUrsula1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Navigator's Compass",
+                "description": "After you gain a clue, you may spawn a clue. After a clue or doom is moved to the scenario sheet, you may move one space, gain one focus, or become DRIVEN."
+            }
+        }
+    },
+    {"id": 176,
+        "img": "/img/2-obj/PerVincent1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Bone Saw",
+                "description": "You get +3 💪 as part of an attack action. After you defeat a monster, gain one remnant (in addition to any other rewards as part of defeating that monster)."
+            }
+        }
+    },
+    {"id": 177,
+        "img": "/img/2-obj/PerVincent3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "curio"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Medical Bag",
+                "description": "When an investigator in your neighborhood would failñ a test, they may gain one of the following: -One remnant -DRIVEN condition -Recover one health or sanity."
+            }
+        }
+    },
+    {"id": 178,
+        "img": "/img/2-obj/PerVincent2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "empleo", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Seasoned Practice",
+                "description": "Whenever an investigator recovers health as part of your House Call ability, that investigator rolls one additional die during their next test this round. Once per round after you use your Urgent Care ability, gain 2$."
+            }
+        }
+    },
+    {"id": 179,
+        "img": "/img/2-obj/PerWilliamRorick2.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "objeto", "comun", "curio"],
+        "hands": 2,
+        "health": {
+            "life": 3,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Digging Spade",
+                "description": "You get +3 💪 as part of an attack action. After you perform an attack action, you may deal one damage to this item or discard one remnant to add one to each die result during that test."
+            }
+        }
+    },
+    {"id": 180,
+        "img": "/img/2-obj/PerWilliamRorick1.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Tainted Enfolding",
+                "description": "After an investigator in your neighborhood would roll one or more successes during a ward test, they may discard one remnant to remove one additional doom from any space in their neighborhood."
+            }
+        }
+    },
+    {"id": 181,
+        "img": "/img/2-obj/PerWilliamRorick3.png",
+        "expansion": "AHComunity",
+        "price": null,
+        "types": ["perInicial", "talento", "innato", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "___.",
+                "description": "___"
+            },
+            "en": {
+                "name": "Visceral Abundance",
+                "description": "After an investigator in your neighborhood would defeat a monster, they may gain a remnant (in addition to any other rewards they would recive). Once per round when an investigator in your neighborhood would perform a test, they may discard a remnant. If they do, add two dice to that test."
             }
         }
     }

@@ -50,11 +50,11 @@ export class InvModel{
         const { required = [], optional = [], optionalText = '' } = inv.possessions;
       
         const objects = await Promise.all(
-          required.map(id => ObjectModel.getByID({ id }))
+          required.map(id => ObjectModel.getObjectByID({ id }))
         );
       
         const optionalObjects = await Promise.all(
-          optional.map(id => ObjectModel.getByID({ id }))
+          optional.map(id => ObjectModel.getObjectByID({ id }))
         );
       
         return {

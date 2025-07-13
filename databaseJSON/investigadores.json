@@ -1139,12 +1139,12 @@
     ],
     "possessions": {
       "required": [
-        43
+        43111
       ],
       "optionalText": "You can choose one of the following objects",
       "optional": [
-        44,
-        45
+        44111,
+        45111
       ]
     },
     "extraData": {
@@ -1760,6 +1760,7 @@
       }
     }
   },
+
   {
     "idInv": 24,
     "isActive": true,
@@ -2045,6 +2046,7 @@
       }
     }
   },
+
   {
     "idInv": 28,
     "isActive": true,
@@ -2337,6 +2339,7 @@
       }
     }
   },
+  
   {
     "idInv": 32,
     "isActive": true,
@@ -3000,8 +3003,7 @@
       }
     }
   },
-  {
-    "idInv": 41,
+  {"idInv": 41,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Jim Culver",
@@ -3075,8 +3077,8 @@
       }
     }
   },
-  {
-    "idInv": 40,
+  
+  {"idInv": 40,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Joe Diamond",
@@ -3150,8 +3152,7 @@
       }
     }
   },
-  {
-    "idInv": 56,
+  {"idInv": 56,
     "isActive": false,
     "expansion": "AHComunity",
     "name": "Nameless Soul",
@@ -3225,8 +3226,7 @@
       }
     }
   },
-  {
-    "idInv": 57,
+  {"idInv": 57,
     "isActive": true,
     "expansion": "AHOriginal",
     "name": "Lola",
@@ -3300,8 +3300,7 @@
       }
     }
   },
-  {
-    "idInv": 58,
+  {"idInv": 58,
     "isActive": true,
     "expansion": "AHOriginal",
     "name": "William O'Donel",
