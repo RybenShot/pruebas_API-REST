@@ -155,4 +155,69 @@ export class MapsInPlayController {
             
         }
     }
+
+    // manejamos la tienda del mapa (añadir objetos aleatorios a la tienda o marcar como vendidos)
+    static async manageShop(req, res) {
+        try {
+            const { action, idMapInPlay, idObject, expansion, types } = req.body
+            console.log('🛒 --- manageShop --- recibido:', { action, idMapInPlay, idObject, expansion, types });
+
+            // validamos que los parámetros sean correctos
+            if (!['soled', 'add'].includes(action)) {
+                return res.status(400).json({ error: 'Action debe ser "soled" o "add"' })
+            }
+
+            if (!idMapInPlay) {
+                return res.status(400).json({ error: 'idMapInPlay es requerido' })
+            }
+
+            // para acción "soled" necesitamos idObject
+            if (action === 'soled' && idObject === undefined) {
+                return res.status(400).json({ error: 'idObject es requerido para la acción "soled"' })
+            }
+
+            // para acción "add" necesitamos filtros (expansion y/o types)
+            if (action === 'add' && !expansion && !types) {
+                return res.status(400).json({ error: 'Para la acción "add" se requieren filtros (expansion y/o types)' })
+            }
+
+            // llamamos al modelo para que maneje la operación de la tienda
+            const result = await MapInPlayModel.manageShop({ action, idMapInPlay, idObject, expansion, types })
+            
+            if (!result) {
+                return res.status(404).json({ message: 'Mapa no encontrado o no se pudo generar carta aleatoria' })
+            }
+            
+            if (action === 'soled') {
+                res.json({ message: 'Objeto vendido exitosamente' })
+            } else {
+                res.json(result.randomObject)
+            }
+            
+        } catch (error) {
+            console.error('❌ manageShop error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
+
+    // obtenemos todos los objetos que están en la tienda del mapa
+    static async getShopItems(req, res) {
+        try {
+            const { id } = req.params
+            console.log('🏪 --- getShopItems --- recibido:', id);
+
+            const shopItems = await MapInPlayModel.getShopItems({ idMapInPlay: id })
+            
+            if (shopItems === null) {
+                return res.status(404).json({ message: 'Mapa no encontrado' })
+            }
+            
+            res.json(shopItems)
+            
+        } catch (error) {
+            console.error('❌ getShopItems error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
 }
