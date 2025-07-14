@@ -25,4 +25,11 @@ mapsInPlayRouter.post('/:id/token', MapsInPlayController.manageMythToken)
 // BUSCAMOS todos los mapas creados por un usuario
 mapsInPlayRouter.get('/users/:id', MapsInPlayController.getAllMapsByUser)
 
+// MANEJAMOS la tienda del mapa (añadir/vender objetos)
+mapsInPlayRouter.post('/shop', MapsInPlayController.manageShop)
+
+// GET de todos los objetos que hay en la tienda
+mapsInPlayRouter.get('/:id/shop', MapsInPlayController.getShopItems)
+
+
 export default mapsInPlayRouter

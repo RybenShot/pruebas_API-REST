@@ -69,3 +69,26 @@ Content-Type: application/json
     "action": "reset",    
     "type": "retribution" 
 }
+### pedir cartas de la tienda
+GET http://localhost:1234/mapInPlay/58d07cf8-1efe-49ca-b61c-073945dd7688/shop
+
+### añadidmos al mapInPlay la id de la carta vendida
+POST http://localhost:1234/mapInPlay/shop
+Content-Type: application/json
+
+{ 
+    "action": "soled",    
+    "idMapInPlay": "58d07cf8-1efe-49ca-b61c-073945dd7688",
+    "idObject": "23" 
+}
+
+### añadidmos al mapInPlay la id de la carta de objeto de forma RANDOM en la tienda
+POST http://localhost:1234/mapInPlay/shop
+Content-Type: application/json
+
+{ 
+    "action": "add",    
+    "idMapInPlay": "58d07cf8-1efe-49ca-b61c-073945dd7688",
+    "expansion": "base",
+    "types": ["objeto"]
+}

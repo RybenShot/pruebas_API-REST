@@ -41,7 +41,7 @@
       }
     },
     "fechaDeInicio": 1747577525934,
-    "lastEddited": 1747577525934,
+    "lastEddited": 1752432846881,
     "IDUserHost": "user_2xGvzHhMUgrrNnaQgJdPD8FRxoF",
     "mythosReserveInPlay": [
       {
@@ -104,6 +104,10 @@
     "variables": {
       "dooms": 0,
       "clues": 0
+    },
+    "shop": {
+      "soled": [],
+      "inShop": []
     }
   },
   {
