@@ -4,6 +4,7 @@ import cors from 'cors'
 import invRouter from './routes/inv_routes.js'
 import mapsRouter from './routes/maps_routes.js'
 import mapInPlayRouter from './routes/mapsInPlay_routes.js'
+import invInPlayRouter from './routes/invInPlay_routes.js'
 import visitsRouter from './routes/visits_routes.js'
 import enemiesRouter from './routes/enemies_routes.js'
 
@@ -19,6 +20,7 @@ app.disable('x-powered-by')
 app.use('/inv', invRouter)
 app.use('/maps', mapsRouter)
 app.use('/mapInPlay', mapInPlayRouter)
+app.use('/invInPlay', invInPlayRouter)
 app.use('/visits', visitsRouter)
 app.use('/enemies', enemiesRouter)
 app.use('/objects', objectRouter)
