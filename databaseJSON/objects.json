@@ -1804,8 +1804,8 @@
         "types": ["perInicial", "talento", "innato"],
         "hands": null,
         "health": {
-            "life": 2,
-            "sanity": 2
+            "life": null,
+            "sanity": null
         },
         "cost": {
             "life": null,

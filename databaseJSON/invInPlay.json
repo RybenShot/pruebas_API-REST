@@ -1,0 +1,144 @@
+[
+  {
+    "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "investigadoresOnLine": [
+      {
+        "id": "1234",
+        "idMapOnLine": "1234",
+        "idInv": 0,
+        "name": "Tommy Muldoon",
+        "position": "Rookie cop",
+        "expansion": "Base",
+        "effect1": "Protector: If a Monster is going to face another researcher in your space, you can face that Monster instead.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Come on, Tommy. It’s time to become a hero.'",
+        "theStory": "The Muldoons had served in the police force for generations, and Tommy was no less. He was the pride of his family when he graduated from the Boston Academy. That’s why it wasn’t very funny to be transferred to the Arkham police station; after all, what could happen in that small town compared to the crimes I would have been able to solve in Boston? It turned out that police work in Arkham was not without interest after all. There were many unexplained events, and the local police seemed more interested in appearing normal than in finding a solution. So Tommy reached for Becky, his grandfather’s rifle, and set out to find solutions on his own ...",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "imgInv": "/img/1-inv/1-Tommy.jpg",
+        "atributes": {
+          "life": 7,
+          "sanity": 5,
+          "lore": 2,
+          "influence": 2,
+          "observation": 3,
+          "strength": 2,
+          "will": 3,
+          "money": 2,
+          "remnant": 0,
+          "clue": 0
+        },
+        "rol": [
+          {
+            "rol": "guardian",
+            "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
+          },
+          {
+            "rol": "survivor",
+            "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory. "
+          }
+        ],
+        "possessions": [
+          1,
+          2,
+          3
+        ],
+        "translations": {
+          "es": {
+            "name": "Tommy Muldoon",
+            "position": "Poli Novato",
+            "effect1": "Protector: Si un Monstruo va a enfrentarse a otro investigador en tu espacio, puedes enfrentarte tú a ese Monstruo en su lugar.",
+            "effect2": null,
+            "effect3": null,
+            "phrase": "'Vamos alla, Tommy. Es hora de hacerse el Heroe'",
+            "theStory": "Los Muldoon habían servido en el cuerpo de policía durante generaciones, y Tommy no iba a ser menos. Fue el orgullo de su familia cuando se graduó en la academia de Boston. Por eso no hizo mucha gracia que lo trasladasen a la comisaría de Arkham; después de todo ¿qué podía ocurrir en aquel pueblucho comparado con los crímenes que habría sido capaz de resolver en Boston? Al final resultó que el trabajo policial en Arkham no estaba exento de interés, después de todo. Había muchos sucesos inexplicables, y la policía local parecía más interesada en aparentar normalidad que en buscar una solución. Así que Tommy echó mano a Becky, el rifle de su abuelo, y se dispuso a buscar soluciones por su cuenta ...",
+            "focusLimit": 2,
+            "locutionURL": "___",
+            "rol": [
+              {
+                "rol": "___",
+                "description": "___"
+              },
+              {
+                "rol": "___",
+                "description": "___"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "1234567",
+        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+        "idMapOnLine": "1234",
+        "idInv": 1,
+        "name": "Tommy Muldoon",
+        "position": "Rookie cop",
+        "expansion": "Base",
+        "effect1": "Protector: If a Monster is going to face another researcher in your space, you can face that Monster instead.",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'Come on, Tommy. It’s time to become a hero.'",
+        "theStory": "The Muldoons had served in the police force for generations, and Tommy was no less. He was the pride of his family when he graduated from the Boston Academy. That’s why it wasn’t very funny to be transferred to the Arkham police station; after all, what could happen in that small town compared to the crimes I would have been able to solve in Boston? It turned out that police work in Arkham was not without interest after all. There were many unexplained events, and the local police seemed more interested in appearing normal than in finding a solution. So Tommy reached for Becky, his grandfather’s rifle, and set out to find solutions on his own ...",
+        "focusLimit": 2,
+        "locutionURL": "___",
+        "imgInv": "/img/1-inv/1-Tommy.jpg",
+        "atributes": {
+          "life": 7,
+          "sanity": 5,
+          "lore": 2,
+          "influence": 2,
+          "observation": 3,
+          "strength": 2,
+          "will": 3,
+          "money": 2,
+          "remnant": 0,
+          "clue": 0
+        },
+        "rol": [
+          {
+            "rol": "guardian",
+            "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
+          },
+          {
+            "rol": "survivor",
+            "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory. "
+          }
+        ],
+        "possessions": [
+          1,
+          2,
+          3
+        ],
+        "translations": {
+          "es": {
+            "name": "Tommy Muldoon",
+            "position": "Poli Novato",
+            "effect1": "Protector: Si un Monstruo va a enfrentarse a otro investigador en tu espacio, puedes enfrentarte tú a ese Monstruo en su lugar.",
+            "effect2": null,
+            "effect3": null,
+            "phrase": "'Vamos alla, Tommy. Es hora de hacerse el Heroe'",
+            "theStory": "Los Muldoon habían servido en el cuerpo de policía durante generaciones, y Tommy no iba a ser menos. Fue el orgullo de su familia cuando se graduó en la academia de Boston. Por eso no hizo mucha gracia que lo trasladasen a la comisaría de Arkham; después de todo ¿qué podía ocurrir en aquel pueblucho comparado con los crímenes que habría sido capaz de resolver en Boston? Al final resultó que el trabajo policial en Arkham no estaba exento de interés, después de todo. Había muchos sucesos inexplicables, y la policía local parecía más interesada en aparentar normalidad que en buscar una solución. Así que Tommy echó mano a Becky, el rifle de su abuelo, y se dispuso a buscar soluciones por su cuenta ...",
+            "focusLimit": 2,
+            "locutionURL": "___",
+            "rol": [
+              {
+                "rol": "___",
+                "description": "___"
+              },
+              {
+                "rol": "___",
+                "description": "___"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "idUser": "user_nuevo",
+    "investigadoresOnLine": []
+  }
+]
