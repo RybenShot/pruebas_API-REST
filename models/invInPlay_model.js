@@ -54,6 +54,8 @@ export class InvInPlayModel{
 
         // buscar si ya existe un investigador con el mismo id dentro de este usuario
         const existingInvIndex = listInvInPlay[userIndex].investigadoresOnLine.findIndex(inv => inv.id === id)
+        const now = Date.now()
+        investigadorData.lastUpdated = now // actualizar la fecha de modificación
         
         if (existingInvIndex !== -1) {
             // si existe, lo sobreescribimos
