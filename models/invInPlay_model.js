@@ -66,7 +66,7 @@ export class InvInPlayModel{
         }
 
         // si no existe, verificamos el límite de 3 investigadores por usuario
-        if (listInvInPlay[userIndex].investigadoresOnLine.length >= 3) {
+        if (listInvInPlay[userIndex].investigadoresOnLine.length >= 10) {
             throw new Error('LIMIT_EXCEEDED')
         }
 

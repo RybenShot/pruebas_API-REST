@@ -1561,11 +1561,11 @@
         "translations": {
             "es": {
                 "name": ".38 Special",
-                "description": "Recibes +2 de FUERZA como parte de una accion de ataque. si el Monstruo alq ue estas atacando tiene un icno de Restos, en vez de eso recibes +3 de FUERZA."
+                "description": "Recibes +2 de FUERZA como parte de una acción de ataque. Si el Monstruo al que estás atacando tiene un icono de Restos, en vez de eso recibes +3 de FUERZA."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": ".38 Special",
+                "description": "You get +2 STRENGTH as part of an attack action. If the Monster you are attacking has a Remains icon, you get +3 STRENGTH instead."
             }
         }
     },
@@ -1589,8 +1589,8 @@
                 "description": "Cuando vayas a ganar una ficha de Restos, en vez de eso puedes recuperar un punto de Vida y un punto de Cordura."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Relentless",
+                "description": "When you would gain a Remains token, you may recover 1 Health and 1 Sanity instead."
             }
         }
     },
@@ -1614,8 +1614,8 @@
                 "description": "Cuando vayas a ganar una ficha de Restos, en vez de eso puedes hacer que aparezca una Pista."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Inquiries",
+                "description": "When you would gain a Remains token, you may spawn a Clue instead."
             }
         }
     },
@@ -1640,8 +1640,8 @@
                 "description": "Una vez por ronda, cuando vayas a repetir al lanzamiento de un dado, en vez de eso puedes sumar uno al resultado de ese dado."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Research Notes",
+                "description": "Once per round, when you would reroll a die, you may instead add 1 to the result of that die."
             }
         }
     },
@@ -1665,8 +1665,8 @@
                 "description": "Una vez por ronda, cuando vayan a colocarse en tu Barrio una ficha de Perdición o un Monstruo que no sea épico, en vez de eso puedes descartarlo."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Flux Stabilizer",
+                "description": "Once per round, when a Doom token or a non-epic Monster would be placed in your Neighborhood, you may discard it instead."
             }
         }
     },
@@ -1687,11 +1687,11 @@
         "translations": {
             "es": {
                 "name": "Resultados consistentes",
-                "description": "Cuando coloques al menos dos Pistas sobre la oja de escenario como parte de una sola acción de revelar îstas, puedes colocar una pista adicional cogida de la reserva de Pistas."
+                "description": "Cuando coloques al menos dos Pistas sobre la hoja de escenario como parte de una sola acción de revelar éstas, puedes colocar una pista adicional cogida de la reserva de Pistas."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Consistent Results",
+                "description": "When you place at least two Clues on the scenario sheet as part of a single action to research them, you may place 1 additional Clue from the Clue pool."
             }
         }
     },
@@ -1716,8 +1716,8 @@
                 "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sumar uno al resultado de tantos dados como la cantidad de Perdición que haya en tu espacio."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Sinister Revelation",
+                "description": "Once per round, when resolving a test, you may add 1 to the result of a number of dice equal to the amount of Doom in your space."
             }
         }
     },
@@ -1738,11 +1738,11 @@
         "translations": {
             "es": {
                 "name": "Amuleto robado",
-                "description": "Una vez por ronda, durante tu turno, puedes sufrir un punto de Horror directo para realizar una accion adicional."
+                "description": "Una vez por ronda, durante tu turno, puedes sufrir un punto de Horror directo para realizar una acción adicional."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Stolen Amulet",
+                "description": "Once per round, during your turn, you may suffer 1 direct Horror to perform 1 additional action."
             }
         }
     },
@@ -1763,11 +1763,11 @@
         "translations": {
             "es": {
                 "name": "Invocar tormenta",
-                "description": "Accion: Elige un espacio cualquiera y haz una prueba de SABER -1. todos los Monstruos que esté en ese espacio sufren tanto daño como el resultado de la prueba. Luego coloca una ficha de Perdicion en ese espacio."
+                "description": "Acción: Elige un espacio cualquiera y haz una prueba de SABER -1. Todos los Monstruos que estén en ese espacio sufren tanto daño como el resultado de la prueba. Luego coloca una ficha de Perdición en ese espacio."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Summon Storm",
+                "description": "Action: Choose any space and perform a LORE -1 test. All Monsters in that space suffer damage equal to the test result. Then place 1 Doom token in that space."
             }
         }
     },
@@ -1789,11 +1789,11 @@
         "translations": {
             "es": {
                 "name": "Prófugo",
-                "description": "Durante tu turno, puedes sufrir un punto de Horror para separarte y agotar a todos los Monstruos que estén enfrentados a ti y que no sean épicos; además, los Monstruos que no sean épicos no se enfrentarán a ti hasta el final de la ronda. "
+                "description": "Durante tu turno, puedes sufrir un punto de Horror para separarte y agotar a todos los Monstruos que estén enfrentados a ti y que no sean épicos; además, los Monstruos que no sean épicos no se enfrentarán a ti hasta el final de la ronda."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Fugitive",
+                "description": "During your turn, you may suffer 1 Horror to disengage and exhaust all non-epic Monsters engaged with you; additionally, non-epic Monsters will not engage you again until the end of the round."
             }
         }
     },
@@ -1814,11 +1814,11 @@
         "translations": {
             "es": {
                 "name": "Manos largas",
-                "description": "Después de que realices una acción de conseghuir fondos, puedes ganar PERSEGUIDO para elegir un objeto del Catalogo y hacer una prueba de OBSERVACION +1. Si el resultado de esta prueba es igual o superior al precio de ese objeto, ganas el objeto y descartas perseguido."
+                "description": "Después de que realices una acción de conseguir fondos, puedes ganar PERSEGUIDO para elegir un objeto del Catálogo y hacer una prueba de OBSERVACIÓN +1. Si el resultado de esta prueba es igual o superior al precio de ese objeto, ganas el objeto y descartas PERSEGUIDO."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Sticky Fingers",
+                "description": "After you perform a fund-raising action, you may gain the HUNTED status to choose an item from the Catalog and make an OBSERVATION +1 test. If the result of this test is equal to or higher than the price of that item, you gain the item and discard HUNTED."
             }
         }
     },
@@ -1839,11 +1839,11 @@
         "translations": {
             "es": {
                 "name": "Navaja automática",
-                "description": "Cuando te separas de un Monstruo, puedes inflingirle un punto de daño."
+                "description": "Cuando te separas de un Monstruo, puedes infligirle un punto de daño."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Switchblade",
+                "description": "When you disengage from a Monster, you may deal 1 damage to it."
             }
         }
     },
@@ -1865,11 +1865,11 @@
         "translations": {
             "es": {
                 "name": "Ejército de un solo hombre",
-                "description": "Despues de que acabes tu movimiento en el espacio de un Monstruo, o después de que un Monstruo se mueva a tu espacio o aparezca en él, puedes quedar rezagado para realizar una acción de ataque como acción adicional."
+                "description": "Después de que acabes tu movimiento en el espacio de un Monstruo, o después de que un Monstruo se mueva a tu espacio o aparezca en él, puedes quedar rezagado para realizar una acción de ataque como acción adicional."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "One-Man Army",
+                "description": "After you finish your movement in a Monster's space, or after a Monster moves to or appears in your space, you may stay behind to perform an attack action as an additional action."
             }
         }
     },
@@ -1893,8 +1893,8 @@
                 "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sufrir un punto de Daño para volver a tirar un dado o todos los dados. Cuando uses tu capacidad Tenaz, este Objeto recupera un punto de Cordura."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Sophie’s Portrait",
+                "description": "Once per round, when resolving a test, you may suffer 1 Damage to reroll one die or all dice. When you use your Tenacious ability, this Item recovers 1 Sanity."
             }
         }
     },
@@ -1915,11 +1915,11 @@
         "translations": {
             "es": {
                 "name": "Guerra de desgaste",
-                "description": "Al final de tu turno, puedes sufrir cualquier cantidad de Daño directo para inflingir a cada Monstruo enfrentado a ti una cantidad de Daño igual a esa cantidad menos uno. (No puedes sufrir voluntariamente una cantidad de Daño superior a tu Vida.)"
+                "description": "Al final de tu turno, puedes sufrir cualquier cantidad de Daño directo para infligir a cada Monstruo enfrentado a ti una cantidad de Daño igual a esa cantidad menos uno. (No puedes sufrir voluntariamente una cantidad de Daño superior a tu Vida.)"
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "War of Attrition",
+                "description": "At the end of your turn, you may suffer any amount of direct Damage to deal that amount minus one Damage to each Monster engaged with you. (You cannot voluntarily suffer more Damage than your Health.)"
             }
         }
     },
@@ -1941,11 +1941,11 @@
         "translations": {
             "es": {
                 "name": "Herencia familiar",
-                "description": "RETRIBUCION: Ganas 1$ y todo el dinero que haya en esta carta. Después de que realices una acción de conseguir fondos, coloca 2$ adicionales sobre esta carta. (No puedes gastar, usar o intercambiar el dinero de esta carta.)"
+                "description": "RETRIBUTION: Ganas 1$ y todo el dinero que haya en esta carta. Después de que realices una acción de conseguir fondos, coloca 2$ adicionales sobre esta carta. (No puedes gastar, usar o intercambiar el dinero de esta carta.)"
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Family Inheritance",
+                "description": "RETRIBUTION: You gain $1 and all the money on this card. After you perform a fund-raising action, place an additional $2 on this card. (You cannot spend, use, or trade the money on this card.)"
             }
         }
     },
@@ -1969,8 +1969,8 @@
                 "description": "Cuando estés resolviendo una prueba, puedes gastar 1$ para volver a tirar un dado. (Puedes usar este Talento cualquier cantidad de veces por prueba.)"
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Money Talks",
+                "description": "When resolving a test, you may spend $1 to reroll a die. (You can use this Talent any number of times per test.)"
             }
         }
     },
@@ -1991,11 +1991,11 @@
         "translations": {
             "es": {
                 "name": "El dinero habla",
-                "description": "Después de que te concentres en una habilidad como parte de una ación de concentración, puedes gastar 1$ para concentrarte en esa habilidad una vez adicional."
+                "description": "Después de que te concentres en una habilidad como parte de una acción de concentración, puedes gastar 1$ para concentrarte en esa habilidad una vez adicional."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Money Talks",
+                "description": "After you focus on a skill as part of a focus action, you may spend $1 to focus on that skill one additional time."
             }
         }
     },
@@ -2020,8 +2020,8 @@
                 "description": "Después de que ganes una Pista de tu Barrio, puedes colocar una ficha de Perdición en tu espacio para ganar una Pista adicional de la reserva de fichas. Si lo haces, dale la vuelta a este Talento."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Occultism Principle",
+                "description": "After you gain a Clue from your Neighborhood, you may place a Doom token in your space to gain 1 additional Clue from the token pool. If you do, flip this Talent."
             }
         }
     },
@@ -2045,8 +2045,8 @@
                 "description": "Después de que realices una acción de salvaguarda, si el resultado fue dos o más, puedes realizar una acción de investigación como acción adicional. Si lo haces, dale la vuelta a este Talento."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Scientific Method",
+                "description": "After you perform a safeguard action, if the result was two or more, you may perform an investigation action as an additional action. If you do, flip this Talent."
             }
         }
     },
@@ -2066,12 +2066,12 @@
         },
         "translations": {
             "es": {
-                "name": "LLamar a los muertos",
+                "name": "Llamar a los muertos",
                 "description": "Acción: Realiza una prueba de -1 Saber. Si superas la prueba, descarta la primera carta del mazo de Encuentros de tu localización. Si descartas un Evento de esta forma, ganas una Pista de tu Barrio."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Call the Dead",
+                "description": "Action: Perform a LORE -1 test. If you pass, discard the top card of the Encounter deck at your location. If you discard an Event this way, gain 1 Clue from your Neighborhood."
             }
         }
     },
@@ -2095,8 +2095,8 @@
                 "description": "Una vez por ronda, cuando fueses a robar y resolver una ficha de Mitos, puedes gastar dos fichas de Restos para que en vez de eso aparezca una Pista. Coloca la carta de Evento de esa Pista en la parte superior de su mazo de Encuentros (en lugar de barajarla junto con las dos primeras cartas)."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Spirit Chamber",
+                "description": "Once per round, when you would draw and resolve a Mythos token, you may spend two Remains tokens instead to spawn a Clue. Place the Event card of that Clue on top of its Encounter deck (instead of shuffling it with the top two cards)."
             }
         }
     },
@@ -2118,11 +2118,11 @@
         "translations": {
             "es": {
                 "name": "Lo mismo que hagas",
-                "description": "Después de que un investigador que esté en cualquier espacio realize una acción, puedes quedar rezagado pararealizar esa misma acción. Si esa acción requiere una prueba, tira un dado más de los que tiró ese investigador en lugar de tu reserva de dados normal. (Se siguen aplicando las restricciones de acción normales)."
+                "description": "Después de que un investigador que esté en cualquier espacio realice una acción, puedes quedar rezagado para realizar esa misma acción. Si esa acción requiere una prueba, tira un dado más de los que tiró ese investigador en lugar de tu reserva de dados normal. (Se siguen aplicando las restricciones de acción normales)."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Whatever You Do",
+                "description": "After an investigator in any space performs an action, you may stay behind to perform that same action. If the action requires a test, roll one more die than that investigator rolled instead of your normal dice pool. (Normal action restrictions still apply)."
             }
         }
     },
@@ -2146,8 +2146,8 @@
                 "description": "Una vez por ronda, cuando fueses a superar una prueba, puedes volver a tirar todos los dados. Si lo haces, ganas Determinado. Si ya tienes Determinado, en vez de eso puedes recuperar un punto de Vida o de Cordura."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Aerial Acrobatics",
+                "description": "Once per round, when you are about to succeed a test, you may reroll all dice. If you do, gain Determined. If you already have Determined, instead you may recover one point of Health or Sanity."
             }
         }
     },
@@ -2168,11 +2168,11 @@
         "translations": {
             "es": {
                 "name": "Determinación imprudente",
-                "description": "Después de que tires los dados, puedess quedar rezagado para tirar un dado adicional por cada dado que no sea un éxito."
+                "description": "Después de que tires los dados, puedes quedar rezagado para tirar un dado adicional por cada dado que no sea un éxito."
             },
             "en": {
-                "name": "___",
-                "description": "___"
+                "name": "Reckless Determination",
+                "description": "After you roll the dice, you may stay behind to roll one additional die for each die that is not a success."
             }
         }
     },
@@ -2475,8 +2475,8 @@
                 "description": "Por turno puedes sufrir 2 puntos de Horror para volver a tirar cualquier cantidad de dados."
             },
             "en": {
-                "name": "Until the last breath",
-                "description": "___"
+                "name": "Until the Last Breath",
+                "description": "Once per turn, you may suffer 2 points of Horror to reroll any number of dice."
             }
         }
     },
@@ -3181,8 +3181,8 @@
         },
         "translations": {
             "es": {
-                "name": "___",
-                "description": "___"
+                "name": "Cuerno de latón",
+                "description": "Obtienes +1 SABER al lanzar hechizos. Una vez por ronda, puedes hacer una prueba de OBSERVACIÓN. Por cada éxito, agota un monstruo no épico en tu barrio. «Con el tiempo, el miedo se convierte en curiosidad, la curiosidad en consciencia y la consciencia en aceptación.»"
             },
             "en": {
                 "name": "Brass Horn",
@@ -3206,12 +3206,12 @@
         },
         "translations": {
             "es": {
-                "name": "___",
-                "description": "___"
+                "name": "Jugador de sesión",
+                "description": "Al comienzo de la Fase de Monstruos, puedes hacer una prueba de VOLUNTAD -1. Por cada éxito, ignora una habilidad de activación de un monstruo no épico. Encuentro: Haz una prueba de INFLUENCIA +1. Por cada éxito, ganas 2$."
             },
             "en": {
                 "name": "Session Player",
-                "description": "At the begenning of the Monster Phase, you may test your WILL -1. For each success, ignore one, non-epic monster activation ability. Encounter: Test your INFLUENCE +1. For each success, you gain 2$."
+                "description": "At the beginning of the Monster Phase, you may test your WILL -1. For each success, ignore one, non-epic monster activation ability. Encounter: Test your INFLUENCE +1. For each success, you gain 2$."
             }
         }
     },
@@ -3231,12 +3231,12 @@
         },
         "translations": {
             "es": {
-                "name": "___",
-                "description": "___"
+                "name": "La bestia interior",
+                "description": "Cuando realices una acción de ataque, puedes hacer una prueba de SABER. Si la superas, tira cinco dados en lugar de tu tirada habitual. Ignora todos los modificadores."
             },
             "en": {
                 "name": "The beast Within",
-                "description": "When you perform an attack action, you may test LORE. If you pass, roll five dice instead of your usual dice poll. Ignore all modifiers."
+                "description": "When you perform an attack action, you may test LORE. If you pass, roll five dice instead of your usual dice pool. Ignore all modifiers."
             }
         }
     },
@@ -3511,12 +3511,12 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Bokeh",
+                "description": "Durante la Fase de Mitos, cuando vayas a sacar fichas de la copa de Mitos, puedes sacar tres fichas en lugar de dos. Si lo haces, trata una ficha de Perdición como una ficha en blanco, y una ficha en blanco como una ficha de Pista. «Aquello que yace más allá de los márgenes desenfocados pinta la belleza de lo invisible.»"
             },
             "en": {
                 "name": "Bokeh",
-                "description": "During the Mythos Phase when you would draw tokens from the Mythos cup, you may draw three tokens instead of two. If you do, treat one doom token as a blank token, and one blank token as a clue token. 'That which lieas beyound the unfocused margins paints the beauty of the unseen.'"
+                "description": "During the Mythos Phase when you would draw tokens from the Mythos cup, you may draw three tokens instead of two. If you do, treat one doom token as a blank token, and one blank token as a clue token. 'That which lies beyond the unfocused margins paints the beauty of the unseen.'"
             }
         }
     },
@@ -3536,8 +3536,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Fluido desarrollador",
+                "description": "Al resolver una prueba como parte de un encuentro en el que ganarías una pista, puedes volver a tirar cualquier número de dados. Después de realizar una acción de investigación, haz una prueba de INFLUENCIA. Si la superas, ganas 2$."
             },
             "en": {
                 "name": "Developer Fluid",
@@ -3561,8 +3561,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Alférez Alferezette",
+                "description": "Puedes mirar la carta superior del mazo del barrio que ocupas en cualquier momento. Cuando vayas a agotar a un monstruo, puedes sufrir un punto de Horror para mover a ese monstruo al espacio inestable."
             },
             "en": {
                 "name": "Ensign Ensignette",
@@ -3586,8 +3586,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Ojos de obsesión",
+                "description": "Al comienzo de tu turno, puedes concentrarte en una habilidad dos veces, incluso si supera tu límite de concentración. Cuando vayas a realizar un movimiento, mueve cuatro espacios en lugar de dos (no se gasta dinero al moverte así; solo puedes moverte hasta cuatro espacios usando esta carta)."
             },
             "en": {
                 "name": "Eyes of Obession",
@@ -3611,8 +3611,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Atadura",
+                "description": "Acción: Elige un monstruo en cualquier espacio y realiza una prueba de SABER usando el modificador de evasión de ese monstruo. Si la superas, agota a ese monstruo (se separa)."
             },
             "en": {
                 "name": "Binding",
@@ -3636,8 +3636,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Bailey O'Barr",
+                "description": "Una vez por ronda, puedes descartar dos fichas de concentración de diferentes tipos para que un investigador en tu espacio realice una acción adicional (no se aplican las restricciones normales)."
             },
             "en": {
                 "name": "Bailey O'Barr",
@@ -3661,12 +3661,12 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Notas arcanas",
+                "description": "Aumenta tu límite de concentración en 1. Mientras tengas una ficha de concentración de cada tipo, tus fichas de concentración aumentan su habilidad correspondiente en 2 en lugar de 1. ENCUENTRO: Gana 1$ y una ficha de concentración, incluso si supera tu límite de concentración."
             },
             "en": {
                 "name": "Arcane Notes",
-                "description": "Increase you focus limit by 1. While you have a focus token of each type, your focus tokens increase their corrospnding skill by 2 instead of 1. ENCOUNTER: Gain 1$ and one focus token, even if it would exceed your focus limit."
+                "description": "Increase your focus limit by 1. While you have a focus token of each type, your focus tokens increase their corresponding skill by 2 instead of 1. ENCOUNTER: Gain 1$ and one focus token, even if it would exceed your focus limit."
             }
         }
     },
@@ -3686,8 +3686,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Revisión por pares",
+                "description": "No hay restricciones en la cantidad de fichas de concentración que puedes poseer de un solo tipo. Puedes intercambiar fichas de concentración como parte de una acción de intercambio, incluso si eso hace que un investigador supere su límite de concentración (las restricciones de tipo de ficha de concentración se aplican a otros investigadores que las reciban)."
             },
             "en": {
                 "name": "Peer Review",
@@ -3711,8 +3711,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Tiempo para llorar",
+                "description": "Si eres derrotado o no tienes aliados en cualquier momento, da la vuelta a la carta 168. RETRIBUCIÓN: Los investigadores en tu espacio hacen una prueba de VOLUNTAD. Si la superan, pueden recuperar un punto de cordura. De lo contrario, sufren un punto de horror. 'Todos llevan cicatrices emocionales. Mantenerlas enterradas es como sobrevives.'"
             },
             "en": {
                 "name": "A time to Grieve",
@@ -3736,8 +3736,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Petaca de níquel plateado",
+                "description": "Una vez por ronda, un aliado (según especifica la carta 168) puede realizar una acción adicional; ese aliado sufre un punto de daño directo y un punto de horror directo."
             },
             "en": {
                 "name": "Silver Nickel Flask",
@@ -3762,8 +3762,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Carabina Winchester",
+                "description": "Obtienes +3 FUERZA como parte de una acción de ataque. Una vez por ronda, después de realizar una acción de ataque, puedes infligir un punto de daño a este objeto; cada 6 que saques cuenta como dos éxitos."
             },
             "en": {
                 "name": "Winchester Carbine",
@@ -3787,8 +3787,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Forma del Mono",
+                "description": "Aumenta tu INFLUENCIA en uno. Una vez por ronda, cuando un investigador en tu barrio vaya a sufrir Horror, puedes hacer una prueba de VOLUNTAD -1. Previene un punto de Horror por cada éxito que obtengas. Al final de tu turno, puedes realizar una acción de Esquivar o de Investigación como acción adicional."
             },
             "en": {
                 "name": "Form of the Monkey",
@@ -3812,12 +3812,12 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Forma de la Tortuga",
+                "description": "Aumenta tu SABER en uno. Los investigadores en tu espacio tratan los modificadores de ataque de monstruos no épicos como 0. Una vez por ronda, puedes elegir a un investigador en tu barrio y hacer una prueba de INFLUENCIA -1. Si la superas, ese investigador puede descartar una condición (excepto condiciones de PACTO OSCURO)."
             },
             "en": {
                 "name": "Form of the Tortoise",
-                "description": "Increase your LORE by one. Investigators in your space treat non-epic monster attack modifiers as 0. Once per round, you mayb choose an investigator in your neighborhood and test INFLUENCE -1. If you pass, thay investigator may discard one condition (excluding DARK PACT conditions)."
+                "description": "Increase your LORE by one. Investigators in your space treat non-epic monster attack modifiers as 0. Once per round, you may choose an investigator in your neighborhood and test INFLUENCE -1. If you pass, that investigator may discard one condition (excluding DARK PACT conditions)."
             }
         }
     },
@@ -3837,8 +3837,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Forma del Dragón",
+                "description": "Aumenta tu FUERZA en uno. Una vez por ronda, cuando un investigador en tu espacio supere una prueba con dos o más éxitos, puede hacer una prueba de INFLUENCIA +1. Por cada éxito, gana 1$. Luego, al robar una carta de Titular, puedes sufrir un punto de Daño y un punto de Horror para ignorar sus efectos."
             },
             "en": {
                 "name": "Form of the Dragon",
@@ -3862,8 +3862,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Forma del Zorro",
+                "description": "Aumenta tu OBSERVACIÓN en uno. Cuando un investigador en tu barrio retire una ficha de Perdición de su espacio, puede retirar una ficha adicional de ese espacio. Cuando vayas a sufrir daño de un monstruo, puedes hacer una prueba de FUERZA -1. Por cada éxito, niega un punto de daño."
             },
             "en": {
                 "name": "Form of the Fox",
@@ -3887,8 +3887,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Forma del Caballo",
+                "description": "Aumenta tu VOLUNTAD en uno. Cuando un investigador en tu barrio realice una prueba, puede sufrir un punto de horror directo; añade uno a un resultado de dado por cada pista en ese barrio. Una vez por ronda, cuando un investigador en tu espacio gane un resto, puede ganar un resto adicional."
             },
             "en": {
                 "name": "Form of the Horse",
@@ -3912,8 +3912,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Lectura en frío",
+                "description": "En cualquier momento, puedes descartar una ficha de enfoque para que cualquier investigador realice una de las siguientes acciones: - Infligir un daño a un monstruo no épico en tu espacio - Moverse un espacio - Ganar 1$ - Volver a elegir un Token de Mitos (devuelve cualquier token no usado a la Copa de Mitos después de resolver el token seleccionado)"
             },
             "en": {
                 "name": "Cold Read",
@@ -3937,8 +3937,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Improvisación",
+                "description": "Una vez por ronda, puedes descartar una ficha de enfoque; elige una habilidad. Cada ficha de enfoque que los investigadores en tu espacio posean de esa habilidad otorga +2 a esa habilidad en lugar de +1 hasta el final de la ronda."
             },
             "en": {
                 "name": "Improvisation",
@@ -3962,8 +3962,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Caja de Polvo Pícaro",
+                "description": "Cuando realices una acción de enfoque, puedes enfocar una ficha adicional de otro tipo. «Con un toque de polvo, pintamos nuestros rostros para contar historias que resuenan en las sombras de la pantalla plateada.»"
             },
             "en": {
                 "name": "Rogue Powder Box",
@@ -3987,8 +3987,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Proyección Astral",
+                "description": "Acción: Prueba 📖. Si tienes éxito, realiza una acción adicional como si estuvieras en cualquier otro espacio. Los monstruos en ese espacio no te atacan, y no puedes moverte como parte de esa acción."
             },
             "en": {
                 "name": "Astral Projection",
@@ -4012,8 +4012,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Caja de Rompecabezas Críptica",
+                "description": "Una vez por ronda, puedes infligir horror a esta carta para agotar un monstruo en tu espacio. Después de que este objeto sufra uno o más daños, puedes recuperar dos de cordura."
             },
             "en": {
                 "name": "Cryptic Puzzlebox",
@@ -4037,8 +4037,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Paseo por el Éter",
+                "description": "Cuando vayas a ganar una pista, puedes sufrir un horror directo para mover esa pista a la hoja del escenario. ENCUENTRO: Sufre un horror. Elige un espacio en cualquier barrio; puedes resolver un encuentro como si estuvieras en ese espacio."
             },
             "en": {
                 "name": "Stroll the Ether",
@@ -4062,8 +4062,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Impresión en la Memoria",
+                "description": "Una vez por ronda, después de lanzar un hechizo que obtuviste con tu habilidad Manuscritos Raros, realiza una prueba de 👁️ -1. Si tienes éxito, puedes conservar ese hechizo (no lo descartes al final de esta ronda)."
             },
             "en": {
                 "name": "Impress on the Memory",
@@ -4087,8 +4087,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Texto Primigenio",
+                "description": "Obtienes +1 📖 como parte de las acciones de protección y al lanzar hechizos. Cuando debas robar una ficha de condena durante la Fase de Mitos, recupera una cordura."
             },
             "en": {
                 "name": "Primeval Text",
@@ -4112,8 +4112,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Hallazgos Sobrenaturales",
+                "description": "Después de superar una prueba al lanzar un hechizo, puedes ganar un vestigio. Después de superar una prueba como parte de una acción de investigación, puedes ganar un token de enfoque."
             },
             "en": {
                 "name": "Supernatural Findings",
@@ -4137,8 +4137,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Enterrar en Polvo",
+                "description": "Acción: Elige un monstruo no épico en cualquier espacio. Derrota a ese monstruo. Luego lanza un número de dados igual al valor de salud de ese monstruo más uno. Por cada 1 y 2 que saques, sufre un daño directo o horror directo. Luego voltea esta carta. (Levantado de las arenas)"
             },
             "en": {
                 "name": "Bury in Dust",
@@ -4162,8 +4162,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Influencia Arcana",
+                "description": "Las acciones que requieren que pruebes 👁️ no cuentan para tu límite de acciones. RETRIBUCIÓN: Agota un monstruo en cualquier espacio. Si ese monstruo tiene 3 o más de salud, sufres un horror directo. Al final de tu turno, un investigador en tu espacio sufre un daño o horror. Luego, recupera un daño o horror."
             },
             "en": {
                 "name": "Arcane Influence",
@@ -4187,8 +4187,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Pala Excavadora",
+                "description": "Obtienes +2 💪 como parte de una acción de ataque. Cuando termines tu turno en un barrio con uno o más valores, un investigador en tu barrio puede ganar un remanente o enfocar una habilidad."
             },
             "en": {
                 "name": "Digging Spade",
@@ -4212,11 +4212,11 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Camafeo Esmeralda",
+                "description": "Siempre usas VOLUNTAD cuando realizas acciones de ataque. Una vez por ronda, puedes infligir un horror a este objeto para causar dos daños a un monstruo no humano en tu espacio."
             },
             "en": {
-                "name": "Emarald Carcanet",
+                "name": "Emerald Carcanet",
                 "description": "You always use WILL when performing attack actions. Once per round, you may deal one horror to this item to deal two damage to a non-human monster in your space."
             }
         }
@@ -4237,8 +4237,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Francis St.James",
+                "description": "Aumenta tu límite de fichas de concentración en 1. Una vez por ronda, cuando este aliado sufra uno o más daños, cada investigador en tu vecindario puede enfocar una habilidad de su elección."
             },
             "en": {
                 "name": "Francis St.James",
@@ -4262,12 +4262,12 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Levantado de las Arenas",
+                "description": "Obtienes +1 👁️ como parte de una acción de investigación. Después de realizar una acción de protección, si no hay condena en tu vecindario, puedes obtener un objeto de la exhibición con valor de 3$ o menos. Cuando derrotes a un monstruo, recupera una vida o cordura. Luego, voltea esta carta. (Enterrar en el polvo)"
             },
             "en": {
                 "name": "Risen from the Sands",
-                "description": "You get +1 👁️ as part of a research action. After you perform a ward action, if there is no doom in your neighborhood, you may gain onwe item from the display with value 3$ or less. When you would defeat a monster, recover one health or sanity. Then flip this card. (Bury in Dust)"
+                "description": "You get +1 👁️ as part of a research action. After you perform a ward action, if there is no doom in your neighborhood, you may gain one item from the display with value 3$ or less. When you would defeat a monster, recover one health or sanity. Then flip this card. (Bury in Dust)"
             }
         }
     },
@@ -4287,8 +4287,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Santificación",
+                "description": "Los investigadores en tu vecindario pueden ignorar los efectos de encuentros de anomalías que les causarían daño y horror. RETRIBUCIÓN: Elimina hasta dos condenas de cualquier espacio en cualquier vecindario."
             },
             "en": {
                 "name": "Sanctification",
@@ -4312,8 +4312,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Operaciones Encubiertas",
+                "description": "En cualquier momento, puedes mirar cualquiera de las siguientes cartas (delantera y/o trasera): -Última carta del mazo de Monstruos -Última carta del mazo de Eventos -Primera carta del mazo de Periódico"
             },
             "en": {
                 "name": "Covert Operations",
@@ -4337,8 +4337,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Guante de Cuero Negro",
+                "description": "Cuando realices una acción de protección, puedes sufrir un horror directo para usar 👁️ en lugar de 📖."
             },
             "en": {
                 "name": "Black-Leather Glove",
@@ -4362,8 +4362,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Stephen Fenske",
+                "description": "Acción: Elige un monstruo a dos espacios tuyos y realiza una prueba de 👁️. Si la superas, inflige un daño a ese monstruo y exhausto."
             },
             "en": {
                 "name": "Stephen Fenske",
@@ -4387,8 +4387,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Sabina Wagner",
+                "description": "Obtienes +1 VOLUNTAD. Una vez por ronda, cuando un investigador en tu espacio realice una prueba, puede gastar hasta 3$. Por cada dólar gastado, añade un dado a esa prueba."
             },
             "en": {
                 "name": "Sabina Wagner",
@@ -4412,8 +4412,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Colt .45 Doble",
+                "description": "Obtienes +4 💪 como parte de una acción de ataque. Los dados lanzados en una prueba que use este objeto no pueden ser relanzados."
             },
             "en": {
                 "name": "Dual Colt .45s",
@@ -4437,12 +4437,12 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Marca Principal",
+                "description": "Al comienzo de tu turno, adjunta esta carta a un monstruo no épico en cualquier espacio. Si no puedes, devuelve esta carta a la caja del juego. Adjuntada: Recompensa - Después de que un investigador derrote a este monstruo, gana 1$ y enfoca una habilidad de tu elección. Si la salud del monstruo derrotado era 3 o más, gana una pista. Luego devuelve esta carta a Tony Morgan."
             },
             "en": {
                 "name": "Prime Mark",
-                "description": "At the start of your turn, attach this card to a non-epic monster in any space. If you cannot, return this card to the game box. Attached: Reward - After an investigator defeats this monster, gain 1$ and focus one skill of your choice. If ther defeated monster's health was 3 or greater, gain a clue. then return this card to Tony Morgan."
+                "description": "At the start of your turn, attach this card to a non-epic monster in any space. If you cannot, return this card to the game box. Attached: Reward - After an investigator defeats this monster, gain 1$ and focus one skill of your choice. If the defeated monster's health was 3 or greater, gain a clue. then return this card to Tony Morgan."
             }
         }
     },
@@ -4462,8 +4462,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Lingüística",
+                "description": "Después de realizar una prueba, puedes sufrir un punto de cordura para añadir uno al resultado de un dado (límite una vez por instancia). Cuando un investigador en tu vecindario gaste una ficha de concentración para volver a tirar un dado, puede en su lugar volver a tirar cualquier número de dados."
             },
             "en": {
                 "name": "Linguistics",
@@ -4487,8 +4487,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Mosi Abara",
+                "description": "Mientras estés en el vecindario con más pistas, aumenta el valor de cada una de tus habilidades en +2 (los empates en el número de pistas en un vecindario cuentan para esta habilidad)."
             },
             "en": {
                 "name": "Mosi Abara",
@@ -4512,8 +4512,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Brújula del Navegante",
+                "description": "Después de que obtengas una pista, puedes generar una pista. Después de que una pista o una condena se mueva a la hoja del escenario, puedes moverte un espacio, ganar un enfoque o volverte OBLIGADO."
             },
             "en": {
                 "name": "Navigator's Compass",
@@ -4537,8 +4537,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Sierra Ósea",
+                "description": "Obtienes +3 💪 como parte de una acción de ataque. Después de derrotar a un monstruo, gana un vestigio (además de cualquier otra recompensa por derrotar a ese monstruo)."
             },
             "en": {
                 "name": "Bone Saw",
@@ -4562,12 +4562,12 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Bolsa Médica",
+                "description": "Cuando un investigador en tu vecindario vaya a fallar una prueba, puede obtener una de las siguientes opciones: - Un vestigio - Condición IMPULSADO - Recuperar un punto de salud o de cordura."
             },
             "en": {
                 "name": "Medical Bag",
-                "description": "When an investigator in your neighborhood would failñ a test, they may gain one of the following: -One remnant -DRIVEN condition -Recover one health or sanity."
+                "description": "When an investigator in your neighborhood would fail a test, they may gain one of the following: -One remnant -DRIVEN condition -Recover one health or sanity."
             }
         }
     },
@@ -4587,8 +4587,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Práctica Experimentada",
+                "description": "Cada vez que un investigador recupere salud como parte de tu habilidad Visita Domiciliaria, ese investigador tira un dado adicional en su siguiente prueba durante esta ronda. Una vez por ronda, después de usar tu habilidad Atención Urgente, gana 2$."
             },
             "en": {
                 "name": "Seasoned Practice",
@@ -4612,8 +4612,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Pala de Excavación",
+                "description": "Obtienes +3 💪 como parte de una acción de ataque. Después de realizar una acción de ataque, puedes infligir un daño a este objeto o descartar un resto para sumar uno a cada resultado de dado durante esa prueba."
             },
             "en": {
                 "name": "Digging Spade",
@@ -4637,8 +4637,8 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Abrazo Corrompido",
+                "description": "Después de que un investigador en tu vecindario fuera a obtener uno o más éxitos durante una prueba de protección, puede descartar un resto para eliminar una perdición adicional de cualquier espacio de su vecindario."
             },
             "en": {
                 "name": "Tainted Enfolding",
@@ -4662,12 +4662,1943 @@
         },
         "translations": {
             "es": {
-                "name": "___.",
-                "description": "___"
+                "name": "Abundancia Visceral",
+                "description": "Después de que un investigador en tu vecindario fuera a derrotar a un monstruo, puede ganar un resto (además de cualquier otra recompensa que recibiría). Una vez por ronda, cuando un investigador en tu vecindario fuera a realizar una prueba, puede descartar un resto. Si lo hace, añade dos dados a esa prueba."
             },
             "en": {
                 "name": "Visceral Abundance",
                 "description": "After an investigator in your neighborhood would defeat a monster, they may gain a remnant (in addition to any other rewards they would recive). Once per round when an investigator in your neighborhood would perform a test, they may discard a remnant. If they do, add two dice to that test."
+            }
+        }
+    },
+    {"id": 182,
+        "img": "/img/2-obj/palabrasCurativas.JPG",
+        "expansion": "base",
+        "price": 2,
+        "types": ["hechizo", "ritual"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Palabras curativas",
+                "description": "Acción: Haz una prueba de Saber -1. Un investigador o Aliado que esté en tu espacio recupera tanta Vida como el resultado de esta prueba. (Puedes aplicar este efecto a ti mismo.)"
+            },
+            "en": {
+                "name": "Healing Words",
+                "description": "Action: Perform a Lore -1 test. An investigator or Ally in your space recovers Health equal to the result of that test. (You may choose yourself as the target.)"
+            }
+        }
+    },
+    {"id": 183,
+        "img": "/img/2-obj/viajeAstral.jpg",
+        "expansion": "base",
+        "price": 2,
+        "types": ["hechizo", "ensalmo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Viaje astral",
+                "description": "En vez de realizar una acción de movimiento normal, puedes hacer una prueba de Saber para moverte tantos espacios como el resultado de la prueba más dos."
+            },
+            "en": {
+                "name": "Astral Travel",
+                "description": "Instead of performing a normal move action, you may perform a Lore test to move a number of spaces equal to the result of the test plus two."
+            }
+        }
+    },
+    {"id": 184,
+        "img": "/img/2-obj/encontrarPortal.JPG",
+        "expansion": "base",
+        "price": 4,
+        "types": ["hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 2
+        },
+        "translations": {
+            "es": {
+                "name": "Encontrar portal",
+                "description": "Acción: Haz una prueba de Saber. Si la superas, muévete a un espacio de tu elección en el que haya al menos una ficha de Perdición."
+            },
+            "en": {
+                "name": "Find Portal",
+                "description": "Action: Perform a Lore test. If you pass, move to a space of your choice that contains at least one doom token."
+            }
+        }
+    },
+    {"id": 185,
+        "img": "/img/2-obj/proteccionCorporal.JPG",
+        "expansion": "base",
+        "price": 3,
+        "types": ["hechizo", "ensalmo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Protección corporal",
+                "description": "Una vez por ronda, si tú, otro investigador o un Aliado vais a sufrir Daño (sin importar en qué espacio esté el afectado), puedes hacer una prueba de Saber. Anulas tanto Daño como el resultado de esta prueba."
+            },
+            "en": {
+                "name": "Body Ward",
+                "description": "Once per round, if you, another investigator, or an Ally would suffer Damage (regardless of their space), you may perform a Lore test. Cancel Damage equal to the result of the test."
+            }
+        }
+    },
+    {"id": 186,
+        "img": "/img/2-obj/ajar.JPG",
+        "expansion": "base",
+        "price": 2,
+        "types": ["hechizo", "ensalmo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Ajar",
+                "description": "Cuando estés realizando una acción de ataque, puedes hacer una prueba de Saber -1. Añade el resultado de esta prueba al resultado de la prueba efectuada para resolver la acción de ataque."
+            },
+            "en": {
+                "name": "Wither",
+                "description": "When performing an attack action, you may perform a Lore -1 test. Add the result of that test to the result of the test made to resolve the attack action."
+            }
+        }
+    },
+    {"id": 187,
+        "img": "/img/2-obj/procesoArquimico.JPG",
+        "expansion": "base",
+        "price": 1,
+        "types": ["hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Proceso alquímico",
+                "description": "Acción: Haz una prueba de Saber. Ganas 1$ por cada Éxito que obtengas."
+            },
+            "en": {
+                "name": "Alchemical Process",
+                "description": "Action: Perform a Lore test. You gain 1$ for each Success you get."
+            }
+        }
+    },
+    {"id": 188,
+        "img": "/img/2-obj/atadura.JPG",
+        "expansion": "base",
+        "price": 3,
+        "types": ["hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Atadura",
+                "description": "Acción: Elige un Monstruo que esté en cualquier espacio y haz una prueba de Saber usando su modificador de evasión. Si superas la prueba, agota a este Monstruo. (Si está enfrentado, se separa.)"
+            },
+            "en": {
+                "name": "Binding",
+                "description": "Action: Choose a Monster in any space and perform a Lore test using its evade modifier. If you pass the test, exhaust that Monster. (If it is engaged, it becomes disengaged.)"
+            }
+        }
+    },
+    {"id": 189,
+        "img": "/img/2-obj/consumicion.jpg",
+        "expansion": "base",
+        "price": 3,
+        "types": ["hechizo", "ritual"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Consunción",
+                "description": "Acción: Haz una prueba de Saber -1. Un Monstruo situado en tu espacio o en un espacio adyacente sufre tanto Daño como el resultado de esta prueba. Puedes realizar esta acción aunque estés enfrentado a un Monstruo."
+            },
+            "en": {
+                "name": "Consuming",
+                "description": "Action: Perform a Lore -1 test. A Monster in your space or an adjacent space suffers Damage equal to the result of this test. You may perform this action even if you are engaged with a Monster."
+            }
+        }
+    },
+    {"id": 190,
+        "img": "/img/2-obj/intervencion.JPG",
+        "expansion": "base",
+        "price": 4,
+        "types": ["hechizo", "ensalmo"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 2
+        },
+        "translations": {
+            "es": {
+                "name": "Intervención",
+                "description": "Una vez por ronda, Cuando otro investigador situado en cualquier espacio esté resolviendo una prueba, puedes hacer una prueba de Saber -1. Añade el resultado de esta prueba al resultado de la prueba de ese otro investigador."
+            },
+            "en": {
+                "name": "Intervention",
+                "description": "Once per round, when another investigator in any space is resolving a test, you may perform a Lore -1 test. Add the result of this test to the result of that investigator's test."
+            }
+        }
+    },
+
+    {"id": 191,
+        "img": "/img/2-obj/nieblasDeRlyeh.JPG",
+        "expansion": "base",
+        "price": 3,
+        "types": ["hechizo", "ensalmo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": 1
+        },
+        "translations": {
+            "es": {
+                "name": "Nieblas de R'lyeh",
+                "description": "Puedes hacer una prueba de Saber en lugar de Observación cuando estés realizando una acción de evasión. (El modificador de evasión del Monstruo sigue aplicándose.)"
+            },
+            "en": {
+                "name": "Mists of R'lyeh",
+                "description": "You may perform a Lore test instead of an Observation test when performing an evade action. (The Monster's evade modifier still applies.)"
+            }
+        }
+    },
+    {"id": 192,
+        "img": "/img/2-obj/GabrielCarillo.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "profesor de instituto"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Gabriel Carillo",
+                "description": "Puedes realizar una acción adicional durante tu turno."
+            },
+            "en": {
+                "name": "Gabriel Carillo",
+                "description": "You may perform an additional action during your turn."
+            }
+        }
+    },
+    {"id": 193,
+        "img": "/img/2-obj/DelphinaBell.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "profesor universitario"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 4
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Delphina Bell",
+                "description": "Acción: Puedes gastar una ficha de Restos para concentrarte en una habilidad de tu elección, incluso aunque al hacerlo sobrepases tu límite de Concentración."
+            },
+            "en": {
+                "name": "Delphina Bell",
+                "description": "Action: You may spend one Remnant token to focus on a skill of your choice, even if doing so exceeds your Concentration limit."
+            }
+        }
+    },
+    {"id": 194,
+        "img": "/img/2-obj/LeandWilliams.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "anticuario"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Leand Williams",
+                "description": "Después de que ganes esta carta del mazo, ganas también un Objeto Extraordinario."
+            },
+            "en": {
+                "name": "Leand Williams",
+                "description": "After you gain this card from the deck, you also gain an Extraordinary Item."
+            }
+        }
+    },
+    {"id": 195,
+        "img": "/img/2-obj/SachikoHiga.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "púgil"],
+        "hands": null,
+        "health": {
+            "life": 4,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Sachiko Higa",
+                "description": "Recibes Fuerza +2 cuando estés realizando una acción de ataque."
+            },
+            "en": {
+                "name": "Sachiko Higa",
+                "description": "You gain +2 Strength when performing an attack action."
+            }
+        }
+    },
+    {"id": 196,
+        "img": "/img/2-obj/HenryWan.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "aspirante a actor"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Henry Wan",
+                "description": "Una vez por ronda, puedes pagar la mitad del precio de un Objeto (redondeando hacia arriba) cuando lo compres. (No se acumula con otras reducciones del precio.)"
+            },
+            "en": {
+                "name": "Henry Wan",
+                "description": "Once per round, you may pay half the cost of an Item (rounding up) when you buy it. (This does not stack with other price reductions.)"
+            }
+        }
+    },
+    {"id": 197,
+        "img": "/img/2-obj/TetsuoMori.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "agente de policía"],
+        "hands": null,
+        "health": {
+            "life": 4,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Tetsuo Mori",
+                "description": "Después de que derrotes a un Monstruo con una acción de ataque, puedes revelar una Pista."
+            },
+            "en": {
+                "name": "Tetsuo Mori",
+                "description": "After you defeat a Monster with an attack action, you may reveal a Clue."
+            }
+        }
+    },
+    {"id": 198,
+        "img": "/img/2-obj/ArthurJohnson.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "asesor"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Arthur Johnson",
+                "description": "Una vez por ronda, puedes volver a tirar un dado cuando estés resolviendo una prueba."
+            },
+            "en": {
+                "name": "Arthur Johnson",
+                "description": "Once per round, you may reroll one die when resolving a test."
+            }
+        }
+    },
+    {"id": 199,
+        "img": "/img/2-obj/LewisHayes.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "profesor universitario"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 4
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Lewis Hayes",
+                "description": "Recibes Saber +2 cuando estés lanzando un Hechizo."
+            },
+            "en": {
+                "name": "Lewis Hayes",
+                "description": "You gain +2 Lore when casting a Spell."
+            }
+        }
+    },
+    {"id": 200,
+        "img": "/img/2-obj/AliceLuxley.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "detective de policía"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Alice Luxley",
+                "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes tirar un dado adicional por cada Pista que tengas y un dado adicional por cada Pista que haya en tu Barrio."
+            },
+            "en": {
+                "name": "Alice Luxley",
+                "description": "Once per round, when resolving a test, you may roll one additional die for each Clue you have and one additional die for each Clue in your Neighborhood."
+            }
+        }
+    },
+    {"id": 201,
+        "img": "/img/2-obj/JenicaCapra.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "cazarecompensas místico"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Jenica Capra",
+                "description": "Después de que derrotes a un Monstruo con una acción de ataque, puedes quitar una ficha de Perdición de tu espacio."
+            },
+            "en": {
+                "name": "Jenica Capra",
+                "description": "After you defeat a Monster with an attack action, you may remove one Doom token from your space."
+            }
+        }
+    },
+    {"id": 202,
+        "img": "/img/2-obj/GraceBechman.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "detective de lo paranormal"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Grace Bechman",
+                "description": "Recibes Saber +2 cuando estés realizando una acción de salvaguarda."
+            },
+            "en": {
+                "name": "Grace Bechman",
+                "description": "You gain +2 Lore when performing a safeguard action."
+            }
+        }
+    },
+    {"id": 203,
+        "img": "/img/2-obj/ZoraLarson.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["aliado", "secretario"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Zora Larson",
+                "description": "Acción: Un investigador o Aliado que esté en tu espacio recupera un punto de Cordura. (Puedes aplicarte este efecto a ti mismo.)"
+            },
+            "en": {
+                "name": "Zora Larson",
+                "description": "Action: An investigator or Ally in your space recovers one Sanity point. (You may apply this effect to yourself.)"
+            }
+        }
+    },
+    {"id": 204,
+        "img": "/img/2-obj/ThomsonDel45.jpg",
+        "expansion": "base",
+        "price": 5,
+        "types": ["tienda", "objeto", "común", "arma"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Thomson del 45",
+                "description": "Recibes Fuerza +5 cuando estés realizando una acción de ataque."
+            },
+            "en": {
+                "name": "Thomson .45",
+                "description": "You gain +5 Strength when performing an attack action."
+            }
+        }
+    },
+
+
+
+
+
+    {"id": 205,
+        "img": "/img/2-obj/simboloReligioso.JPG",
+        "expansion": "base",
+        "price": 3,
+        "types": ["tienda", "objeto", "común", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 0,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Símbolo religioso",
+                "description": "Después de que este Objeto sufra al menos un punto de Horror, tú recuperas un punto de Cordura."
+            },
+            "en": {
+                "name": "Religious Symbol",
+                "description": "After this Item suffers at least 1 Horror, you recover 1 Sanity."
+            }
+        }
+    },
+    {"id": 206,
+        "img": "/img/2-obj/escopeta.jpg",
+        "expansion": "base",
+        "price": 6,
+        "types": ["tienda", "objeto", "común", "arma"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Escopeta",
+                "description": "Recibes Fuerza +5 cuando estés realizando una acción de ataque. Cada 6 que obtengas durante una acción de ataque cuenta como dos Éxitos."
+            },
+            "en": {
+                "name": "Shotgun",
+                "description": "You gain +5 Strength when performing an attack action. Each 6 rolled during an attack action counts as two Successes."
+            }
+        }
+    },
+    {"id": 207,
+        "img": "/img/2-obj/relojDeBolsillo.JPG",
+        "expansion": "base",
+        "price": 6,
+        "types": ["tienda", "objeto", "común", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Reloj de bolsillo",
+                "description": "Puedes realizar una acción adicional durante tu turno."
+            },
+            "en": {
+                "name": "Pocket Watch",
+                "description": "You may perform an additional action during your turn."
+            }
+        }
+    },
+    {"id": 208,
+        "img": "/img/2-obj/automaticaDel45.jpg",
+        "expansion": "base",
+        "price": 4,
+        "types": ["tienda", "objeto", "común", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Automática del 45",
+                "description": "Recibes Fuerza +3 cuando estés realizando una acción de ataque."
+            },
+            "en": {
+                "name": ".45 Automatic",
+                "description": "You gain +3 Strength when performing an attack action."
+            }
+        }
+    },
+    {"id": 209,
+        "img": "/img/2-obj/pergaminoMistico.jpg",
+        "expansion": "base",
+        "price": 3,
+        "types": ["tienda", "objeto", "extraordinario", "tomo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Pergamino místico",
+                "description": "Recibes Saber +2 cuando estés lanzando un Hechizo."
+            },
+            "en": {
+                "name": "Mystic Scroll",
+                "description": "You gain +2 Lore when casting a Spell."
+            }
+        }
+    },
+    {"id": 210,
+        "img": "/img/2-obj/chalecoAntibalas.JPG",
+        "expansion": "base",
+        "price": 4,
+        "types": ["tienda", "objeto", "común"],
+        "hands": null,
+        "health": {
+            "life": 4,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Chaleco antibalas",
+                "description": "Una vez por ronda, si van a infligirse al menos dos puntos de Daño a esta carta, anula un punto de ese Daño."
+            },
+            "en": {
+                "name": "Bulletproof Vest",
+                "description": "Once per round, if this card would be dealt at least 2 Damage, prevent 1 of that Damage."
+            }
+        }
+    },
+    {"id": 211,
+        "img": "/img/2-obj/derringer.jpg",
+        "expansion": "base",
+        "price": 2,
+        "types": ["tienda", "objeto", "extraordinario", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Derringer del 41",
+                "description": "Puedes sumar uno al resultado de un dado cuando estés realizando una acción de ataque."
+            },
+            "en": {
+                "name": ".41 Derringer",
+                "description": "You may add one to the result of one die when performing an attack action."
+            }
+        }
+    },
+    {"id": 212,
+        "img": "/img/2-obj/dinamita.JPG",
+        "expansion": "base",
+        "price": 5,
+        "types": ["tienda", "objeto", "común", "arma"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Dinamita",
+                "description": "Cuando estés realizando una acción de ataque, puedes descartar esta carta para infligir cinco puntos de Daño a cada Monstruo que esté enfrentado a ti."
+            },
+            "en": {
+                "name": "Dynamite",
+                "description": "When performing an attack action, you may discard this card to deal 5 Damage to each Monster engaged with you."
+            }
+        }
+    },
+    {"id": 213,
+        "img": "/img/2-obj/llaveDePlata.JPG",
+        "expansion": "base",
+        "price": 6,
+        "types": ["tienda", "objeto", "mágico", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Llave de plata",
+                "description": "Una vez por ronda, puedes volver a tirar cualquier cantidad de dados mientras estés resolviendo una prueba de Saber o de Observación."
+            },
+            "en": {
+                "name": "Silver Key",
+                "description": "Once per round, you may reroll any number of dice while resolving a Lore or Observation test."
+            }
+        }
+    },
+    {"id": 214,
+        "img": "/img/2-obj/gabardinaDeCuero.JPG",
+        "expansion": "base",
+        "price": 3,
+        "types": ["tienda", "objeto", "común", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Gabardina de cuero",
+                "description": "Recibes Observación +1 cuando estés realizando una acción de evasión."
+            },
+            "en": {
+                "name": "Leather Trenchcoat",
+                "description": "You gain +1 Observation when performing an evade action."
+            }
+        }
+    },
+    {"id": 215,
+        "img": "/img/2-obj/ropaElegante.JPG",
+        "expansion": "base",
+        "price": 4,
+        "types": ["tienda", "objeto", "común", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Ropa elegante",
+                "description": "Una vez por ronda, puedes pagar la mitad del precio de un Objeto (redondeando hacia arriba) cuando lo compres. (No se acumula con otras reducciones del precio.)"
+            },
+            "en": {
+                "name": "Elegant Clothes",
+                "description": "Once per round, you may pay half the price of an Item (rounded up) when you purchase it. (Does not stack with other price reductions.)"
+            }
+        }
+    },
+    {"id": 216,
+        "img": "/img/2-obj/analgesicos.jpg",
+        "expansion": "base",
+        "price": 1,
+        "types": ["tienda", "objeto", "común"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Analgésicos",
+                "description": "Ignora el dolor. No es el dolor lo que te va a matar."
+            },
+            "en": {
+                "name": "Painkillers",
+                "description": "Ignore the pain. It’s not the pain that’s going to kill you."
+            }
+        }
+    },
+    {"id": 217,
+        "img": "/img/2-obj/tomoMistico.JPG",
+        "expansion": "base",
+        "price": 4,
+        "types": ["tienda", "objeto", "extraordinario", "tomo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Tomo místico",
+                "description": "Recibes Saber +3 cuando estés lanzando un Hechizo."
+            },
+            "en": {
+                "name": "Mystic Tome",
+                "description": "You gain +3 Lore when casting a Spell."
+            }
+        }
+    },
+    {"id": 218,
+        "img": "/img/2-obj/botiquin.jpg",
+        "expansion": "base",
+        "price": 2,
+        "types": ["tienda", "objeto", "común"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Botiquín",
+                "description": "Acción: Un investigador o aliado situado en tu espacio recupera un punto de Vida. (Puedes aplicarte este efecto a ti mismo.)"
+            },
+            "en": {
+                "name": "First Aid Kit",
+                "description": "Action: An investigator or ally in your space recovers 1 Health. (You can apply this effect to yourself.)"
+            }
+        }
+    },
+    {"id": 219,
+        "img": "/img/2-obj/pataDeConejo.JPG",
+        "expansion": "base",
+        "price": 2,
+        "types": ["tienda", "objeto", "común", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Pata de conejo",
+                "description": "Una vez por ronda, puedes volver a tirar un dado cuando estés resolviendo una prueba."
+            },
+            "en": {
+                "name": "Rabbit's Foot",
+                "description": "Once per round, you may reroll one die when resolving a test."
+            }
+        }
+    },
+    {"id": 220,
+        "img": "/img/2-obj/estatuillaGrotesca.jpg",
+        "expansion": "base",
+        "price": 4,
+        "types": ["tienda", "objeto", "mágico", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Estatuilla grotesca",
+                "description": "Después de que realices una acción de revelar Pistas, puedes sufrir un punto de Horror para revelar una Pista (se coloca sobre la hoja de Escenario)."
+            },
+            "en": {
+                "name": "Grotesque Statuette",
+                "description": "After you perform a clue-revealing action, you may suffer 1 point of Horror to reveal a Clue (placed on the Scenario sheet)."
+            }
+        }
+    },
+    {"id": 221,
+        "img": "/img/2-obj/codiceDeOtroMundo.JPG",
+        "expansion": "base",
+        "price": 5,
+        "types": ["tienda", "objeto", "extraordinario", "tomo"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Códice de otro mundo",
+                "description": "Recibes Saber +3 cuando estés realizando una acción de salvaguarda."
+            },
+            "en": {
+                "name": "Otherworldly Codex",
+                "description": "You gain +3 Knowledge when performing a ward action."
+            }
+        }
+    },
+    {"id": 222,
+        "img": "/img/2-obj/escrituraOcultista.JPG",
+        "expansion": "base",
+        "price": 3,
+        "types": ["tienda", "objeto", "extraordinario", "tomo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Escritura ocultista",
+                "description": "Recibes Observación +2 cuando estés realizando una acción de revelar Pistas."
+            },
+            "en": {
+                "name": "Occult Writing",
+                "description": "You gain +2 Observation when performing a clue-revealing action."
+            }
+        }
+    },
+    {"id": 223,
+        "img": "/img/2-obj/cuentos.jpg",
+        "expansion": "base",
+        "price": 4,
+        "types": ["tienda", "objeto", "común", "extraordinario", "tomo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Cuentos de los hnos. Grimm",
+                "description": "Acción: Un investigador o Aliado situado en tu espacio recupera un punto de Cordura. (Puedes aplicarte este efecto a ti mismo.)"
+            },
+            "en": {
+                "name": "Grimm Brothers' Tales",
+                "description": "Action: An investigator or Ally in your space recovers 1 point of Sanity. (You may apply this effect to yourself.)"
+            }
+        }
+    },
+    {"id": 224,
+        "img": "/img/2-obj/mantoAndrajoso.jpg",
+        "expansion": "base",
+        "price": 5,
+        "types": ["tienda", "objeto", "mágico", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Manto andrajoso",
+                "description": "Los Monstruos que no sean épicos te ignoran cuando se activan y no se enfrentan a ti a menos que tú los ataques o les inflinjas Daño."
+            },
+            "en": {
+                "name": "Tattered Mantle",
+                "description": "Non-epic Monsters ignore you when they activate and do not engage with you unless you attack them or deal Damage to them."
+            }
+        }
+    },
+    {"id": 225,
+        "img": "/img/2-obj/lupa.jpg",
+        "expansion": "base",
+        "price": 1,
+        "types": ["tienda", "objeto", "común", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Lupa",
+                "description": "Recibes Observación +1 cuando estés realizando una acción de revelar Pistas."
+            },
+            "en": {
+                "name": "Magnifying Glass",
+                "description": "You receive +1 Observation when performing an action to reveal Clues."
+            }
+        }
+    },
+    {"id": 226,
+        "img": "/img/2-obj/revolverDel38.jpg",
+        "expansion": "base",
+        "price": 3,
+        "types": ["tienda", "objeto", "común", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Revólver del .38",
+                "description": "Recibes Fuerza +2 cuando estés realizando una acción de ataque."
+            },
+            "en": {
+                "name": ".38 Revolver",
+                "description": "You receive +2 Strength when performing an attack action."
+            }
+        }
+    },
+    {"id": 227,
+        "img": "/img/2-obj/paginaSecreta.JPG",
+        "expansion": "base",
+        "price": 3,
+        "types": ["tienda", "objeto", "extraordinario", "tomo"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Página secreta",
+                "description": "Recibes Saber +2 cuando estés realizando una acción de salvaguarda."
+            },
+            "en": {
+                "name": "Secret Page",
+                "description": "You receive +2 Knowledge when performing a safeguard action."
+            }
+        }
+    },
+    {"id": 228,
+        "img": "/img/2-obj/amuletoArcano.jpg",
+        "expansion": "base",
+        "price": 4,
+        "types": ["tienda", "objeto", "mágico", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 4
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Amuleto con símbolo arcano",
+                "description": "Una vez por ronda, si van a inflingirse al menos dos puntos de Horror a esta carta, anula un punto de ese Horror."
+            },
+            "en": {
+                "name": "Amulet with Arcane Symbol",
+                "description": "Once per round, if this card is about to suffer at least two points of Horror, cancel one point of that Horror."
+            }
+        }
+    },
+    {"id": 229,
+        "img": "/img/2-obj/pitilleraDeLaSuerte.JPG",
+        "expansion": "base",
+        "price": 5,
+        "types": ["tienda", "objeto", "común", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Pitillera de la suerte",
+                "description": "Una vez por ronda, puedes sumar uno al resultado de un dado cuando estés resolviendo una prueba."
+            },
+            "en": {
+                "name": "Lucky Cigarette Case",
+                "description": "Once per round, you may add one to the result of a die when resolving a test."
+            }
+        }
+    },
+    {"id": 230,
+        "img": "/img/2-obj/cuchillo.jpg",
+        "expansion": "base",
+        "price": 1,
+        "types": ["tienda", "objeto", "común", "arma", "extraordinario"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Cuchillo",
+                "description": "Recibes Fuerza +1 cuando estés realizando una acción de ataque."
+            },
+            "en": {
+                "name": "Knife",
+                "description": "You receive +1 Strength when performing an attack action."
+            }
+        }
+    },
+    {"id": 231,
+        "img": "/img/2-obj/corajLiquido.jpg",
+        "expansion": "base",
+        "price": 1,
+        "types": ["tienda", "objeto", "común"],
+        "hands": null,
+        "health": {
+            "life": 0,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Coraje líquido",
+                "description": "Bebe demasiado y perderás la noción de la realidad. Bebe poco y desearás haberla perdido..."
+            },
+            "en": {
+                "name": "Liquid Courage",
+                "description": "Drink too much and you'll lose touch with reality. Drink too little and you'll wish you had..."
+            }
+        }
+    },
+    {"id": 232,
+        "img": "/img/2-obj/homunculo.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "mágico", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 0
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Homúnculo de madera",
+                "description": "Una vez por ronda, como parte de una acción de ataque, puedes volver a tirar uno de tus dados o bien todos ellos."
+            },
+            "en": {
+                "name": "Wooden Homunculus",
+                "description": "Once per round, as part of an attack action, you may reroll one or all of your dice."
+            }
+        }
+    },
+    {"id": 233,
+        "img": "/img/2-obj/armaReglamentaria.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "común", "arma"],
+        "hands": 1,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Arma reglamentaria",
+                "description": "Recibes Fuerza +2 como parte de una acción de ataque."
+            },
+            "en": {
+                "name": "Service Weapon",
+                "description": "You receive +2 Strength as part of an attack action."
+            }
+        }
+    },
+    {"id": 234,
+        "img": "/img/2-obj/ayudanteDelSheriff.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Ayudante del sheriff",
+                "description": "Recibes Observación +1 durante la fase de Encuentros. Tu límite de Concentración aumenta en un punto."
+            },
+            "en": {
+                "name": "Sheriff's Deputy",
+                "description": "You receive +1 Observation during the Encounter phase. Your Concentration limit increases by one."
+            }
+        }
+    },
+    {"id": 235,
+        "img": "/img/2-obj/gatoNegro.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "gato", "familiar"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Gato negro",
+                "description": "Cuando estés lanzando un Hechizo, si este Aliado sufre al menos un punto de Horror, añade un Éxito al resultado de tu prueba."
+            },
+            "en": {
+                "name": "Black Cat",
+                "description": "When you are casting a Spell, if this Ally suffers at least one point of Horror, add one Success to your test result."
+            }
+        }
+    },
+    {"id": 236,
+        "img": "/img/2-obj/litaChantler.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "fanático"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Lita Chantler",
+                "description": "Después de que tú u otro investigador inflinjáis Daño a un Monstruo en tu espacio, Lita Chantler inflinge un punto de daño a ese Monstruo."
+            },
+            "en": {
+                "name": "Lita Chantler",
+                "description": "After you or another investigator deal Damage to a Monster in your space, Lita Chantler deals one point of Damage to that Monster."
+            }
+        }
+    }, 
+    {"id": 237,
+        "img": "/img/2-obj/astrolabio.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "mágico", "extraordinario"],
+        "hands": 2,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Astrolabio",
+                "description": "Como parte de una acción de salvaguarda, tira un dado adicional por cada Pista que tengas y un dado adicional por cada Pista que haya en tu Barrio."
+            },
+            "en": {
+                "name": "Astrolabe",
+                "description": "As part of a safeguard action, roll an additional die for each Clue you have and an additional die for each Clue in your Neighborhood."
+            }
+        }
+    },
+    {"id": 238,
+        "img": "/img/2-obj/accesoALibrosRaros.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "afiliación"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Acceso a libros raros",
+                "description": "Después de que tengas un encuentro en la Universidad Miskatonic, puedes descartar un Tomo (si lo tienes). Si lo haces, o si no tienes ningún Tomo, ganas un Objeto Tomo."
+            },
+            "en": {
+                "name": "Access to Rare Books",
+                "description": "After you have an encounter at Miskatonic University, you may discard a Tome (if you have one). If you do, or if you have no Tomes, gain a Tome Item."
+            }
+        }
+    },
+    {"id": 239,
+        "img": "/img/2-obj/whiskyDeContrabando.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "común"],
+        "hands": null,
+        "health": {
+            "life": 0,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Whisky de contrabando",
+                "description": "Después de que realices una acción de conseguir fondos en el Distrito Comercial o en el Centro, puedes colocar una ficha de Horror sobre esta carta para ganar 2$."
+            },
+            "en": {
+                "name": "Bootleg Whiskey",
+                "description": "After you take a Gather Funds action in the Commercial District or Downtown, you may place a Horror token on this card to gain $2."
+            }
+        }
+    },
+    {"id": 240,
+        "img": "/img/2-obj/equipajeOlvidado.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "comun"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "equipaje olvidado",
+                "description": "Cuando ganes esta carta del mazo, coge las dos primeras cartas del mazo de Objetos y colócalas debajo de esta carta boca abajo. Acción: Haz una prueba de Observación -1. Si la superas, ganas esos Objetos y descartas esta carta."
+            },
+            "en": {
+                "name": "Forgotten Luggage",
+                "description": "When you gain this card from the deck, take the top two cards of the Item deck and place them face down under this card. Action: Test Observation -1. If you pass, gain those Items and discard this card."
+            }
+        }
+    },
+    {"id": 241,
+        "img": "/img/2-obj/inuksuk.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "guardian de las sendas"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Inuksuk",
+                "description": "Encuentro: mueve un investigador que no esté enfrentado desde cualquier espacio hasta cualquier espacio de otro Barrio."
+            },
+            "en": {
+                "name": "Inuksuk",
+                "description": "Encounter: Move an investigator who is not engaged from any space to any space in another Neighborhood."
+            }
+        }
+    },
+    {"id": 242,
+        "img": "/img/2-obj/asDeBastos.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "As de bastos",
+                "description": "Cuando gastes una ficha de Concentración para volver a tirar un dado, en vez de eso puedes volver a tirar cualquier cantidad de dados."
+            },
+            "en": {
+                "name": "Ace of Clubs",
+                "description": "When you spend a Focus token to reroll a die, you may instead reroll any number of dice."
+            }
+        }
+    },
+    {"id": 243,
+        "img": "/img/2-obj/socioDelCloverClub.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "afiliación"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Socio del Clover Club",
+                "description": "Después de que realices una acción de conseguir fondos en el Centro, puedes gastar 2$ para participar en una timba. Si lo haces, ganas tanto Dinero como lo que saques al tirar un dado."
+            },
+            "en": {
+                "name": "Clover Club Associate",
+                "description": "After you perform a Gather Resources action at Downtown, you may spend $2 to join a poker game. If you do, gain an amount of Money equal to the result of a die roll."
+            }
+        }
+    },
+    {"id": 244,
+        "img": "/img/2-obj/dayanaEsperence.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "brujo"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Dayana Esperence",
+                "description": "Una vez por ronda, cuando estés lanzando un Hechizo, puedes volver a tirar uno de tus dados o bien todos ellos."
+            },
+            "en": {
+                "name": "Dayana Esperence",
+                "description": "Once per round, while casting a Spell, you may reroll one or all of your dice."
+            }
+        }
+    },
+    {"id": 245,
+        "img": "/img/2-obj/perroCallejero.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "perro"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Perro callejero",
+                "description": "Después de que un Monstruo inflija Daño a este Aliado o a ti, este Aliado inflinge un punto de Daño a ese Monstruo."
+            },
+            "en": {
+                "name": "Stray Dog",
+                "description": "After a Monster deals Damage to this Ally or to you, this Ally deals 1 Damage to that Monster."
+            }
+        }
+    },
+    {"id": 246,
+        "img": "/img/2-obj/sepulturero.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Sepulturero",
+                "description": "Después de que realices una acción de conseguir fondos en el Barrio Fluvial, haz una prueba de Fuerza. si la superas, ganas 2$ adicionales."
+            },
+            "en": {
+                "name": "Gravedigger",
+                "description": "After you perform a gather resources action in the Riverfront, test Strength. If you pass, gain 2 additional dollars."
+            }
+        }
+    },
+    {"id": 247,
+        "img": "/img/2-obj/laPintaDeInnsmouth.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "La pinta de Innsmouth",
+                "description": "Cuando gastes una ficha de Concentración para volver a tirar un dado, en vez de eso puedes volver a tirar como máximo tantos dados como la cantidad de Horror que hayas sufrido. Retribución: Sufres un punto de Horror a menos que gastes una ficha de Concentración."
+            },
+            "en": {
+                "name": "Innsmouth Pint",
+                "description": "When you spend a Focus token to reroll a die, you may instead reroll up to as many dice as the amount of Horror you have suffered. Retribution: Suffer 1 Horror unless you spend a Focus token."
+            }
+        }
+    },
+    {"id": 248,
+        "img": "/img/2-obj/danielChesterfield.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "paciente del manicomio"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 1
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Daniel Chesterfield",
+                "description": "Una vez por ronda, puedes volver a tirar cualquier cantidad de dados. Luego, si no tienes una carta de Pacto Siniestro, ganas una."
+            },
+            "en": {
+                "name": "Daniel Chesterfield",
+                "description": "Once per round, you may reroll any number of dice. Then, if you do not have a Dark Pact card, gain one."
+            }
+        }
+    },
+    {"id": 249,
+        "img": "/img/2-obj/reportaje.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Reportaje",
+                "description": "Recibes Observación +1 como parte de una acción de revelar Pistas. Después de que ganes una Pista, ganas también 2$."
+            },
+            "en": {
+                "name": "News Report",
+                "description": "You get Observation +1 as part of a Search action. After you gain a Clue, you also gain $2."
+            }
+        }
+    },
+    {"id": 250,
+        "img": "/img/2-obj/bendicionOscura.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "innato"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Bendición oscura",
+                "description": "Cuando estés resolviendo una prueba, obtienes Éxitos sacando 4, 5 ó 6. Tira dos dados cuando tengas que resolver el efecto de Retribución de tu Pacto Siniestro. No puedes adquirir los Estados Bendición ni Maldición. (Se descartarán sin efecto.)"
+            },
+            "en": {
+                "name": "Dark Blessing",
+                "description": "When resolving a test, you gain Successes on rolls of 4, 5, or 6. Roll two dice when resolving the Retribution effect of your Dark Pact. You cannot acquire the Blessing or Curse States. (They are discarded without effect.)"
+            }
+        }
+    },
+    {"id": 251,
+        "img": "/img/2-obj/perroDeCaza.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "perro"],
+        "hands": null,
+        "health": {
+            "life": 2,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Perro de caza",
+                "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes volver a tirar tantos dados como el número de Pistas que haya en tu Barrio (o menos, si lo prefieres)."
+            },
+            "en": {
+                "name": "Hound Dog",
+                "description": "Once per round, when resolving a test, you may reroll up to as many dice as there are Clues in your Neighborhood (or fewer, if you prefer)."
+            }
+        }
+    },
+    {"id": 252,
+        "img": "/img/2-obj/sueroMisterioso.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Suero misterioso",
+                "description": "Acción: Descarta esta carta para recuperar toda tu Vida, recuperar toda tu Cordura y concentrarte en una habilidad de tu elección (incluso aunque al hacerlo sobrepases tu límite de Concentración)."
+            },
+            "en": {
+                "name": "Mysterious Serum",
+                "description": "Action: Discard this card to recover all your Health, recover all your Sanity, and focus on a skill of your choice (even if this causes you to exceed your Concentration limit)."
+            }
+        }
+    },
+    {"id": 253,
+        "img": "/img/2-obj/EzraGraves.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "profesor universitario"],
+        "hands": null,
+        "health": {
+            "life": 3,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Ezra Graves",
+                "description": "Acción: Puedes gastar dos fichas de Restos y sufrir un punto de Horror directo para ganar un Aliado."
+            },
+            "en": {
+                "name": "Ezra Graves",
+                "description": "Action: You can spend two Remains tokens and suffer one direct Horror to gain an Ally."
+            }
+        }
+    },
+    {"id": 254,
+        "img": "/img/2-obj/gatoCallejero.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "aliado", "gato"],
+        "hands": null,
+        "health": {
+            "life": 1,
+            "sanity": 2
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Gato callejero",
+                "description": "Como parte de una acción de evasión, puedes descartar esta carta para añadir dos Éxitos al resultado de tu prueba."
+            },
+            "en": {
+                "name": "Stray Cat",
+                "description": "As part of an evasion action, you may discard this card to add two Successes to your test result."
+            }
+        }
+    },
+    {"id": 255,
+        "img": "/img/2-obj/servicioDeHosteleria.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Servicio de hostelería",
+                "description": "Después de que realices una acción de conseguir fondos en el Barrio Este, haz una prueba de Influencia. Si la superas, ganas 2$ adicionales."
+            },
+            "en": {
+                "name": "Hospitality Service",
+                "description": "After you perform a funding action in the East Borough, make an Influence test. If you succeed, gain an additional $2."
+            }
+        }
+    },
+    {"id": 256, 
+        "img": "/img/2-obj/laLuna.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "objeto", "extraordinario"],
+        "hands": null,
+        "health": {
+            "life": 0,
+            "sanity": 3
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "La Luna",
+                "description": "Tu límite de Concentración aumenta en un punto."
+            },
+            "en": {
+                "name": "The Moon",
+                "description": "Your Concentration limit increases by one."
+            }
+        }
+    },
+    {"id": 257,
+        "img": "/img/2-obj/estibador.jpg",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Estibador",
+                "description": "Después de que realices una acción de conseguir fondos en el Distrito comercial, haz una prueba de Fuerza. Si la superas, ganas 2$ adicionales."
+            },
+            "en": {
+                "name": "Stevedore",
+                "description": "After you take an action to earn money in the Commercial District, make a Strength test. If you succeed, gain 2$ additional."
+            }
+        }
+    },
+    {"id": 258,
+        "img": "/img/2-obj/actuacion.JPG",
+        "expansion": "base",
+        "price": null,
+        "types": ["especial", "talento", "empleo"],
+        "hands": null,
+        "health": {
+            "life": null,
+            "sanity": null
+        },
+        "cost": {
+            "life": null,
+            "sanity": null
+        },
+        "translations": {
+            "es": {
+                "name": "Actuación",
+                "description": "Después de que realices una acción de conseguir fondos en el Distrito comercial, haz una prueba de INFLUENCIA. Si la superas ganas 2$ adicionales."
+            },
+            "en": {
+                "name": "Performance",
+                "description": "After you take an action to earn money in the Commercial District, make an INFLUENCE test. If you succeed, gain 2$ additional."
             }
         }
     }
