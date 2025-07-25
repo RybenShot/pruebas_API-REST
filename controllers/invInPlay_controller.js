@@ -53,7 +53,7 @@ export class InvInPlayController {
     static async createNewInvOnLine(req, res){
         try {
             const investigadorData = req.body
-            console.log('➕ --- createNewInvOnLine --- recibido:', investigadorData.id);
+            console.log('➕ --- createNewInvOnLine --- recibido:', investigadorData.id || 'sin ID');
 
             // Validaciones básicas
             if (!investigadorData.idUser) {
@@ -74,7 +74,7 @@ export class InvInPlayController {
             
             if (error.message === 'LIMIT_EXCEEDED') {
                 return res.status(400).json({ 
-                    message: 'No puedes tener más de 3 investigadores guardados' 
+                    message: 'No puedes tener más de 10 investigadores guardados' 
                 });
             }
             
