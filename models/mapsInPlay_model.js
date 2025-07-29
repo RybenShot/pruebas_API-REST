@@ -237,17 +237,13 @@ export class MapInPlayModel{
             }
         }
 
-        // aseguramos que las propiedades de la tienda existan
-        if (!map.shop.soled) map.shop.soled = []
-        if (!map.shop.inShop) map.shop.inShop = []
-
         let finalObjectId = idObject
         let randomObject = null
 
         switch (action) {
             case 'soled':
                 // convertimos idObject a número para consistencia
-                finalObjectId = parseInt(idObject)
+                finalObjectId = idObject
 
                 // añadimos el objeto a la lista de vendidos si no está ya
                 if (!map.shop.soled.includes(finalObjectId)) {
@@ -313,8 +309,7 @@ export class MapInPlayModel{
                 console.log(`✅ Objeto aleatorio ${finalObjectId} añadido a la tienda`)
                 break
 
-            default:
-                throw new Error(`❌ Acción no válida: ${action}`)
+            default: throw new Error(`❌ Acción no válida: ${action}`)
         }
 
         // actualizamos la fecha de última edición
@@ -324,9 +319,7 @@ export class MapInPlayModel{
         this._saveAll()
 
         // retornamos el objeto completo para acción "add"
-        return {
-            randomObject: randomObject
-        }
+        return { randomObject: randomObject }
     }
 
     /**

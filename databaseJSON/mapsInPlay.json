@@ -41,7 +41,7 @@
       }
     },
     "fechaDeInicio": 1747577525934,
-    "lastEddited": 1752432846881,
+    "lastEddited": 1753642128578,
     "IDUserHost": "user_2xGvzHhMUgrrNnaQgJdPD8FRxoF",
     "mythosReserveInPlay": [
       {
@@ -107,7 +107,9 @@
     },
     "shop": {
       "soled": [],
-      "inShop": []
+      "inShop": [
+        231
+      ]
     }
   },
   {
@@ -152,7 +154,7 @@
       }
     },
     "fechaDeInicio": 1747577587476,
-    "lastEddited": 1747577587476,
+    "lastEddited": 1753642259216,
     "IDUserHost": "user_2xGvzHhMUgrrNnaQgJdPD8FRxoF",
     "mythosReserveInPlay": [
       {
@@ -215,6 +217,12 @@
     "variables": {
       "dooms": 0,
       "clues": 3
+    },
+    "shop": {
+      "soled": [],
+      "inShop": [
+        211
+      ]
     }
   },
   {
@@ -262,7 +270,7 @@
       }
     },
     "fechaDeInicio": 1747578266040,
-    "lastEddited": 1747578266040,
+    "lastEddited": 1753643109848,
     "IDUserHost": "user_2xGwZNd8bq2WxNzGWTm5XLkdiAm",
     "mythosReserveInPlay": [
       {
@@ -325,6 +333,16 @@
     "variables": {
       "dooms": 0,
       "clues": 0
+    },
+    "shop": {
+      "soled": [],
+      "inShop": [
+        219,
+        220,
+        230,
+        228,
+        215
+      ]
     }
   },
   {
@@ -833,7 +851,7 @@
       }
     },
     "fechaDeInicio": 1752864066964,
-    "lastEddited": 1752864066964,
+    "lastEddited": 1753799007796,
     "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
     "mythosReserveInPlay": [
       {
@@ -896,6 +914,15 @@
     "variables": {
       "dooms": 0,
       "clues": 0
+    },
+    "shop": {
+      "soled": [
+        217,
+        211
+      ],
+      "inShop": [
+        216
+      ]
     }
   },
   {
@@ -955,7 +982,7 @@
       }
     },
     "fechaDeInicio": 1752864115234,
-    "lastEddited": 1752864115234,
+    "lastEddited": 1753785326991,
     "IDUserHost": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
     "mythosReserveInPlay": [
       {
@@ -1018,6 +1045,17 @@
     "variables": {
       "dooms": 0,
       "clues": 0
+    },
+    "shop": {
+      "soled": [
+        221,
+        207,
+        215
+      ],
+      "inShop": [
+        206,
+        230
+      ]
     }
   }
 ]

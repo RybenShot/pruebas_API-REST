@@ -5278,7 +5278,7 @@
         }
     },
     {"id": 206,
-        "img": "/img/2-obj/escopeta.jpg",
+        "img": "/img/2-obj/escopeta.JPG",
         "expansion": "base",
         "price": 6,
         "types": ["tienda", "objeto", "común", "arma"],
@@ -5628,7 +5628,7 @@
         }
     },
     {"id": 220,
-        "img": "/img/2-obj/estatuillaGrotesca.jpg",
+        "img": "/img/2-obj/estatuillaGrotesca.JPG",
         "expansion": "base",
         "price": 4,
         "types": ["tienda", "objeto", "mágico", "extraordinario"],
@@ -5703,7 +5703,7 @@
         }
     },
     {"id": 223,
-        "img": "/img/2-obj/cuentos.jpg",
+        "img": "/img/2-obj/cuentos.JPG",
         "expansion": "base",
         "price": 4,
         "types": ["tienda", "objeto", "común", "extraordinario", "tomo"],
@@ -5778,7 +5778,7 @@
         }
     },
     {"id": 226,
-        "img": "/img/2-obj/revolverDel38.jpg",
+        "img": "/img/2-obj/revolverDel38.JPG",
         "expansion": "base",
         "price": 3,
         "types": ["tienda", "objeto", "común", "arma"],
