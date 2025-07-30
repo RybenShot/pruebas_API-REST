@@ -35,6 +35,7 @@ Gracias a un sistema de creación y unión de partidas mediante IP, los jugadore
 
 Este sistema mejora la organización de la partida y reduce el tiempo de consulta de fichas o resolución de eventos, manteniendo la esencia cooperativa del juego de mesa.
 
+
 ## 🧭 Arquitectura de llamadas
 La API del backend está estructurada siguiendo el patrón **MVC** (*Modelo - Vista - Controlador*), lo que permite una separación clara entre la lógica de negocio, el acceso a datos y la definición de rutas.
 
