@@ -1,0 +1,103 @@
+[
+  {
+    "idZone": "0",
+    "nameZone": "Centro",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "1",
+    "nameZone": "Barrio Norte",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "2",
+    "nameZone": "Barrio Sur",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "3",
+    "nameZone": "Periferia",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "4",
+    "nameZone": "Distrito Comercial",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "5",
+    "nameZone": "Universidad Miskatonic",
+    "invOnLine": [
+      {
+        "idUser": "user590",
+        "invData": [
+          {
+            "name": "Investigador",
+            "level": 1
+          }
+        ],
+        "available": true,
+        "lastEddited": 1754393331519
+      },
+      {
+        "idUser": "user12345",
+        "invData": [
+          {
+            "name": "Investigador",
+            "level": 1
+          }
+        ],
+        "available": true,
+        "lastEddited": 1754393341585
+      }
+    ],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "6",
+    "nameZone": "Barrio Flubial",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "7",
+    "nameZone": "Barrio Este",
+    "invOnLine": [
+      {
+        "idUser": "user23",
+        "invData": [
+          {
+            "name": "Investigador",
+            "level": 1
+          }
+        ],
+        "available": false,
+        "lastEddited": 1754393306426
+      }
+    ],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "8",
+    "nameZone": "Calle farola",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "9",
+    "nameZone": "Calle puente",
+    "invOnLine": [],
+    "specialEvent": {}
+  },
+  {
+    "idZone": "10",
+    "nameZone": "Calle bosque",
+    "invOnLine": [],
+    "specialEvent": {}
+  }
+]
