@@ -8,6 +8,7 @@ import invInPlayRouter from './routes/invInPlay_routes.js'
 import visitsRouter from './routes/visits_routes.js'
 import enemiesRouter from './routes/enemies_routes.js'
 import losetasOnLineRouter from './routes/losetasOnLine_routes.js'
+import interactionsOnLine from './routes/interactions_routes.js'
 
 import objectRouter from './routes/objects_routes.js'
 
@@ -26,6 +27,7 @@ app.use('/visits', visitsRouter)
 app.use('/enemies', enemiesRouter)
 app.use('/objects', objectRouter)
 app.use('/losetasOnLine', losetasOnLineRouter)
+app.use('/interactions', interactionsOnLine)
 
 // Middlewares para manejar rutas no definidas o el de bienvenida
     // Wellcome y 404

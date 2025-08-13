@@ -3,416 +3,6 @@
     "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
     "investigadoresOnLine": [
       {
-        "id": "1234567",
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "idMapOnLine": "1234",
-        "idInv": 1,
-        "name": "Tommy Muldoon",
-        "position": "Rookie cop",
-        "expansion": "Base",
-        "effect1": "Protector: If a Monster is going to face another researcher in your space, you can face that Monster instead.",
-        "effect2": null,
-        "effect3": null,
-        "phrase": "'Come on, Tommy. It’s time to become a hero.'",
-        "theStory": "The Muldoons had served in the police force for generations, and Tommy was no less. He was the pride of his family when he graduated from the Boston Academy. That’s why it wasn’t very funny to be transferred to the Arkham police station; after all, what could happen in that small town compared to the crimes I would have been able to solve in Boston? It turned out that police work in Arkham was not without interest after all. There were many unexplained events, and the local police seemed more interested in appearing normal than in finding a solution. So Tommy reached for Becky, his grandfather’s rifle, and set out to find solutions on his own ...",
-        "focusLimit": 2,
-        "locutionURL": "___",
-        "imgInv": "/img/1-inv/1-Tommy.jpg",
-        "atributes": {
-          "life": 693,
-          "sanity": 1,
-          "lore": 2,
-          "influence": 2,
-          "observation": 3,
-          "strength": 2,
-          "will": 3,
-          "money": 2,
-          "remnant": 1,
-          "clue": 13
-        },
-        "rol": [
-          {
-            "rol": "guardian",
-            "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
-          },
-          {
-            "rol": "survivor",
-            "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory. "
-          }
-        ],
-        "possessions": [
-          {
-            "id": 2,
-            "img": "/img/2-obj/PerTommy1.jpg",
-            "expansion": "base",
-            "price": null,
-            "types": [
-              "perInicial",
-              "objeto",
-              "vehículo"
-            ],
-            "hands": null,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Motocicleta",
-                "description": "En vez de realizar una acción de movimiento normal, te mueves un máximo de 3 espacios y puedes gastar 1$ para moverte un espacio adicional."
-              },
-              "en": {
-                "name": "motorcycle",
-                "description": "Instead of a normal motion action, you move a maximum of 3 spaces and can spend $1 to move an extra space."
-              }
-            }
-          }
-        ],
-        "translations": {
-          "es": {
-            "name": "Tommy Muldoon",
-            "position": "Poli Novato",
-            "effect1": "Protector: Si un Monstruo va a enfrentarse a otro investigador en tu espacio, puedes enfrentarte tú a ese Monstruo en su lugar.",
-            "effect2": null,
-            "effect3": null,
-            "phrase": "'Vamos alla, Tommy. Es hora de hacerse el Heroe'",
-            "theStory": "Los Muldoon habían servido en el cuerpo de policía durante generaciones, y Tommy no iba a ser menos. Fue el orgullo de su familia cuando se graduó en la academia de Boston. Por eso no hizo mucha gracia que lo trasladasen a la comisaría de Arkham; después de todo ¿qué podía ocurrir en aquel pueblucho comparado con los crímenes que habría sido capaz de resolver en Boston? Al final resultó que el trabajo policial en Arkham no estaba exento de interés, después de todo. Había muchos sucesos inexplicables, y la policía local parecía más interesada en aparentar normalidad que en buscar una solución. Así que Tommy echó mano a Becky, el rifle de su abuelo, y se dispuso a buscar soluciones por su cuenta ...",
-            "focusLimit": 2,
-            "locutionURL": "___",
-            "rol": [
-              {
-                "rol": "___",
-                "description": "___"
-              },
-              {
-                "rol": "___",
-                "description": "___"
-              }
-            ]
-          }
-        },
-        "lastUpdated": 1752831056995
-      },
-      {
-        "idInv": 57,
-        "isActive": true,
-        "expansion": "AHOriginal",
-        "name": "Lola",
-        "position": "Prostituta",
-        "effect1": "Noche de trabajo: en cada fase de encuentros puedes conseguir 4 dólares, pero al final debes tirar un dado; el resultado menos 1 será la vida que pierdes.",
-        "effect2": null,
-        "effect3": null,
-        "phrase": "'La noche pertenece a las sombras.'",
-        "theStory": "Lola nunca olvidará la noche en que su madre murió. Tenía 17 años y acababa de cerrar la puerta de su piso cuando escuchó un portazo en el cuartucho contiguo, el “lugar de trabajo” de su madre. Tras un silencio sepulcral salió al pasillo y, al no encontrarla, corrió al callejón donde se había formado una turba horrorizada: gritos, vómitos y rostros desencajados. Al asomarse vio el cuerpo de su madre convertido en una grotesca sopa de órganos y sangre. En su mano izquierda brillaba aún una pequeña bolsita de tela negra, rota y vacía, y faltaba el reloj de oro de 13 horas que le había regalado. Entonces sintió, por un instante, una presencia oscura al fondo del callejón: la forma amorfa de un demonio. Desde ese día, Lola sabe que hay fuerzas terribles tras el velo de lo humano, y que ella sola debe valerse en un mundo que apenas la considera algo más que un objeto. ",
-        "focusLimit": 2,
-        "locutionURL": "___",
-        "imgInv": "/img/1-inv/56-Lola.png",
-        "atributes": {
-          "life": 6,
-          "sanity": 6,
-          "lore": 3,
-          "influence": 4,
-          "observation": 4,
-          "strength": 3,
-          "will": 3,
-          "money": 3,
-          "remnant": 0,
-          "clue": 0
-        },
-        "rol": [
-          {
-            "rol": "Survivor",
-            "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
-          },
-          {
-            "rol": "Seeker",
-            "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
-          }
-        ],
-        "possessions": [
-          {
-            "id": 129,
-            "img": "/img/2-obj/PerLola1.jpg",
-            "expansion": "original",
-            "price": 4,
-            "types": [
-              "perInicial",
-              "objeto",
-              "especial",
-              "arma"
-            ],
-            "hands": 2,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Revólver de madre",
-                "description": "+4 a FUERZA. Si el investigador tiene menos de 3 de FUERZA, al disparar deberá lanzar un dado; este será el daño que sufra el portador por el retroceso."
-              },
-              "en": {
-                "name": "Mother's Revolver",
-                "description": "+4 STRENGTH. If the investigator has less than 3 STRENGTH, they must roll a die when shooting; this is the damage the bearer suffers due to recoil."
-              }
-            }
-          },
-          {
-            "id": 130,
-            "img": "/img/2-obj/PerLola2.jpg",
-            "expansion": "original",
-            "price": 3,
-            "types": [
-              "perInicial",
-              "objeto",
-              "comun"
-            ],
-            "hands": 1,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Navaja oculta",
-                "description": "+1 acierto al usarla contra un atacante. +1 DADO si se usa para una prueba que requiera INFLUENCIA."
-              },
-              "en": {
-                "name": "Hidden Blade",
-                "description": "+1 success when used against an attacker. +1 DIE if used for a test that requires INFLUENCE."
-              }
-            }
-          },
-          {
-            "id": 89,
-            "img": "/img/2-obj/PerMandy1.jpg",
-            "expansion": "AHOriginal",
-            "price": null,
-            "types": [
-              "perInicial",
-              "objeto",
-              "comun",
-              "extraordinario"
-            ],
-            "hands": null,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Cuaderno de notas",
-                "description": "Si en la fase de Mitos sacas una ficha de explosion de portal. Ganas 2 pistas de la caja de pistas."
-              },
-              "en": {
-                "name": "Notebook",
-                "description": "If in the Myths phase you get a portal explosion tab. You win 2 tracks from the clue box."
-              }
-            }
-          }
-        ],
-        "extraData": {
-          "likes": 0,
-          "dislikes": 0,
-          "NVotesLikeDislike": 0
-        },
-        "translations": {
-          "es": {
-            "name": "Lola",
-            "position": "Prostituta",
-            "effect1": "Noche de trabajo: en cada fase de encuentros puedes conseguir 4 dólares, pero al final debes tirar un dado; el resultado menos 1 será la vida que pierdes.",
-            "effect2": null,
-            "effect3": null,
-            "phrase": "'La noche pertenece a las sombras.'",
-            "theStory": "Lola nunca olvidará la noche en que su madre murió. Tenía 17 años y acababa de cerrar la puerta de su piso cuando escuchó un portazo en el cuartucho contiguo, el “lugar de trabajo” de su madre. Tras un silencio sepulcral salió al pasillo y, al no encontrarla, corrió al callejón donde se había formado una turba horrorizada: gritos, vómitos y rostros desencajados. Al asomarse vio el cuerpo de su madre convertido en una grotesca sopa de órganos y sangre. En su mano izquierda brillaba aún una pequeña bolsita de tela negra, rota y vacía, y faltaba el reloj de oro de 13 horas que le había regalado. Entonces sintió, por un instante, una presencia oscura al fondo del callejón: la forma amorfa de un demonio. Desde ese día, Lola sabe que hay fuerzas terribles tras el velo de lo humano, y que ella sola debe valerse en un mundo que apenas la considera algo más que un objeto.",
-            "focusLimit": 2,
-            "locutionURL": "___",
-            "rol": [
-              {
-                "rol": "Superviviente",
-                "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
-              },
-              {
-                "rol": "Buscador",
-                "description": "Eres un intrépido sabueso. Deberías concentrarte en la obtención de Pistas y en descubrir su significado oculto. Tu labor es esencial para frustrar los malvados designios de los Primigenios."
-              }
-            ]
-          }
-        },
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "id": "4ed68253-0ed9-4b8a-878a-be4a89e75858",
-        "lastUpdated": 1752855482059
-      },
-      {
-        "idInv": 19,
-        "isActive": true,
-        "expansion": "AHWaves",
-        "name": "Pete Cubo de Basura",
-        "position": "Tramp",
-        "effect1": "Hustler - After you perform a fundraising action, you can win a Catalog Item with a printed price of 2 or less.",
-        "effect2": null,
-        "effect3": null,
-        "phrase": "\"Beware. Duke and I are here to help.\"",
-        "theStory": "It’s been years since Pete took to the road with his faithful companion Duke. Pete has no family or home; he travels from city to city making his living as he can, although his main occupation is admiring the landscape—he is usually guided by his visions that lead him to those who need him, people who live in places he can visit but where there is no place for him. But lately these visions have taken on a more sinister tone. Now they are visions of darkness and of unspeakable evil. Visions of death and decay. Of madness before the infinite. Visions that have led him here, to the city of Arkham. And this time he is not sure if he will be able to help anyone, or even live to tell the tale.",
-        "focusLimit": 3,
-        "locutionURL": "___",
-        "imgInv": "/img/1-inv/20-Pete.jpg",
-        "atributes": {
-          "life": 4,
-          "sanity": 5,
-          "lore": 3,
-          "influence": 1,
-          "observation": 3,
-          "strength": 3,
-          "will": 3,
-          "money": 1,
-          "remnant": 2,
-          "clue": 1
-        },
-        "rol": [
-          {
-            "rol": "Survivor",
-            "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
-          }
-        ],
-        "possessions": [
-          {
-            "id": 55,
-            "img": "/img/2-obj/PerPete1.jpg",
-            "expansion": "AHWaves",
-            "price": null,
-            "types": [
-              "perInicial",
-              "aliado",
-              "fiel sabueso"
-            ],
-            "hands": null,
-            "health": {
-              "life": 2,
-              "sanity": 3
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Duque",
-                "description": "Recibes +1 de FUERZA como parte de una acción de ataque. Como parte de una acción de intercambio, puedes realizar el intercambio con uno o con varios investigadores que estén en tu barrio."
-              },
-              "en": {
-                "name": "Duque",
-                "description": "Ally - Faithful Hound. You receive +1 FORCE as part of an attack action. As part of an exchange action, you can make the exchange with one or several researchers who are in your neighborhood."
-              }
-            }
-          },
-          {
-            "id": 56,
-            "img": "/img/2-obj/PerPete2.jpg",
-            "expansion": "AHWaves",
-            "price": null,
-            "types": [
-              "perInicial",
-              "objeto",
-              "comun",
-              "extraordinario"
-            ],
-            "hands": null,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "La guitarra de Pete",
-                "description": "Después de que realices una acción de conseguir fondos, tantos investigadores que estén en tu barrio como tu puntuación de INFLUENCIA pueden recuperar un punto de Cordura o concentrarse en una habilidad de su elección (cada jugador elige una opción)."
-              },
-              "en": {
-                "name": "Pete’s guitar",
-                "description": "Object - Extraordinary Common. After you do a fundraising action, as many researchers in your neighborhood as your INFLUENCE score can regain a Sanity point or concentrate on a skill of their choice (each player chooses an option)."
-              }
-            }
-          },
-          {
-            "id": 98,
-            "img": "/img/2-obj/PerBob1.jpg",
-            "expansion": "AHComunity",
-            "price": null,
-            "types": [
-              "perInicial",
-              "talento",
-              "innato"
-            ],
-            "hands": null,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Libersoborno",
-                "description": "Si tienes más de 3$, los monstruos te consideran su presa durante la fase de monstruos (ignora todas las demás condiciones de presa de los monstruos). Cada vez que un monstruo aparezca o se mueva a tu espacio, puedes gastar 1$ para infligirle 1 de daño o agotarlo (límite de una vez por instancia)."
-              },
-              "en": {
-                "name": "Bribery",
-                "description": "If you have more than 3$, monsters treat you as their prey during the mosnter phase (Ignore all other monster prey conditions). Whenever a monster spawns or moves into your space, you may spend 1$ to deal 1 damage or exhaust that monster (limit once per instance)."
-              }
-            }
-          }
-        ],
-        "extraData": {
-          "likes": 0,
-          "dislikes": 0,
-          "NVotesLikeDislike": 0
-        },
-        "translations": {
-          "es": {
-            "name": "Pete Cubo de Basura",
-            "position": "Vagabundo",
-            "effect1": "Buscavidas - Después de que realices una acción de conseguir fondos, puedes ganar un Objeto del Catálogo con un precio impreso de 2 o menos.",
-            "effect2": null,
-            "effect3": null,
-            "phrase": "“Pierdan cuidado. Duque y yo estamos aquí para ayudar.”",
-            "theStory": "Hace ya bastantes años que Pete se echó a la carretera con su fiel compañero Duque. Pete no tiene familia ni hogar; viaja de ciudad en ciudad ganándose la vida como puede, aunque su principal ocupación consiste en admirar el paisaje; normalmente se deja guiar por sus visiones que le conducen hasta quienes le necesitan, gente que vive en lugares que él puede visitar pero en los que no hay lugar para él. Pero últimamente estas visiones han tomado un cariz más siniestro. Ahora son visiones de oscuridad y de una maldad indescriptible. Visiones de muerte y descomposición. De locura ante la faz de lo infinito. Visiones que le han conducido hasta aquí, hasta la ciudad de Arkham. Y esta vez no tiene claro si podrá ayudar a nadie, ni siquiera si vivirá para contarlo.",
-            "focusLimit": 3,
-            "locutionURL": "___",
-            "rol": [
-              {
-                "rol": "Superviviente",
-                "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
-              }
-            ]
-          }
-        },
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "id": "94b209e9-f94a-4e9e-985b-a5444791a511",
-        "lastUpdated": 1752855822183
-      },
-      {
         "idInv": 12,
         "isActive": true,
         "expansion": "AHWaves",
@@ -434,7 +24,7 @@
           "observation": 3,
           "strength": 3,
           "will": 3,
-          "money": 3,
+          "money": 4,
           "remnant": 0,
           "clue": 0
         },
@@ -725,6 +315,37 @@
                 "description": "___"
               }
             }
+          },
+          {
+            "id": 206,
+            "img": "/img/2-obj/escopeta.JPG",
+            "expansion": "base",
+            "price": 6,
+            "types": [
+              "tienda",
+              "objeto",
+              "común",
+              "arma"
+            ],
+            "hands": 2,
+            "health": {
+              "life": null,
+              "sanity": null
+            },
+            "cost": {
+              "life": null,
+              "sanity": null
+            },
+            "translations": {
+              "es": {
+                "name": "Escopeta",
+                "description": "Recibes Fuerza +5 cuando estés realizando una acción de ataque. Cada 6 que obtengas durante una acción de ataque cuenta como dos Éxitos."
+              },
+              "en": {
+                "name": "Shotgun",
+                "description": "You gain +5 Strength when performing an attack action. Each 6 rolled during an attack action counts as two Successes."
+              }
+            }
           }
         ],
         "extraData": {
@@ -757,7 +378,8 @@
         },
         "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
         "id": "1e265266-225d-48b0-949c-1ff8d7525ef4",
-        "lastUpdated": 1752860683005
+        "lastUpdated": 1754665912932,
+        "idMapOnLine": "00e57574-de7e-4c70-a4e9-ff4700ede35c"
       }
     ]
   },
