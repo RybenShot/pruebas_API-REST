@@ -34,17 +34,6 @@
     "nameZone": "Universidad Miskatonic",
     "invOnLine": [
       {
-        "idUser": "user590",
-        "invData": [
-          {
-            "name": "Investigador",
-            "level": 1
-          }
-        ],
-        "available": true,
-        "lastEddited": 1754393331519
-      },
-      {
         "idUser": "user12345",
         "invData": [
           {
@@ -53,7 +42,7 @@
           }
         ],
         "available": true,
-        "lastEddited": 1754393341585
+        "lastEddited": 1754497263713
       }
     ],
     "specialEvent": {}
@@ -67,19 +56,7 @@
   {
     "idZone": "7",
     "nameZone": "Barrio Este",
-    "invOnLine": [
-      {
-        "idUser": "user23",
-        "invData": [
-          {
-            "name": "Investigador",
-            "level": 1
-          }
-        ],
-        "available": false,
-        "lastEddited": 1754393306426
-      }
-    ],
+    "invOnLine": [],
     "specialEvent": {}
   },
   {

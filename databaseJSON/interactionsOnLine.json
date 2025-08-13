@@ -1,0 +1,29 @@
+[
+  {
+    "idInteraccionOnLine": "29763963-7745-4234-99c2-51dec524f481",
+    "idLocationMap": 3,
+    "idUserHost": "user678",
+    "idUserGest": "user5678",
+    "status": "accepted",
+    "created": 1755088127188,
+    "lastEdited": 1755088273122,
+    "event": {
+      "type": "fight",
+      "invDataHost": [
+        {
+          "name": "Super Investigador HOST",
+          "level": 20,
+          "health": 1000
+        }
+      ],
+      "invDataGest": [
+        {
+          "name": "Investigador Guest",
+          "level": 2,
+          "health": 100
+        }
+      ],
+      "turn": "user678"
+    }
+  }
+]

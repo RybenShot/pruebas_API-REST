@@ -1,3 +1,5 @@
+// Emparejamiento Losetas
+
 ### CONTROL --- Obtener todos los datos referente a losetasOnLine
 GET http://localhost:1234/losetasOnLine
 
@@ -8,7 +10,7 @@ GET http://localhost:1234/losetasOnLine/allUsersOnLine
 GET http://localhost:1234/losetasOnLine/zone/2
 
 ### Obtener 1 investigador random actualmente conectado de una zona concreta
-GET http://localhost:1234/losetasOnLine/randomInvInZone/7
+GET http://localhost:1234/losetasOnLine/randomInvInZone/5
 
 ### POST de un investigador a una zona ---RECUERDA--- Antes de asignar una nueva zona, debes borrar la anterior
 POST http://localhost:1234/losetasOnLine/newInvZone
@@ -19,4 +21,37 @@ Content-Type:application/json
   "idUser": "user12345",
   "invData": [{"name": "Investigador", "level": 1}],
   "available": true
+}
+
+// Interaccion entre jugadores - FASE 2 - Invitacion y creacion de evento
+
+### CONTROL --- GET todas las interacciones (para admin/debug)
+GET http://localhost:1234/interactions
+
+### GET General, para cuando llegue una invitacion al GEST
+GET http://localhost:1234/interactions/pending/user5678
+
+### GET Focus, de polling sobre novedad de interaccion
+GET http://localhost:1234/interactions/poll/29763963-7745-4234-99c2-51dec524f481?idUser=user678
+
+### NUEVO: PUT responder a invitación - ACEPTAR
+PUT http://localhost:1234/interactions/respond/29763963-7745-4234-99c2-51dec524f481
+Content-Type:application/json
+
+{
+  "idUser": "user5678",
+  "response": "accepted",
+  "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
+}
+
+### POST crear nueva interacción entre 2 usuarios
+POST http://localhost:1234/interactions
+Content-Type:application/json
+
+{
+  "idUserHost": "user678",
+  "idUserGuest": "user5678", 
+  "invData": [{"name": "Super Investigador HOST", "level": 20, "health": 1000}],
+  "type": "fight",
+  "idLocationMap": 3
 }
