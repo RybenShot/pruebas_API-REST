@@ -57,6 +57,7 @@ export class losetasOnLineController {
     }
 
     // GET investigador random de una zona específica
+    //TODO hay que tener en cuenta de no emparejar jugadores de la misma mesa
     static async getRandomUserInZone(req, res){
         try {
             const { id } = req.params
@@ -80,6 +81,7 @@ export class losetasOnLineController {
     }
     
     // POST de nuevo investigador a una zona concreta
+    //TODO aqui hay que añadir la id del mapa online que esten jugando ya que no queremos que se empareje con otro de la misma mesa
     static async postUserInZone(req, res){
         try {
             const { idZone, idUser, invData, available } = req.body

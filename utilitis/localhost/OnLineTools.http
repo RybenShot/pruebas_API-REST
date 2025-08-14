@@ -44,6 +44,8 @@ Content-Type:application/json
   "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
 }
 
+### TODO hacer una llamada para cancelar encuentro por parte de alguno de los 2
+
 ### POST crear nueva interacción entre 2 usuarios
 POST http://localhost:1234/interactions
 Content-Type:application/json

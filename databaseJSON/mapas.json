@@ -15,6 +15,20 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 2, "name": "Barrio Este", "x": 13, "y": 3 , "size": 11},
+      { "id": 3, "name": "Barrio Flubial", "x": 43, "y": 20 , "size": 11},
+      { "id": 1, "name": "Centro", "x": 13, "y": 38 , "size": 11},
+      { "id": 6, "name": "Distrito  Comercial", "x": 43, "y": 55 , "size": 11},
+      { "id": 7, "name": "Barrio Norte", "x": 13, "y": 72 , "size": 11},
+      { "id": 66, "name": "Calle Farola", "x": 18.5, "y": 26 , "size": 6},
+      { "id": 66, "name": "Calle Farola", "x": 33.5, "y": 51 , "size": 6},
+      { "id": 66, "name": "Calle Farola", "x": 48, "y": 43 , "size": 6},
+      { "id": 77, "name": "Calle bosque", "x": 33, "y": 68 , "size": 6},
+      { "id": 77, "name": "Calle bosque", "x": 19, "y": 60 , "size": 6},
+      { "id": 88, "name": "Calle puente", "x": 33, "y": 17 , "size": 6},
+      { "id": 88, "name": "Calle puente", "x": 33, "y": 34 , "size": 6}
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -128,6 +142,19 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5, "size": 11 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5, "size": 11 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37, "size": 11 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68, "size": 11 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68, "size": 11 },
+      { "id": 66, "name": "Calle Farola", "x": 33, "y": 11 , "size": 6},
+      { "id": 66, "name": "Calle Farola", "x": 42, "y": 58 , "size": 6},
+      { "id": 77, "name": "Calle bosque", "x": 33, "y": 74 , "size": 6},
+      { "id": 77, "name": "Calle bosque", "x": 24, "y": 58 , "size": 6},
+      { "id": 88, "name": "Calle puente", "x": 24, "y": 27 , "size": 6},
+      { "id": 88, "name": "Calle puente", "x": 42, "y": 27 , "size": 6}
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -249,6 +276,13 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -364,6 +398,13 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -478,6 +519,13 @@
       "terror": 1,
       "empty": 2
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -593,6 +641,13 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -710,6 +765,13 @@
       "terror": 1,
       "empty": 2
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -823,6 +885,13 @@
       "retribution": 1,
       "empty": 1
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -929,6 +998,13 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -1042,6 +1118,13 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -1161,6 +1244,13 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -1279,6 +1369,13 @@
       "retribution": 1,
       "empty": 3
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,
@@ -1398,6 +1495,13 @@
       "retribution": 1,
       "empty": 2
     },
+    "clickablePoints": [
+      { "id": 1, "name": "Centro", "x": 9, "y": 5 },
+      { "id": 2, "name": "Barrio Este", "x": 45, "y": 5 },
+      { "id": 3, "name": "Barrio Fluvial", "x": 27, "y": 37 },
+      { "id": 4, "name": "Periferia", "x": 9, "y": 68 },
+      { "id": 5, "name": "Barrio Sur", "x": 45, "y": 68 }
+    ],
     "extraData": {
       "likes": 0,
       "dislikes": 0,

@@ -101,6 +101,7 @@ export class InteractionsController {
 
 
     // POST crear nueva interacción
+    //TODO cuando se haga este POOST el host debe ponerse como inactivo para qeu no le llegen peticiones de emparejamiento
     static async createInteraction(req, res) {
         try {
             const { idUserHost, idUserGuest, invData, type, idLocationMap } = req.body
