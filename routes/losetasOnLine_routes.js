@@ -13,7 +13,7 @@ losetasOnLineRouter.get('/allUsersOnLine', losetasOnLineController.getAllUsersOn
 losetasOnLineRouter.get('/zone/:id', losetasOnLineController.getAllUsers1ZoneOnLine)
 
 // GET Obtener 1 investigador random actualmente conectado de una zona concreta
-losetasOnLineRouter.get('/randomInvInZone/:id', losetasOnLineController.getRandomUserInZone)
+losetasOnLineRouter.get('/randomInvInZone/:id/:idUser', losetasOnLineController.getRandomUserInZone)
 
 // POST de nuevo investigador a una zona concreta
 losetasOnLineRouter.post('/newInvZone', losetasOnLineController.postUserInZone)

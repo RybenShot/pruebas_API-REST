@@ -60,10 +60,10 @@ export class losetasOnLineController {
     //TODO hay que tener en cuenta de no emparejar jugadores de la misma mesa
     static async getRandomUserInZone(req, res){
         try {
-            const { id } = req.params
-            console.log('🎲 --- getRandomUserInZone --- zona:', id);
+            const { id,  idUser} = req.params
+            console.log('🎲 --- getRandomUserInZone --- zona:', id, idUser);
 
-            const randomUserData = losetasOnLineModel.getRandomUserInZone({ idZone: id })
+            const randomUserData = losetasOnLineModel.getRandomUserInZone({ idZone: id }, idUser)
             
             if (!randomUserData) {
                 return res.status(200).json({ 
