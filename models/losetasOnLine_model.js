@@ -59,7 +59,7 @@ export class losetasOnLineModel{
     static getUsersInZone({idZone}){
         this.removeInactiveUsers()
 
-        const zone = listLosetasOnLine.find(z => z.idZone === idZone)
+        const zone = listLosetasOnLine.find(zone => zone.idZone === idZone)
         if (!zone) return null
 
         const activeUsers = zone.invOnLine.filter(user => 
@@ -76,10 +76,12 @@ export class losetasOnLineModel{
     }
 
     // obtener un investigador random de una zona específica
-    static getRandomUserInZone({idZone}){
+    static getRandomUserInZone({idZone}, idUser){
         this.removeInactiveUsers()
 
-        const zone = listLosetasOnLine.find(zone => zone.idZone === idZone)
+        console.log(idZone, idUser)
+ 
+        const zone = listLosetasOnLine.find(zone => zone.idZone == idZone)
         if (!zone) return null
 
         // filtrar usuarios activos (no vacíos)
@@ -92,12 +94,16 @@ export class losetasOnLineModel{
             user.available !== false // incluye undefined, true, y excluye false
         )
 
+        const finalUsers = availableUsers.filter(user =>
+            user.idUser != idUser // excluir al usuario que hace la petición
+        )
+
         // si no hay usuarios disponibles ...
-        if (availableUsers.length === 0) return null
+        if (finalUsers.length == 0) return null
 
         // seleccionar usuario random
-        const randomIndex = Math.floor(Math.random() * activeUsers.length)
-        const randomUser = activeUsers[randomIndex]
+        const randomIndex = Math.floor(Math.random() * finalUsers.length)
+        const randomUser = finalUsers[randomIndex]
 
         console.log(`🎲 Usuario random seleccionado: ${randomUser.idUser} de zona ${zone.nameZone}`)
         
@@ -107,7 +113,7 @@ export class losetasOnLineModel{
                 idZone: zone.idZone,
                 nameZone: zone.nameZone
             },
-            totalUsersInZone: activeUsers.length
+            totalUsersInZone: finalUsers.length
         }
     }
 

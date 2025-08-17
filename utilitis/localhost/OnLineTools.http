@@ -10,14 +10,14 @@ GET http://localhost:1234/losetasOnLine/allUsersOnLine
 GET http://localhost:1234/losetasOnLine/zone/2
 
 ### Obtener 1 investigador random actualmente conectado de una zona concreta
-GET http://localhost:1234/losetasOnLine/randomInvInZone/5
+GET http://localhost:1234/losetasOnLine/randomInvInZone/7/user_2x7hdgi9dwczRgUdQy93PLpgrUq
 
 ### POST de un investigador a una zona ---RECUERDA--- Antes de asignar una nueva zona, debes borrar la anterior
 POST http://localhost:1234/losetasOnLine/newInvZone
 Content-Type:application/json
 
 {
-  "idZone": "5",
+  "idZone": 7,
   "idUser": "user12345",
   "invData": [{"name": "Investigador", "level": 1}],
   "available": true
