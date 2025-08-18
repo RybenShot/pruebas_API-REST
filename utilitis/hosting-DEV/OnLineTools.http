@@ -1,19 +1,19 @@
 // Emparejamiento Losetas
 
 ### CONTROL --- Obtener todos los datos referente a losetasOnLine
-GET http://localhost:1234/losetasOnLine
+GET https://api-arkhamhorror-dev.up.railway.app/losetasOnLine
 
 ### CONTROL --- Obtener todos los investigadores conectados
-GET http://localhost:1234/losetasOnLine/allUsersOnLine
+GET https://api-arkhamhorror-dev.up.railway.app/losetasOnLine/allUsersOnLine
 
 ### CONTROL --- Obtener investigadores conectados de una zona
-GET http://localhost:1234/losetasOnLine/zone/2
+GET https://api-arkhamhorror-dev.up.railway.app/losetasOnLine/zone/2
 
 ### Obtener 1 investigador random actualmente conectado de una zona concreta
-GET http://localhost:1234/losetasOnLine/randomInvInZone/7/user_2x7hdgi9dwczRgUdQy93PpgrUq
+GET https://api-arkhamhorror-dev.up.railway.app/losetasOnLine/randomInvInZone/7/user_2x7hdgi9dwczRgUdQy93PpgrUq
 
 ### POST de un investigador a una zona ---RECUERDA--- Antes de asignar una nueva zona, debes borrar la anterior
-POST http://localhost:1234/losetasOnLine/newInvZone
+POST https://api-arkhamhorror-dev.up.railway.app/losetasOnLine/newInvZone
 Content-Type:application/json
 
 {
@@ -26,16 +26,16 @@ Content-Type:application/json
 // Interaccion entre jugadores - FASE 2 - Invitacion y creacion de evento
 
 ### CONTROL --- GET todas las interacciones (para admin/debug)
-GET http://localhost:1234/interactions
+GET https://api-arkhamhorror-dev.up.railway.app/interactions
 
 ### GET General, para cuando llegue una invitacion al GEST
-GET http://localhost:1234/interactions/pending/user_2x7xEnynmyhmhzohJt9rDkXtEYuF
+GET https://api-arkhamhorror-dev.up.railway.app/interactions/pending/user_2x7xEnynmyhmhzohJt9rDkXtEYuF
 
 ### GET Focus, de polling sobre novedad de interaccion
-GET http://localhost:1234/interactions/poll/29763963-7745-4234-99c2-51dec524f481?idUser=user678
+GET https://api-arkhamhorror-dev.up.railway.app/interactions/poll/203d2ef1-410e-4de7-91f3-8229ee6f6b43?idUser=user678
 
 ### NUEVO: PUT responder a invitación - ACEPTAR
-PUT http://localhost:1234/interactions/respond/29763963-7745-4234-99c2-51dec524f481
+PUT https://api-arkhamhorror-dev.up.railway.app/interactions/respond/29763963-7745-4234-99c2-51dec524f481
 Content-Type:application/json
 
 {
@@ -47,7 +47,7 @@ Content-Type:application/json
 ### TODO hacer una llamada para cancelar encuentro por parte de alguno de los 2
 
 ### POST crear nueva interacción entre 2 usuarios
-POST http://localhost:1234/interactions
+POST https://api-arkhamhorror-dev.up.railway.app/interactions
 Content-Type:application/json
 
 {

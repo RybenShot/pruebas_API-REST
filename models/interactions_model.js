@@ -34,7 +34,7 @@ export class InteractionsModel {
         // miramos si existe
         if (!interaction) {
             return "no existe esta interaccion"
-        } else if (interaction.status != "pending" && interaction.status != "accepted") {
+        } else if (interaction.status != "pending" && interaction.status != "accepted" && interaction.status != "rejected") {
             return "el estado de esta interaccion esta rechazada, expirado o finalizado"
         } else if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
             return "no estas autorizado para ver esta informacion"
