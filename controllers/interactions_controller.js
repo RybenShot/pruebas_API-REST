@@ -71,7 +71,7 @@ export class InteractionsController {
             }
 
             // Validar respuestas permitidas
-            const allowedResponses = ['accepted', 'rejected']
+            const allowedResponses = ['accepted', 'rejected', 'timeout', 'finished', 'cancelled']
             if (!allowedResponses.includes(response)) {
                 return res.status(400).json({ 
                     message: `Respuesta no válida. Permitidas: ${allowedResponses.join(', ')}` 
