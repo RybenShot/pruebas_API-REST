@@ -61,7 +61,7 @@ export class InteractionsModel {
         // verificar que el usuario sea el GUEST
         if (interaction.idUserGest !== idUser) return { success: false, message: "No tienes autorización para responder esta invitación" }
         // verificar que la invitación esté pendiente
-        if (interaction.status !== "pending") return { success: false, message: "Esta invitación ya no está disponible" }
+        if (interaction.status !== "pending") return { success: false, message: `Esta invitación ya no está disponible porque ya ha sido respondida con ${interaction.status}` }
 
         // actualizar la interacción según la respuesta
         const now = Date.now()
@@ -76,7 +76,7 @@ export class InteractionsModel {
                     // igual que aqui
                     ...interaction.event,
                     invDataGest: invData || [],
-                    // CUIDADO!!!!! TODO esto no es exacta,mente asi, el turno depende de que evento se valla a jugar
+                    //! CUIDADO!!!!! TODO esto no es exacta,mente asi, el turno depende de que evento se valla a jugar
                     turn: interaction.idUserHost // el host comienza primero
                 }
             }
@@ -104,7 +104,24 @@ export class InteractionsModel {
                 interaction: listInteractionsOnLine[interactionIndex] 
             }
             
-        } else {
+        } else if (response === "timeout") {
+            listInteractionsOnLine[interactionIndex] = {
+                ...interaction,
+                status: "timeout",
+                lastEdited: now
+            }
+            
+            this._saveAll()
+            console.log(`❌ Invitacion cerrada por tiempo excedido: ${idInteraction}`)
+            return { 
+                success: true, 
+                message: "Tiempo excedido", 
+                interaction: listInteractionsOnLine[interactionIndex] 
+            }
+            
+        } 
+            //TODO Aqui teienes que estar los demas casos timeout, finished, cancelled
+        else {
             return { success: false, message: "Respuesta no válida. Use 'accepted' o 'rejected'" }
         }
     }

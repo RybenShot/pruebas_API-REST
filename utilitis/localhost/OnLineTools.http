@@ -29,22 +29,30 @@ Content-Type:application/json
 GET http://localhost:1234/interactions
 
 ### GET General, para cuando llegue una invitacion al GEST
-GET http://localhost:1234/interactions/pending/user_2x7xEnynmyhmhzohJt9rDkXtEYuF
+GET http://localhost:1234/interactions/pending/user5678
 
 ### GET Focus, de polling sobre novedad de interaccion
 GET http://localhost:1234/interactions/poll/29763963-7745-4234-99c2-51dec524f481?idUser=user678
 
-### NUEVO: PUT responder a invitación - ACEPTAR
-PUT http://localhost:1234/interactions/respond/29763963-7745-4234-99c2-51dec524f481
+### PUT responder a invitación - ACEPTAR
+PUT http://localhost:1234/interactions/respond/6ff245c1-a62b-4deb-b08a-772abc9081b4
 Content-Type:application/json
 
 {
   "idUser": "user5678",
-  "response": "accepted",
+  "response": "rejected",
   "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
 }
 
-### TODO hacer una llamada para cancelar encuentro por parte de alguno de los 2
+### TODO hacer una llamada para cancelar encuentro por parte de alguno de los 2 timeout, finished, cancelled
+PUT http://localhost:1234/interactions/respond/53b9b983-55d9-4c3b-96df-9c811507eb2a
+Content-Type:application/json
+
+{
+  "idUser": "user5678",
+  "response": "timeout",
+  "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
+}
 
 ### POST crear nueva interacción entre 2 usuarios
 POST http://localhost:1234/interactions
