@@ -65,3 +65,15 @@ Content-Type:application/json
   "type": "fight",
   "idLocationMap": 3
 }
+
+// Interaccion  entre jugadores  - Fase 3
+// PELEA
+### PUT - Tirada de dado inicial
+PUT http://localhost:1234/interactions/inPlay/53b9b983-55d9-4c3b-96df-9c811507eb2a
+Content-Type:application/json
+
+{
+  "idUser": "user5678",
+  "response": "timeout",
+  "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
+}

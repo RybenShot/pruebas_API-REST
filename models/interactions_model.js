@@ -44,6 +44,20 @@ export class InteractionsModel {
         return interaction
     }
 
+    // Disparador de eventoOnLine
+    startEventOnLine(interactionActual){
+        if (interactionActual.event.type === "fight") {
+            
+        } else if (interactionActual.event.type === "trade") {
+            
+        } else if (interactionActual.event.type === "resonance") {
+            
+        } else {
+            console.warn(`⚠️ Tipo de evento desconocido: ${interactionActual.event.type}`)
+            return null
+        }
+    }
+
     // responder a una invitación (aceptar o denegar)
     static async respondToInvitation({ idInteraction, idUser, response, invData }) {
         console.log('✅❌ --- respondToInvitation --- recibido:', { idInteraction, idUser, response });
@@ -75,14 +89,14 @@ export class InteractionsModel {
                 event: {
                     // igual que aqui
                     ...interaction.event,
-                    invDataGest: invData || [],
-                    //! CUIDADO!!!!! TODO esto no es exacta,mente asi, el turno depende de que evento se valla a jugar
-                    turn: interaction.idUserHost // el host comienza primero
+                    invDataGest: invData || null
                 }
             }
             
             this._saveAll()
             console.log(`✅ Invitación aceptada: ${idInteraction}`)
+            // comienza el evento que sea
+            await startEventOnLine(listInteractionsOnLine[interactionIndex])
             return { 
                 success: true, 
                 message: "Invitación aceptada", 
@@ -120,7 +134,6 @@ export class InteractionsModel {
             }
             
         } 
-            //TODO Aqui teienes que estar los demas casos timeout, finished, cancelled
         else {
             return { success: false, message: "Respuesta no válida. Use 'accepted' o 'rejected'" }
         }
@@ -156,8 +169,8 @@ export class InteractionsModel {
             lastEdited: now,
             event: {
                 type: type, // "fight", "trade", "cooperation", etc.
-                invDataHost: invData || [],
-                invDataGest: [], // se llenará cuando el invitado acepte
+                invDataHost: invData || null,
+                invDataGest: {}, // se llenará cuando el invitado acepte
                 turn: null, // se establecerá cuando inicie la interacción
                 // aquí se añadirán variables específicas según el tipo de evento
                 
