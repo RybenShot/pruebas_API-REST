@@ -316,3 +316,12 @@ Content-Type:application/json
 
 ### GET - Estado actual de mi interaccion
 GET http://localhost:1234/interactions/myTurn/4489cb16-f309-4fc1-bf94-e621d971ff5f?idUser=user678
+
+### PUT - Enviar aciertos
+PUT http://localhost:1234/interactions/sendHits/4489cb16-f309-4fc1-bf94-e621d971ff5f
+Content-Type:application/json
+
+{
+  "idUser": "user678",
+  "hits": 2
+}

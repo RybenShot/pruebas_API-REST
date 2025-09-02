@@ -30,7 +30,7 @@ interactionsRouter.put('/initialRoll/:id', InteractionsController.initialRoll)
 interactionsRouter.get('/myTurn/:id', InteractionsController.checkMyTurn)
 
 // FASE 2  
-//interactionsRouter.put('/sendHits/:id', InteractionsController.sendHits)
+interactionsRouter.put('/sendHits/:id', InteractionsController.sendHits)
 
 // FASE X
 //interactionsRouter.put('/abandon/:id', InteractionsController.abandonGame)

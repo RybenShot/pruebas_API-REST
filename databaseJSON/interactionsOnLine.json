@@ -282,9 +282,9 @@
     "idLocationMap": 3,
     "idUserHost": "user678",
     "idUserGest": "user5678",
-    "status": "accepted",
+    "status": "finished",
     "created": 1756794713044,
-    "lastEdited": 1756795623804,
+    "lastEdited": 1756826327941,
     "event": {
       "type": "fight",
       "invDataHost": {
@@ -526,19 +526,110 @@
         }
       },
       "turn": "user678",
-      "round": 1,
+      "round": 12,
       "gameData": {
-        "currentLifeHost": 8,
-        "currentLifeGest": 8,
+        "currentLifeHost": 4,
+        "currentLifeGest": -2,
         "maxLifeHost": 8,
         "maxLifeGest": 8,
         "initialRollHost": 6,
         "initialRollGest": 3,
         "bothRolled": true,
-        "history": []
+        "history": [
+          {
+            "player": "host",
+            "damage": 2,
+            "round": 1
+          },
+          {
+            "player": "guest",
+            "damage": 3,
+            "round": 2
+          },
+          {
+            "player": "host",
+            "damage": 3,
+            "round": 3
+          },
+          {
+            "player": "guest",
+            "damage": 4,
+            "round": 4
+          },
+          {
+            "player": "host",
+            "damage": 1,
+            "round": 5
+          },
+          {
+            "player": "guest",
+            "damage": 0,
+            "round": 6
+          },
+          {
+            "player": "host",
+            "damage": 1,
+            "round": 7
+          },
+          {
+            "player": "guest",
+            "damage": 3,
+            "round": 8
+          },
+          {
+            "player": "guest",
+            "damage": 3,
+            "round": 8
+          },
+          {
+            "player": "guest",
+            "damage": 3,
+            "round": 8
+          },
+          {
+            "player": "guest",
+            "damage": 3,
+            "round": 8
+          },
+          {
+            "player": "guest",
+            "damage": 3,
+            "round": 8
+          },
+          {
+            "player": "guest",
+            "damage": 3,
+            "round": 8
+          },
+          {
+            "player": "host",
+            "damage": 3,
+            "round": 9
+          },
+          {
+            "player": "host",
+            "damage": 3,
+            "round": 10
+          },
+          {
+            "player": "guest",
+            "damage": 7,
+            "round": 11
+          },
+          {
+            "player": "host",
+            "damage": 7,
+            "round": 12
+          },
+          {
+            "player": "host",
+            "damage": 2,
+            "round": 12
+          }
+        ]
       },
-      "winner": null,
-      "status": "waitingInitialRoll"
+      "winner": "user678",
+      "status": "finished"
     }
   }
 ]

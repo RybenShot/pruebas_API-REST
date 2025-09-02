@@ -12,6 +12,50 @@ export class InteractionsModel {
     static _rollDice() {
         return Math.floor(Math.random() * 6) + 1
     }
+        // función privada para generar recompensa aleatoria al ganar
+    static _generateRandomReward(loserInvestigator) {
+        const rewardTypes = ['clue', 'remnant', 'money', 'object']
+        const randomType = rewardTypes[Math.floor(Math.random() * rewardTypes.length)]
+
+        switch (randomType) {
+            case 'clue':
+                return {
+                    type: 'clue',
+                    amount: 1,
+                    description: '1 pista ganada'
+                }
+            case 'remnant':
+                return {
+                    type: 'remnant', 
+                    amount: 2,
+                    description: '2 restos ganado'
+                }
+            case 'money':
+                return {
+                    type: 'money', 
+                    amount: 3,
+                    description: '3 dinero ganado'
+                }
+            case 'object':
+                // Si tiene objetos, tomar uno aleatorio
+                if (loserInvestigator.possessions && loserInvestigator.possessions.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * loserInvestigator.possessions.length)
+                    const randomObject = loserInvestigator.possessions[randomIndex]
+                    return {
+                        type: 'object',
+                        objectId: randomObject.id,
+                        objectData: randomObject,
+                        description: `Objeto ganado: ${randomObject.translations?.es?.name || randomObject.name || 'Objeto desconocido'}`
+                    }
+                }
+            default:
+                return {
+                    type: 'money',
+                    amount: 3,
+                    description: '3 dinero ganado (default)'
+                }
+        }
+    }
 
     // obtener invitaciones pendientes para el GUEST
     static async getPendingInvitations({ idUser }) {
@@ -330,5 +374,89 @@ export class InteractionsModel {
 
         // Estado por defecto
         return { status: "false" }
+    }
+
+    // FASE 2: Enviar aciertos y procesar daño
+    static async sendHits({ idInteraction, idUser, hits }) {
+        // Buscar la interacción
+        const interaction = listInteractionsOnLine.find(interaction => 
+            interaction.idInteraccionOnLine === idInteraction
+        )
+
+        if (!interaction) {
+            return { success: false, message: "Interacción no encontrada" }
+        }
+
+        // Verificar que sea el turno del usuario
+        if (interaction.event.turn !== idUser) {
+            return { success: false, message: "No es tu turno" }
+        }
+
+
+        const now = Date.now()
+        const isHost = interaction.idUserHost === idUser
+
+        // Calcular daño al rival
+        if (isHost) {
+            // El host atacó al guest
+            interaction.event.gameData.currentLifeGest -= hits
+        } else {
+            // El guest atacó al host  
+            interaction.event.gameData.currentLifeHost -= hits
+        }
+
+        // Añadir al historial
+        interaction.event.gameData.history.push({
+            player: isHost ? 'host' : 'guest',
+            damage: hits,
+            round: interaction.event.round
+        })
+
+        // Actualizar timestamp
+        interaction.lastEdited = now
+
+        // Verificar si alguien ha muerto
+        const hostLife = interaction.event.gameData.currentLifeHost
+        const gestLife = interaction.event.gameData.currentLifeGest
+
+        if (hostLife <= 0 || gestLife <= 0) {
+            // Alguien ha perdido, terminar el juego
+            const winner = hostLife > 0 ? interaction.idUserHost : interaction.idUserGest
+            const loser = hostLife > 0 ? interaction.idUserGest : interaction.idUserHost
+            const loserInvestigator = hostLife > 0 ? interaction.event.invDataGest : interaction.event.invDataHost
+
+            // Actualizar estado final
+            interaction.status = "finished"
+            interaction.event.winner = winner
+            interaction.event.status = "finished"
+
+            // Generar recompensa aleatoria
+            const reward = this._generateRandomReward(loserInvestigator)
+
+            this._saveAll()
+
+            console.log(`🏆 Juego terminado - Ganador: ${winner}, Perdedor: ${loser}`)
+
+            return {
+                success: true,
+                status: "you win",
+                reward: reward
+            }
+
+        } else {
+            // Ambos siguen vivos, cambiar turno
+            interaction.event.turn = isHost ? interaction.idUserGest : interaction.idUserHost
+            
+            // incrementar el round
+            interaction.event.round += 1
+
+            this._saveAll()
+
+            return {
+                success: true,
+                status: "continue",
+                interaction: interaction
+            }
+        }
     }
 }

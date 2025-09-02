@@ -219,4 +219,37 @@ export class InteractionsController {
             return res.status(500).json({ message: 'Error interno' });
         }
     }
+
+    // PUT - Enviar aciertos
+    static async sendHits(req, res) {
+        try {
+            const { id } = req.params // id de la interacción
+            const { idUser, hits } = req.body
+            console.log('🎯 --- sendHits --- recibido:', { id, idUser, hits });
+
+            // Validaciones básicas
+            if (!idUser || hits === undefined || hits === null) {
+                return res.status(400).json({ 
+                    message: 'Faltan datos requeridos: idUser y hits son obligatorios' 
+                });
+            }
+
+            // Validar que hits sea un número válido (mayor o igual a 0)
+            if (typeof hits !== 'number' || hits < 0 || hits > 10) {
+                return res.status(400).json({ 
+                    message: 'hits debe ser un número mayor o igual a 0 y menor que 10' 
+                });
+            }
+
+            const result = await InteractionsModel.sendHits({ idInteraction: id, idUser, hits })
+
+            if (!result.success) {
+                return res.status(400).json({ message: result.message })
+            }
+
+        } catch (error) {
+            console.error('❌ sendHits error:', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
 }
