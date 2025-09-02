@@ -12,14 +12,14 @@ GET http://localhost:1234/losetasOnLine/zone/2
 ### Obtener 1 investigador random actualmente conectado de una zona concreta
 GET http://localhost:1234/losetasOnLine/randomInvInZone/7/user_2x7hdgi9dwczRgUdQy93PpgrUq
 
-### POST de un investigador a una zona ---RECUERDA--- Antes de asignar una nueva zona, debes borrar la anterior
+### POST de un investigador a una zona
 POST http://localhost:1234/losetasOnLine/newInvZone
 Content-Type:application/json
 
 {
   "idZone": 7,
   "idUser": "user12345",
-  "invData": [{"name": "Investigador", "level": 1}],
+  "invData": {"name": "Investigador", "level": 1},
   "available": true
 }
 
@@ -34,24 +34,142 @@ GET http://localhost:1234/interactions/pending/user5678
 ### GET Focus, de polling sobre novedad de interaccion
 GET http://localhost:1234/interactions/poll/29763963-7745-4234-99c2-51dec524f481?idUser=user678
 
-### PUT responder a invitación - ACEPTAR
-PUT http://localhost:1234/interactions/respond/6ff245c1-a62b-4deb-b08a-772abc9081b4
+### PUT responder a invitación - ACEPTAR  --- // accepted, rejected, timeout
+PUT http://localhost:1234/interactions/respond/4489cb16-f309-4fc1-bf94-e621d971ff5f
 Content-Type:application/json
 
 {
   "idUser": "user5678",
-  "response": "rejected",
-  "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
+  "response": "accepted",
+  "invData": 
+    {
+      "idInv": 24,
+      "isActive": true,
+      "expansion": "AHSecrets",
+      "name": "Mark Harrigan",
+      "position": "The Soldier",
+      "effect1": "Tenacious – At the start of your turn, if you are behind, you may focus on a skill of your choice or recover one point of Sanity.",
+      "effect2": "Unyielding – You may perform the attack action any number of times per round.",
+      "effect3": null,
+      "phrase": "'We all have scars. Mine remind me to keep fighting.'",
+      "theStory": "No one returned from the Great War as the same person who went, but the shattered bodies and the screams of agony from his comrades were not the only horrors Mark Harrigan witnessed in the trenches. In no man's land, other things lurked—things Mark could not explain. Only Sophie, his brilliant love, believed his tales of lurking beasts and monstrous shadows, and it was her faith in him that kept him steady amidst the bombs and gas. He would see her again. He would hear her laughter and see her eyes shine in the sun. But when he finally returned home to her, she was not the same. There was something inside her that devoured her from within, and he could do nothing but watch the light fade from her eyes. Now, Mark will not rest until all those horrors pay for what they have stolen from him.",
+      "focusLimit": 1,
+      "locutionURL": "___",
+      "imgInv": "/img/1-inv/29-Mark.jpg",
+      "atributes": {
+        "life": 8,
+        "sanity": 4,
+        "lore": 1,
+        "influence": 2,
+        "observation": 2,
+        "strength": 4,
+        "will": 4,
+        "money": 2,
+        "remnant": 0,
+        "clue": 0
+      },
+      "rol": [
+        {
+          "rol": "Defender",
+          "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dealing with Monsters before they become a threat."
+        }
+      ],
+      "possessions": [
+        {
+          "id": 70,
+          "img": "/img/2-obj/PerMark1.jpg",
+          "expansion": "AHSecrets",
+          "price": null,
+          "types": [
+            "perInicial",
+            "talento",
+            "innato"
+          ],
+          "hands": null,
+          "health": {
+            "life": null,
+            "sanity": null
+          },
+          "cost": {
+            "life": null,
+            "sanity": null
+          },
+          "translations": {
+            "es": {
+              "name": "Ejército de un solo hombre",
+              "description": "Después de que acabes tu movimiento en el espacio de un Monstruo, o después de que un Monstruo se mueva a tu espacio o aparezca en él, puedes quedar rezagado para realizar una acción de ataque como acción adicional."
+            },
+            "en": {
+              "name": "One-Man Army",
+              "description": "After you finish your movement in a Monster's space, or after a Monster moves to or appears in your space, you may stay behind to perform an attack action as an additional action."
+            }
+          }
+        },
+        {
+          "id": 72,
+          "img": "/img/2-obj/PerMark3.jpg",
+          "expansion": "AHSecrets",
+          "price": null,
+          "types": [
+            "perInicial",
+            "talento",
+            "innato"
+          ],
+          "hands": null,
+          "health": {
+            "life": null,
+            "sanity": null
+          },
+          "cost": {
+            "life": null,
+            "sanity": null
+          },
+          "translations": {
+            "es": {
+              "name": "Guerra de desgaste",
+              "description": "Al final de tu turno, puedes sufrir cualquier cantidad de Daño directo para infligir a cada Monstruo enfrentado a ti una cantidad de Daño igual a esa cantidad menos uno. (No puedes sufrir voluntariamente una cantidad de Daño superior a tu Vida.)"
+            },
+            "en": {
+              "name": "War of Attrition",
+              "description": "At the end of your turn, you may suffer any amount of direct Damage to deal that amount minus one Damage to each Monster engaged with you. (You cannot voluntarily suffer more Damage than your Health.)"
+            }
+          }
+        }
+      ],
+      "extraData": {
+        "likes": 0,
+        "dislikes": 0,
+        "NVotesLikeDislike": 0
+      },
+      "translations": {
+        "es": {
+          "name": "Mark Harrigan",
+          "position": "El soldado",
+          "effect1": "Tenaz - Al comienzo de tu turno, si estás rezagado, puedes concentrarte en una habilidad de tu elección o recuperar un punto de Cordura.",
+          "effect2": "Inquebrantable - Puedes realizar la acción de ataque cualquier cantidad de veces por ronda.",
+          "effect3": null,
+          "phrase": "“Todos tenemos cicatrices. Las mías me recuerdan que siga luchando.”",
+          "theStory": "Nadie volvió de la Gran Guerra siendo la misma persona que al ir, pero los cuerpos destrozados y los alaridos de agonía de sus camaradas no fueron los únicos horrores que vio Mark Harrigan en las trincheras. En tierra de nadie acechaban otras cosas, cosas que Mark no podía explicar. Sólo Sophie, su brillante amor, creía sus relatos de bestias al acecho y sombras monstruosas, y fue su fe en él lo que lo mantuvo firme entre las bombas y el gas. Volvería a verla. Oiría su risa y vería sus ojos resplandecer al sol. Pero cuando por fin volvió a casa con ella, no era la misma. Había algo en su interior que la devoraba desde dentro, y él no pudo hacer nada más que asistir al desvanecimiento de la luz en sus ojos. Ahora, Mark no descansará hasta que todos esos horrores paguen por lo que le han arrebatado.",
+          "focusLimit": 1,
+          "locutionURL": "___",
+          "rol": [
+            {
+              "rol": "Defensor",
+              "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+            }
+          ]
+        }
+      }
+    }
 }
 
-### TODO hacer una llamada para cancelar encuentro por parte de alguno de los 2 timeout, finished, cancelled
+### PUT responder a invitación - Casuistica de tiempo excedido
 PUT http://localhost:1234/interactions/respond/53b9b983-55d9-4c3b-96df-9c811507eb2a
 Content-Type:application/json
 
 {
   "idUser": "user5678",
-  "response": "timeout",
-  "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
+  "response": "timeout"
 }
 
 ### POST crear nueva interacción entre 2 usuarios
@@ -61,7 +179,126 @@ Content-Type:application/json
 {
   "idUserHost": "user678",
   "idUserGuest": "user5678", 
-  "invData": [{"name": "Super Investigador HOST", "level": 20, "health": 1000}],
+  "invData": 
+    {
+      "idInv": 24,
+      "isActive": true,
+      "expansion": "AHSecrets",
+      "name": "Mark Harrigan",
+      "position": "The Soldier",
+      "effect1": "Tenacious – At the start of your turn, if you are behind, you may focus on a skill of your choice or recover one point of Sanity.",
+      "effect2": "Unyielding – You may perform the attack action any number of times per round.",
+      "effect3": null,
+      "phrase": "'We all have scars. Mine remind me to keep fighting.'",
+      "theStory": "No one returned from the Great War as the same person who went, but the shattered bodies and the screams of agony from his comrades were not the only horrors Mark Harrigan witnessed in the trenches. In no man's land, other things lurked—things Mark could not explain. Only Sophie, his brilliant love, believed his tales of lurking beasts and monstrous shadows, and it was her faith in him that kept him steady amidst the bombs and gas. He would see her again. He would hear her laughter and see her eyes shine in the sun. But when he finally returned home to her, she was not the same. There was something inside her that devoured her from within, and he could do nothing but watch the light fade from her eyes. Now, Mark will not rest until all those horrors pay for what they have stolen from him.",
+      "focusLimit": 1,
+      "locutionURL": "___",
+      "imgInv": "/img/1-inv/29-Mark.jpg",
+      "atributes": {
+        "life": 8,
+        "sanity": 4,
+        "lore": 1,
+        "influence": 2,
+        "observation": 2,
+        "strength": 4,
+        "will": 4,
+        "money": 2,
+        "remnant": 0,
+        "clue": 0
+      },
+      "rol": [
+        {
+          "rol": "Defender",
+          "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dealing with Monsters before they become a threat."
+        }
+      ],
+      "possessions": [
+        {
+          "id": 70,
+          "img": "/img/2-obj/PerMark1.jpg",
+          "expansion": "AHSecrets",
+          "price": null,
+          "types": [
+            "perInicial",
+            "talento",
+            "innato"
+          ],
+          "hands": null,
+          "health": {
+            "life": null,
+            "sanity": null
+          },
+          "cost": {
+            "life": null,
+            "sanity": null
+          },
+          "translations": {
+            "es": {
+              "name": "Ejército de un solo hombre",
+              "description": "Después de que acabes tu movimiento en el espacio de un Monstruo, o después de que un Monstruo se mueva a tu espacio o aparezca en él, puedes quedar rezagado para realizar una acción de ataque como acción adicional."
+            },
+            "en": {
+              "name": "One-Man Army",
+              "description": "After you finish your movement in a Monster's space, or after a Monster moves to or appears in your space, you may stay behind to perform an attack action as an additional action."
+            }
+          }
+        },
+        {
+          "id": 71,
+          "img": "/img/2-obj/PerMark2.jpg",
+          "expansion": "AHSecrets",
+          "price": null,
+          "types": [
+            "perInicial",
+            "objeto",
+            "extraordinario"
+          ],
+          "hands": null,
+          "health": {
+            "life": 0,
+            "sanity": 2
+          },
+          "cost": {
+            "life": null,
+            "sanity": null
+          },
+          "translations": {
+            "es": {
+              "name": "Retrato de Sophie",
+              "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sufrir un punto de Daño para volver a tirar un dado o todos los dados. Cuando uses tu capacidad Tenaz, este Objeto recupera un punto de Cordura."
+            },
+            "en": {
+              "name": "Sophie’s Portrait",
+              "description": "Once per round, when resolving a test, you may suffer 1 Damage to reroll one die or all dice. When you use your Tenacious ability, this Item recovers 1 Sanity."
+            }
+          }
+        }
+      ],
+      "extraData": {
+        "likes": 0,
+        "dislikes": 0,
+        "NVotesLikeDislike": 0
+      },
+      "translations": {
+        "es": {
+          "name": "Mark Harrigan",
+          "position": "El soldado",
+          "effect1": "Tenaz - Al comienzo de tu turno, si estás rezagado, puedes concentrarte en una habilidad de tu elección o recuperar un punto de Cordura.",
+          "effect2": "Inquebrantable - Puedes realizar la acción de ataque cualquier cantidad de veces por ronda.",
+          "effect3": null,
+          "phrase": "“Todos tenemos cicatrices. Las mías me recuerdan que siga luchando.”",
+          "theStory": "Nadie volvió de la Gran Guerra siendo la misma persona que al ir, pero los cuerpos destrozados y los alaridos de agonía de sus camaradas no fueron los únicos horrores que vio Mark Harrigan en las trincheras. En tierra de nadie acechaban otras cosas, cosas que Mark no podía explicar. Sólo Sophie, su brillante amor, creía sus relatos de bestias al acecho y sombras monstruosas, y fue su fe en él lo que lo mantuvo firme entre las bombas y el gas. Volvería a verla. Oiría su risa y vería sus ojos resplandecer al sol. Pero cuando por fin volvió a casa con ella, no era la misma. Había algo en su interior que la devoraba desde dentro, y él no pudo hacer nada más que asistir al desvanecimiento de la luz en sus ojos. Ahora, Mark no descansará hasta que todos esos horrores paguen por lo que le han arrebatado.",
+          "focusLimit": 1,
+          "locutionURL": "___",
+          "rol": [
+            {
+              "rol": "Defensor",
+              "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+            }
+          ]
+        }
+      }
+    },
   "type": "fight",
   "idLocationMap": 3
 }
@@ -69,11 +306,13 @@ Content-Type:application/json
 // Interaccion  entre jugadores  - Fase 3
 // PELEA
 ### PUT - Tirada de dado inicial
-PUT http://localhost:1234/interactions/inPlay/53b9b983-55d9-4c3b-96df-9c811507eb2a
+PUT http://localhost:1234/interactions/initialRoll/4489cb16-f309-4fc1-bf94-e621d971ff5f
 Content-Type:application/json
 
 {
-  "idUser": "user5678",
-  "response": "timeout",
-  "invData": [{"name": "Investigador Guest", "level": 2, "health": 100}]
+  "idUser": "user678",
+  "diceResult": 6
 }
+
+### GET - Estado actual de mi interaccion
+GET http://localhost:1234/interactions/myTurn/4489cb16-f309-4fc1-bf94-e621d971ff5f?idUser=user678

@@ -146,4 +146,77 @@ export class InteractionsController {
             return res.status(500).json({ message: 'Error interno' });
         }
     }
+
+
+    // ===========================================
+    // FASE 1 - JUEGO: TIRADA INICIAL
+    // ===========================================
+
+    // PUT - Tirada inicial de dados
+    static async initialRoll(req, res) {
+        try {
+            const { id } = req.params // id de la interacción
+            const { idUser, diceResult } = req.body
+            console.log('🎲 --- initialRoll --- recibido:', { id, idUser, diceResult });
+
+            // Validaciones básicas
+            if (!idUser || !diceResult) {
+                return res.status(400).json({ 
+                    message: 'Faltan datos requeridos: idUser y diceResult son obligatorios' 
+                });
+            }
+
+            // Validar que el resultado del dado sea válido
+            if (typeof diceResult !== 'number' || diceResult < 1 || diceResult > 6) {
+                return res.status(400).json({ 
+                    message: 'diceResult debe ser un número entre 1 y 6' 
+                });
+            }
+
+            const result = await InteractionsModel.initialRoll({ idInteraction: id, idUser, diceResult })
+
+            if (!result.success) {
+                return res.status(400).json({ message: result.message })
+            }
+
+            // Respuesta exitosa
+            res.json({ 
+                message: result.message, 
+                interaction: result.interaction 
+            })
+
+        } catch (error) {
+            console.error('❌ initialRoll error:', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
+    // GET - Consultar mi turno
+    static async checkMyTurn(req, res) {
+        try {
+            const { id } = req.params // id de la interacción
+            const { idUser } = req.query // id del usuario
+            console.log('🔍 --- checkMyTurn --- recibido:', { id, idUser });
+
+            // Validaciones básicas
+            if (!idUser) {
+                return res.status(400).json({ 
+                    message: 'idUser es obligatorio como query parameter' 
+                });
+            }
+
+            const result = await InteractionsModel.checkMyTurn({ idInteraction: id, idUser })
+
+            if (!result.success && result.message) {
+                return res.status(400).json({ message: result.message })
+            }
+
+            // Respuesta exitosa con el status del turno
+            res.json(result)
+
+        } catch (error) {
+            console.error('❌ checkMyTurn error:', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
 }
