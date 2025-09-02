@@ -18,4 +18,22 @@ interactionsRouter.put('/respond/:id', InteractionsController.respondToInvitatio
 // POST crear nueva interacción
 interactionsRouter.post('/', InteractionsController.createInteraction)
 
+
+// ===========================================
+// FASE 1 - JUEGO: TIRADA INICIAL
+// ===========================================
+
+// PUT - Tirada inicial de dados (1d6)
+interactionsRouter.put('/initialRoll/:id', InteractionsController.initialRoll)
+
+// GET - Consultar si es mi turno
+interactionsRouter.get('/myTurn/:id', InteractionsController.checkMyTurn)
+
+// FASE 2  
+//interactionsRouter.put('/sendHits/:id', InteractionsController.sendHits)
+
+// FASE X
+//interactionsRouter.put('/abandon/:id', InteractionsController.abandonGame)
+//interactionsRouter.put('/timeout/:id', InteractionsController.timeoutGame)
+
 export default interactionsRouter;

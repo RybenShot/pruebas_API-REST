@@ -8,6 +8,11 @@ export class InteractionsModel {
         writeFileSync('./databaseJSON/interactionsOnLine.json', JSON.stringify(listInteractionsOnLine, null, 2))
     }
 
+    // función para generar número aleatorio (simulación de dado)
+    static _rollDice() {
+        return Math.floor(Math.random() * 6) + 1
+    }
+
     // obtener invitaciones pendientes para el GUEST
     static async getPendingInvitations({ idUser }) {
         console.log('🔍 --- getPendingInvitations --- recibido:', idUser);
@@ -44,18 +49,50 @@ export class InteractionsModel {
         return interaction
     }
 
-    // Disparador de eventoOnLine
-    startEventOnLine(interactionActual){
-        if (interactionActual.event.type === "fight") {
-            
-        } else if (interactionActual.event.type === "trade") {
-            
-        } else if (interactionActual.event.type === "resonance") {
-            
-        } else {
-            console.warn(`⚠️ Tipo de evento desconocido: ${interactionActual.event.type}`)
+    // crear nueva interacción entre usuarios
+    static async createInteraction({ idUserHost, idUserGuest, invData, type, idLocationMap }) {
+        console.log('➕ --- createInteraction --- recibido:', { idUserHost, idUserGuest, type, idLocationMap });
+
+        // limpiar interacciones inactivas primero
+        // this.removeInactiveInteractions()
+
+        // verificar que no exista ya una interacción activa entre estos usuarios
+        const existingInteraction = listInteractionsOnLine.find(interaction => 
+            interaction.isActive && 
+            ((interaction.idUserHost === idUserHost && interaction.idUserGest === idUserGuest) ||
+             (interaction.idUserHost === idUserGuest && interaction.idUserGest === idUserHost))
+        )
+
+        if (existingInteraction) {
+            console.warn('⚠️ Ya existe una interacción activa entre estos usuarios');
             return null
         }
+
+        const now = Date.now()
+        const newInteraction = {
+            idInteraccionOnLine: randomUUID(),
+            idLocationMap: idLocationMap,
+            idUserHost: idUserHost,
+            idUserGest: idUserGuest,
+            status: "pending", // "accepted" | "rejected" | "expired" | "finished"
+            created: now,
+            lastEdited: now,
+            event: {
+                type: type, // "fight", "trade", "cooperation", etc.
+                invDataHost: invData || null,
+                invDataGest: null, // se llenará cuando el invitado acepte
+                turn: null, // se establecerá cuando inicie la interacción
+                // aquí se añadirán variables específicas según el tipo de evento
+                
+            }
+        }
+
+        // añadir la nueva interacción
+        listInteractionsOnLine.push(newInteraction)
+        this._saveAll()
+
+        console.log(`✅ Nueva interacción creada: ${newInteraction.idInteraccionOnLine} (${type})`)
+        return newInteraction
     }
 
     // responder a una invitación (aceptar o denegar)
@@ -92,11 +129,13 @@ export class InteractionsModel {
                     invDataGest: invData || null
                 }
             }
+
+            // comienza el evento que sea
+            await this.startEventOnLine(listInteractionsOnLine[interactionIndex])
             
             this._saveAll()
             console.log(`✅ Invitación aceptada: ${idInteraction}`)
-            // comienza el evento que sea
-            await startEventOnLine(listInteractionsOnLine[interactionIndex])
+
             return { 
                 success: true, 
                 message: "Invitación aceptada", 
@@ -139,51 +178,157 @@ export class InteractionsModel {
         }
     }
 
-    // crear nueva interacción entre usuarios
-    static async createInteraction({ idUserHost, idUserGuest, invData, type, idLocationMap }) {
-        console.log('➕ --- createInteraction --- recibido:', { idUserHost, idUserGuest, type, idLocationMap });
+    // Disparador de eventoOnLine
+    static startEventOnLine(interactionActual){
+        if (interactionActual.event.type === "fight") {
+            // Inicializar datos del juego
+            const hostLife = interactionActual.event.invDataHost.atributes.life
+            const gestLife = interactionActual.event.invDataGest.atributes.life
+            
+            interactionActual.event = {
+                ...interactionActual.event,
+                round: 0,
+                gameData: {
+                    currentLifeHost: hostLife,
+                    currentLifeGest: gestLife,
+                    maxLifeHost: hostLife,
+                    maxLifeGest: gestLife,
+                    initialRollHost: null,
+                    initialRollGest: null,
+                    bothRolled: false,
+                    history: []
+                },
+                winner: null,
+                status: "waitingInitialRoll" // nuevo estado para controlar la fase del juego
+            }
+            console.log(`🎮 Juego de pelea inicializado para interacción: ${interactionActual.idInteraccionOnLine}`)
 
-        // limpiar interacciones inactivas primero
-        // this.removeInactiveInteractions()
+        } else if (interactionActual.event.type === "trade") {
+            console.log('🔄 Iniciando evento de intercambio')
+            
+        } else if (interactionActual.event.type === "resonance") {
+            console.log('✨ Iniciando evento de resonancia')
+            
+        } else {
+            console.warn(`⚠️ Tipo de evento desconocido: ${interactionActual.event.type}`)
+            return null
+        }
+        return interactionActual
+    }
 
-        // verificar que no exista ya una interacción activa entre estos usuarios
-        const existingInteraction = listInteractionsOnLine.find(interaction => 
-            interaction.isActive && 
-            ((interaction.idUserHost === idUserHost && interaction.idUserGest === idUserGuest) ||
-             (interaction.idUserHost === idUserGuest && interaction.idUserGest === idUserHost))
+    // FASE 1: Tirada inicial de dados
+    static async initialRoll({ idInteraction, idUser, diceResult }) {
+
+        // Buscar la interacción
+        const interaction = listInteractionsOnLine.find(interaction => 
+            interaction.idInteraccionOnLine === idInteraction
         )
 
-        if (existingInteraction) {
-            console.warn('⚠️ Ya existe una interacción activa entre estos usuarios');
-            return null
+        if (!interaction ) {
+            return { success: false, message: "Interacción no encontrada" }
         }
 
         const now = Date.now()
-        const newInteraction = {
-            idInteraccionOnLine: randomUUID(),
-            idLocationMap: idLocationMap,
-            idUserHost: idUserHost,
-            idUserGest: idUserGuest,
-            status: "pending", // "accepted" | "rejected" | "expired" | "finished"
-            created: now,
-            lastEdited: now,
-            event: {
-                type: type, // "fight", "trade", "cooperation", etc.
-                invDataHost: invData || null,
-                invDataGest: {}, // se llenará cuando el invitado acepte
-                turn: null, // se establecerá cuando inicie la interacción
-                // aquí se añadirán variables específicas según el tipo de evento
-                
+
+        // asignar el resultado si es el HOST o el GEST
+        if (interaction.idUserHost === idUser) {
+            if (interaction.event.gameData.initialRollHost !== null) {
+                return { success: false, message: "Ya has realizado tu tirada inicial" }
+            }
+            interaction.event.gameData.initialRollHost = diceResult
+        } else {
+            if (interaction.event.gameData.initialRollGest !== null) {
+                return { success: false, message: "Ya has realizado tu tirada inicial" }
+            }
+            interaction.event.gameData.initialRollGest = diceResult
+        }
+
+        // Actualizar timestamp
+        interaction.lastEdited = now
+
+        // Verificar si ambos han tirado
+        const hostRoll = interaction.event.gameData.initialRollHost
+        const gestRoll = interaction.event.gameData.initialRollGest
+
+        if (hostRoll != null && gestRoll != null) {
+            // Ambos han tirado, determinar quién empieza
+            let start
+            if (hostRoll > gestRoll) {
+                start = interaction.idUserHost
+            } else if (gestRoll > hostRoll) {
+                start = interaction.idUserGest
+            } else {
+                // Empate, gana el host
+                start = interaction.idUserHost
+            }
+
+            // Actualizar el estado del juego
+            interaction.event.turn = start
+            interaction.event.gameData.bothRolled = true
+            interaction.event.status = "playing"
+            interaction.event.round = 1
+
+            console.log(`🎲 Tiradas completas - Host: ${hostRoll}, Guest: ${gestRoll}, Comienza: ${start}`)
+        }
+
+        this._saveAll()
+
+        return { 
+            success: true, 
+            message: "Tirada registrada correctamente"
+        }
+    }
+
+    // FASE 1: Consultar si es mi turno
+    static async checkMyTurn({ idInteraction, idUser }) {
+        console.log('🔍 --- checkMyTurn --- recibido:', { idInteraction, idUser });
+
+        // Buscar la interacción
+        const interaction = listInteractionsOnLine.find(interaction => 
+            interaction.idInteraccionOnLine === idInteraction
+        )
+
+        if (!interaction) {
+            return { success: false, message: "Interacción no encontrada" }
+        }
+
+        // Verificar estados del juego, por si has ganado
+        if (interaction.status === "finished" && interaction.event.winner) {
+            if (interaction.event.winner === idUser) {
+                return { status: "you won" }
+            } else {
+                return { status: "you lost" }
             }
         }
 
-        // añadir la nueva interacción
-        listInteractionsOnLine.push(newInteraction)
-        this._saveAll()
+        if (interaction.status === "abandoned") {
+            return { status: "your rival has left the game" }
+        }
 
-        console.log(`✅ Nueva interacción creada: ${newInteraction.idInteraccionOnLine} (${type})`)
-        return newInteraction
+        if (interaction.status === "timeout") {
+            return { status: "your rival has closed the game" }
+        }
+
+        // Si el juego está en progreso
+        if (interaction.event.status === "playing") {
+            if (interaction.event.turn === idUser) {
+                return { 
+                    status: "your turn", 
+                    interaction: interaction 
+                }
+            } else {
+                return { status: "not your" }
+            }
+        }
+
+        // Si está esperando tiradas iniciales
+        if (interaction.event.status == "waitingInitialRoll") {
+            return { 
+                status: "waiting_initial_roll"
+            }
+        }
+
+        // Estado por defecto
+        return { status: "false" }
     }
-
-
 }
