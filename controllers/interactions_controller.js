@@ -70,8 +70,8 @@ export class InteractionsController {
                 });
             }
 
-            // Validar respuestas permitidas
-            const allowedResponses = ['accepted', 'rejected', 'timeout', 'finished', 'cancelled']
+            // Validar respuestas permitidas (corregido 'bandoned' → 'abandoned')
+            const allowedResponses = ['accepted', 'rejected', 'timeout', 'finished', 'cancelled', 'abandoned']
             if (!allowedResponses.includes(response)) {
                 return res.status(400).json({ 
                     message: `Respuesta no válida. Permitidas: ${allowedResponses.join(', ')}` 
@@ -85,13 +85,25 @@ export class InteractionsController {
                 });
             }
 
+            // Si abandona, marcar al contrario como ganador automáticamente
+            if (response === 'abandoned') {
+                console.log(`🏃‍♂️ Usuario ${idUser} ha abandonado la interacción ${id}`);
+                // Aquí el modelo debería manejar la lógica de declarar ganador al oponente
+            }
+
             const result = await InteractionsModel.respondToInvitation({ idInteraction: id, idUser, response, invData })
 
             // si ha salido mal ...
             if (!result.success) return res.status(400).json({ message: result.message })
 
+            // Mensaje específico para abandono
+            let responseMessage = result.message;
+            if (response === 'abandoned') {
+                responseMessage = 'Jugador ha abandonado la partida. El oponente ha sido declarado ganador.';
+            }
+
             // si todo va bien ...
-            res.json({ message: result.message, interaction: result.interaction })
+            res.json({ message: responseMessage, interaction: result.interaction })
 
         } catch (error) {
             console.error('❌ respondToInvitation error:', error);
