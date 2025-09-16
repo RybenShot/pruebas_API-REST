@@ -59,7 +59,7 @@ export class InteractionsModel {
 
     // obtener invitaciones pendientes para el GUEST
     static async getPendingInvitations({ idUser }) {
-        console.log('🔍 --- getPendingInvitations --- recibido:', idUser);
+        // console.log('🔍 --- getPendingInvitations --- recibido:', idUser);
         
         // this.removeInactiveInteractions()
 
@@ -75,7 +75,7 @@ export class InteractionsModel {
     
     // endpoint para polling del HOST - espera respuesta del otro
     static async pollHostInteraction({ idInteraction, idUser }) {
-        console.log('🔄 --- pollHostInteraction --- recibido:', { idInteraction, idUser });
+        //console.log('🔄 --- pollHostInteraction --- recibido:', { idInteraction, idUser });
 
         // buscamos la interaccion
         const interaction = listInteractionsOnLine.find(interaction => interaction.idInteraccionOnLine === idInteraction)
@@ -95,7 +95,7 @@ export class InteractionsModel {
 
     // crear nueva interacción entre usuarios
     static async createInteraction({ idUserHost, idUserGuest, invData, type, idLocationMap }) {
-        console.log('➕ --- createInteraction --- recibido:', { idUserHost, idUserGuest, type, idLocationMap });
+        // console.log('➕ --- createInteraction --- recibido:', { idUserHost, idUserGuest, type, idLocationMap });
 
         // limpiar interacciones inactivas primero
         // this.removeInactiveInteractions()
@@ -141,7 +141,7 @@ export class InteractionsModel {
 
     // responder a una invitación (aceptar o denegar)
     static async respondToInvitation({ idInteraction, idUser, response, invData }) {
-        console.log('✅❌ --- respondToInvitation --- recibido:', { idInteraction, idUser, response });
+        // console.log('✅❌ --- respondToInvitation --- recibido:', { idInteraction, idUser, response });
 
         // buscar la interacción
         const interactionIndex = listInteractionsOnLine.findIndex(interaction => 
@@ -224,6 +224,7 @@ export class InteractionsModel {
 
     // Disparador de eventoOnLine
     static startEventOnLine(interactionActual){
+        // console.log('🚀 --- startEventOnLine --- recibido:', interactionActual);
         if (interactionActual.event.type === "fight") {
             // Inicializar datos del juego
             const hostLife = interactionActual.event.invDataHost.atributes.life
