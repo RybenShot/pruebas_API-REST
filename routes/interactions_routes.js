@@ -27,7 +27,7 @@ interactionsRouter.post('/', InteractionsController.createInteraction)
 interactionsRouter.put('/initialRoll/:id', InteractionsController.initialRoll)
 
 // GET - Consultar si es mi turno
-interactionsRouter.get('/myTurn/:id', InteractionsController.checkMyTurn)
+interactionsRouter.get('/checkMyTurn/:id', InteractionsController.checkMyTurn)
 
 // FASE 2  
 interactionsRouter.put('/sendHits/:id', InteractionsController.sendHits)
