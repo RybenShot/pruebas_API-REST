@@ -1,205 +1,57 @@
 [
   {
-    "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
+    "idUser": "user_nuevo",
+    "investigadoresOnLine": []
+  },
+  {
+    "idUser": "user_31u2A7hEfFXlLFV2nui0AVi9s1e",
     "investigadoresOnLine": [
       {
-        "idInv": 12,
+        "idInv": 6,
         "isActive": true,
-        "expansion": "AHWaves",
-        "name": "Silas Marsh",
-        "position": "Sailor",
-        "effect1": "Contaminated Blood - Once per round, when a prepared Monster is activated, you can designate any researcher as its prey. If that Monster faces you, you can regain two points of Sanity.",
+        "expansion": "Base",
+        "name": "Calvin Wrigth",
+        "position": "Tormented men",
+        "effect1": "A Safe Friend -- Action: You can exchange any amount of Life and/or Sanity with another researcher or Ally who is in any space.",
         "effect2": null,
         "effect3": null,
-        "phrase": "\"I have sailed the seven seas, but something always ends up drawing me to this place.\"",
-        "theStory": "Silas was drawn to the sea. At the age of fourteen he answered its call and left his hometown of Innsmouth to join a merchant ship. He began his new life as a fish in the water, having an innate talent for seamanship, and swore never to return. The truth is he was eager to leave that decrepit and corrupt town—where his distant kinship with the old Marsh family had plunged the town into decay. Silas was in a tavern in the village of Singapore when he received the news of his parents' death. He didn't even come back for the funeral; he convinced himself it was for the best. He was glad to have left that terrible place behind. But now he often dreams of his late mother, and just as the sea once attracted him when he was young, something in Innsmouth has compelled him to return.",
+        "phrase": "'I’d sacrifice whatever it takes to protect you'",
+        "theStory": "The hardest thing Calvin had ever done was to turn his back on Joao, who was always there to help him cope. But he had no choice. The image of Joao burning to ashes, his world calcinated in a flash of light, and the darkness that nested inside him haunted Calvin. Unable to permit the loss of his lover, he made a deal. He let the Masked God sect believe that they could control him, and he waited for the right moment to rise against the ancient evil that threatened the world. It was a difficult time, but knowing that Joao was safe helped him overcome it. Not that Calvin wasn’t afraid—he was—but he knew what had to be done, and that he was the only one capable of it.",
         "focusLimit": 2,
         "locutionURL": "___",
-        "imgInv": "/img/1-inv/13-Silas.jpg",
+        "imgInv": "/img/1-inv/7-Calvin.jpg",
         "atributes": {
-          "life": 8,
-          "sanity": 4,
-          "lore": 1,
+          "life": 6,
+          "sanity": 6,
+          "lore": 3,
           "influence": 3,
           "observation": 3,
           "strength": 3,
-          "will": 3,
-          "money": 4,
+          "will": 1,
+          "money": 3,
           "remnant": 0,
           "clue": 0
         },
         "rol": [
           {
-            "rol": "Survivor",
-            "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory."
+            "rol": "Defender",
+            "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
           },
           {
             "rol": "Expert",
-            "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Silas' lineage shares a sinister kinship with certain creatures of the Mythos, which gives you the unusual ability to predict and control the movements of the Monsters that threaten you."
+            "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Calvin is good at healing others, although this can also keep you alive in the most catastrophic moments."
           }
         ],
         "possessions": [
           {
-            "id": 37,
-            "img": "/img/2-obj/PerSilas1.jpg",
-            "expansion": "AHWaves",
+            "id": 19,
+            "img": "/img/2-obj/PerCalvin1.jpg",
+            "expansion": "base",
             "price": null,
             "types": [
               "perInicial",
               "objeto",
-              "comun",
-              "vinculable"
-            ],
-            "hands": 1,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Red de pesca",
-                "description": "Durante tu turno, puedes vincular este Objeto a un monstruo no épico que esté en tu espacio para agotar a este Monstruo. Vínculo: este Monstruo no puede prepararse. Después de que derrotes a este Monstruo ganas el Objeto que tiene vinculado."
-              },
-              "en": {
-                "name": "Fishing net",
-                "description": "During your turn, you can link this Item to a non-epic monster in your space to exhaust this Monster. Link: This Monster cannot prepare. After you defeat this Monster you win the Item it has linked."
-              }
-            }
-          },
-          {
-            "id": 38,
-            "img": "/img/2-obj/PerSilas2.jpg",
-            "expansion": "AHWaves",
-            "price": null,
-            "types": [
-              "perInicial",
-              "talento",
-              "innato"
-            ],
-            "hands": null,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Espíritu aventurero",
-                "description": "Durante la fase de Encuentros, todas tus habilidades se incrementan en un punto."
-              },
-              "en": {
-                "name": "Adventurous spirit",
-                "description": "During the Encounters phase, all your abilities increase by one point."
-              }
-            }
-          },
-          {
-            "id": 45,
-            "img": "/img/2-obj/PerStella3.jpg",
-            "expansion": "AHWaves",
-            "price": null,
-            "types": [
-              "perInicial",
-              "talento",
-              "innato"
-            ],
-            "hands": null,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Llueva o truene",
-                "description": "Una vez por turno, cuando vayas a fallar una prueba, puedes descartar una ficha de Concentración de VOLUNTAD para añadir un Éxito al resultado de tu prueba."
-              },
-              "en": {
-                "name": "Rain or shine",
-                "description": "Once per turn, when you are going to fail a test, you can discard a WILL Concentration token to add a Success to your test result."
-              }
-            }
-          },
-          {
-            "id": 129,
-            "img": "/img/2-obj/PerLola1.jpg",
-            "expansion": "original",
-            "price": 4,
-            "types": [
-              "perInicial",
-              "objeto",
-              "especial",
-              "arma"
-            ],
-            "hands": 2,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Revólver de madre",
-                "description": "+4 a FUERZA. Si el investigador tiene menos de 3 de FUERZA, al disparar deberá lanzar un dado; este será el daño que sufra el portador por el retroceso."
-              },
-              "en": {
-                "name": "Mother's Revolver",
-                "description": "+4 STRENGTH. If the investigator has less than 3 STRENGTH, they must roll a die when shooting; this is the damage the bearer suffers due to recoil."
-              }
-            }
-          },
-          {
-            "id": 132,
-            "img": "/img/2-obj/PerWilliam1.jpg",
-            "expansion": "original",
-            "price": 4,
-            "types": [
-              "perInicial",
-              "objeto",
-              "especial",
-              "arma"
-            ],
-            "hands": 1,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Revolver de guerra",
-                "description": "Cuando estés realizando una accion de ataque Tira un dado, si sale par, recibes +3 de FUERZA ,si sale inpar, se te encasquilla el arma, no se suma ningun bonificador."
-              },
-              "en": {
-                "name": "War Revolver",
-                "description": "When performing an attack action, roll a die. If it's even, you gain +3 STRENGTH; if it's odd, the weapon jams and no bonus is applied."
-              }
-            }
-          },
-          {
-            "id": 92,
-            "img": "/img/2-obj/PerMonterrey1.jpg",
-            "expansion": "AHOriginal",
-            "price": null,
-            "types": [
-              "perInicial",
-              "arma",
+              "magico",
               "extraordinario"
             ],
             "hands": 1,
@@ -213,118 +65,186 @@
             },
             "translations": {
               "es": {
-                "name": "Látigo de la película",
-                "description": "Te da +2 de FUERZA en las tiradas de ataque. Puedes atacar cuantas veces quieras usando este arma."
+                "name": "Daga espiritual",
+                "description": "Recibes +2 de FUERZA cuando estés realizando una acción de ataque. Recibes +2 de SABER cuando estés realizando una acción de salvaguarda."
               },
               "en": {
-                "name": "Whip of the film",
-                "description": "It gives you +2 FORCE on attack spins. You can attack as many times as you want using this weapon."
+                "name": "Spiritual dagger",
+                "description": "You receive +2 FORCE when you are performing an attack action. You receive +2 SABER when you are performing a safeguard action."
               }
             }
           },
           {
-            "id": 69,
-            "img": "/img/2-obj/PerMalasombra3.jpg",
-            "expansion": "AHNigth",
-            "price": null,
-            "types": [
-              "perInicial",
-              "objeto",
-              "comun",
-              "extraordinario",
-              "arma"
-            ],
-            "hands": 1,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Navaja automática",
-                "description": "Cuando te separas de un Monstruo, puedes inflingirle un punto de daño."
-              },
-              "en": {
-                "name": "___",
-                "description": "___"
-              }
-            }
-          },
-          {
-            "id": 46111,
-            "img": "/img/2-obj/PerZoey1.jpg",
-            "expansion": "AHWaves",
-            "price": null,
-            "types": [
-              "perInicial",
-              "objeto",
-              "comun",
-              "arma"
-            ],
-            "hands": 1,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Cuchillo de cocina",
-                "description": "Recibes +2 de FUERZA como parte de una acción de ataque. Después de que vuelvas a tirar un dado al resolver una prueba, añade un punto al resultado de ese dado."
-              },
-              "en": {
-                "name": "Kitchen knife",
-                "description": "You receive +2 FORCE as part of an attack action. After you roll a die again when solving a test, add a point to the result of that die."
-              }
-            }
-          },
-          {
-            "id": 58,
-            "img": "/img/2-obj/PerRoland1.jpg",
-            "expansion": "AHNigth",
-            "price": null,
-            "types": [
-              "perInicial",
-              "objeto",
-              "comun",
-              "arma"
-            ],
-            "hands": 1,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": ".38 Special",
-                "description": "Recibes +2 de FUERZA como parte de una accion de ataque. si el Monstruo alq ue estas atacando tiene un icno de Restos, en vez de eso recibes +3 de FUERZA."
-              },
-              "en": {
-                "name": "___",
-                "description": "___"
-              }
-            }
-          },
-          {
-            "id": 206,
-            "img": "/img/2-obj/escopeta.JPG",
+            "id": 20,
+            "img": "/img/2-obj/PerCalvin2.jpg",
             "expansion": "base",
-            "price": 6,
+            "price": null,
             "types": [
-              "tienda",
+              "perInicial",
+              "estado",
+              "innato"
+            ],
+            "hands": 2,
+            "health": {
+              "life": 2,
+              "sanity": 3
+            },
+            "cost": {
+              "life": null,
+              "sanity": null
+            },
+            "translations": {
+              "es": {
+                "name": "Hasta el fin de los tiempos",
+                "description": "Esta carta no puede descartarse por ningún motivo. (Ni siquiera por daño u Horror.) RETRIBUCIÓN: Quita una ficha de Daño y una ficha de Horror de esta carta."
+              },
+              "en": {
+                "name": "Till the end of time",
+                "description": "This card cannot be discarded for any reason. (Not even for damage or Horror.) RETRIBUTION: Remove a Damage tab and a Horror tab from this card."
+              }
+            }
+          },
+          {
+            "id": 21,
+            "img": "/img/2-obj/PerCalvin3.jpg",
+            "expansion": "base",
+            "price": null,
+            "types": [
+              "perInicial",
+              "estado",
+              "innato"
+            ],
+            "hands": null,
+            "health": {
+              "life": null,
+              "sanity": null
+            },
+            "cost": {
+              "life": null,
+              "sanity": null
+            },
+            "translations": {
+              "es": {
+                "name": "Voz del mensajero / Pacto siniestro",
+                "description": "Puedes sufrir un punto de Horror para volver a tirar cualquier cantidad de dados. (Este efecto sólo puede aplicarse una vez a cada tirada. Puedes utilizarlo para repetir la tirada de tu Pacto siniestro.)"
+              },
+              "en": {
+                "name": "Messenger’s voice / Sinister pact",
+                "description": "You can take a Horror point to re-roll any number of dice. (This effect can only be applied once to each roll. You can use it to re-roll your Sinister Pact.)"
+              }
+            }
+          }
+        ],
+        "extraData": {
+          "likes": 0,
+          "dislikes": 0,
+          "NVotesLikeDislike": 0
+        },
+        "translations": {
+          "es": {
+            "name": "Calvin Wrigth",
+            "position": "Tipo atormentado",
+            "effect1": "Un amigo seguro -- Acción: Puedes intercambiar cualquier cantidad de Vida y/o Cordura con otro investigador o Aliado que esté en cualquier espacio.",
+            "effect2": null,
+            "effect3": null,
+            "phrase": "'Sacrificaría lo que hiciera falta con tal de protegerte'",
+            "theStory": "Lo más difícil que había hecho Calvin jamás fue dar la espalda a Joao, que siempre estuvo ahí para ayudarle a sobrellevarlo todo. Pero no tuvo elección. La imagen de Joao ardiendo hasta quedar reducido a cenizas, su mundo calcinado en un fogonazo de luz, y la oscuridad que anidaba en su interior, lo llevaron a tomar una decisión drástica. No podía permitir que le arrebatasen a su amante, por lo que hizo un trato: dejó que la secta del Dios Enmascarado creyera que podían controlarlo, aguardando el momento propio para rebelarse contra el antiguo mal que amenazaba el mundo. Fueron tiempos difíciles, pero saber que Joao estaba a salvo le dio fuerzas para continuar. No es que Calvin no tuviese miedo, pero sabía lo que debía hacerse y que él era el único capaz de hacerlo.",
+            "focusLimit": 2,
+            "locutionURL": "___",
+            "rol": [
+              {
+                "rol": "Defensor",
+                "description": "Tu responsabilidad consiste en proteger a tus compañeros investigadores. Esto podría significar ayudarles a recuperarse de daños físicos y mentales, o bien despachar Monstruos antes de que se conviertan en una amenaza."
+              },
+              {
+                "rol": "Experto",
+                "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. A Calvin se le da bien sanar a los demás, aunque esto también puede mantenerte con vida en los momentos más catastróficos."
+              }
+            ]
+          }
+        },
+        "idUser": "user_31u2A7hEfFXlLFV2nui0AVi9s1e",
+        "idMapOnLine": "3091830f-f7fe-47ca-b895-714daaf9c712",
+        "id": "cb68838e-7db8-46b6-b8cb-dcffae82bc07",
+        "lastUpdated": 1756576160574
+      }
+    ]
+  },
+  {
+    "idUser": "user_32318k0HkK03tEsWBieil9CgmOd",
+    "investigadoresOnLine": [
+      {
+        "idInv": 2,
+        "isActive": true,
+        "expansion": "Base",
+        "name": "Jenny Barnes",
+        "position": "Dilettante",
+        "effect1": "Trust Fund -- Action: If you have less than $3, you earn $3",
+        "effect2": null,
+        "effect3": null,
+        "phrase": "'I don’t mind solving problems with a checkbook; and if that doesn’t work, I’ll hit them with something else'",
+        "theStory": "Although passionate about luxury and money, Jenny has always had a curious and adventurous streak. He loves the fashion and high society of Paris and Venice, but moves with the same ease hunting in the fields of Scotland playing in the clubs of New Orleans. She even financed an archaeological excavation for the mere fact of being the first to enter that ancient tomb. So, when she learned that her sister Isabelle had disappeared, Jenny traveled to Arkham to take matters into her own hands. Maybe living in the midst of such opulence and power would have made her too confident ... or maybe the thugs who kidnapped her sister had made their last mistake.",
+        "focusLimit": 1,
+        "locutionURL": "___",
+        "imgInv": "/img/1-inv/3-Jenny.jpg",
+        "atributes": {
+          "life": 7,
+          "sanity": 5,
+          "lore": 1,
+          "influence": 4,
+          "observation": 2,
+          "strength": 3,
+          "will": 3,
+          "money": 5,
+          "remnant": 0,
+          "clue": 0
+        },
+        "rol": [
+          {
+            "rol": "Expert",
+            "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Jenny has no qualms about solving her problems with Money; don’t hesitate to spend it when it suits you."
+          }
+        ],
+        "possessions": [
+          {
+            "id": 6,
+            "img": "/img/2-obj/PerJenny1.jpg",
+            "expansion": "base",
+            "price": null,
+            "types": [
+              "perInicial",
+              "talento",
+              "innato"
+            ],
+            "hands": null,
+            "health": {
+              "life": 2,
+              "sanity": 2
+            },
+            "cost": {
+              "life": null,
+              "sanity": null
+            },
+            "translations": {
+              "es": {
+                "name": "Buscando a Izzie",
+                "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sufrir un punto de Daño y un punto de Horror para volver a tirar cualquier cantidad de dados."
+              },
+              "en": {
+                "name": "Looking for Izzie",
+                "description": "Once per round, when you are solving a test, you can take a Damage point and a Horror point to re-roll any number of dice."
+              }
+            }
+          },
+          {
+            "id": 7,
+            "img": "/img/2-obj/PerJenny2.jpg",
+            "expansion": "base",
+            "price": null,
+            "types": [
+              "perInicial",
               "objeto",
-              "común",
+              "comun",
               "arma"
             ],
             "hands": 2,
@@ -338,12 +258,12 @@
             },
             "translations": {
               "es": {
-                "name": "Escopeta",
-                "description": "Recibes Fuerza +5 cuando estés realizando una acción de ataque. Cada 6 que obtengas durante una acción de ataque cuenta como dos Éxitos."
+                "name": ".45 gemelas de Jenny",
+                "description": "Recibes +3 de FUERZA cuando estés realizando una acción de ataque. Puedes sumar uno al resultado de un dado cuando estés realizando una acción de ataque."
               },
               "en": {
-                "name": "Shotgun",
-                "description": "You gain +5 Strength when performing an attack action. Each 6 rolled during an attack action counts as two Successes."
+                "name": ".45 twins of Jenny",
+                "description": "You receive +3 FORCE when performing an attack action. You can add one to the result of a die when you are performing an attack action."
               }
             }
           }
@@ -355,184 +275,102 @@
         },
         "translations": {
           "es": {
-            "name": "Silas Marsh",
-            "position": "Marinero",
-            "effect1": "Sangre contaminada - Una vez por ronda, cuando se active un Monstruo preparado, puedes designar a cualquier investigador como su presa. Si ese Monstruo se enfrenta a ti, puedes recuperar dos puntos de Cordura.",
+            "name": "Jenny Barnes",
+            "position": "Diletante",
+            "effect1": "Fondo fiduciario -- Acción: Si tienes menos de 3$, ganas 3$",
             "effect2": null,
             "effect3": null,
-            "phrase": "“He navegado por los siete mares, pero algo siempre acaba atrayéndome a este lugar.”",
-            "theStory": "Silas se sentía atraído por el mar. A los catorce años respondió a su llamada y abandonó su pueblo natal, Innsmouth, para enrolarse en un buque mercante. Emprendió su nueva vida desenvolviéndose como pez en el agua, pues tenía un talento innato para la náutica, y juró que nunca regresaría. Lo cierto es que estaba ansioso por marcharse de aquel pueblo decrépito y corrupto, donde se le conocía por su parentesco lejano con la vieja familia Marsh que había sumido al pueblo en la decadencia. Silas se hallaba en una taberna del pueblo de Singapur cuando recibió la noticia del fallecimiento de sus padres. Ni siquiera volvió para asistir al funeral; se convenció de que era lo mejor. Se alegraba de haber dejado atrás aquel terrible lugar. Pero ahora sueña a menudo con su difunta madre, y así como el mar le atraía cuando era joven, algo en Innsmouth le había impulsado a volver.",
-            "focusLimit": 2,
-            "locutionURL": "___",
+            "phrase": "'No me importa solucionar problemas a golpe de talonario; y si eso no funciona, ya los golpearé con alguna otra cosa'",
+            "theStory": "Aunque le apasionaban los lujos y el dinero, Jenny siempre ha tenido una vena curiosa y aventurera. Adora la moda y la alta sociedad de París y Venecia, pero se mueve con la misma soltura cazando en los campos de Escocia que juega en los clubes de Nueva Orleans. Incluso financió una excavación arqueológica por el mero hecho de ser la primera en entrar en aquella tumba antigua. Por eso, cuando se enteró de que su hermana Isabelle había desaparecido, Jenny viajó a Arkham para tomar cartas en el asunto personalmente. Puede que vivir en medio de tanta opulencia y poder la hubiese vuelto demasiado confiada ... o tal vez los rufianes que secuestraron a su hermana habían cometido su último error.",
+            "focusLimit": 1,
+            "locutionURL": "A3eG_3SDUTA",
             "rol": [
-              {
-                "rol": "Superviviente",
-                "description": "Tu ventaja radica en sobrevivir al implacable asalto de los Mitos y ayudar a tus compañeros investigadores a hacer lo mismo. El trabajo en equipo os conducirá a la victoria."
-              },
               {
                 "rol": "Experto",
-                "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. El linaje de Silas comparte un siniestro lazo de parentesco con ciertas criaturas de los Mitos, lo cual te confiere la insólita capacidad de predecir y controlar los movimientos de los Monstruos que os amenazan."
+                "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Jenny no tiene ningún reparo a la hora de solventar sus problemas con Dinero; no dudes en gastarlo cuando te venga bien."
               }
             ]
           }
         },
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUq",
-        "id": "1e265266-225d-48b0-949c-1ff8d7525ef4",
-        "lastUpdated": 1754665912932,
-        "idMapOnLine": "00e57574-de7e-4c70-a4e9-ff4700ede35c"
-      }
-    ]
-  },
-  {
-    "idUser": "user_nuevo",
-    "investigadoresOnLine": []
-  },
-  {
-    "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUqa",
-    "investigadoresOnLine": [
-      {
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUqa",
-        "idMapOnLine": "1234",
-        "idInv": 1,
-        "name": "Tommy Muldoon Editado 3",
-        "position": "Rookie cop",
-        "expansion": "Base",
-        "effect1": "Protector: If a Monster is going to face another researcher in your space, you can face that Monster instead.",
-        "effect2": null,
-        "effect3": null,
-        "phrase": "'Come on, Tommy. It’s time to become a hero.'",
-        "theStory": "The Muldoons had served in the police force for generations, and Tommy was no less. He was the pride of his family when he graduated from the Boston Academy. That’s why it wasn’t very funny to be transferred to the Arkham police station; after all, what could happen in that small town compared to the crimes I would have been able to solve in Boston? It turned out that police work in Arkham was not without interest after all. There were many unexplained events, and the local police seemed more interested in appearing normal than in finding a solution. So Tommy reached for Becky, his grandfather’s rifle, and set out to find solutions on his own ...",
-        "focusLimit": 2,
-        "locutionURL": "___",
-        "imgInv": "/img/1-inv/1-Tommy.jpg",
-        "atributes": {
-          "life": 700,
-          "sanity": 5,
-          "lore": 2,
-          "influence": 2,
-          "observation": 3,
-          "strength": 2,
-          "will": 3,
-          "money": 2,
-          "remnant": 0,
-          "clue": 10
-        },
-        "rol": [
-          {
-            "rol": "guardian",
-            "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
-          },
-          {
-            "rol": "survivor",
-            "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory. "
-          }
-        ],
-        "possessions": [
-          {
-            "id": 1,
-            "img": "/img/2-obj/PerTommy3.jpg",
-            "expansion": "base",
-            "price": null,
-            "types": [
-              "perInicial",
-              "objeto",
-              "comun"
-            ],
-            "hands": null,
-            "health": {
-              "life": null,
-              "sanity": null
-            },
-            "cost": {
-              "life": null,
-              "sanity": null
-            },
-            "translations": {
-              "es": {
-                "name": "Esposas",
-                "description": "Una vez por ronda, después de que infrinjas Daño, te separes o sufras Daño de un monstruo HUMANO que no sea épico, puedes derrotar a ese monstruo."
-              },
-              "en": {
-                "name": "handcuffs",
-                "description": "Once per round, after you break Damage, separate or take Damage from a non-epic HUMAN monster, you can defeat that monster."
-              }
-            }
-          }
-        ],
-        "translations": {
-          "es": {
-            "name": "Tommy Muldoon",
-            "position": "Poli Novato",
-            "effect1": "Protector: Si un Monstruo va a enfrentarse a otro investigador en tu espacio, puedes enfrentarte tú a ese Monstruo en su lugar.",
-            "effect2": null,
-            "effect3": null,
-            "phrase": "'Vamos alla, Tommy. Es hora de hacerse el Heroe'",
-            "theStory": "Los Muldoon habían servido en el cuerpo de policía durante generaciones, y Tommy no iba a ser menos. Fue el orgullo de su familia cuando se graduó en la academia de Boston. Por eso no hizo mucha gracia que lo trasladasen a la comisaría de Arkham; después de todo ¿qué podía ocurrir en aquel pueblucho comparado con los crímenes que habría sido capaz de resolver en Boston? Al final resultó que el trabajo policial en Arkham no estaba exento de interés, después de todo. Había muchos sucesos inexplicables, y la policía local parecía más interesada en aparentar normalidad que en buscar una solución. Así que Tommy echó mano a Becky, el rifle de su abuelo, y se dispuso a buscar soluciones por su cuenta ...",
-            "focusLimit": 2,
-            "locutionURL": "___",
-            "rol": [
-              {
-                "rol": "___",
-                "description": "___"
-              },
-              {
-                "rol": "___",
-                "description": "___"
-              }
-            ]
-          }
-        },
-        "id": "74199743-b16e-4d15-90dd-2fc87e0aa361",
-        "lastUpdated": 1752830397724
+        "idUser": "user_32318k0HkK03tEsWBieil9CgmOd",
+        "id": "352b9bf4-637d-446c-b648-58949afd7343",
+        "lastUpdated": 1756634476999
       },
       {
-        "idUser": "user_2x7hdgi9dwczRgUdQy93PLpgrUqa",
-        "idInv": 1,
-        "name": "Tommy Muldoon Editado 3",
-        "position": "Rookie cop",
+        "idInv": 2,
+        "isActive": true,
         "expansion": "Base",
-        "effect1": "Protector: If a Monster is going to face another researcher in your space, you can face that Monster instead.",
+        "name": "Jenny Barnes",
+        "position": "Dilettante",
+        "effect1": "Trust Fund -- Action: If you have less than $3, you earn $3",
         "effect2": null,
         "effect3": null,
-        "phrase": "'Come on, Tommy. It’s time to become a hero.'",
-        "theStory": "The Muldoons had served in the police force for generations, and Tommy was no less. He was the pride of his family when he graduated from the Boston Academy. That’s why it wasn’t very funny to be transferred to the Arkham police station; after all, what could happen in that small town compared to the crimes I would have been able to solve in Boston? It turned out that police work in Arkham was not without interest after all. There were many unexplained events, and the local police seemed more interested in appearing normal than in finding a solution. So Tommy reached for Becky, his grandfather’s rifle, and set out to find solutions on his own ...",
-        "focusLimit": 2,
+        "phrase": "'I don’t mind solving problems with a checkbook; and if that doesn’t work, I’ll hit them with something else'",
+        "theStory": "Although passionate about luxury and money, Jenny has always had a curious and adventurous streak. He loves the fashion and high society of Paris and Venice, but moves with the same ease hunting in the fields of Scotland playing in the clubs of New Orleans. She even financed an archaeological excavation for the mere fact of being the first to enter that ancient tomb. So, when she learned that her sister Isabelle had disappeared, Jenny traveled to Arkham to take matters into her own hands. Maybe living in the midst of such opulence and power would have made her too confident ... or maybe the thugs who kidnapped her sister had made their last mistake.",
+        "focusLimit": 1,
         "locutionURL": "___",
-        "imgInv": "/img/1-inv/1-Tommy.jpg",
+        "imgInv": "/img/1-inv/3-Jenny.jpg",
         "atributes": {
-          "life": 700,
+          "life": 7,
           "sanity": 5,
-          "lore": 2,
-          "influence": 2,
-          "observation": 3,
-          "strength": 2,
+          "lore": 1,
+          "influence": 4,
+          "observation": 2,
+          "strength": 3,
           "will": 3,
-          "money": 2,
+          "money": 5,
           "remnant": 0,
-          "clue": 10
+          "clue": 0
         },
         "rol": [
           {
-            "rol": "guardian",
-            "description": "Your responsibility is to protect your fellow investigators. This could mean helping them recover from physical and mental damage, or dispatching Monsters before they become a threat."
-          },
-          {
-            "rol": "survivor",
-            "description": "Your advantage lies in surviving the relentless assault of Myths and helping your fellow researchers do the same. Teamwork will lead you to victory. "
+            "rol": "Expert",
+            "description": "You possess an exclusive set of skills that allow you to specialize in a specific task. Jenny has no qualms about solving her problems with Money; don’t hesitate to spend it when it suits you."
           }
         ],
         "possessions": [
           {
-            "id": 1,
-            "img": "/img/2-obj/PerTommy3.jpg",
+            "id": 6,
+            "img": "/img/2-obj/PerJenny1.jpg",
+            "expansion": "base",
+            "price": null,
+            "types": [
+              "perInicial",
+              "talento",
+              "innato"
+            ],
+            "hands": null,
+            "health": {
+              "life": 2,
+              "sanity": 2
+            },
+            "cost": {
+              "life": null,
+              "sanity": null
+            },
+            "translations": {
+              "es": {
+                "name": "Buscando a Izzie",
+                "description": "Una vez por ronda, cuando estés resolviendo una prueba, puedes sufrir un punto de Daño y un punto de Horror para volver a tirar cualquier cantidad de dados."
+              },
+              "en": {
+                "name": "Looking for Izzie",
+                "description": "Once per round, when you are solving a test, you can take a Damage point and a Horror point to re-roll any number of dice."
+              }
+            }
+          },
+          {
+            "id": 7,
+            "img": "/img/2-obj/PerJenny2.jpg",
             "expansion": "base",
             "price": null,
             "types": [
               "perInicial",
               "objeto",
-              "comun"
+              "comun",
+              "arma"
             ],
-            "hands": null,
+            "hands": 2,
             "health": {
               "life": null,
               "sanity": null
@@ -543,41 +381,43 @@
             },
             "translations": {
               "es": {
-                "name": "Esposas",
-                "description": "Una vez por ronda, después de que infrinjas Daño, te separes o sufras Daño de un monstruo HUMANO que no sea épico, puedes derrotar a ese monstruo."
+                "name": ".45 gemelas de Jenny",
+                "description": "Recibes +3 de FUERZA cuando estés realizando una acción de ataque. Puedes sumar uno al resultado de un dado cuando estés realizando una acción de ataque."
               },
               "en": {
-                "name": "handcuffs",
-                "description": "Once per round, after you break Damage, separate or take Damage from a non-epic HUMAN monster, you can defeat that monster."
+                "name": ".45 twins of Jenny",
+                "description": "You receive +3 FORCE when performing an attack action. You can add one to the result of a die when you are performing an attack action."
               }
             }
           }
         ],
+        "extraData": {
+          "likes": 0,
+          "dislikes": 0,
+          "NVotesLikeDislike": 0
+        },
         "translations": {
           "es": {
-            "name": "Tommy Muldoon",
-            "position": "Poli Novato",
-            "effect1": "Protector: Si un Monstruo va a enfrentarse a otro investigador en tu espacio, puedes enfrentarte tú a ese Monstruo en su lugar.",
+            "name": "Jenny Barnes",
+            "position": "Diletante",
+            "effect1": "Fondo fiduciario -- Acción: Si tienes menos de 3$, ganas 3$",
             "effect2": null,
             "effect3": null,
-            "phrase": "'Vamos alla, Tommy. Es hora de hacerse el Heroe'",
-            "theStory": "Los Muldoon habían servido en el cuerpo de policía durante generaciones, y Tommy no iba a ser menos. Fue el orgullo de su familia cuando se graduó en la academia de Boston. Por eso no hizo mucha gracia que lo trasladasen a la comisaría de Arkham; después de todo ¿qué podía ocurrir en aquel pueblucho comparado con los crímenes que habría sido capaz de resolver en Boston? Al final resultó que el trabajo policial en Arkham no estaba exento de interés, después de todo. Había muchos sucesos inexplicables, y la policía local parecía más interesada en aparentar normalidad que en buscar una solución. Así que Tommy echó mano a Becky, el rifle de su abuelo, y se dispuso a buscar soluciones por su cuenta ...",
-            "focusLimit": 2,
-            "locutionURL": "___",
+            "phrase": "'No me importa solucionar problemas a golpe de talonario; y si eso no funciona, ya los golpearé con alguna otra cosa'",
+            "theStory": "Aunque le apasionaban los lujos y el dinero, Jenny siempre ha tenido una vena curiosa y aventurera. Adora la moda y la alta sociedad de París y Venecia, pero se mueve con la misma soltura cazando en los campos de Escocia que juega en los clubes de Nueva Orleans. Incluso financió una excavación arqueológica por el mero hecho de ser la primera en entrar en aquella tumba antigua. Por eso, cuando se enteró de que su hermana Isabelle había desaparecido, Jenny viajó a Arkham para tomar cartas en el asunto personalmente. Puede que vivir en medio de tanta opulencia y poder la hubiese vuelto demasiado confiada ... o tal vez los rufianes que secuestraron a su hermana habían cometido su último error.",
+            "focusLimit": 1,
+            "locutionURL": "A3eG_3SDUTA",
             "rol": [
               {
-                "rol": "___",
-                "description": "___"
-              },
-              {
-                "rol": "___",
-                "description": "___"
+                "rol": "Experto",
+                "description": "Posees un conjunto exclusivo de habilidades que te permite especializarte en una tarea concreta. Jenny no tiene ningún reparo a la hora de solventar sus problemas con Dinero; no dudes en gastarlo cuando te venga bien."
               }
             ]
           }
         },
-        "id": "87e2f55d-b0fd-44f3-8567-d0fe83ff1d10",
-        "lastUpdated": 1752831662138
+        "idUser": "user_32318k0HkK03tEsWBieil9CgmOd",
+        "id": "68b75536-684c-4f71-9ade-b22efc0f55f3",
+        "lastUpdated": 1756634477639
       }
     ]
   }

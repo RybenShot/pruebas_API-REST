@@ -94,7 +94,7 @@ export class InteractionsModel {
     }
 
     // crear nueva interacción entre usuarios
-    static async createInteraction({ idUserHost, idUserGuest, invData, type, idLocationMap }) {
+    static async createInteraction({ idUserHost, nameUserHost, idUserGuest, nameUserGest, invData, type, idLocationMap }) {
         // console.log('➕ --- createInteraction --- recibido:', { idUserHost, idUserGuest, type, idLocationMap });
 
         // limpiar interacciones inactivas primero
@@ -117,7 +117,9 @@ export class InteractionsModel {
             idInteraccionOnLine: randomUUID(),
             idLocationMap: idLocationMap,
             idUserHost: idUserHost,
+            nameUserHost: nameUserHost || 'Anfitrión',
             idUserGest: idUserGuest,
+            nameUserGest: nameUserGest || 'Invitado',
             status: "pending", // "accepted" | "rejected" | "expired" | "finished"
             created: now,
             lastEdited: now,
@@ -140,7 +142,7 @@ export class InteractionsModel {
     }
 
     // responder a una invitación (aceptar o denegar)
-    static async respondToInvitation({ idInteraction, idUser, response, invData }) {
+    static async respondToInvitation({ idInteraction, idUser, nameUser, response, invData }) {
         // console.log('✅❌ --- respondToInvitation --- recibido:', { idInteraction, idUser, response });
 
         // buscar la interacción
@@ -167,6 +169,7 @@ export class InteractionsModel {
                 ...interaction,
                 status: "accepted",
                 lastEdited: now,
+                nameUserGest: nameUser || 'Invitado',
                 event: {
                     // igual que aqui
                     ...interaction.event,
