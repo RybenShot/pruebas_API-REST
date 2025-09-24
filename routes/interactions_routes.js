@@ -29,11 +29,14 @@ interactionsRouter.put('/initialRoll/:id', InteractionsController.initialRoll)
 // GET - Consultar si es mi turno
 interactionsRouter.get('/checkMyTurn/:id', InteractionsController.checkMyTurn)
 
+// GET - Consultar estado del juego
+interactionsRouter.get('/gameState/:idInteraction', InteractionsController.getGameState)
+
 // FASE 2  
 interactionsRouter.put('/sendHits/:id', InteractionsController.sendHits)
 
 // FASE X
-//interactionsRouter.put('/abandon/:id', InteractionsController.abandonGame)
+interactionsRouter.get('/abandon/:idInteraction', InteractionsController.abandonEncounter)
 //interactionsRouter.put('/timeout/:id', InteractionsController.timeoutGame)
 
 export default interactionsRouter;

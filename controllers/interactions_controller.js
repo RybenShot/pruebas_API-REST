@@ -232,6 +232,26 @@ export class InteractionsController {
         }
     }
 
+    // GET - Consultar estado del juego 
+    static async getGameState(req, res) {
+        try {
+            const { idInteraction  } = req.params // id de la interacción
+            const { idUser } = req.query // id del usuario
+
+            const result = await InteractionsModel.getGameState({ idInteraction, idUser })
+            if (!result.success && result.message) {
+                return res.status(400).json({ message: result.message })
+            }
+
+            // Respuesta exitosa con el estado del juego
+            res.json(result)
+
+        } catch (error) {
+            console.error('❌ getGameState error:', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
     // PUT - Enviar aciertos
     static async sendHits(req, res) {
         try {
@@ -256,11 +276,47 @@ export class InteractionsController {
             const result = await InteractionsModel.sendHits({ idInteraction: id, idUser, hits })
 
             if (!result.success) {
-                return res.status(400).json({ message: result.message })
+                return res.status(400).json({
+                    status: result.success,
+                    message: result.message 
+                })
             }
+
+            return res.json({ 
+                status: result.success,
+                message: result.message
+            })
 
         } catch (error) {
             console.error('❌ sendHits error:', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
+    // GET - Abandonar encuentro
+    static async abandonEncounter(req, res) {
+        try {
+            const { idInteraction } = req.params // id de la interacción
+            const { idUser } = req.query
+            console.log('🏃‍♂️ --- abandonEncounter --- recibido:', { idInteraction, idUser });
+            if (!idUser) {
+                return res.status(400).json({ 
+                    message: 'idUser es obligatorio como query parameter' 
+                });
+            }
+
+            const result = await InteractionsModel.abandonEncounter({ idInteraction, idUser })
+            if (!result.success) {
+                return res.status(400).json({ message: result.message })
+            }
+
+            return res.json({ 
+                status: result.success,
+                message: result.message 
+            })
+
+        } catch (error) {
+            console.error('❌ abandonEncounter error:', error);
             return res.status(500).json({ message: 'Error interno' });
         }
     }

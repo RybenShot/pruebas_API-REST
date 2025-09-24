@@ -347,7 +347,7 @@ export class InteractionsModel {
         }
 
         if (interaction.status === "abandoned") {
-            return { status: "your rival has left the game" }
+            return { status: "your_rival_abandoned" }
         }
 
         if (interaction.status === "timeout") {
@@ -377,8 +377,10 @@ export class InteractionsModel {
         return { status: "false" }
     }
 
-    // FASE 2: Enviar aciertos y procesar daño
-    static async sendHits({ idInteraction, idUser, hits }) {
+    // FASE 1: Consultar estado del juego
+    static async getGameState({ idInteraction, idUser }) {
+        console.log('🔍 --- getGameState --- recibido:', { idInteraction, idUser });
+        
         // Buscar la interacción
         const interaction = listInteractionsOnLine.find(interaction => 
             interaction.idInteraccionOnLine === idInteraction
@@ -388,9 +390,36 @@ export class InteractionsModel {
             return { success: false, message: "Interacción no encontrada" }
         }
 
+        // Verificar que el usuario sea parte de la interacción
+        if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
+            return { success: false, message: "No tienes autorización para ver esta interacción" }
+        }  
+        return { 
+            success: true, 
+            interaction: interaction 
+        }
+    }
+
+    // FASE 2: Enviar aciertos y procesar daño
+    static async sendHits({ idInteraction, idUser, hits }) {
+        // Buscar la interacción
+        const interaction = listInteractionsOnLine.find(interaction => 
+            interaction.idInteraccionOnLine === idInteraction
+        )
+
+        if (!interaction) {
+            return { 
+                success: false, 
+                message: "Interacción no encontrada" 
+            }
+        }
+
         // Verificar que sea el turno del usuario
         if (interaction.event.turn !== idUser) {
-            return { success: false, message: "No es tu turno" }
+            return {
+                success: false, 
+                message: "No es tu turno" 
+            }
         }
 
 
@@ -455,9 +484,46 @@ export class InteractionsModel {
 
             return {
                 success: true,
-                status: "continue",
-                interaction: interaction
+                message: "continue"
             }
         }
     }
+
+    // FASE X: Abandonar encuentro
+    static async abandonEncounter({ idInteraction, idUser }) {
+        // Buscar la interacción
+        const interaction = listInteractionsOnLine.find(interaction => 
+            interaction.idInteraccionOnLine === idInteraction
+        )
+
+        if (!interaction) {
+            return { 
+                success: false, 
+                message: "Interacción no encontrada" 
+            }
+        }
+
+        // Verificar que el usuario sea parte de la interacción
+        if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
+            return { 
+                success: false, 
+                message: "No tienes autorización para abandonar esta interacción" 
+            }
+        }
+
+        // Actualizar estado a abandonado
+        interaction.status = "abandoned"
+        interaction.lastEdited = Date.now()
+        interaction.event.winner = interaction.idUserHost === idUser ? interaction.idUserGest : interaction.idUserHost
+        
+        this._saveAll()
+        console.log(`🏳️ Interacción abandonada por el usuario: ${idUser}`)
+        
+        return {
+            success: true,
+            message: "Has abandonado la interacción",
+            interaction: interaction
+        }
+    }
+
 }
