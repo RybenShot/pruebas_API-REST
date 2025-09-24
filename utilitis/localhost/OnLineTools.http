@@ -3,7 +3,7 @@
 ### CONTROL --- Obtener todos los datos referente a losetasOnLine
 GET http://localhost:1234/losetasOnLine
 
-### CONTROL --- Obtener todos los investigadores conectados
+### CONTROL --- Obtener todos los investigadores conectados en los ultimos 15 min
 GET http://localhost:1234/losetasOnLine/allUsersOnLine
 
 ### CONTROL --- Obtener investigadores conectados de una zona

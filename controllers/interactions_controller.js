@@ -60,8 +60,8 @@ export class InteractionsController {
     static async respondToInvitation(req, res) {
         try {
             const { id } = req.params // id de la interacción
-            const { idUser, response, invData } = req.body
-            console.log('✅❌ --- respondToInvitation --- recibido:', { id, idUser, response });
+            const { idUser, nameUser, response, invData } = req.body
+            console.log('✅❌ --- respondToInvitation --- recibido:', { id, idUser, nameUser,  response });
 
             // Validaciones básicas
             if (!idUser || !response) {
@@ -91,7 +91,7 @@ export class InteractionsController {
                 // Aquí el modelo debería manejar la lógica de declarar ganador al oponente
             }
 
-            const result = await InteractionsModel.respondToInvitation({ idInteraction: id, idUser, response, invData })
+            const result = await InteractionsModel.respondToInvitation({ idInteraction: id, idUser, nameUser, response, invData })
 
             // si ha salido mal ...
             if (!result.success) return res.status(400).json({ message: result.message })
@@ -116,8 +116,8 @@ export class InteractionsController {
     //TODO cuando se haga este POOST el host debe ponerse como inactivo para qeu no le llegen peticiones de emparejamiento
     static async createInteraction(req, res) {
         try {
-            const { idUserHost, idUserGuest, invData, type, idLocationMap } = req.body
-            console.log('➕ --- createInteraction --- recibido:', { idUserHost, idUserGuest, type, idLocationMap });
+            const { idUserHost, nameUserHost, idUserGuest, invData, type, idLocationMap } = req.body
+            console.log('➕ --- createInteraction --- recibido:', { idUserHost, nameUserHost, idUserGuest, type, idLocationMap });
 
             // Validaciones básicas
             if (!idUserHost || !idUserGuest || !type || !idLocationMap ) {
@@ -135,8 +135,10 @@ export class InteractionsController {
             }
 
             const newInteraction = await InteractionsModel.createInteraction({ 
-                idUserHost, 
+                idUserHost,
+                nameUserHost,
                 idUserGuest, 
+                nameUserGest: 'Invitado', // Nombre por defecto para el invitado
                 invData, 
                 type, 
                 idLocationMap 
