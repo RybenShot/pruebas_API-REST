@@ -76,6 +76,20 @@ export class MapsController {
         }
     }
 
+    // PEDIMOS todos las votaciones sobre los mapas
+    static async getAllVotesMap (req, res){
+        try {
+            const votes = await MapModel.getAllVotesMap()
+            if (!votes) {
+                return res.status(404).json({ message: 'Error interno, no se han encontrado votaciones' })
+            }
+            return res.status(202).json(votes)
+        } catch (error) {
+            console.error('❌ getAllVotesMap error :', error);
+            return res.status(500).json({ message: 'Error interno' });
+        }
+    }
+
     // retornamos likes dislikes de un mapa
     static async getLikeDislike (req, res) {
         try {

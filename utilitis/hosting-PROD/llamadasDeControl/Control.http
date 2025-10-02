@@ -1,0 +1,38 @@
+### Recuperar toda la lista de investigadores
+GET https://api-arkhamhorror.up.railway.app/inv
+
+### Recuperar toda la lista de preview investigadores
+GET https://api-arkhamhorror.up.railway.app/inv/previewList
+
+### Obtener la lista completa de investigadores OnLine
+GET https://api-arkhamhorror.up.railway.app/invInPlay
+
+### Recuperar toda la lista de mapas
+GET https://api-arkhamhorror.up.railway.app/maps
+
+### Obtener lista de votaciones
+
+
+### Listar todos los enemigos
+GET https://api-arkhamhorror.up.railway.app/enemies
+
+### Listar todos los enemigos DE UN MAPA CONCRETO
+GET https://api-arkhamhorror.up.railway.app/maps/enemies/5
+
+### Recuperar toda la lista de mapas en juego
+GET https://api-arkhamhorror.up.railway.app/mapInPlay
+
+### Recuperar toda la lista de mapas en juego
+GET https://api-arkhamhorror.up.railway.app/mapInPlay
+
+### Obtener todos los objetos de un investigador
+GET https://api-arkhamhorror.up.railway.app/inv/2/objects
+
+### Obtener todos los datos referente a losetasOnLine
+GET https://api-arkhamhorror.up.railway.app/losetasOnLine
+
+### Obtener todos los datos referente a losetasOnLine
+GET https://api-arkhamhorror.up.railway.app/losetasOnLine
+
+### Obtener historial de interacciones
+GET https://api-arkhamhorror.up.railway.app/interactions

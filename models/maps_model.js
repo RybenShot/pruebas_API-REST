@@ -75,6 +75,11 @@ export class MapModel{
         return map
     }
 
+    // retorna toda al lista de votaciones
+    static async getAllVotesMap(){
+        return mapVotesJSON
+    }
+
     // retornamos votacion de likes y dislikes de un mapa
     static async getLikeDislike (idMap){
         // buscamos el mapa por su id
