@@ -10,6 +10,9 @@ GET http://localhost:1234/maps?expansion=AHBase
 ### Recuperar un mapa por la id
 GET http://localhost:1234/maps/0
 
+### Obtener lista de votaciones
+GET http://localhost:1234/maps/getAllVotesMaps
+
 ### Get numero de votos de un mapa likes - Dislikes
 GET http://localhost:1234/maps/likeDislike/2
 
