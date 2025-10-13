@@ -99,7 +99,7 @@ export class losetasOnLineController {
                 res.status(201).json({ message: message })
             } else {
                 message = "algo salido ido mal"
-                res.json({ message: message })
+                res.status(500).json({ message: message })
             }
         } catch (error) {
             console.error('❌ postUserInZone error :', error);

@@ -20,7 +20,17 @@
   {
     "idZone": 4,
     "nameZone": "Periferia",
-    "invOnLine": [],
+    "invOnLine": [
+      {
+        "idUser": "user12345",
+        "invData": {
+          "name": "Investigador",
+          "level": 1
+        },
+        "available": true,
+        "lastEddited": 1760360148800
+      }
+    ],
     "specialEvent": {}
   },
   {
