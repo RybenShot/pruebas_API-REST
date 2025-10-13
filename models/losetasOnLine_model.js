@@ -8,8 +8,13 @@ export class losetasOnLineModel{
         writeFileSync('./databaseJSON/losetasOnLine.json', JSON.stringify(listLosetasOnLine, null, 2))
     }
 
+    // metodo privado para buscar la zona - loseta del mapa
+    static _searchZone(idZone){
+        return listLosetasOnLine.find(zone => zone.idZone == idZone)
+    }
+
     // eliminar usuarios inactivos (más de 15 minutos sin actividad)
-    static removeInactiveUsers(){
+    static _removeInactiveUsers(){
         const fifteenMinutesAgo = Date.now() - (15 * 60 * 1000) // 15 minutos en millisegundos
         let hasChanges = false
 
@@ -40,7 +45,7 @@ export class losetasOnLineModel{
     // obtener número total de usuarios online
     static getAllUsersOnLine(){
         // primero ejecuta la función de quitar los investigadores inactivos
-        this.removeInactiveUsers()
+        this._removeInactiveUsers()
 
         // contar usuarios activos en todas las zonas
         let totalUsers = 0
@@ -57,9 +62,9 @@ export class losetasOnLineModel{
 
     // obtener usuarios online en una zona específica
     static getUsersInZone({idZone}){
-        this.removeInactiveUsers()
+        this._removeInactiveUsers()
 
-        const zone = listLosetasOnLine.find(zone => zone.idZone === idZone)
+        const zone = this._searchZone(idZone)
         if (!zone) return null
 
         const activeUsers = zone.invOnLine.filter(user => 
@@ -77,11 +82,10 @@ export class losetasOnLineModel{
 
     // obtener un investigador random de una zona específica
     static getRandomUserInZone({idZone}, idUser){
-        this.removeInactiveUsers()
-
-        console.log(idZone, idUser)
+        this._removeInactiveUsers()
+        // console.log(idZone, idUser)
  
-        const zone = listLosetasOnLine.find(zone => zone.idZone == idZone)
+        const zone = this._searchZone(idZone)
         if (!zone) return null
 
         // filtrar usuarios activos (no vacíos)
@@ -117,22 +121,27 @@ export class losetasOnLineModel{
         }
     }
 
-    // agregar o actualizar investigador en una zona
-    static addOrUpdateUserInZone({idZone, idUser, invData, available = true}){
-        this.removeInactiveUsers()
-
-        const targetZone = listLosetasOnLine.find(zone => zone.idZone === idZone)
-        if (!targetZone) throw new Error('ZONE_NOT_FOUND')
-
-        // PASO 1: borrar usuario de cualquier zona donde esté actualmente
+    // metodo privado para eliminar al usuario del mapa
+    static _removeUserFromMap(idUser){
         listLosetasOnLine.forEach(zone => {
             const userIndex = zone.invOnLine.findIndex(user => user.idUser === idUser)
             // si hemos encontrado el usuario, lo borramos
             if (userIndex !== -1) {
                 zone.invOnLine.splice(userIndex, 1) // Eliminar completamente, no dejar slot vacío
                 console.log(`🗑️ Usuario ${idUser} removido de zona ${zone.nameZone}`)
-            }
+            } 
         })
+    }
+
+    // agregar o actualizar investigador en una zona
+    static addOrUpdateUserInZone({idZone, idUser, invData, available = true}){
+        this._removeInactiveUsers()
+
+        const targetZone = this._searchZone(idZone)
+        if (!targetZone) throw new Error('ZONE_NOT_FOUND')
+
+        // PASO 1: borrar usuario de cualquier zona donde esté actualmente
+        this._removeUserFromMap(idUser)
 
         // PASO 2: Agregar usuario a la nueva zona
         const userData = {
