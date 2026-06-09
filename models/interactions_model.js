@@ -141,6 +141,22 @@ export class InteractionsModel {
         return newInteraction
     }
 
+    static async eventDimensionalMirror(interactionOnLine){
+        const now = Date.now()
+
+        interactionOnLine.status = "finished"
+        interactionOnLine.lastEdited = now
+        interactionOnLine.event.type = "dimensionalMirror"
+
+        this._saveAll()
+        console.log(` 𖥠𖥠 Espejo Dimensional 𖥠𖥠 `)
+        return { 
+            success: true,
+            message: "Espejo Dimensional", 
+            interaction: interactionOnLine 
+        }
+    }
+
     // responder a una invitación (aceptar o denegar)
     static async respondToInvitation({ idInteraction, idUser, nameUser, response, invData }) {
         // console.log('✅❌ --- respondToInvitation --- recibido:', { idInteraction, idUser, response });
@@ -159,6 +175,11 @@ export class InteractionsModel {
         if (interaction.idUserGest !== idUser) return { success: false, message: "No tienes autorización para responder esta invitación" }
         // verificar que la invitación esté pendiente
         if (interaction.status !== "pending") return { success: false, message: `Esta invitación ya no está disponible porque ya ha sido respondida con ${interaction.status}` }
+        //! ESPEJO DIMENSIONAL verificar que no sean el mismo investigador, de ser asi, derivar interaccion a "espejo dimensional"
+        if (interaction.event.invDataHost.idInv === invData.idInv) {
+            // console.log("hey! son la misma persona!")
+            return this.eventDimensionalMirror(listInteractionsOnLine[interactionIndex], interaction)
+        }
 
         // actualizar la interacción según la respuesta
         const now = Date.now()
@@ -219,8 +240,7 @@ export class InteractionsModel {
                 interaction: listInteractionsOnLine[interactionIndex] 
             }
             
-        } 
-        else {
+        } else {
             return { success: false, message: "Respuesta no válida. Use 'accepted' o 'rejected'" }
         }
     }
