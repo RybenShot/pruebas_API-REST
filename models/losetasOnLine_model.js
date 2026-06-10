@@ -1,91 +1,124 @@
 import mongoose from 'mongoose'
+import { randomUUID } from 'node:crypto'
 import listLosetasOnLine from '../databaseJSON/losetasOnLine.json' with { type: "json" }
 
-const UserInZone = mongoose.model('UserInZone', new mongoose.Schema({
-    idZone:      mongoose.Schema.Types.Mixed,
-    idUser:      String,
-    invData:     mongoose.Schema.Types.Mixed,
-    available:   { type: Boolean, default: true },
-    lastEddited: Number
+const LosetaOnLine = mongoose.model('LosetaOnLine', new mongoose.Schema({
+    idZone:       mongoose.Schema.Types.Mixed,
+    nameZone:     String,
+    specialEvent: mongoose.Schema.Types.Mixed,
+    invOnLine:    [mongoose.Schema.Types.Mixed]
 }))
 
 const FIFTEEN_MINUTES = 15 * 60 * 1000
 
 export class losetasOnLineModel {
 
-    static _getZoneMeta(idZone) {
-        return listLosetasOnLine.find(z => z.idZone == idZone)
+    static async _ensureZonesExist() {
+        const count = await LosetaOnLine.countDocuments()
+        if (count === 0) {
+            const zones = listLosetasOnLine.map(z => ({
+                idZone: z.idZone,
+                nameZone: z.nameZone,
+                specialEvent: z.specialEvent || null,
+                invOnLine: []
+            }))
+            await LosetaOnLine.insertMany(zones)
+            console.log('🌱 Zonas inicializadas en MongoDB')
+        }
     }
 
     static async _removeInactiveUsers() {
         const cutoff = Date.now() - FIFTEEN_MINUTES
-        await UserInZone.deleteMany({ lastEddited: { $lt: cutoff } })
+        await LosetaOnLine.updateMany(
+            {},
+            { $pull: { invOnLine: { idUser: { $exists: true }, lastEddited: { $lt: cutoff } } } }
+        )
+    }
+
+    static async _removeUserFromMap(idUser) {
+        await LosetaOnLine.updateMany(
+            {},
+            { $pull: { invOnLine: { idUser: idUser } } }
+        )
     }
 
     static async getAllUsersOnLine() {
+        await this._ensureZonesExist()
         await this._removeInactiveUsers()
-        const total = await UserInZone.countDocuments()
+
+        const zones = await LosetaOnLine.find({})
+        let total = 0
+        zones.forEach(zone => {
+            total += zone.invOnLine.filter(u => u.idUser).length
+        })
+
         console.log(`📊 Total usuarios online: ${total}`)
         return total
     }
 
     static async getUsersInZone({ idZone }) {
+        await this._ensureZonesExist()
         await this._removeInactiveUsers()
 
-        const zoneMeta = this._getZoneMeta(idZone)
-        if (!zoneMeta) return null
+        const zone = await LosetaOnLine.findOne({ idZone })
+        if (!zone) return null
 
-        const users = await UserInZone.find({ idZone })
+        const activeUsers = zone.invOnLine.filter(u => u.idUser)
 
         return {
-            idZone: zoneMeta.idZone,
-            nameZone: zoneMeta.nameZone,
-            userCount: users.length,
-            users,
-            specialEvent: zoneMeta.specialEvent
+            idZone: zone.idZone,
+            nameZone: zone.nameZone,
+            userCount: activeUsers.length,
+            users: activeUsers,
+            specialEvent: zone.specialEvent
         }
     }
 
     static async getRandomUserInZone({ idZone }, idUser) {
+        await this._ensureZonesExist()
         await this._removeInactiveUsers()
 
-        const zoneMeta = this._getZoneMeta(idZone)
-        if (!zoneMeta) return null
+        const zone = await LosetaOnLine.findOne({ idZone })
+        if (!zone) return null
 
-        const users = await UserInZone.find({
-            idZone,
-            available: { $ne: false },
-            idUser: { $ne: String(idUser) }
-        })
+        const availableUsers = zone.invOnLine.filter(u =>
+            u.idUser && u.available !== false && u.idUser != idUser
+        )
 
-        if (users.length === 0) return null
+        if (availableUsers.length === 0) return null
 
-        const randomUser = users[Math.floor(Math.random() * users.length)]
+        const randomUser = availableUsers[Math.floor(Math.random() * availableUsers.length)]
 
         return {
             user: randomUser,
-            zone: { idZone: zoneMeta.idZone, nameZone: zoneMeta.nameZone },
-            totalUsersInZone: users.length
+            zone: { idZone: zone.idZone, nameZone: zone.nameZone },
+            totalUsersInZone: availableUsers.length
         }
     }
 
     static async addOrUpdateUserInZone({ idZone, idUser, invData, available = true }) {
-        const zoneMeta = this._getZoneMeta(idZone)
-        if (!zoneMeta) throw new Error('ZONE_NOT_FOUND')
+        await this._ensureZonesExist()
+
+        const targetZone = await LosetaOnLine.findOne({ idZone })
+        if (!targetZone) throw new Error('ZONE_NOT_FOUND')
 
         // sacar al usuario de cualquier zona donde esté
-        await UserInZone.deleteMany({ idUser })
+        await this._removeUserFromMap(idUser)
 
         // añadirlo a la nueva zona
-        await UserInZone.create({
-            idZone,
+        const userData = {
             idUser,
             invData: invData || [],
             available,
             lastEddited: Date.now()
-        })
+        }
 
-        console.log(`➕ Usuario ${idUser} agregado a zona ${zoneMeta.nameZone}`)
+        await LosetaOnLine.findOneAndUpdate(
+            { idZone },
+            { $push: { invOnLine: userData } }
+        )
+
+        console.log(`➕ Usuario ${idUser} agregado a zona ${targetZone.nameZone}`)
         return true
     }
 }
