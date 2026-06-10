@@ -1,4 +1,3 @@
-import listInteractionsOnLine from '../databaseJSON/interactionsOnLine.json' with { type: "json" }
 import { InteractionsModel } from '../models/interactions_model.js'
 
 export class InteractionsController {
@@ -6,11 +5,11 @@ export class InteractionsController {
     // GET todas las interacciones (para admin/debug)
     static async getAllInteractions(req, res) {
         try {
-            console.log('🔍 --- getAllInteractions ---');
-            res.json(listInteractionsOnLine)
+            const interactions = await InteractionsModel.getAll()
+            res.json(interactions)
         } catch (error) {
-            console.error('❌ getAllInteractions error:', error);
-            return res.status(500).json({ message: 'Error interno' });
+            console.error('❌ getAllInteractions error:', error)
+            return res.status(500).json({ message: 'Error interno' })
         }
     }
 

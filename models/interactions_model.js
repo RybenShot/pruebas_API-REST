@@ -1,552 +1,275 @@
-import listInteractionsOnLine from '../databaseJSON/interactionsOnLine.json' with { type: "json" }
+import mongoose from 'mongoose'
 import { randomUUID } from 'node:crypto'
-import { writeFileSync } from 'fs'
+
+const Interaction = mongoose.model('Interaction', new mongoose.Schema({
+    idInteraccionOnLine: { type: String, required: true, unique: true },
+    idLocationMap:       mongoose.Schema.Types.Mixed,
+    idUserHost:          String,
+    nameUserHost:        String,
+    idUserGest:          String,
+    nameUserGest:        String,
+    status:              { type: String, default: 'pending' },
+    isActive:            { type: Boolean, default: true },
+    created:             Number,
+    lastEdited:          Number,
+    event:               mongoose.Schema.Types.Mixed
+}))
 
 export class InteractionsModel {
-    // método privado para guardar cambios en el JSON
-    static _saveAll() {
-        writeFileSync('./databaseJSON/interactionsOnLine.json', JSON.stringify(listInteractionsOnLine, null, 2))
+
+    static async getAll() {
+        return await Interaction.find({})
     }
 
-    // función para generar número aleatorio (simulación de dado)
-    static _rollDice() {
-        return Math.floor(Math.random() * 6) + 1
-    }
-        // función privada para generar recompensa aleatoria al ganar
     static _generateRandomReward(loserInvestigator) {
         const rewardTypes = ['clue', 'remnant', 'money', 'object']
         const randomType = rewardTypes[Math.floor(Math.random() * rewardTypes.length)]
-
         switch (randomType) {
-            case 'clue':
-                return {
-                    type: 'clue',
-                    amount: 1,
-                    description: '1 pista ganada'
-                }
-            case 'remnant':
-                return {
-                    type: 'remnant', 
-                    amount: 2,
-                    description: '2 restos ganado'
-                }
-            case 'money':
-                return {
-                    type: 'money', 
-                    amount: 3,
-                    description: '3 dinero ganado'
-                }
+            case 'clue':    return { type: 'clue', amount: 1, description: '1 pista ganada' }
+            case 'remnant': return { type: 'remnant', amount: 2, description: '2 restos ganado' }
+            case 'money':   return { type: 'money', amount: 3, description: '3 dinero ganado' }
             case 'object':
-                // Si tiene objetos, tomar uno aleatorio
-                if (loserInvestigator.possessions && loserInvestigator.possessions.length > 0) {
-                    const randomIndex = Math.floor(Math.random() * loserInvestigator.possessions.length)
-                    const randomObject = loserInvestigator.possessions[randomIndex]
-                    return {
-                        type: 'object',
-                        objectId: randomObject.id,
-                        objectData: randomObject,
-                        description: `Objeto ganado: ${randomObject.translations?.es?.name || randomObject.name || 'Objeto desconocido'}`
-                    }
+                if (loserInvestigator.possessions?.length > 0) {
+                    const obj = loserInvestigator.possessions[Math.floor(Math.random() * loserInvestigator.possessions.length)]
+                    return { type: 'object', objectId: obj.id, objectData: obj, description: `Objeto ganado: ${obj.translations?.es?.name || obj.name || 'Objeto desconocido'}` }
                 }
-            default:
-                return {
-                    type: 'money',
-                    amount: 3,
-                    description: '3 dinero ganado (default)'
-                }
+            default: return { type: 'money', amount: 3, description: '3 dinero ganado (default)' }
         }
     }
 
-    // obtener invitaciones pendientes para el GUEST
     static async getPendingInvitations({ idUser }) {
-        // console.log('🔍 --- getPendingInvitations --- recibido:', idUser);
-        
-        // this.removeInactiveInteractions()
-
-        const pendingInteractions = listInteractionsOnLine.filter(interaction =>
-            interaction.idUserGest === idUser && 
-            interaction.status === "pending"
-        )
-
-        if (!pendingInteractions[0]) return null
-
-        return pendingInteractions[0]
+        const pending = await Interaction.findOne({ idUserGest: idUser, status: 'pending' })
+        return pending || null
     }
-    
-    // endpoint para polling del HOST - espera respuesta del otro
+
     static async pollHostInteraction({ idInteraction, idUser }) {
-        //console.log('🔄 --- pollHostInteraction --- recibido:', { idInteraction, idUser });
-
-        // buscamos la interaccion
-        const interaction = listInteractionsOnLine.find(interaction => interaction.idInteraccionOnLine === idInteraction)
-
-        // miramos si existe
-        if (!interaction) {
-            return "no existe esta interaccion"
-        } else if (interaction.status != "pending" && interaction.status != "accepted" && interaction.status != "rejected") {
-            return "el estado de esta interaccion esta rechazada, expirado o finalizado"
-        } else if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
-            return "no estas autorizado para ver esta informacion"
-        }
-
-        // retornar estado actual para que el host o gest sepa qué pasó
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return "no existe esta interaccion"
+        if (!['pending', 'accepted', 'rejected'].includes(interaction.status)) return "el estado de esta interaccion esta rechazada, expirado o finalizado"
+        if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) return "no estas autorizado para ver esta informacion"
         return interaction
     }
 
-    // crear nueva interacción entre usuarios
     static async createInteraction({ idUserHost, nameUserHost, idUserGuest, nameUserGest, invData, type, idLocationMap }) {
-        // console.log('➕ --- createInteraction --- recibido:', { idUserHost, idUserGuest, type, idLocationMap });
-
-        // limpiar interacciones inactivas primero
-        // this.removeInactiveInteractions()
-
-        // verificar que no exista ya una interacción activa entre estos usuarios
-        const existingInteraction = listInteractionsOnLine.find(interaction => 
-            interaction.isActive && 
-            ((interaction.idUserHost === idUserHost && interaction.idUserGest === idUserGuest) ||
-             (interaction.idUserHost === idUserGuest && interaction.idUserGest === idUserHost))
-        )
-
-        if (existingInteraction) {
-            console.warn('⚠️ Ya existe una interacción activa entre estos usuarios');
+        const existing = await Interaction.findOne({
+            isActive: true,
+            $or: [
+                { idUserHost, idUserGest: idUserGuest },
+                { idUserHost: idUserGuest, idUserGest: idUserHost }
+            ]
+        })
+        if (existing) {
+            console.warn('⚠️ Ya existe una interacción activa entre estos usuarios')
             return null
         }
 
         const now = Date.now()
-        const newInteraction = {
+        const newInteraction = await Interaction.create({
             idInteraccionOnLine: randomUUID(),
-            idLocationMap: idLocationMap,
-            idUserHost: idUserHost,
+            idLocationMap,
+            idUserHost,
             nameUserHost: nameUserHost || 'Anfitrión',
             idUserGest: idUserGuest,
             nameUserGest: nameUserGest || 'Invitado',
-            status: "pending", // "accepted" | "rejected" | "expired" | "finished"
+            status: 'pending',
+            isActive: true,
             created: now,
             lastEdited: now,
-            event: {
-                type: type, // "fight", "trade", "cooperation", etc.
-                invDataHost: invData || null,
-                invDataGest: null, // se llenará cuando el invitado acepte
-                turn: null, // se establecerá cuando inicie la interacción
-                // aquí se añadirán variables específicas según el tipo de evento
-                
-            }
-        }
-
-        // añadir la nueva interacción
-        listInteractionsOnLine.push(newInteraction)
-        this._saveAll()
+            event: { type, invDataHost: invData || null, invDataGest: null, turn: null }
+        })
 
         console.log(`✅ Nueva interacción creada: ${newInteraction.idInteraccionOnLine} (${type})`)
         return newInteraction
     }
 
-    static async eventDimensionalMirror(interactionOnLine){
-        const now = Date.now()
-
-        interactionOnLine.status = "finished"
-        interactionOnLine.lastEdited = now
-        interactionOnLine.event.type = "dimensionalMirror"
-
-        this._saveAll()
+    static async eventDimensionalMirror(interaction) {
+        interaction.status = 'finished'
+        interaction.lastEdited = Date.now()
+        interaction.event = { ...interaction.event, type: 'dimensionalMirror' }
+        interaction.markModified('event')
+        await interaction.save()
         console.log(` 𖥠𖥠 Espejo Dimensional 𖥠𖥠 `)
-        return { 
-            success: true,
-            message: "Espejo Dimensional", 
-            interaction: interactionOnLine 
-        }
+        return { success: true, message: 'Espejo Dimensional', interaction }
     }
 
-    // responder a una invitación (aceptar o denegar)
+    static startEventOnLine(interaction) {
+        if (interaction.event.type === 'fight') {
+            const hostLife = interaction.event.invDataHost.atributes.life
+            const gestLife = interaction.event.invDataGest.atributes.life
+            interaction.event = {
+                ...interaction.event,
+                round: 0,
+                gameData: {
+                    currentLifeHost: hostLife, currentLifeGest: gestLife,
+                    maxLifeHost: hostLife, maxLifeGest: gestLife,
+                    initialRollHost: null, initialRollGest: null,
+                    bothRolled: false, history: []
+                },
+                winner: null,
+                status: 'waitingInitialRoll'
+            }
+            console.log(`🎮 Juego de pelea inicializado: ${interaction.idInteraccionOnLine}`)
+        } else if (interaction.event.type === 'trade') {
+            console.log('🔄 Iniciando evento de intercambio')
+        } else if (interaction.event.type === 'resonance') {
+            console.log('✨ Iniciando evento de resonancia')
+        } else {
+            console.warn(`⚠️ Tipo de evento desconocido: ${interaction.event.type}`)
+            return null
+        }
+        return interaction
+    }
+
     static async respondToInvitation({ idInteraction, idUser, nameUser, response, invData }) {
-        // console.log('✅❌ --- respondToInvitation --- recibido:', { idInteraction, idUser, response });
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
+        if (interaction.idUserGest !== idUser) return { success: false, message: 'No tienes autorización para responder esta invitación' }
+        if (interaction.status !== 'pending') return { success: false, message: `Esta invitación ya no está disponible porque ya ha sido respondida con ${interaction.status}` }
 
-        // buscar la interacción
-        const interactionIndex = listInteractionsOnLine.findIndex(interaction => 
-            interaction.idInteraccionOnLine === idInteraction
-        )
-        // si no encuentra ninguno ...
-        if (interactionIndex === -1) return { success: false, message: "Interacción no encontrada" }
-
-        // gracias a la posicion, nos guardamos los datos de la interaccion
-        const interaction = listInteractionsOnLine[interactionIndex]
-
-        // verificar que el usuario sea el GUEST
-        if (interaction.idUserGest !== idUser) return { success: false, message: "No tienes autorización para responder esta invitación" }
-        // verificar que la invitación esté pendiente
-        if (interaction.status !== "pending") return { success: false, message: `Esta invitación ya no está disponible porque ya ha sido respondida con ${interaction.status}` }
-        //! ESPEJO DIMENSIONAL verificar que no sean el mismo investigador, de ser asi, derivar interaccion a "espejo dimensional"
         if (interaction.event.invDataHost.idInv === invData.idInv) {
-            // console.log("hey! son la misma persona!")
-            return this.eventDimensionalMirror(listInteractionsOnLine[interactionIndex], interaction)
+            return this.eventDimensionalMirror(interaction)
         }
 
-        // actualizar la interacción según la respuesta
         const now = Date.now()
-        
-        if (response === "accepted") {
-            listInteractionsOnLine[interactionIndex] = {
-                // copiamos lo que habia en el objeto de la invitacion y actualizamos solo lo que nos interesa
-                ...interaction,
-                status: "accepted",
-                lastEdited: now,
-                nameUserGest: nameUser || 'Invitado',
-                event: {
-                    // igual que aqui
-                    ...interaction.event,
-                    invDataGest: invData || null
-                }
-            }
 
-            // comienza el evento que sea
-            await this.startEventOnLine(listInteractionsOnLine[interactionIndex])
-            
-            this._saveAll()
+        if (response === 'accepted') {
+            interaction.status = 'accepted'
+            interaction.lastEdited = now
+            interaction.nameUserGest = nameUser || 'Invitado'
+            interaction.event = { ...interaction.event, invDataGest: invData || null }
+            this.startEventOnLine(interaction)
+            interaction.markModified('event')
+            await interaction.save()
             console.log(`✅ Invitación aceptada: ${idInteraction}`)
+            return { success: true, message: 'Invitación aceptada', interaction }
 
-            return { 
-                success: true, 
-                message: "Invitación aceptada", 
-                interaction: listInteractionsOnLine[interactionIndex] 
-            }
-            
-        } else if (response === "rejected") {
-            listInteractionsOnLine[interactionIndex] = {
-                ...interaction,
-                status: "rejected",
-                lastEdited: now
-            }
-            
-            this._saveAll()
+        } else if (response === 'rejected') {
+            interaction.status = 'rejected'
+            interaction.lastEdited = now
+            await interaction.save()
             console.log(`❌ Invitación rechazada: ${idInteraction}`)
-            return { 
-                success: true, 
-                message: "Invitación rechazada", 
-                interaction: listInteractionsOnLine[interactionIndex] 
-            }
-            
-        } else if (response === "timeout") {
-            listInteractionsOnLine[interactionIndex] = {
-                ...interaction,
-                status: "timeout",
-                lastEdited: now
-            }
-            
-            this._saveAll()
-            console.log(`❌ Invitacion cerrada por tiempo excedido: ${idInteraction}`)
-            return { 
-                success: true, 
-                message: "Tiempo excedido", 
-                interaction: listInteractionsOnLine[interactionIndex] 
-            }
-            
+            return { success: true, message: 'Invitación rechazada', interaction }
+
+        } else if (response === 'timeout') {
+            interaction.status = 'timeout'
+            interaction.lastEdited = now
+            await interaction.save()
+            console.log(`❌ Invitación cerrada por tiempo excedido: ${idInteraction}`)
+            return { success: true, message: 'Tiempo excedido', interaction }
+
         } else {
             return { success: false, message: "Respuesta no válida. Use 'accepted' o 'rejected'" }
         }
     }
 
-    // Disparador de eventoOnLine
-    static startEventOnLine(interactionActual){
-        // console.log('🚀 --- startEventOnLine --- recibido:', interactionActual);
-        if (interactionActual.event.type === "fight") {
-            // Inicializar datos del juego
-            const hostLife = interactionActual.event.invDataHost.atributes.life
-            const gestLife = interactionActual.event.invDataGest.atributes.life
-            
-            interactionActual.event = {
-                ...interactionActual.event,
-                round: 0,
-                gameData: {
-                    currentLifeHost: hostLife,
-                    currentLifeGest: gestLife,
-                    maxLifeHost: hostLife,
-                    maxLifeGest: gestLife,
-                    initialRollHost: null,
-                    initialRollGest: null,
-                    bothRolled: false,
-                    history: []
-                },
-                winner: null,
-                status: "waitingInitialRoll" // nuevo estado para controlar la fase del juego
-            }
-            console.log(`🎮 Juego de pelea inicializado para interacción: ${interactionActual.idInteraccionOnLine}`)
-
-        } else if (interactionActual.event.type === "trade") {
-            console.log('🔄 Iniciando evento de intercambio')
-            
-        } else if (interactionActual.event.type === "resonance") {
-            console.log('✨ Iniciando evento de resonancia')
-            
-        } else {
-            console.warn(`⚠️ Tipo de evento desconocido: ${interactionActual.event.type}`)
-            return null
-        }
-        return interactionActual
-    }
-
-    // FASE 1: Tirada inicial de dados
     static async initialRoll({ idInteraction, idUser, diceResult }) {
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
 
-        // Buscar la interacción
-        const interaction = listInteractionsOnLine.find(interaction => 
-            interaction.idInteraccionOnLine === idInteraction
-        )
-
-        if (!interaction ) {
-            return { success: false, message: "Interacción no encontrada" }
-        }
-
-        const now = Date.now()
-
-        // asignar el resultado si es el HOST o el GEST
         if (interaction.idUserHost === idUser) {
-            if (interaction.event.gameData.initialRollHost !== null) {
-                return { success: false, message: "Ya has realizado tu tirada inicial" }
-            }
+            if (interaction.event.gameData.initialRollHost !== null) return { success: false, message: 'Ya has realizado tu tirada inicial' }
             interaction.event.gameData.initialRollHost = diceResult
         } else {
-            if (interaction.event.gameData.initialRollGest !== null) {
-                return { success: false, message: "Ya has realizado tu tirada inicial" }
-            }
+            if (interaction.event.gameData.initialRollGest !== null) return { success: false, message: 'Ya has realizado tu tirada inicial' }
             interaction.event.gameData.initialRollGest = diceResult
         }
 
-        // Actualizar timestamp
-        interaction.lastEdited = now
-
-        // Verificar si ambos han tirado
+        interaction.lastEdited = Date.now()
         const hostRoll = interaction.event.gameData.initialRollHost
         const gestRoll = interaction.event.gameData.initialRollGest
 
         if (hostRoll != null && gestRoll != null) {
-            // Ambos han tirado, determinar quién empieza
-            let start
-            if (hostRoll > gestRoll) {
-                start = interaction.idUserHost
-            } else if (gestRoll > hostRoll) {
-                start = interaction.idUserGest
-            } else {
-                // Empate, gana el host
-                start = interaction.idUserHost
-            }
-
-            // Actualizar el estado del juego
+            const start = hostRoll >= gestRoll ? interaction.idUserHost : interaction.idUserGest
             interaction.event.turn = start
             interaction.event.gameData.bothRolled = true
-            interaction.event.status = "playing"
+            interaction.event.status = 'playing'
             interaction.event.round = 1
-
             console.log(`🎲 Tiradas completas - Host: ${hostRoll}, Guest: ${gestRoll}, Comienza: ${start}`)
         }
 
-        this._saveAll()
-
-        return { 
-            success: true, 
-            message: "Tirada registrada correctamente"
-        }
+        interaction.markModified('event')
+        await interaction.save()
+        return { success: true, message: 'Tirada registrada correctamente' }
     }
 
-    // FASE 1: Consultar si es mi turno
     static async checkMyTurn({ idInteraction, idUser }) {
-        console.log('🔍 --- checkMyTurn --- recibido:', { idInteraction, idUser });
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
 
-        // Buscar la interacción
-        const interaction = listInteractionsOnLine.find(interaction => 
-            interaction.idInteraccionOnLine === idInteraction
-        )
-
-        if (!interaction) {
-            return { success: false, message: "Interacción no encontrada" }
+        if (interaction.status === 'finished' && interaction.event.winner) {
+            return { status: interaction.event.winner === idUser ? 'you won' : 'you lost' }
         }
-
-        // Verificar estados del juego, por si has ganado
-        if (interaction.status === "finished" && interaction.event.winner) {
-            if (interaction.event.winner === idUser) {
-                return { status: "you won" }
-            } else {
-                return { status: "you lost" }
-            }
+        if (interaction.status === 'abandoned') return { status: 'your_rival_abandoned' }
+        if (interaction.status === 'timeout') return { status: 'your rival has closed the game' }
+        if (interaction.event.status === 'playing') {
+            return interaction.event.turn === idUser
+                ? { status: 'your turn', interaction }
+                : { status: 'not your' }
         }
-
-        if (interaction.status === "abandoned") {
-            return { status: "your_rival_abandoned" }
-        }
-
-        if (interaction.status === "timeout") {
-            return { status: "your rival has closed the game" }
-        }
-
-        // Si el juego está en progreso
-        if (interaction.event.status === "playing") {
-            if (interaction.event.turn === idUser) {
-                return { 
-                    status: "your turn", 
-                    interaction: interaction 
-                }
-            } else {
-                return { status: "not your" }
-            }
-        }
-
-        // Si está esperando tiradas iniciales
-        if (interaction.event.status == "waitingInitialRoll") {
-            return { 
-                status: "waiting_initial_roll"
-            }
-        }
-
-        // Estado por defecto
-        return { status: "false" }
+        if (interaction.event.status === 'waitingInitialRoll') return { status: 'waiting_initial_roll' }
+        return { status: 'false' }
     }
 
-    // FASE 1: Consultar estado del juego
     static async getGameState({ idInteraction, idUser }) {
-        console.log('🔍 --- getGameState --- recibido:', { idInteraction, idUser });
-        
-        // Buscar la interacción
-        const interaction = listInteractionsOnLine.find(interaction => 
-            interaction.idInteraccionOnLine === idInteraction
-        )
-
-        if (!interaction) {
-            return { success: false, message: "Interacción no encontrada" }
-        }
-
-        // Verificar que el usuario sea parte de la interacción
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
         if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
-            return { success: false, message: "No tienes autorización para ver esta interacción" }
-        }  
-        return { 
-            success: true, 
-            interaction: interaction 
+            return { success: false, message: 'No tienes autorización para ver esta interacción' }
         }
+        return { success: true, interaction }
     }
 
-    // FASE 2: Enviar aciertos y procesar daño
     static async sendHits({ idInteraction, idUser, hits }) {
-        // Buscar la interacción
-        const interaction = listInteractionsOnLine.find(interaction => 
-            interaction.idInteraccionOnLine === idInteraction
-        )
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
+        if (interaction.event.turn !== idUser) return { success: false, message: 'No es tu turno' }
 
-        if (!interaction) {
-            return { 
-                success: false, 
-                message: "Interacción no encontrada" 
-            }
-        }
-
-        // Verificar que sea el turno del usuario
-        if (interaction.event.turn !== idUser) {
-            return {
-                success: false, 
-                message: "No es tu turno" 
-            }
-        }
-
-
-        const now = Date.now()
         const isHost = interaction.idUserHost === idUser
+        if (isHost) interaction.event.gameData.currentLifeGest -= hits
+        else interaction.event.gameData.currentLifeHost -= hits
 
-        // Calcular daño al rival
-        if (isHost) {
-            // El host atacó al guest
-            interaction.event.gameData.currentLifeGest -= hits
-        } else {
-            // El guest atacó al host  
-            interaction.event.gameData.currentLifeHost -= hits
-        }
-
-        // Añadir al historial
         interaction.event.gameData.history.push({
             player: isHost ? 'host' : 'guest',
             damage: hits,
             round: interaction.event.round
         })
+        interaction.lastEdited = Date.now()
 
-        // Actualizar timestamp
-        interaction.lastEdited = now
-
-        // Verificar si alguien ha muerto
         const hostLife = interaction.event.gameData.currentLifeHost
         const gestLife = interaction.event.gameData.currentLifeGest
 
         if (hostLife <= 0 || gestLife <= 0) {
-            // Alguien ha perdido, terminar el juego
             const winner = hostLife > 0 ? interaction.idUserHost : interaction.idUserGest
-            const loser = hostLife > 0 ? interaction.idUserGest : interaction.idUserHost
-            const loserInvestigator = hostLife > 0 ? interaction.event.invDataGest : interaction.event.invDataHost
-
-            // Actualizar estado final
-            interaction.status = "finished"
+            const loserInv = hostLife > 0 ? interaction.event.invDataGest : interaction.event.invDataHost
+            interaction.status = 'finished'
             interaction.event.winner = winner
-            interaction.event.status = "finished"
-
-            // Generar recompensa aleatoria
-            const reward = this._generateRandomReward(loserInvestigator)
-
-            this._saveAll()
-
-            console.log(`🏆 Juego terminado - Ganador: ${winner}, Perdedor: ${loser}`)
-
-            return {
-                success: true,
-                status: "you win",
-                reward: reward
-            }
-
+            interaction.event.status = 'finished'
+            const reward = this._generateRandomReward(loserInv)
+            interaction.markModified('event')
+            await interaction.save()
+            console.log(`🏆 Juego terminado - Ganador: ${winner}`)
+            return { success: true, status: 'you win', reward }
         } else {
-            // Ambos siguen vivos, cambiar turno
             interaction.event.turn = isHost ? interaction.idUserGest : interaction.idUserHost
-            
-            // incrementar el round
             interaction.event.round += 1
-
-            this._saveAll()
-
-            return {
-                success: true,
-                message: "continue"
-            }
+            interaction.markModified('event')
+            await interaction.save()
+            return { success: true, message: 'continue' }
         }
     }
 
-    // FASE X: Abandonar encuentro
     static async abandonEncounter({ idInteraction, idUser }) {
-        // Buscar la interacción
-        const interaction = listInteractionsOnLine.find(interaction => 
-            interaction.idInteraccionOnLine === idInteraction
-        )
-
-        if (!interaction) {
-            return { 
-                success: false, 
-                message: "Interacción no encontrada" 
-            }
-        }
-
-        // Verificar que el usuario sea parte de la interacción
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
         if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
-            return { 
-                success: false, 
-                message: "No tienes autorización para abandonar esta interacción" 
-            }
+            return { success: false, message: 'No tienes autorización para abandonar esta interacción' }
         }
-
-        // Actualizar estado a abandonado
-        interaction.status = "abandoned"
+        interaction.status = 'abandoned'
         interaction.lastEdited = Date.now()
         interaction.event.winner = interaction.idUserHost === idUser ? interaction.idUserGest : interaction.idUserHost
-        
-        this._saveAll()
-        console.log(`🏳️ Interacción abandonada por el usuario: ${idUser}`)
-        
-        return {
-            success: true,
-            message: "Has abandonado la interacción",
-            interaction: interaction
-        }
+        interaction.markModified('event')
+        await interaction.save()
+        console.log(`🏳️ Interacción abandonada por: ${idUser}`)
+        return { success: true, message: 'Has abandonado la interacción', interaction }
     }
-
 }
