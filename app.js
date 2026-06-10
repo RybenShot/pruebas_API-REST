@@ -12,6 +12,10 @@ import interactionsOnLine from './routes/interactions_routes.js'
 
 import objectRouter from './routes/objects_routes.js'
 
+import connectDB from './config/database.js'
+// al inicio, antes de levantar el servidor:
+await connectDB()
+
 const app = express()
 // middleware para la captura de parametros de POST
 app.use(json())
