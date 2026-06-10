@@ -1,18 +1,24 @@
-import visitsJSON from '../databaseJSON/general.json' with {type: "json"};
-import { writeFileSync } from 'fs';
+import mongoose from 'mongoose'
+
+const visitsSchema = new mongoose.Schema({
+    contadorVisitasTotales: { type: Number, default: 8000 }
+})
+
+const Visits = mongoose.model('Visits', visitsSchema)
 
 export class VisitsModel {
-    // retornamos el numero de visitas totales
-    static async getAll(){
-        return visitsJSON
+    static async getAll() {
+        let doc = await Visits.findOne()
+        if (!doc) doc = await Visits.create({ contadorVisitasTotales: 0 })
+        return doc
     }
 
-    // aumentamos 1 la visita
-    static async addVisit(){
-        // Suma 1 a ambos contadores
-        visitsJSON.contadorVisitasTotales += 1;
-        // console.log("se ha añadido una nueva visita")
-        writeFileSync("databaseJSON/general.json", JSON.stringify(visitsJSON, null, 2))
-        return visitsJSON
+    static async addVisit() {
+        const doc = await Visits.findOneAndUpdate(
+            {},
+            { $inc: { contadorVisitasTotales: 1 } },
+            { new: true, upsert: true }
+        )
+        return doc
     }
 }
