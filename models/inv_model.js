@@ -1,10 +1,31 @@
 import invListJSON from '../databaseJSON/investigadores.json' with { type: "json" }
 import previewInvListJSON from '../databaseJSON/previewInv.json' with { type: "json" }
-import invVotesJSON from '../databaseJSON/inv_votes.json' with { type: "json" }
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
 import { ObjectModel } from '../models/object_model.js';
 
+import mongoose from 'mongoose'
+
+const InvVotes = mongoose.model('InvVotes', new mongoose.Schema({
+    idInv:     { type: Number, required: true, unique: true },
+    extraData: mongoose.Schema.Types.Mixed,
+    votes:     [mongoose.Schema.Types.Mixed],
+    comments:  [mongoose.Schema.Types.Mixed]
+}))
+
+async function getOrCreateInvVotes(idInv) {
+    const numId = Number(idInv)
+    let doc = await InvVotes.findOne({ idInv: numId })
+    if (!doc) {
+        const invJSON = invListJSON.find(i => i.idInv == numId)
+        doc = await InvVotes.create({
+            idInv: numId,
+            extraData: invJSON?.extraData || { likes: 0, dislikes: 0, NVotesLikeDislike: 0 },
+            votes: [], comments: []
+        })
+    }
+    return doc
+}
 
 export class InvModel{
 
@@ -70,73 +91,38 @@ export class InvModel{
     }
 
     // retornamos votacion de likes y dislikes de un investigador
-    static async getLikeDislike (idInv){
-        // buscamos el investigador por su id
-        const investigador = invListJSON.find(inv => inv.idInv == idInv)
-        if (!investigador) return false
-
-        //capturamos las votaciones de  likes y dislikes y el numero de votos
-        const result = {
-            likes : investigador.extraData.likes,
-            dislikes: investigador.extraData.dislikes,
-            NVotesLikeDislike: investigador.extraData.NVotesLikeDislike
+    static async getLikeDislike(idInv) {
+        const doc = await getOrCreateInvVotes(idInv)
+        return {
+            likes: doc.extraData.likes || 0,
+            dislikes: doc.extraData.dislikes || 0,
+            NVotesLikeDislike: doc.extraData.NVotesLikeDislike || 0
         }
-        
-        return result;
     }
 
     // votacion de like dislike
-    static async likeDislike({idInv, idUser, value}){
-        // buscamos y capturamos el investigador en la base de datos de investigadores
-        const investigator = invListJSON.find(inv => inv.idInv == idInv)
-        if (!investigator) return false
+    static async likeDislike({ idInv, idUser, value }) {
+        const doc = await getOrCreateInvVotes(idInv)
 
-        // 2. Asegurar campos
-        investigator.extraData = investigator.extraData || { likes: 0, dislikes: 0, NVotesLikeDislike: 0 }
-        investigator.extraData.likes    = investigator.extraData.likes    || 0
-        investigator.extraData.dislikes = investigator.extraData.dislikes || 0
-        investigator.extraData.NVotesLikeDislike = investigator.extraData.NVotesLikeDislike || 0
-
-        // 3. Buscar o crear bloque de votos
-        let voteBlock = invVotesJSON.find(vote => vote.idInv == idInv)
-        if (!voteBlock) {
-            voteBlock = { idInv, votes: [] }
-            invVotesJSON.push(voteBlock)
-        }
-
-        // 4. Procesar voto
-        const now = Date.now()
-        // buscamos si el mismo usuario ha votado anteriormente el mismo tipo de voto
-        const prev = voteBlock.votes.find(vote => vote.idUser == idUser && vote.type == 'likeDislike')
-
+        const prev = doc.votes.find(v => v.idUser == idUser && v.type === 'likeDislike')
         if (prev) {
-            // Si repite mismo valor, salimos
-            if (prev.value === value) return investigator
-
-            // Si ha llegado aqui es porque ha mandado un valor distinto al que votó anteriormente 
-            // Revertir contador anterior
-            if (prev.value === 1) investigator.extraData.likes--
-
-            else investigator.extraData.dislikes--
-
-            // Actualizar voto
+            if (prev.value === value) return doc
+            if (prev.value === 1) doc.extraData.likes--
+            else doc.extraData.dislikes--
             prev.value = value
-            prev.dateCreated = now
+            prev.dateCreated = Date.now()
         } else {
-            // Nuevo voto
-            voteBlock.votes.push({ idUser: idUser, type: 'likeDislike', value, dateCreated: now })
-            investigator.extraData.NVotesLikeDislike++
+            doc.votes.push({ idUser, type: 'likeDislike', value, dateCreated: Date.now() })
+            doc.extraData.NVotesLikeDislike++
         }
 
-        // 5. Sumar al contador actual
-        if (value === 1) investigator.extraData.likes++
-        else if (value === -1) investigator.extraData.dislikes++
+        if (value === 1) doc.extraData.likes++
+        else if (value === -1) doc.extraData.dislikes++
 
-        // 6. Guardar cambios
-        writeFileSync('databaseJSON/investigadores.json',      JSON.stringify(invListJSON, null, 2))
-        writeFileSync('databaseJSON/inv_votes.json', JSON.stringify(invVotesJSON, null, 2))
-
-        return map
+        doc.markModified('extraData')
+        doc.markModified('votes')
+        await doc.save()
+        return doc
     }
 
     static async createInv({input}){
@@ -153,52 +139,31 @@ export class InvModel{
     }
 
         // get de los comentarios de un investigador
-    static async getComments (idInv){
-        // buscamos el mapa por su id
-        const inv = invVotesJSON.find(inv => inv.idInv == idInv)
-
-        console.log("hemos encontrado el investigador: ", inv)
-        
-        if (!inv) {
-            console.error('❌ No se ha encontrado el investigador con id:', idInv);
-            return false;
-        }
-        
-        return inv.comments;
+    static async getComments(idInv) {
+        const doc = await getOrCreateInvVotes(idInv)
+        return doc.comments
     }
 
     // post para comentario sobre un investigador
-    static async postComment({idInv, idUser, comment}){
-        console.log("hemos recivido los siguientes datos: ", idInv, idUser, comment)
-
-        // buscamos y capturamos el investigador en la base de datos de votaciones de investigadores
-        const inv = invVotesJSON.find(inv => inv.idInv == idInv)
-        if (!inv) return false
-
-        // 2. Asegurar campos
+    static async postComment({ idInv, idUser, comment }) {
         if (typeof idInv !== 'number' || typeof idUser !== 'string' || typeof comment !== 'string') {
-            console.error('❌ model - postComment. Tipos de datos incorrectos:', { idInv, idUser, comment });
-            return false;
+            console.error('❌ postComment - tipos incorrectos')
+            return false
         }
 
-        // 3. Buscar o crear bloque de votos
-        // buscamos si el mismo usuario ha ha votado anterioremente el mismo investigador
-        let voteBlock = inv.comments.find(vote => vote.idUser == idUser)
-        // si no existe el bloque lo creamos
+        const doc = await getOrCreateInvVotes(idInv)
+        const existing = doc.comments.find(c => c.idUser == idUser)
 
-        console.log("hemos encontrado el bloque de comentarios: ", voteBlock)
-        if (!voteBlock) {
-            voteBlock = { idUser, comment, dateCreated: Date.now() }
-            inv.comments.push(voteBlock)
+        if (existing) {
+            existing.comment = comment
+            existing.dateCreated = Date.now()
         } else {
-            // Si ya existe, actualizamos el comentario y la fecha
-            voteBlock.comment = comment;
-            voteBlock.dateCreated = Date.now();
+            doc.comments.push({ idUser, comment, dateCreated: Date.now() })
         }
 
-        // 4. Guardar el voto en el JSON de registro (invVotesJSON ya contiene el voto actualizado)
-        writeFileSync('databaseJSON/inv_votes.json', JSON.stringify(invVotesJSON, null, 2))
-        return voteBlock;
+        doc.markModified('comments')
+        await doc.save()
+        return existing || doc.comments[doc.comments.length - 1]
     }
 
     static async deleteInv({id}){
