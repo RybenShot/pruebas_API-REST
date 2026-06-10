@@ -19,10 +19,11 @@ export class losetasOnLineModel {
     }
 
     static async getUsersInZone({ idZone }) {
-        const zoneMeta = listLosetasOnLine.find(z => z.idZone == idZone)
+        const zoneId = String(idZone)
+        const zoneMeta = listLosetasOnLine.find(z => z.idZone == zoneId)
         if (!zoneMeta) return null
 
-        const users = await UserOnline.find({ idZone, lastSeen: { $gt: activeCutoff() } })
+        const users = await UserOnline.find({ idZone: zoneId, lastSeen: { $gt: activeCutoff() } })
         return {
             idZone: zoneMeta.idZone,
             nameZone: zoneMeta.nameZone,
@@ -33,8 +34,9 @@ export class losetasOnLineModel {
     }
 
     static async getRandomUserInZone({ idZone }, idUser) {
+        const zoneId = String(idZone)
         const users = await UserOnline.find({
-            idZone,
+            idZone: zoneId,
             idUser: { $ne: String(idUser) },
             available: { $ne: false },
             lastSeen: { $gt: activeCutoff() }
@@ -43,25 +45,27 @@ export class losetasOnLineModel {
         if (users.length === 0) return null
 
         const randomUser = users[Math.floor(Math.random() * users.length)]
-        const zoneMeta = listLosetasOnLine.find(z => z.idZone == idZone)
+        const zoneMeta = listLosetasOnLine.find(z => z.idZone == zoneId)
 
         return {
             user: randomUser,
-            zone: { idZone, nameZone: zoneMeta?.nameZone },
+            zone: { idZone: zoneId, nameZone: zoneMeta?.nameZone },
             totalUsersInZone: users.length
         }
     }
 
     static async addOrUpdateUserInZone({ idZone, idUser, invData, available = true }) {
-        const zoneMeta = listLosetasOnLine.find(z => z.idZone == idZone)
+        const zoneId = String(idZone)
+        const zoneMeta = listLosetasOnLine.find(z => z.idZone == zoneId)
         if (!zoneMeta) throw new Error('ZONE_NOT_FOUND')
 
         await UserOnline.findOneAndUpdate(
             { idUser: String(idUser) },
-            { $set: { idZone, invData: invData || [], available, lastSeen: Date.now() } },
+            { $set: { idZone: zoneId, invData: invData || [], available, lastSeen: Date.now() } },
             { upsert: true, new: true }
         )
 
         return true
     }
+
 }
