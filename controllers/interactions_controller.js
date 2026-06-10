@@ -143,12 +143,6 @@ export class InteractionsController {
                 idLocationMap 
             })
 
-            if (!newInteraction) {
-                return res.status(409).json({ 
-                    message: 'Ya existe una interacción activa entre estos usuarios' 
-                });
-            }
-
             res.status(201).json({
                 message: 'Interacción creada exitosamente',
                 idInteraction: newInteraction.idInteraccionOnLine

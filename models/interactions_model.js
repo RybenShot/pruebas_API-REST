@@ -51,17 +51,6 @@ export class InteractionsModel {
     }
 
     static async createInteraction({ idUserHost, nameUserHost, idUserGuest, nameUserGest, invData, type, idLocationMap }) {
-        const existing = await Interaction.findOne({
-            isActive: true,
-            $or: [
-                { idUserHost, idUserGest: idUserGuest },
-                { idUserHost: idUserGuest, idUserGest: idUserHost }
-            ]
-        })
-        if (existing) {
-            console.warn('⚠️ Ya existe una interacción activa entre estos usuarios')
-            return null
-        }
 
         const now = Date.now()
         const newInteraction = await Interaction.create({
