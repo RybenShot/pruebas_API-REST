@@ -1,162 +1,91 @@
+import mongoose from 'mongoose'
 import listLosetasOnLine from '../databaseJSON/losetasOnLine.json' with { type: "json" }
-import { randomUUID } from 'node:crypto'
-import { writeFileSync } from 'fs'
 
-export class losetasOnLineModel{
-    // método privado para guardar cambios en el JSON
-    static _saveAll() {
-        writeFileSync('./databaseJSON/losetasOnLine.json', JSON.stringify(listLosetasOnLine, null, 2))
+const UserInZone = mongoose.model('UserInZone', new mongoose.Schema({
+    idZone:      mongoose.Schema.Types.Mixed,
+    idUser:      String,
+    invData:     mongoose.Schema.Types.Mixed,
+    available:   { type: Boolean, default: true },
+    lastEddited: Number
+}))
+
+const FIFTEEN_MINUTES = 15 * 60 * 1000
+
+export class losetasOnLineModel {
+
+    static _getZoneMeta(idZone) {
+        return listLosetasOnLine.find(z => z.idZone == idZone)
     }
 
-    // metodo privado para buscar la zona - loseta del mapa
-    static _searchZone(idZone){
-        return listLosetasOnLine.find(zone => zone.idZone == idZone)
+    static async _removeInactiveUsers() {
+        const cutoff = Date.now() - FIFTEEN_MINUTES
+        await UserInZone.deleteMany({ lastEddited: { $lt: cutoff } })
     }
 
-    // eliminar usuarios inactivos (más de 15 minutos sin actividad)
-    static _removeInactiveUsers(){
-        const fifteenMinutesAgo = Date.now() - (15 * 60 * 1000) // 15 minutos en millisegundos
-        let hasChanges = false
-
-        listLosetasOnLine.forEach(zone => {
-            // filtrar usuarios activos en cada zona
-            const activeUsers = zone.invOnLine.filter(user => {
-                // mantener objetos vacíos {} y usuarios activos
-                if (Object.keys(user).length === 0) return true
-                return user.lastEddited && user.lastEddited > fifteenMinutesAgo
-            })
-
-            // si hay cambios, actualizar la zona
-            if (activeUsers.length !== zone.invOnLine.length) {
-                zone.invOnLine = activeUsers
-                hasChanges = true
-                console.log(`🧹 Usuarios inactivos eliminados de zona ${zone.nameZone}`)
-            }
-        })
-
-        // guardar solo si hay cambios
-        if (hasChanges) {
-            this._saveAll()
-        }
-
-        return hasChanges
+    static async getAllUsersOnLine() {
+        await this._removeInactiveUsers()
+        const total = await UserInZone.countDocuments()
+        console.log(`📊 Total usuarios online: ${total}`)
+        return total
     }
 
-    // obtener número total de usuarios online
-    static getAllUsersOnLine(){
-        // primero ejecuta la función de quitar los investigadores inactivos
-        this._removeInactiveUsers()
+    static async getUsersInZone({ idZone }) {
+        await this._removeInactiveUsers()
 
-        // contar usuarios activos en todas las zonas
-        let totalUsers = 0
-        listLosetasOnLine.forEach(zone => {
-            const activeUsers = zone.invOnLine.filter(user => 
-                Object.keys(user).length > 0 && user.idUser
-            )
-            totalUsers += activeUsers.length
-        })
+        const zoneMeta = this._getZoneMeta(idZone)
+        if (!zoneMeta) return null
 
-        console.log(`📊 Total usuarios online: ${totalUsers}`)
-        return totalUsers
-    }
-
-    // obtener usuarios online en una zona específica
-    static getUsersInZone({idZone}){
-        this._removeInactiveUsers()
-
-        const zone = this._searchZone(idZone)
-        if (!zone) return null
-
-        const activeUsers = zone.invOnLine.filter(user => 
-            Object.keys(user).length > 0 && user.idUser
-        )
+        const users = await UserInZone.find({ idZone })
 
         return {
-            idZone: zone.idZone,
-            nameZone: zone.nameZone,
-            userCount: activeUsers.length,
-            users: activeUsers,
-            specialEvent: zone.specialEvent
+            idZone: zoneMeta.idZone,
+            nameZone: zoneMeta.nameZone,
+            userCount: users.length,
+            users,
+            specialEvent: zoneMeta.specialEvent
         }
     }
 
-    // obtener un investigador random de una zona específica
-    static getRandomUserInZone({idZone}, idUser){
-        this._removeInactiveUsers()
-        // console.log(idZone, idUser)
- 
-        const zone = this._searchZone(idZone)
-        if (!zone) return null
+    static async getRandomUserInZone({ idZone }, idUser) {
+        await this._removeInactiveUsers()
 
-        // filtrar usuarios activos (no vacíos)
-        const activeUsers = zone.invOnLine.filter(user => 
-            Object.keys(user).length > 0 && user.idUser
-        )
+        const zoneMeta = this._getZoneMeta(idZone)
+        if (!zoneMeta) return null
 
-        // filtrar solo usuarios DISPONIBLES para selección random
-        const availableUsers = activeUsers.filter(user => 
-            user.available !== false // incluye undefined, true, y excluye false
-        )
+        const users = await UserInZone.find({
+            idZone,
+            available: { $ne: false },
+            idUser: { $ne: String(idUser) }
+        })
 
-        const finalUsers = availableUsers.filter(user =>
-            user.idUser != idUser // excluir al usuario que hace la petición
-        )
+        if (users.length === 0) return null
 
-        // si no hay usuarios disponibles ...
-        if (finalUsers.length == 0) return null
+        const randomUser = users[Math.floor(Math.random() * users.length)]
 
-        // seleccionar usuario random
-        const randomIndex = Math.floor(Math.random() * finalUsers.length)
-        const randomUser = finalUsers[randomIndex]
-
-        console.log(`🎲 Usuario random seleccionado: ${randomUser.idUser} de zona ${zone.nameZone}`)
-        
         return {
             user: randomUser,
-            zone: {
-                idZone: zone.idZone,
-                nameZone: zone.nameZone
-            },
-            totalUsersInZone: finalUsers.length
+            zone: { idZone: zoneMeta.idZone, nameZone: zoneMeta.nameZone },
+            totalUsersInZone: users.length
         }
     }
 
-    // metodo privado para eliminar al usuario del mapa
-    static _removeUserFromMap(idUser){
-        listLosetasOnLine.forEach(zone => {
-            const userIndex = zone.invOnLine.findIndex(user => user.idUser === idUser)
-            // si hemos encontrado el usuario, lo borramos
-            if (userIndex !== -1) {
-                zone.invOnLine.splice(userIndex, 1) // Eliminar completamente, no dejar slot vacío
-                console.log(`🗑️ Usuario ${idUser} removido de zona ${zone.nameZone}`)
-            } 
-        })
-    }
+    static async addOrUpdateUserInZone({ idZone, idUser, invData, available = true }) {
+        const zoneMeta = this._getZoneMeta(idZone)
+        if (!zoneMeta) throw new Error('ZONE_NOT_FOUND')
 
-    // agregar o actualizar investigador en una zona
-    static addOrUpdateUserInZone({idZone, idUser, invData, available = true}){
-        this._removeInactiveUsers()
+        // sacar al usuario de cualquier zona donde esté
+        await UserInZone.deleteMany({ idUser })
 
-        const targetZone = this._searchZone(idZone)
-        if (!targetZone) throw new Error('ZONE_NOT_FOUND')
-
-        // PASO 1: borrar usuario de cualquier zona donde esté actualmente
-        this._removeUserFromMap(idUser)
-
-        // PASO 2: Agregar usuario a la nueva zona
-        const userData = {
+        // añadirlo a la nueva zona
+        await UserInZone.create({
+            idZone,
             idUser,
             invData: invData || [],
-            available: available,
+            available,
             lastEddited: Date.now()
-        }
+        })
 
-        targetZone.invOnLine.push(userData)
-        console.log(`➕ Usuario ${idUser} agregado a zona ${targetZone.nameZone}`)
-
-        this._saveAll()
-        
-        // Retorna true si todo salió bien
+        console.log(`➕ Usuario ${idUser} agregado a zona ${zoneMeta.nameZone}`)
         return true
     }
 }

@@ -20,7 +20,7 @@ const MapInPlay = mongoose.model('MapInPlay', new mongoose.Schema({
     fechaDeInicio:       Number,
     lastEddited:         Number,
     IDUserHost:          mongoose.Schema.Types.Mixed,
-    mythosReserveInPlay: [{ type: String, reveal: Boolean }],
+    mythosReserveInPlay: [mongoose.Schema.Types.Mixed],
     variables:           { dooms: { type: Number, default: 0 }, clues: { type: Number, default: 0 } },
     shop:                { soled: [mongoose.Schema.Types.Mixed], inShop: [mongoose.Schema.Types.Mixed] }
 }))
@@ -40,6 +40,7 @@ export class MapInPlayModel {
 
         const token = availableTokens[Math.floor(Math.random() * availableTokens.length)]
         token.reveal = true
+        map.markModified('mythosReserveInPlay')
         await map.save()
         return token
     }
@@ -49,6 +50,7 @@ export class MapInPlayModel {
         if (!map) return null
 
         map.mythosReserveInPlay.forEach(token => { token.reveal = false })
+        map.markModified('mythosReserveInPlay')
         await map.save()
         return true
     }
@@ -134,6 +136,7 @@ export class MapInPlayModel {
                 throw new Error(`Invalid action: ${action}`)
         }
 
+        map.markModified('mythosReserveInPlay')
         await map.save()
         return map
     }
