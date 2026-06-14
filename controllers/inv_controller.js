@@ -106,10 +106,9 @@ export class InvController {
     // post para comentario sobre un mapa
     static async postComment (req, res){
         try {
-            const { idInv, idUser, comment} = req.body
-            console.log('🔍 --- postComment --- recibid:', { idInv, idUser, comment });
+            const { idInv, idUser, nameUser, comment} = req.body
 
-            const invEdited = await InvModel.postComment({idInv, idUser, comment})
+            const invEdited = await InvModel.postComment({idInv, idUser, nameUser, comment})
 
             if (!invEdited) return res.status(404).json({ message: 'Investigador no encontrado' })
             
@@ -118,8 +117,6 @@ export class InvController {
             console.error('❌ postComment error :', error);
             return res.status(500).json({ message: 'Error interno' });
         }
-        
-
     }
 
     static async deleteInv (req, res){
