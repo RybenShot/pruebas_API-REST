@@ -3,7 +3,6 @@ import previewInvListJSON from '../databaseJSON/previewInv.json' with { type: "j
 import { randomUUID } from 'node:crypto'
 import { writeFileSync } from 'fs'
 import { ObjectModel } from '../models/object_model.js';
-
 import mongoose from 'mongoose'
 
 const InvVotes = mongoose.model('InvVotes', new mongoose.Schema({
@@ -13,106 +12,91 @@ const InvVotes = mongoose.model('InvVotes', new mongoose.Schema({
     comments:  [mongoose.Schema.Types.Mixed]
 }))
 
-async function getOrCreateInvVotes(idInv) {
-    const numId = Number(idInv)
-    let doc = await InvVotes.findOne({ idInv: numId })
+async function getOrCreate(idInv) {
+    const id = Number(idInv)
+    let doc = await InvVotes.findOne({ idInv: id })
     if (!doc) {
-        const invJSON = invListJSON.find(i => i.idInv == numId)
+        const invJSON = invListJSON.find(inv => inv.idInv == id)
         doc = await InvVotes.create({
-            idInv: numId,
+            idInv: id,
             extraData: invJSON?.extraData || { likes: 0, dislikes: 0, NVotesLikeDislike: 0 },
-            votes: [], comments: []
+            votes: [],
+            comments: []
         })
     }
     return doc
 }
 
-export class InvModel{
+export class InvModel {
 
-    static async getAll({archetype}){
+    static async getAll({ archetype }) {
         if (archetype) {
-            const filterArchetype = invListJSON.filter(
-                // cuando ajuste la base de datos debo cambiar este "arquetipos" por "archetypes"
+            return invListJSON.filter(
                 inv => inv.arquetipos.some(
                     tipo => tipo.toLowerCase() === archetype.toLowerCase()
                 )
             )
-
-            return filterArchetype
         }
-        // si no se ha pasado arquetipo, devolvemos todos los investigadores
         return invListJSON
     }
 
-    static async getAllPreview({ rol }){
-        const activos = previewInvListJSON.filter(inv => inv.isActive);
+    static async getAllPreview({ rol }) {
+        const activos = previewInvListJSON.filter(inv => inv.isActive)
         if (rol) {
-            const filterRol = activos.filter (
-                
+            return activos.filter(
                 previewInv => previewInv.rol.some(
                     tipo => tipo.toLowerCase() === rol.toLowerCase()
                 )
             )
-            return filterRol
         }
         return activos
     }
 
     static async getInvObjects({ id }) {
-        const inv = invListJSON.find(inv => inv.idInv == id);
-        if (!inv || !inv.possessions) {
-          return {
-            objects: [],
-            optionalText: '',
-            optionalObjects: []
-          };
-        }
-      
-        const { required = [], optional = [], optionalText = '' } = inv.possessions;
-      
-        const objects = await Promise.all(
-          required.map(id => ObjectModel.getObjectByID({ id }))
-        );
-      
-        const optionalObjects = await Promise.all(
-          optional.map(id => ObjectModel.getObjectByID({ id }))
-        );
-      
-        return {
-          objects,
-          optionalText,
-          optionalObjects
-        };
-    }
-
-    static async getByID ({id}){
         const inv = invListJSON.find(inv => inv.idInv == id)
-        return inv
+        if (!inv || !inv.possessions) {
+            return { objects: [], optionalText: '', optionalObjects: [] }
+        }
+        const { required = [], optional = [], optionalText = '' } = inv.possessions
+        const objects = await Promise.all(required.map(id => ObjectModel.getObjectByID({ id })))
+        const optionalObjects = await Promise.all(optional.map(id => ObjectModel.getObjectByID({ id })))
+        return { objects, optionalText, optionalObjects }
     }
 
-    // retornamos votacion de likes y dislikes de un investigador
+    static async getByID({ id }) {
+        return invListJSON.find(inv => inv.idInv == id)
+    }
+
+    // ── LIKES / DISLIKES ──────────────────────────────────────────────
+
     static async getLikeDislike(idInv) {
-        const doc = await getOrCreateInvVotes(idInv)
+        const doc = await getOrCreate(idInv)
         return {
-            likes: doc.extraData.likes || 0,
-            dislikes: doc.extraData.dislikes || 0,
-            NVotesLikeDislike: doc.extraData.NVotesLikeDislike || 0
+            likes: doc.extraData.likes,
+            dislikes: doc.extraData.dislikes,
+            NVotesLikeDislike: doc.extraData.NVotesLikeDislike
         }
     }
 
-    // votacion de like dislike
     static async likeDislike({ idInv, idUser, value }) {
-        const doc = await getOrCreateInvVotes(idInv)
+        const doc = await getOrCreate(idInv)
 
+        doc.extraData = doc.extraData || { likes: 0, dislikes: 0, NVotesLikeDislike: 0 }
+        doc.extraData.likes             = doc.extraData.likes             || 0
+        doc.extraData.dislikes          = doc.extraData.dislikes          || 0
+        doc.extraData.NVotesLikeDislike = doc.extraData.NVotesLikeDislike || 0
+
+        const now = Date.now()
         const prev = doc.votes.find(v => v.idUser == idUser && v.type === 'likeDislike')
+
         if (prev) {
             if (prev.value === value) return doc
             if (prev.value === 1) doc.extraData.likes--
             else doc.extraData.dislikes--
             prev.value = value
-            prev.dateCreated = Date.now()
+            prev.dateCreated = now
         } else {
-            doc.votes.push({ idUser, type: 'likeDislike', value, dateCreated: Date.now() })
+            doc.votes.push({ idUser, type: 'likeDislike', value, dateCreated: now })
             doc.extraData.NVotesLikeDislike++
         }
 
@@ -125,33 +109,20 @@ export class InvModel{
         return doc
     }
 
-    static async createInv({input}){
-        const newInv = {
-            id: randomUUID(),
-            ...input
-        }
-    
-        invListJSON.push(newInv)
-    
-        writeFileSync("databaseJSON/investigadores.json", JSON.stringify(invListJSON, null, 2))
+    // ── COMENTARIOS ───────────────────────────────────────────────────
 
-        return newInv
-    }
-
-        // get de los comentarios de un investigador
     static async getComments(idInv) {
-        const doc = await getOrCreateInvVotes(idInv)
+        const doc = await getOrCreate(idInv)
         return doc.comments
     }
 
-    // post para comentario sobre un investigador
     static async postComment({ idInv, idUser, comment }) {
         if (typeof idInv !== 'number' || typeof idUser !== 'string' || typeof comment !== 'string') {
-            console.error('❌ postComment - tipos incorrectos')
+            console.error('❌ model - postComment. Tipos de datos incorrectos:', { idInv, idUser, comment })
             return false
         }
 
-        const doc = await getOrCreateInvVotes(idInv)
+        const doc = await getOrCreate(idInv)
         const existing = doc.comments.find(c => c.idUser == idUser)
 
         if (existing) {
@@ -166,39 +137,28 @@ export class InvModel{
         return existing || doc.comments[doc.comments.length - 1]
     }
 
-    static async deleteInv({id}){
+    // ── ADMIN (no usados en producción, mantienen JSON) ───────────────
+
+    static async createInv({ input }) {
+        const newInv = { id: randomUUID(), ...input }
+        invListJSON.push(newInv)
+        writeFileSync("databaseJSON/investigadores.json", JSON.stringify(invListJSON, null, 2))
+        return newInv
+    }
+
+    static async deleteInv({ id }) {
         const invIndex = invListJSON.findIndex(inv => inv.id == id)
-
-        // Si no se ha encontrado el investigador, devolvemos false
         if (invIndex === -1) return false
-
-        // Eliminamos el investigador de la lista
         invListJSON.splice(invIndex, 1)
-
-        // Guardamos la lista actualizada en el archivo
-        writeFileSync('./listaInvestigadores.json', JSON.stringify(invListJSON, null, 2))
-        
-        //retornamos true para indicar que se ha eliminado correctamente
+        writeFileSync('./databaseJSON/investigadores.json', JSON.stringify(invListJSON, null, 2))
         return true
     }
 
-    static async updateInv({id, input}){
-        // buscamos el investigador por la id
+    static async updateInv({ id, input }) {
         const invIndex = invListJSON.findIndex(inv => inv.id == id)
-
-        // si no se ha encontrado el investigador, devolvemos false
         if (invIndex === -1) return false
-
-        // cogemos el investigaor de la lista y lo actualizamos con los datos del body
-        const invUpdated = {
-            ...invListJSON[invIndex],
-            ...input
-        }
-
-        // metemos al investigador actualizado de nuevo en la lista, machacando el anterior que habia
+        const invUpdated = { ...invListJSON[invIndex], ...input }
         invListJSON[invIndex] = invUpdated
-
-        // Guardamos la lista actualizada en el archivo
         writeFileSync("databaseJSON/investigadores.json", JSON.stringify(invListJSON, null, 2))
         return invUpdated
     }
