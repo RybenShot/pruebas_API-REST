@@ -116,7 +116,7 @@ export class InvModel {
         return doc.comments
     }
 
-    static async postComment({ idInv, idUser, comment }) {
+    static async postComment({ idInv, idUser, nameUser, comment }) {
         if (typeof idInv !== 'number' || typeof idUser !== 'string' || typeof comment !== 'string') {
             console.error('❌ model - postComment. Tipos de datos incorrectos:', { idInv, idUser, comment })
             return false
@@ -127,9 +127,10 @@ export class InvModel {
 
         if (existing) {
             existing.comment = comment
+            existing.nameUser = nameUser
             existing.dateCreated = Date.now()
         } else {
-            doc.comments.push({ idUser, comment, dateCreated: Date.now() })
+            doc.comments.push({ idUser, nameUser, comment, dateCreated: Date.now() })
         }
 
         doc.markModified('comments')
