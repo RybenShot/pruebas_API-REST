@@ -1,111 +1,66 @@
-import listInvInPlay from '../databaseJSON/invInPlay.json' with { type: "json" }
+import mongoose from 'mongoose'
 import { randomUUID } from 'node:crypto'
-import { writeFileSync } from 'fs'
 
-export class InvInPlayModel{
+const InvInPlay = mongoose.model('InvInPlay', new mongoose.Schema({
+    idUser:               { type: String, required: true, unique: true },
+    investigadoresOnLine: [mongoose.Schema.Types.Mixed]
+}))
 
-    // método privado para guardar cambios en el JSON
-    static _saveAll() {
-        writeFileSync('./databaseJSON/invInPlay.json', JSON.stringify(listInvInPlay, null, 2))
+export class InvInPlayModel {
+
+    static async getInvOnLineById({ id }) {
+        const docs = await InvInPlay.find({})
+        for (const doc of docs) {
+            const inv = doc.investigadoresOnLine.find(inv => inv.id === id)
+            if (inv) return inv
+        }
+        return null
     }
 
-    // retornamos un investigador onLine por su id
-    static async getInvOnLineById({id}){
-        const invOnLine = listInvInPlay.find(investigador => investigador.id === id)
-        if (!invOnLine) return null
-
-        return invOnLine
+    static async getAllInvOnLineByUser({ id }) {
+        const doc = await InvInPlay.findOne({ idUser: id })
+        if (!doc || doc.investigadoresOnLine.length === 0) return null
+        return doc.investigadoresOnLine
     }
 
-    // retornamos todos los investigadores que tenga guardado el usuario
-    static async getAllInvOnLineByUser({id}){
-        const invOnLineByUser = listInvInPlay.filter(investigador => investigador.idUser === id)
-        if (!invOnLineByUser || invOnLineByUser.length === 0) return null
-
-        console.warn('🔍 --- getAllInvOnLineByUser --- resultados encontrados desde el modelo:', invOnLineByUser);
-
-        return invOnLineByUser
-    }
-
-    // crear o actualizar un investigador OnLine
-    static async createOrUpdateInvOnLine({investigadorData}){
+    static async createOrUpdateInvOnLine({ investigadorData }) {
         let { id, idUser } = investigadorData
 
-        // Si no viene id o es null/undefined, generar uno nuevo
-        if (!id || id === null || id === undefined) {
+        if (!id) {
             id = randomUUID()
             investigadorData.id = id
-            console.log('🆔 --- ID generado automáticamente ---', id);
         }
 
-        // buscar si ya existe el usuario
-        let userIndex = listInvInPlay.findIndex(user => user.idUser === idUser)
-        
-        if (userIndex === -1) {
-            // si no existe el usuario, crearlo
-            const newUser = {
-                idUser: idUser,
-                investigadoresOnLine: []
-            }
-            listInvInPlay.push(newUser)
-            userIndex = listInvInPlay.length - 1
-            console.log('👤 --- Usuario creado ---', idUser);
+        let doc = await InvInPlay.findOne({ idUser })
+        if (!doc) {
+            doc = await InvInPlay.create({ idUser, investigadoresOnLine: [] })
         }
 
-        // buscar si ya existe un investigador con el mismo id dentro de este usuario
-        const existingInvIndex = listInvInPlay[userIndex].investigadoresOnLine.findIndex(inv => inv.id === id)
-        const now = Date.now()
-        investigadorData.lastUpdated = now // actualizar la fecha de modificación
-        
-        if (existingInvIndex !== -1) {
-            // si existe, lo sobreescribimos
-            listInvInPlay[userIndex].investigadoresOnLine[existingInvIndex] = investigadorData
-            console.log('🔄 --- Investigador actualizado ---', id);
-            this._saveAll()
-            return investigadorData
+        const existingIndex = doc.investigadoresOnLine.findIndex(inv => inv.id === id)
+        investigadorData.lastUpdated = Date.now()
+
+        if (existingIndex !== -1) {
+            doc.investigadoresOnLine[existingIndex] = investigadorData
+        } else {
+            if (doc.investigadoresOnLine.length >= 10) throw new Error('LIMIT_EXCEEDED')
+            doc.investigadoresOnLine.push(investigadorData)
         }
 
-        // si no existe, verificamos el límite de 3 investigadores por usuario
-        if (listInvInPlay[userIndex].investigadoresOnLine.length >= 10) {
-            throw new Error('LIMIT_EXCEEDED')
-        }
-
-        // agregar el nuevo investigador al array del usuario
-        listInvInPlay[userIndex].investigadoresOnLine.push(investigadorData)
-        console.log('➕ --- Nuevo investigador creado ---', id);
-        
-        // guardar cambios en el JSON
-        this._saveAll()
-        
+        doc.markModified('investigadoresOnLine')
+        await doc.save()
         return investigadorData
     }
 
-    // borrar un investigador OnLine
-    static async deleteInvOnLine({id, idUser}){
-        console.log('🗑️ --- deleteInvOnLine --- recibido:', id, idUser);
+    static async deleteInvOnLine({ id, idUser }) {
+        const doc = await InvInPlay.findOne({ idUser })
+        if (!doc) return false
 
-        // buscar el usuario
-        const userIndex = listInvInPlay.findIndex(user => user.idUser === idUser)
-        if (userIndex === -1) {
-            console.warn('⚠️ Usuario no encontrado:', idUser);
-            return false
-        }
+        const invIndex = doc.investigadoresOnLine.findIndex(inv => inv.id === id)
+        if (invIndex === -1) return false
 
-        // buscar el investigador dentro del usuario
-        const invIndex = listInvInPlay[userIndex].investigadoresOnLine.findIndex(inv => inv.id === id)
-        if (invIndex === -1) {
-            console.warn('⚠️ Investigador no encontrado:', id);
-            return false
-        }
-
-        // eliminar el investigador del array
-        listInvInPlay[userIndex].investigadoresOnLine.splice(invIndex, 1)
-        console.log('✅ --- Investigador eliminado ---', id);
-
-        // guardar cambios en el JSON
-        this._saveAll()
-        
+        doc.investigadoresOnLine.splice(invIndex, 1)
+        doc.markModified('investigadoresOnLine')
+        await doc.save()
         return true
     }
-
 }
