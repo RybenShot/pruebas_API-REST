@@ -94,7 +94,17 @@ export class InteractionsModel {
             }
             console.log(`🎮 Juego de pelea inicializado: ${interaction.idInteraccionOnLine}`)
         } else if (interaction.event.type === 'trade') {
-            console.log('🔄 Iniciando evento de intercambio')
+            interaction.event = {
+                ...interaction.event,
+                tradeData: {
+                    status: 'waitingOffer',
+                    offer: null,
+                    counteroffer: null,
+                    result: null,
+                    finalDeal: null
+                }
+            }
+            console.log('🔄 Intercambio inicializado:', interaction.idInteraccionOnLine)
         } else if (interaction.event.type === 'resonance') {
             console.log('✨ Iniciando evento de resonancia')
         } else {
@@ -263,5 +273,101 @@ export class InteractionsModel {
         await interaction.save()
         console.log(`🏳️ Interacción abandonada por: ${idUser}`)
         return { success: true, message: 'Has abandonado la interacción', interaction }
+    }
+
+    static async sendTradeOffer({ idInteraction, idUser, fromHost, fromGuest }) {
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
+        if (interaction.idUserHost !== idUser) return { success: false, message: 'Solo el anfitrión puede enviar la oferta' }
+        if (interaction.event.tradeData.status !== 'waitingOffer') return { success: false, message: 'Ya se ha enviado una oferta' }
+
+        interaction.event.tradeData.status = 'offerPending'
+        interaction.event.tradeData.offer = { fromHost, fromGuest }
+        interaction.lastEdited = Date.now()
+        interaction.markModified('event')
+        await interaction.save()
+        console.log(`📤 Oferta de intercambio enviada: ${idInteraction}`)
+        return { success: true, message: 'Oferta enviada' }
+    }
+
+    static async guestRespondToOffer({ idInteraction, idUser, response, counterFromHost, counterFromGuest }) {
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
+        if (interaction.idUserGest !== idUser) return { success: false, message: 'Solo el invitado puede responder' }
+        if (interaction.event.tradeData.status !== 'offerPending') return { success: false, message: 'No hay oferta pendiente' }
+
+        const now = Date.now()
+        if (response === 'accepted') {
+            const deal = interaction.event.tradeData.offer
+            interaction.event.tradeData.status = 'finished'
+            interaction.event.tradeData.result = 'accepted'
+            interaction.event.tradeData.finalDeal = deal
+            interaction.status = 'finished'
+            interaction.lastEdited = now
+            interaction.markModified('event')
+            await interaction.save()
+            console.log(`✅ Intercambio aceptado por guest: ${idInteraction}`)
+            return { success: true, message: 'Intercambio aceptado' }
+        } else if (response === 'counteroffer') {
+            interaction.event.tradeData.status = 'counterofferPending'
+            interaction.event.tradeData.counteroffer = { fromHost: counterFromHost, fromGuest: counterFromGuest }
+            interaction.lastEdited = now
+            interaction.markModified('event')
+            await interaction.save()
+            console.log(`🔄 Contraoferta enviada: ${idInteraction}`)
+            return { success: true, message: 'Contraoferta enviada' }
+        } else {
+            return { success: false, message: "Respuesta no válida. Use 'accepted' o 'counteroffer'" }
+        }
+    }
+
+    static async hostResolveCounteroffer({ idInteraction, idUser, response }) {
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
+        if (interaction.idUserHost !== idUser) return { success: false, message: 'Solo el anfitrión puede resolver la contraoferta' }
+        if (interaction.event.tradeData.status !== 'counterofferPending') return { success: false, message: 'No hay contraoferta pendiente' }
+
+        const now = Date.now()
+        if (response === 'accepted') {
+            const deal = interaction.event.tradeData.counteroffer
+            interaction.event.tradeData.status = 'finished'
+            interaction.event.tradeData.result = 'accepted'
+            interaction.event.tradeData.finalDeal = deal
+            interaction.status = 'finished'
+            interaction.lastEdited = now
+            interaction.markModified('event')
+            await interaction.save()
+            console.log(`✅ Contraoferta aceptada por host: ${idInteraction}`)
+            return { success: true, message: 'Contraoferta aceptada' }
+        } else if (response === 'rejected') {
+            interaction.event.tradeData.status = 'cancelled'
+            interaction.event.tradeData.result = 'rejected'
+            interaction.status = 'finished'
+            interaction.lastEdited = now
+            interaction.markModified('event')
+            await interaction.save()
+            console.log(`❌ Contraoferta rechazada por host: ${idInteraction}`)
+            return { success: true, message: 'Contraoferta rechazada' }
+        } else {
+            return { success: false, message: "Respuesta no válida. Use 'accepted' o 'rejected'" }
+        }
+    }
+
+    static async cancelTrade({ idInteraction, idUser }) {
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
+        if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
+            return { success: false, message: 'No tienes autorización' }
+        }
+        if (interaction.status === 'finished') return { success: false, message: 'La interacción ya ha finalizado' }
+
+        interaction.event.tradeData.status = 'cancelled'
+        interaction.event.tradeData.result = 'cancelled'
+        interaction.status = 'finished'
+        interaction.lastEdited = Date.now()
+        interaction.markModified('event')
+        await interaction.save()
+        console.log(`🚫 Intercambio cancelado por: ${idUser}`)
+        return { success: true, message: 'Intercambio cancelado' }
     }
 }

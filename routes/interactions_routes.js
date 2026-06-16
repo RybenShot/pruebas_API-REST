@@ -39,4 +39,10 @@ interactionsRouter.put('/sendHits/:id', InteractionsController.sendHits)
 interactionsRouter.get('/abandon/:idInteraction', InteractionsController.abandonEncounter)
 //interactionsRouter.put('/timeout/:id', InteractionsController.timeoutGame)
 
+// TRADE
+interactionsRouter.put('/trade/offer/:id', InteractionsController.sendTradeOffer)
+interactionsRouter.put('/trade/guestRespond/:id', InteractionsController.guestRespondToOffer)
+interactionsRouter.put('/trade/hostResolve/:id', InteractionsController.hostResolveCounteroffer)
+interactionsRouter.put('/trade/cancel/:id', InteractionsController.cancelTrade)
+
 export default interactionsRouter;

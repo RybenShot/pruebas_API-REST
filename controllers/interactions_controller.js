@@ -315,4 +315,70 @@ export class InteractionsController {
             return res.status(500).json({ message: 'Error interno' });
         }
     }
+
+    static async sendTradeOffer(req, res) {
+        try {
+            const { id } = req.params
+            const { idUser, fromHost, fromGuest } = req.body
+            console.log('📤 --- sendTradeOffer --- recibido:', { id, idUser, fromHost, fromGuest })
+            if (!idUser || !Array.isArray(fromHost) || !Array.isArray(fromGuest)) {
+                return res.status(400).json({ message: 'Faltan datos: idUser, fromHost[] y fromGuest[] son obligatorios' })
+            }
+            const result = await InteractionsModel.sendTradeOffer({ idInteraction: id, idUser, fromHost, fromGuest })
+            if (!result.success) return res.status(400).json({ message: result.message })
+            res.json({ message: result.message })
+        } catch (error) {
+            console.error('❌ sendTradeOffer error:', error)
+            return res.status(500).json({ message: 'Error interno' })
+        }
+    }
+
+    static async guestRespondToOffer(req, res) {
+        try {
+            const { id } = req.params
+            const { idUser, response, counterFromHost, counterFromGuest } = req.body
+            console.log('🔄 --- guestRespondToOffer --- recibido:', { id, idUser, response })
+            if (!idUser || !response) {
+                return res.status(400).json({ message: 'Faltan datos: idUser y response son obligatorios' })
+            }
+            const result = await InteractionsModel.guestRespondToOffer({ idInteraction: id, idUser, response, counterFromHost, counterFromGuest })
+            if (!result.success) return res.status(400).json({ message: result.message })
+            res.json({ message: result.message })
+        } catch (error) {
+            console.error('❌ guestRespondToOffer error:', error)
+            return res.status(500).json({ message: 'Error interno' })
+        }
+    }
+
+    static async hostResolveCounteroffer(req, res) {
+        try {
+            const { id } = req.params
+            const { idUser, response } = req.body
+            console.log('🤝 --- hostResolveCounteroffer --- recibido:', { id, idUser, response })
+            if (!idUser || !response) {
+                return res.status(400).json({ message: 'Faltan datos: idUser y response son obligatorios' })
+            }
+            const result = await InteractionsModel.hostResolveCounteroffer({ idInteraction: id, idUser, response })
+            if (!result.success) return res.status(400).json({ message: result.message })
+            res.json({ message: result.message })
+        } catch (error) {
+            console.error('❌ hostResolveCounteroffer error:', error)
+            return res.status(500).json({ message: 'Error interno' })
+        }
+    }
+
+    static async cancelTrade(req, res) {
+        try {
+            const { id } = req.params
+            const { idUser } = req.body
+            console.log('🚫 --- cancelTrade --- recibido:', { id, idUser })
+            if (!idUser) return res.status(400).json({ message: 'idUser es obligatorio' })
+            const result = await InteractionsModel.cancelTrade({ idInteraction: id, idUser })
+            if (!result.success) return res.status(400).json({ message: result.message })
+            res.json({ message: result.message })
+        } catch (error) {
+            console.error('❌ cancelTrade error:', error)
+            return res.status(500).json({ message: 'Error interno' })
+        }
+    }
 }
