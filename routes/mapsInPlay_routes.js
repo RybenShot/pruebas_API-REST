@@ -2,8 +2,6 @@ import { Router } from "express";
 import { MapsInPlayController } from "../controllers/mapsInPlay_controller.js";
 
 const mapsInPlayRouter = Router()
-// PEDIMOS todos los mapas o filtramos por expansion
-mapsInPlayRouter.get('/', MapsInPlayController.getAll)
 // BUSCAMOS un mapa por la ID
 mapsInPlayRouter.get('/:id',  MapsInPlayController.getById)
 // BUSCAMOS un mapa por la ID

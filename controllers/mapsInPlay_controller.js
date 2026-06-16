@@ -1,14 +1,9 @@
 import { MapInPlayModel } from "../models/mapsInPlay_model.js";
 import { validateMapInPlay, validatePartialMapInPlay } from '../schemas/mapsInPlay_schema.js'
 // por limpieza de codigo, esta importacion de kscoon deberiamos hacerla en el model pero lo dejamos asi pr ahora para atender otros asuntos
-import listMapsInPlay from '../databaseJSON/mapsInPlay.json' with { type: "json" }
 
 
 export class MapsInPlayController {
-    // retornamos lista de mapas por expansion o todos los mapas
-    static async getAll(req, res) {
-        res.json(listMapsInPlay)
-    }
 
     // retornamos un mapa por su id
     static async getById (req, res) {

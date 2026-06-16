@@ -186,14 +186,18 @@ export class InteractionsModel {
         if (!interaction) return { success: false, message: 'Interacción no encontrada' }
 
         if (interaction.status === 'finished' && interaction.event.winner) {
-            return { status: interaction.event.winner === idUser ? 'you won' : 'you lost' }
+            return { 
+                status: interaction.event.winner === idUser ? 'you won' : 'you lost',
+                reward: interaction.event.reward || null
+            }
         }
-        if (interaction.status === 'abandoned') return { status: 'your_rival_abandoned' }
+        if (interaction.status === 'abandoned') return { 
+            status: 'your_rival_abandoned',
+            reward: interaction.event.reward || null
+        }
         if (interaction.status === 'timeout') return { status: 'your rival has closed the game' }
         if (interaction.event.status === 'playing') {
-            return interaction.event.turn === idUser
-                ? { status: 'your turn', interaction }
-                : { status: 'not your' }
+            return interaction.event.turn === idUser ? { status: 'your turn', interaction } : { status: 'not your' }
         }
         if (interaction.event.status === 'waitingInitialRoll') return { status: 'waiting_initial_roll' }
         return { status: 'false' }
@@ -234,6 +238,7 @@ export class InteractionsModel {
             interaction.event.winner = winner
             interaction.event.status = 'finished'
             const reward = this._generateRandomReward(loserInv)
+            interaction.event.reward = reward
             interaction.markModified('event')
             await interaction.save()
             console.log(`🏆 Juego terminado - Ganador: ${winner}`)
@@ -253,9 +258,12 @@ export class InteractionsModel {
         if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) {
             return { success: false, message: 'No tienes autorización para abandonar esta interacción' }
         }
+        const loserInv = interaction.idUserHost === idUser ? interaction.event.invDataHost : interaction.event.invDataGest
+        const reward = this._generateRandomReward(loserInv)
         interaction.status = 'abandoned'
         interaction.lastEdited = Date.now()
         interaction.event.winner = interaction.idUserHost === idUser ? interaction.idUserGest : interaction.idUserHost
+        interaction.event.reward = reward
         interaction.markModified('event')
         await interaction.save()
         console.log(`🏳️ Interacción abandonada por: ${idUser}`)
