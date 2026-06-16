@@ -22,18 +22,13 @@ export class InteractionsModel {
     }
 
     static _generateRandomReward(loserInvestigator) {
-        const rewardTypes = ['clue', 'remnant', 'money', 'object']
+        const rewardTypes = ['clue', 'remnant', 'money']
         const randomType = rewardTypes[Math.floor(Math.random() * rewardTypes.length)]
         switch (randomType) {
             case 'clue':    return { type: 'clue', amount: 1, description: '1 pista ganada' }
-            case 'remnant': return { type: 'remnant', amount: 2, description: '2 restos ganado' }
+            case 'remnant': return { type: 'remnant', amount: 2, description: '2 restos ganados' }
             case 'money':   return { type: 'money', amount: 3, description: '3 dinero ganado' }
-            case 'object':
-                if (loserInvestigator.possessions?.length > 0) {
-                    const obj = loserInvestigator.possessions[Math.floor(Math.random() * loserInvestigator.possessions.length)]
-                    return { type: 'object', objectId: obj.id, objectData: obj, description: `Objeto ganado: ${obj.translations?.es?.name || obj.name || 'Objeto desconocido'}` }
-                }
-            default: return { type: 'money', amount: 3, description: '3 dinero ganado (default)' }
+            default:        return { type: 'money', amount: 3, description: '3 dinero ganado (default)' }
         }
     }
 
