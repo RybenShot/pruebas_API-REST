@@ -106,7 +106,18 @@ export class InteractionsModel {
             }
             console.log('🔄 Intercambio inicializado:', interaction.idInteraccionOnLine)
         } else if (interaction.event.type === 'resonance') {
-            console.log('✨ Iniciando evento de resonancia')
+            interaction.event = {
+                ...interaction.event,
+                resonanceData: {
+                status: 'waiting',
+                host: { bet: null, roll: null, ready: false },
+                guest: { bet: null, roll: null, ready: false },
+                result: null,
+                portalTurns: 0
+                }
+            }
+            interaction.markModified('event')
+            console.log('✨ Resonancia inicializada:', interaction.idInteraccionOnLine)
         } else {
             console.warn(`⚠️ Tipo de evento desconocido: ${interaction.event.type}`)
             return null
@@ -369,5 +380,45 @@ export class InteractionsModel {
         await interaction.save()
         console.log(`🚫 Intercambio cancelado por: ${idUser}`)
         return { success: true, message: 'Intercambio cancelado' }
+    }
+
+    static async submitResonance({ idInteraction, idUser, bet }) {
+        const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
+        if (!interaction) return { success: false, message: 'Interacción no encontrada' }
+
+        const rd = interaction.event.resonanceData
+        if (!rd) return { success: false, message: 'No hay datos de resonancia' }
+        if (rd.status === 'finished') return { success: false, message: 'El ritual ya ha finalizado' }
+
+        const isHost = interaction.idUserHost === idUser
+        const playerKey = isHost ? 'host' : 'guest'
+        const invData = isHost ? interaction.event.invDataHost : interaction.event.invDataGest
+
+        if (rd[playerKey].ready) return { success: false, message: 'Ya has activado tu parte del ritual' }
+
+        const attrs = invData?.atributes || {}
+        const willpower = Math.max(1, attrs.will || attrs.willpower || 3)
+        const dice = Array.from({ length: willpower }, () => Math.floor(Math.random() * 6) + 1)
+        const successes = dice.filter(d => d >= 5).length
+
+        rd[playerKey] = { bet: bet || 0, roll: { dice, successes }, ready: true }
+
+        const otherKey = isHost ? 'guest' : 'host'
+        if (rd[otherKey].ready) {
+            const bothSucceed = rd.host.roll.successes >= 1 && rd.guest.roll.successes >= 1
+            const totalBet = (rd.host.bet || 0) + (rd.guest.bet || 0)
+            rd.result = bothSucceed ? 'success' : 'failure'
+            rd.portalTurns = bothSucceed ? totalBet * 2 : 0
+            rd.status = 'finished'
+            interaction.status = 'finished'
+            console.log(`✨ Resonancia finalizada: ${rd.result} | portal: ${rd.portalTurns} turnos`)
+        }
+
+        interaction.event.resonanceData = rd
+        interaction.markModified('event.resonanceData')
+        interaction.lastEdited = Date.now()
+        await interaction.save()
+
+        return { success: true, resonanceData: rd }
     }
 }

@@ -45,4 +45,7 @@ interactionsRouter.put('/trade/guestRespond/:id', InteractionsController.guestRe
 interactionsRouter.put('/trade/hostResolve/:id', InteractionsController.hostResolveCounteroffer)
 interactionsRouter.put('/trade/cancel/:id', InteractionsController.cancelTrade)
 
+// RESONANCE
+interactionsRouter.put('/resonance/submit/:id', InteractionsController.submitResonance)
+
 export default interactionsRouter;
