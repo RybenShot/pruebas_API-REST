@@ -383,15 +383,20 @@ export class InteractionsModel {
     }
 
     static async submitResonance({ idInteraction, idUser, bet, successes, dice }) {
+        console.log('🕯️ --- submitResonance [MODEL] --- parámetros recibidos:', { idInteraction, idUser, bet, successes, dice: JSON.stringify(dice) })
+
         const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
         if (!interaction) return { success: false, message: 'Interacción no encontrada' }
 
         const rd = interaction.event.resonanceData
+        console.log('🕯️ --- submitResonance [MODEL] --- resonanceData actual en BD:', JSON.stringify(rd, null, 2))
+
         if (!rd) return { success: false, message: 'No hay datos de resonancia' }
         if (rd.status === 'finished') return { success: false, message: 'El ritual ya ha finalizado' }
 
         const isHost = interaction.idUserHost === idUser
         const playerKey = isHost ? 'host' : 'guest'
+        console.log(`🕯️ --- submitResonance [MODEL] --- jugador: ${playerKey} | idUserHost en BD: ${interaction.idUserHost} | idUser recibido: ${idUser}`)
 
         if (rd[playerKey].ready) return { success: false, message: 'Ya has activado tu parte del ritual' }
 
@@ -400,8 +405,11 @@ export class InteractionsModel {
             roll: { dice: dice || [], successes: successes || 0 },
             ready: true
         }
+        console.log(`🕯️ --- submitResonance [MODEL] --- guardando ${playerKey}:`, JSON.stringify(rd[playerKey]))
 
         const otherKey = isHost ? 'guest' : 'host'
+        console.log(`🕯️ --- submitResonance [MODEL] --- estado del otro jugador (${otherKey}): ready=${rd[otherKey].ready}`)
+
         if (rd[otherKey].ready) {
             const bothSucceed = rd.host.roll.successes >= 1 && rd.guest.roll.successes >= 1
             const totalBet = (rd.host.bet || 0) + (rd.guest.bet || 0)
@@ -409,7 +417,7 @@ export class InteractionsModel {
             rd.portalTurns = bothSucceed ? totalBet * 2 : 0
             rd.status = 'finished'
             interaction.status = 'finished'
-            console.log(`✨ Resonancia finalizada: ${rd.result} | portal: ${rd.portalTurns} turnos`)
+            console.log(`✨ Resonancia finalizada: ${rd.result} | host(${rd.host.roll.successes} aciertos) guest(${rd.guest.roll.successes} aciertos) | portal: ${rd.portalTurns} turnos`)
         }
 
         interaction.event.resonanceData = rd

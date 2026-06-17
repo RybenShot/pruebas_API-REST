@@ -386,7 +386,8 @@ export class InteractionsController {
         try {
             const { id } = req.params
             const { idUser, bet, successes, dice } = req.body
-            console.log('🕯️ --- submitResonance --- recibido:', { id, idUser, bet, successes })
+            console.log('🕯️ --- submitResonance [CONTROLLER] --- body completo:', JSON.stringify(req.body, null, 2))
+            console.log('🕯️ --- submitResonance [CONTROLLER] --- desestructurado:', { id, idUser, bet, successes, dice: JSON.stringify(dice) })
 
             if (!idUser || bet === undefined || bet < 0) {
                 return res.status(400).json({ message: 'Faltan datos: idUser y bet (≥0) son obligatorios' })
