@@ -321,8 +321,8 @@ export class InteractionsController {
             const { id } = req.params
             const { idUser, fromHost, fromGuest } = req.body
             console.log('📤 --- sendTradeOffer --- recibido:', { id, idUser, fromHost, fromGuest })
-            if (!idUser || !Array.isArray(fromHost) || !Array.isArray(fromGuest)) {
-                return res.status(400).json({ message: 'Faltan datos: idUser, fromHost[] y fromGuest[] son obligatorios' })
+            if (!idUser || fromHost === undefined || fromGuest === undefined) {
+                return res.status(400).json({ message: 'Faltan datos: idUser, fromHost y fromGuest son obligatorios' })
             }
             const result = await InteractionsModel.sendTradeOffer({ idInteraction: id, idUser, fromHost, fromGuest })
             if (!result.success) return res.status(400).json({ message: result.message })
