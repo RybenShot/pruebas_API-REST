@@ -385,14 +385,14 @@ export class InteractionsController {
     static async submitResonance(req, res) {
         try {
             const { id } = req.params
-            const { idUser, bet } = req.body
-            console.log('🕯️ --- submitResonance --- recibido:', { id, idUser, bet })
+            const { idUser, bet, successes, dice } = req.body
+            console.log('🕯️ --- submitResonance --- recibido:', { id, idUser, bet, successes })
 
             if (!idUser || bet === undefined || bet < 0) {
-            return res.status(400).json({ message: 'Faltan datos: idUser y bet (≥0) son obligatorios' })
+                return res.status(400).json({ message: 'Faltan datos: idUser y bet (≥0) son obligatorios' })
             }
 
-            const result = await InteractionsModel.submitResonance({ idInteraction: id, idUser, bet })
+            const result = await InteractionsModel.submitResonance({ idInteraction: id, idUser, bet, successes, dice })
             if (!result.success) return res.status(400).json({ message: result.message })
 
             res.json({ message: 'Ritual activado', resonanceData: result.resonanceData })

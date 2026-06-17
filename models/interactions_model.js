@@ -382,7 +382,7 @@ export class InteractionsModel {
         return { success: true, message: 'Intercambio cancelado' }
     }
 
-    static async submitResonance({ idInteraction, idUser, bet }) {
+    static async submitResonance({ idInteraction, idUser, bet, successes, dice }) {
         const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
         if (!interaction) return { success: false, message: 'Interacción no encontrada' }
 
@@ -392,16 +392,14 @@ export class InteractionsModel {
 
         const isHost = interaction.idUserHost === idUser
         const playerKey = isHost ? 'host' : 'guest'
-        const invData = isHost ? interaction.event.invDataHost : interaction.event.invDataGest
 
         if (rd[playerKey].ready) return { success: false, message: 'Ya has activado tu parte del ritual' }
 
-        const attrs = invData?.atributes || {}
-        const willpower = Math.max(1, attrs.will || attrs.willpower || 3)
-        const dice = Array.from({ length: willpower }, () => Math.floor(Math.random() * 6) + 1)
-        const successes = dice.filter(d => d >= 5).length
-
-        rd[playerKey] = { bet: bet || 0, roll: { dice, successes }, ready: true }
+        rd[playerKey] = {
+            bet: bet || 0,
+            roll: { dice: dice || [], successes: successes || 0 },
+            ready: true
+        }
 
         const otherKey = isHost ? 'guest' : 'host'
         if (rd[otherKey].ready) {
