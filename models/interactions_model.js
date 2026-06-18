@@ -40,7 +40,7 @@ export class InteractionsModel {
     static async pollHostInteraction({ idInteraction, idUser }) {
         const interaction = await Interaction.findOne({ idInteraccionOnLine: idInteraction })
         if (!interaction) return "no existe esta interaccion"
-        if (!['pending', 'accepted', 'rejected'].includes(interaction.status)) return "el estado de esta interaccion esta rechazada, expirado o finalizado"
+        if (!['pending', 'accepted', 'rejected', 'finished'].includes(interaction.status)) return "el estado de esta interaccion esta rechazada, expirado o finalizado"
         if (interaction.idUserHost !== idUser && interaction.idUserGest !== idUser) return "no estas autorizado para ver esta informacion"
         return interaction
     }
