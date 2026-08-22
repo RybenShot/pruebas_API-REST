@@ -12,6 +12,7 @@ import interactionsOnLine from './routes/interactions_routes.js'
 
 import objectRouter from './routes/objects_routes.js'
 import diceImagesRouter from './routes/diceImages_routes.js'
+import achievementsRouter from './routes/achievements_routes.js'
 
 import connectDB from './config/database.js'
 // al inicio, antes de levantar el servidor:
@@ -35,6 +36,7 @@ app.use('/objects', objectRouter)
 app.use('/losetasOnLine', losetasOnLineRouter)
 app.use('/interactions', interactionsOnLine)
 app.use('/diceImages', diceImagesRouter)
+app.use('/achievements', achievementsRouter)
 
 // Middlewares para manejar rutas no definidas o el de bienvenida
     // Wellcome y 404
