@@ -11,6 +11,7 @@ import losetasOnLineRouter from './routes/losetasOnLine_routes.js'
 import interactionsOnLine from './routes/interactions_routes.js'
 
 import objectRouter from './routes/objects_routes.js'
+import diceImagesRouter from './routes/diceImages_routes.js'
 
 import connectDB from './config/database.js'
 // al inicio, antes de levantar el servidor:
@@ -18,7 +19,8 @@ await connectDB()
 
 const app = express()
 // middleware para la captura de parametros de POST
-app.use(json())
+// límite ampliado (por defecto 100kb) porque las imágenes de dados viajan en base64 en el body
+app.use(json({ limit: '2mb' }))
 app.use(cors())
 app.disable('x-powered-by')
 
@@ -32,6 +34,7 @@ app.use('/enemies', enemiesRouter)
 app.use('/objects', objectRouter)
 app.use('/losetasOnLine', losetasOnLineRouter)
 app.use('/interactions', interactionsOnLine)
+app.use('/diceImages', diceImagesRouter)
 
 // Middlewares para manejar rutas no definidas o el de bienvenida
     // Wellcome y 404
